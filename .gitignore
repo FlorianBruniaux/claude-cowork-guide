@@ -1,0 +1,20 @@
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Claude-specific internal docs
+.claudedocs/
+
+# Temporary files
+*.tmp
+*.bak
+*~
