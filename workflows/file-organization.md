@@ -2,6 +2,8 @@
 
 > **Estimated time**: 15 minutes
 > **Difficulty**: Beginner
+> **Category**: 🗂️ Organization
+> **Professions**: All professions
 
 ---
 

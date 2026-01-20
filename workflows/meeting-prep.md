@@ -2,6 +2,8 @@
 
 > **Estimated time**: 20 minutes
 > **Difficulty**: Intermediate
+> **Category**: 🗂️ Organization
+> **Professions**: Business leaders, Freelancers
 
 ---
 

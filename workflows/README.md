@@ -1,100 +1,242 @@
 # Cowork Workflows
 
-> **Step-by-step tutorials for common Cowork tasks**
+> **25 tutoriels étape par étape pour automatiser vos tâches professionnelles**
+
+**Professions ciblées**: Artisans/BTP · Commerçants · Dirigeants TPE/PME · Indépendants
+
+🌐 **Languages**: [Français](README.md) | [English](README.en.md)
+
+> 📝 **Note**: Chaque workflow est disponible en français (.md) et anglais (.en.md)
+> Exemple: `invoice-generation.md` (français) et `invoice-generation.en.md` (anglais)
 
 ---
 
-## Available Workflows
+## 📊 Workflows par Catégorie
 
-| Workflow | Description | Time | Difficulty |
-|----------|-------------|------|------------|
-| [File Organization](file-organization.md) | Clean up messy folders | 15 min | Beginner |
-| [Expense Tracking](expense-tracking.md) | Receipts → Excel report | 20 min | Intermediate |
-| [Report Synthesis](report-synthesis.md) | Multi-doc → report | 25 min | Intermediate |
-| [Meeting Prep](meeting-prep.md) | Create briefing docs | 20 min | Intermediate |
-| [Team Handoff](team-handoff.md) | Dev ↔ Non-dev patterns | 30 min | Advanced |
+### 📋 Administratif (6 workflows)
+
+Gestion factures, devis, relances, conformité
+
+| Workflow | Description | Temps | Niveau |
+|----------|-------------|-------|--------|
+| [Génération Factures/Devis](invoice-generation.md) · [EN](invoice-generation.en.md) | Création factures depuis templates | 10 min | Débutant |
+| [Devis → Facture](quote-to-invoice.md) · [EN](quote-to-invoice.en.md) | Transformation automatique | 5 min | Débutant |
+| [Relances Impayés](payment-reminders.md) · [EN](payment-reminders.en.md) | Génération relances échelonnées | 15 min | Intermédiaire |
+| [Vérification Conformité](compliance-checklist.md) · [EN](compliance-checklist.en.md) | Check documents obligatoires BTP/Commerce | 20 min | Intermédiaire |
+| [Suivi Relances Clients](client-followup-tracker.md) · [EN](client-followup-tracker.en.md) | Tableau de bord Excel | 15 min | Débutant |
+| [Comparatif Prix Fournisseurs](price-comparison.md) · [EN](price-comparison.en.md) | Analyse multi-devis | 15 min | Débutant |
+
+### 💼 Commercial (5 workflows)
+
+Prospection, suivi clients, analyse marché
+
+| Workflow | Description | Temps | Niveau |
+|----------|-------------|-------|--------|
+| [Recherche Prospects](prospect-research.md) · [EN](prospect-research.en.md) | Investigation entreprise/client (SIREN, CA, décideurs) | 20 min | Intermédiaire |
+| [Création Devis Détaillé](quote-creation.md) · [EN](quote-creation.en.md) | Devis professionnels chiffrés | 20 min | Intermédiaire |
+| [Analyse Concurrence](competitor-analysis.md) · [EN](competitor-analysis.en.md) | Benchmarking local (prix, offres, avis) | 30 min | Intermédiaire |
+| [Présentations Commerciales](presentation-slides.md) · [EN](presentation-slides.en.md) | PowerPoint/Keynote client | 45 min | Intermédiaire |
+| [Newsletters Clients](newsletter-creation.md) · [EN](newsletter-creation.en.md) | Création newsletters régulières | 30 min | Intermédiaire |
+
+### 🔧 Production (5 workflows)
+
+Planning, stock, qualité, chantiers
+
+| Workflow | Description | Temps | Niveau |
+|----------|-------------|-------|--------|
+| [Planning Chantier/Projet](project-planning.md) · [EN](project-planning.en.md) | Planning Gantt avec jalons | 30 min | Intermédiaire |
+| [Suivi Stock](inventory-tracking.md) · [EN](inventory-tracking.en.md) | Inventaire + alertes réapprovisionnement | 20 min | Intermédiaire |
+| [Journal de Chantier](work-log.md) · [EN](work-log.en.md) | Rapport activité quotidien | 10 min | Débutant |
+| [Contrôle Qualité](quality-checklist.md) · [EN](quality-checklist.en.md) | Listes vérification normalisées | 15 min | Débutant |
+| [Commandes Fournisseurs](supplier-order.md) · [EN](supplier-order.en.md) | Préparation bons de commande | 15 min | Intermédiaire |
+
+### 📣 Communication (5 workflows)
+
+Réseaux sociaux, emails, avis clients
+
+| Workflow | Description | Temps | Niveau |
+|----------|-------------|-------|--------|
+| [Posts Réseaux Sociaux](social-media-posts.md) · [EN](social-media-posts.en.md) | LinkedIn/Facebook/Instagram | 10 min | Débutant |
+| [Templates Emails](email-templates.md) · [EN](email-templates.en.md) | Bibliothèque emails pro réutilisables | 15 min | Débutant |
+| [Réponses Avis Clients](review-response.md) · [EN](review-response.en.md) | Gestion avis Google/Facebook | 5 min/avis | Débutant |
+| [Transmission Savoir-Faire](knowledge-transfer.md) · [EN](knowledge-transfer.en.md) | Documentation formation apprentis | 2-4h | Avancé |
+
+### 🗂️ Organisation (4 workflows)
+
+Fichiers, notes, réunions, dépenses
+
+| Workflow | Description | Temps | Niveau |
+|----------|-------------|-------|--------|
+| [Organisation Fichiers](file-organization.md) · [EN](file-organization.en.md) | Tri automatique dossiers | 15 min | Débutant |
+| [Suivi Dépenses](expense-tracking.md) · [EN](expense-tracking.en.md) | Tickets → Excel comptabilité | 20 min | Intermédiaire |
+| [Préparation Réunions](meeting-prep.md) · [EN](meeting-prep.en.md) | Briefings clients/fournisseurs | 20 min | Intermédiaire |
 
 ---
 
-## Workflow Structure
+## 🎯 Choisir un Workflow par Besoin
 
-Each workflow includes:
-
-1. **Use Case** — When to use this workflow
-2. **Prerequisites** — What you need before starting
-3. **Step-by-Step Instructions** — Detailed walkthrough
-4. **Example Prompts** — Copy-paste ready commands
-5. **Troubleshooting** — Common issues and solutions
-6. **Variations** — Adapting for different scenarios
+```
+Quel est votre besoin aujourd'hui?
+│
+├─ 💰 FINANCES
+│   ├─ Créer facture/devis → Génération Factures/Devis
+│   ├─ Relancer client impayé → Relances Impayés
+│   ├─ Comparer fournisseurs → Comparatif Prix
+│   └─ Gérer dépenses → Suivi Dépenses
+│
+├─ 🤝 CLIENTS & COMMERCIAL
+│   ├─ Qualifier prospect → Recherche Prospects
+│   ├─ Répondre avis Google → Réponses Avis Clients
+│   ├─ Présentation vente → Présentations Commerciales
+│   └─ Newsletter → Newsletters Clients
+│
+├─ 🔨 CHANTIER & PRODUCTION
+│   ├─ Organiser planning → Planning Chantier/Projet
+│   ├─ Gérer stock → Suivi Stock
+│   ├─ Rapport journalier → Journal de Chantier
+│   └─ Check qualité → Contrôle Qualité
+│
+├─ 📢 COMMUNICATION
+│   ├─ Post réseaux → Posts Réseaux Sociaux
+│   ├─ Email client → Templates Emails
+│   └─ Former apprenti → Transmission Savoir-Faire
+│
+└─ 📂 ADMINISTRATIF
+    ├─ Ranger fichiers → Organisation Fichiers
+    ├─ Documents obligatoires → Vérification Conformité
+    └─ Préparer RDV → Préparation Réunions
+```
 
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
-### Before Any Workflow
+### Avant de Commencer un Workflow
 
+**1. Prérequis communs:**
 ```bash
-# 1. Ensure workspace exists
+# Créer workspace si nécessaire
 mkdir -p ~/Cowork-Workspace/{input,output}
 
-# 2. Backup important files
+# Backup fichiers importants (recommandé)
 cp -R ~/Cowork-Workspace/ ~/Cowork-Backup-$(date +%Y%m%d)/
-
-# 3. Clear previous work (optional)
-rm -rf ~/Cowork-Workspace/input/*
-rm -rf ~/Cowork-Workspace/output/*
 ```
 
-### Workflow Checklist
+**2. Checklist de démarrage:**
+- [ ] Cowork activé dans Claude Desktop
+- [ ] Workspace folder créé
+- [ ] Fichiers source dans `input/` (si applicable)
+- [ ] Objectif du workflow clair
 
-- [ ] Workspace folder ready
-- [ ] Input files in place
-- [ ] Backup if doing destructive operations
-- [ ] Cowork enabled in Claude Desktop
-- [ ] Folder access granted
+### Structure de Chaque Workflow
+
+1. **Cas d'usage** — Quand utiliser ce workflow
+2. **Prérequis** — Ce dont vous avez besoin
+3. **Instructions étape par étape** — Procédure détaillée
+4. **Exemples de prompts** — Commandes prêtes à l'emploi
+5. **Troubleshooting** — Problèmes courants et solutions
+6. **Variations** — Adaptations selon contexte
+7. **Bonnes pratiques** — Conseils métier
 
 ---
 
-## Choosing a Workflow
+## 💡 Conseils Généraux
+
+### 1. Soyez Précis dans Vos Demandes
 
 ```
-What do you need to do?
-│
-├─ Organize messy files?
-│   └─ → File Organization workflow
-│
-├─ Process receipts or expenses?
-│   └─ → Expense Tracking workflow
-│
-├─ Combine documents into a report?
-│   └─ → Report Synthesis workflow
-│
-├─ Prepare for a meeting?
-│   └─ → Meeting Prep workflow
-│
-└─ Work between technical and non-technical team members?
-    └─ → Team Handoff workflow
+❌ "Crée-moi une facture"
+✅ "Crée facture pour client Dupont SARL, prestation plomberie
+   du 15/03, montant 850€ HT, TVA 20%, paiement 30 jours"
+```
+
+### 2. Testez avec Petits Volumes d'Abord
+
+Avant de traiter 100 factures, testez sur 3-5 exemples.
+
+### 3. Validez Toujours les Résultats
+
+Claude est puissant mais pas infaillible:
+- Vérifiez calculs (TVA, totaux)
+- Relisez informations légales (SIREN, adresses)
+- Contrôlez cohérence données
+
+### 4. Adaptez à Votre Métier
+
+Les workflows sont des templates:
+- Ajustez vocabulaire à votre secteur
+- Modifiez templates selon vos besoins
+- Enrichissez avec vos bonnes pratiques
+
+### 5. Sauvegardez Vos Templates
+
+Réutilisez ce qui fonctionne:
+```bash
+# Créer bibliothèque templates
+mkdir -p ~/Cowork-Templates/{factures,devis,emails}
+
+# Sauvegarder templates validés
+cp ~/Cowork-Workspace/output/facture-validee.pdf \
+   ~/Cowork-Templates/factures/template-base.pdf
 ```
 
 ---
 
-## Tips for All Workflows
+## 🎓 Niveaux de Difficulté
 
-### Be Explicit
-```
-❌ "Organize my files"
-✅ "Organize files in ~/Cowork-Workspace/input/ by type into subfolders"
-```
-
-### Review Before Approving
-Always read Cowork's execution plan before saying "proceed."
-
-### Start Small
-Test with a few files before processing hundreds.
-
-### Check Results
-Verify output before considering the task complete.
+| Niveau | Signification | Profils |
+|--------|---------------|---------|
+| **Débutant** | Workflow simple, 1-3 étapes, 100% guidé | Tout le monde |
+| **Intermédiaire** | Workflow structuré, adaptation contexte nécessaire | Utilisateurs réguliers Cowork |
+| **Avancé** | Workflow complexe, personnalisation approfondie | Power users, besoins spécifiques |
 
 ---
 
-*[Back to Cowork Documentation](../README.md)*
+## 📈 Évolution des Workflows
+
+**Version actuelle**: 25 workflows (v1.1.0)
+
+**Contribuer**:
+- Proposer améliorations: [Issues GitHub](https://github.com/FlorianBruniaux/claude-cowork-guide)
+- Partager vos adaptations sectorielles
+- Suggérer nouveaux workflows métiers
+
+**Roadmap**:
+- Workflows spécifiques secteurs (coiffure, restauration, services à la personne)
+- Intégrations outils métiers (ERP, CRM)
+- Vidéos tutoriels pour workflows complexes
+
+---
+
+## ⚠️ Limites et Précautions
+
+### Domaines Nécessitant Validation Humaine
+
+- **Calculs financiers** → Vérifier systématiquement TVA, totaux, marges
+- **Informations légales** → Contrôler SIREN, adresses, mentions obligatoires
+- **Décisions stratégiques** → Claude conseille, vous décidez
+- **Documents juridiques** → Faire relire par professionnel si montants/enjeux élevés
+
+### Cas d'Usage Déconseillés
+
+- **Conseil juridique** → Consulter avocat/expert-comptable
+- **Décisions médicales** → Consulter professionnel santé
+- **Données sensibles non protégées** → Chiffrer informations confidentielles
+
+---
+
+## 🆘 Support
+
+**Problème avec un workflow?**
+
+1. Consultez section **Troubleshooting** du workflow concerné
+2. Vérifiez [Documentation Cowork](../README.md)
+3. Posez question sur [Forum Claude Code](https://github.com/anthropics/claude-code/discussions)
+
+**Bug ou amélioration?**
+
+Ouvrez une [Issue GitHub](https://github.com/FlorianBruniaux/claude-cowork-guide/issues)
+
+---
+
+*[Retour Documentation Cowork](../README.md) | [Guide Ultimate](../../guide/ultimate-guide.md)*
