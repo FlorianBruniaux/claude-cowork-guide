@@ -1,7 +1,7 @@
 # Claude Cowork Guide
 
 <p align="center">
-  <strong><a href="https://florianbruniaux.github.io/claude-cowork-guide-landing/">🌐 Site web officiel</a></strong>
+  <strong><a href="https://florianbruniaux.github.io/claude-cowork-guide-landing/">🌐 Official Website</a></strong>
 </p>
 
 <p align="center">
@@ -17,243 +17,243 @@
   <img src="https://img.shields.io/badge/Version-1.1.0-orange" alt="Version"/>
 </p>
 
-> Guide complet de l'assistant desktop Claude pour les TPE/PME françaises.
-> Factures, devis, relances, prospection — automatisés sans coder.
+> Complete guide to Claude's desktop assistant for knowledge workers and small businesses.
+> Invoices, quotes, follow-ups, prospecting — automated without coding.
 
 ---
 
-## ⚡ Démarrage rapide
+## ⚡ Quick Start
 
-### 1. Activer Cowork
-Paramètres → Fonctionnalités → Activer Cowork → Autoriser accès dossier
+### 1. Enable Cowork
+Settings → Features → Enable Cowork → Grant folder access
 
-### 2. Premier workflow
+### 2. First workflow
 ```bash
 mkdir -p ~/Cowork-Workspace/{input,output}
-# Ajoutez des fichiers dans input/, puis :
+# Add files to input/, then:
 ```
-> "Organise les fichiers dans ~/Cowork-Workspace/input/ par type"
+> "Organize the files in ~/Cowork-Workspace/input/ by type"
 
-### 3. Aller plus loin
-- 📋 [Aide-mémoire](reference/cheatsheet.md) — À imprimer
-- 📖 [Guide complet](guide/01-getting-started.md) — 10 min
-- 🎯 [Onboarding interactif](tools/cowork-onboarding.md) — Parcours personnalisé
+### 3. Go further
+- 📋 [Cheatsheet](reference/cheatsheet.md) — Print this
+- 📖 [Complete guide](guide/01-getting-started.md) — 10 min
+- 🎯 [Interactive onboarding](tools/cowork-onboarding.md) — Personalized path
 
 <details>
-<summary><strong>Prérequis</strong></summary>
+<summary><strong>Prerequisites</strong></summary>
 
-- **Abonnement**: Pro (20$/mois) ou Max (100-200$/mois)
-- **Plateforme**: macOS uniquement (Windows prévu)
-- **App**: Claude Desktop (dernière version)
+- **Subscription**: Pro ($20/mo) or Max ($100-200/mo)
+- **Platform**: macOS only (Windows planned)
+- **App**: Claude Desktop (latest version)
 
 </details>
 
 ---
 
-## Pourquoi ce guide ?
+## Why this guide?
 
-**Le problème**: La doc officielle est dense. Les tutos sont vite obsolètes.
-Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalités.
+**The problem**: Official docs are dense. Tutorials get outdated quickly.
+You need ready-to-use workflows, not feature lists.
 
-**Ce guide**: 43 workflows métier, 70 prompts copy-paste, adaptés aux TPE/PME françaises.
+**This guide**: 43 business workflows, 70 copy-paste prompts, practical examples.
 
-**Temps de lecture**: Démarrage 5 min | Guide complet 45 min
+**Reading time**: Getting started 5 min | Complete guide 45 min
 
 ---
 
-## 👨‍💻 Vous êtes développeur ?
+## 👨‍💻 Are you a developer?
 
-**Claude Code** est le guide pour développeurs — même IA, interface terminal, exécution de code.
+**Claude Code** is the guide for developers — same AI, terminal interface, code execution.
 
 → [Claude Code Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide)
 
 ---
 
-## 🎯 Parcours d'apprentissage
+## 🎯 Learning Paths
 
 <details>
-<summary><strong>Débutant</strong> — Première semaine (5 étapes)</summary>
+<summary><strong>Beginner</strong> — First week (5 steps)</summary>
 
-1. [Vue d'ensemble](guide/00-overview.md) — Ce que Cowork peut faire
-2. [Démarrage](guide/01-getting-started.md) — Installation et premier workflow
-3. [Organisation fichiers](workflows/file-organization.md) — Exemple pratique
-4. [Bibliothèque prompts](prompts/file-ops.md) — 20 prompts prêts
-5. [Aide-mémoire](reference/cheatsheet.md) — À imprimer
+1. [Overview](guide/00-overview.md) — What Cowork can do
+2. [Getting Started](guide/01-getting-started.md) — Installation and first workflow
+3. [File Organization](workflows/file-organization.md) — Practical example
+4. [Prompts Library](prompts/file-ops.md) — 20 ready prompts
+5. [Cheatsheet](reference/cheatsheet.md) — Print this
 
 </details>
 
 <details>
-<summary><strong>Décideur</strong> — Vue d'ensemble (4 étapes)</summary>
+<summary><strong>Decision Maker</strong> — Overview (4 steps)</summary>
 
-1. [Contenu](#-contenu) — Capacités et ressources
-2. [Règles d'or](#-règles-dor) — Principes essentiels
-3. [Sécurité](guide/03-security.md) — Bonnes pratiques
-4. [Comparatif](reference/comparison.md) — vs Copilot/Gemini/ChatGPT
+1. [Content](#-content) — Capabilities and resources
+2. [Golden Rules](#-golden-rules) — Essential principles
+3. [Security](guide/03-security.md) — Best practices
+4. [Comparison](reference/comparison.md) — vs Copilot/Gemini/ChatGPT
 
 </details>
 
 <details>
-<summary><strong>Utilisateur avancé</strong> — Approfondissement (6 étapes)</summary>
+<summary><strong>Power User</strong> — Deep dive (6 steps)</summary>
 
-1. [Capacités complètes](guide/02-capabilities.md) — Matrice fonctionnelle
-2. [Tous les workflows](workflows/) — 25 guides pas-à-pas
-3. [Dépannage](guide/04-troubleshooting.md) — Résolution erreurs
+1. [Complete Capabilities](guide/02-capabilities.md) — Feature matrix
+2. [All Workflows](workflows/) — 43 step-by-step guides
+3. [Troubleshooting](guide/04-troubleshooting.md) — Error resolution
 4. [FAQ](reference/faq.md) — 20+ questions
-5. [Prompts avancés](prompts/research.md) — Recherche et synthèse
-6. [Glossaire](reference/glossary.md) — Terminologie
+5. [Advanced Prompts](prompts/research.md) — Research and synthesis
+6. [Glossary](reference/glossary.md) — Terminology
 
 </details>
 
 ---
 
-## 📚 Contenu
+## 📚 Content
 
-### Guides (5 fichiers)
+### Guides (5 files)
 
-| Guide | Ce que vous apprendrez | Temps |
-|-------|------------------------|-------|
-| [Vue d'ensemble](guide/00-overview.md) | Ce que Cowork peut faire | 5 min |
-| [Démarrage](guide/01-getting-started.md) | Installation, premier workflow | 10 min |
-| [Capacités](guide/02-capabilities.md) | Ce qui marche, ce qui ne marche pas | 8 min |
-| [Sécurité](guide/03-security.md) | Bonnes pratiques | 12 min |
-| [Dépannage](guide/04-troubleshooting.md) | Problèmes courants | 8 min |
+| Guide | What you'll learn | Time |
+|-------|-------------------|------|
+| [Overview](guide/00-overview.md) | What Cowork can do | 5 min |
+| [Getting Started](guide/01-getting-started.md) | Installation, first workflow | 10 min |
+| [Capabilities](guide/02-capabilities.md) | What works, what doesn't | 8 min |
+| [Security](guide/03-security.md) | Best practices | 12 min |
+| [Troubleshooting](guide/04-troubleshooting.md) | Common issues | 8 min |
 
 ### Workflows (43 guides)
 
-**📋 Administratif** (6)
-- [Génération factures](workflows/invoice-generation.md) — Templates professionnels
-- [Devis → Facture](workflows/quote-to-invoice.md) — Transformation automatique
-- [Relances impayés](workflows/payment-reminders.md) — R1, R2, R3, mise en demeure
-- [Conformité](workflows/compliance-checklist.md) — Documents obligatoires BTP/Commerce
-- [Suivi clients](workflows/client-followup-tracker.md) — Tableau de bord Excel
-- [Comparatif prix](workflows/price-comparison.md) — Multi-fournisseurs avec scoring
+**📋 Administrative** (6)
+- [Invoice Generation](workflows/invoice-generation.md) — Professional templates
+- [Quote → Invoice](workflows/quote-to-invoice.md) — Automatic transformation
+- [Payment Reminders](workflows/payment-reminders.md) — R1, R2, R3, legal notice
+- [Compliance Checklist](workflows/compliance-checklist.md) — Required documents
+- [Client Follow-up Tracker](workflows/client-followup-tracker.md) — Excel dashboard
+- [Price Comparison](workflows/price-comparison.md) — Multi-supplier with scoring
 
-**💼 Commercial** (5)
-- [Prospection](workflows/prospect-research.md) — SIREN, CA, décideurs
-- [Création devis](workflows/quote-creation.md) — Chiffrés avec variantes
-- [Analyse concurrence](workflows/competitor-analysis.md) — Prix, offres, avis
-- [Présentations](workflows/presentation-slides.md) — PowerPoint/Keynote
-- [Newsletters](workflows/newsletter-creation.md) — HTML responsive
+**💼 Sales & Marketing** (5)
+- [Prospect Research](workflows/prospect-research.md) — Company data, decision makers
+- [Quote Creation](workflows/quote-creation.md) — Detailed with variants
+- [Competitor Analysis](workflows/competitor-analysis.md) — Pricing, offers, reviews
+- [Presentation Slides](workflows/presentation-slides.md) — PowerPoint/Keynote
+- [Newsletter Creation](workflows/newsletter-creation.md) — Responsive HTML
 
-**🔧 Production** (5)
-- [Planning projet](workflows/project-planning.md) — Gantt, jalons, dépendances
-- [Suivi stock](workflows/inventory-tracking.md) — Alertes réapprovisionnement
-- [Journal chantier](workflows/work-log.md) — Conforme réglementation
-- [Contrôle qualité](workflows/quality-checklist.md) — Listes normalisées
-- [Commandes fournisseurs](workflows/supplier-order.md) — Optimisées
+**🔧 Operations** (5)
+- [Project Planning](workflows/project-planning.md) — Gantt, milestones, dependencies
+- [Inventory Tracking](workflows/inventory-tracking.md) — Restocking alerts
+- [Work Log](workflows/work-log.md) — Compliant documentation
+- [Quality Checklist](workflows/quality-checklist.md) — Standardized lists
+- [Supplier Orders](workflows/supplier-order.md) — Optimized procurement
 
 **📣 Communication** (4)
-- [Réseaux sociaux](workflows/social-media-posts.md) — LinkedIn/Facebook/Instagram
-- [Templates emails](workflows/email-templates.md) — Bibliothèque réutilisable
-- [Réponses avis](workflows/review-response.md) — Google/Facebook
-- [Transmission savoir-faire](workflows/knowledge-transfer.md) — Formation, succession
+- [Social Media Posts](workflows/social-media-posts.md) — LinkedIn/Facebook/Instagram
+- [Email Templates](workflows/email-templates.md) — Reusable library
+- [Review Responses](workflows/review-response.md) — Google/Facebook
+- [Knowledge Transfer](workflows/knowledge-transfer.md) — Training, succession
 
-→ [Tous les workflows](workflows/README.md)
+→ [All workflows](workflows/README.md)
 
 <details>
-<summary><strong>Prompts prêts à l'emploi</strong> (70)</summary>
+<summary><strong>Ready-to-use prompts</strong> (70)</summary>
 
-| Collection | Nombre | Exemples |
-|------------|--------|----------|
-| [Fichiers](prompts/file-ops.md) | 20 | Organiser, renommer, dédupliquer |
-| [Documents](prompts/document-creation.md) | 15 | Rapports, résumés, Excel |
+| Collection | Count | Examples |
+|------------|-------|----------|
+| [Files](prompts/file-ops.md) | 20 | Organize, rename, deduplicate |
+| [Documents](prompts/document-creation.md) | 15 | Reports, summaries, Excel |
 | [Extraction](prompts/data-extraction.md) | 15 | PDF, OCR, images |
-| [Recherche](prompts/research.md) | 17 | Web, synthèse |
+| [Research](prompts/research.md) | 17 | Web, synthesis |
 
 </details>
 
 <details>
-<summary><strong>Références</strong></summary>
+<summary><strong>References</strong></summary>
 
-| Ressource | Description |
-|-----------|-------------|
-| [Aide-mémoire](reference/cheatsheet.md) | 1 page à imprimer |
-| [Comparatif](reference/comparison.md) | vs Copilot, Gemini, ChatGPT |
+| Resource | Description |
+|----------|-------------|
+| [Cheatsheet](reference/cheatsheet.md) | 1-page printable |
+| [Comparison](reference/comparison.md) | vs Copilot, Gemini, ChatGPT |
 | [FAQ](reference/faq.md) | 20+ questions |
-| [Glossaire](reference/glossary.md) | Terminologie Cowork |
+| [Glossary](reference/glossary.md) | Cowork terminology |
 
 </details>
 
 ---
 
-## 🔑 Règles d'or
+## 🔑 Golden Rules
 
-1. **Toujours relire le plan** avant validation — Cowork propose, vous décidez
-2. **Dossier dédié uniquement** — Jamais accès à Documents/Bureau/système
-3. **Pas de credentials** — Mots de passe et clés API ailleurs
-4. **Vérifier les sources** — Fichiers téléchargés peuvent contenir des pièges
-5. **Déconnecter le VPN** — Problème n°1, casse le réseau VM
-6. **Sauvegarder avant suppression** — Pas d'annulation possible
+1. **Always review the plan** before approval — Cowork proposes, you decide
+2. **Dedicated folder only** — Never grant access to Documents/Desktop/system
+3. **No credentials** — Keep passwords and API keys elsewhere
+4. **Verify sources** — Downloaded files may contain malicious prompts
+5. **Disconnect VPN** — Issue #1, breaks VM networking
+6. **Backup before deletion** — No undo possible
 
-> Voir [Guide sécurité](guide/03-security.md) pour les pratiques détaillées.
+> See [Security Guide](guide/03-security.md) for detailed practices.
 
 ---
 
-## 🌍 À propos
+## 🌍 About
 
 <details>
-<summary><strong>Origine et philosophie</strong></summary>
+<summary><strong>Origins & Philosophy</strong></summary>
 
-Ce guide existe car la doc officielle est dense et les tutos vite obsolètes.
+This guide exists because official docs are dense and tutorials get outdated quickly.
 
-**Philosophie**: Pratique avant théorique. Workflows réels, pas listes de fonctionnalités.
+**Philosophy**: Practical over theoretical. Real workflows, not feature lists.
 
-**Focus v1.1**: TPE/PME françaises (artisans, commerçants, dirigeants).
+**Focus v1.1**: Small businesses and knowledge workers worldwide.
 
-**Créé avec Claude Code**. Maintenu par [Florian BRUNIAUX](https://github.com/FlorianBruniaux).
+**Created with Claude Code**. Maintained by [Florian BRUNIAUX](https://github.com/FlorianBruniaux).
 
-**Associé**: [Claude Code Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) — Pour développeurs
-
-</details>
-
-<details>
-<summary><strong>Confidentialité</strong></summary>
-
-Cowork envoie prompts, fichiers et résultats aux serveurs Anthropic.
-
-| Plan | Rétention | Entraînement |
-|------|-----------|--------------|
-| Par défaut | 5 ans | Oui |
-| Opt-out | 30 jours | Non |
-| Enterprise | 0 | Non |
-
-**Action**: [Désactiver l'entraînement](https://claude.ai/settings/data-privacy-controls)
+**Related**: [Claude Code Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) — For developers
 
 </details>
 
 <details>
-<summary><strong>Limitations actuelles</strong> (Janvier 2026)</summary>
+<summary><strong>Privacy</strong></summary>
 
-**Plateforme**: macOS uniquement (Windows prévu, pas de date)
+Cowork sends prompts, files, and results to Anthropic servers.
 
-**Problèmes connus**:
-- VPN incompatible (conflit routage VM)
-- Reset usage toutes les 5 heures
-- Pro: ~1-1.5h usage intensif avant limite
-- OCR: ~97% champs, ~63% lignes détail
+| Plan | Retention | Training |
+|------|-----------|----------|
+| Default | 5 years | Yes |
+| Opt-out | 30 days | No |
+| Enterprise | 0 | No |
 
-**Statut**: Research preview — attendez-vous à des bugs
+**Action**: [Disable training](https://claude.ai/settings/data-privacy-controls)
+
+</details>
+
+<details>
+<summary><strong>Current Limitations</strong> (January 2026)</summary>
+
+**Platform**: macOS only (Windows planned, no ETA)
+
+**Known issues**:
+- VPN incompatible (VM routing conflict)
+- Usage resets every 5 hours
+- Pro: ~1-1.5h intensive use before limit
+- OCR: ~97% fields, ~63% line items accuracy
+
+**Status**: Research preview — expect bugs
 
 </details>
 
 ---
 
-## 🤝 Contribuer
+## 🤝 Contributing
 
-Erreur trouvée ? Workflow à partager ?
+Found an error? Have a workflow to share?
 
-**Comment aider**: ⭐ Star le repo • 🐛 Signaler issues • 📝 Soumettre workflows
+**How to help**: ⭐ Star the repo • 🐛 Report issues • 📝 Submit workflows
 
-→ [CONTRIBUTING.md](./CONTRIBUTING.md) | [Ouvrir une issue](https://github.com/FlorianBruniaux/claude-cowork-guide/issues)
-
----
-
-## 📄 Licence
-
-Sous licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
-
-**Suivre**: [Releases](https://github.com/FlorianBruniaux/claude-cowork-guide/releases) | [Discussions](https://github.com/FlorianBruniaux/claude-cowork-guide/discussions) | [LinkedIn](https://www.linkedin.com/in/florian-bruniaux-43408b83/)
+→ [CONTRIBUTING.md](./CONTRIBUTING.md) | [Open an issue](https://github.com/FlorianBruniaux/claude-cowork-guide/issues)
 
 ---
 
-*Version 1.1.0 | Janvier 2026 | Créé avec Claude*
+## 📄 License
+
+Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+**Follow**: [Releases](https://github.com/FlorianBruniaux/claude-cowork-guide/releases) | [Discussions](https://github.com/FlorianBruniaux/claude-cowork-guide/discussions) | [LinkedIn](https://www.linkedin.com/in/florian-bruniaux-43408b83/)
+
+---
+
+*Version 1.1.0 | January 2026 | Created with Claude*
