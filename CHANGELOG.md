@@ -5,6 +5,87 @@ All notable changes to the Cowork Documentation will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-01-20
+
+### Added
+
+**Major Expansion: 5 → 25 Workflows - French SMB Focus**
+
+#### 📋 Administratif (6 workflows)
+- **invoice-generation.md**: Génération factures/devis professionnels depuis templates
+- **quote-to-invoice.md**: Transformation automatique devis → facture
+- **payment-reminders.md**: Génération relances impayés échelonnées (R1, R2, R3, mise en demeure)
+- **compliance-checklist.md**: Vérification documents obligatoires BTP/Commerce (Qualibat, assurances)
+- **client-followup-tracker.md**: Tableau de bord Excel suivi relances clients
+- **price-comparison.md**: Comparatif multi-fournisseurs avec scoring pondéré
+
+#### 💼 Commercial (5 workflows)
+- **prospect-research.md**: Investigation entreprise (SIREN, CA, santé financière, décideurs)
+- **quote-creation.md**: Création devis détaillés chiffrés avec variantes
+- **competitor-analysis.md**: Analyse concurrence locale (prix, offres, avis Google)
+- **presentation-slides.md**: Présentations commerciales PowerPoint/Keynote structurées
+- **newsletter-creation.md**: Newsletters clients HTML responsive
+
+#### 🔧 Production (5 workflows)
+- **project-planning.md**: Planning chantier/projet avec Gantt, jalons, dépendances
+- **inventory-tracking.md**: Suivi stock avec alertes réapprovisionnement et valorisation
+- **work-log.md**: Journal de chantier quotidien conforme réglementation
+- **quality-checklist.md**: Listes contrôle qualité normalisées par métier
+- **supplier-order.md**: Préparation commandes fournisseurs optimisées
+
+#### 📣 Communication (4 workflows)
+- **social-media-posts.md**: Création posts LinkedIn/Facebook/Instagram avec calendrier
+- **email-templates.md**: Bibliothèque emails professionnels réutilisables
+- **review-response.md**: Gestion avis Google/Facebook avec stratégies réponse
+- **knowledge-transfer.md**: Transmission savoir-faire artisans (formation apprentis, succession)
+
+### Changed
+- **workflows/README.md**: Refonte complète avec organisation par catégories
+  - Ajout matrice 25 workflows avec filtres par besoin métier
+  - Navigation améliorée avec arbre de décision
+  - Section "Choisir un Workflow par Besoin" (Finances/Clients/Production/Communication/Admin)
+  - Conseils généraux étendus avec bonnes pratiques validation
+
+- **MANIFEST.yaml**: Mise à jour metadata
+  - `version: "1.0.0" → "1.1.0"`
+  - `total_workflows: 5 → 25`
+
+- **VERSION**: Bump `1.0.0 → 1.1.0`
+
+- **Workflows existants** (metadata enrichie):
+  - `file-organization.md`: Ajout **Category**: 🗂️ Organization + **Professions**
+  - `expense-tracking.md`: Ajout **Category**: 🗂️ Organization + **Professions**
+  - `meeting-prep.md`: Ajout **Category**: 🗂️ Organization + **Professions**
+
+### Removed
+- **report-synthesis.md**: Workflow déprécié (trop corporate, peu adapté TPE/PME)
+- **team-handoff.md**: Workflow déprécié (trop technique, hors scope cible artisans/commerçants)
+
+### Documentation
+- Tous les nouveaux workflows incluent:
+  - Cas d'usage concrets métiers français (SIREN, Infogreffe, URSSAF, Qualibat)
+  - Exemples de prompts copy-paste adaptés artisans/commerçants
+  - Section Troubleshooting avec solutions pratiques
+  - Section Variations avec adaptations sectorielles
+  - Bonnes pratiques métier avec chiffres ROI réalistes
+
+### Target Audience Shift
+- **Original**: Knowledge workers, PMs, data analysts (English, international)
+- **New Focus**: TPE/PME françaises
+  - Artisans/BTP (plomberie, électricité, maçonnerie, menuiserie)
+  - Commerçants (boulangerie, coiffure, restauration, services proximité)
+  - Dirigeants TPE/PME (1-50 salariés)
+  - Indépendants/Freelances
+
+### Localization
+- **Language**: Workflows now in French (guide remains English)
+- **References**: SIREN/SIRET, Infogreffe, Societe.com, Pappers, Pages Jaunes
+- **Standards**: NF, DTU, RT2020, Qualibat, CAPEB, FFB
+- **Legal**: Mentions légales françaises, TVA 20%, formats euros
+- **Cultural**: Vocabulaire métiers français (chantier, maître d'œuvre, artisan)
+
+---
+
 ## [1.0.0] - 2026-01-20
 
 ### Added
