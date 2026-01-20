@@ -1,0 +1,50 @@
+# Claude Cowork Guide
+
+Complete documentation for Claude Cowork - agentic desktop feature for knowledge workers.
+
+## What is Cowork?
+
+Claude's desktop-native autonomous assistant that manipulates local files, generates documents, and organizes digital workspace—without writing code.
+
+**Platform**: macOS only (Windows planned)
+**Subscription**: Pro ($20/mo) or Max ($100-200/mo)
+**Status**: Research preview
+
+## Quick Access
+
+- Documentation hub: /README.md
+- Getting started: /guide/01-getting-started.md
+- 60+ ready-to-use prompts: /prompts/
+- 5 step-by-step workflows: /workflows/
+- Interactive onboarding: /tools/cowork-onboarding.md
+- LLM-optimized index: /machine-readable/reference.yaml
+
+## Key Files
+
+- /guide/00-overview.md - What is Cowork, architecture
+- /guide/02-capabilities.md - Feature matrix, limitations
+- /guide/04-troubleshooting.md - Error messages, solutions
+- /reference/comparison.md - Cowork vs Copilot/Gemini/ChatGPT
+- /reference/faq.md - 20+ frequently asked questions
+- /reference/cheatsheet.md - 1-page printable reference
+
+## For AI Assistants
+
+Load the structured index for smart navigation:
+/machine-readable/reference.yaml (~1.5K tokens)
+
+Contains:
+- All documentation paths
+- 67 prompts organized by category
+- 5 workflows
+- Common errors and solutions
+- Token budgets per task type
+- Decision flowchart
+
+## License
+
+CC BY-SA 4.0 - https://creativecommons.org/licenses/by-sa/4.0/
+
+## Author
+
+Florian BRUNIAUX - https://github.com/FlorianBruniaux

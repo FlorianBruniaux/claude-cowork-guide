@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/FlorianBruniaux/claude-cowork-guide/discussions
+    about: Ask questions, share workflows, or discuss Cowork in general
+  - name: 📖 Documentation
+    url: https://github.com/FlorianBruniaux/claude-cowork-guide/tree/main/cowork
+    about: Browse the complete Cowork documentation
+  - name: 🆘 Cowork Support
+    url: https://support.anthropic.com/
+    about: Get official support for Cowork technical issues

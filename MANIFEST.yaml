@@ -1,0 +1,101 @@
+# Cowork Documentation Manifest
+# This file enables future separation into standalone repository
+
+name: claude-cowork-guide
+version: "1.0.0"
+description: Complete documentation for Claude Cowork - agentic desktop for knowledge workers
+
+# Relationship to parent repo
+upstream:
+  repo: claude-code-ultimate-guide
+  sync_files:
+    - guide/cowork.md  # Stub pointing here
+    - machine-readable/reference.yaml  # Contains cowork entries
+
+# Target audience
+audience: knowledge-workers
+personas:
+  - project-managers
+  - data-analysts
+  - writers-editors
+  - operations-teams
+  - non-technical-professionals
+
+# Product status
+status: research-preview
+availability:
+  subscription: pro-and-max  # Pro $20/mo, Max $100-200/mo
+  platform: macos-only  # Windows planned, Linux not announced
+  released: 2026-01
+  usage_limits: resets-every-5h  # Pro ~1-1.5h intensive, Max 5x-20x Pro
+
+# Documentation structure
+structure:
+  root:
+    - README.md
+    - VERSION
+    - CHANGELOG.md
+    - CONTRIBUTING.md
+    - MANIFEST.yaml
+  guide:
+    - 00-overview.md
+    - 01-getting-started.md
+    - 02-capabilities.md
+    - 03-security.md
+    - 04-troubleshooting.md
+  workflows:
+    - file-organization.md
+    - expense-tracking.md
+    - report-synthesis.md
+    - meeting-prep.md
+    - team-handoff.md
+  prompts:
+    - file-ops.md
+    - document-creation.md
+    - data-extraction.md
+    - research.md
+  reference:
+    - cheatsheet.md
+    - comparison.md
+    - faq.md
+    - glossary.md
+  examples:
+    - CLAUDE.md
+  tools:
+    - cowork-onboarding.md
+  scripts:
+    - check-version-sync.sh
+    - sync-version.sh
+    - update-stats.sh
+  github:
+    - ISSUE_TEMPLATE/bug_report.md
+    - ISSUE_TEMPLATE/feature_request.md
+    - ISSUE_TEMPLATE/workflow_contribution.md
+    - ISSUE_TEMPLATE/config.yml
+    - PULL_REQUEST_TEMPLATE.md
+    - README.md
+
+# Content metadata
+metadata:
+  language: en
+  last_updated: 2026-01-20
+  maintainer: claude-code-ultimate-guide contributors
+  license: CC-BY-SA-4.0
+  total_files: 34
+  total_prompts: 67
+  total_workflows: 5
+
+# Future standalone repo configuration
+standalone_config:
+  repo_name: claude-cowork-guide
+  default_branch: main
+  topics:
+    - claude
+    - anthropic
+    - cowork
+    - desktop-automation
+    - knowledge-work
+    - ai-assistant
+  include_from_upstream:
+    - LICENSE
+    - .github/

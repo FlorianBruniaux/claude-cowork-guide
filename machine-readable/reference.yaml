@@ -1,0 +1,220 @@
+# cowork-reference.yaml
+# Quick lookup for Claude Cowork - ~1.5K tokens target
+# Source: cowork/ documentation
+# Purpose: Condensed index for LLMs to quickly answer user questions about Cowork
+
+version: "1.0.0"
+updated: "2026-01-20"
+status: "research-preview"
+
+# ════════════════════════════════════════════════════════════════
+# CORE DOCUMENTATION - File paths for detailed info
+# ════════════════════════════════════════════════════════════════
+docs:
+  hub: "cowork/README.md"
+  overview: "cowork/guide/00-overview.md"
+  getting_started: "cowork/guide/01-getting-started.md"
+  capabilities: "cowork/guide/02-capabilities.md"
+  security: "cowork/guide/03-security.md"
+  troubleshooting: "cowork/guide/04-troubleshooting.md"
+  cheatsheet: "cowork/reference/cheatsheet.md"
+  faq: "cowork/reference/faq.md"
+  comparison: "cowork/reference/comparison.md"
+  glossary: "cowork/reference/glossary.md"
+
+# ════════════════════════════════════════════════════════════════
+# PROMPTS LIBRARY (60+ ready-to-use)
+# ════════════════════════════════════════════════════════════════
+prompts:
+  file_ops: "cowork/prompts/file-ops.md"  # 20 prompts
+  document_creation: "cowork/prompts/document-creation.md"  # 15 prompts
+  data_extraction: "cowork/prompts/data-extraction.md"  # 15 prompts
+  research: "cowork/prompts/research.md"  # 17 prompts
+
+# ════════════════════════════════════════════════════════════════
+# WORKFLOWS (step-by-step guides)
+# ════════════════════════════════════════════════════════════════
+workflows:
+  file_organization: "cowork/workflows/file-organization.md"
+  expense_tracking: "cowork/workflows/expense-tracking.md"
+  report_synthesis: "cowork/workflows/report-synthesis.md"
+  meeting_prep: "cowork/workflows/meeting-prep.md"
+  team_handoff: "cowork/workflows/team-handoff.md"
+
+# ════════════════════════════════════════════════════════════════
+# QUICK REFERENCE - Essential facts
+# ════════════════════════════════════════════════════════════════
+essentials:
+  what: "Agentic desktop feature for knowledge workers - file manipulation without code"
+  platform: "macOS only (Windows planned, Linux not announced)"
+  subscription: "Pro ($20/mo) or Max ($100-200/mo) - both have access"
+  usage_limits: "Resets every 5 hours; Pro ~1-1.5h intensive use, Max 5x-20x more"
+  context: "~200K tokens theoretical, ~165K effective (system overhead)"
+  vpn_compatible: "NO - #1 issue, VM routing conflict"
+
+# ════════════════════════════════════════════════════════════════
+# CAN DO / CANNOT DO
+# ════════════════════════════════════════════════════════════════
+capabilities:
+  can_do:
+    - "Read/write local files in sandbox"
+    - "Create Office docs (Word, Excel, PowerPoint)"
+    - "Extract data from images (OCR)"
+    - "Organize folders/files"
+    - "Web research via Chrome"
+    - "Generate PDFs"
+  cannot_do:
+    - "Execute code or scripts"
+    - "Make API calls"
+    - "Access cloud storage directly"
+    - "Process audio/video"
+    - "Work with VPN active"
+    - "Run on Windows/Linux"
+    - "Operate in background"
+
+# ════════════════════════════════════════════════════════════════
+# PROMPTING FORMULA (CTOC)
+# ════════════════════════════════════════════════════════════════
+prompting:
+  framework: "CTOC - Context → Task → Output → Constraints"
+  context: "Background, files, situation"
+  task: "Clear single objective"
+  output: "Exact format and location"
+  constraints: "Rules, limits, preferences"
+  example: |
+    CONTEXT: I have 50 receipts from Paris business trip in ~/Cowork-Workspace/input/receipts/
+    TASK: Extract all expenses into a spreadsheet
+    OUTPUT: Save as ~/Cowork-Workspace/output/paris-expenses.xlsx
+    CONSTRAINTS: Use EUR currency, semicolon formulas, categorize by type
+
+# ════════════════════════════════════════════════════════════════
+# COMMON ERRORS - Exact messages + solutions
+# ════════════════════════════════════════════════════════════════
+errors:
+  vm_timeout:
+    message: "Failed to start Claude's workspace — VM connection timeout after 60 seconds"
+    cause: "VPN active"
+    solution: "Disconnect VPN completely before using Cowork"
+  chrome_host:
+    message: "Chrome native messaging host not found"
+    cause: "Extension mismatch or missing host"
+    solution: "Manual installation via bash (see troubleshooting doc)"
+  context_limit:
+    message: "Context limit reached"
+    cause: "System overhead (~25-35K tokens)"
+    actual_limit: "~165K usable (not 200K)"
+    solution: "Break into batches of 10-20 files"
+  access_denied:
+    message: "Access denied — path outside allowed directories"
+    cause: "Folder not granted"
+    solution: "Re-grant folder access in System Preferences"
+  session_terminated:
+    message: "Session terminated unexpectedly"
+    cause: "Sleep/background/VPN"
+    solution: "Keep app foreground, disable sleep, disconnect VPN"
+
+# ════════════════════════════════════════════════════════════════
+# TOKEN BUDGET - Task costs
+# ════════════════════════════════════════════════════════════════
+tokens:
+  simple_qa: "5K-10K"
+  file_inventory: "20K-30K"
+  small_file_org: "30K-50K (10-20 files)"
+  large_file_org: "80K-150K (50+ files)"
+  multi_doc_synthesis: "50K-100K"
+  ocr_batch: "60K-100K (10+ images)"
+  agentic_overhead: "15-30% (Plan→Execute→Check cycles)"
+
+# ════════════════════════════════════════════════════════════════
+# OCR ACCURACY (from Perplexity research)
+# ════════════════════════════════════════════════════════════════
+ocr:
+  field_extraction: "~97% (vendor, date, totals)"
+  line_items: "~63% (table rows)"
+  warning: "Budget 30-50% of 'saved' time for error correction"
+  best_for: "Single-currency, clear fonts, standard formats"
+
+# ════════════════════════════════════════════════════════════════
+# COMPETITIVE POSITIONING
+# ════════════════════════════════════════════════════════════════
+competition:
+  unique_strength: "Only assistant with true multi-step autonomy + local files + browser automation"
+  vs_copilot: "Better autonomy, worse OCR accuracy"
+  vs_gemini: "Better autonomy, smaller context (165K vs 1M+)"
+  vs_chatgpt: "Better autonomy, macOS only vs cross-platform"
+  vs_apple_intelligence: "Better capabilities, cloud vs on-device"
+  best_ocr: "Microsoft Copilot"
+  best_context: "Gemini Advanced (1M+ tokens)"
+  best_privacy: "Apple Intelligence (on-device)"
+  best_autonomy: "Cowork"
+
+# ════════════════════════════════════════════════════════════════
+# ENTERPRISE VALIDATION (Claude general, not Cowork-specific)
+# ════════════════════════════════════════════════════════════════
+enterprise:
+  telus: "$90M value, 500K hours saved"
+  rakuten: "87.5% reduction in processing time"
+  zapier: "89% employee adoption"
+  note: "Stats for Claude in general - validates underlying AI capabilities"
+
+# ════════════════════════════════════════════════════════════════
+# LIMITATIONS & CONSTRAINTS
+# ════════════════════════════════════════════════════════════════
+limitations:
+  environment:
+    - "VPN incompatible (VM routing conflict)"
+    - "macOS only (Windows planned, Linux not announced)"
+    - "Requires app foreground (no background operation)"
+    - "No session persistence across restarts"
+  technical:
+    - "No code execution"
+    - "No API calls"
+    - "No cloud storage direct access"
+    - "No audio/video processing"
+    - "Context limit hits at 165K (not 200K)"
+  workflow:
+    - "Pro tier exhausts in ~1-1.5h intensive use"
+    - "Usage resets every 5 hours (not daily)"
+    - "No cross-session memory"
+    - "Connector reliability inconsistent"
+
+# ════════════════════════════════════════════════════════════════
+# DECISION FLOWCHART
+# ════════════════════════════════════════════════════════════════
+decide:
+  use_cowork_when:
+    - "Need to organize/rename files"
+    - "Create Office documents"
+    - "Extract data from images/receipts"
+    - "Compile research → documents"
+    - "Batch file operations"
+    - "Browser automation tasks"
+  use_alternative_when:
+    - "Need code execution → Claude Code"
+    - "Need best OCR → Microsoft Copilot"
+    - "Need 1M+ context → Gemini Advanced"
+    - "Privacy critical → Apple Intelligence"
+    - "On Windows/Linux → Copilot or ChatGPT"
+    - "VPN required → Claude Code"
+
+# ════════════════════════════════════════════════════════════════
+# QUICK START (5 steps)
+# ════════════════════════════════════════════════════════════════
+quick_start:
+  1: "Enable Cowork in Claude Desktop → Settings → Features"
+  2: "Create ~/Cowork-Workspace/{input,output}"
+  3: "Grant folder access when prompted"
+  4: "Use CTOC framework for prompts"
+  5: "Review plan before approval"
+
+# ════════════════════════════════════════════════════════════════
+# GOLDEN RULES
+# ════════════════════════════════════════════════════════════════
+rules:
+  1: "Always review plan before approval"
+  2: "Dedicated workspace only (never Documents/Desktop)"
+  3: "No credentials in workspace"
+  4: "Verify file sources (prompt injection risk)"
+  5: "Budget 30-50% time for OCR error correction"
+  6: "Disconnect VPN before using"
+  7: "Backup before destructive operations"
