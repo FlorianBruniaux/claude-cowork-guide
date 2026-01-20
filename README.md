@@ -39,6 +39,16 @@ Think of it as **Claude Code for everyone**: same agentic capabilities, but thro
 
 ---
 
+## 👨‍💻 Are You a Developer?
+
+**Claude Code** is the companion guide for developers who want to use Claude's CLI for coding workflows.
+
+Same agentic capabilities, but with full terminal access, git integration, and code-specific tools.
+
+→ **[Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide)** — 11K+ lines, 66+ templates, TDD/CI/CD workflows
+
+---
+
 ## ⚡ Quick Start
 
 ### Prerequisites
