@@ -401,6 +401,32 @@ How does Cowork compare to other AI desktop assistants?
 | On Windows/Linux | Copilot or ChatGPT | Cowork is macOS only |
 | Free tier only | ChatGPT or Gemini | Cowork requires paid subscription |
 
+### Open-Source Alternatives
+
+Since Cowork's launch, the open-source community has created several free alternatives. These are useful if you:
+- Have a limited budget (free with your own API keys)
+- Want to use models other than Claude (GPT, local LLMs)
+- Prefer software you can inspect and modify
+
+| Project | Creator | Focus | Ease of Use | Security |
+|---------|---------|-------|-------------|----------|
+| [openwork](https://github.com/different-ai/openwork) | different-ai | Desktop app with UI | ⭐⭐⭐ User-friendly | ⚠️ Asks permission |
+| [openwork](https://github.com/langchain-ai/openwork) | LangChain | CLI tool | ⭐ Requires terminal | ⚠️ Full file access |
+| [open-claude-cowork](https://github.com/ComposioHQ/open-claude-cowork) | Composio | Integrations (500+) | ⭐⭐ Desktop app | ⚠️ Full file access |
+| [kuse_cowork](https://github.com/kuse-ai/kuse_cowork) | Kuse | Offline/privacy | ⭐ Requires Docker | ✅ Sandboxed |
+
+*Star counts (559, 236, 123, ~50) as of January 2026 — these projects are young and evolving.*
+
+> **⚠️ Security Warning**: Unlike Cowork's sandboxed folder, most open-source alternatives have **full access to your entire computer**. They can read, modify, or delete any file. Only use them if you understand the risk or trust the project maintainers. The exception is kuse_cowork, which runs in a Docker container.
+
+#### Which Open-Source Alternative?
+
+For **non-technical users**: Only consider **different-ai/openwork** — it has a graphical interface similar to Cowork. All other options require terminal/command-line knowledge.
+
+For **developers**: LangChain's openwork (`npx openwork`) is the quickest to install. Kuse_cowork offers the best security via Docker isolation.
+
+For **everyone else**: Stick with official Cowork. The $20/month cost includes support, security updates, and a reliable product. Open-source alternatives are still alpha/beta quality and may have bugs or be abandoned.
+
 ---
 
 ## Summary
@@ -411,6 +437,7 @@ How does Cowork compare to other AI desktop assistants?
 | A knowledge worker (non-technical) | Cowork |
 | Just chatting/analyzing | Projects |
 | On a budget | Projects |
+| Budget-critical but can handle some setup | different-ai/openwork (open-source) |
 | Need file creation | Cowork |
 | Need code execution | Claude Code |
 | On Windows/Linux | Claude Code or Projects |
