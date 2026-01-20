@@ -149,6 +149,46 @@ competition:
   best_autonomy: "Cowork"
 
 # ════════════════════════════════════════════════════════════════
+# OPEN-SOURCE ALTERNATIVES
+# ════════════════════════════════════════════════════════════════
+open_source:
+  warning: "Most have FULL filesystem access (can read/modify/delete any file). Only kuse_cowork is sandboxed."
+  projects:
+    different_ai_openwork:
+      url: "https://github.com/different-ai/openwork"
+      focus: "Desktop app with UI"
+      ease_of_use: "User-friendly (GUI)"
+      security: "Asks permission per action"
+      stars: "559 (Jan 2026)"
+      best_for: "Non-technical users who need GUI"
+    langchain_openwork:
+      url: "https://github.com/langchain-ai/openwork"
+      focus: "CLI tool"
+      ease_of_use: "Requires terminal knowledge"
+      security: "Full file access"
+      stars: "236 (Jan 2026)"
+      best_for: "Developers wanting quick setup (npx openwork)"
+    composio_open_claude_cowork:
+      url: "https://github.com/ComposioHQ/open-claude-cowork"
+      focus: "500+ integrations"
+      ease_of_use: "Desktop app, moderate"
+      security: "Full file access"
+      stars: "123 (Jan 2026)"
+      best_for: "Users needing specific tool integrations"
+    kuse_cowork:
+      url: "https://github.com/kuse-ai/kuse_cowork"
+      focus: "Offline/privacy"
+      ease_of_use: "Requires Docker setup"
+      security: "Sandboxed (Docker container)"
+      stars: "~50 (Jan 2026)"
+      best_for: "Developers prioritizing security/isolation"
+  recommendations:
+    non_technical: "Only different-ai/openwork (GUI interface)"
+    developers: "langchain-ai/openwork (fastest) or kuse_cowork (most secure)"
+    everyone_else: "Stick with official Cowork ($20/mo includes support, updates, reliability)"
+  maturity: "All projects are alpha/beta quality (2026-01) - expect bugs and potential abandonment"
+
+# ════════════════════════════════════════════════════════════════
 # ENTERPRISE VALIDATION (Claude general, not Cowork-specific)
 # ════════════════════════════════════════════════════════════════
 enterprise:
@@ -196,6 +236,7 @@ decide:
     - "Privacy critical → Apple Intelligence"
     - "On Windows/Linux → Copilot or ChatGPT"
     - "VPN required → Claude Code"
+    - "Budget critical but can handle setup → different-ai/openwork (open-source)"
 
 # ════════════════════════════════════════════════════════════════
 # QUICK START (5 steps)
