@@ -5,6 +5,8 @@
 > **Category**: 🔧 Production
 > **Professions**: Contractors
 
+🌐 **Disponible aussi en [Français](work-log.md)**
+
 ---
 
 ## Use Case

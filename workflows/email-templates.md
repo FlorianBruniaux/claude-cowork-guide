@@ -5,6 +5,8 @@
 > **Catégorie**: 📣 Communication
 > **Professions**: Tous
 
+🌐 **Also available in [English](email-templates.en.md)**
+
 ---
 
 ## Cas d'usage

@@ -5,6 +5,8 @@
 > **Category**: 📋 Administrative
 > **Professions**: Contractors, Merchants, Small businesses
 
+🌐 **Disponible aussi en [Français](price-comparison.md)**
+
 ---
 
 ## Use Case

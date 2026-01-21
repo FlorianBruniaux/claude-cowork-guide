@@ -5,6 +5,8 @@
 > **Category**: 💼 Commercial
 > **Professions**: Contractors, Merchants
 
+🌐 **Disponible aussi en [Français](quote-creation.md)**
+
 ---
 
 ## Use Case

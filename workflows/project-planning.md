@@ -5,6 +5,8 @@
 > **Catégorie**: 🔧 Production
 > **Professions**: Artisans/BTP, Dirigeants
 
+🌐 **Also available in [English](project-planning.en.md)**
+
 ---
 
 ## Cas d'usage

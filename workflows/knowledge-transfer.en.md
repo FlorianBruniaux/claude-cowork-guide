@@ -5,6 +5,8 @@
 > **Category**: 🗂️ Organization
 > **Professions**: Contractors, Small business owners
 
+🌐 **Disponible aussi en [Français](knowledge-transfer.md)**
+
 ---
 
 ## Use Case

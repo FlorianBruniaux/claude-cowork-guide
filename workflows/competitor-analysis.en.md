@@ -5,6 +5,8 @@
 > **Category**: 💼 Commercial
 > **Professions**: Merchants, Business Owners
 
+🌐 **Disponible aussi en [Français](competitor-analysis.md)**
+
 ---
 
 ## Use Case

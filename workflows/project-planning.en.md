@@ -5,6 +5,8 @@
 > **Category**: 🔧 Production
 > **Professions**: Contractors, Business Owners
 
+🌐 **Disponible aussi en [Français](project-planning.md)**
+
 ---
 
 ## Use Case

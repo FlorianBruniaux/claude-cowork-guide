@@ -5,6 +5,8 @@
 > **Category**: 💼 Commercial
 > **Professions**: Merchants, Business Owners
 
+🌐 **Disponible aussi en [Français](newsletter-creation.md)**
+
 ---
 
 ## Use Case

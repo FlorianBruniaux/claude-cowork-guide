@@ -5,6 +5,8 @@
 > **Catégorie**: 📋 Administratif
 > **Professions**: Tous
 
+🌐 **Also available in [English](quote-to-invoice.en.md)**
+
 ---
 
 ## Cas d'usage

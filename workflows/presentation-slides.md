@@ -5,6 +5,8 @@
 > **Catégorie**: 📣 Communication
 > **Professions**: Dirigeants, Indépendants
 
+🌐 **Also available in [English](presentation-slides.en.md)**
+
 ---
 
 ## Cas d'usage

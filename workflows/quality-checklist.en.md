@@ -5,6 +5,8 @@
 > **Category**: 🔧 Production
 > **Professions**: Contractors, Merchants
 
+🌐 **Disponible aussi en [Français](quality-checklist.md)**
+
 ---
 
 ## Use Case

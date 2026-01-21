@@ -5,6 +5,8 @@
 > **Category**: 📋 Administrative
 > **Professions**: All
 
+🌐 **Disponible aussi en [Français](client-followup-tracker.md)**
+
 ---
 
 ## Use Case

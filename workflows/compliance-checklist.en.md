@@ -5,6 +5,8 @@
 > **Category**: 📋 Administrative
 > **Professions**: Contractors/Construction, Merchants, Small businesses
 
+🌐 **Disponible aussi en [Français](compliance-checklist.md)**
+
 ---
 
 ## Use Case

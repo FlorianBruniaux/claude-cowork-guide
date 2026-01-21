@@ -5,6 +5,8 @@
 > **Category**: 💼 Commercial
 > **Professions**: Business Owners, Freelancers
 
+🌐 **Disponible aussi en [Français](presentation-slides.md)**
+
 ---
 
 ## Use Case

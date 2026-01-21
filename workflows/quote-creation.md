@@ -5,6 +5,8 @@
 > **Catégorie**: 💼 Commercial
 > **Professions**: Artisans, Commerçants
 
+🌐 **Also available in [English](quote-creation.en.md)**
+
 ---
 
 ## Cas d'usage

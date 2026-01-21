@@ -5,6 +5,8 @@
 > **Catégorie**: 💼 Commercial
 > **Professions**: Commerçants, Dirigeants
 
+🌐 **Also available in [English](competitor-analysis.en.md)**
+
 ---
 
 ## Cas d'usage

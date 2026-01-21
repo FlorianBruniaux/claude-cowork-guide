@@ -5,6 +5,8 @@
 > **Catégorie**: 💼 Commercial
 > **Professions**: Commerçants, Dirigeants
 
+🌐 **Also available in [English](prospect-research.en.md)**
+
 ---
 
 ## Cas d'usage

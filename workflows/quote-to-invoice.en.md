@@ -5,6 +5,8 @@
 > **Category**: 📋 Administrative
 > **Professions**: All
 
+🌐 **Disponible aussi en [Français](quote-to-invoice.md)**
+
 ---
 
 ## Use Case

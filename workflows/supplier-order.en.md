@@ -5,6 +5,8 @@
 > **Category**: 🔧 Production
 > **Professions**: Merchants, Contractors
 
+🌐 **Disponible aussi en [Français](supplier-order.md)**
+
 ---
 
 ## Use Case

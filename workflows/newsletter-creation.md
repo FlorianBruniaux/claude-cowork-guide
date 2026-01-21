@@ -5,6 +5,8 @@
 > **Catégorie**: 📣 Communication
 > **Professions**: Commerçants, Dirigeants
 
+🌐 **Also available in [English](newsletter-creation.en.md)**
+
 ---
 
 ## Cas d'usage

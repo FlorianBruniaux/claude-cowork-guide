@@ -5,6 +5,8 @@
 > **Catégorie**: 🔧 Production
 > **Professions**: Commerçants, Artisans
 
+🌐 **Also available in [English](supplier-order.en.md)**
+
 ---
 
 ## Cas d'usage

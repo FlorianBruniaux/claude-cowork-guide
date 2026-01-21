@@ -5,6 +5,8 @@
 > **Catégorie**: 📋 Administratif
 > **Professions**: Artisans/BTP, Commerçants
 
+🌐 **Also available in [English](compliance-checklist.en.md)**
+
 ---
 
 ## Cas d'usage

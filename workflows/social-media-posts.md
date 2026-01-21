@@ -5,6 +5,8 @@
 > **Catégorie**: 📣 Communication
 > **Professions**: Tous
 
+🌐 **Also available in [English](social-media-posts.en.md)**
+
 ---
 
 ## Cas d'usage

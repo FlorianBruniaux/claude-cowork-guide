@@ -5,6 +5,8 @@
 > **Category**: 📋 Administrative
 > **Professions**: Contractors, Merchants, Freelancers, Small businesses
 
+🌐 **Disponible aussi en [Français](invoice-generation.md)**
+
 ---
 
 ## Use Case

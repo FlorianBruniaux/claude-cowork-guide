@@ -5,6 +5,8 @@
 > **Catégorie**: 📣 Communication
 > **Professions**: Commerçants, Indépendants, Dirigeants/TPE
 
+🌐 **Also available in [English](review-response.en.md)**
+
 ---
 
 ## Cas d'usage

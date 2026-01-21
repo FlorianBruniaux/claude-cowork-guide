@@ -5,6 +5,8 @@
 > **Category**: 📣 Communication
 > **Professions**: Merchants, Freelancers, Small business owners
 
+🌐 **Disponible aussi en [Français](review-response.md)**
+
 ---
 
 ## Use Case

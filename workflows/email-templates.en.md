@@ -5,6 +5,8 @@
 > **Category**: 📣 Communication
 > **Professions**: All businesses
 
+🌐 **Disponible aussi en [Français](email-templates.md)**
+
 ---
 
 ## Use Case

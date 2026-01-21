@@ -5,6 +5,8 @@
 > **Category**: 🔧 Production
 > **Professions**: Merchants, Contractors
 
+🌐 **Disponible aussi en [Français](inventory-tracking.md)**
+
 ---
 
 ## Use Case

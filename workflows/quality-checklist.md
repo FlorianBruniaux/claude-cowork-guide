@@ -5,6 +5,8 @@
 > **Catégorie**: 🔧 Production
 > **Professions**: Artisans/BTP, Commerçants
 
+🌐 **Also available in [English](quality-checklist.en.md)**
+
 ---
 
 ## Cas d'usage

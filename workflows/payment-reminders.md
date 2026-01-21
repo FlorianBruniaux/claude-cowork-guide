@@ -5,6 +5,8 @@
 > **Catégorie**: 📋 Administratif
 > **Professions**: Tous
 
+🌐 **Also available in [English](payment-reminders.en.md)**
+
 ---
 
 ## Cas d'usage

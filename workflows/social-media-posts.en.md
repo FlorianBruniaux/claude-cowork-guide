@@ -5,6 +5,8 @@
 > **Category**: 📣 Communication
 > **Professions**: Merchants, Business Owners, Freelancers
 
+🌐 **Disponible aussi en [Français](social-media-posts.md)**
+
 ---
 
 ## Use Case
