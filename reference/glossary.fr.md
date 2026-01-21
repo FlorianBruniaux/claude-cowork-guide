@@ -38,6 +38,9 @@ Décrit des systèmes IA capables de planifier et exécuter des tâches multi-é
 ### Approval Gate (Porte d'approbation)
 Le point de contrôle où Cowork montre ses actions planifiées et attend votre confirmation avant d'exécuter. **Mesure de sécurité critique**—toujours vérifier avant d'approuver.
 
+### Artefact (Artifact)
+Un fichier créé par Claude (document, tableur, image, etc.) pendant une session Cowork. Les artefacts apparaissent dans l'interface de Claude où vous pouvez les prévisualiser, les modifier ou les télécharger. Exemples : PDFs générés, tableurs organisés, fichiers de données extraites.
+
 ---
 
 ## C
@@ -115,6 +118,9 @@ L'agent Cowork principal qui reçoit votre requête, crée le plan, coordonne le
 
 ## P
 
+### Prompt
+Les instructions que vous donnez à Claude. Peuvent être simples ("organise ces fichiers par ordre alphabétique") ou des workflows complexes multi-étapes ("lire factures → extraire données → créer tableur → catégoriser par date"). Des prompts clairs donnent de meilleurs résultats.
+
 ### Prompt Injection (Injection de prompt)
 Une attaque de sécurité où des instructions malveillantes sont cachées dans des fichiers, tentant de manipuler le comportement de l'IA. Mitigation : traiter uniquement des fichiers de confiance.
 
@@ -148,6 +154,9 @@ L'unité que Claude utilise pour mesurer le texte. Environ 4 caractères ou 0.75
 ---
 
 ## W
+
+### Workflow
+Une séquence d'actions répétable qui transforme une entrée en sortie. Exemple : "lire fichiers → traiter → créer résultat." Comme une recette que vous pouvez réutiliser pour des tâches similaires. Cowork excelle dans l'automatisation de workflows répétitifs.
 
 ### Workspace
 La structure de dossiers dédiée pour les opérations Cowork. Bonne pratique : `~/Cowork-Workspace/` avec les sous-dossiers `input/` et `output/`.

@@ -14,6 +14,9 @@ Describes AI systems that can autonomously plan and execute multi-step tasks wit
 ### Approval Gate
 The checkpoint where Cowork shows its planned actions and waits for your confirmation before executing. **Critical security measure**—always review before approving.
 
+### Artifact
+A file created by Claude (document, spreadsheet, image, etc.) during a Cowork session. Artifacts appear in Claude's interface where you can preview, edit, or download them. Examples: generated PDFs, organized spreadsheets, extracted data files.
+
 ---
 
 ## C
@@ -91,6 +94,9 @@ The main Cowork agent that receives your request, creates the plan, coordinates 
 
 ## P
 
+### Prompt
+The instructions you give to Claude. Can be simple ("organize these files alphabetically") or complex multi-step workflows ("read invoices → extract data → create spreadsheet → categorize by date"). Clear prompts yield better results.
+
 ### Prompt Injection
 A security attack where malicious instructions are hidden in files, attempting to manipulate AI behavior. Mitigation: only process trusted files.
 
@@ -124,6 +130,9 @@ The unit Claude uses to measure text. Roughly 4 characters or 0.75 words. Used t
 ---
 
 ## W
+
+### Workflow
+A repeatable sequence of actions that transforms input into output. Example: "read files → process → create output." Like a recipe you can reuse for similar tasks. Cowork excels at automating repetitive workflows.
 
 ### Workspace
 The dedicated folder structure for Cowork operations. Best practice: `~/Cowork-Workspace/` with `input/` and `output/` subfolders.
