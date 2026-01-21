@@ -1,5 +1,7 @@
 # Cowork Cheatsheet
 
+🌐 **Languages**: [English](cheatsheet.md) | [Français](cheatsheet.fr.md)
+
 > **One-page quick reference** — Print-friendly
 
 **Requires**: Pro ($20/mo) or Max ($100-200/mo) subscription, macOS

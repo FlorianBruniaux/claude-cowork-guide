@@ -1,6 +1,6 @@
 # Workflow: Report Synthesis
 
-🌐 **Langues**: [Français](report-synthesis.md) | [English](report-synthesis.en.md)
+🌐 **Languages**: [English](report-synthesis.en.md) | [Français](report-synthesis.md)
 
 > **Estimated time**: 25 minutes
 > **Difficulty**: Intermediate
@@ -321,7 +321,7 @@ Create an updated report that:
 - Moves completed items to "Completed" section
 - Updates status of ongoing items
 
-Save to ~/Cowork-Workspace/output/updated-report.docx
+Save to: ~/Cowork-Workspace/output/updated-report.docx
 ```
 
 ### With Data Visualization
@@ -349,4 +349,4 @@ Supporting data: ~/Cowork-Workspace/output/charts-data.xlsx
 
 ---
 
-*[Back to Workflows](README.md) | [Cowork Documentation](../README.md)*
+*[Back to Workflows](README.en.md) | [Cowork Documentation](../README.md)*

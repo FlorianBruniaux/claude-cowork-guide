@@ -1,6 +1,6 @@
 # Workflow: File Organization
 
-🌐 **Langues**: [Français](file-organization.md) | [English](file-organization.en.md)
+🌐 **Languages**: [English](file-organization.en.md) | [Français](file-organization.md)
 
 > **Estimated time**: 15 minutes
 > **Difficulty**: Beginner
@@ -263,4 +263,4 @@ Create manifest of archived files.
 
 ---
 
-*[Back to Workflows](README.md) | [Cowork Documentation](../README.md)*
+*[Back to Workflows](README.en.md) | [Cowork Documentation](../README.md)*

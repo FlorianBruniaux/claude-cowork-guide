@@ -1,6 +1,6 @@
 # Workflow: Meeting Preparation
 
-🌐 **Langues**: [Français](meeting-prep.md) | [English](meeting-prep.en.md)
+🌐 **Languages**: [English](meeting-prep.en.md) | [Français](meeting-prep.md)
 
 > **Estimated time**: 20 minutes
 > **Difficulty**: Intermediate
@@ -364,4 +364,4 @@ Save to: ~/Cowork-Workspace/output/updated-brief.docx
 
 ---
 
-*[Back to Workflows](README.md) | [Cowork Documentation](../README.md)*
+*[Back to Workflows](README.en.md) | [Cowork Documentation](../README.md)*

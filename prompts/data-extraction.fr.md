@@ -1,14 +1,14 @@
-# Data Extraction Prompts
+# Prompts d'Extraction de Données
 
-🌐 **Languages**: [English](data-extraction.md) | [Français](data-extraction.fr.md)
+🌐 **Langues** : [Français](data-extraction.fr.md) | [English](data-extraction.md)
 
-> **15+ ready-to-use prompts for extracting structured data from images, PDFs, and documents**
+> **15+ prompts prêts à l'emploi pour extraire des données structurées depuis des images, PDFs et documents**
 
 ---
 
-## Receipt & Invoice Prompts
+## Prompts Reçus & Factures
 
-### 1. Basic Receipt Extraction
+### 1. Extraction Basique de Reçus
 
 ```
 Extract expense data from receipt images in ~/Cowork-Workspace/input/receipts/
@@ -26,7 +26,7 @@ Add a totals row at the bottom.
 Save to: ~/Cowork-Workspace/output/expenses.xlsx
 ```
 
-### 2. Detailed Receipt Processing
+### 2. Traitement Détaillé de Reçus
 
 ```
 Process receipts in ~/Cowork-Workspace/input/receipts/ with detailed extraction.
@@ -60,7 +60,7 @@ Use [European/US] formula syntax.
 Save to: ~/Cowork-Workspace/output/detailed-expenses.xlsx
 ```
 
-### 3. Invoice Data Extraction
+### 3. Extraction de Données de Factures
 
 ```
 Extract data from invoices in ~/Cowork-Workspace/input/invoices/
@@ -83,9 +83,9 @@ Save to: ~/Cowork-Workspace/output/invoice-tracker.xlsx
 
 ---
 
-## PDF Extraction Prompts
+## Prompts d'Extraction PDF
 
-### 4. PDF Table Extraction
+### 4. Extraction de Tableaux PDF
 
 ```
 Extract tables from PDF documents in ~/Cowork-Workspace/input/pdfs/
@@ -101,7 +101,7 @@ Save to: ~/Cowork-Workspace/output/extracted-tables/
 Create index file: ~/Cowork-Workspace/output/table-index.txt
 ```
 
-### 5. PDF Form Data Extraction
+### 5. Extraction de Données de Formulaires PDF
 
 ```
 Extract filled form data from PDFs in ~/Cowork-Workspace/input/forms/
@@ -115,7 +115,7 @@ Handle variations in form completion (empty fields = blank cell).
 Save to: ~/Cowork-Workspace/output/form-data.xlsx
 ```
 
-### 6. PDF Contract Key Terms
+### 6. Termes Clés de Contrats PDF
 
 ```
 Extract key terms from contracts in ~/Cowork-Workspace/input/contracts/
@@ -136,9 +136,9 @@ Save to: ~/Cowork-Workspace/output/contract-summary.xlsx
 
 ---
 
-## Image Data Prompts
+## Prompts de Données Image
 
-### 7. Business Card Extraction
+### 7. Extraction de Cartes de Visite
 
 ```
 Extract contact information from business card images in ~/Cowork-Workspace/input/cards/
@@ -160,7 +160,7 @@ Save to: ~/Cowork-Workspace/output/contacts.xlsx
 Also create a VCF file for import: ~/Cowork-Workspace/output/contacts.vcf
 ```
 
-### 8. Screenshot Data Extraction
+### 8. Extraction de Données de Captures d'Écran
 
 ```
 Extract data from screenshots in ~/Cowork-Workspace/input/screenshots/
@@ -176,7 +176,7 @@ Create structured output with:
 Save to: ~/Cowork-Workspace/output/screenshot-data.xlsx
 ```
 
-### 9. Handwritten Notes Extraction
+### 9. Extraction de Notes Manuscrites
 
 ```
 Extract text from handwritten note images in ~/Cowork-Workspace/input/notes/
@@ -193,9 +193,9 @@ Save to: ~/Cowork-Workspace/output/transcribed-notes.docx
 
 ---
 
-## Structured Data Prompts
+## Prompts de Données Structurées
 
-### 10. CSV Cleanup and Standardization
+### 10. Nettoyage et Standardisation CSV
 
 ```
 Clean and standardize CSV files in ~/Cowork-Workspace/input/csv-files/
@@ -212,7 +212,7 @@ Output cleaned files to: ~/Cowork-Workspace/output/cleaned/
 Create data quality report: ~/Cowork-Workspace/output/data-quality-report.md
 ```
 
-### 11. Multi-Source Data Consolidation
+### 11. Consolidation de Données Multi-Sources
 
 ```
 Consolidate data from multiple files in ~/Cowork-Workspace/input/data-sources/
@@ -229,7 +229,7 @@ Create a master Excel file with:
 Save to: ~/Cowork-Workspace/output/consolidated-data.xlsx
 ```
 
-### 12. JSON/XML to Excel
+### 12. JSON/XML vers Excel
 
 ```
 Convert JSON/XML files in ~/Cowork-Workspace/input/data/ to Excel format.
@@ -246,9 +246,9 @@ Use original filename with .xlsx extension.
 
 ---
 
-## Specialized Extraction Prompts
+## Prompts d'Extraction Spécialisée
 
-### 13. Meeting/Event Details Extraction
+### 13. Extraction de Détails de Réunions/Événements
 
 ```
 Extract event details from documents in ~/Cowork-Workspace/input/events/
@@ -269,7 +269,7 @@ Save to: ~/Cowork-Workspace/output/events.xlsx
 Save to: ~/Cowork-Workspace/output/events.ics
 ```
 
-### 14. Product/Inventory Data
+### 14. Données Produits/Inventaire
 
 ```
 Extract product information from documents/images in ~/Cowork-Workspace/input/products/
@@ -287,7 +287,7 @@ Create Excel product catalog.
 Save to: ~/Cowork-Workspace/output/product-catalog.xlsx
 ```
 
-### 15. Research Paper Data
+### 15. Données d'Articles de Recherche
 
 ```
 Extract structured data from research papers in ~/Cowork-Workspace/input/papers/
@@ -307,7 +307,7 @@ Create Excel bibliography.
 Save to: ~/Cowork-Workspace/output/research-catalog.xlsx
 ```
 
-### 16. Quote/Estimate Comparison
+### 16. Comparaison de Devis/Estimations
 
 ```
 Extract and compare quotes from ~/Cowork-Workspace/input/quotes/
@@ -329,9 +329,9 @@ Save to: ~/Cowork-Workspace/output/quote-comparison.xlsx
 
 ---
 
-## Quality Control Prompts
+## Prompts de Contrôle Qualité
 
-### 17. Data Validation Report
+### 17. Rapport de Validation de Données
 
 ```
 Validate data extracted to ~/Cowork-Workspace/output/[previous-output].xlsx
@@ -355,23 +355,23 @@ Save to: ~/Cowork-Workspace/output/validation-report.xlsx
 
 ---
 
-## Customization Notes
+## Notes de Personnalisation
 
-**For OCR accuracy:**
+**Pour la précision OCR :**
 - "Images are [high/medium/low] quality"
 - "Text is [printed/handwritten]"
 - "Language is [English/French/etc.]"
 
-**For regional settings:**
+**Pour les paramètres régionaux :**
 - "Use [European/US] date format"
 - "Currency is [USD/EUR/etc.]"
 - "Use [comma/period] as decimal separator"
 
-**For handling errors:**
+**Pour la gestion des erreurs :**
 - "Mark uncertain extractions with [?]"
 - "Skip files that can't be processed"
 - "Create error log for failed extractions"
 
 ---
 
-*[Back to Prompts Index](README.md) | [Cowork Documentation](../README.md)*
+*[Retour à l'Index des Prompts](README.fr.md) | [Documentation Cowork](../README.md)*

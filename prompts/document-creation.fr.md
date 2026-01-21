@@ -1,14 +1,14 @@
-# Document Creation Prompts
+# Prompts de Création de Documents
 
-🌐 **Languages**: [English](document-creation.md) | [Français](document-creation.fr.md)
+🌐 **Langues** : [Français](document-creation.fr.md) | [English](document-creation.md)
 
-> **15+ ready-to-use prompts for reports, summaries, and presentations**
+> **15+ prompts prêts à l'emploi pour rapports, synthèses et présentations**
 
 ---
 
-## Report Prompts
+## Prompts pour Rapports
 
-### 1. Project Status Report
+### 1. Rapport de Statut de Projet
 
 ```
 Create a project status report from the notes in ~/Cowork-Workspace/input/notes/
@@ -28,7 +28,7 @@ Save to: ~/Cowork-Workspace/output/status-report.docx
 Include: Date and project name in header
 ```
 
-### 2. Meeting Summary Report
+### 2. Rapport de Synthèse de Réunion
 
 ```
 Create a meeting summary from ~/Cowork-Workspace/input/meeting-notes.txt
@@ -45,7 +45,7 @@ Tone: Professional, concise
 Save to: ~/Cowork-Workspace/output/meeting-summary.docx
 ```
 
-### 3. Weekly Summary Report
+### 3. Rapport Hebdomadaire
 
 ```
 Compile a weekly summary from all documents in ~/Cowork-Workspace/input/week-[date]/
@@ -61,7 +61,7 @@ Format: Word document, max 2 pages
 Save to: ~/Cowork-Workspace/output/weekly-summary-[date].docx
 ```
 
-### 4. Quarterly Business Review
+### 4. Revue Trimestrielle d'Activité
 
 ```
 Create a QBR document from materials in ~/Cowork-Workspace/input/q[X]-materials/
@@ -81,9 +81,9 @@ Save to: ~/Cowork-Workspace/output/q[X]-review.docx
 
 ---
 
-## Summary Prompts
+## Prompts pour Synthèses
 
-### 5. Document Summary
+### 5. Synthèse de Document
 
 ```
 Create a summary of the document in ~/Cowork-Workspace/input/[document.pdf]
@@ -100,7 +100,7 @@ Length: Max 1 page
 Save to: ~/Cowork-Workspace/output/[document]-summary.md
 ```
 
-### 6. Multi-Document Synthesis
+### 6. Synthèse Multi-Documents
 
 ```
 Synthesize the following documents in ~/Cowork-Workspace/input/research/:
@@ -117,7 +117,7 @@ Format: Word document
 Save to: ~/Cowork-Workspace/output/synthesis-report.docx
 ```
 
-### 7. Executive Brief
+### 7. Synthèse Exécutive
 
 ```
 Create an executive brief from ~/Cowork-Workspace/input/detailed-report.pdf
@@ -135,9 +135,9 @@ Save to: ~/Cowork-Workspace/output/executive-brief.docx
 
 ---
 
-## Presentation Prompts
+## Prompts pour Présentations
 
-### 8. Slide Deck from Report
+### 8. Slides depuis un Rapport
 
 ```
 Create a PowerPoint presentation from ~/Cowork-Workspace/input/report.docx
@@ -154,7 +154,7 @@ Design: Clean, professional, minimal text per slide
 Save to: ~/Cowork-Workspace/output/presentation.pptx
 ```
 
-### 9. Project Kickoff Deck
+### 9. Présentation de Lancement de Projet
 
 ```
 Create a project kickoff presentation.
@@ -175,7 +175,7 @@ Format: PowerPoint
 Save to: ~/Cowork-Workspace/output/kickoff-deck.pptx
 ```
 
-### 10. Training Material
+### 10. Matériel de Formation
 
 ```
 Create training slides from ~/Cowork-Workspace/input/process-documentation/
@@ -195,9 +195,9 @@ Save to: ~/Cowork-Workspace/output/training-deck.pptx
 
 ---
 
-## Professional Document Prompts
+## Prompts pour Documents Professionnels
 
-### 11. Proposal Document
+### 11. Document de Proposition
 
 ```
 Create a proposal document from notes in ~/Cowork-Workspace/input/proposal-notes/
@@ -218,7 +218,7 @@ Include table of contents
 Save to: ~/Cowork-Workspace/output/proposal.docx
 ```
 
-### 12. Standard Operating Procedure (SOP)
+### 12. Procédure Opérationnelle Standard (SOP)
 
 ```
 Create an SOP document from process notes in ~/Cowork-Workspace/input/process-notes.txt
@@ -239,7 +239,7 @@ Include: Version number, date, author fields
 Save to: ~/Cowork-Workspace/output/sop-[process-name].docx
 ```
 
-### 13. Client Briefing Document
+### 13. Document de Briefing Client
 
 ```
 Create a client briefing document from materials in ~/Cowork-Workspace/input/client-[name]/
@@ -263,9 +263,9 @@ Save to: ~/Cowork-Workspace/output/[client]-briefing.docx
 
 ---
 
-## Formatted Output Prompts
+## Prompts pour Sorties Formatées
 
-### 14. Formatted Table Document
+### 14. Document avec Tableau Formaté
 
 ```
 Create a formatted table document from data in ~/Cowork-Workspace/input/raw-data.csv
@@ -285,7 +285,7 @@ Format: Word document
 Save to: ~/Cowork-Workspace/output/formatted-table.docx
 ```
 
-### 15. Newsletter/Update Document
+### 15. Newsletter/Document d'Actualités
 
 ```
 Create a newsletter from content in ~/Cowork-Workspace/input/newsletter-content/
@@ -302,7 +302,7 @@ Format: Word document with two-column layout
 Save to: ~/Cowork-Workspace/output/newsletter-[date].docx
 ```
 
-### 16. Comparison Document
+### 16. Document de Comparaison
 
 ```
 Create a comparison document from materials in ~/Cowork-Workspace/input/comparison/
@@ -321,20 +321,20 @@ Save to: ~/Cowork-Workspace/output/comparison-analysis.docx
 
 ---
 
-## Customization Notes
+## Notes de Personnalisation
 
-**Tone options:**
+**Options de ton :**
 - "Professional and formal"
 - "Conversational but professional"
 - "Technical and detailed"
 - "Executive/brief"
 
-**Length controls:**
+**Contrôles de longueur :**
 - "Maximum X pages"
 - "Approximately X words"
 - "Brief: under 500 words"
 
-**Formatting preferences:**
+**Préférences de formatage :**
 - "Use bullet points heavily"
 - "Include tables where possible"
 - "Minimize jargon"
@@ -342,4 +342,4 @@ Save to: ~/Cowork-Workspace/output/comparison-analysis.docx
 
 ---
 
-*[Back to Prompts Index](README.md) | [Cowork Documentation](../README.md)*
+*[← Retour à l'Index des Prompts](README.fr.md) | [Documentation Cowork](../README.md)*

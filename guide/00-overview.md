@@ -1,5 +1,7 @@
 # Claude Cowork: Overview
 
+🌐 **Languages**: [English](00-overview.md) | [Français](00-overview.fr.md)
+
 > **Reading time**: ~5 minutes
 
 ---

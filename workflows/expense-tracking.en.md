@@ -1,6 +1,6 @@
 # Workflow: Expense Tracking
 
-🌐 **Langues**: [Français](expense-tracking.md) | [English](expense-tracking.en.md)
+🌐 **Languages**: [English](expense-tracking.en.md) | [Français](expense-tracking.md)
 
 > **Estimated time**: 20 minutes
 > **Difficulty**: Intermediate
@@ -328,4 +328,4 @@ Save to ~/Cowork-Workspace/output/team-expenses.xlsx
 
 ---
 
-*[Back to Workflows](README.md) | [Cowork Documentation](../README.md)*
+*[Back to Workflows](README.en.md) | [Cowork Documentation](../README.md)*

@@ -1,5 +1,7 @@
 # Getting Started with Cowork
 
+🌐 **Languages**: [English](01-getting-started.md) | [Français](01-getting-started.fr.md)
+
 > **Reading time**: ~10 minutes
 >
 > **Goal**: Go from zero to your first successful Cowork workflow

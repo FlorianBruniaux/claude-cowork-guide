@@ -1,14 +1,14 @@
-# File Operations Prompts
+# Prompts d'opérations sur fichiers
 
-🌐 **Languages**: [English](file-ops.md) | [Français](file-ops.fr.md)
+🌐 **Langues** : [Français](file-ops.fr.md) | [English](file-ops.md)
 
-> **15+ ready-to-use prompts for file organization, renaming, and cleanup**
+> **15+ prompts prêts à l'emploi pour l'organisation, le renommage et le nettoyage de fichiers**
 
 ---
 
-## Organization Prompts
+## Prompts d'organisation
 
-### 1. Organize by File Type
+### 1. Organiser par type de fichier
 
 ```
 Organize all files in ~/Cowork-Workspace/input/ by file type.
@@ -27,7 +27,7 @@ Create a summary in ~/Cowork-Workspace/output/organization-report.txt showing:
 - Any files that couldn't be categorized
 ```
 
-### 2. Organize by Date
+### 2. Organiser par date
 
 ```
 Organize files in ~/Cowork-Workspace/input/ by date.
@@ -45,7 +45,7 @@ Move files to appropriate folders.
 Save summary to ~/Cowork-Workspace/output/date-organization.txt
 ```
 
-### 3. Organize by Project
+### 3. Organiser par projet
 
 ```
 Organize files in ~/Cowork-Workspace/input/ by project.
@@ -61,7 +61,7 @@ Save a project index to ~/Cowork-Workspace/output/project-index.md with:
 - Date range of files
 ```
 
-### 4. Organize Downloads Folder
+### 4. Organiser le dossier Téléchargements
 
 ```
 Organize my downloaded files in ~/Cowork-Workspace/input/downloads/
@@ -82,9 +82,9 @@ Report to ~/Cowork-Workspace/output/downloads-cleanup.txt
 
 ---
 
-## Renaming Prompts
+## Prompts de renommage
 
-### 5. Standardize Filenames
+### 5. Standardiser les noms de fichiers
 
 ```
 Rename files in ~/Cowork-Workspace/input/ to follow this pattern:
@@ -101,7 +101,7 @@ Create a rename log in ~/Cowork-Workspace/output/rename-log.csv with:
 Original Name, New Name, Date
 ```
 
-### 6. Add Prefix to Files
+### 6. Ajouter un préfixe aux fichiers
 
 ```
 Add prefix "[PROJECT-X]_" to all files in ~/Cowork-Workspace/input/
@@ -112,7 +112,7 @@ Example: document.pdf → [PROJECT-X]_document.pdf
 Log changes to ~/Cowork-Workspace/output/prefix-log.txt
 ```
 
-### 7. Sequential Numbering
+### 7. Numérotation séquentielle
 
 ```
 Rename files in ~/Cowork-Workspace/input/ with sequential numbers.
@@ -125,7 +125,7 @@ Start numbering at: 001
 Save mapping to ~/Cowork-Workspace/output/number-mapping.csv
 ```
 
-### 8. Remove Dates from Filenames
+### 8. Supprimer les dates des noms de fichiers
 
 ```
 Remove date patterns from filenames in ~/Cowork-Workspace/input/
@@ -142,9 +142,9 @@ Log changes to ~/Cowork-Workspace/output/date-removal-log.txt
 
 ---
 
-## Cleanup Prompts
+## Prompts de nettoyage
 
-### 9. Find Duplicates
+### 9. Trouver les doublons
 
 ```
 Find duplicate files in ~/Cowork-Workspace/input/
@@ -162,7 +162,7 @@ Create a report in ~/Cowork-Workspace/output/duplicates-report.md with:
 - Recommendation (which to keep)
 ```
 
-### 10. Archive Old Files
+### 10. Archiver les anciens fichiers
 
 ```
 Identify files older than [6 months / 1 year] in ~/Cowork-Workspace/input/
@@ -177,7 +177,7 @@ Create manifest in ~/Cowork-Workspace/output/archive-manifest.txt with:
 - Total size archived
 ```
 
-### 11. Find Large Files
+### 11. Trouver les fichiers volumineux
 
 ```
 Find files larger than [100MB / 500MB / 1GB] in ~/Cowork-Workspace/input/
@@ -192,7 +192,7 @@ Sort by size, largest first.
 Include total size of all large files.
 ```
 
-### 12. Empty Folder Cleanup
+### 12. Nettoyage des dossiers vides
 
 ```
 Find empty folders in ~/Cowork-Workspace/input/
@@ -207,9 +207,9 @@ Report to ~/Cowork-Workspace/output/empty-folders.txt with:
 
 ---
 
-## Filtering Prompts
+## Prompts de filtrage
 
-### 13. Extract by File Type
+### 13. Extraire par type de fichier
 
 ```
 Copy all [PDF / image / spreadsheet] files from ~/Cowork-Workspace/input/
@@ -220,7 +220,7 @@ Maintain original subfolder structure in destination.
 Create a list of extracted files in ~/Cowork-Workspace/output/extracted-files.txt
 ```
 
-### 14. Filter by Filename Pattern
+### 14. Filtrer par motif de nom de fichier
 
 ```
 Find all files matching pattern "*[pattern]*" in ~/Cowork-Workspace/input/
@@ -229,7 +229,7 @@ Copy matching files to ~/Cowork-Workspace/output/matching-files/
 Create a list with full paths in ~/Cowork-Workspace/output/pattern-matches.txt
 ```
 
-### 15. Filter by Content
+### 15. Filtrer par contenu
 
 ```
 Find all text files in ~/Cowork-Workspace/input/ containing "[search term]"
@@ -244,9 +244,9 @@ Copy matching files to ~/Cowork-Workspace/output/matching-content/
 
 ---
 
-## Utility Prompts
+## Prompts utilitaires
 
-### 16. Create Folder Structure
+### 16. Créer une structure de dossiers
 
 ```
 Create this folder structure in ~/Cowork-Workspace/input/:
@@ -267,7 +267,7 @@ Projects/
 Confirm structure created.
 ```
 
-### 17. File Inventory
+### 17. Inventaire de fichiers
 
 ```
 Create a complete inventory of ~/Cowork-Workspace/input/
@@ -289,11 +289,11 @@ Include summary sheet with:
 
 ---
 
-## Power User: Rule-Based Organization
+## Power User : Organisation basée sur des règles
 
-From real-world usage—complex sorting with explicit rules:
+Issu d'une utilisation réelle — tri complexe avec règles explicites :
 
-### 18. Multi-Rule Sorting System
+### 18. Système de tri multi-règles
 
 ```
 CONTEXT: My ~/Cowork-Workspace/input/downloads/ has 200+ files accumulated over months.
@@ -324,20 +324,20 @@ CONSTRAINTS:
 
 ---
 
-## Token Optimization for Large Operations
+## Optimisation des tokens pour les grandes opérations
 
-File organization consumes tokens rapidly. Optimize with these patterns:
+L'organisation de fichiers consomme rapidement des tokens. Optimisez avec ces stratégies :
 
-### Batching Strategy
+### Stratégie de traitement par lots
 
-| File Count | Approach | Why |
-|------------|----------|-----|
-| 1-20 | Single request | Fits easily |
-| 20-50 | 2-3 batched requests | Optimal efficiency |
-| 50-100 | Checkpoint every 20 | Recovery on failure |
-| 100+ | Sub-folder batches | Prevent context overflow |
+| Nombre de fichiers | Approche | Pourquoi |
+|-------------------|----------|----------|
+| 1-20 | Requête unique | Convient facilement |
+| 20-50 | 2-3 requêtes groupées | Efficacité optimale |
+| 50-100 | Checkpoint tous les 20 | Récupération en cas d'échec |
+| 100+ | Lots par sous-dossier | Évite le débordement de contexte |
 
-### 19. Optimized Large Batch Processing
+### 19. Traitement optimisé de grands lots
 
 ```
 CONTEXT: ~/Cowork-Workspace/input/ contains 80+ files to organize.
@@ -357,7 +357,7 @@ CONSTRAINTS:
 - Estimated total: 4-5 batches
 ```
 
-### 20. Resume After Interruption
+### 20. Reprendre après interruption
 
 ```
 CONTEXT: File organization was interrupted.
@@ -373,25 +373,25 @@ Mark completed items with [DONE].
 
 ---
 
-## Customization Notes
+## Notes de personnalisation
 
-**Replace placeholders:**
-- `~/Cowork-Workspace/input/` → Your actual input folder
-- `~/Cowork-Workspace/output/` → Your actual output folder
-- `[brackets]` → Your specific values
+**Remplacer les placeholders :**
+- `~/Cowork-Workspace/input/` → Votre dossier d'entrée réel
+- `~/Cowork-Workspace/output/` → Votre dossier de sortie réel
+- `[crochets]` → Vos valeurs spécifiques
 
-**Add constraints as needed:**
-- "Exclude hidden files"
-- "Process only top-level, not subfolders"
-- "Skip files larger than X"
-- "Only process files from last 30 days"
+**Ajouter des contraintes au besoin :**
+- "Exclure les fichiers cachés"
+- "Traiter uniquement le niveau supérieur, pas les sous-dossiers"
+- "Ignorer les fichiers de plus de X"
+- "Traiter uniquement les fichiers des 30 derniers jours"
 
-**Token budget awareness:**
-- Simple inventory: ~20K-30K tokens
-- Small organization (10-20 files): ~30K-50K tokens
-- Large organization (50+ files): ~80K-150K tokens
-- Pro tier: Plan for 1-2 large operations per 5-hour window
+**Conscience du budget de tokens :**
+- Inventaire simple : ~20K-30K tokens
+- Petite organisation (10-20 fichiers) : ~30K-50K tokens
+- Grande organisation (50+ fichiers) : ~80K-150K tokens
+- Tier Pro : Prévoir 1-2 grandes opérations par fenêtre de 5 heures
 
 ---
 
-*[Back to Prompts Index](README.md) | [Cowork Documentation](../README.md)*
+*[Retour à l'index des prompts](README.md) | [Documentation Cowork](../README.md)*

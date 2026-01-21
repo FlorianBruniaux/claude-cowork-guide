@@ -1,5 +1,7 @@
 # Cowork Troubleshooting Guide
 
+🌐 **Languages**: [English](04-troubleshooting.md) | [Français](04-troubleshooting.fr.md)
+
 > **Reading time**: ~8 minutes
 >
 > **Purpose**: Diagnose and resolve common Cowork issues
