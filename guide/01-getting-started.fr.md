@@ -17,7 +17,24 @@ Avant de commencer, assurez-vous d'avoir :
 | **Abonnement Pro ou Max** | claude.ai → Paramètres → Abonnement affiche "Pro" ou "Max" |
 | **macOS** | Menu Apple → À propos de ce Mac |
 | **Application Claude Desktop** | Dossier Applications ou recherche Spotlight |
-| **Dernière version de l'app** | Claude Desktop → Vérifier les mises à jour |
+| **Dernière version de l'app** | Voir les étapes de vérification ci-dessous ⚠️ |
+
+### ⚠️ Vérifiez que vous avez la dernière version de Claude Desktop
+
+**Critique** : Cowork nécessite la dernière version de Claude Desktop. Si vous ne voyez pas "Cowork" dans le sélecteur de mode en haut de l'application, votre version est obsolète.
+
+**Comment vérifier :**
+
+1. Ouvrez l'application Claude Desktop
+2. Regardez en haut de la barre latérale — vous devriez voir trois modes :
+   ```
+   Chat    Cowork    Code
+   ```
+3. Si vous **ne voyez pas "Cowork"**, mettez à jour votre application :
+   - Allez dans le menu Claude Desktop → **Vérifier les mises à jour**
+   - Ou téléchargez la dernière version depuis [claude.ai/download](https://claude.ai/download)
+
+> **Documentation officielle** : Pour une aide supplémentaire, consultez le [guide de démarrage Cowork d'Anthropic](https://support.claude.com/en/articles/13345190-getting-started-with-cowork)
 
 ### Niveaux d'abonnement
 
@@ -65,13 +82,26 @@ Après l'activation, vous devriez voir :
 
 ### 2.1 Créer un dossier dédié
 
+**Option A : Via le Finder (recommandé pour débutants)**
+
+1. Ouvrez le **Finder**
+2. Dans la barre de menu, cliquez sur **Aller** → **Dossier de départ** (ou appuyez sur `Cmd + Shift + H`)
+3. Créez un nouveau dossier : clic droit → **Nouveau dossier**
+4. Nommez-le `Cowork-Workspace`
+5. Ouvrez ce dossier
+6. À l'intérieur, créez deux sous-dossiers :
+   - `input` (pour les fichiers à traiter)
+   - `output` (pour les résultats générés)
+
+**Option B : Via Terminal (utilisateurs avancés)**
+
 Ouvrez Terminal et exécutez :
 
 ```bash
 mkdir -p ~/Cowork-Workspace/{input,output}
 ```
 
-Cela crée :
+**Résultat attendu :**
 ```
 ~/Cowork-Workspace/
 ├── input/    # Fichiers que vous voulez traiter
@@ -101,7 +131,23 @@ Faisons un workflow simple mais complet pour vérifier que tout fonctionne.
 
 ### 3.1 Préparer des fichiers de test
 
-Créez quelques fichiers de test dans votre dossier input :
+**Option A : Via le Finder et TextEdit (recommandé pour débutants)**
+
+1. Ouvrez le Finder et naviguez vers `Cowork-Workspace/input/`
+2. Pour chaque fichier à créer :
+   - Ouvrez **TextEdit** (dans Applications → TextEdit)
+   - Tapez le contenu (voir liste ci-dessous)
+   - **Format** → **Convertir au format Texte** (important !)
+   - **Fichier** → **Enregistrer**
+   - Choisissez le dossier `input/` et donnez le nom approprié
+
+**Fichiers à créer :**
+- `reunion-lundi.txt` → "Notes de réunion de lundi"
+- `reunion-mercredi.txt` → "Notes de réunion de mercredi"
+- `statut-projet.txt` → "Mise à jour du statut du projet"
+- `notes-diverses.txt` → "Réflexions diverses"
+
+**Option B : Via Terminal (utilisateurs avancés)**
 
 ```bash
 cd ~/Cowork-Workspace/input
@@ -131,14 +177,22 @@ par catégorie. Crée un résumé de ce que tu as organisé dans le dossier outp
 
 ### 3.4 Vérifier les résultats
 
-Vérifiez le résultat :
+**Option A : Via le Finder**
+
+1. Ouvrez le Finder
+2. Naviguez vers `Cowork-Workspace/input/`
+3. Vérifiez que des sous-dossiers ont été créés (par exemple : "Réunions", "Projets"...)
+4. Naviguez vers `Cowork-Workspace/output/`
+5. Vérifiez qu'un fichier résumé a été créé
+
+**Option B : Via Terminal**
 
 ```bash
 ls -la ~/Cowork-Workspace/input/
 ls -la ~/Cowork-Workspace/output/
 ```
 
-Vous devriez voir :
+**Résultat attendu :**
 - Des sous-dossiers organisés dans `input/`
 - Un fichier résumé dans `output/`
 
@@ -288,9 +342,12 @@ avec un tableau comparatif.
 
 ### "Option Cowork non visible"
 
-1. Mettez à jour Claude Desktop vers la dernière version
-2. Vérifiez Paramètres → Fonctionnalités → assurez-vous que Cowork est activé
-3. Redémarrez l'application
+**Cause la plus fréquente** : Version de l'application obsolète.
+
+1. **Vérifiez votre version** — Voir la section [Prérequis](#️-vérifiez-que-vous-avez-la-dernière-version-de-claude-desktop) ci-dessus
+2. Si vous ne voyez pas "Chat | Cowork | Code" en haut, mettez à jour votre application
+3. Après la mise à jour, vérifiez Paramètres → Fonctionnalités → assurez-vous que Cowork est activé
+4. Redémarrez l'application
 
 ### "Le plan semble incorrect"
 

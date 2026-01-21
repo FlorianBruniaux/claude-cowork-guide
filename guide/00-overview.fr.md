@@ -8,7 +8,19 @@
 
 ## Qu'est-ce que Cowork ?
 
-**Cowork** est la fonctionnalité desktop agentique de Claude qui étend les capacités d'IA autonome aux utilisateurs non techniques via l'application Claude Desktop. Au lieu de commandes terminal, Cowork accède directement aux dossiers et fichiers locaux.
+### En termes simples
+
+Imaginez un assistant de bureau très compétent qui :
+- Peut lire tous les documents que vous lui donnez (factures, rapports, notes...)
+- Comprend ce que vous lui demandez en français
+- Organise, trie, résume et crée des documents à votre place
+- Travaille uniquement dans un dossier que vous lui autorisez
+
+**Cowork, c'est cet assistant**. Mais au lieu d'être une personne, c'est l'intelligence artificielle Claude qui accède directement à un dossier de votre ordinateur.
+
+### Version technique
+
+**Cowork** est la fonctionnalité desktop autonome (agentique) de Claude qui étend les capacités d'IA autonome aux professionnels non-développeurs (knowledge workers) via l'application Claude Desktop. Au lieu de commandes terminal, Cowork accède directement aux dossiers et fichiers locaux.
 
 ### Faits clés
 
@@ -152,16 +164,22 @@ Comprendre les limitations est crucial pour une utilisation efficace :
 
 ## Modèle mental
 
-Pensez à Cowork comme un **assistant très capable avec accès physique à un dossier** :
+### L'analogie de l'atelier
 
-- Peut lire n'importe quel fichier que vous y mettez
-- Peut créer de nouveaux fichiers dans n'importe quel format
-- Peut réorganiser, renommer, transformer
-- Ne peut pas quitter ce dossier sans permission
-- Ne peut pas exécuter de programmes ou scripts
-- Ne peut pas faire de connexions réseau directement
+Pensez à Cowork comme un **artisan qualifié travaillant dans son propre atelier** :
 
-Cette contrainte est une **fonctionnalité, pas un bug** — elle crée un sandbox sûr pour l'opération autonome.
+**Ce qu'il peut faire :**
+- Lire tous les documents que vous déposez dans son atelier (le dossier autorisé)
+- Créer de nouveaux documents dans n'importe quel format (Excel, Word, PDF...)
+- Réorganiser, renommer, transformer vos fichiers
+- Travailler rapidement sur des centaines de documents à la fois
+
+**Ce qu'il ne peut PAS faire :**
+- Sortir de son atelier pour aller chercher des fichiers ailleurs sur votre ordinateur
+- Exécuter des programmes ou scripts (ce n'est pas un développeur)
+- Se connecter à Internet directement (sauf si vous lui donnez accès à votre navigateur)
+
+**Pourquoi cette limite ?** C'est une sécurité volontaire. Comme un atelier avec une seule porte, vous contrôlez exactement ce qui entre et ce qui sort. Cette contrainte crée un espace de travail isolé (sandbox) sûr pour laisser Claude travailler de façon autonome.
 
 ---
 

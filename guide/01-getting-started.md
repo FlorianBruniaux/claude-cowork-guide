@@ -17,7 +17,24 @@ Before starting, ensure you have:
 | **Pro or Max subscription** | claude.ai → Settings → Subscription shows "Pro" or "Max" |
 | **macOS** | Apple menu → About This Mac |
 | **Claude Desktop app** | Applications folder or Spotlight search |
-| **Latest app version** | Claude Desktop → Check for Updates |
+| **Latest app version** | See verification steps below ⚠️ |
+
+### ⚠️ Verify You Have the Latest Claude Desktop Version
+
+**Critical**: Cowork requires the latest version of Claude Desktop. If you don't see "Cowork" in the mode selector at the top of the app, your version is outdated.
+
+**How to verify:**
+
+1. Open Claude Desktop app
+2. Look at the top of the sidebar — you should see three modes:
+   ```
+   Chat    Cowork    Code
+   ```
+3. If you **don't see "Cowork"**, update your app:
+   - Go to Claude Desktop menu → **Check for Updates**
+   - Or download the latest version from [claude.ai/download](https://claude.ai/download)
+
+> **Official Documentation**: For additional help, see [Anthropic's Getting Started with Cowork guide](https://support.claude.com/en/articles/13345190-getting-started-with-cowork)
 
 ### Subscription Tiers
 
@@ -288,9 +305,12 @@ with a comparison table.
 
 ### "Cowork option not visible"
 
-1. Update Claude Desktop to latest version
-2. Check Settings → Features → ensure Cowork is enabled
-3. Restart the app
+**Most common cause**: Outdated app version.
+
+1. **Verify your version** — See [Prerequisites](#️-verify-you-have-the-latest-claude-desktop-version) above
+2. If you don't see "Chat | Cowork | Code" at the top, update your app
+3. After updating, check Settings → Features → ensure Cowork is enabled
+4. Restart the app
 
 ### "Plan seems wrong"
 

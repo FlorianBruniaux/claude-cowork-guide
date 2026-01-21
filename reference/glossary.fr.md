@@ -6,6 +6,30 @@
 
 ---
 
+## Vocabulaire simplifié (pour non-techniques)
+
+Ce guide utilise parfois des termes techniques. Voici leur équivalent simple :
+
+| Terme technique | Équivalent simple | Analogie du monde réel |
+|----------------|-------------------|------------------------|
+| **Workflow** | Procédure guidée | Comme une recette de cuisine : étapes dans l'ordre |
+| **Prompt** | Instruction à Claude | Comme une demande à un assistant |
+| **Token** | Unité de texte (~4 caractères) | Comme compter les mots dans un contrat |
+| **Sandbox** | Espace de travail isolé | Comme un atelier séparé de votre maison |
+| **Agentique / Autonome** | Peut travailler seul | Comme un employé expérimenté qui sait quoi faire |
+| **OCR** | Lecture de photos/scans | Comme recopier un document papier à la main |
+| **Prompt injection** | Fichier piège | Comme un faux bon de commande glissé dans votre pile |
+| **Orchestrateur** | Coordinateur | Comme un chef d'équipe qui distribue le travail |
+| **Sous-agent** | Assistant spécialisé | Comme un plombier vs un électricien |
+| **Context limit** | Limite de mémoire | Comme la capacité d'un disque dur |
+| **Preview** | Version test | Comme un prototype avant la version finale |
+| **Template** | Modèle | Comme un formulaire pré-rempli |
+| **Knowledge worker** | Professionnel non-développeur | Chef de projet, consultant, analyste... |
+
+**Règle de lecture** : À la première mention d'un terme technique, vous verrez : *terme simple (terme technique)*. Ensuite, seul le terme simple sera utilisé.
+
+---
+
 ## A
 
 ### Agentique (Agentic)
