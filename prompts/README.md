@@ -1,5 +1,7 @@
 # Cowork Prompt Library
 
+🌐 **Languages**: [English](README.md) | [Français](README.fr.md)
+
 > **Ready-to-use prompts organized by category**
 
 ---

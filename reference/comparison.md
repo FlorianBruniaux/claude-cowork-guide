@@ -1,5 +1,7 @@
 # Claude Products Comparison
 
+🌐 **Languages**: [English](comparison.md) | [Français](comparison.fr.md)
+
 > **Purpose**: Choose the right Claude interface for your task
 
 ---

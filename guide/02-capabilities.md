@@ -1,5 +1,7 @@
 # Cowork Capabilities
 
+🌐 **Languages**: [English](02-capabilities.md) | [Français](02-capabilities.fr.md)
+
 > **Reading time**: ~8 minutes
 >
 > **Purpose**: Understand exactly what Cowork can and cannot do

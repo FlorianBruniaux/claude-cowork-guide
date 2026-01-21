@@ -1,5 +1,7 @@
 # Cowork Security Guide
 
+🌐 **Languages**: [English](03-security.md) | [Français](03-security.fr.md)
+
 > **Reading time**: ~12 minutes
 >
 > **Status**: No official security documentation exists. This guide reflects community best practices.

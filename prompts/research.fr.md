@@ -1,14 +1,14 @@
-# Research Prompts
+# Prompts de Recherche
 
-🌐 **Languages**: [English](research.md) | [Français](research.fr.md)
+🌐 **Langues** : [Français](research.fr.md) | [English](research.md)
 
-> **10+ ready-to-use prompts for web research and information synthesis**
+> **10+ prompts prêts à l'emploi pour la recherche web et la synthèse d'informations**
 
 ---
 
-## Competitive Analysis Prompts
+## Prompts d'Analyse Concurrentielle
 
-### 1. Basic Competitive Research
+### 1. Recherche Concurrentielle de Base
 
 ```
 Research the top 5 competitors in [industry/market].
@@ -25,7 +25,7 @@ Create comparison table.
 Save to: ~/Cowork-Workspace/output/competitive-analysis.md
 ```
 
-### 2. Detailed Competitor Profile
+### 2. Profil Détaillé de Concurrent
 
 ```
 Create a detailed profile for [Company Name].
@@ -56,7 +56,7 @@ Research:
 Save to: ~/Cowork-Workspace/output/[company]-profile.docx
 ```
 
-### 3. Pricing Research
+### 3. Recherche de Prix
 
 ```
 Research pricing for [product/service category].
@@ -76,9 +76,9 @@ Save to: ~/Cowork-Workspace/output/pricing-research.xlsx
 
 ---
 
-## Topic Research Prompts
+## Prompts de Recherche Thématique
 
-### 4. General Topic Research
+### 4. Recherche Générale sur un Sujet
 
 ```
 Research [topic] and create a comprehensive overview.
@@ -108,7 +108,7 @@ Include:
 Save to: ~/Cowork-Workspace/output/[topic]-research.md
 ```
 
-### 5. Technology/Tool Evaluation
+### 5. Évaluation de Technologie/Outil
 
 ```
 Evaluate [technology/tool type] options for [use case].
@@ -127,7 +127,7 @@ Provide recommendation with rationale.
 Save to: ~/Cowork-Workspace/output/[technology]-evaluation.md
 ```
 
-### 6. Trend Analysis
+### 6. Analyse de Tendances
 
 ```
 Research trends in [industry/topic] for [year/period].
@@ -159,9 +159,9 @@ Save to: ~/Cowork-Workspace/output/trend-analysis.md
 
 ---
 
-## Market Research Prompts
+## Prompts d'Étude de Marché
 
-### 7. Market Overview
+### 7. Vue d'Ensemble du Marché
 
 ```
 Create a market overview for [market/industry].
@@ -193,7 +193,7 @@ Research:
 Save to: ~/Cowork-Workspace/output/market-overview.docx
 ```
 
-### 8. Customer Research Summary
+### 8. Synthèse de Recherche Client
 
 ```
 Research customer perspectives on [product/service/topic].
@@ -217,9 +217,9 @@ Save to: ~/Cowork-Workspace/output/customer-research.md
 
 ---
 
-## Professional Research Prompts
+## Prompts de Recherche Professionnelle
 
-### 9. Person/Speaker Research
+### 9. Recherche sur une Personne/Intervenant
 
 ```
 Research [Person Name] for [meeting/event] preparation.
@@ -237,7 +237,7 @@ Create briefing document.
 Save to: ~/Cowork-Workspace/output/[name]-profile.md
 ```
 
-### 10. Event/Conference Research
+### 10. Recherche sur un Événement/Conférence
 
 ```
 Research [Event/Conference Name].
@@ -258,9 +258,9 @@ Save to: ~/Cowork-Workspace/output/[event]-research.md
 
 ---
 
-## Synthesis Prompts
+## Prompts de Synthèse
 
-### 11. Literature Review
+### 11. Revue de Littérature
 
 ```
 Create a literature review from documents in ~/Cowork-Workspace/input/papers/
@@ -291,7 +291,7 @@ Structure:
 Save to: ~/Cowork-Workspace/output/literature-review.docx
 ```
 
-### 12. Research Synthesis
+### 12. Synthèse de Recherche
 
 ```
 Synthesize research from:
@@ -311,9 +311,9 @@ Save to: ~/Cowork-Workspace/output/research-synthesis.md
 
 ---
 
-## Quick Research Prompts
+## Prompts de Recherche Rapide
 
-### 13. Quick Facts
+### 13. Faits Rapides
 
 ```
 Research quick facts about [company/product/topic].
@@ -328,7 +328,7 @@ Format: Bullet points
 Save to: ~/Cowork-Workspace/output/quick-facts.md
 ```
 
-### 14. FAQ Research
+### 14. Recherche FAQ
 
 ```
 Research common questions about [topic].
@@ -344,13 +344,13 @@ Save to: ~/Cowork-Workspace/output/faq.md
 
 ---
 
-## Power User: Content Analysis Workflows
+## Power User : Workflows d'Analyse de Contenu
 
-Real-world examples from professional users:
+Exemples concrets d'utilisateurs professionnels :
 
-### 15. Podcast/Interview Analysis
+### 15. Analyse de Podcast/Interview
 
-From a newsletter creator's workflow analyzing podcast transcripts:
+D'un workflow de créateur de newsletter analysant des transcriptions de podcasts :
 
 ```
 CONTEXT: I have podcast transcript(s) in ~/Cowork-Workspace/input/podcasts/
@@ -388,9 +388,9 @@ CONSTRAINTS:
 - Note recurring themes across episodes
 ```
 
-### 16. Multi-Source Research Synthesis
+### 16. Synthèse de Recherche Multi-Sources
 
-For comprehensive analysis combining local docs with web research:
+Pour une analyse complète combinant documents locaux et recherche web :
 
 ```
 CONTEXT:
@@ -419,9 +419,9 @@ CONSTRAINTS:
 - Flag outdated information
 ```
 
-### 17. Market Research to PRD
+### 17. Étude de Marché vers PRD
 
-For product managers converting research into specifications:
+Pour les product managers convertissant la recherche en spécifications :
 
 ```
 CONTEXT: Market research notes in ~/Cowork-Workspace/input/market-research/
@@ -449,28 +449,28 @@ CONSTRAINTS:
 
 ---
 
-## Customization Notes
+## Notes de Personnalisation
 
-**Research depth:**
+**Profondeur de recherche :**
 - "Quick overview (15 minutes research)"
 - "Standard depth (30-60 minutes)"
 - "Comprehensive (thorough analysis)"
 
-**Source preferences:**
+**Préférences de sources :**
 - "Focus on official sources"
 - "Include industry publications"
 - "Prioritize recent sources (last 12 months)"
 
-**Format preferences:**
+**Préférences de format :**
 - "Executive brief (1 page max)"
 - "Detailed report (no length limit)"
 - "Comparison matrix format"
 
-**Quality controls:**
+**Contrôles qualité :**
 - "Include source URLs"
 - "Note information date/freshness"
 - "Flag uncertain information"
 
 ---
 
-*[Back to Prompts Index](README.md) | [Cowork Documentation](../README.md)*
+*[Retour à l'Index des Prompts](README.md) | [Documentation Cowork](../README.md)*
