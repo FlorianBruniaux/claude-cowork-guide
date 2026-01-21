@@ -1,6 +1,6 @@
 # Workflow: Team Handoff (Dev ↔ Non-Dev)
 
-🌐 **Langues**: [Français](team-handoff.md) | [English](team-handoff.en.md)
+🌐 **Languages**: [English](team-handoff.en.md) | [Français](team-handoff.md)
 
 > **Estimated time**: 30 minutes
 > **Difficulty**: Advanced
@@ -407,4 +407,4 @@ Save to ~/Shared/docs/notifications-release.docx
 
 ---
 
-*[Back to Workflows](README.md) | [Cowork Documentation](../README.md)*
+*[Back to Workflows](README.en.md) | [Cowork Documentation](../README.md)*

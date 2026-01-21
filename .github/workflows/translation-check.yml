@@ -1,0 +1,86 @@
+name: Translation Sync Check
+
+on:
+  push:
+    branches:
+      - main
+      - 'feature/**'
+    paths:
+      - '**.md'
+      - '!TRANSLATIONS.md'
+  pull_request:
+    paths:
+      - '**.md'
+      - '!TRANSLATIONS.md'
+
+jobs:
+  check-translations:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for accurate timestamps
+
+      - name: Run translation check
+        id: check
+        run: |
+          chmod +x ./scripts/check-translations.sh
+          if ./scripts/check-translations.sh; then
+            echo "status=success" >> $GITHUB_OUTPUT
+            echo "All translations are synchronized ✅" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "status=failure" >> $GITHUB_OUTPUT
+            echo "## ⚠️ Translation Synchronization Issues Detected" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "Some translations are outdated or missing. Please:" >> $GITHUB_STEP_SUMMARY
+            echo "1. Review the check output above" >> $GITHUB_STEP_SUMMARY
+            echo "2. Update outdated translations" >> $GITHUB_STEP_SUMMARY
+            echo "3. Create missing translations" >> $GITHUB_STEP_SUMMARY
+            echo "4. Update \`TRANSLATIONS.md\` with sync dates" >> $GITHUB_STEP_SUMMARY
+            exit 0  # Don't fail the build, just warn
+          fi
+
+      - name: Comment on PR (if applicable)
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const status = '${{ steps.check.outputs.status }}';
+
+            if (status === 'failure') {
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: `## ⚠️ Translation Check Warning
+
+                Some translations may be outdated or missing. Please review the [workflow run](${context.payload.repository.html_url}/actions/runs/${context.runId}) for details.
+
+                **Action required:**
+                - Update outdated translations
+                - Create missing translations
+                - Update \`TRANSLATIONS.md\` with sync dates
+
+                See [TRANSLATIONS.md](${context.payload.repository.html_url}/blob/${context.payload.pull_request.head.ref}/TRANSLATIONS.md) for current status.`
+              })
+            } else {
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: `## ✅ Translation Check Passed
+
+                All translations are synchronized!`
+              })
+            }
+
+      - name: Upload check results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: translation-check-results
+          path: |
+            TRANSLATIONS.md
+          retention-days: 30
