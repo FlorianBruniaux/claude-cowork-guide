@@ -3,12 +3,12 @@
 🌐 **Langues** : [Français](README.fr.md) | [English](README.md)
 
 <p align="center">
-  <strong><a href="https://florianbruniaux.github.io/claude-cowork-guide-landing/">🌐 Site officiel</a></strong>
+  <strong><a href="https://florianbruniaux.github.io/claude-cowork-guide-landing/index.fr.html">🌐 Site officiel</a></strong>
 </p>
 
 <p align="center">
   <a href="https://github.com/FlorianBruniaux/claude-cowork-guide/stargazers"><img src="https://img.shields.io/github/stars/FlorianBruniaux/claude-cowork-guide?style=social" alt="Stars"/></a>
-  <a href="./workflows/"><img src="https://img.shields.io/badge/Workflows-43-green" alt="Workflows"/></a>
+  <a href="./workflows/"><img src="https://img.shields.io/badge/Workflows-25-green" alt="Workflows"/></a>
   <a href="./prompts/"><img src="https://img.shields.io/badge/Prompts-70-blue" alt="Prompts"/></a>
 </p>
 
