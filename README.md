@@ -1,5 +1,7 @@
 # Claude Cowork Guide
 
+🌐 **Languages**: [English](README.md) | [Français](README.fr.md)
+
 <p align="center">
   <strong><a href="https://florianbruniaux.github.io/claude-cowork-guide-landing/">🌐 Official Website</a></strong>
 </p>
