@@ -19,7 +19,7 @@
 
 <p align="center">
   <a href="https://github.com/FlorianBruniaux/claude-cowork-guide/stargazers"><img src="https://img.shields.io/github/stars/FlorianBruniaux/claude-cowork-guide?style=social" alt="Stars"/></a>
-  <a href="./workflows/"><img src="https://img.shields.io/badge/Workflows-25-green" alt="Workflows"/></a>
+  <a href="./workflows/"><img src="https://img.shields.io/badge/Workflows-26-green" alt="Workflows"/></a>
   <a href="./prompts/"><img src="https://img.shields.io/badge/Prompts-70-blue" alt="Prompts"/></a>
 </p>
 
@@ -27,7 +27,7 @@
   <img src="https://img.shields.io/badge/Status-Research%20Preview-yellow" alt="Status"/>
   <img src="https://img.shields.io/badge/Platform-macOS-blue" alt="Platform"/>
   <img src="https://img.shields.io/badge/Subscription-Pro%20%26%20Max-purple" alt="Subscription"/>
-  <img src="https://img.shields.io/badge/Version-1.1.0-orange" alt="Version"/>
+  <img src="https://img.shields.io/badge/Version-1.2.0-orange" alt="Version"/>
 </p>
 
 > Guide complet de l'assistant desktop de Claude pour les travailleurs du savoir et les petites entreprises.

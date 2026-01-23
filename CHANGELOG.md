@@ -7,6 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-01-23
+
+### Added
+
+**New Workflow: Website Audit**
+- **website-audit.md / .en.md**: Audit site vitrine TPE/PME
+  - Grille d'évaluation 25 points (contact, clarté, confiance, CTA, technique)
+  - Plan d'action priorisé (urgences, améliorations, optimisations)
+  - Benchmark concurrentiel
+  - Variations: audit express, e-reputation, pré-refonte, multi-sites
+
+**Email Sequences (email-templates.md)**
+- Section "Séquences Automatisées" avec 2 séquences complètes:
+  - Relance Devis (4 emails: J+0 envoi, J+3 soft, J+7 deadline, J+14 clôture)
+  - Réactivation Clients Dormants (3 emails)
+- Tableau de suivi Excel avec formules
+
+**Local Visibility Audit (competitor-analysis.md)**
+- Section "Audit Visibilité Locale (Google My Business)"
+  - Comparaison note/avis/photos/réponses vs concurrents
+  - Diagnostic et plan d'action
+- Section "Benchmark SEO local simplifié"
+  - Positionnement mots-clés locaux
+  - Actions SEO basiques sans expert
+
+### Changed
+- workflows/README.md: 25 → 26 workflows, catégorie Communication 5 → 6
+- workflows/README.en.md: même mise à jour
+- README.md / README.fr.md: badges mis à jour (26 workflows, v1.2.0)
+
 ### Fixed
 - README.md/README.fr.md: Correct workflow count from 43 to 25 (3 occurrences each)
 - reference/cheatsheet.md: Update version from v1.0 to v1.1.0

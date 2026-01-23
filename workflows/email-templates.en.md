@@ -562,6 +562,145 @@ Save result to library
 
 ---
 
+## Automated Sequences
+
+### Quote Follow-Up Sequence (4 emails)
+
+The highest-ROI sequence for small businesses: systematically follow up on unanswered quotes.
+
+**Reality check**: An unfollowed quote = 60-80% lost opportunity. A structured sequence recovers 20-30% of "lost" quotes.
+
+```
+Create complete quote follow-up sequence:
+
+CONTEXT: Small business/tradesperson sending quotes and wanting to maximize conversion
+
+4-EMAIL SEQUENCE:
+
+EMAIL 1 - Day 0 (Initial send)
+Objective: Accompany the quote, create soft urgency
+Tone: Professional, enthusiastic
+Structure:
+- Thank them for the inquiry
+- Quote attached (summary: [amount], [validity])
+- Available for questions
+- CTA: "Reply to this email to confirm"
+
+EMAIL 2 - Day 3 (Soft follow-up)
+Objective: Verify receipt, address objections
+Tone: Helpful, not salesy
+Structure:
+- "Did you receive my quote?"
+- Offer to clarify any points
+- CTA: "Questions? I'll call you back"
+
+EMAIL 3 - Day 7 (Deadline reminder)
+Objective: Create urgency, offer alternative
+Tone: Direct but friendly
+Structure:
+- Reminder quote expires [date]
+- Calendar filling up ("limited slots this month")
+- Option B if budget is tight
+- CTA: "Confirm by [date] to lock in the schedule"
+
+EMAIL 4 - Day 14 (Final follow-up)
+Objective: Close professionally, keep door open
+Tone: Professional, no resentment
+Structure:
+- "I'm closing this file unless I hear back"
+- No reproach
+- Invitation to reconnect later
+- CTA: "Feel free to reach out anytime"
+
+Variables for all:
+- [client_name]
+- [project_description]
+- [quote_amount]
+- [quote_number]
+- [expiration_date]
+- [your_name]
+
+Format: 4 separate files
+Save: ~/Cowork-Workspace/email-templates/quote-followup-sequence/
+```
+
+### Using the sequence
+
+**Option 1: Manual (calendar reminders)**
+
+```
+I sent a quote to [client name] on [date].
+
+Set up reminders for me:
+- Day 3: Soft follow-up
+- Day 7: Deadline reminder
+- Day 14: Final close
+
+For each reminder, prepare personalized email ready to copy
+based on templates in ~/Cowork-Workspace/email-templates/quote-followup-sequence/
+```
+
+**Option 2: Tracking spreadsheet**
+
+```
+Create Excel quote follow-up tracker:
+
+Columns:
+- Quote number
+- Client
+- Amount
+- Date sent
+- Status (Pending / Followed D+3 / Followed D+7 / Closed / Accepted / Declined)
+- Next action
+- Next action date
+- Notes
+
+Formulas:
+- Red conditional formatting if date overdue
+- Conversion rate calculation
+
+Save: ~/Cowork-Workspace/output/quote-followup-tracker.xlsx
+```
+
+### Dormant Client Reactivation Sequence
+
+For clients with no order in 6+ months:
+
+```
+Create dormant client reactivation sequence (3 emails):
+
+EMAIL 1 - "Checking in"
+Objective: Reconnect without selling
+Tone: Personal, genuine
+- "It's been a while..."
+- Ask about their projects
+- No commercial CTA
+
+EMAIL 2 (Day 7) - "News/offer"
+Objective: Give reason to return
+Tone: Informative
+- New service/equipment/capability
+- "Loyal customer" promo if applicable
+- CTA: "Interested? Reply to this email"
+
+EMAIL 3 (Day 14) - "Last chance"
+Objective: Limited offer + close
+Tone: Direct
+- Recap offer
+- Limited validity
+- "If I don't hear back, I'll assume timing isn't right"
+
+Variables:
+- [client_first_name]
+- [last_service] (description + date)
+- [special_offer]
+- [deadline]
+
+Save: ~/Cowork-Workspace/email-templates/reactivation-sequence/
+```
+
+---
+
 ## Troubleshooting
 
 ### Templates feel impersonal (robotic)

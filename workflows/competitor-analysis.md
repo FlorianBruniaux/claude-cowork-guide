@@ -499,6 +499,121 @@ ROUTINE MENSUELLE (30 min):
 Compilation: ~/Cowork-Workspace/veille/concurrence/veille-mensuelle-[mois].pdf
 ```
 
+### Audit Visibilité Locale (Google My Business)
+
+Comparez votre présence locale avec la concurrence:
+
+```
+Audit visibilité locale Google My Business:
+
+MA RECHERCHE: "[mon métier] [ma ville]"
+Exemple: "plombier Lyon 3"
+
+ANALYSE TOP 5 RÉSULTATS (hors annonces):
+
+Pour chaque concurrent (+ moi):
+══════════════════════════════════════
+
+CONCURRENT 1: [Nom]
+Google My Business:
+- Note moyenne: ⭐ X.X/5
+- Nombre d'avis: X avis
+- Dernier avis: [date]
+- Photos: X photos (récentes? professionnelles?)
+- Horaires renseignés: OUI/NON
+- Services listés: OUI/NON
+- Réponses aux avis: OUI/NON (ratio réponses)
+- Site web lié: OUI/NON
+- Catégorie principale: [...]
+
+Position Pack Local: #X (sur Maps)
+
+══════════════════════════════════════
+
+MOI: [Mon entreprise]
+[Mêmes critères]
+
+══════════════════════════════════════
+
+TABLEAU COMPARATIF:
+
+| Critère | Moi | Concurrent 1 | Concurrent 2 | Concurrent 3 |
+|---------|-----|--------------|--------------|--------------|
+| Note /5 | | | | |
+| Nb avis | | | | |
+| Fraîcheur avis | | | | |
+| Nb photos | | | | |
+| Répond aux avis | | | | |
+| Position Maps | | | | |
+
+DIAGNOSTIC:
+
+Si note inférieure:
+→ Plan collecte avis (workflow Réponses Avis Clients)
+
+Si moins d'avis:
+→ Demander systématiquement après chaque intervention
+
+Si photos insuffisantes:
+→ Routine photo chantier (1 avant/après par semaine)
+
+Si pas de réponses aux avis:
+→ Répondre à 100% des avis (positifs ET négatifs)
+
+Si position Maps faible:
+→ Optimiser fiche (catégories, services, horaires, photos)
+
+PLAN D'ACTION VISIBILITÉ LOCALE:
+
+Semaine 1-2: [Actions urgentes]
+Mois 1: [Actions importantes]
+Trimestre: [Objectif avis/photos]
+
+Sauvegarde: ~/Cowork-Workspace/veille/concurrence/audit-visibilite-locale-[date].pdf
+```
+
+### Benchmark SEO local simplifié
+
+```
+Comparer positionnement Google (recherche organique):
+
+MOTS-CLÉS À TESTER (recherche Google):
+1. "[métier] + [ville]" (ex: "électricien Marseille")
+2. "[métier] + [quartier]" (ex: "plombier Vieux-Port")
+3. "[service spécifique] + [ville]" (ex: "dépannage chaudière Lyon")
+4. "[métier] + urgence + [ville]" (ex: "serrurier urgence Paris 15")
+
+POUR CHAQUE RECHERCHE:
+
+Position organique (page 1 = top 10):
+- Mon site: Position #X (ou "Non trouvé page 1")
+- Concurrent 1: Position #X
+- Concurrent 2: Position #X
+- Concurrent 3: Position #X
+
+TABLEAU RÉCAPITULATIF:
+
+| Mot-clé | Moi | C1 | C2 | C3 | Volume estimé |
+|---------|-----|----|----|----| --------------|
+| [métier ville] | #? | | | | Élevé |
+| [métier quartier] | #? | | | | Moyen |
+| [service ville] | #? | | | | Moyen |
+| [urgence ville] | #? | | | | Faible mais lucratif |
+
+ANALYSE:
+- Mots-clés où je suis bien positionné: [...]
+- Mots-clés où je suis absent: [...]
+- Opportunités (concurrence faible): [...]
+
+ACTIONS SEO BASIQUES (sans expert):
+1. Titre pages = "[Service] [Ville] - [Nom entreprise]"
+2. Texte = mentionner ville/quartier naturellement
+3. Google My Business = optimiser à 100%
+4. Avis Google = plus d'avis = meilleur classement local
+
+Sauvegarde: ~/Cowork-Workspace/veille/concurrence/benchmark-seo-local-[date].xlsx
+```
+
 ### Benchmark sectoriel national
 
 ```

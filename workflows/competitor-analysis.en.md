@@ -499,6 +499,121 @@ MONTHLY ROUTINE (30 min):
 Compilation: ~/Cowork-Workspace/intelligence/competition/monthly-watch-[month].pdf
 ```
 
+### Local Visibility Audit (Google My Business)
+
+Compare your local presence against the competition:
+
+```
+Local visibility audit - Google My Business:
+
+MY SEARCH: "[my trade] [my city]"
+Example: "plumber Chicago"
+
+ANALYZE TOP 5 RESULTS (excluding ads):
+
+For each competitor (+ myself):
+══════════════════════════════════════
+
+COMPETITOR 1: [Name]
+Google My Business:
+- Average rating: ⭐ X.X/5
+- Number of reviews: X reviews
+- Latest review: [date]
+- Photos: X photos (recent? professional?)
+- Hours listed: YES/NO
+- Services listed: YES/NO
+- Responds to reviews: YES/NO (response ratio)
+- Website linked: YES/NO
+- Main category: [...]
+
+Local Pack Position: #X (on Maps)
+
+══════════════════════════════════════
+
+ME: [My business]
+[Same criteria]
+
+══════════════════════════════════════
+
+COMPARISON TABLE:
+
+| Criteria | Me | Competitor 1 | Competitor 2 | Competitor 3 |
+|----------|-----|--------------|--------------|--------------|
+| Rating /5 | | | | |
+| # Reviews | | | | |
+| Review freshness | | | | |
+| # Photos | | | | |
+| Responds to reviews | | | | |
+| Maps position | | | | |
+
+DIAGNOSIS:
+
+If lower rating:
+→ Review collection plan (see Review Response workflow)
+
+If fewer reviews:
+→ Ask systematically after every job
+
+If insufficient photos:
+→ Job site photo routine (1 before/after per week)
+
+If not responding to reviews:
+→ Respond to 100% of reviews (positive AND negative)
+
+If weak Maps position:
+→ Optimize listing (categories, services, hours, photos)
+
+LOCAL VISIBILITY ACTION PLAN:
+
+Week 1-2: [Urgent actions]
+Month 1: [Important actions]
+Quarter: [Review/photo targets]
+
+Save: ~/Cowork-Workspace/intelligence/competition/local-visibility-audit-[date].pdf
+```
+
+### Simplified Local SEO Benchmark
+
+```
+Compare Google positioning (organic search):
+
+KEYWORDS TO TEST (Google search):
+1. "[trade] + [city]" (e.g., "electrician Boston")
+2. "[trade] + [neighborhood]" (e.g., "plumber Back Bay")
+3. "[specific service] + [city]" (e.g., "boiler repair NYC")
+4. "[trade] + emergency + [city]" (e.g., "locksmith emergency LA")
+
+FOR EACH SEARCH:
+
+Organic position (page 1 = top 10):
+- My site: Position #X (or "Not found on page 1")
+- Competitor 1: Position #X
+- Competitor 2: Position #X
+- Competitor 3: Position #X
+
+SUMMARY TABLE:
+
+| Keyword | Me | C1 | C2 | C3 | Est. Volume |
+|---------|-----|----|----|----| ------------|
+| [trade city] | #? | | | | High |
+| [trade neighborhood] | #? | | | | Medium |
+| [service city] | #? | | | | Medium |
+| [emergency city] | #? | | | | Low but lucrative |
+
+ANALYSIS:
+- Keywords where I rank well: [...]
+- Keywords where I'm absent: [...]
+- Opportunities (low competition): [...]
+
+BASIC SEO ACTIONS (no expert needed):
+1. Page titles = "[Service] [City] - [Business name]"
+2. Text = mention city/neighborhood naturally
+3. Google My Business = optimize 100%
+4. Google reviews = more reviews = better local ranking
+
+Save: ~/Cowork-Workspace/intelligence/competition/local-seo-benchmark-[date].xlsx
+```
+
 ### National sector benchmark
 
 ```

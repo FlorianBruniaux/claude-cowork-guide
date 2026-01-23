@@ -1,6 +1,6 @@
 # Cowork Workflows
 
-> **25 step-by-step tutorials to automate your professional tasks**
+> **26 step-by-step tutorials to automate your professional tasks**
 
 **Target professions**: Contractors · Merchants · Small business owners · Freelancers
 
@@ -50,17 +50,17 @@ Scheduling, inventory, quality, projects
 | [Quality Control](quality-checklist.en.md) · [FR](quality-checklist.md) | Standardized verification lists | 15 min | Beginner |
 | [Supplier Orders](supplier-order.en.md) · [FR](supplier-order.md) | Purchase order preparation | 15 min | Intermediate |
 
-### 📣 Communication (5 workflows)
+### 📣 Communication (6 workflows)
 
-Social media, emails, customer reviews
+Social media, emails, customer reviews, website
 
 | Workflow | Description | Time | Level |
 |----------|-------------|------|-------|
 | [Social Media Posts](social-media-posts.en.md) · [FR](social-media-posts.md) | LinkedIn/Facebook/Instagram | 10 min | Beginner |
 | [Email Templates](email-templates.en.md) · [FR](email-templates.md) | Reusable professional email library | 15 min | Beginner |
 | [Customer Review Responses](review-response.en.md) · [FR](review-response.md) | Google/Facebook review management | 5 min/review | Beginner |
-| [Newsletter Creation](newsletter-creation.en.md) · [FR](newsletter-creation.md) | Regular customer updates | 30 min | Intermediate |
-| [Presentation Slides](presentation-slides.en.md) · [FR](presentation-slides.md) | Client presentations | 45 min | Intermediate |
+| [Website Audit](website-audit.en.md) · [FR](website-audit.md) | Website diagnostic + action plan | 20 min | Beginner |
+| [Knowledge Transfer](knowledge-transfer.en.md) · [FR](knowledge-transfer.md) | Apprentice training documentation | 2-4h | Advanced |
 
 ### 🗂️ Organization (4 workflows)
 

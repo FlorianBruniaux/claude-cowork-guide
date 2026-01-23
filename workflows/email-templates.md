@@ -180,6 +180,145 @@ Sauvegarde série: ~/Cowork-Workspace/output/email-templates/onboarding/
 
 ---
 
+## Séquences Automatisées
+
+### Séquence Relance Devis (4 emails)
+
+La séquence la plus rentable pour TPE: relancer systématiquement les devis non répondus.
+
+**Statistique**: Un devis non relancé = 60-80% de chance perdue. Une relance structurée récupère 20-30% des devis "perdus".
+
+```
+Crée séquence complète de relance devis:
+
+CONTEXTE: Artisan/TPE qui envoie des devis et veut maximiser le taux de conversion
+
+SÉQUENCE 4 EMAILS:
+
+EMAIL 1 - J+0 (Envoi initial)
+Objectif: Accompagner le devis, créer urgence douce
+Ton: Professionnel, enthousiaste
+Structure:
+- Remerciement demande
+- Devis en PJ (résumé: [montant], [validité])
+- Disponibilité pour questions
+- CTA: "Répondez à cet email pour valider"
+
+EMAIL 2 - J+3 (Relance soft)
+Objectif: Vérifier réception, répondre aux objections
+Ton: Serviable, pas vendeur
+Structure:
+- "Avez-vous bien reçu mon devis?"
+- Proposition éclaircir un point
+- CTA: "Une question? Je vous rappelle"
+
+EMAIL 3 - J+7 (Relance avec deadline)
+Objectif: Créer urgence, proposer alternative
+Ton: Direct mais cordial
+Structure:
+- Rappel validité devis (expire [date])
+- Calendrier chargé ("créneaux limités ce mois")
+- Option B si budget serré
+- CTA: "Confirmez avant [date] pour garantir le planning"
+
+EMAIL 4 - J+14 (Dernière relance)
+Objectif: Clôturer proprement, garder la porte ouverte
+Ton: Professionnel, sans rancune
+Structure:
+- "Je ferme ce dossier sauf retour de votre part"
+- Pas de reproche
+- Invitation à revenir plus tard
+- CTA: "N'hésitez pas à me recontacter"
+
+Variables pour tous:
+- [nom_client]
+- [nature_travaux]
+- [montant_devis]
+- [numero_devis]
+- [date_validite]
+- [votre_prenom]
+
+Format: 4 fichiers séparés
+Sauvegarde: ~/Cowork-Workspace/output/email-templates/sequence-relance-devis/
+```
+
+### Utiliser la séquence
+
+**Option 1: Manuel (rappel calendrier)**
+
+```
+J'ai envoyé un devis à [nom client] le [date].
+
+Programme-moi des rappels:
+- J+3: Relance soft
+- J+7: Relance deadline
+- J+14: Clôture
+
+Pour chaque rappel, prépare l'email personnalisé prêt à copier
+basé sur mes templates dans ~/Cowork-Workspace/output/email-templates/sequence-relance-devis/
+```
+
+**Option 2: Tableau de suivi**
+
+```
+Crée tableau Excel suivi relances devis:
+
+Colonnes:
+- Numéro devis
+- Client
+- Montant
+- Date envoi
+- Statut (En attente / Relancé J+3 / Relancé J+7 / Clôturé / Accepté / Refusé)
+- Prochaine action
+- Date prochaine action
+- Notes
+
+Formules:
+- Mise en forme conditionnelle rouge si date dépassée
+- Calcul taux conversion
+
+Sauvegarde: ~/Cowork-Workspace/output/suivi-relances-devis.xlsx
+```
+
+### Séquence Réactivation Clients Dormants
+
+Pour clients sans commande depuis 6+ mois:
+
+```
+Crée séquence réactivation client dormant (3 emails):
+
+EMAIL 1 - "Prise de nouvelles"
+Objectif: Renouer contact sans vendre
+Ton: Personnel, sincère
+- "Cela fait un moment..."
+- Question sur leur activité/projet
+- Pas de CTA commercial
+
+EMAIL 2 (J+7) - "Nouveauté/offre"
+Objectif: Donner raison de revenir
+Ton: Informatif
+- Nouvelle offre/service/équipement
+- Promotion "client fidèle" si applicable
+- CTA: "Intéressé? Répondez à cet email"
+
+EMAIL 3 (J+14) - "Dernière chance"
+Objectif: Offre limitée + clôture
+Ton: Direct
+- Récapitulatif offre
+- Validité limitée
+- "Sans réponse, je considère que le timing n'est pas bon"
+
+Variables:
+- [prenom_client]
+- [derniere_prestation] (nature + date)
+- [offre_speciale]
+- [date_limite]
+
+Sauvegarde: ~/Cowork-Workspace/output/email-templates/sequence-reactivation/
+```
+
+---
+
 ## Troubleshooting
 
 ### Ton trop formel ou trop familier

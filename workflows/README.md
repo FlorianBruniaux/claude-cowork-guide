@@ -1,6 +1,6 @@
 # Cowork Workflows
 
-> **25 tutoriels étape par étape pour automatiser vos tâches professionnelles**
+> **26 tutoriels étape par étape pour automatiser vos tâches professionnelles**
 
 **Professions ciblées**: Artisans/BTP · Commerçants · Dirigeants TPE/PME · Indépendants
 
@@ -50,15 +50,16 @@ Planning, stock, qualité, chantiers
 | [Contrôle Qualité](quality-checklist.md) · [EN](quality-checklist.en.md) | Listes vérification normalisées | 15 min | Débutant |
 | [Commandes Fournisseurs](supplier-order.md) · [EN](supplier-order.en.md) | Préparation bons de commande | 15 min | Intermédiaire |
 
-### 📣 Communication (5 workflows)
+### 📣 Communication (6 workflows)
 
-Réseaux sociaux, emails, avis clients
+Réseaux sociaux, emails, avis clients, site web
 
 | Workflow | Description | Temps | Niveau |
 |----------|-------------|-------|--------|
 | [Posts Réseaux Sociaux](social-media-posts.md) · [EN](social-media-posts.en.md) | LinkedIn/Facebook/Instagram | 10 min | Débutant |
 | [Templates Emails](email-templates.md) · [EN](email-templates.en.md) | Bibliothèque emails pro réutilisables | 15 min | Débutant |
 | [Réponses Avis Clients](review-response.md) · [EN](review-response.en.md) | Gestion avis Google/Facebook | 5 min/avis | Débutant |
+| [Audit Site Vitrine](website-audit.md) · [EN](website-audit.en.md) | Diagnostic site web + plan d'action | 20 min | Débutant |
 | [Transmission Savoir-Faire](knowledge-transfer.md) · [EN](knowledge-transfer.en.md) | Documentation formation apprentis | 2-4h | Avancé |
 
 ### 🗂️ Organisation (4 workflows)
@@ -99,6 +100,7 @@ Quel est votre besoin aujourd'hui?
 ├─ 📢 COMMUNICATION
 │   ├─ Post réseaux → Posts Réseaux Sociaux
 │   ├─ Email client → Templates Emails
+│   ├─ Auditer mon site → Audit Site Vitrine
 │   └─ Former apprenti → Transmission Savoir-Faire
 │
 └─ 📂 ADMINISTRATIF
@@ -194,7 +196,7 @@ cp ~/Cowork-Workspace/output/facture-validee.pdf \
 
 ## 📈 Évolution des Workflows
 
-**Version actuelle**: 25 workflows (v1.1.0)
+**Version actuelle**: 26 workflows (v1.2.0)
 
 **Contribuer**:
 - Proposer améliorations: [Issues GitHub](https://github.com/FlorianBruniaux/claude-cowork-guide)
