@@ -306,7 +306,59 @@ Cette approche par lots optimise également l'utilisation des tokens (voir [Chea
 
 ---
 
-## Étape 6 : Intégration Chrome (Optionnel)
+## Étape 6 : Personnaliser votre profil (Optionnel)
+
+Créez un fichier de profil personnel pour que Cowork connaisse vos préférences et votre style de communication.
+
+### 6.1 Créer votre fichier de profil
+
+Dans votre workspace, créez `mon-profil.md` :
+
+```markdown
+# Mon profil de communication
+
+## Ton et style
+- Formel (vouvoiement systématique avec les clients)
+- Points concis plutôt que longs paragraphes
+- Pas de jargon ni d'anglicismes
+
+## Ce que je ne fais JAMAIS
+- Utiliser des points d'exclamation dans les emails clients
+- Promettre des délais précis
+- Sauter la formule de politesse
+
+## Signature par défaut
+Cordialement,
+[Votre nom] - [Entreprise]
+```
+
+### 6.2 Utiliser votre profil
+
+Commencez chaque conversation par :
+```
+Lis mon-profil.md d'abord. Puis [votre demande réelle]
+```
+
+**Exemple** :
+```
+Lis mon-profil.md d'abord. Puis rédige un email de relance pour un client
+qui n'a pas répondu à notre devis depuis 2 semaines.
+```
+
+### 6.3 Avantages
+
+| Avantage | Pourquoi c'est important |
+|----------|--------------------------|
+| **Voix cohérente** | Toutes les sorties correspondent à votre style |
+| **Gain de temps** | Plus besoin de répéter vos préférences |
+| **Alignement équipe** | Partagez le fichier avec vos collègues |
+| **Portable** | Le même fichier fonctionne avec d'autres outils IA |
+
+> **Conseil** : 80% d'un profil efficace concerne ce que vous *ne voulez pas*. Concentrez-vous sur les contraintes et les anti-patterns.
+
+---
+
+## Étape 7 : Intégration Chrome (Optionnel)
 
 Cowork peut utiliser Chrome pour des tâches de recherche web.
 

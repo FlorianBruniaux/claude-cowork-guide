@@ -29,7 +29,7 @@ Imaginez un assistant de bureau très compétent qui :
 | **Publication** | Preview recherche, janvier 2026 |
 | **Disponibilité** | Abonnés Pro (20$/mois) ou Max (100-200$/mois) |
 | **Plateforme** | macOS uniquement (Windows prévu, Linux non annoncé) |
-| **Développement** | ~90% écrit par Claude lui-même ([blog Anthropic]) |
+| **Développement** | ~90% écrit par Claude lui-même ([source](https://claude.com/download)) |
 | **Focus** | Manipulation de fichiers, organisation, génération de documents |
 | **Limites d'usage** | Réinitialisé toutes les 5 heures ; les tâches lourdes consomment rapidement le quota |
 

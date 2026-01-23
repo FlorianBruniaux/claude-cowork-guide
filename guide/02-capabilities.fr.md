@@ -8,6 +8,41 @@
 
 ---
 
+## Sélection du modèle
+
+Cowork supporte différents modèles Claude. Choisissez en fonction de la complexité de votre tâche.
+
+### Modèles disponibles
+
+| Modèle | Idéal pour | Vitesse | Consommation |
+|--------|------------|---------|--------------|
+| **Sonnet** | Tâches quotidiennes, emails, organisation | Rapide | Standard |
+| **Opus** | Analyses complexes, synthèses multi-documents | Plus lent | Plus élevée |
+
+### Quand utiliser chaque modèle
+
+| Type de tâche | Modèle recommandé |
+|---------------|-------------------|
+| Emails rapides, éditions simples | Sonnet |
+| Organisation de fichiers | Sonnet |
+| Extraction de données de reçus | Sonnet |
+| Synthèse de documents complexes | Opus |
+| Rapports de recherche multi-sources | Opus |
+| Analyse stratégique | Opus |
+
+### Conseils de sélection
+
+1. **Commencez par Sonnet** — Suffisant pour 80% des tâches
+2. **Passez à Opus** quand :
+   - Les résultats manquent de profondeur ou de nuance
+   - La tâche implique 10+ documents sources
+   - Vous avez besoin d'une analyse détaillée, pas juste d'un résumé
+3. **Attention à vos limites** — Opus consomme le quota plus vite que Sonnet
+
+> **Utilisateurs Pro** : Sonnet est votre meilleur choix par défaut. Utilisez Opus avec parcimonie pour maximiser votre fenêtre d'usage de 5 heures.
+
+---
+
 ## Matrice des capacités
 
 ### Opérations sur fichiers

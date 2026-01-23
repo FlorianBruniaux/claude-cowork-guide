@@ -269,7 +269,59 @@ This batching approach also optimizes token usage (see [Cheatsheet](../reference
 
 ---
 
-## Step 6: Chrome Integration (Optional)
+## Step 6: Personalize Your Profile (Optional)
+
+Create a personal profile file so Cowork knows your preferences and communication style.
+
+### 6.1 Create Your Profile File
+
+In your workspace, create `my-profile.md`:
+
+```markdown
+# My Communication Profile
+
+## Tone & Style
+- Formal (use "vous" with clients) / Casual (use "tu")
+- Concise bullet points preferred
+- No jargon or anglicisms
+
+## Things I NEVER Do
+- Use exclamation marks in emails
+- Promise specific deadlines
+- Skip the greeting
+
+## Default Signature
+Best regards,
+[Your Name] - [Company]
+```
+
+### 6.2 Use Your Profile
+
+Start each conversation with:
+```
+Read my-profile.md first. Then [your actual request]
+```
+
+**Example**:
+```
+Read my-profile.md first. Then draft a follow-up email to a client
+who hasn't responded to our quote in 2 weeks.
+```
+
+### 6.3 Benefits
+
+| Benefit | Why It Matters |
+|---------|----------------|
+| **Consistent voice** | All outputs match your style |
+| **Time savings** | No need to repeat preferences |
+| **Team alignment** | Share the file with colleagues |
+| **Portable** | Same file works with other AI tools |
+
+> **Tip**: 80% of an effective profile is what you *don't* want. Focus on constraints and anti-patterns.
+
+---
+
+## Step 7: Chrome Integration (Optional)
 
 Cowork can use Chrome for web research tasks.
 

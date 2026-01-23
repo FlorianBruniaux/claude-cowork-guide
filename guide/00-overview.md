@@ -17,7 +17,7 @@
 | **Release** | Research preview, January 2026 |
 | **Availability** | Pro ($20/mo) or Max ($100-200/mo) subscribers |
 | **Platform** | macOS only (Windows planned, Linux not announced) |
-| **Built by** | ~90% written by Claude itself ([Anthropic blog]) |
+| **Built by** | ~90% written by Claude itself ([source](https://claude.com/download)) |
 | **Focus** | File manipulation, organization, document generation |
 | **Usage limits** | Resets every 5 hours; heavy tasks consume quota rapidly |
 

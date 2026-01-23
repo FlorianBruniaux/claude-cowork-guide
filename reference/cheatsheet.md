@@ -32,6 +32,35 @@ Format: [specific format requirements]
 
 ---
 
+## Model Selection
+
+| Model | Use For | Speed |
+|-------|---------|-------|
+| **Sonnet** | Daily tasks (emails, files) | Fast |
+| **Opus** | Complex analysis, synthesis | Slower |
+
+**Default**: Start with Sonnet. Switch to Opus if results lack depth.
+
+---
+
+## Personalize Your Profile
+
+Create `my-profile.md` in your workspace:
+
+```markdown
+## Tone & Style
+- Formal / Casual
+- Concise bullet points
+
+## Things I NEVER Do
+- Use exclamation marks
+- Promise specific deadlines
+```
+
+**Usage**: "Read my-profile.md first. Then [your request]"
+
+---
+
 ## Can Do / Cannot Do
 
 | ✅ CAN DO | ❌ CANNOT DO |

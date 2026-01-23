@@ -6,6 +6,29 @@
 
 ---
 
+## Communication Profile (Optional)
+
+Customize how Cowork communicates. Focus on constraints — what you *don't* want.
+
+### Tone & Style
+- [ ] Formal (use "vous") / [ ] Casual (use "tu")
+- [ ] Concise bullet points / [ ] Detailed paragraphs
+- [ ] Technical language OK / [ ] No jargon
+
+### Things We NEVER Do
+- [List expressions, phrases, or approaches to avoid]
+- Example: "Never use exclamation marks in client emails"
+- Example: "Never promise specific delivery dates"
+
+### Default Signature
+```
+[Your standard email signature]
+```
+
+> **Tip**: Share this file with your team so everyone's outputs match your company voice.
+
+---
+
 ## Project Information
 
 **Project Name**: [Your Project Name]

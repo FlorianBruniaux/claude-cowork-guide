@@ -32,6 +32,35 @@ Format : [exigences de format spécifiques]
 
 ---
 
+## Sélection du modèle
+
+| Modèle | Utiliser pour | Vitesse |
+|--------|---------------|---------|
+| **Sonnet** | Tâches quotidiennes (emails, fichiers) | Rapide |
+| **Opus** | Analyses complexes, synthèses | Plus lent |
+
+**Par défaut** : Commencez par Sonnet. Passez à Opus si les résultats manquent de profondeur.
+
+---
+
+## Personnaliser votre profil
+
+Créez `mon-profil.md` dans votre workspace :
+
+```markdown
+## Ton et style
+- Formel / Casual
+- Points concis
+
+## Ce que je ne fais JAMAIS
+- Points d'exclamation
+- Promettre des délais précis
+```
+
+**Usage** : "Lis mon-profil.md d'abord. Puis [votre demande]"
+
+---
+
 ## Peut faire / Ne peut pas faire
 
 | ✅ PEUT FAIRE | ❌ NE PEUT PAS FAIRE |
