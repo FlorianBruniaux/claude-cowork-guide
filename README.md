@@ -68,7 +68,7 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 **The problem**: Official docs are dense. Tutorials get outdated quickly.
 You need ready-to-use workflows, not feature lists.
 
-**This guide**: 43 business workflows, 70 copy-paste prompts, practical examples.
+**This guide**: 25 business workflows, 70 copy-paste prompts, practical examples.
 
 **Reading time**: Getting started 5 min | Complete guide 45 min
 
@@ -109,7 +109,7 @@ You need ready-to-use workflows, not feature lists.
 <summary><strong>Power User</strong> — Deep dive (6 steps)</summary>
 
 1. [Complete Capabilities](guide/02-capabilities.md) — Feature matrix
-2. [All Workflows](workflows/) — 43 step-by-step guides
+2. [All Workflows](workflows/) — 25 step-by-step guides
 3. [Troubleshooting](guide/04-troubleshooting.md) — Error resolution
 4. [FAQ](reference/faq.md) — 20+ questions
 5. [Advanced Prompts](prompts/research.md) — Research and synthesis
@@ -131,7 +131,7 @@ You need ready-to-use workflows, not feature lists.
 | [Security](guide/03-security.md) | Best practices | 12 min |
 | [Troubleshooting](guide/04-troubleshooting.md) | Common issues | 8 min |
 
-### Workflows (43 guides)
+### Workflows (25 guides)
 
 **📋 Administrative** (6)
 - [Invoice Generation](workflows/invoice-generation.md) — Professional templates

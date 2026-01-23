@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- README.md/README.fr.md: Correct workflow count from 43 to 25 (3 occurrences each)
+- reference/cheatsheet.md: Update version from v1.0 to v1.1.0
+- reference/cheatsheet.md/fr.md: Fix broken relative links (cowork/ prefix removed)
+- CONTRIBUTING.md: Remove obsolete "cowork/ directory" reference and [cowork] prefixes
+
 ### Added
 - Table of Contents in README.md and README.fr.md for improved navigation
 

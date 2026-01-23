@@ -217,11 +217,11 @@ Limite atteinte ? → Diviser en lots plus petits
 
 | Ressource | URL |
 |----------|-----|
-| Documentation complète | `cowork/README.md` |
-| Guide sécurité | `cowork/guide/03-security.fr.md` |
-| Bibliothèque de prompts | `cowork/prompts/` |
-| Dépannage | `cowork/guide/04-troubleshooting.fr.md` |
+| Documentation complète | [README.md](../README.fr.md) |
+| Guide sécurité | [guide/03-security.fr.md](../guide/03-security.fr.md) |
+| Bibliothèque de prompts | [prompts/](../prompts/) |
+| Dépannage | [guide/04-troubleshooting.fr.md](../guide/04-troubleshooting.fr.md) |
 
 ---
 
-*Cowork v1.0 (Research Preview) | Partie de Claude Code Ultimate Guide*
+*Cowork v1.1.0 (Research Preview) | Partie de Claude Cowork Guide*

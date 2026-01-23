@@ -68,7 +68,7 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 **Le problème** : La documentation officielle est dense. Les tutoriels deviennent obsolètes rapidement.
 Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalités.
 
-**Ce guide** : 43 workflows métiers, 70 prompts copier-coller, exemples pratiques.
+**Ce guide** : 25 workflows métiers, 70 prompts copier-coller, exemples pratiques.
 
 **Temps de lecture** : Démarrage 5 min | Guide complet 45 min
 
@@ -109,7 +109,7 @@ Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalit
 <summary><strong>Utilisateur avancé</strong> — Exploration approfondie (6 étapes)</summary>
 
 1. [Capacités complètes](guide/02-capabilities.fr.md) — Matrice de fonctionnalités
-2. [Tous les workflows](workflows/) — 43 guides étape par étape
+2. [Tous les workflows](workflows/) — 25 guides étape par étape
 3. [Dépannage](guide/04-troubleshooting.fr.md) — Résolution d'erreurs
 4. [FAQ](reference/faq.fr.md) — 20+ questions
 5. [Prompts avancés](prompts/research.md) — Recherche et synthèse
@@ -131,7 +131,7 @@ Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalit
 | [Sécurité](guide/03-security.fr.md) | Bonnes pratiques | 12 min |
 | [Dépannage](guide/04-troubleshooting.fr.md) | Problèmes courants | 8 min |
 
-### Workflows (43 guides)
+### Workflows (25 guides)
 
 **📋 Administratif** (6)
 - [Génération de factures](workflows/invoice-generation.md) — Modèles professionnels

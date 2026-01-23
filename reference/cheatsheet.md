@@ -217,11 +217,11 @@ Hit limit? → Break into smaller batches
 
 | Resource | URL |
 |----------|-----|
-| Full Docs | `cowork/README.md` |
-| Security Guide | `cowork/guide/03-security.md` |
-| Prompt Library | `cowork/prompts/` |
-| Troubleshooting | `cowork/guide/04-troubleshooting.md` |
+| Full Docs | [README.md](../README.md) |
+| Security Guide | [guide/03-security.md](../guide/03-security.md) |
+| Prompt Library | [prompts/](../prompts/) |
+| Troubleshooting | [guide/04-troubleshooting.md](../guide/04-troubleshooting.md) |
 
 ---
 
-*Cowork v1.0 (Research Preview) | Part of Claude Code Ultimate Guide*
+*Cowork v1.1.0 (Research Preview) | Part of Claude Cowork Guide*

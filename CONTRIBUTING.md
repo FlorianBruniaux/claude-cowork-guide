@@ -4,13 +4,11 @@ Thank you for your interest in improving the Cowork documentation! This guide wi
 
 ---
 
-## 📍 Current Status
+## 📍 Repository
 
-**Location**: This documentation currently lives in the [claude-cowork-guide](https://github.com/FlorianBruniaux/claude-cowork-guide) repository under the `cowork/` directory.
+**Location**: [claude-cowork-guide](https://github.com/FlorianBruniaux/claude-cowork-guide)
 
-**Future**: Migration to dedicated `claude-cowork-guide` repository planned when Cowork exits research preview.
-
-**For now**: All contributions should be made to the main repository with `[cowork]` prefix in issues/PRs.
+**Status**: Active development, contributions welcome.
 
 ---
 
@@ -18,11 +16,11 @@ Thank you for your interest in improving the Cowork documentation! This guide wi
 
 ### 1. Report Issues
 
-Found a problem? Open an issue in the [main repository](https://github.com/FlorianBruniaux/claude-cowork-guide/issues).
+Found a problem? Open an issue in the [repository](https://github.com/FlorianBruniaux/claude-cowork-guide/issues).
 
-**Use `[cowork]` prefix** in the title:
-- ✅ `[cowork] VPN workaround instructions unclear`
-- ✅ `[cowork] OCR accuracy claim needs source`
+**Good issue titles**:
+- ✅ `VPN workaround instructions unclear`
+- ✅ `OCR accuracy claim needs source`
 - ❌ `File organization doesn't work` (too vague)
 
 **Include**:
@@ -137,7 +135,7 @@ Found useful data about Cowork? Share it!
 - Performance benchmarks
 - Platform compatibility updates
 
-**Format**: Open an issue with `[cowork][research]` prefix and include sources.
+**Format**: Open an issue with `[research]` label and include sources.
 
 ---
 
@@ -212,7 +210,7 @@ CONSTRAINTS: Use EUR currency, European Excel formula syntax (semicolons), flag 
 
 ## ❓ Questions?
 
-- **Documentation questions**: Open an issue with `[cowork][question]`
+- **Documentation questions**: Open an issue with `[question]` label
 - **Technical support**: Use [Claude Desktop support](https://support.anthropic.com/)
 - **General discussion**: Use repository [Discussions](https://github.com/FlorianBruniaux/claude-cowork-guide/discussions)
 
