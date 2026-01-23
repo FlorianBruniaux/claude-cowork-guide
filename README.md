@@ -2,6 +2,17 @@
 
 🌐 **Languages**: [English](README.md) | [Français](README.fr.md)
 
+## Table of Contents
+
+- [Quick Start](#-quick-start)
+- [Why this guide?](#why-this-guide)
+- [Learning Paths](#-learning-paths)
+- [Content](#-content)
+- [Golden Rules](#-golden-rules)
+- [About](#-about)
+- [Contributing](#-contributing)
+- [License](#-license)
+
 <p align="center">
   <strong><a href="https://florianbruniaux.github.io/claude-cowork-guide-landing/">🌐 Official Website</a></strong>
 </p>

@@ -2,6 +2,17 @@
 
 🌐 **Langues** : [Français](README.fr.md) | [English](README.md)
 
+## Table des matières
+
+- [Démarrage rapide](#-démarrage-rapide)
+- [Pourquoi ce guide ?](#pourquoi-ce-guide-)
+- [Parcours d'apprentissage](#-parcours-dapprentissage)
+- [Contenu](#-contenu)
+- [Règles d'or](#-règles-dor)
+- [À propos](#-à-propos)
+- [Contribuer](#-contribuer)
+- [Licence](#-licence)
+
 <p align="center">
   <strong><a href="https://florianbruniaux.github.io/claude-cowork-guide-landing/index.fr.html">🌐 Site officiel</a></strong>
 </p>
