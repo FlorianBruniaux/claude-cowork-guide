@@ -202,6 +202,20 @@ Bien que Cowork soit en preview recherche, les capacités sous-jacentes de Claud
 
 ---
 
+## Utilisateurs Avancés
+
+Si vous cherchez à optimiser vos workflows pour un usage intensif (>100 tâches/mois) ou à maîtriser les techniques avancées :
+
+**Optimisation modèle** : Opus 4.5 peut sembler plus cher par requête, mais sa précision réduit le nombre total de tentatives nécessaires, le rendant plus économique à long terme pour les analyses complexes.
+
+**Scaling et parallélisation** : Pour des besoins de traitement par lots ou d'automatisation poussée, consultez les ressources de Boris (créateur de Claude Code) sur les [workflows multi-sessions](https://www.youtube.com/watch?v=DW4a1Cm8nG4) et les [pratiques avancées](https://blog.devgenius.io/the-claude-code-creator-says-ai-writes-100-of-his-code-now-956b2a5905ba).
+
+**Setup équipe** : Pour les organisations de 20+ employés, consultez le [Guide Enterprise Anthropic](https://www.anthropic.com/enterprise) pour les fonctionnalités d'audit et de contrôle d'accès.
+
+> **Note** : Ces techniques sont destinées aux utilisateurs expérimentés. Pour la majorité des TPE/PME, les workflows standards documentés dans ce guide suffisent amplement.
+
+---
+
 ## Prochaines étapes
 
 - [Démarrage](01-getting-started.fr.md) — Configuration et premier workflow

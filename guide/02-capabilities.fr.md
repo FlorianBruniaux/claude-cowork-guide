@@ -21,25 +21,31 @@ Cowork supporte différents modèles Claude. Choisissez en fonction de la comple
 
 ### Quand utiliser chaque modèle
 
-| Type de tâche | Modèle recommandé |
-|---------------|-------------------|
-| Emails rapides, éditions simples | Sonnet |
-| Organisation de fichiers | Sonnet |
-| Extraction de données de reçus | Sonnet |
-| Synthèse de documents complexes | Opus |
-| Rapports de recherche multi-sources | Opus |
-| Analyse stratégique | Opus |
+| Type de tâche | Modèle recommandé | Exemple TPE/PME |
+|---------------|-------------------|-----------------|
+| Emails rapides, éditions simples | Sonnet | Relance client, réponse devis |
+| Organisation de fichiers | Sonnet | Tri factures par mois, renommage photos chantier |
+| Extraction de données de reçus | Sonnet | Scanner tickets restaurant → Excel |
+| Création devis/factures standard | Sonnet | Template client habituel |
+| Synthèse de documents complexes | Opus | Résumé 15 notes de réunion avec décisions clés |
+| Rapports de recherche multi-sources | Opus | Étude de marché locale concurrence |
+| Analyse stratégique | Opus | Analyse contrats fournisseurs, négociation |
+| Synthèse réglementaire | Opus | Comprendre nouvelles normes métier |
 
 ### Conseils de sélection
 
-1. **Commencez par Sonnet** — Suffisant pour 80% des tâches
+1. **Commencez par Sonnet** — Suffisant pour 80% des tâches quotidiennes
 2. **Passez à Opus** quand :
    - Les résultats manquent de profondeur ou de nuance
    - La tâche implique 10+ documents sources
    - Vous avez besoin d'une analyse détaillée, pas juste d'un résumé
-3. **Attention à vos limites** — Opus consomme le quota plus vite que Sonnet
+   - Vous refaites souvent la tâche (Opus plus précis = moins de tentatives)
+3. **Attention à vos limites** — Opus consomme le quota plus vite que Sonnet par requête
+4. **Astuce coût** — Pour analyses complexes récurrentes, Opus peut être plus économique à long terme grâce à sa précision (moins d'allers-retours)
 
 > **Utilisateurs Pro** : Sonnet est votre meilleur choix par défaut. Utilisez Opus avec parcimonie pour maximiser votre fenêtre d'usage de 5 heures.
+>
+> **Utilisateurs Max** : Testez Opus sur vos tâches les plus complexes. Si vous économisez du temps en évitant 2-3 tentatives, le coût supplémentaire est justifié.
 
 ---
 
