@@ -27,7 +27,7 @@
   <img src="https://img.shields.io/badge/Status-Research%20Preview-yellow" alt="Status"/>
   <img src="https://img.shields.io/badge/Platform-macOS-blue" alt="Platform"/>
   <img src="https://img.shields.io/badge/Subscription-Pro%20%26%20Max-purple" alt="Subscription"/>
-  <img src="https://img.shields.io/badge/Version-1.2.0-orange" alt="Version"/>
+  <img src="https://img.shields.io/badge/Version-1.2.1-orange" alt="Version"/>
 </p>
 
 > Complete guide to Claude's desktop assistant for knowledge workers and small businesses.
@@ -68,7 +68,7 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 **The problem**: Official docs are dense. Tutorials get outdated quickly.
 You need ready-to-use workflows, not feature lists.
 
-**This guide**: 25 business workflows, 70 copy-paste prompts, practical examples.
+**This guide**: 26 business workflows, 70 copy-paste prompts, practical examples.
 
 **Reading time**: Getting started 5 min | Complete guide 45 min
 
@@ -109,7 +109,7 @@ You need ready-to-use workflows, not feature lists.
 <summary><strong>Power User</strong> — Deep dive (6 steps)</summary>
 
 1. [Complete Capabilities](guide/02-capabilities.md) — Feature matrix
-2. [All Workflows](workflows/) — 25 step-by-step guides
+2. [All Workflows](workflows/) — 26 step-by-step guides
 3. [Troubleshooting](guide/04-troubleshooting.md) — Error resolution
 4. [FAQ](reference/faq.md) — 20+ questions
 5. [Advanced Prompts](prompts/research.md) — Research and synthesis
@@ -155,11 +155,17 @@ You need ready-to-use workflows, not feature lists.
 - [Quality Checklist](workflows/quality-checklist.md) — Standardized lists
 - [Supplier Orders](workflows/supplier-order.md) — Optimized procurement
 
-**📣 Communication** (4)
+**📣 Communication** (6)
 - [Social Media Posts](workflows/social-media-posts.md) — LinkedIn/Facebook/Instagram
 - [Email Templates](workflows/email-templates.md) — Reusable library
 - [Review Responses](workflows/review-response.md) — Google/Facebook
+- [Website Audit](workflows/website-audit.md) — Site diagnosis and action plan
 - [Knowledge Transfer](workflows/knowledge-transfer.md) — Training, succession
+
+**🗂️ Organization** (4)
+- [File Organization](workflows/file-organization.md) — Automatic folder sorting
+- [Expense Tracking](workflows/expense-tracking.md) — Receipts to Excel
+- [Meeting Prep](workflows/meeting-prep.md) — Client/supplier briefings
 
 → [All workflows](workflows/README.md)
 

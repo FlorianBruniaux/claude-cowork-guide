@@ -2,7 +2,7 @@
 # This file enables future separation into standalone repository
 
 name: claude-cowork-guide
-version: "1.1.0"
+version: "1.2.1"
 description: Complete documentation for Claude Cowork - agentic desktop for knowledge workers
 
 # Relationship to parent repo
@@ -78,12 +78,12 @@ structure:
 # Content metadata
 metadata:
   language: en
-  last_updated: 2026-01-20
+  last_updated: 2026-01-27
   maintainer: claude-code-ultimate-guide contributors
   license: CC-BY-SA-4.0
   total_files: 34
   total_prompts: 67
-  total_workflows: 25
+  total_workflows: 26
 
 # Future standalone repo configuration
 standalone_config:

@@ -27,7 +27,7 @@
   <img src="https://img.shields.io/badge/Status-Research%20Preview-yellow" alt="Status"/>
   <img src="https://img.shields.io/badge/Platform-macOS-blue" alt="Platform"/>
   <img src="https://img.shields.io/badge/Subscription-Pro%20%26%20Max-purple" alt="Subscription"/>
-  <img src="https://img.shields.io/badge/Version-1.2.0-orange" alt="Version"/>
+  <img src="https://img.shields.io/badge/Version-1.2.1-orange" alt="Version"/>
 </p>
 
 > Guide complet de l'assistant desktop de Claude pour les travailleurs du savoir et les petites entreprises.
@@ -68,7 +68,7 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 **Le problème** : La documentation officielle est dense. Les tutoriels deviennent obsolètes rapidement.
 Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalités.
 
-**Ce guide** : 25 workflows métiers, 70 prompts copier-coller, exemples pratiques.
+**Ce guide** : 26 workflows métiers, 70 prompts copier-coller, exemples pratiques.
 
 **Temps de lecture** : Démarrage 5 min | Guide complet 45 min
 
@@ -109,7 +109,7 @@ Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalit
 <summary><strong>Utilisateur avancé</strong> — Exploration approfondie (6 étapes)</summary>
 
 1. [Capacités complètes](guide/02-capabilities.fr.md) — Matrice de fonctionnalités
-2. [Tous les workflows](workflows/) — 25 guides étape par étape
+2. [Tous les workflows](workflows/) — 26 guides étape par étape
 3. [Dépannage](guide/04-troubleshooting.fr.md) — Résolution d'erreurs
 4. [FAQ](reference/faq.fr.md) — 20+ questions
 5. [Prompts avancés](prompts/research.md) — Recherche et synthèse
@@ -155,11 +155,17 @@ Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalit
 - [Checklist qualité](workflows/quality-checklist.md) — Listes standardisées
 - [Commandes fournisseurs](workflows/supplier-order.md) — Approvisionnement optimisé
 
-**📣 Communication** (4)
+**📣 Communication** (6)
 - [Publications réseaux sociaux](workflows/social-media-posts.md) — LinkedIn/Facebook/Instagram
 - [Modèles d'emails](workflows/email-templates.md) — Bibliothèque réutilisable
 - [Réponses aux avis](workflows/review-response.md) — Google/Facebook
+- [Audit de site web](workflows/website-audit.md) — Diagnostic et plan d'action
 - [Transfert de connaissances](workflows/knowledge-transfer.md) — Formation, succession
+
+**🗂️ Organisation** (4)
+- [Organisation de fichiers](workflows/file-organization.md) — Tri automatique des dossiers
+- [Suivi des dépenses](workflows/expense-tracking.md) — Tickets vers Excel
+- [Préparation de réunions](workflows/meeting-prep.md) — Briefings clients/fournisseurs
 
 → [Tous les workflows](workflows/README.md)
 

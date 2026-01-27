@@ -367,6 +367,94 @@ Ton: Professionnel et rassurant
 Format: PDF présentation (pas brut de chantier)
 ```
 
+### Reporting hebdomadaire/mensuel
+
+Pour chantiers longs (>2 semaines), créer rapport périodique:
+
+```
+Génère rapport avancement hebdomadaire depuis journal chantier [nom]:
+
+PÉRIODE: Semaine du [date début] au [date fin]
+
+TRAVAUX SEMAINE:
+- [Résumé tâches accomplies avec %]
+- [Jalons atteints]
+
+ÉQUIPE:
+- Nombre total jours/homme: [X]
+- Moyenne équipe: [X personnes]
+
+MATÉRIAUX CONSOMMÉS:
+- [Principaux matériaux avec quantités]
+- [Coût approx si nécessaire]
+
+AVANCEMENT GLOBAL:
+- Début semaine: [X%]
+- Fin semaine: [Y%]
+- Progression: [+Z%]
+
+RESPECT PLANNING:
+- Planning initial: [date fin prévue]
+- Prévision actuelle: [date fin estimée]
+- Écart: [± X jours] → Raison: [explication courte]
+
+INCIDENTS/ALERTES:
+- [Si problèmes impactant planning/budget]
+- [Actions correctives en cours]
+
+PRÉVISIONS SEMAINE SUIVANTE:
+- [Travaux planifiés]
+- [Livraisons attendues]
+- [Jalons à valider]
+
+BESOINS CLIENT:
+- [Décisions requises]
+- [Validations attendues]
+- [RDV à planifier]
+
+Format: PDF 2 pages max
+Ton: Factuel, rassurant, transparent
+Destinataire: Client / Maître d'œuvre
+Sauvegarde: ~/Cowork-Workspace/chantiers/[nom]/rapports/rapport-semaine-[numéro].pdf
+```
+
+**Fréquence recommandée**:
+- Chantiers 2-4 semaines: Rapport hebdomadaire
+- Chantiers >1 mois: Rapport hebdo + synthèse mensuelle
+- Chantiers <2 semaines: Rapport final uniquement
+
+**Envoi automatique**:
+
+```
+Prépare email envoi rapport hebdo:
+
+Objet: Chantier [Nom] - Rapport semaine [numéro]
+
+Bonjour [Client],
+
+Veuillez trouver ci-joint le rapport d'avancement de votre chantier
+pour la semaine écoulée.
+
+Points clés:
+- Avancement: [X%] (+[Y]% cette semaine)
+- Planning: [Conforme OU Retard de X jours suite à [raison]]
+- Prochaines étapes: [Résumé 2-3 tâches]
+
+Je reste à votre disposition pour tout complément d'information.
+
+Cordialement,
+[Signature]
+
+PJ: rapport-semaine-[numéro].pdf
+```
+
+**Avantages reporting récurrent**:
+- Client rassuré (visibilité continue)
+- Évite mauvaises surprises (alertes précoces)
+- Justification retards avant qu'ils deviennent problèmes
+- Valorisation travail accompli (client voit progression)
+- Traçabilité pour vous (preuve suivi rigoureux)
+
 ---
 
 ## Bonnes pratiques

@@ -800,6 +800,93 @@ PM compiles final version
 Tool: Google Drive with shared folder permissions
 ```
 
+### Weekly/Monthly Progress Reporting
+
+For longer projects (>2 weeks), create periodic progress reports:
+
+```
+Generate weekly progress report from work log [project name]:
+
+PERIOD: Week of [start date] to [end date]
+
+WORK COMPLETED THIS WEEK:
+- [Summary of tasks with completion %]
+- [Milestones achieved]
+
+CREW:
+- Total man-days: [X]
+- Average crew size: [X people]
+
+MATERIALS CONSUMED:
+- [Key materials with quantities]
+- [Approximate cost if needed]
+
+OVERALL PROGRESS:
+- Start of week: [X%]
+- End of week: [Y%]
+- Weekly gain: [+Z%]
+
+SCHEDULE ADHERENCE:
+- Original completion date: [date]
+- Current forecast: [date]
+- Variance: [± X days] → Reason: [brief explanation]
+
+INCIDENTS/ALERTS:
+- [Any issues affecting schedule/budget]
+- [Corrective actions in progress]
+
+NEXT WEEK FORECAST:
+- [Planned work]
+- [Expected deliveries]
+- [Milestones to validate]
+
+CLIENT NEEDS:
+- [Decisions required]
+- [Approvals needed]
+- [Meetings to schedule]
+
+Format: 2-page PDF max
+Tone: Factual, reassuring, transparent
+Recipient: Client / Project Owner
+Save: ~/Cowork-Workspace/projects/[name]/reports/week-[number]-report.pdf
+```
+
+**Recommended frequency**:
+- 2-4 week projects: Weekly report
+- 1+ month projects: Weekly reports + monthly summary
+- <2 week projects: Final report only
+
+**Automated email delivery**:
+
+```
+Prepare email for weekly report:
+
+Subject: [Project Name] - Week [number] Progress Report
+
+Hello [Client],
+
+Please find attached this week's progress report for your project.
+
+Key points:
+- Progress: [X%] (+[Y]% this week)
+- Schedule: [On track OR [X] days delay due to [reason]]
+- Next steps: [2-3 task summary]
+
+Feel free to contact me with any questions.
+
+Best regards,
+[Signature]
+
+Attachment: week-[number]-report.pdf
+```
+
+**Benefits of recurring reporting**:
+- Client reassurance (continuous visibility)
+- Avoid surprises (early alerts)
+- Justify delays before they become problems
+- Showcase progress (client sees value)
+- Traceability (proof of rigorous tracking)
+
 ---
 
 ## Best Practices

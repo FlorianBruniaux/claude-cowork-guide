@@ -7,6 +7,45 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.1] - 2026-01-27
+
+### Added
+
+**Workflow Enhancements: Reporting & Client Onboarding**
+
+**Work Log Enhancement (work-log.md/.en.md)**
+- New section: "Weekly/Monthly Progress Reporting" for long projects (>2 weeks)
+  - Template for periodic progress reports (team, materials, schedule adherence, forecast)
+  - Recommended frequency per project duration
+  - Automated email delivery template
+  - Benefits: client reassurance, early alerts, progress visibility, justification tracking
+- Adapted from Claude Cowork Playbook insights (recurring reporting concept)
+- Bilingual implementation (FR/EN) maintained
+
+**Client Follow-up Tracker Enhancement (client-followup-tracker.md/.en.md)**
+- New section: "Client Onboarding Checklist" for standardized new client process
+  - Complete checklist: information collection, documents, kickoff communication, project organization, quality tracking, closeout, long-term relationship
+  - Practical usage guide (copy template, check boxes, archive)
+  - Industry adaptations (construction, retail, services)
+  - Welcome pack personalization for high-value clients (>$10K/€10K)
+- Adapted from Claude Cowork Playbook insights (standardized onboarding concept)
+- Bilingual implementation (FR/EN) maintained
+
+**Value Added**
+- Fills gap: recurring reporting formalized (5% value)
+- Fills gap: standardized client onboarding (3% value)
+- Format: enrichment of existing workflows (no new files)
+- Effort: ~8h adaptation vs 54h full integration (85% efficiency gain)
+- Maintains editorial consistency (SME/artisan vocabulary, not corporate)
+
+### Fixed
+
+- README.md: Corrected workflow count inconsistencies
+  - "25 business workflows" → "26 business workflows" (line 71)
+  - "25 step-by-step guides" → "26 step-by-step guides" (line 112)
+  - Added missing Organization category (4 workflows) in Content section
+- README.fr.md: Same corrections for French version
+
 ## [1.2.0] - 2026-01-23
 
 ### Added

@@ -376,6 +376,124 @@ Réunion hebdo:
 - Partage best practices relances
 ```
 
+### Checklist accueil nouveau client
+
+Lorsqu'un prospect devient client (affaire signée), processus d'intégration standardisé:
+
+```
+Génère checklist onboarding pour nouveau client [Nom]:
+
+INFORMATIONS CLIENT (À COLLECTER)
+□ Coordonnées complètes
+  - Adresse facturation
+  - Adresse chantier/livraison (si différente)
+  - SIRET (si professionnel)
+  - Email + Téléphone principal + Secondaire
+□ Contact décisionnaire (nom, rôle, disponibilités)
+□ Références bancaires (si paiements récurrents)
+□ Assurances (RC, décennale si sous-traitance)
+
+DOCUMENTS ADMINISTRATIFS (À OBTENIR)
+□ Bon de commande signé OU Devis accepté daté et signé
+□ Conditions générales de vente signées
+□ Autorisation travaux (si copropriété/monument historique)
+□ Plans/diagnostics existants (amiante, plomb, électrique...)
+□ Cahier des charges détaillé (si projet complexe)
+
+COMMUNICATION DÉMARRAGE (J+1 signature)
+□ Email confirmation commande avec:
+  - Récapitulatif projet
+  - Planning prévisionnel
+  - Interlocuteur dédié (vous ou équipe)
+  - Processus communication (rapports, validations)
+□ Ajout client dans tableau suivi (statut "En cours")
+□ Création dossier client: ~/Cowork-Workspace/clients/[nom]/
+  - Sous-dossiers: contrat, plans, factures, correspondance, photos
+
+ORGANISATION CHANTIER/PRESTATION (J+2 à J+7)
+□ Visite préparatoire site (si applicable)
+□ Commande matériaux/fournitures
+□ Planification équipe (qui, quand, combien de temps)
+□ Prévenir voisinage (si travaux bruyants)
+□ Parking/accès chantier organisés
+□ Point démarrage avec client:
+  - Présenter équipe
+  - Expliquer déroulement
+  - Répondre dernières questions
+  - Remettre coordonnées urgence
+
+SUIVI QUALITÉ (Durant prestation)
+□ Points validation étapes clés (selon planning)
+□ Photos avant/pendant/après (systématique)
+□ Journal chantier tenu quotidiennement
+□ Rapport hebdo/mensuel (si chantier long)
+□ Gestion incidents/modifications immédiate
+
+CLÔTURE PROJET (Fin prestation)
+□ Visite réception avec client
+□ Levée réserves éventuelles
+□ Remise documents finaux:
+  - Facture finale
+  - Garanties
+  - Notices entretien
+  - Certifications (si applicable)
+□ PV de réception signé
+□ Demande avis Google/recommandation (si satisfaction)
+□ Classement dossier archives (garder 10 ans)
+
+RELATION CLIENT LONG TERME
+□ Ajout newsletter (avec accord)
+□ Relance satisfaction J+15 et J+90
+□ Relance commerciale annuelle (nouvelle offre)
+□ Traitement SAV réactif (si besoin)
+
+Format: PDF checklist imprimable avec cases à cocher
+Sauvegarde: ~/Cowork-Workspace/templates/checklist-onboarding-client.pdf
+```
+
+**Utilisation pratique**:
+
+```
+Chaque nouveau client:
+1. Copier checklist template
+2. Renommer: checklist-onboarding-[nom-client].pdf
+3. Cocher cases au fur et à mesure
+4. Joindre au dossier client
+
+Bénéfices:
+- Aucun oubli (procédure standard)
+- Client rassuré (professionnalisme)
+- Début relation sur bases saines
+- Moins d'improvisation = moins d'erreurs
+- Reproductibilité (même qualité pour tous)
+```
+
+**Adaptation selon métier**:
+
+```
+BTP/Artisans: Accent sur autorisations, sécurité chantier, voisinage
+Commerce: Accent sur livraison, garanties, SAV
+Services: Accent sur confidentialité, calendrier interventions, reporting
+```
+
+**Personnalisation welcome pack**:
+
+```
+Pour clients importants (>10K€), créer pack accueil:
+
+CONTENU PACK:
+1. Dossier cartonné avec logo entreprise
+2. Lettre bienvenue signée
+3. Checklist projet avec jalons
+4. Coordonnées équipe + urgence
+5. Guide "Pendant les travaux" (conseils pratiques)
+6. Petit cadeau symbolique (calendrier, stylo, etc.)
+
+Remise: RDV démarrage chantier
+
+Impact: Client se sent privilégié, relation renforcée dès J1
+```
+
 ---
 
 ## Bonnes pratiques

@@ -485,6 +485,124 @@ Import to: Google Calendar, Outlook, Apple Calendar
 This ensures follow-ups appear in daily schedule
 ```
 
+### Client Onboarding Checklist
+
+When a prospect becomes a client (deal won), standardized onboarding process:
+
+```
+Generate onboarding checklist for new client [Name]:
+
+CLIENT INFORMATION (TO COLLECT)
+□ Complete contact details
+  - Billing address
+  - Service/delivery address (if different)
+  - Tax ID/EIN (if business)
+  - Primary Email + Phone + Secondary contact
+□ Decision maker (name, role, availability)
+□ Payment information (if recurring payments)
+□ Insurance certificates (if applicable)
+
+ADMINISTRATIVE DOCUMENTS (TO OBTAIN)
+□ Signed purchase order OR Accepted quote with date and signature
+□ Signed terms and conditions
+□ Work authorization (if HOA/regulated building)
+□ Existing plans/diagnostics (asbestos, lead, electrical...)
+□ Detailed specifications (if complex project)
+
+KICKOFF COMMUNICATION (Day 1 after signing)
+□ Confirmation email with:
+  - Project summary
+  - Timeline overview
+  - Dedicated contact person (you or team member)
+  - Communication process (reports, approvals)
+□ Add client to tracker (status "Active")
+□ Create client folder: ~/Cowork-Workspace/clients/[name]/
+  - Subfolders: contract, plans, invoices, correspondence, photos
+
+PROJECT ORGANIZATION (Days 2-7)
+□ Site visit preparation (if applicable)
+□ Order materials/supplies
+□ Schedule crew (who, when, duration)
+□ Notify neighbors (if noisy work)
+□ Parking/site access arranged
+□ Kickoff meeting with client:
+  - Introduce team
+  - Explain process
+  - Answer final questions
+  - Provide emergency contacts
+
+QUALITY TRACKING (During service)
+□ Milestone validation points (per schedule)
+□ Before/during/after photos (systematic)
+□ Daily work log maintained
+□ Weekly/monthly reports (if long project)
+□ Immediate incident/change management
+
+PROJECT CLOSEOUT (Service completion)
+□ Walkthrough with client
+□ Address any punch list items
+□ Deliver final documents:
+  - Final invoice
+  - Warranties
+  - Maintenance instructions
+  - Certifications (if applicable)
+□ Signed acceptance form
+□ Request Google review/referral (if satisfied)
+□ Archive project file (keep 7-10 years)
+
+LONG-TERM CLIENT RELATIONSHIP
+□ Add to newsletter (with consent)
+□ Satisfaction follow-up at Day 15 and Day 90
+□ Annual check-in (new service opportunity)
+□ Responsive warranty service (if needed)
+
+Format: Printable PDF checklist with checkboxes
+Save: ~/Cowork-Workspace/templates/client-onboarding-checklist.pdf
+```
+
+**Practical usage**:
+
+```
+For each new client:
+1. Copy checklist template
+2. Rename: onboarding-[client-name].pdf
+3. Check boxes as completed
+4. Attach to client folder
+
+Benefits:
+- Nothing forgotten (standard procedure)
+- Client reassured (professionalism)
+- Relationship starts on solid foundation
+- Less improvisation = fewer errors
+- Reproducible (same quality for all)
+```
+
+**Industry adaptation**:
+
+```
+Construction/Trades: Emphasize permits, site safety, neighbor relations
+Retail: Emphasize delivery, warranties, after-sales service
+Services: Emphasize confidentiality, visit schedule, reporting
+```
+
+**Welcome pack personalization**:
+
+```
+For high-value clients (>$10K), create welcome package:
+
+PACKAGE CONTENTS:
+1. Branded folder with company logo
+2. Welcome letter (signed)
+3. Project checklist with milestones
+4. Team contacts + emergency number
+5. "During Your Project" guide (practical tips)
+6. Small branded gift (calendar, pen, etc.)
+
+Delivery: Kickoff meeting
+
+Impact: Client feels valued, relationship strengthened from Day 1
+```
+
 ---
 
 ## Best Practices
