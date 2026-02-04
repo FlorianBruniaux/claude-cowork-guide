@@ -60,10 +60,10 @@ See [full comparison](comparison.md).
 - Access network resources (except via Chrome)
 
 ### Q: Can Cowork browse the web?
-**A:** Yes, through Chrome integration. You grant Chrome access for specific tasks, and Cowork can search, read pages, and extract information. It cannot fill forms or make purchases for security reasons.
+**A:** Yes, through Chrome integration. You grant Chrome access for specific tasks, and Cowork can search, read pages, and extract information. Form filling is limited and requires explicit user approval for each action. Purchases and logins are prohibited for security reasons.
 
 ### Q: Can Cowork access Google Drive or Dropbox?
-**A:** No direct integration confirmed (January 2026). Workaround: Download cloud files to your local workspace first.
+**A:** Experimental connectors available but unreliable (January 2026). Gmail and Drive connectors exist but have inconsistent authentication and task completion. Recommended workaround: Download cloud files to your local workspace first for reliable processing.
 
 ### Q: Can Cowork run Python or shell scripts?
 **A:** No. Cowork manipulates files only—it cannot execute code. Use Claude Code for code execution.

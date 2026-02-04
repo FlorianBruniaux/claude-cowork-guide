@@ -27,7 +27,7 @@
   <img src="https://img.shields.io/badge/Status-Research%20Preview-yellow" alt="Status"/>
   <img src="https://img.shields.io/badge/Platform-macOS-blue" alt="Platform"/>
   <img src="https://img.shields.io/badge/Subscription-Pro%20%26%20Max-purple" alt="Subscription"/>
-  <img src="https://img.shields.io/badge/Version-1.2.1-orange" alt="Version"/>
+  <img src="https://img.shields.io/badge/Version-1.3.0-orange" alt="Version"/>
 </p>
 
 > Guide complet de l'assistant desktop de Claude pour les travailleurs du savoir et les petites entreprises.
@@ -50,7 +50,6 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 ### 3. Aller plus loin
 - 📋 [Cheatsheet](reference/cheatsheet.md) — À imprimer
 - 📖 [Guide complet](guide/01-getting-started.fr.md) — 10 min
-- 🎯 [Onboarding interactif](tools/cowork-onboarding.md) — Parcours personnalisé
 
 <details>
 <summary><strong>Prérequis</strong></summary>
@@ -68,7 +67,7 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 **Le problème** : La documentation officielle est dense. Les tutoriels deviennent obsolètes rapidement.
 Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalités.
 
-**Ce guide** : 26 workflows métiers, 70 prompts copier-coller, exemples pratiques.
+**Ce guide** : 24 workflows métiers, 70 prompts copier-coller, exemples pratiques.
 
 **Temps de lecture** : Démarrage 5 min | Guide complet 45 min
 
@@ -275,4 +274,4 @@ Sous licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ---
 
-*Version 1.1.0 | Janvier 2026 | Créé avec Claude*
+*Version 1.3.0 | Février 2026 | Créé avec Claude*

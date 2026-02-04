@@ -3,8 +3,8 @@
 # Source: cowork/ documentation
 # Purpose: Condensed index for LLMs to quickly answer user questions about Cowork
 
-version: "1.2.1"
-updated: "2026-01-27"
+version: "1.3.0"
+updated: "2026-02-03"
 status: "research-preview"
 
 # ════════════════════════════════════════════════════════════════
@@ -23,7 +23,7 @@ docs:
   glossary: "cowork/reference/glossary.md"
 
 # ════════════════════════════════════════════════════════════════
-# PROMPTS LIBRARY (60+ ready-to-use)
+# PROMPTS LIBRARY (67 ready-to-use)
 # ════════════════════════════════════════════════════════════════
 prompts:
   file_ops: "cowork/prompts/file-ops.md"  # 20 prompts
@@ -32,14 +32,35 @@ prompts:
   research: "cowork/prompts/research.md"  # 17 prompts
 
 # ════════════════════════════════════════════════════════════════
-# WORKFLOWS (step-by-step guides)
+# WORKFLOWS (24 step-by-step guides)
 # ════════════════════════════════════════════════════════════════
 workflows:
-  file_organization: "cowork/workflows/file-organization.md"
+  client_followup_tracker: "cowork/workflows/client-followup-tracker.md"
+  competitor_analysis: "cowork/workflows/competitor-analysis.md"
+  compliance_checklist: "cowork/workflows/compliance-checklist.md"
+  email_templates: "cowork/workflows/email-templates.md"
   expense_tracking: "cowork/workflows/expense-tracking.md"
-  report_synthesis: "cowork/workflows/report-synthesis.md"
+  file_organization: "cowork/workflows/file-organization.md"
+  inventory_tracking: "cowork/workflows/inventory-tracking.md"
+  invoice_generation: "cowork/workflows/invoice-generation.md"
+  knowledge_transfer: "cowork/workflows/knowledge-transfer.md"
   meeting_prep: "cowork/workflows/meeting-prep.md"
+  newsletter_creation: "cowork/workflows/newsletter-creation.md"
+  payment_reminders: "cowork/workflows/payment-reminders.md"
+  presentation_slides: "cowork/workflows/presentation-slides.md"
+  price_comparison: "cowork/workflows/price-comparison.md"
+  project_planning: "cowork/workflows/project-planning.md"
+  prospect_research: "cowork/workflows/prospect-research.md"
+  quality_checklist: "cowork/workflows/quality-checklist.md"
+  quote_creation: "cowork/workflows/quote-creation.md"
+  quote_to_invoice: "cowork/workflows/quote-to-invoice.md"
+  report_synthesis: "cowork/workflows/report-synthesis.md"
+  review_response: "cowork/workflows/review-response.md"
+  social_media_posts: "cowork/workflows/social-media-posts.md"
+  supplier_order: "cowork/workflows/supplier-order.md"
   team_handoff: "cowork/workflows/team-handoff.md"
+  website_audit: "cowork/workflows/website-audit.md"
+  work_log: "cowork/workflows/work-log.md"
 
 # ════════════════════════════════════════════════════════════════
 # QUICK REFERENCE - Essential facts

@@ -14,9 +14,8 @@ Claude's desktop-native autonomous assistant that manipulates local files, gener
 
 - Documentation hub: /README.md
 - Getting started: /guide/01-getting-started.md
-- 60+ ready-to-use prompts: /prompts/
-- 5 step-by-step workflows: /workflows/
-- Interactive onboarding: /tools/cowork-onboarding.md
+- 67 ready-to-use prompts: /prompts/
+- 24 step-by-step workflows: /workflows/
 - LLM-optimized index: /machine-readable/reference.yaml
 
 ## Key Files
@@ -36,7 +35,7 @@ Load the structured index for smart navigation:
 Contains:
 - All documentation paths
 - 67 prompts organized by category
-- 5 workflows
+- 24 workflows
 - Common errors and solutions
 - Token budgets per task type
 - Decision flowchart

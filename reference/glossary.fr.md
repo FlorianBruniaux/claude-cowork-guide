@@ -182,7 +182,7 @@ La structure de dossiers dédiée pour les opérations Cowork. Bonne pratique : 
 | **CLAUDE.md** | Fichier de contexte projet | Peut être utilisé pour le contexte partagé d'équipe |
 | **Sub-agents** | Travailleurs spécifiques à la tâche | Même concept, focalisé fichiers |
 | **Hooks** | Gestionnaires d'événements | Non disponible dans Cowork |
-| **MCP** | Model Context Protocol | Non exposé dans Cowork |
+| **MCP** | Model Context Protocol | Supporté via configuration Claude Desktop |
 
 ---
 

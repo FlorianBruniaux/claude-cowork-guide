@@ -7,6 +7,81 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-02-03
+
+### Changed
+
+**Documentation Updates & Corrections**
+
+- **Version Synchronization**: Updated all version references from 1.1.0/1.2.0/1.2.1 → 1.3.0
+  - README.md / README.fr.md: version badges and footers updated to February 2026, workflow count (24)
+  - reference/cheatsheet.md / .fr.md: version footers updated
+  - workflows/README.md / .en.md: version references updated (24 workflows)
+  - CLAUDE.md: version and workflow count updated (24)
+  - MANIFEST.yaml: version, audience, last_updated, complete workflow list (24 entries)
+  - machine-readable/reference.yaml: version, prompts count (67), complete workflow list (24)
+  - machine-readable/llms.txt: workflow count corrected (5 → 24), prompts count (67)
+
+- **Model Documentation**: Enhanced model selection guidance
+  - Added Haiku model to all model tables (simple tasks, very fast, low cost)
+  - Clarified Opus versions: Only Opus 4.5 available (4.0/4.1 retired from selector)
+  - Added context window compaction note (longer conversations via automatic summary)
+  - Updated in: guide/02-capabilities.md/.fr.md, reference/cheatsheet.md/.fr.md
+
+- **macOS Terminology**: Updated for macOS 13+ Ventura
+  - "System Preferences" → "System Settings" throughout troubleshooting
+  - Added backward compatibility note for macOS 12 and earlier
+  - Updated in: guide/04-troubleshooting.md/.fr.md (4 occurrences each)
+
+- **Cloud Connectors**: Aligned documentation on experimental status
+  - Updated from "Not confirmed" → "Experimental, unreliable (January 2026)"
+  - Clarified Gmail/Drive connectors exist but have inconsistent behavior
+  - Updated in: guide/00-overview.md/.fr.md, reference/faq.md/.fr.md
+
+- **Form Filling**: Fixed capability inconsistency
+  - FAQ corrected from "cannot fill forms" → "Limited, requires explicit approval"
+  - Aligned with capabilities matrix (⚠️ Limited status)
+  - Updated in: reference/faq.md/.fr.md
+
+- **MCP Support**: Corrected glossary entry
+  - Changed from "Not exposed in Cowork" → "Supported via Claude Desktop configuration"
+  - Updated in: reference/glossary.md/.fr.md
+
+- **Competitor Comparison**: Updated with latest information
+  - Added "Updated February 2026" timestamp
+  - Claude Code: Updated from "Usage-based" → "Included in Team plan"
+  - Opus versions: Clarified only 4.5 available (4.0/4.1 retired)
+  - ChatGPT pricing: Updated to include Pro tier ($200/mo)
+  - Updated in: reference/comparison.md/.fr.md
+
+- **Copilot Disambiguation**: Added clarity on Microsoft products
+  - Added note distinguishing M365 Copilot (Office integration) from GitHub Copilot (dev tool)
+  - Prevents confusion between two separate Microsoft products
+  - Updated in: reference/comparison.md/.fr.md
+
+### Fixed
+
+**Workflow Categorization**: Corrected 5 misclassified workflows
+- Moved knowledge-transfer: Communication → Organisation (metadata: 🗂️ Organisation)
+- Moved price-comparison: Administratif → Commercial (metadata: 💼 Commercial)
+- Moved client-followup-tracker: Administratif → Commercial (metadata: 💼 Commercial)
+- Moved presentation-slides: Commercial → Communication (metadata: 📣 Communication)
+- Moved newsletter-creation: Commercial → Communication (metadata: 📣 Communication)
+- Removed knowledge-transfer duplication in README.en.md (was in both Communication and Organisation)
+- Final category counts: Administratif (4), Commercial (5), Production (5), Communication (6), Organisation (5)
+- Updated in: workflows/README.md, workflows/README.en.md
+
+**File Cleanup**: Removed deprecated and empty files
+- Deleted workflows/report-synthesis.md + .en.md (deprecated since v1.1.0)
+- Deleted workflows/team-handoff.md + .en.md (deprecated since v1.1.0)
+- Deleted tools/cowork-onboarding.md (empty file, no content)
+- Removed references to onboarding from: MANIFEST.yaml, README.md, README.fr.md
+
+**Script Corrections**: Fixed paths and counting logic
+- scripts/sync-version.sh: Corrected path `cowork-reference.yaml` → `reference.yaml`
+- scripts/check-version-sync.sh: Corrected same path reference
+- scripts/update-stats.sh: Fixed workflow double-counting (now excludes .en.md files)
+
 ## [1.2.1] - 2026-01-27
 
 ### Added

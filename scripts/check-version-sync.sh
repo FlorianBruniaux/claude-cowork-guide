@@ -77,20 +77,20 @@ else
     echo -e "   ${YELLOW}⚠${NC}  CHANGELOG.md not found"
 fi
 
-# Check 4: cowork-reference.yaml version
-echo "4. Checking machine-readable/cowork-reference.yaml..."
-REFERENCE="$COWORK_ROOT/../machine-readable/cowork-reference.yaml"
+# Check 4: reference.yaml version
+echo "4. Checking machine-readable/reference.yaml..."
+REFERENCE="$COWORK_ROOT/machine-readable/reference.yaml"
 if [[ -f "$REFERENCE" ]]; then
     reference_version=$(grep '^version:' "$REFERENCE" | head -1 | sed 's/version: *//' | tr -d '"')
     if [[ "$reference_version" == "$VERSION" ]]; then
-        echo -e "   ${GREEN}✓${NC} cowork-reference.yaml: $reference_version"
+        echo -e "   ${GREEN}✓${NC} reference.yaml: $reference_version"
     else
-        echo -e "   ${RED}✗${NC} cowork-reference.yaml: $reference_version (expected: $VERSION)"
+        echo -e "   ${RED}✗${NC} reference.yaml: $reference_version (expected: $VERSION)"
         echo "      Fix: Line ~6, update to: version: \"$VERSION\""
         ((issues++))
     fi
 else
-    echo -e "   ${YELLOW}⚠${NC}  cowork-reference.yaml not found"
+    echo -e "   ${YELLOW}⚠${NC}  reference.yaml not found"
 fi
 
 # Check 5: Parent README.md (main repo)

@@ -3,6 +3,8 @@
 🌐 **Languages**: [English](comparison.md) | [Français](comparison.fr.md)
 
 > **Purpose**: Choose the right Claude interface for your task
+>
+> *Updated: February 2026*
 
 ---
 
@@ -20,7 +22,7 @@
 | **Memory** | CLAUDE.md files | Via files | Project knowledge |
 | **Maturity** | Production-ready | Research preview | Production-ready |
 | **Platform** | macOS, Linux, Windows | macOS only | All (web) |
-| **Subscription** | Usage-based | Pro/Max ($20-200/mo) | All tiers |
+| **Subscription** | Included in Team plan | Pro/Max ($20-200/mo) | All tiers |
 | **Security docs** | Extensive | None yet | Standard |
 
 ---
@@ -327,7 +329,7 @@ Together they enable workflows impossible with either alone: **thinking at chat-
 
 ---
 
-## Competitive Landscape (January 2026)
+## Competitive Landscape (February 2026)
 
 How does Cowork compare to other AI desktop assistants?
 
@@ -343,6 +345,8 @@ How does Cowork compare to other AI desktop assistants?
 | **Privacy (local)** | ⚠️ API calls | ⚠️ Cloud | ⚠️ Cloud | ⚠️ Cloud | ✅ On-device |
 | **Free tier** | ❌ Pro/Max | ⚠️ Limited | ⚠️ Limited | ✅ Yes | ✅ Built-in |
 | **Platform** | macOS | Windows/Mac | Cross | Cross | Apple only |
+
+**Note**: "Copilot (MS)" refers to Microsoft 365 Copilot (Word/Excel/PowerPoint integration), not GitHub Copilot (developer tool with full file system access).
 
 ### Autonomy Ranking
 
@@ -389,7 +393,7 @@ How does Cowork compare to other AI desktop assistants?
 | **Apple Intelligence** | Free | Included with devices |
 | **Cowork** | $20-200/mo | Pro (light) or Max (heavy) |
 | **Copilot** | $20/mo (personal), $30/mo (enterprise) | M365 Copilot |
-| **ChatGPT** | Free-$20+/mo | Plus required for advanced |
+| **ChatGPT** | Free-$200/mo | Plus ($20), Pro ($200) |
 | **Gemini** | Free-$20/mo | Advanced for 1M context |
 
 ### When NOT to Use Cowork

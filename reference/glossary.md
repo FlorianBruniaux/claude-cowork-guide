@@ -158,7 +158,7 @@ The dedicated folder structure for Cowork operations. Best practice: `~/Cowork-W
 | **CLAUDE.md** | Project context file | Can use for shared team context |
 | **Sub-agents** | Task-specific workers | Same concept, file-focused |
 | **Hooks** | Event handlers | Not available in Cowork |
-| **MCP** | Model Context Protocol | Not exposed in Cowork |
+| **MCP** | Model Context Protocol | Supported via Claude Desktop configuration |
 
 ---
 

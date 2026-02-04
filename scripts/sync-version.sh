@@ -74,16 +74,16 @@ else
     echo -e "   ${YELLOW}⚠${NC}  CHANGELOG.md not found"
 fi
 
-# 4. Update cowork-reference.yaml
-echo "4. Updating cowork-reference.yaml..."
-REFERENCE="$COWORK_ROOT/../machine-readable/cowork-reference.yaml"
+# 4. Update reference.yaml
+echo "4. Updating reference.yaml..."
+REFERENCE="$COWORK_ROOT/machine-readable/reference.yaml"
 if [[ -f "$REFERENCE" ]]; then
     sed -i.bak "s/^version: *\".*\"/version: \"$VERSION\"/" "$REFERENCE"
     sed -i.bak "s/^updated: *\".*\"/updated: \"$CURRENT_DATE\"/" "$REFERENCE"
     rm "${REFERENCE}.bak"
     echo -e "   ${GREEN}✓${NC} Reference YAML updated"
 else
-    echo -e "   ${YELLOW}⚠${NC}  cowork-reference.yaml not found"
+    echo -e "   ${YELLOW}⚠${NC}  reference.yaml not found"
 fi
 
 # 5. Reminder for parent README

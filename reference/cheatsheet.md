@@ -36,10 +36,12 @@ Format: [specific format requirements]
 
 | Model | Use For | Speed |
 |-------|---------|-------|
+| **Haiku** | Very simple tasks, quick queries | Very Fast |
 | **Sonnet** | Daily tasks (emails, files) | Fast |
 | **Opus** | Complex analysis, synthesis | Slower |
 
-**Default**: Start with Sonnet. Switch to Opus if results lack depth.
+**Default**: Start with Sonnet. Use Haiku for simple queries. Switch to Opus if results lack depth.
+**Note**: Only Opus 4.5 available (4.0/4.1 retired).
 
 ---
 
@@ -253,4 +255,4 @@ Hit limit? → Break into smaller batches
 
 ---
 
-*Cowork v1.1.0 (Research Preview) | Part of Claude Cowork Guide*
+*Cowork v1.3.0 (Research Preview) | Part of Claude Cowork Guide*

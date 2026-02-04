@@ -13,7 +13,7 @@
 
 ## 📊 Workflows par Catégorie
 
-### 📋 Administratif (6 workflows)
+### 📋 Administratif (4 workflows)
 
 Gestion factures, devis, relances, conformité
 
@@ -23,8 +23,6 @@ Gestion factures, devis, relances, conformité
 | [Devis → Facture](quote-to-invoice.md) · [EN](quote-to-invoice.en.md) | Transformation automatique | 5 min | Débutant |
 | [Relances Impayés](payment-reminders.md) · [EN](payment-reminders.en.md) | Génération relances échelonnées | 15 min | Intermédiaire |
 | [Vérification Conformité](compliance-checklist.md) · [EN](compliance-checklist.en.md) | Check documents obligatoires BTP/Commerce | 20 min | Intermédiaire |
-| [Suivi Relances Clients](client-followup-tracker.md) · [EN](client-followup-tracker.en.md) | Tableau de bord Excel | 15 min | Débutant |
-| [Comparatif Prix Fournisseurs](price-comparison.md) · [EN](price-comparison.en.md) | Analyse multi-devis | 15 min | Débutant |
 
 ### 💼 Commercial (5 workflows)
 
@@ -35,8 +33,8 @@ Prospection, suivi clients, analyse marché
 | [Recherche Prospects](prospect-research.md) · [EN](prospect-research.en.md) | Investigation entreprise/client (SIREN, CA, décideurs) | 20 min | Intermédiaire |
 | [Création Devis Détaillé](quote-creation.md) · [EN](quote-creation.en.md) | Devis professionnels chiffrés | 20 min | Intermédiaire |
 | [Analyse Concurrence](competitor-analysis.md) · [EN](competitor-analysis.en.md) | Benchmarking local (prix, offres, avis) | 30 min | Intermédiaire |
-| [Présentations Commerciales](presentation-slides.md) · [EN](presentation-slides.en.md) | PowerPoint/Keynote client | 45 min | Intermédiaire |
-| [Newsletters Clients](newsletter-creation.md) · [EN](newsletter-creation.en.md) | Création newsletters régulières | 30 min | Intermédiaire |
+| [Suivi Relances Clients](client-followup-tracker.md) · [EN](client-followup-tracker.en.md) | Tableau de bord Excel | 15 min | Débutant |
+| [Comparatif Prix Fournisseurs](price-comparison.md) · [EN](price-comparison.en.md) | Analyse multi-devis | 15 min | Débutant |
 
 ### 🔧 Production (5 workflows)
 
@@ -50,7 +48,7 @@ Planning, stock, qualité, chantiers
 | [Contrôle Qualité](quality-checklist.md) · [EN](quality-checklist.en.md) | Listes vérification normalisées | 15 min | Débutant |
 | [Commandes Fournisseurs](supplier-order.md) · [EN](supplier-order.en.md) | Préparation bons de commande | 15 min | Intermédiaire |
 
-### 📣 Communication (6 workflows)
+### 📣 Communication (5 workflows)
 
 Réseaux sociaux, emails, avis clients, site web
 
@@ -60,9 +58,10 @@ Réseaux sociaux, emails, avis clients, site web
 | [Templates Emails](email-templates.md) · [EN](email-templates.en.md) | Bibliothèque emails pro réutilisables | 15 min | Débutant |
 | [Réponses Avis Clients](review-response.md) · [EN](review-response.en.md) | Gestion avis Google/Facebook | 5 min/avis | Débutant |
 | [Audit Site Vitrine](website-audit.md) · [EN](website-audit.en.md) | Diagnostic site web + plan d'action | 20 min | Débutant |
-| [Transmission Savoir-Faire](knowledge-transfer.md) · [EN](knowledge-transfer.en.md) | Documentation formation apprentis | 2-4h | Avancé |
+| [Présentations Commerciales](presentation-slides.md) · [EN](presentation-slides.en.md) | PowerPoint/Keynote client | 45 min | Intermédiaire |
+| [Newsletters Clients](newsletter-creation.md) · [EN](newsletter-creation.en.md) | Création newsletters régulières | 30 min | Intermédiaire |
 
-### 🗂️ Organisation (4 workflows)
+### 🗂️ Organisation (5 workflows)
 
 Fichiers, notes, réunions, dépenses
 
@@ -71,6 +70,7 @@ Fichiers, notes, réunions, dépenses
 | [Organisation Fichiers](file-organization.md) · [EN](file-organization.en.md) | Tri automatique dossiers | 15 min | Débutant |
 | [Suivi Dépenses](expense-tracking.md) · [EN](expense-tracking.en.md) | Tickets → Excel comptabilité | 20 min | Intermédiaire |
 | [Préparation Réunions](meeting-prep.md) · [EN](meeting-prep.en.md) | Briefings clients/fournisseurs | 20 min | Intermédiaire |
+| [Transmission Savoir-Faire](knowledge-transfer.md) · [EN](knowledge-transfer.en.md) | Documentation formation apprentis | 2-4h | Avancé |
 
 ---
 
@@ -196,7 +196,7 @@ cp ~/Cowork-Workspace/output/facture-validee.pdf \
 
 ## 📈 Évolution des Workflows
 
-**Version actuelle**: 26 workflows (v1.2.0)
+**Version actuelle**: 24 workflows (v1.3.0)
 
 **Contribuer**:
 - Proposer améliorations: [Issues GitHub](https://github.com/FlorianBruniaux/claude-cowork-guide)

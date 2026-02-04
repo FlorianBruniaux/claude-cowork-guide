@@ -16,8 +16,13 @@ Cowork supporte différents modèles Claude. Choisissez en fonction de la comple
 
 | Modèle | Idéal pour | Vitesse | Consommation |
 |--------|------------|---------|--------------|
+| **Haiku** | Tâches très simples, requêtes rapides | Très rapide | Faible |
 | **Sonnet** | Tâches quotidiennes, emails, organisation | Rapide | Standard |
 | **Opus** | Analyses complexes, synthèses multi-documents | Plus lent | Plus élevée |
+
+**Notes sur les modèles** (Février 2026) :
+- **Versions Opus** : Seul Opus 4.5 est disponible dans le sélecteur de modèle. Opus 4.0 et 4.1 ont été retirés.
+- **Fenêtre de contexte** : Cowork utilise maintenant la compaction automatique pour étendre les conversations au-delà de la fenêtre de contexte standard, permettant des sessions plus longues sans perte de contexte important.
 
 ### Quand utiliser chaque modèle
 

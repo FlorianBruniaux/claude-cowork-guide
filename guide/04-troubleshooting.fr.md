@@ -155,7 +155,8 @@ Cowork s'exécute dans une machine virtuelle sandbox. Les VPN interceptent et re
 **Solutions** :
 
 **Étape 1 : Vérifier les permissions système**
-1. Ouvrir **Préférences Système** → **Sécurité et confidentialité**
+1. Ouvrir **Réglages Système** → **Confidentialité et sécurité** (macOS 13+)
+   *Note : Sur macOS 12 et antérieur, utiliser Préférences Système → Sécurité et confidentialité*
 2. Aller à **Confidentialité** → **Fichiers et dossiers**
 3. Trouver **Claude** ou **Claude Desktop**
 4. S'assurer que votre dossier workspace est listé et coché
@@ -167,7 +168,7 @@ Cowork s'exécute dans une machine virtuelle sandbox. Les VPN interceptent et re
 4. Le sélectionner explicitement
 
 **Étape 3 : Accès disque complet (dernier recours)**
-1. Préférences Système → Sécurité et confidentialité → Confidentialité
+1. Réglages Système → Sécurité et confidentialité → Confidentialité
 2. Accès disque complet → Ajouter Claude Desktop
 3. Redémarrer l'app
 
@@ -416,7 +417,7 @@ en utilisant les paramètres régionaux européens (séparateurs point-virgule d
 - Mettre à jour vers la dernière version de Chrome
 
 **Étape 2 : Accorder les permissions Chrome**
-1. Préférences Système → Sécurité et confidentialité → Confidentialité
+1. Réglages Système → Sécurité et confidentialité → Confidentialité
 2. Accessibilité → Ajouter Claude Desktop
 3. Enregistrement d'écran → Ajouter Claude Desktop (si nécessaire)
 
@@ -588,7 +589,7 @@ Signaler à Anthropic quand :
 | Problème | Solution rapide |
 |----------|-----------------|
 | Ne voit pas Cowork | Mettre à jour l'app + redémarrer |
-| Permission refusée | Accorder à nouveau l'accès au dossier dans Préférences Système |
+| Permission refusée | Accorder à nouveau l'accès au dossier dans Réglages Système |
 | La tâche s'arrête | Diviser en lots plus petits |
 | Formules Excel cassées | Spécifier la syntaxe régionale dans le prompt |
 | Chrome ne fonctionne pas | Accorder la permission Accessibilité |

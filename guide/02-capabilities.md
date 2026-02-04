@@ -16,8 +16,13 @@ Cowork supports different Claude models. Choose based on your task complexity.
 
 | Model | Best For | Speed | Usage Cost |
 |-------|----------|-------|------------|
+| **Haiku** | Very simple tasks, quick queries | Very Fast | Low |
 | **Sonnet** | Daily tasks, emails, organization | Fast | Standard |
 | **Opus** | Complex analysis, multi-document synthesis | Slower | Higher |
+
+**Model Notes** (February 2026):
+- **Opus versions**: Only Opus 4.5 is available in the model selector. Opus 4.0 and 4.1 have been retired.
+- **Context window**: Cowork now uses automatic compaction to extend conversations beyond the standard context window, enabling longer sessions without losing important context.
 
 ### When to Use Each
 

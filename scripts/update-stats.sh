@@ -43,9 +43,9 @@ echo "  Research: $RESEARCH_COUNT"
 echo "  ${GREEN}Total Prompts: $TOTAL_PROMPTS${NC}"
 echo
 
-# Count workflows
+# Count workflows (excluding .en.md to avoid double-counting)
 echo -e "${BLUE}Counting workflows...${NC}"
-WORKFLOWS_COUNT=$(find "$COWORK_ROOT/workflows" -name "*.md" -not -name "README.md" 2>/dev/null | wc -l | tr -d ' ')
+WORKFLOWS_COUNT=$(find "$COWORK_ROOT/workflows" -name "*.md" -not -name "README.md" -not -name "*.en.md" 2>/dev/null | wc -l | tr -d ' ')
 echo "  ${GREEN}Total Workflows: $WORKFLOWS_COUNT${NC}"
 echo
 

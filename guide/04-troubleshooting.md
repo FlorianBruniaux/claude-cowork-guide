@@ -155,7 +155,8 @@ Cowork runs in a sandboxed virtual machine. VPNs intercept and reroute network t
 **Solutions**:
 
 **Step 1: Check System Permissions**
-1. Open **System Preferences** → **Security & Privacy**
+1. Open **System Settings** → **Privacy & Security** (macOS 13+)
+   *Note: On macOS 12 and earlier, use System Preferences → Security & Privacy*
 2. Go to **Privacy** → **Files and Folders**
 3. Find **Claude** or **Claude Desktop**
 4. Ensure your workspace folder is listed and checked
@@ -167,7 +168,7 @@ Cowork runs in a sandboxed virtual machine. VPNs intercept and reroute network t
 4. Select it explicitly
 
 **Step 3: Full Disk Access (Last Resort)**
-1. System Preferences → Security & Privacy → Privacy
+1. System Settings → Security & Privacy → Privacy
 2. Full Disk Access → Add Claude Desktop
 3. Restart the app
 
@@ -416,7 +417,7 @@ using European regional settings (semicolon separators in formulas).
 - Update to latest Chrome version
 
 **Step 2: Grant Chrome Permissions**
-1. System Preferences → Security & Privacy → Privacy
+1. System Settings → Security & Privacy → Privacy
 2. Accessibility → Add Claude Desktop
 3. Screen Recording → Add Claude Desktop (if needed)
 
@@ -588,7 +589,7 @@ Report to Anthropic when:
 | Issue | Quick Fix |
 |-------|-----------|
 | Can't see Cowork | Update app + restart |
-| Permission denied | Re-grant folder access in System Preferences |
+| Permission denied | Re-grant folder access in System Settings |
 | Task stops | Break into smaller batches |
 | Excel formulas broken | Specify regional syntax in prompt |
 | Chrome not working | Grant Accessibility permission |

@@ -3,6 +3,8 @@
 🌐 **Langues** : [Français](comparison.fr.md) | [English](comparison.md)
 
 > **Objectif** : Choisir l'interface Claude adaptée à votre tâche
+>
+> *Mis à jour : Février 2026*
 
 ---
 
@@ -20,7 +22,7 @@
 | **Mémoire** | Fichiers CLAUDE.md | Via fichiers | Connaissance projet |
 | **Maturité** | Production | Preview recherche | Production |
 | **Plateforme** | macOS, Linux, Windows | macOS uniquement | Tous (web) |
-| **Abonnement** | Basé sur l'usage | Pro/Max (20-200$/mois) | Tous les tiers |
+| **Abonnement** | Inclus dans Team plan | Pro/Max (20-200$/mois) | Tous les tiers |
 | **Docs sécurité** | Complètes | Pas encore | Standard |
 
 ---
@@ -327,7 +329,7 @@ Ensemble ils permettent des workflows impossibles avec l'un seul : **réflexion 
 
 ---
 
-## Paysage concurrentiel (janvier 2026)
+## Paysage concurrentiel (février 2026)
 
 Comment Cowork se compare aux autres assistants desktop IA ?
 
@@ -343,6 +345,8 @@ Comment Cowork se compare aux autres assistants desktop IA ?
 | **Confidentialité (local)** | ⚠️ Appels API | ⚠️ Cloud | ⚠️ Cloud | ⚠️ Cloud | ✅ Sur appareil |
 | **Tier gratuit** | ❌ Pro/Max | ⚠️ Limité | ⚠️ Limité | ✅ Oui | ✅ Inclus |
 | **Plateforme** | macOS | Windows/Mac | Multi | Multi | Apple uniquement |
+
+**Note** : "Copilot (MS)" désigne Microsoft 365 Copilot (intégration Word/Excel/PowerPoint), pas GitHub Copilot (outil développeur avec accès complet au système de fichiers).
 
 ### Classement autonomie
 
@@ -389,7 +393,7 @@ Comment Cowork se compare aux autres assistants desktop IA ?
 | **Apple Intelligence** | Gratuit | Inclus avec appareils |
 | **Cowork** | 20-200$/mois | Pro (léger) ou Max (intensif) |
 | **Copilot** | 20$/mois (personnel), 30$/mois (enterprise) | M365 Copilot |
-| **ChatGPT** | Gratuit-20+$/mois | Plus requis pour avancé |
+| **ChatGPT** | Gratuit-200$/mois | Plus (20$), Pro (200$) |
 | **Gemini** | Gratuit-20$/mois | Advanced pour contexte 1M |
 
 ### Quand NE PAS utiliser Cowork

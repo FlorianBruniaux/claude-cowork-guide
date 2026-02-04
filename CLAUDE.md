@@ -6,7 +6,7 @@ Focus: TPE/PME françaises (artisans, commerçants, dirigeants).
 
 ## Repository Structure
 guide/           # Documentation (5 fichiers)
-workflows/       # 25 workflows par catégorie
+workflows/       # 24 workflows par catégorie
 prompts/         # 67 prompts copy-paste
 reference/       # Cheatsheet, FAQ, glossaire
 machine-readable/ # Pour LLMs
@@ -17,8 +17,8 @@ whitepapers/     # Livres blancs (à venir)
 ## Key Files
 | File | Purpose |
 |------|---------|
-| VERSION | Source de vérité version (1.1.0) |
-| workflows/README.md | Index des 25 workflows |
+| VERSION | Source de vérité version (1.3.0) |
+| workflows/README.md | Index des 24 workflows |
 | reference/cheatsheet.md | Quick reference |
 
 ## Commands

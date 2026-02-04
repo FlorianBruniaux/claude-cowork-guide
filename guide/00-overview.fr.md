@@ -120,7 +120,7 @@ Cowork partage la même architecture backend que Claude Code :
 | Aspect | Détails |
 |--------|---------|
 | **Modèle d'accès** | Sandbox dossier local (autorisation utilisateur) |
-| **Connecteurs cloud** | Non confirmé (pas de Drive, Dropbox, etc. encore) |
+| **Connecteurs cloud** | Expérimentaux, non fiables (Gmail, Drive disponibles mais incohérents en janvier 2026) |
 | **Sous-agents** | Exécution parallèle avec contexte frais par agent |
 | **Exécution de code** | **Aucune** — Fichiers uniquement (pas de scripts, pas de commandes) |
 | **Navigateur** | Intégration Chrome pour tâches de recherche web |

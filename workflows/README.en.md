@@ -13,7 +13,7 @@
 
 ## 📊 Workflows by Category
 
-### 📋 Administrative (6 workflows)
+### 📋 Administrative (4 workflows)
 
 Invoice management, quotes, payment reminders, compliance
 
@@ -23,8 +23,6 @@ Invoice management, quotes, payment reminders, compliance
 | [Quote → Invoice](quote-to-invoice.en.md) · [FR](quote-to-invoice.md) | Automatic transformation | 5 min | Beginner |
 | [Payment Reminders](payment-reminders.en.md) · [FR](payment-reminders.md) | Generate escalating reminders | 15 min | Intermediate |
 | [Compliance Checklist](compliance-checklist.en.md) · [FR](compliance-checklist.md) | Check mandatory documents (Construction/Retail) | 20 min | Intermediate |
-| [Client Follow-up Tracker](client-followup-tracker.en.md) · [FR](client-followup-tracker.md) | Excel dashboard | 15 min | Beginner |
-| [Supplier Price Comparison](price-comparison.en.md) · [FR](price-comparison.md) | Multi-quote analysis | 15 min | Beginner |
 
 ### 💼 Commercial (5 workflows)
 
@@ -35,8 +33,8 @@ Prospecting, customer relations, market analysis
 | [Prospect Research](prospect-research.en.md) · [FR](prospect-research.md) | Company/customer investigation (Tax ID, revenue, decision-makers) | 20 min | Intermediate |
 | [Detailed Quote Creation](quote-creation.en.md) · [FR](quote-creation.md) | Professional itemized quotes | 20 min | Intermediate |
 | [Competitor Analysis](competitor-analysis.en.md) · [FR](competitor-analysis.md) | Local benchmarking (pricing, offerings, reviews) | 30 min | Intermediate |
-| [Commercial Presentations](presentation-slides.en.md) · [FR](presentation-slides.md) | PowerPoint/Keynote for clients | 45 min | Intermediate |
-| [Customer Newsletters](newsletter-creation.en.md) · [FR](newsletter-creation.md) | Create regular newsletters | 30 min | Intermediate |
+| [Client Follow-up Tracker](client-followup-tracker.en.md) · [FR](client-followup-tracker.md) | Excel dashboard | 15 min | Beginner |
+| [Supplier Price Comparison](price-comparison.en.md) · [FR](price-comparison.md) | Multi-quote analysis | 15 min | Beginner |
 
 ### 🔧 Production (5 workflows)
 
@@ -60,9 +58,10 @@ Social media, emails, customer reviews, website
 | [Email Templates](email-templates.en.md) · [FR](email-templates.md) | Reusable professional email library | 15 min | Beginner |
 | [Customer Review Responses](review-response.en.md) · [FR](review-response.md) | Google/Facebook review management | 5 min/review | Beginner |
 | [Website Audit](website-audit.en.md) · [FR](website-audit.md) | Website diagnostic + action plan | 20 min | Beginner |
-| [Knowledge Transfer](knowledge-transfer.en.md) · [FR](knowledge-transfer.md) | Apprentice training documentation | 2-4h | Advanced |
+| [Commercial Presentations](presentation-slides.en.md) · [FR](presentation-slides.md) | PowerPoint/Keynote for clients | 45 min | Intermediate |
+| [Customer Newsletters](newsletter-creation.en.md) · [FR](newsletter-creation.md) | Create regular newsletters | 30 min | Intermediate |
 
-### 🗂️ Organization (4 workflows)
+### 🗂️ Organization (5 workflows)
 
 Files, notes, meetings, expenses
 
@@ -196,7 +195,7 @@ cp ~/Cowork-Workspace/output/validated-invoice.pdf \
 
 ## 📈 Workflow Evolution
 
-**Current version**: 25 workflows (v1.1.0)
+**Current version**: 24 workflows (v1.3.0)
 
 **Contribute**:
 - Suggest improvements: [GitHub Issues](https://github.com/FlorianBruniaux/claude-cowork-guide)
