@@ -78,6 +78,24 @@ See [full comparison](comparison.md).
 ### Q: Can Cowork create Excel formulas?
 **A:** Yes! Cowork can create Excel files with working formulas, multiple sheets, and formatting. Specify your regional setting (US comma vs EU semicolon syntax) in your prompt.
 
+### Q: Is Claude in Excel the same as Cowork?
+**A:** No. These are two separate products:
+
+**Claude in Excel** (add-in launched Jan 24, 2026):
+- Microsoft Excel add-in
+- Works inside Excel application
+- Helps write formulas, analyze data in existing sheets
+- Windows + macOS (Excel 2016+)
+
+**Cowork's Excel capabilities**:
+- Part of Claude Desktop app (macOS only)
+- Creates Excel files from scratch
+- Generates spreadsheets from unstructured data (receipts, images, text)
+
+**Rule of thumb**: If you're already in Excel and need formula help → use Claude in Excel add-in. If you need to generate a new spreadsheet from raw data → use Cowork.
+
+See [detailed comparison](comparison.md#common-confusion).
+
 ---
 
 ## Security

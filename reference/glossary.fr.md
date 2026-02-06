@@ -48,6 +48,9 @@ Un fichier créé par Claude (document, tableur, image, etc.) pendant une sessio
 ### Claude Code
 L'outil CLI d'Anthropic pour les développeurs. Partage l'architecture avec Cowork mais fournit un accès shell complet et l'exécution de code. Interface basée terminal.
 
+### Claude in Excel
+Add-in Microsoft Excel (lancé 24 janvier 2026) qui fournit une assistance IA à l'intérieur d'Excel. **Pas la même chose que Cowork**. L'add-in aide avec l'écriture de formules, l'analyse de données et la création de graphiques dans des fichiers Excel existants. Les capacités Excel de Cowork génèrent de nouveaux tableurs depuis des données non structurées. Voir [comparaison](comparison.fr.md#confusion-frequente).
+
 ### Claude Desktop
 L'application macOS qui héberge Cowork. Différente de l'interface web (claude.ai).
 

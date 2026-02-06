@@ -27,6 +27,50 @@
 
 ---
 
+## Confusion fréquente : Claude in Excel vs Capacités Excel de Cowork {#confusion-frequente}
+
+**Claude in Excel** et les **capacités Excel de Cowork** sont deux produits distincts servant des objectifs différents.
+
+| Aspect | Add-in Claude in Excel | Capacités Excel de Cowork |
+|--------|------------------------|---------------------------|
+| **Description** | Add-in Microsoft Excel (lancé 24 jan 2026) | Fonctionnalité de manipulation de fichiers de l'app desktop |
+| **Installation** | Installer depuis la boutique add-ins Excel | Partie de Claude Desktop (macOS uniquement) |
+| **Interface** | Fonctionne à l'intérieur d'Excel | Crée des fichiers Excel depuis zéro |
+| **Cas d'usage** | Assistance IA pendant le travail dans Excel | Générer des fichiers Excel depuis données/images/texte |
+| **Workflow principal** | Ouvrir Excel → Demander l'aide de Claude → Recevoir suggestions de formules | Donner des données à Cowork → Recevoir un fichier Excel généré |
+| **Idéal pour** | Écriture de formules, analyse de données dans feuilles existantes | Créer de nouveaux tableurs depuis données non structurées |
+| **Plateforme** | Windows, macOS (Excel 2016+) | macOS uniquement |
+| **Abonnement** | Nécessite abonnement Claude + licence Excel | Nécessite abonnement Claude Pro/Max |
+| **Intégration** | Intégration Excel profonde (formules, graphiques, tableaux croisés dynamiques) | Génération Excel basique (formules, formatage) |
+
+### Quand utiliser lequel ?
+
+**Utiliser l'add-in Claude in Excel quand :**
+- Vous travaillez déjà dans un fichier Excel
+- Vous avez besoin d'aide avec des formules complexes
+- Vous voulez que l'IA analyse des données existantes
+- Vous avez besoin de tableaux croisés dynamiques, graphiques avancés ou macros
+
+**Utiliser les capacités Excel de Cowork quand :**
+- Vous avez des données non structurées (reçus, images, PDFs)
+- Vous devez créer un nouveau tableur depuis zéro
+- Vous voulez un traitement par lots de plusieurs fichiers → sortie Excel
+- Vous ne voulez pas ouvrir Excel manuellement
+
+### Ressources officielles
+
+**Add-in Claude in Excel** :
+- Tutoriel : [Using Claude in Excel](https://support.claude.com/en/articles/12650343-using-claude-in-excel)
+- Installation : Excel → Insertion → Compléments → Rechercher "Claude"
+
+**Capacités Excel de Cowork** :
+- Ce guide : [Capacités Excel](../guide/02-capabilities.fr.md#capacités-excel-détaillées)
+- Workflows : [Validation Modèle Financier](../workflows/financial-model-validation.fr.md), [Planification Effectifs](../workflows/workforce-planning.fr.md)
+
+> ⚠️ **Important** : Ce guide documente **uniquement les capacités Excel de Cowork**. Pour l'aide avec l'add-in Claude in Excel, référez-vous à la documentation officielle Microsoft/Anthropic.
+
+---
+
 ## Comparaison détaillée des fonctionnalités
 
 ### Opérations sur fichiers

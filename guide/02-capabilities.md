@@ -235,6 +235,16 @@ Since Excel output is a major Cowork strength:
 | **Macros/VBA** | ❌ No | Security restriction |
 | **Charts** | ⚠️ Limited | Basic chart types |
 
+### Not to Be Confused With: Claude in Excel Add-in
+
+> ⚠️ **Important Distinction**: This section describes **Cowork's Excel generation capabilities** (creating `.xlsx` files from data). This is NOT the same as the **Claude in Excel add-in** (Microsoft Excel add-in for formula assistance, launched Jan 24, 2026).
+>
+> **Key differences**:
+> - **Cowork Excel**: Generates new Excel files from unstructured data (receipts, images, text)
+> - **Claude in Excel**: Helps with formulas/analysis inside existing Excel files
+>
+> See [full comparison](../reference/comparison.md#common-confusion).
+
 ### Regional Considerations
 
 Excel formula syntax varies by region:

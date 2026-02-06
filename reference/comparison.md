@@ -27,6 +27,50 @@
 
 ---
 
+## Common Confusion: Claude in Excel vs Cowork {#common-confusion}
+
+**Claude in Excel** and **Cowork's Excel capabilities** are two distinct products that serve different purposes.
+
+| Aspect | Claude in Excel Add-in | Cowork Excel Capabilities |
+|--------|------------------------|---------------------------|
+| **What it is** | Microsoft Excel add-in (launched Jan 24, 2026) | Desktop app file manipulation feature |
+| **Installation** | Install from Excel add-ins store | Part of Claude Desktop (macOS only) |
+| **Interface** | Works inside Excel application | Creates Excel files from scratch |
+| **Use case** | AI assistance while working in Excel | Generate Excel files from data/images/text |
+| **Primary workflow** | Open Excel → Ask Claude for help → Get formula suggestions | Give Cowork data → Receive generated Excel file |
+| **Best for** | Formula writing, data analysis in existing sheets | Creating new spreadsheets from unstructured data |
+| **Platform** | Windows, macOS (Excel 2016+) | macOS only |
+| **Subscription** | Requires Claude subscription + Excel license | Requires Claude Pro/Max subscription |
+| **Integration** | Deep Excel integration (formulas, charts, pivot tables) | Basic Excel generation (formulas, formatting) |
+
+### When to Use Which?
+
+**Use Claude in Excel add-in when:**
+- You're already working in an Excel file
+- You need help with complex formulas
+- You want AI to analyze existing data
+- You need pivot tables, advanced charts, or macros
+
+**Use Cowork Excel capabilities when:**
+- You have unstructured data (receipts, images, PDFs)
+- You need to create a new spreadsheet from scratch
+- You want batch processing of multiple files → Excel output
+- You don't want to manually open Excel
+
+### Official Resources
+
+**Claude in Excel Add-in**:
+- Tutorial: [Using Claude in Excel](https://support.claude.com/en/articles/12650343-using-claude-in-excel)
+- Installation: Excel → Insert → Add-ins → Search "Claude"
+
+**Cowork Excel Capabilities**:
+- This guide: [Excel Capabilities](../guide/02-capabilities.md#excel-capabilities-detailed)
+- Workflows: [Financial Model Validation](../workflows/financial-model-validation.md), [Workforce Planning](../workflows/workforce-planning.md)
+
+> ⚠️ **Important**: This guide documents **Cowork's Excel capabilities only**. For help with the Claude in Excel add-in, refer to official Microsoft/Anthropic documentation.
+
+---
+
 ## Detailed Feature Comparison
 
 ### File Operations

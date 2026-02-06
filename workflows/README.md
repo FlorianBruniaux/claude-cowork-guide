@@ -1,6 +1,6 @@
 # Cowork Workflows
 
-> **26 tutoriels étape par étape pour automatiser vos tâches professionnelles**
+> **28 tutoriels étape par étape pour automatiser vos tâches professionnelles**
 
 **Professions ciblées**: Artisans/BTP · Commerçants · Dirigeants TPE/PME · Indépendants
 
@@ -13,9 +13,9 @@
 
 ## 📊 Workflows par Catégorie
 
-### 📋 Administratif (4 workflows)
+### 📋 Administratif (6 workflows)
 
-Gestion factures, devis, relances, conformité
+Gestion factures, devis, relances, conformité, modèles financiers
 
 | Workflow | Description | Temps | Niveau |
 |----------|-------------|-------|--------|
@@ -23,6 +23,8 @@ Gestion factures, devis, relances, conformité
 | [Devis → Facture](quote-to-invoice.md) · [EN](quote-to-invoice.en.md) | Transformation automatique | 5 min | Débutant |
 | [Relances Impayés](payment-reminders.md) · [EN](payment-reminders.en.md) | Génération relances échelonnées | 15 min | Intermédiaire |
 | [Vérification Conformité](compliance-checklist.md) · [EN](compliance-checklist.en.md) | Check documents obligatoires BTP/Commerce | 20 min | Intermédiaire |
+| [Validation Modèle Financier](financial-model-validation.md) · [EN](financial-model-validation.en.md) | Audit formules Excel, hypothèses, erreurs | 30-45 min | Intermédiaire |
+| [Planification Effectifs](workforce-planning.md) · [EN](workforce-planning.en.md) | Modélisation croissance RH, coûts masse salariale | 40-60 min | Intermédiaire |
 
 ### 💼 Commercial (5 workflows)
 

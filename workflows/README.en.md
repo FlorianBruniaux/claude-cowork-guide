@@ -1,6 +1,6 @@
 # Cowork Workflows
 
-> **26 step-by-step tutorials to automate your professional tasks**
+> **28 step-by-step tutorials to automate your professional tasks**
 
 **Target professions**: Contractors · Merchants · Small business owners · Freelancers
 
@@ -13,9 +13,9 @@
 
 ## 📊 Workflows by Category
 
-### 📋 Administrative (4 workflows)
+### 📋 Administrative (6 workflows)
 
-Invoice management, quotes, payment reminders, compliance
+Invoice management, quotes, payment reminders, compliance, financial models
 
 | Workflow | Description | Time | Level |
 |----------|-------------|------|-------|
@@ -23,6 +23,8 @@ Invoice management, quotes, payment reminders, compliance
 | [Quote → Invoice](quote-to-invoice.en.md) · [FR](quote-to-invoice.md) | Automatic transformation | 5 min | Beginner |
 | [Payment Reminders](payment-reminders.en.md) · [FR](payment-reminders.md) | Generate escalating reminders | 15 min | Intermediate |
 | [Compliance Checklist](compliance-checklist.en.md) · [FR](compliance-checklist.md) | Check mandatory documents (Construction/Retail) | 20 min | Intermediate |
+| [Financial Model Validation](financial-model-validation.en.md) · [FR](financial-model-validation.md) | Audit Excel formulas, assumptions, errors | 30-45 min | Intermediate |
+| [Workforce Planning](workforce-planning.en.md) · [FR](workforce-planning.md) | Model HR growth, compensation costs | 40-60 min | Intermediate |
 
 ### 💼 Commercial (5 workflows)
 

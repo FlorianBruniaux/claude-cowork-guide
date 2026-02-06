@@ -27,6 +27,9 @@ Anthropic's CLI tool for developers. Shares architecture with Cowork but provide
 ### Claude Desktop
 The macOS application that hosts Cowork. Different from the web interface (claude.ai).
 
+### Claude in Excel
+Microsoft Excel add-in (launched January 24, 2026) that provides AI assistance inside Excel. **Not the same as Cowork**. The add-in helps with formula writing, data analysis, and chart creation within existing Excel files. Cowork's Excel capabilities generate new spreadsheets from unstructured data. See [comparison](comparison.md#common-confusion).
+
 ### Context Limit
 The maximum amount of text/data Claude can process in a single session (~200K tokens). When exceeded, tasks may fail or produce incomplete results.
 

@@ -241,6 +241,16 @@ SORTIE : Document de recherche avec matrice de comparaison
 | **Macros/VBA** | ❌ Non | Restriction de sécurité |
 | **Graphiques** | ⚠️ Limité | Types de graphiques de base |
 
+### À ne pas confondre : Add-in Claude in Excel
+
+> ⚠️ **Distinction importante** : Cette section décrit les **capacités de génération Excel de Cowork** (création de fichiers `.xlsx` depuis des données). Ce n'est PAS la même chose que l'**add-in Claude in Excel** (complément Microsoft Excel pour l'assistance aux formules, lancé 24 jan 2026).
+>
+> **Différences clés** :
+> - **Cowork Excel** : Génère de nouveaux fichiers Excel depuis des données non structurées (reçus, images, texte)
+> - **Claude in Excel** : Aide avec les formules/analyses à l'intérieur de fichiers Excel existants
+>
+> Voir [comparaison complète](../reference/comparison.fr.md#confusion-frequente).
+
 ### Considérations régionales
 
 La syntaxe des formules Excel varie selon les régions :
