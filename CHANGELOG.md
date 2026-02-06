@@ -7,6 +7,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.1] - 2026-02-06
+
+### Added
+
+**Claude Legal Extension Documentation**
+
+- **First Official Cowork Plugin**: Documented Claude Legal (announced Feb 3, 2026)
+  - guide/02-capabilities.md/.fr.md: Added Opus 4.6 model note (BigLaw Bench 90.2%)
+  - guide/02-capabilities.md/.fr.md: New "Extensions & Plugins" section (~35 lines each)
+  - Capabilities: contract review, risk detection, NDA triage, compliance tracking
+  - Use cases: automated contract verification, problematic clause detection, compliance checklists
+  - Legal disclaimer: does NOT provide legal advice, professional review required
+
+- **FAQ Integration**: Added "What is Claude Legal?" Q&A in Capabilities section
+  - reference/faq.md/.fr.md: New entry with cross-reference to full documentation
+  - 10-line factual explanation with link to detailed capabilities guide
+
+- **Workflow Enhancement**: Enriched compliance-checklist.md
+  - Added informational box about Claude Legal automation potential
+  - Positioned in "Cas d'usage" section for discoverability
+
+- **Prompts Library**: Enhanced data-extraction prompts
+  - prompts/data-extraction.md/.fr.md: Note under prompt #6 "Contract Key Terms"
+  - Explains Claude Legal can automate extraction with additional risk detection
+
+- **Machine-Readable Index**: Extended reference.yaml
+  - New `extensions` section with `claude_legal` entry
+  - Includes announced date, status, purpose, capabilities, use cases, disclaimer, model support
+
+- **Competitive Positioning**: Updated comparison matrices
+  - reference/comparison.md/.fr.md: Added "Legal document review" capability line
+  - Positioned in Document Processing section for clarity
+
+**Impact**: 10 files modified (+111 lines, -2 lines), 15 "Claude Legal" mentions across documentation, full FR/EN synchronization maintained.
+
 ## [1.3.0] - 2026-02-03
 
 ### Changed
