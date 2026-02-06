@@ -21,7 +21,8 @@ Cowork supporte différents modèles Claude. Choisissez en fonction de la comple
 | **Opus** | Analyses complexes, synthèses multi-documents | Plus lent | Plus élevée |
 
 **Notes sur les modèles** (Février 2026) :
-- **Versions Opus** : Seul Opus 4.5 est disponible dans le sélecteur de modèle. Opus 4.0 et 4.1 ont été retirés.
+- **Versions Opus** : Opus 4.5 et Opus 4.6 sont disponibles. Opus 4.0 et 4.1 ont été retirés.
+- **Capacités Opus 4.6** : Opus 4.6 a obtenu 90,2% sur le BigLaw Bench, le rendant particulièrement efficace pour la revue de documents légaux, l'analyse de contrats et les tâches liées à la conformité.
 - **Fenêtre de contexte** : Cowork utilise maintenant la compaction automatique pour étendre les conversations au-delà de la fenêtre de contexte standard, permettant des sessions plus longues sans perte de contexte important.
 
 ### Quand utiliser chaque modèle
@@ -315,6 +316,42 @@ Limite de contexte atteinte
 | Lot OCR (10+ images) | 60K-100K | 2-3 |
 
 **Surcharge agentique** : Les cycles Plan→Exécute→Vérifie ajoutent 15-30% de tokens.
+
+---
+
+## Extensions & Plugins
+
+Cowork supporte des extensions officielles qui étendent ses capacités pour des workflows spécialisés. Les extensions sont fournies par Anthropic et s'intègrent parfaitement à l'interface Cowork.
+
+### Extensions disponibles
+
+**Claude Legal** (annoncé 3 février 2026) :
+- **Objectif** : Automatiser la revue de documents légaux et la détection de risques
+- **Capacités clés** :
+  - Revue automatisée de contrats et extraction de termes clés
+  - Identification de risques et problèmes de conformité
+  - Triage de NDA et d'accords
+  - Suivi de la conformité réglementaire
+- **Cas d'usage pour TPE/PME** :
+  - Vérification automatique de contrats avant signature
+  - Détection de clauses problématiques dans les accords fournisseurs
+  - Génération de checklists de conformité pour réglementations sectorielles
+  - Vérification croisée des termes de factures et accords
+
+> ⚠️ **Disclaimer juridique** : Claude Legal ne fournit PAS de conseil juridique. Il assiste dans l'analyse de documents et l'identification de risques. Toutes les conclusions doivent être revues par un professionnel juridique qualifié avant toute décision.
+
+**Comment utiliser** : Les capacités Claude Legal sont accessibles via les prompts Cowork standards lors du traitement de documents légaux. Aucune installation séparée requise—mentionnez simplement vos besoins d'analyse juridique dans la description de votre tâche.
+
+**Exemple de prompt** :
+```
+Analyse le contrat dans ~/Cowork-Workspace/contrats/accord-fournisseur.pdf
+Identifie les termes clés, obligations et risques potentiels.
+Génère un résumé avec les problèmes signalés pour revue juridique.
+```
+
+### Extensions futures
+
+Anthropic pourra publier des extensions spécialisées supplémentaires pour d'autres domaines (comptabilité, documentation technique, etc.). Consultez les annonces officielles Anthropic pour les mises à jour.
 
 ---
 

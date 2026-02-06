@@ -96,6 +96,9 @@ See [full comparison](comparison.md).
 
 See [detailed comparison](comparison.md#common-confusion).
 
+### Q: What is Claude Legal?
+**A:** Claude Legal is the first official Cowork extension (announced Feb 3, 2026) for automated legal document review. It helps identify key contract terms, detect compliance risks, and triage legal documents. Use it for contract verification, NDA review, and compliance tracking. **Important**: Claude Legal does NOT provide legal advice—all findings should be reviewed by a qualified legal professional. See [Capabilities: Extensions & Plugins](../guide/02-capabilities.md#extensions--plugins) for details.
+
 ---
 
 ## Security

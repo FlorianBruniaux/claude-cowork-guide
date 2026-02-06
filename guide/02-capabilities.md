@@ -21,7 +21,8 @@ Cowork supports different Claude models. Choose based on your task complexity.
 | **Opus** | Complex analysis, multi-document synthesis | Slower | Higher |
 
 **Model Notes** (February 2026):
-- **Opus versions**: Only Opus 4.5 is available in the model selector. Opus 4.0 and 4.1 have been retired.
+- **Opus versions**: Opus 4.5 and Opus 4.6 are available. Opus 4.0 and 4.1 have been retired.
+- **Opus 4.6 capabilities**: Opus 4.6 achieved 90.2% on BigLaw Bench, making it particularly effective for legal document review, contract analysis, and compliance-related tasks.
 - **Context window**: Cowork now uses automatic compaction to extend conversations beyond the standard context window, enabling longer sessions without losing important context.
 
 ### When to Use Each
@@ -309,6 +310,42 @@ Context limit reached
 | OCR batch (10+ images) | 60K-100K | 2-3 |
 
 **Agentic overhead**: Plan→Execute→Check cycles add 15-30% tokens.
+
+---
+
+## Extensions & Plugins
+
+Cowork supports official extensions that extend its capabilities for specialized workflows. Extensions are provided by Anthropic and integrate seamlessly with the Cowork interface.
+
+### Available Extensions
+
+**Claude Legal** (announced February 3, 2026):
+- **Purpose**: Automate legal document review and risk detection
+- **Key capabilities**:
+  - Automated contract review and key term extraction
+  - Risk and compliance issue identification
+  - NDA and agreement triage
+  - Regulatory compliance tracking
+- **Use cases for SMBs**:
+  - Automated contract verification before signing
+  - Detection of problematic clauses in vendor agreements
+  - Compliance checklist generation for sector-specific regulations
+  - Invoice and agreement term cross-checking
+
+> ⚠️ **Legal Disclaimer**: Claude Legal does NOT provide legal advice. It assists with document analysis and risk identification. All findings should be reviewed by a qualified legal professional before making decisions.
+
+**How to use**: Claude Legal capabilities are accessible through standard Cowork prompts when processing legal documents. No separate installation required—simply reference legal analysis needs in your task description.
+
+**Example prompt**:
+```
+Review the contract in ~/Cowork-Workspace/contracts/vendor-agreement.pdf
+Identify key terms, obligations, and potential risks.
+Generate a summary with flagged issues for legal review.
+```
+
+### Future Extensions
+
+Anthropic may release additional specialized extensions for other domains (accounting, technical documentation, etc.). Check the official Anthropic announcements for updates.
 
 ---
 

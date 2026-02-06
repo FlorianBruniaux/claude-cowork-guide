@@ -103,6 +103,7 @@
 | Generate Word | ⚠️ Via scripts | ✅ Native | ❌ No |
 | Generate Excel | ⚠️ Via scripts | ✅ Native | ❌ No |
 | Generate presentations | ⚠️ Via scripts | ✅ Native | ❌ No |
+| Legal document review | ❌ No | ✅ Claude Legal extension | ❌ No |
 
 ### Agentic Capabilities
 

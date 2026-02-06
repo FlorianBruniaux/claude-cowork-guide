@@ -134,6 +134,8 @@ Create Excel with one row per contract.
 Save to: ~/Cowork-Workspace/output/contract-summary.xlsx
 ```
 
+> 💡 **Claude Legal Note**: If you have access to Claude Legal (Cowork extension), this contract term extraction can be automated with additional risk detection and problematic clause identification. See [Extensions & Plugins](../guide/02-capabilities.md#extensions--plugins).
+
 ---
 
 ## Image Data Prompts

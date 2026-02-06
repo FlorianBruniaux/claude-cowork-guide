@@ -94,6 +94,27 @@ capabilities:
     - "Operate in background"
 
 # ════════════════════════════════════════════════════════════════
+# EXTENSIONS & PLUGINS
+# ════════════════════════════════════════════════════════════════
+extensions:
+  claude_legal:
+    announced: "2026-02-03"
+    status: "First official Cowork extension"
+    purpose: "Automated legal document review and risk detection"
+    capabilities:
+      - "Contract review and key term extraction"
+      - "Risk and compliance issue identification"
+      - "NDA and agreement triage"
+      - "Regulatory compliance tracking"
+    use_cases:
+      - "Automated contract verification before signing"
+      - "Detection of problematic clauses in vendor agreements"
+      - "Compliance checklist generation for sector regulations"
+      - "Invoice and agreement term cross-checking"
+    disclaimer: "Does NOT provide legal advice - review by qualified legal professional required"
+    model_support: "Opus 4.6 achieved 90.2% on BigLaw Bench (Feb 2026)"
+
+# ════════════════════════════════════════════════════════════════
 # PROMPTING FORMULA (CTOC)
 # ════════════════════════════════════════════════════════════════
 prompting:

@@ -20,6 +20,8 @@ Vous devez vous assurer d'être en conformité réglementaire pour éviter amend
 
 > ⚠️ **Juridique**: Le défaut de documents obligatoires peut entraîner amendes (135€ à 3000€) et interdiction d'exercer.
 
+> 💡 **Claude Legal disponible** : Si vous avez accès à Claude Legal (extension Cowork), ces vérifications de conformité peuvent être automatisées avec détection de risques supplémentaire. Voir [guide des capacités](../guide/02-capabilities.md#extensions--plugins) pour plus d'informations.
+
 ---
 
 ## Prérequis
