@@ -25,9 +25,9 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Research%20Preview-yellow" alt="Status"/>
-  <img src="https://img.shields.io/badge/Platform-macOS-blue" alt="Platform"/>
+  <img src="https://img.shields.io/badge/Platform-macOS%20%26%20Windows-blue" alt="Platform"/>
   <img src="https://img.shields.io/badge/Subscription-Pro%20%26%20Max-purple" alt="Subscription"/>
-  <img src="https://img.shields.io/badge/Version-1.3.0-orange" alt="Version"/>
+  <img src="https://img.shields.io/badge/Version-1.4.0-orange" alt="Version"/>
 </p>
 
 > Complete guide to Claude's desktop assistant for knowledge workers and small businesses.
@@ -55,7 +55,7 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 <summary><strong>Prerequisites</strong></summary>
 
 - **Subscription**: Pro ($20/mo) or Max ($100-200/mo)
-- **Platform**: macOS only (Windows planned)
+- **Platform**: macOS and Windows
 - **App**: Claude Desktop (latest version)
 
 </details>
@@ -67,7 +67,7 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 **The problem**: Official docs are dense. Tutorials get outdated quickly.
 You need ready-to-use workflows, not feature lists.
 
-**This guide**: 24 business workflows, 70 copy-paste prompts, practical examples.
+**This guide**: 26 business workflows, 70 copy-paste prompts, 11 official plugins documented, practical examples.
 
 **Reading time**: Getting started 5 min | Complete guide 45 min
 
@@ -109,6 +109,7 @@ You need ready-to-use workflows, not feature lists.
 
 1. [Complete Capabilities](guide/02-capabilities.md) — Feature matrix
 2. [All Workflows](workflows/) — 26 step-by-step guides
+
 3. [Troubleshooting](guide/04-troubleshooting.md) — Error resolution
 4. [FAQ](reference/faq.md) — 20+ questions
 5. [Advanced Prompts](prompts/research.md) — Research and synthesis
@@ -130,7 +131,11 @@ You need ready-to-use workflows, not feature lists.
 | [Security](guide/03-security.md) | Best practices | 12 min |
 | [Troubleshooting](guide/04-troubleshooting.md) | Common issues | 8 min |
 
-### Workflows (25 guides)
+### Plugins (11 official)
+
+Claude Cowork supports 11 official plugins: Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack. Plugins extend Cowork's capabilities by connecting to external tools directly.
+
+### Workflows (26 guides)
 
 **📋 Administrative** (6)
 - [Invoice Generation](workflows/invoice-generation.md) — Professional templates
@@ -240,9 +245,9 @@ Cowork sends prompts, files, and results to Anthropic servers.
 </details>
 
 <details>
-<summary><strong>Current Limitations</strong> (January 2026)</summary>
+<summary><strong>Current Limitations</strong> (February 2026)</summary>
 
-**Platform**: macOS only (Windows planned, no ETA)
+**Platform**: macOS and Windows
 
 **Known issues**:
 - VPN incompatible (VM routing conflict)
@@ -274,4 +279,4 @@ Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ---
 
-*Version 1.3.0 | February 2026 | Created with Claude*
+*Version 1.4.0 | February 2026 | Created with Claude*

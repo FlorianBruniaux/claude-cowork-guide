@@ -33,6 +33,9 @@ Que se passe-t-il ?
 ├─ Problèmes d'intégration navigateur/Chrome
 │   └─ Aller à : § PROBLÈMES NAVIGATEUR
 │
+├─ Problèmes spécifiques à Windows
+│   └─ Aller à : § PROBLÈMES SPÉCIFIQUES À WINDOWS
+│
 └─ Autre chose
     └─ Aller à : § DÉPANNAGE GÉNÉRAL
 ```
@@ -138,7 +141,7 @@ Cowork s'exécute dans une machine virtuelle sandbox. Les VPN interceptent et re
 
 **Solutions** :
 1. Redémarrer complètement Claude Desktop (Cmd+Q, relancer)
-2. Vérifier les mises à jour macOS (la VM nécessite des API spécifiques)
+2. Vérifier les mises à jour de l'OS (macOS ou Windows — la VM nécessite des API spécifiques)
 3. S'assurer d'avoir 4 Go+ de RAM libre
 4. Essayer en mode sans échec : Maintenir Shift au démarrage de macOS
 
@@ -496,7 +499,71 @@ EOF
 
 ---
 
-## Dépannage général
+## Problemes specifiques a Windows
+
+> **Note** : Le support Windows a ete ajoute le 10 fevrier 2026. Certains problemes sont specifiques a cette plateforme.
+
+### Installation sur Windows
+
+**Symptomes** :
+- L'installateur ne se lance pas
+- Erreur de compatibilite Windows
+
+**Solutions** :
+
+| Etape | Action |
+|-------|--------|
+| 1 | **Verifier la version Windows** : Windows 10 (version 1903+) ou Windows 11 requis |
+| 2 | **Executer en administrateur** : Clic droit sur l'installateur → Executer en tant qu'administrateur |
+| 3 | **Verifier l'antivirus** : Certains antivirus bloquent l'installation — ajouter une exception pour Claude Desktop |
+| 4 | **Telecharger a nouveau** : Recuperer la derniere version depuis [claude.ai/download](https://claude.ai/download) |
+
+### Problemes de permissions Windows
+
+**Symptomes** :
+- "Acces refuse" lors de l'acces aux fichiers
+- Cowork ne peut pas ecrire dans le dossier workspace
+
+**Solutions** :
+1. Verifier que le dossier workspace n'est pas dans un emplacement protege (ex: `C:\Program Files\`)
+2. Utiliser un dossier dans `C:\Users\VotreNom\Cowork-Workspace\`
+3. Verifier les permissions du dossier : clic droit → Proprietes → Securite
+4. S'assurer que votre utilisateur a les droits en lecture et ecriture
+
+### Problemes PATH et variables d'environnement
+
+**Symptomes** :
+- Claude Desktop installe mais ne se lance pas depuis le menu Demarrer
+- Erreurs liees aux chemins de fichiers
+
+**Solutions** :
+1. Verifier l'emplacement d'installation : par defaut `C:\Users\VotreNom\AppData\Local\Programs\Claude\`
+2. Redemarrer l'ordinateur apres l'installation
+3. Si le probleme persiste, reinstaller en utilisant le chemin d'installation par defaut
+
+### Integration Chrome sur Windows
+
+**Symptomes** :
+- L'integration Chrome ne fonctionne pas sous Windows
+- Erreur "Native messaging host not found" sur Windows
+
+**Solutions** :
+1. Verifier que Chrome est installe depuis le site officiel (pas Chromium)
+2. Le manifeste de messagerie native se trouve dans :
+   `%LOCALAPPDATA%\Google\Chrome\User Data\NativeMessagingHosts\`
+3. Redemarrer Chrome et Claude Desktop apres l'installation
+4. Si le probleme persiste, desinstaller et reinstaller Claude Desktop
+
+### Notes VPN sur Windows
+
+Les memes conflits VPN que sur macOS s'appliquent sur Windows. Solutions supplementaires :
+- Verifier le split tunneling dans les parametres de votre VPN Windows
+- Certains VPN d'entreprise (Cisco AnyConnect, GlobalProtect) necessitent une configuration specifique
+- Contacter votre administrateur reseau si le VPN est obligatoire
+
+---
+
+## Depannage general
 
 ### Cowork ne comprend pas la requête
 
@@ -573,7 +640,7 @@ Signaler à Anthropic quand :
 ### Quoi inclure
 
 ```
-- Version macOS
+- Version macOS ou Windows
 - Version Claude Desktop
 - Tier d'abonnement
 - Étapes pour reproduire

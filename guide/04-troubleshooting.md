@@ -66,9 +66,9 @@ What's happening?
 |------|--------|
 | 1 | **Check subscription**: Must be Pro or Max tier |
 | 2 | **Update app**: Claude Desktop → Check for Updates |
-| 3 | **Restart app**: Quit completely (Cmd+Q), relaunch |
+| 3 | **Restart app**: Quit completely (Cmd+Q on macOS, Alt+F4 on Windows), relaunch |
 | 4 | **Check region**: Some features may have regional rollout |
-| 5 | **Clear cache**: Delete `~/Library/Application Support/Claude/` and restart |
+| 5 | **Clear cache**: macOS: Delete `~/Library/Application Support/Claude/` and restart. Windows: Delete `%APPDATA%\Claude\` and restart |
 
 ### "Cowork is not available"
 
@@ -89,12 +89,25 @@ What's happening?
 
 **Solutions**:
 
+**macOS:**
 ```bash
 # Check crash logs
 open ~/Library/Logs/DiagnosticReports/
 
 # Reset app preferences (caution: loses settings)
 rm -rf ~/Library/Preferences/com.anthropic.claude.plist
+
+# Reinstall app
+# Download latest from claude.ai
+```
+
+**Windows:**
+```powershell
+# Check crash logs
+explorer %LOCALAPPDATA%\CrashDumps
+
+# Reset app preferences (caution: loses settings)
+rmdir /s /q "%APPDATA%\Claude"
 
 # Reinstall app
 # Download latest from claude.ai
@@ -137,10 +150,10 @@ Cowork runs in a sandboxed virtual machine. VPNs intercept and reroute network t
 - Spinning indefinitely then error
 
 **Solutions**:
-1. Restart Claude Desktop completely (Cmd+Q, relaunch)
-2. Check for macOS updates (VM requires specific APIs)
+1. Restart Claude Desktop completely (Cmd+Q on macOS, Alt+F4 on Windows)
+2. Check for OS updates (VM requires specific APIs)
 3. Ensure 4GB+ free RAM
-4. Try in Safe Mode: Hold Shift during macOS boot
+4. macOS: Try in Safe Mode (hold Shift during boot). Windows: Try clean boot (msconfig → Selective startup)
 
 ---
 
@@ -155,11 +168,18 @@ Cowork runs in a sandboxed virtual machine. VPNs intercept and reroute network t
 **Solutions**:
 
 **Step 1: Check System Permissions**
+
+**macOS:**
 1. Open **System Settings** → **Privacy & Security** (macOS 13+)
    *Note: On macOS 12 and earlier, use System Preferences → Security & Privacy*
 2. Go to **Privacy** → **Files and Folders**
 3. Find **Claude** or **Claude Desktop**
 4. Ensure your workspace folder is listed and checked
+
+**Windows:**
+1. Right-click the workspace folder → **Properties** → **Security** tab
+2. Ensure your user account has Full Control
+3. Check that Claude Desktop is not blocked by Windows Defender or antivirus
 
 **Step 2: Re-grant Access**
 1. In Cowork, start a new task that needs folder access
@@ -496,6 +516,58 @@ EOF
 
 ---
 
+## Windows-Specific Issues
+
+### Installation Problems
+
+**Symptoms**:
+- Installer fails or hangs
+- App doesn't launch after installation
+
+**Solutions**:
+
+| Step | Action |
+|------|--------|
+| 1 | Run installer as Administrator (right-click → Run as administrator) |
+| 2 | Ensure Windows 10 (build 1903+) or Windows 11 |
+| 3 | Temporarily disable antivirus during installation |
+| 4 | Check Windows Event Viewer for specific error codes |
+
+### PATH and Permission Issues
+
+**Symptoms**:
+- "Claude is not recognized" errors
+- App launches but cannot access workspace folder
+- File operations fail silently
+
+**Solutions**:
+
+1. **Verify installation path**: Check that Claude Desktop is installed in `%LOCALAPPDATA%\Programs\Claude\` or `C:\Program Files\Claude\`
+2. **Run as Administrator**: Right-click Claude Desktop → Run as administrator (for initial setup)
+3. **Folder permissions**: Ensure your workspace folder is not in a system-protected location (avoid `C:\Windows\`, `C:\Program Files\`)
+4. **Controlled Folder Access**: Windows Security → Virus & threat protection → Ransomware protection → Allow Claude through Controlled Folder Access
+5. **Firewall**: Ensure Windows Firewall allows Claude Desktop for both private and public networks
+
+### Windows Defender Blocking
+
+**Symptoms**:
+- Features blocked or disabled
+- Security warnings when running Cowork tasks
+
+**Solutions**:
+1. Open **Windows Security** → **Virus & threat protection**
+2. Go to **Protection history** and check if Claude was blocked
+3. Add Claude Desktop to **Exclusions** if needed (Settings → Virus & threat protection → Manage settings → Exclusions)
+
+### VPN on Windows
+
+The same VPN routing conflict applies on Windows. If you experience VM connection timeouts:
+1. Disconnect VPN before launching Cowork
+2. If using corporate VPN, check if split tunneling is available
+3. Windows-specific: Some VPN clients (e.g., Cisco AnyConnect) may require a full restart after disconnecting
+
+---
+
 ## General Troubleshooting
 
 ### Cowork Doesn't Understand Request
@@ -573,7 +645,7 @@ Report to Anthropic when:
 ### What to Include
 
 ```
-- macOS version
+- Operating system and version (macOS or Windows)
 - Claude Desktop version
 - Subscription tier
 - Steps to reproduce

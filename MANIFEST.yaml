@@ -2,7 +2,7 @@
 # This file enables future separation into standalone repository
 
 name: claude-cowork-guide
-version: "1.3.0"
+version: "1.4.0"
 description: Complete documentation for Claude Cowork - agentic desktop for knowledge workers
 
 # Relationship to parent repo
@@ -25,7 +25,7 @@ personas:
 status: research-preview
 availability:
   subscription: pro-and-max  # Pro $20/mo, Max $100-200/mo
-  platform: macos-only  # Windows planned, Linux not announced
+  platform: macos-and-windows  # Windows added Feb 10, 2026; Linux not announced
   released: 2026-01
   usage_limits: resets-every-5h  # Pro ~1-1.5h intensive, Max 5x-20x Pro
 
@@ -50,6 +50,7 @@ structure:
     - email-templates.md
     - expense-tracking.md
     - file-organization.md
+    - financial-model-validation.md
     - inventory-tracking.md
     - invoice-generation.md
     - knowledge-transfer.md
@@ -63,13 +64,12 @@ structure:
     - quality-checklist.md
     - quote-creation.md
     - quote-to-invoice.md
-    - report-synthesis.md
     - review-response.md
     - social-media-posts.md
     - supplier-order.md
-    - team-handoff.md
     - website-audit.md
     - work-log.md
+    - workforce-planning.md
   prompts:
     - file-ops.md
     - document-creation.md
@@ -97,12 +97,21 @@ structure:
 # Content metadata
 metadata:
   language: en
-  last_updated: 2026-02-03
+  last_updated: 2026-02-18
   maintainer: claude-code-ultimate-guide contributors
   license: CC-BY-SA-4.0
-  total_files: 34
+  total_files: 36
   total_prompts: 67
-  total_workflows: 24
+  total_workflows: 26
+  features_v140:
+    - "Windows support (Feb 10, 2026)"
+    - "11 official plugins (Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack)"
+    - "Opus 4.6 with 1M tokens (beta) context window and 128K output tokens"
+    - "Context compaction (beta)"
+    - "Scheduled tasks"
+    - "Agent Teams (research preview)"
+    - "Improved browser automation"
+    - "Direct Excel and PowerPoint integrations"
 
 # Future standalone repo configuration
 standalone_config:

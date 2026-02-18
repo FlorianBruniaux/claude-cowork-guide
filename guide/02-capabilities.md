@@ -14,16 +14,17 @@ Cowork supports different Claude models. Choose based on your task complexity.
 
 ### Available Models
 
-| Model | Best For | Speed | Usage Cost |
-|-------|----------|-------|------------|
-| **Haiku** | Very simple tasks, quick queries | Very Fast | Low |
-| **Sonnet** | Daily tasks, emails, organization | Fast | Standard |
-| **Opus** | Complex analysis, multi-document synthesis | Slower | Higher |
+| Model | Best For | Speed | Context Window | Usage Cost |
+|-------|----------|-------|----------------|------------|
+| **Haiku** | Very simple tasks, quick queries | Very Fast | Standard | Low |
+| **Sonnet** | Daily tasks, emails, organization | Fast | Standard | Standard |
+| **Opus 4.6** | Complex analysis, multi-document synthesis | Slower | 1M tokens (beta), 128K output | Higher |
 
 **Model Notes** (February 2026):
 - **Opus versions**: Opus 4.5 and Opus 4.6 are available. Opus 4.0 and 4.1 have been retired.
-- **Opus 4.6 capabilities**: Opus 4.6 achieved 90.2% on BigLaw Bench, making it particularly effective for legal document review, contract analysis, and compliance-related tasks.
-- **Context window**: Cowork now uses automatic compaction to extend conversations beyond the standard context window, enabling longer sessions without losing important context.
+- **Opus 4.6 capabilities**: Opus 4.6 achieved 90.2% on BigLaw Bench, making it particularly effective for legal document review, contract analysis, and compliance-related tasks. It features a 1M token context window (beta) and 128K output tokens, with adaptive thinking at 4 effort levels.
+- **Context compaction (beta)**: Cowork now uses automatic compaction to compress conversation history, enabling longer sessions without losing important context.
+- **Context window**: The standard ~200K context applies to Haiku and Sonnet. Opus 4.6 extends this to 1M tokens in beta.
 
 ### When to Use Each
 
@@ -343,9 +344,54 @@ Identify key terms, obligations, and potential risks.
 Generate a summary with flagged issues for legal review.
 ```
 
+### Official Plugins (announced January 30, 2026)
+
+Cowork supports 11 official plugins that connect to third-party services, enabling direct integration with your existing tools:
+
+| Plugin | Category | Use Cases |
+|--------|----------|-----------|
+| **Asana** | Project Management | Task tracking, project status |
+| **Canva** | Design | Create and edit designs |
+| **Cloudflare** | Infrastructure | Site management, analytics |
+| **Figma** | Design | Design file access, review |
+| **GitHub** | Development | Repository management, issues |
+| **Google Drive** | Cloud Storage | File access, document management |
+| **Jira** | Project Management | Issue tracking, sprint management |
+| **Linear** | Project Management | Issue tracking, project planning |
+| **Notion** | Knowledge Base | Pages, databases, documentation |
+| **Sentry** | Monitoring | Error tracking, performance |
+| **Slack** | Communication | Messages, channel management |
+
+> **Note**: Plugin availability and capabilities may evolve during the research preview period. Check Cowork settings for currently available plugins.
+
 ### Future Extensions
 
 Anthropic may release additional specialized extensions for other domains (accounting, technical documentation, etc.). Check the official Anthropic announcements for updates.
+
+---
+
+## New Capabilities (February 2026)
+
+### Scheduled Tasks
+
+Cowork can now schedule automated tasks to run at specified times or intervals. This enables recurring workflows such as:
+- Daily report generation
+- Periodic file organization
+- Scheduled data extraction and compilation
+
+### Improved Browser Automation
+
+Browser automation capabilities have been enhanced for more reliable web research, form interaction, and content extraction.
+
+### Direct Excel and PowerPoint Integrations
+
+Beyond generating `.xlsx` and `.pptx` files from scratch, Cowork can now directly edit existing Excel and PowerPoint files — modifying content, adding sheets/slides, and updating formulas in place.
+
+### Agent Teams (Research Preview)
+
+Coordinate multiple Claude agents on complex tasks. Agent Teams allow you to break down large projects into parallel workstreams, with each agent handling a specific part of the task. This is particularly useful for multi-document analysis, large-scale file processing, and research projects spanning many sources.
+
+> **Note**: Agent Teams is in research preview and may have limitations in coordination and reliability.
 
 ---
 
@@ -395,7 +441,7 @@ Anthropic may release additional specialized extensions for other domains (accou
 
 ```
 ❌ Cannot work: With VPN active (VM routing conflict)
-❌ Cannot run: On Windows or Linux (macOS only)
+❌ Cannot run: On Linux (macOS and Windows only)
 ❌ Cannot operate: In background (requires app foreground)
 ❌ Cannot persist: Sessions across app restarts
 ```

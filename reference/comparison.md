@@ -21,7 +21,7 @@
 | **Web access** | Via tools | Chrome integration | In-chat search |
 | **Memory** | CLAUDE.md files | Via files | Project knowledge |
 | **Maturity** | Production-ready | Research preview | Production-ready |
-| **Platform** | macOS, Linux, Windows | macOS only | All (web) |
+| **Platform** | macOS, Linux, Windows | macOS + Windows | All (web) |
 | **Subscription** | Included in Team plan | Pro/Max ($20-200/mo) | All tiers |
 | **Security docs** | Extensive | None yet | Standard |
 
@@ -34,12 +34,12 @@
 | Aspect | Claude in Excel Add-in | Cowork Excel Capabilities |
 |--------|------------------------|---------------------------|
 | **What it is** | Microsoft Excel add-in (launched Jan 24, 2026) | Desktop app file manipulation feature |
-| **Installation** | Install from Excel add-ins store | Part of Claude Desktop (macOS only) |
+| **Installation** | Install from Excel add-ins store | Part of Claude Desktop (macOS + Windows) |
 | **Interface** | Works inside Excel application | Creates Excel files from scratch |
 | **Use case** | AI assistance while working in Excel | Generate Excel files from data/images/text |
 | **Primary workflow** | Open Excel → Ask Claude for help → Get formula suggestions | Give Cowork data → Receive generated Excel file |
 | **Best for** | Formula writing, data analysis in existing sheets | Creating new spreadsheets from unstructured data |
-| **Platform** | Windows, macOS (Excel 2016+) | macOS only |
+| **Platform** | Windows, macOS (Excel 2016+) | macOS + Windows |
 | **Subscription** | Requires Claude subscription + Excel license | Requires Claude Pro/Max subscription |
 | **Integration** | Deep Excel integration (formulas, charts, pivot tables) | Basic Excel generation (formulas, formatting) |
 
@@ -114,6 +114,15 @@
 | Plan review before execution | ✅ Yes | ✅ Yes | N/A |
 | Parallel execution | ✅ Yes | ✅ Yes | ❌ No |
 | Extended thinking | ✅ Yes | ✅ Yes | ✅ Yes |
+
+### Plugins & Integrations
+
+| Capability | Code | Cowork | Projects |
+|------------|------|--------|----------|
+| Official plugins | ⚠️ Via MCP | ✅ 11 plugins (Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack) | ❌ No |
+| Scheduled tasks | ❌ No | ✅ Native | ❌ No |
+| Agent Teams | ✅ Yes | ✅ Research preview | ❌ No |
+| Context compaction | ✅ Yes | ✅ Beta | ❌ No |
 
 ### Web & Research
 
@@ -286,7 +295,7 @@ When to migrate:
 | Feature | Code | Cowork | Projects |
 |---------|------|--------|----------|
 | **Available now** | ✅ | ⚠️ Research preview | ✅ |
-| **Windows** | ✅ | ❌ (planned, no ETA) | ✅ |
+| **Windows** | ✅ | ✅ (since Feb 10, 2026) | ✅ |
 | **Linux** | ✅ | ❌ (not announced) | ✅ |
 | **Enterprise** | ✅ | ❌ (unknown) | ✅ |
 | **Team features** | ⚠️ Limited | ❌ | ✅ |
@@ -328,7 +337,7 @@ When to migrate:
 | **Writing/drafting** | Live artifacts, inline iteration | Download-edit-reupload friction |
 | **Multi-domain synthesis** | Cross-domain reasoning | File-centric architecture |
 | **Collaboration** | Shareable links, team visibility | Desktop-only, no sharing |
-| **Zero-install access** | Any device, any browser | macOS app required |
+| **Zero-install access** | Any device, any browser | Desktop app required (macOS/Windows) |
 
 **Example**: Marketing strategy memo
 - Chat: Iterative discussion, nuanced thesis → thoughtful output
@@ -389,7 +398,7 @@ How does Cowork compare to other AI desktop assistants?
 | **OCR/Vision** | ✅ Good | ✅ Best | ✅ Good | ✅ Good | ✅ Good |
 | **Privacy (local)** | ⚠️ API calls | ⚠️ Cloud | ⚠️ Cloud | ⚠️ Cloud | ✅ On-device |
 | **Free tier** | ❌ Pro/Max | ⚠️ Limited | ⚠️ Limited | ✅ Yes | ✅ Built-in |
-| **Platform** | macOS | Windows/Mac | Cross | Cross | Apple only |
+| **Platform** | macOS + Windows | Windows/Mac | Cross | Cross | Apple only |
 
 **Note**: "Copilot (MS)" refers to Microsoft 365 Copilot (Word/Excel/PowerPoint integration), not GitHub Copilot (developer tool with full file system access).
 
@@ -417,7 +426,7 @@ How does Cowork compare to other AI desktop assistants?
 | **Budget-conscious** | Apple Intelligence | Free with Apple devices |
 | **Complex file workflows** | Cowork | Sub-agent architecture, batch processing |
 | **Deep Office integration** | Copilot | Native APIs, best formulas |
-| **Large context** | Gemini | 1M+ token window |
+| **Large context** | Gemini or Cowork | Gemini 1M+ native; Cowork 1M beta (Opus 4.6) |
 
 ### Privacy Architecture
 
@@ -449,7 +458,7 @@ How does Cowork compare to other AI desktop assistants?
 | Need 1M+ context | Gemini Advanced | Largest context window |
 | Privacy non-negotiable | Apple Intelligence | On-device only |
 | Need cross-platform | ChatGPT | Works everywhere |
-| On Windows/Linux | Copilot or ChatGPT | Cowork is macOS only |
+| On Linux | Copilot or ChatGPT | Cowork not available on Linux |
 | Free tier only | ChatGPT or Gemini | Cowork requires paid subscription |
 
 ### Open-Source Alternatives
@@ -491,7 +500,7 @@ For **everyone else**: Stick with official Cowork. The $20/month cost includes s
 | Budget-critical but can handle some setup | different-ai/openwork (open-source) |
 | Need file creation | Cowork |
 | Need code execution | Claude Code |
-| On Windows/Linux | Claude Code or Projects |
+| On Linux | Claude Code or Projects |
 | Need reasoning/iteration | Chat (Projects) |
 | Need batch file processing | Cowork |
 | Need best OCR | Microsoft Copilot |

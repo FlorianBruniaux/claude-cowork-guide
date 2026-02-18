@@ -11,6 +11,9 @@
 ### Agentic
 Describes AI systems that can autonomously plan and execute multi-step tasks with minimal human intervention. Cowork is "agentic" because it analyzes your request, creates a plan, and executes it (with your approval).
 
+### Agent Teams
+A research preview feature enabling multi-agent coordination where multiple Claude agents work together on complex tasks. One agent orchestrates others, each handling a specialized sub-task with sophisticated coordination.
+
 ### Approval Gate
 The checkpoint where Cowork shows its planned actions and waits for your confirmation before executing. **Critical security measure**—always review before approving.
 
@@ -25,7 +28,10 @@ A file created by Claude (document, spreadsheet, image, etc.) during a Cowork se
 Anthropic's CLI tool for developers. Shares architecture with Cowork but provides full shell access and code execution. Terminal-based interface.
 
 ### Claude Desktop
-The macOS application that hosts Cowork. Different from the web interface (claude.ai).
+The macOS and Windows application that hosts Cowork. Different from the web interface (claude.ai).
+
+### Context Compaction
+A beta feature that automatically compresses conversation history during long sessions. This allows much longer effective sessions by keeping relevant context while removing redundant information.
 
 ### Claude in Excel
 Microsoft Excel add-in (launched January 24, 2026) that provides AI assistance inside Excel. **Not the same as Cowork**. The add-in helps with formula writing, data analysis, and chart creation within existing Excel files. Cowork's Excel capabilities generate new spreadsheets from unstructured data. See [comparison](comparison.md#common-confusion).
@@ -97,6 +103,9 @@ The main Cowork agent that receives your request, creates the plan, coordinates 
 
 ## P
 
+### Plugin (Cowork Plugin)
+An official third-party integration that extends Cowork's capabilities. 11 plugins were announced January 30, 2026: Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, and Slack. Plugins allow Cowork to interact directly with these services without browser automation.
+
 ### Prompt
 The instructions you give to Claude. Can be simple ("organize these files alphabetically") or complex multi-step workflows ("read invoices → extract data → create spreadsheet → categorize by date"). Clear prompts yield better results.
 
@@ -116,6 +125,9 @@ Anthropic's term for early-access features that aren't production-ready. Cowork 
 ---
 
 ## S
+
+### Scheduled Tasks
+A feature allowing automated recurring Cowork operations on a set schedule (e.g., daily report compilation, weekly file organization). Removes the need to manually trigger repetitive tasks each time.
 
 ### Sub-Agent
 Specialized workers spawned by the orchestrator to handle specific parts of a task. Each sub-agent has fresh context and can work in parallel with others.

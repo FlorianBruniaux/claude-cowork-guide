@@ -15,7 +15,7 @@ Before starting, ensure you have:
 | Requirement | How to Check |
 |-------------|--------------|
 | **Pro or Max subscription** | claude.ai → Settings → Subscription shows "Pro" or "Max" |
-| **macOS** | Apple menu → About This Mac |
+| **macOS or Windows** | macOS: Apple menu → About This Mac; Windows: Settings → System → About |
 | **Claude Desktop app** | Applications folder or Spotlight search |
 | **Latest app version** | See verification steps below ⚠️ |
 
@@ -48,7 +48,7 @@ Before starting, ensure you have:
 | Situation | Action |
 |-----------|--------|
 | Free tier | Upgrade to Pro ($20) or Max ($100+) |
-| Windows/Linux | Wait for platform expansion (Windows planned, Linux not announced) |
+| Linux | Wait for platform expansion (Linux not announced) |
 
 ---
 

@@ -14,19 +14,19 @@
 ### Q: How do I get access to Cowork?
 **A:** You need:
 1. A Pro ($20/mo) or Max ($100-200/mo) subscription
-2. macOS (Windows planned, Linux not announced)
+2. macOS or Windows (Linux not announced)
 3. Claude Desktop app (latest version)
 4. Enable in Settings → Features
 
 ### Q: What are the usage limits?
 **A:** Usage resets every 5 hours, not daily/monthly. Pro tier: ~45 short messages per reset (~1-1.5 hours intensive use). Max tier: 5x or 20x Pro's limit. File organization and document processing tasks consume tokens rapidly—budget accordingly.
 
-### Q: Does Cowork work on Windows or Linux?
-**A:** Not yet (January 2026). **Windows** is on Anthropic's roadmap but has no ETA. **Linux** has no official announcement.
+### Q: Is Claude Cowork available on Windows?
+**A:** Yes! Windows support was added on February 10, 2026. Cowork now runs on both macOS and Windows. **Linux** has no official announcement.
 
 **Important distinction:**
 - **Claude Desktop** on Linux: Community workarounds exist (NixOS Flake is most reliable, also Debian packages, AUR)
-- **Cowork** on Linux: NO workaround. Cowork requires macOS-specific system APIs for computer use that have no Linux equivalent
+- **Cowork** on Linux: NO workaround. Cowork requires OS-specific system APIs for computer use that have no Linux equivalent
 
 If you need agentic capabilities on Linux, use **Claude Code** (native support) instead of Cowork.
 
@@ -88,7 +88,7 @@ See [full comparison](comparison.md).
 - Windows + macOS (Excel 2016+)
 
 **Cowork's Excel capabilities**:
-- Part of Claude Desktop app (macOS only)
+- Part of Claude Desktop app (macOS and Windows)
 - Creates Excel files from scratch
 - Generates spreadsheets from unstructured data (receipts, images, text)
 
@@ -98,6 +98,21 @@ See [detailed comparison](comparison.md#common-confusion).
 
 ### Q: What is Claude Legal?
 **A:** Claude Legal is the first official Cowork extension (announced Feb 3, 2026) for automated legal document review. It helps identify key contract terms, detect compliance risks, and triage legal documents. Use it for contract verification, NDA review, and compliance tracking. **Important**: Claude Legal does NOT provide legal advice—all findings should be reviewed by a qualified legal professional. See [Capabilities: Extensions & Plugins](../guide/02-capabilities.md#extensions--plugins) for details.
+
+### Q: What are Cowork Plugins?
+**A:** Cowork Plugins are official third-party integrations announced January 30, 2026. There are currently 11 plugins: Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, and Slack. They allow Cowork to interact directly with these services without browser automation.
+
+### Q: What is Opus 4.6's context window?
+**A:** Opus 4.6 (the model powering Cowork) supports up to 1M tokens in beta, a major upgrade from the previous ~200K effective limit. Output tokens have also increased to 128K (from 64K). Opus 4.6 also features adaptive thinking with 4 effort levels for better efficiency.
+
+### Q: What are scheduled tasks?
+**A:** Scheduled tasks let you automate recurring Cowork operations. You can set up tasks that run on a schedule (e.g., daily report compilation, weekly file organization) without manual triggering each time. This is a new feature in the February 2026 update.
+
+### Q: What is context compaction?
+**A:** Context compaction (beta) automatically compresses conversation history during long sessions. This allows much longer effective sessions by keeping relevant context while removing redundant information. It partially addresses the previous limitation of no session persistence.
+
+### Q: What are Agent Teams?
+**A:** Agent Teams (research preview) enable multi-agent coordination where multiple Claude agents work together on complex tasks. One agent can orchestrate others, each handling a specialized sub-task. This extends the existing sub-agent architecture with more sophisticated coordination.
 
 ---
 
@@ -219,13 +234,15 @@ There's no workaround that keeps VPN active. See [Troubleshooting](../guide/04-t
 **A:** Cowork can spawn sub-agents that work in parallel. Each sub-agent has fresh context and works on part of the task. The main orchestrator assembles results.
 
 ### Q: What's the context limit?
-**A:** ~200K tokens, roughly:
-- 150-500 text pages
-- 50-100 typical documents
-- 50-100 images (OCR)
+**A:** With Opus 4.6, up to 1M tokens in beta (previously ~200K). Roughly:
+- 600-2000+ text pages
+- 200-400+ typical documents
+- 200-400+ images (OCR)
+
+Context compaction (beta) further extends effective session length by compressing older conversation history.
 
 ### Q: Does Cowork remember across sessions?
-**A:** No built-in memory. Workaround: Save context to a file and load it next session.
+**A:** No built-in memory across sessions. However, context compaction (beta) now allows much longer sessions by compressing conversation history. Workaround for cross-session memory: Save context to a file and load it next session.
 
 ### Q: Can I automate Cowork with scripts?
 **A:** Not currently. Cowork has no API or automation interface (January 2026). For automation, use Claude Code.
@@ -270,12 +287,13 @@ There's no workaround that keeps VPN active. See [Troubleshooting](../guide/04-t
 **A:** It's in "research preview" status as of January 2026. Expect bugs and missing features. Not recommended for production use.
 
 ### Q: What features are coming?
-**A:** Announced but no dates:
-- Windows support (on roadmap)
-- Possibly cloud storage integration
-- Possibly enterprise features
+**A:** Recent additions (February 2026):
+- Windows support (released Feb 10, 2026)
+- 11 official plugins (Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack)
+- Scheduled tasks, Agent Teams (research preview), context compaction (beta)
+- Improved browser automation, Excel and PowerPoint direct integrations
 
-Note: Linux has no official announcement.
+Still unannounced: Linux support, enterprise features.
 
 ### Q: Will there be an API for Cowork?
 **A:** Unknown. Currently Cowork is desktop-only with no automation interface.

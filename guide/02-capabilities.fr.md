@@ -22,8 +22,8 @@ Cowork supporte différents modèles Claude. Choisissez en fonction de la comple
 
 **Notes sur les modèles** (Février 2026) :
 - **Versions Opus** : Opus 4.5 et Opus 4.6 sont disponibles. Opus 4.0 et 4.1 ont été retirés.
-- **Capacités Opus 4.6** : Opus 4.6 a obtenu 90,2% sur le BigLaw Bench, le rendant particulièrement efficace pour la revue de documents légaux, l'analyse de contrats et les tâches liées à la conformité.
-- **Fenêtre de contexte** : Cowork utilise maintenant la compaction automatique pour étendre les conversations au-delà de la fenêtre de contexte standard, permettant des sessions plus longues sans perte de contexte important.
+- **Capacités Opus 4.6** : Opus 4.6 a obtenu 90,2% sur le BigLaw Bench, le rendant particulièrement efficace pour la revue de documents légaux, l'analyse de contrats et les tâches liées à la conformité. Fenêtre de contexte de 1M tokens (beta), 128K tokens de sortie, pensée adaptative avec 4 niveaux d'effort.
+- **Compaction de contexte** (beta) : Cowork compresse automatiquement l'historique de conversation pour permettre des sessions plus longues sans perte de contexte important.
 
 ### Quand utiliser chaque modèle
 
@@ -349,9 +349,70 @@ Identifie les termes clés, obligations et risques potentiels.
 Génère un résumé avec les problèmes signalés pour revue juridique.
 ```
 
+### Plugins officiels (annoncés le 30 janvier 2026)
+
+Cowork supporte 11 plugins officiels qui permettent des intégrations directes avec des outils tiers :
+
+| Plugin | Description |
+|--------|-------------|
+| **Asana** | Gestion de projets et suivi de tâches |
+| **Canva** | Création de visuels et design |
+| **Cloudflare** | Gestion d'infrastructure web |
+| **Figma** | Collaboration design et prototypage |
+| **GitHub** | Gestion de code et versioning |
+| **Google Drive** | Accès et gestion de fichiers cloud |
+| **Jira** | Suivi de tickets et gestion de projets |
+| **Linear** | Gestion de projets et suivi d'issues |
+| **Notion** | Documentation et bases de connaissances |
+| **Sentry** | Monitoring d'erreurs et performance |
+| **Slack** | Communication et messagerie d'equipe |
+
+> **Note** : Les plugins sont accessibles depuis l'interface Cowork. La disponibilite et les fonctionnalites peuvent evoluer pendant la periode de preview.
+
 ### Extensions futures
 
-Anthropic pourra publier des extensions spécialisées supplémentaires pour d'autres domaines (comptabilité, documentation technique, etc.). Consultez les annonces officielles Anthropic pour les mises à jour.
+Anthropic pourra publier des extensions et plugins supplementaires pour d'autres domaines (comptabilite, documentation technique, etc.). Consultez les annonces officielles Anthropic pour les mises a jour.
+
+---
+
+## Nouvelles capacites (Fevrier 2026)
+
+### Taches planifiees
+
+Cowork permet desormais de programmer des taches automatisees qui s'executent a des horaires definis :
+
+- Rapports recurrents (quotidiens, hebdomadaires, mensuels)
+- Traitements par lots programmes
+- Veille automatisee sur des sujets specifiques
+
+**Exemple** :
+```
+Programme une tache chaque lundi a 9h pour consolider les notes
+de la semaine precedente dans un rapport hebdomadaire.
+```
+
+### Automatisation du navigateur amelioree
+
+L'integration Chrome a ete renforcee pour permettre des workflows web plus complexes :
+- Navigation multi-pages automatisee
+- Extraction de donnees structurees depuis des sites web
+- Surveillance de pages et alertes de changement
+
+### Integrations Excel et PowerPoint
+
+Au-dela de la simple generation de fichiers, Cowork peut desormais **modifier directement** des fichiers Excel et PowerPoint existants :
+- Edition de cellules et formules dans des fichiers `.xlsx` existants
+- Ajout de diapositives et modification de contenu dans des `.pptx` existants
+- Mise a jour de graphiques et tableaux dans des documents existants
+
+### Agent Teams (apercu recherche)
+
+Cowork peut coordonner plusieurs agents Claude pour travailler en parallele sur des taches complexes :
+- Decomposition automatique de taches volumineuses
+- Agents specialises travaillant simultanement (analyse, transformation, organisation)
+- Synthese automatique des resultats par l'orchestrateur
+
+> **Note** : Agent Teams est en apercu recherche. Les performances et la disponibilite peuvent varier.
 
 ---
 
@@ -401,7 +462,7 @@ Anthropic pourra publier des extensions spécialisées supplémentaires pour d'a
 
 ```
 ❌ Ne peut pas fonctionner : Avec VPN actif (conflit de routage VM)
-❌ Ne peut pas s'exécuter : Sur Windows ou Linux (macOS uniquement)
+❌ Ne peut pas s'exécuter : Sur Linux (macOS et Windows uniquement)
 ❌ Ne peut pas opérer : En arrière-plan (nécessite l'app au premier plan)
 ❌ Ne peut pas persister : Sessions entre redémarrages d'app
 ```

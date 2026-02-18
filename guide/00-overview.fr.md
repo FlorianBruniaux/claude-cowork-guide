@@ -28,7 +28,7 @@ Imaginez un assistant de bureau très compétent qui :
 |--------|---------|
 | **Publication** | Preview recherche, janvier 2026 |
 | **Disponibilité** | Abonnés Pro (20$/mois) ou Max (100-200$/mois) |
-| **Plateforme** | macOS uniquement (Windows prévu, Linux non annoncé) |
+| **Plateforme** | macOS et Windows (Linux non annoncé) |
 | **Développement** | ~90% écrit par Claude lui-même ([source](https://claude.com/download)) |
 | **Focus** | Manipulation de fichiers, organisation, génération de documents |
 | **Limites d'usage** | Réinitialisé toutes les 5 heures ; les tâches lourdes consomment rapidement le quota |
@@ -69,7 +69,7 @@ Cowork partage la même architecture backend que Claude Code :
 | **Gros utilisateurs cloud** | Pas de Google Drive/Dropbox confirmé | Utiliser les apps cloud natives |
 | **Besoin de fiabilité** | Preview = bugs, comportement inattendu | Attendre la version stable |
 | **Besoin d'exécution de code** | Fichiers uniquement, pas de scripts | Utiliser Claude Code |
-| **Utilisateurs Windows/Linux** | macOS uniquement (Windows prévu, Linux non annoncé) | Attendre l'expansion de plateforme |
+| **Utilisateurs Linux** | macOS et Windows uniquement (Linux non annoncé) | Attendre l'expansion de plateforme |
 | **Utilisateurs intensifs quotidiens** | Limites d'usage réinitialisées toutes les 5h ; Pro épuisé en ~1-1.5h d'utilisation intensive | Considérer le tier Max ou travailler par lots |
 | **Utilisateurs VPN** | **Ne peut pas fonctionner avec VPN actif** (conflit de routage VM) | Déconnecter le VPN ou utiliser Claude Code |
 

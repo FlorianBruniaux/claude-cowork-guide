@@ -25,6 +25,10 @@ Ce guide utilise parfois des termes techniques. Voici leur équivalent simple :
 | **Preview** | Version test | Comme un prototype avant la version finale |
 | **Template** | Modèle | Comme un formulaire pré-rempli |
 | **Knowledge worker** | Professionnel non-développeur | Chef de projet, consultant, analyste... |
+| **Plugin** | Extension officielle | Comme une appli sur votre téléphone |
+| **Tâche planifiée** | Tâche automatique récurrente | Comme un rappel qui fait le travail à votre place |
+| **Agent Teams** | Équipe d'assistants IA | Comme une équipe de collègues spécialisés |
+| **Compaction** | Compression de l'historique | Comme résumer une réunion pour garder l'essentiel |
 
 **Règle de lecture** : À la première mention d'un terme technique, vous verrez : *terme simple (terme technique)*. Ensuite, seul le terme simple sera utilisé.
 
@@ -34,6 +38,9 @@ Ce guide utilise parfois des termes techniques. Voici leur équivalent simple :
 
 ### Agentique (Agentic)
 Décrit des systèmes IA capables de planifier et exécuter des tâches multi-étapes de manière autonome avec une intervention humaine minimale. Cowork est "agentique" car il analyse votre requête, crée un plan et l'exécute (après votre approbation).
+
+### Agent Teams (Équipes d'agents)
+Fonctionnalité en preview recherche permettant la coordination multi-agents où plusieurs agents Claude travaillent ensemble sur des tâches complexes. Un agent orchestre les autres, chacun gérant une sous-tâche spécialisée avec une coordination sophistiquée.
 
 ### Approval Gate (Porte d'approbation)
 Le point de contrôle où Cowork montre ses actions planifiées et attend votre confirmation avant d'exécuter. **Mesure de sécurité critique**—toujours vérifier avant d'approuver.
@@ -52,7 +59,10 @@ L'outil CLI d'Anthropic pour les développeurs. Partage l'architecture avec Cowo
 Add-in Microsoft Excel (lancé 24 janvier 2026) qui fournit une assistance IA à l'intérieur d'Excel. **Pas la même chose que Cowork**. L'add-in aide avec l'écriture de formules, l'analyse de données et la création de graphiques dans des fichiers Excel existants. Les capacités Excel de Cowork génèrent de nouveaux tableurs depuis des données non structurées. Voir [comparaison](comparison.fr.md#confusion-frequente).
 
 ### Claude Desktop
-L'application macOS qui héberge Cowork. Différente de l'interface web (claude.ai).
+L'application macOS et Windows qui héberge Cowork. Différente de l'interface web (claude.ai).
+
+### Compaction de contexte (Context Compaction)
+Fonctionnalité beta qui compresse automatiquement l'historique de conversation pendant les sessions longues. Cela permet des sessions effectives beaucoup plus longues en gardant le contexte pertinent tout en supprimant les informations redondantes.
 
 ### Context Limit (Limite de contexte)
 La quantité maximale de texte/données que Claude peut traiter dans une seule session (~200K tokens). Quand dépassée, les tâches peuvent échouer ou produire des résultats incomplets.
@@ -121,6 +131,9 @@ L'agent Cowork principal qui reçoit votre requête, crée le plan, coordonne le
 
 ## P
 
+### Plugin (Plugin Cowork)
+Intégration tierce officielle qui étend les capacités de Cowork. 11 plugins ont été annoncés le 30 janvier 2026 : Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry et Slack. Les plugins permettent à Cowork d'interagir directement avec ces services sans automatisation navigateur.
+
 ### Prompt
 Les instructions que vous donnez à Claude. Peuvent être simples ("organise ces fichiers par ordre alphabétique") ou des workflows complexes multi-étapes ("lire factures → extraire données → créer tableur → catégoriser par date"). Des prompts clairs donnent de meilleurs résultats.
 
@@ -140,6 +153,9 @@ Terme d'Anthropic pour les fonctionnalités en accès anticipé qui ne sont pas 
 ---
 
 ## S
+
+### Scheduled Tasks (Tâches planifiées)
+Fonctionnalité permettant d'automatiser des opérations Cowork récurrentes selon un calendrier défini (ex : compilation de rapport quotidien, organisation de fichiers hebdomadaire). Supprime le besoin de déclencher manuellement les tâches répétitives.
 
 ### Sub-Agent (Sous-agent)
 Travailleurs spécialisés générés par l'orchestrateur pour gérer des parties spécifiques d'une tâche. Chaque sous-agent a un contexte frais et peut travailler en parallèle avec les autres.

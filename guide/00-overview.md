@@ -16,7 +16,7 @@
 |--------|---------|
 | **Release** | Research preview, January 2026 |
 | **Availability** | Pro ($20/mo) or Max ($100-200/mo) subscribers |
-| **Platform** | macOS only (Windows planned, Linux not announced) |
+| **Platform** | macOS and Windows (Linux not announced) |
 | **Built by** | ~90% written by Claude itself ([source](https://claude.com/download)) |
 | **Focus** | File manipulation, organization, document generation |
 | **Usage limits** | Resets every 5 hours; heavy tasks consume quota rapidly |
@@ -57,7 +57,7 @@ Cowork shares the same backend architecture as Claude Code:
 | **Heavy cloud users** | No Google Drive/Dropbox confirmed | Use native cloud apps |
 | **Anyone needing reliability** | Preview = bugs, unexpected behavior | Wait for stable release |
 | **Code execution needs** | Files only, no scripts | Use Claude Code |
-| **Windows/Linux users** | macOS only (Windows planned, Linux not announced) | Wait for platform expansion |
+| **Linux users** | macOS and Windows only (Linux not announced) | Wait for platform expansion |
 | **Heavy daily users** | Usage limits reset every 5h; Pro exhausts in ~1-1.5h intensive use | Consider Max tier or batch work |
 | **VPN users** | **Cannot work with VPN active** (VM routing conflict) | Disconnect VPN or use Claude Code |
 

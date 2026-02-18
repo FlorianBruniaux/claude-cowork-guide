@@ -7,6 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.0] - 2026-02-18
+
+### Added
+
+- **Windows support** (February 10, 2026) — Claude Cowork now available on macOS and Windows
+- **11 official Cowork Plugins** (January 30, 2026): Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack
+- **Opus 4.6 capabilities**: 1M token context window (beta), 128K output tokens, adaptive thinking with 4 effort levels
+- **Scheduled tasks**: automate recurring Claude tasks
+- **Agent Teams** (research preview): coordinate multiple Claude agents
+- **Context compaction** (beta): automatic conversation history compression for longer sessions
+- Direct Excel and PowerPoint integrations
+- Improved browser automation capabilities
+- Windows troubleshooting guide in guide/04-troubleshooting.md
+- New reference entries: Plugins, Agent Teams, Context Compaction, Scheduled Tasks in glossary and FAQ
+
+### Changed
+
+- Platform designation updated from "macOS only" to "macOS and Windows" across all documentation
+- Opus 4.6 context window updated: 200K → 1M tokens (beta)
+- Opus 4.6 output tokens updated: 64K → 128K
+- Pro plan pricing documented: $17/month (annual billing)
+- Workflow count corrected and synchronized across all files
+- Updated comparison matrix with new capabilities and platform support
+
+### Fixed
+
+- VERSION and MANIFEST.yaml version inconsistency (both now at 1.4.0)
+- Workflow count discrepancy between README and actual workflow files
+- Removed deprecated workflows (report_synthesis, team_handoff) from machine-readable/reference.yaml
+
 ## [1.3.1] - 2026-02-06
 
 ### Added

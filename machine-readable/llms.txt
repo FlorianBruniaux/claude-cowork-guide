@@ -6,16 +6,27 @@ Complete documentation for Claude Cowork - agentic desktop feature for knowledge
 
 Claude's desktop-native autonomous assistant that manipulates local files, generates documents, and organizes digital workspace—without writing code.
 
-**Platform**: macOS only (Windows planned)
-**Subscription**: Pro ($20/mo) or Max ($100-200/mo)
+**Platform**: macOS and Windows (since Feb 10, 2026; Linux not announced)
+**Subscription**: Pro ($17/mo annual, ~$20/mo monthly) or Max ($100-200/mo)
 **Status**: Research preview
+**Model**: Opus 4.6 (1M tokens beta context, 128K output tokens, adaptive thinking)
+
+## Key Features (v1.4.0)
+
+- 11 official plugins: Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack
+- Scheduled tasks for recurring automation
+- Agent Teams (research preview) for multi-agent coordination
+- Context compaction (beta) for longer sessions
+- Improved browser automation
+- Direct Excel and PowerPoint integrations
+- Claude Legal extension for legal document review
 
 ## Quick Access
 
 - Documentation hub: /README.md
 - Getting started: /guide/01-getting-started.md
 - 67 ready-to-use prompts: /prompts/
-- 24 step-by-step workflows: /workflows/
+- 26 step-by-step workflows: /workflows/
 - LLM-optimized index: /machine-readable/reference.yaml
 
 ## Key Files
@@ -24,18 +35,19 @@ Claude's desktop-native autonomous assistant that manipulates local files, gener
 - /guide/02-capabilities.md - Feature matrix, limitations
 - /guide/04-troubleshooting.md - Error messages, solutions
 - /reference/comparison.md - Cowork vs Copilot/Gemini/ChatGPT
-- /reference/faq.md - 20+ frequently asked questions
+- /reference/faq.md - 25+ frequently asked questions
 - /reference/cheatsheet.md - 1-page printable reference
 
 ## For AI Assistants
 
 Load the structured index for smart navigation:
-/machine-readable/reference.yaml (~1.5K tokens)
+/machine-readable/reference.yaml (~2K tokens)
 
 Contains:
 - All documentation paths
 - 67 prompts organized by category
-- 24 workflows
+- 26 workflows
+- 11 official plugins
 - Common errors and solutions
 - Token budgets per task type
 - Decision flowchart

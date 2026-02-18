@@ -4,7 +4,7 @@
 
 > **One-page quick reference** — Print-friendly
 
-**Requires**: Pro ($20/mo) or Max ($100-200/mo) subscription, macOS
+**Requires**: Pro ($20/mo) or Max ($100-200/mo) subscription, macOS or Windows
 
 ---
 
@@ -38,10 +38,10 @@ Format: [specific format requirements]
 |-------|---------|-------|
 | **Haiku** | Very simple tasks, quick queries | Very Fast |
 | **Sonnet** | Daily tasks (emails, files) | Fast |
-| **Opus** | Complex analysis, synthesis | Slower |
+| **Opus 4.6** | Complex analysis, synthesis | Slower |
 
-**Default**: Start with Sonnet. Use Haiku for simple queries. Switch to Opus if results lack depth.
-**Note**: Only Opus 4.5 available (4.0/4.1 retired).
+**Default**: Start with Sonnet. Use Haiku for simple queries. Switch to Opus 4.6 if results lack depth.
+**Note**: Opus 4.6 supports 1M tokens (beta) context window, 128K output tokens, and adaptive thinking (4 effort levels).
 
 ---
 
@@ -69,10 +69,13 @@ Create `my-profile.md` in your workspace:
 |-----------|--------------|
 | Read/write files | Execute code |
 | Create Office docs | Run scripts |
-| Extract data from images | Access cloud storage |
-| Organize folders | Make API calls |
-| Web research (Chrome) | Process audio/video |
-| Generate PDFs | Decrypt files |
+| Extract data from images | Process audio/video |
+| Organize folders | Decrypt files |
+| Web research (Chrome) | Access network resources (except Chrome) |
+| Generate PDFs | Run on Linux |
+| 11 plugins (Asana, GitHub, Notion, Slack...) | |
+| Scheduled tasks | |
+| Direct Excel/PowerPoint integrations | |
 
 ---
 
@@ -189,13 +192,13 @@ Request → Analysis → Plan → ⚠️ Review → Approve → Execute → Veri
 
 ## Context Limits
 
-| Content | Approximate Capacity |
+| Content | Approximate Capacity (Opus 4.6, 1M beta) |
 |---------|---------------------|
-| Text pages | 150-500 pages |
-| Documents | 50-100 docs |
-| Images (OCR) | 50-100 images |
+| Text pages | 600-2000+ pages |
+| Documents | 200-400+ docs |
+| Images (OCR) | 200-400+ images |
 
-Hit limit? → Break into smaller batches
+Context compaction (beta) extends effective session length. Hit limit? → Break into smaller batches
 
 ---
 
@@ -255,4 +258,4 @@ Hit limit? → Break into smaller batches
 
 ---
 
-*Cowork v1.3.0 (Research Preview) | Part of Claude Cowork Guide*
+*Cowork v1.4.0 (Research Preview) | Part of Claude Cowork Guide*

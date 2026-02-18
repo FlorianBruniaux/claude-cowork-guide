@@ -15,7 +15,7 @@ Avant de commencer, assurez-vous d'avoir :
 | Exigence | Comment vérifier |
 |----------|------------------|
 | **Abonnement Pro ou Max** | claude.ai → Paramètres → Abonnement affiche "Pro" ou "Max" |
-| **macOS** | Menu Apple → À propos de ce Mac |
+| **macOS ou Windows** | macOS : Menu Apple → À propos de ce Mac / Windows : Paramètres → Système → À propos |
 | **Application Claude Desktop** | Dossier Applications ou recherche Spotlight |
 | **Dernière version de l'app** | Voir les étapes de vérification ci-dessous ⚠️ |
 
@@ -48,7 +48,7 @@ Avant de commencer, assurez-vous d'avoir :
 | Situation | Action |
 |-----------|--------|
 | Tier gratuit | Passer au Pro (20$) ou Max (100$+) |
-| Windows/Linux | Attendre l'expansion de plateforme (Windows prévu, Linux non annoncé) |
+| Linux | Attendre l'expansion de plateforme (Linux non annoncé) |
 
 ---
 

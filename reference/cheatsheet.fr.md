@@ -4,7 +4,7 @@
 
 > **Référence rapide d'une page** — Format imprimable
 
-**Prérequis** : Abonnement Pro (20$/mois) ou Max (100-200$/mois), macOS
+**Prérequis** : Abonnement Pro (20$/mois) ou Max (100-200$/mois), macOS ou Windows
 
 ---
 
@@ -38,10 +38,10 @@ Format : [exigences de format spécifiques]
 |--------|---------------|---------|
 | **Haiku** | Tâches très simples, requêtes rapides | Très rapide |
 | **Sonnet** | Tâches quotidiennes (emails, fichiers) | Rapide |
-| **Opus** | Analyses complexes, synthèses | Plus lent |
+| **Opus 4.6** | Analyses complexes, synthèses | Plus lent |
 
-**Par défaut** : Commencez par Sonnet. Utilisez Haiku pour les requêtes simples. Passez à Opus si les résultats manquent de profondeur.
-**Note** : Seul Opus 4.5 disponible (4.0/4.1 retirés).
+**Par défaut** : Commencez par Sonnet. Utilisez Haiku pour les requêtes simples. Passez à Opus 4.6 si les résultats manquent de profondeur.
+**Note** : Opus 4.6 supporte une fenêtre de contexte de 1M tokens (beta), 128K tokens de sortie, et la pensée adaptative (4 niveaux d'effort).
 
 ---
 
@@ -69,10 +69,13 @@ Créez `mon-profil.md` dans votre workspace :
 |-----------|--------------|
 | Lire/écrire des fichiers | Exécuter du code |
 | Créer des documents Office | Exécuter des scripts |
-| Extraire des données d'images | Accéder au stockage cloud |
-| Organiser des dossiers | Faire des appels API |
-| Recherche web (Chrome) | Traiter audio/vidéo |
-| Générer des PDF | Déchiffrer des fichiers |
+| Extraire des données d'images | Traiter audio/vidéo |
+| Organiser des dossiers | Déchiffrer des fichiers |
+| Recherche web (Chrome) | Accéder réseau (sauf Chrome) |
+| Générer des PDF | Tourner sur Linux |
+| 11 plugins (Asana, GitHub, Notion, Slack...) | |
+| Tâches planifiées | |
+| Intégrations directes Excel/PowerPoint | |
 
 ---
 
@@ -189,13 +192,13 @@ Requête → Analyse → Plan → ⚠️ Révision → Approbation → Exécutio
 
 ## Limites de contexte
 
-| Contenu | Capacité approximative |
+| Contenu | Capacité approximative (Opus 4.6, 1M beta) |
 |---------|---------------------|
-| Pages de texte | 150-500 pages |
-| Documents | 50-100 docs |
-| Images (OCR) | 50-100 images |
+| Pages de texte | 600-2000+ pages |
+| Documents | 200-400+ docs |
+| Images (OCR) | 200-400+ images |
 
-Limite atteinte ? → Diviser en lots plus petits
+La compaction de contexte (beta) étend la durée effective des sessions. Limite atteinte ? → Diviser en lots plus petits
 
 ---
 
@@ -255,4 +258,4 @@ Limite atteinte ? → Diviser en lots plus petits
 
 ---
 
-*Cowork v1.3.0 (Research Preview) | Partie de Claude Cowork Guide*
+*Cowork v1.4.0 (Research Preview) | Partie de Claude Cowork Guide*

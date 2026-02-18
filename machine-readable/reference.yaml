@@ -3,8 +3,8 @@
 # Source: cowork/ documentation
 # Purpose: Condensed index for LLMs to quickly answer user questions about Cowork
 
-version: "1.3.0"
-updated: "2026-02-03"
+version: "1.4.0"
+updated: "2026-02-18"
 status: "research-preview"
 
 # ════════════════════════════════════════════════════════════════
@@ -41,6 +41,7 @@ workflows:
   email_templates: "cowork/workflows/email-templates.md"
   expense_tracking: "cowork/workflows/expense-tracking.md"
   file_organization: "cowork/workflows/file-organization.md"
+  financial_model_validation: "cowork/workflows/financial-model-validation.md"
   inventory_tracking: "cowork/workflows/inventory-tracking.md"
   invoice_generation: "cowork/workflows/invoice-generation.md"
   knowledge_transfer: "cowork/workflows/knowledge-transfer.md"
@@ -54,24 +55,25 @@ workflows:
   quality_checklist: "cowork/workflows/quality-checklist.md"
   quote_creation: "cowork/workflows/quote-creation.md"
   quote_to_invoice: "cowork/workflows/quote-to-invoice.md"
-  report_synthesis: "cowork/workflows/report-synthesis.md"
   review_response: "cowork/workflows/review-response.md"
   social_media_posts: "cowork/workflows/social-media-posts.md"
   supplier_order: "cowork/workflows/supplier-order.md"
-  team_handoff: "cowork/workflows/team-handoff.md"
   website_audit: "cowork/workflows/website-audit.md"
   work_log: "cowork/workflows/work-log.md"
+  workforce_planning: "cowork/workflows/workforce-planning.md"
 
 # ════════════════════════════════════════════════════════════════
 # QUICK REFERENCE - Essential facts
 # ════════════════════════════════════════════════════════════════
 essentials:
   what: "Agentic desktop feature for knowledge workers - file manipulation without code"
-  platform: "macOS only (Windows planned, Linux not announced)"
-  subscription: "Pro ($20/mo) or Max ($100-200/mo) - both have access"
-  usage_limits: "Resets every 5 hours; Pro ~1-1.5h intensive use, Max 5x-20x more"
-  context: "~200K tokens theoretical, ~165K effective (system overhead)"
+  platform: "macOS and Windows (since Feb 10, 2026; Linux not announced)"
+  subscription: "Pro ($17/mo annual, ~$20/mo monthly) or Max ($100-200/mo) - both have access"
+  usage_limits: "Resets every 5 hours; Free ~9, Pro ~45, Max5x ~225, Max20x ~900 messages per window"
+  context: "1M tokens beta (Opus 4.6), previously ~200K; context compaction extends sessions"
+  output_tokens: "128K (Opus 4.6)"
   vpn_compatible: "NO - #1 issue, VM routing conflict"
+  model: "Opus 4.6 with adaptive thinking (4 effort levels)"
 
 # ════════════════════════════════════════════════════════════════
 # CAN DO / CANNOT DO
@@ -82,15 +84,20 @@ capabilities:
     - "Create Office docs (Word, Excel, PowerPoint)"
     - "Extract data from images (OCR)"
     - "Organize folders/files"
-    - "Web research via Chrome"
+    - "Web research via Chrome (improved browser automation)"
     - "Generate PDFs"
+    - "11 official plugins (Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack)"
+    - "Scheduled tasks (recurring automation)"
+    - "Agent Teams (research preview - multi-agent coordination)"
+    - "Context compaction (beta - longer sessions)"
+    - "Direct Excel and PowerPoint integrations"
   cannot_do:
     - "Execute code or scripts"
     - "Make API calls"
-    - "Access cloud storage directly"
+    - "Access cloud storage directly (except via plugins)"
     - "Process audio/video"
     - "Work with VPN active"
-    - "Run on Windows/Linux"
+    - "Run on Linux"
     - "Operate in background"
 
 # ════════════════════════════════════════════════════════════════
@@ -113,6 +120,25 @@ extensions:
       - "Invoice and agreement term cross-checking"
     disclaimer: "Does NOT provide legal advice - review by qualified legal professional required"
     model_support: "Opus 4.6 achieved 90.2% on BigLaw Bench (Feb 2026)"
+
+# ════════════════════════════════════════════════════════════════
+# PLUGINS (11 official, announced Jan 30, 2026)
+# ════════════════════════════════════════════════════════════════
+plugins:
+  announced: "2026-01-30"
+  count: 11
+  list:
+    - Asana
+    - Canva
+    - Cloudflare
+    - Figma
+    - GitHub
+    - Google Drive
+    - Jira
+    - Linear
+    - Notion
+    - Sentry
+    - Slack
 
 # ════════════════════════════════════════════════════════════════
 # PROMPTING FORMULA (CTOC)
@@ -143,9 +169,9 @@ errors:
     solution: "Manual installation via bash (see troubleshooting doc)"
   context_limit:
     message: "Context limit reached"
-    cause: "System overhead (~25-35K tokens)"
-    actual_limit: "~165K usable (not 200K)"
-    solution: "Break into batches of 10-20 files"
+    cause: "System overhead or very large tasks"
+    actual_limit: "1M beta with Opus 4.6 (context compaction helps); previously ~165K usable"
+    solution: "Break into batches of 10-20 files; context compaction extends sessions"
   access_denied:
     message: "Access denied — path outside allowed directories"
     cause: "Folder not granted"
@@ -180,13 +206,13 @@ ocr:
 # COMPETITIVE POSITIONING
 # ════════════════════════════════════════════════════════════════
 competition:
-  unique_strength: "Only assistant with true multi-step autonomy + local files + browser automation"
-  vs_copilot: "Better autonomy, worse OCR accuracy"
-  vs_gemini: "Better autonomy, smaller context (165K vs 1M+)"
-  vs_chatgpt: "Better autonomy, macOS only vs cross-platform"
-  vs_apple_intelligence: "Better capabilities, cloud vs on-device"
+  unique_strength: "Only assistant with true multi-step autonomy + local files + browser automation + 11 plugins"
+  vs_copilot: "Better autonomy + plugins, worse OCR accuracy"
+  vs_gemini: "Better autonomy, comparable context (1M beta vs 1M+ native)"
+  vs_chatgpt: "Better autonomy + plugins, macOS/Windows vs cross-platform"
+  vs_apple_intelligence: "Better capabilities + plugins, cloud vs on-device"
   best_ocr: "Microsoft Copilot"
-  best_context: "Gemini Advanced (1M+ tokens)"
+  best_context: "Gemini Advanced (1M+ native) or Cowork (1M beta with Opus 4.6)"
   best_privacy: "Apple Intelligence (on-device)"
   best_autonomy: "Cowork"
 
@@ -245,19 +271,19 @@ enterprise:
 limitations:
   environment:
     - "VPN incompatible (VM routing conflict)"
-    - "macOS only (Windows planned, Linux not announced)"
+    - "macOS and Windows only (Linux not announced)"
     - "Requires app foreground (no background operation)"
-    - "No session persistence across restarts"
+    - "Session persistence improved via context compaction (beta)"
   technical:
     - "No code execution"
-    - "No API calls"
-    - "No cloud storage direct access"
+    - "No API calls (except via plugins)"
+    - "No cloud storage direct access (except Google Drive plugin)"
     - "No audio/video processing"
-    - "Context limit hits at 165K (not 200K)"
+    - "1M context beta, effective limit depends on task complexity"
   workflow:
     - "Pro tier exhausts in ~1-1.5h intensive use"
     - "Usage resets every 5 hours (not daily)"
-    - "No cross-session memory"
+    - "No cross-session memory (context compaction helps within sessions)"
     - "Connector reliability inconsistent"
 
 # ════════════════════════════════════════════════════════════════
@@ -276,7 +302,7 @@ decide:
     - "Need best OCR → Microsoft Copilot"
     - "Need 1M+ context → Gemini Advanced"
     - "Privacy critical → Apple Intelligence"
-    - "On Windows/Linux → Copilot or ChatGPT"
+    - "On Linux → Copilot or ChatGPT"
     - "VPN required → Claude Code"
     - "Budget critical but can handle setup → different-ai/openwork (open-source)"
 
