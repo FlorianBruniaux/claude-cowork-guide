@@ -7,6 +7,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.0] - 2026-02-28
+
+### Added
+- Step 8: Desktop Commander installation guide in Getting Started (EN + FR)
+- Cross-Session Memory documentation via Desktop Commander + memory.md
+- Customize Tab complete documentation: Skills, Connectors, permissions system
+- Skills system: slash commands (/pdf, /docx, /xlsx, etc.), skill chaining, community registries
+- MCP Connectors: 3 types (web, desktop, custom JSON), per-tool permissions (Allow/Ask/Block)
+- Expanded Scheduled Tasks guide: 4 patterns with copy-paste prompts (daily brief, weekly compilation, Friday recap, monthly dashboard)
+- Expanded Agent Teams guide: setup, SMB use cases, limitations
+- New workflow: Scheduled Automation (`scheduled-automation.md` + `.en.md`)
+- New workflow: Memory Setup (`memory-setup.md` + `.en.md`)
+- 5 new FAQ entries (Customize tab, Skills, Desktop Commander, MCP Connectors, community skills)
+- Updated FAQ: cross-session memory (Desktop Commander approach), scheduled tasks (expanded)
+- Glossary: Customize Tab, Desktop Commander, Memory File, MCP Connector, Skill, Skill Chaining, Slash Command
+- Sonnet 4.6 as recommended default model for Cowork (replaces Opus recommendation for agentic tasks)
+- Scheduled tasks: on-demand task type, full cadence options (hourly to weekdays), sidebar management UI, prompt auto-optimization, device sleep behavior documented
+- Plugin ecosystem expansion (Feb 24): 12 new MCP connectors (Google Calendar, Gmail, DocuSign, WordPress, Apollo, Clay, Outreach, Similarweb, Harvey, LegalZoom + finance connectors)
+- Functional plugins by department: HR, Legal & Design, Operations, Engineering
+- Custom plugin creation guide (no-code, Plugins panel)
+- Admin private plugin marketplace documentation
+
+### Updated
+- Workflow count: 26 → 28
+- Reference cheatsheet: Customize Tab & Skills section (EN + FR)
+- Version: 1.4.0 → 1.5.0
+- Model selection: Sonnet 4.6 recommended as Cowork default (agentic performance = Opus at 5x lower cost)
+- FAQ: scheduled tasks answer expanded, 2 new Q&As (custom plugins, Feb 24 connectors)
+
 ## [1.4.0] - 2026-02-18
 
 ### Added

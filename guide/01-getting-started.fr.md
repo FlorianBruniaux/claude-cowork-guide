@@ -384,6 +384,64 @@ avec un tableau comparatif.
 
 ---
 
+## Étape 8 : Installer Desktop Commander (Recommandé)
+
+Desktop Commander est une extension officielle gratuite qui étend ce que Cowork peut faire. La plupart des utilisateurs en bénéficient, surtout pour les tâches récurrentes.
+
+### Ce que Desktop Commander apporte
+
+| Capacité | Sans Desktop Commander | Avec Desktop Commander |
+|---------|----------------------|----------------------|
+| **Accès fichiers** | Dossier workspace uniquement | Tout dossier que vous autorisez |
+| **Mémoire entre sessions** | Aucune, repart de zéro | Persistante via memory.md |
+| **Installation serveurs MCP** | Manuelle, technique | Un clic |
+
+### Installation
+
+1. Ouvrez Claude Desktop → onglet **Personnaliser** (ou Paramètres → Extensions)
+2. Trouvez **Desktop Commander** dans la liste
+3. Cliquez sur **Installer**
+4. Redémarrez Claude Desktop quand demandé
+
+Moins de 2 minutes. Aucune connaissance technique requise.
+
+### Configurer votre fichier mémoire
+
+Une fois Desktop Commander installé, créez un fichier de mémoire persistante pour que Cowork se souvienne de votre contexte entre les sessions :
+
+1. Créez `~/Cowork-Workspace/memory.md`
+2. Ajoutez votre contexte récurrent, voici un modèle de départ :
+
+```markdown
+# Ma mémoire Cowork
+
+## Contexte métier
+- Type d'activité : [votre secteur, conseil, commerce, artisanat, etc.]
+- Formats documents principaux : [Word, Excel, PDF, etc.]
+
+## Préférences clients
+- Client Dupont : ton formel, factures en PDF
+- Client Martin : devis détaillés main d'œuvre et matériaux séparés
+
+## Ce que je ne fais jamais
+- Utiliser des points d'exclamation dans les emails clients
+- Promettre une date de livraison sans vérifier d'abord
+
+## Tâches récurrentes
+- Hebdomadaire : [ce que vous compilez ou reportez chaque semaine]
+- Mensuel : [ce que vous faites en fin de mois]
+```
+
+3. Démarrez les prochaines sessions avec : "Lis ~/Cowork-Workspace/memory.md d'abord. Puis [votre demande]"
+
+### Pourquoi c'est utile
+
+Sans fichier mémoire, vous répétez vos préférences et votre contexte à chaque session. Avec ce fichier, Cowork reprend là où vous en étiez, connaissant vos clients, votre style, et vos habitudes de travail.
+
+> **Note** : Desktop Commander est disponible via l'onglet Personnaliser dans Claude Desktop. L'emplacement exact peut changer au fil des mises à jour. Si vous ne le trouvez pas, cherchez dans Paramètres → Extensions.
+
+---
+
 ## Dépannage première exécution
 
 ### "Impossible d'accéder au dossier"

@@ -34,14 +34,15 @@ Format : [exigences de format spécifiques]
 
 ## Sélection du modèle
 
-| Modèle | Utiliser pour | Vitesse |
-|--------|---------------|---------|
-| **Haiku** | Tâches très simples, requêtes rapides | Très rapide |
-| **Sonnet** | Tâches quotidiennes (emails, fichiers) | Rapide |
-| **Opus 4.6** | Analyses complexes, synthèses | Plus lent |
+| Modèle | Utiliser pour | Vitesse | Contexte |
+|--------|---------------|---------|----------|
+| **Haiku** | Tâches très simples, requêtes rapides | Très rapide | Standard |
+| **Sonnet 4.6** ⭐ | Tous les workflows Cowork, tâches agentiques | Rapide | 1M tokens (beta) |
+| **Opus 4.6** | Raisonnement approfondi, analyses juridiques/scientifiques | Plus lent | 1M tokens (beta) |
 
-**Par défaut** : Commencez par Sonnet. Utilisez Haiku pour les requêtes simples. Passez à Opus 4.6 si les résultats manquent de profondeur.
-**Note** : Opus 4.6 supporte une fenêtre de contexte de 1M tokens (beta), 128K tokens de sortie, et la pensée adaptative (4 niveaux d'effort).
+**Par défaut** : Sonnet 4.6 pour tout. Sonnet 4.6 = n°1 pour les tâches agentiques/computer use à un coût 5x inférieur à Opus.
+**Passer à Opus** uniquement pour : raisonnement juridique expert, analyses scientifiques, coordination multi-agents complexe.
+**Les deux modèles** : fenêtre de contexte 1M tokens (beta), 128K tokens en sortie, pensée adaptative.
 
 ---
 
@@ -76,6 +77,24 @@ Créez `mon-profil.md` dans votre workspace :
 | 11 plugins (Asana, GitHub, Notion, Slack...) | |
 | Tâches planifiées | |
 | Intégrations directes Excel/PowerPoint | |
+
+---
+
+## Onglet Personnaliser & Compétences
+
+| Fonctionnalité | Accès | Exemple d'utilisation |
+|---------------|-------|----------------------|
+| **Compétences** | Onglet Personnaliser → Compétences | `/pdf`, `/docx`, `/xlsx` |
+| **Enchaînement** | Combiner deux compétences | `/pdf` puis `/xlsx` en séquence |
+| **Connecteurs** | Onglet Personnaliser → Connecteurs | Recherche web, fichiers locaux, JSON |
+| **Permissions** | Par outil : Autoriser / Demander / Bloquer | Recherche web sur "Demander" |
+| **Mémoire** | Desktop Commander + memory.md | "Lis memory.md d'abord, puis..." |
+| **Tâches planifiées** | Paramètres → Tâches planifiées | Brief quotidien, rapport hebdo |
+
+### Écosystème des compétences
+- Officielles Anthropic : `github.com/anthropics/skills`
+- Communauté : `claudemarketplaces.com` | `skills.sh` | `skillhub.club`
+- Installation : onglet Personnaliser → chercher par nom ou coller l'URL
 
 ---
 
@@ -258,4 +277,4 @@ La compaction de contexte (beta) étend la durée effective des sessions. Limite
 
 ---
 
-*Cowork v1.4.0 (Research Preview) | Partie de Claude Cowork Guide*
+*Cowork v1.5.0 (Research Preview) | Partie de Claude Cowork Guide*

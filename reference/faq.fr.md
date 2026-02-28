@@ -99,6 +99,21 @@ Voir [comparaison détaillée](comparison.fr.md#confusion-frequente).
 ### Q: C'est quoi Claude Legal ?
 **R:** Claude Legal est la première extension officielle Cowork (annoncée 3 fév 2026) pour la revue automatisée de documents juridiques. Il aide à identifier les termes clés de contrats, détecter les risques de conformité et trier les documents légaux. Utilisez-le pour vérifier des contrats, analyser des NDA et suivre la conformité. **Important** : Claude Legal ne fournit PAS de conseil juridique—toutes les conclusions doivent être revues par un professionnel juridique qualifié. Voir [Capacités : Extensions & Plugins](../guide/02-capabilities.fr.md#extensions--plugins) pour plus de détails.
 
+### Q : Qu'est-ce que l'onglet Personnaliser ?
+**R :** L'onglet Personnaliser dans Claude Desktop est l'endroit où vous gérez les Compétences, les Connecteurs et les personnalisations. Accédez-y depuis la navigation principale de l'application. Vous pouvez y installer des compétences (comme `/pdf` ou `/xlsx`), configurer des connecteurs d'outils externes avec des permissions par outil, et ajuster les comportements par défaut.
+
+### Q : Qu'est-ce que les Compétences (Skills) ?
+**R :** Les Compétences sont des capacités supplémentaires installées via l'onglet Personnaliser. Chaque compétence s'active via une commande / : `/pdf` pour le traitement avancé de PDF, `/xlsx` pour Excel, `/docx` pour Word, `/canvas-design` pour les mises en page visuelles. Les compétences peuvent aussi s'enchaîner, par exemple utilisez `/pdf` pour extraire du contenu, puis `/xlsx` pour l'organiser en tableur. Compétences officielles sur `github.com/anthropics/skills`. Communauté sur `claudemarketplaces.com`, `skills.sh` et `skillhub.club`.
+
+### Q : Qu'est-ce que Desktop Commander ?
+**R :** Desktop Commander est une extension officielle de Cowork (installée depuis l'onglet Personnaliser) qui étend l'accès aux fichiers au-delà du dossier workspace, active la mémoire cross-session via un fichier `memory.md`, et permet l'installation de serveurs MCP en un clic. L'installer est l'étape recommandée après la configuration de base. Voir [Démarrage Étape 8](../guide/01-getting-started.fr.md#étape-8--installer-desktop-commander-recommandé).
+
+### Q : Que sont les connecteurs MCP ?
+**R :** Les connecteurs MCP (Model Context Protocol) permettent à Cowork d'interagir avec des outils et services externes. Trois types : connecteurs de recherche web, connecteurs desktop/fichiers locaux (via Desktop Commander), et connecteurs JSON personnalisés pour les intégrations avancées. Vous pouvez définir des permissions par outil : Autoriser (automatique), Demander (confirmation à chaque fois), ou Bloquer (jamais). Aucun code requis, quelques clics dans l'onglet Personnaliser suffisent.
+
+### Q : Où trouver des compétences communautaires ?
+**R :** Au-delà des compétences officielles Anthropic sur `github.com/anthropics/skills`, des compétences créées par la communauté sont disponibles sur `claudemarketplaces.com`, `skills.sh` et `skillhub.club`. Installez n'importe quelle compétence depuis l'onglet Personnaliser en cherchant par nom ou en collant l'URL.
+
 ### Q: Qu'est-ce que les Plugins Cowork ?
 **R:** Les Plugins Cowork sont des intégrations tierces officielles annoncées le 30 janvier 2026. Il y a actuellement 11 plugins : Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry et Slack. Ils permettent à Cowork d'interagir directement avec ces services sans automatisation navigateur.
 
@@ -106,7 +121,19 @@ Voir [comparaison détaillée](comparison.fr.md#confusion-frequente).
 **R:** Opus 4.6 (le modèle alimentant Cowork) supporte jusqu'à 1M de tokens en beta, une amélioration majeure par rapport à la limite effective précédente de ~200K. Les tokens de sortie ont aussi augmenté à 128K (contre 64K). Opus 4.6 propose aussi la pensée adaptative avec 4 niveaux d'effort pour une meilleure efficacité.
 
 ### Q: Qu'est-ce que les tâches planifiées ?
-**R:** Les tâches planifiées vous permettent d'automatiser des opérations Cowork récurrentes. Vous pouvez configurer des tâches qui s'exécutent selon un calendrier (ex : compilation de rapport quotidien, organisation de fichiers hebdomadaire) sans déclenchement manuel à chaque fois. C'est une nouvelle fonctionnalité de la mise à jour de février 2026.
+**R:** Les tâches planifiées automatisent vos opérations Cowork récurrentes. Deux types disponibles : **récurrentes** (s'exécutent automatiquement selon un calendrier) et **à la demande** (déclenchées manuellement, s'exécutent une seule fois).
+
+Configurez-les dans **Claude Desktop → barre latérale gauche → section Planifié → Nouvelle tâche**. Cadences disponibles : horaire, quotidien, hebdomadaire, jours ouvrables uniquement, ou personnalisé. Après la première exécution, Cowork réécrit automatiquement votre prompt pour l'optimiser.
+
+Important : Claude Desktop doit être ouvert et l'appareil allumé (pas en veille) au moment prévu. Si l'appareil est en veille, la tâche est ignorée puis s'exécute au réveil.
+
+Voir le [workflow Automatisation Planifiée](../workflows/scheduled-automation.md) pour les prompts prêts à l'emploi et les patterns de configuration.
+
+### Q : Puis-je créer des plugins personnalisés pour Cowork ?
+**R :** Oui, sans aucun code. Ouvrez le panneau Plugins dans Cowork, cliquez sur Créer un plugin, définissez vos compétences (tâches IA réutilisables), assignez des commandes slash (ex. `/facture`, `/relance`) et regroupez avec des connecteurs. Les 11 plugins officiels d'Anthropic sont open-source et servent de templates à adapter. Les plugins personnalisés peuvent être partagés dans toute l'équipe. Les administrateurs peuvent aussi créer des marketplaces privées avec des catalogues propres à l'organisation.
+
+### Q : Quels nouveaux connecteurs ont été ajoutés en février 2026 ?
+**R :** Le 24 février 2026, Anthropic a ajouté 12+ nouveaux connecteurs MCP. Les plus utiles pour les TPE/PME : **Google Calendar** (agenda), **Gmail** (emails sans Chrome), **DocuSign** (signature de contrats), **WordPress** (gestion de contenu) et des outils commerciaux (Apollo, Clay, Outreach). Des connecteurs finance (FactSet, MSCI, LSEG) ciblent les workflows institutionnels. Tous les connecteurs se gèrent depuis l'onglet Personnaliser avec des permissions par outil : Autoriser/Demander/Bloquer.
 
 ### Q: Qu'est-ce que la compaction de contexte ?
 **R:** La compaction de contexte (beta) compresse automatiquement l'historique de conversation pendant les sessions longues. Cela permet des sessions effectives beaucoup plus longues en gardant le contexte pertinent tout en supprimant les informations redondantes. Cela atténue partiellement la limitation précédente d'absence de persistance de session.
@@ -242,7 +269,7 @@ Il n'y a pas de contournement qui garde le VPN actif. Voir [Dépannage](../guide
 La compaction de contexte (beta) étend encore la durée effective des sessions en compressant l'historique de conversation ancien.
 
 ### Q: Est-ce que Cowork se souvient entre les sessions ?
-**R:** Pas de mémoire intégrée entre les sessions. Cependant, la compaction de contexte (beta) permet maintenant des sessions beaucoup plus longues en compressant l'historique de conversation. Solution de contournement pour la mémoire inter-sessions : Sauvegardez le contexte dans un fichier et chargez-le à la session suivante.
+**R:** Pas par défaut, chaque session démarre à zéro. Avec **Desktop Commander** installé, vous pouvez créer un fichier `memory.md` qui conserve le contexte entre les sessions. Commencez chaque session avec "Lis ~/Cowork-Workspace/memory.md d'abord." Sans Desktop Commander, la solution de contournement reste de sauvegarder le contexte dans un fichier et de le charger à la session suivante. Voir le [workflow Mise en place Mémoire](../workflows/memory-setup.md) pour les détails.
 
 ### Q: Puis-je automatiser Cowork avec des scripts ?
 **R:** Pas actuellement. Cowork n'a pas d'API ou d'interface d'automatisation (janvier 2026). Pour l'automatisation, utilisez Claude Code.

@@ -99,6 +99,21 @@ See [detailed comparison](comparison.md#common-confusion).
 ### Q: What is Claude Legal?
 **A:** Claude Legal is the first official Cowork extension (announced Feb 3, 2026) for automated legal document review. It helps identify key contract terms, detect compliance risks, and triage legal documents. Use it for contract verification, NDA review, and compliance tracking. **Important**: Claude Legal does NOT provide legal advice—all findings should be reviewed by a qualified legal professional. See [Capabilities: Extensions & Plugins](../guide/02-capabilities.md#extensions--plugins) for details.
 
+### Q: What is the Customize tab?
+**A:** The Customize tab in Claude Desktop is where you manage Skills, Connectors, and personalizations. Access it from the main app navigation. From there, install skills (like `/pdf` or `/xlsx`), configure external tool connectors with per-tool permissions, and adjust default behaviors.
+
+### Q: What are Skills?
+**A:** Skills are add-on capabilities installed via the Customize tab. Each skill adds a specific power invoked via slash commands: `/pdf` for advanced PDF processing, `/xlsx` for Excel work, `/docx` for Word documents, `/canvas-design` for visual layouts. Skills can also be chained, for example using `/pdf` to extract content then `/xlsx` to format it as a spreadsheet. Official skills are at `github.com/anthropics/skills`. Community skills at `claudemarketplaces.com`, `skills.sh`, and `skillhub.club`.
+
+### Q: What is Desktop Commander?
+**A:** Desktop Commander is an official Cowork extension (installed from the Customize tab) that expands file access beyond the workspace folder, enables cross-session memory via a `memory.md` file, and provides one-click MCP server installation. Installing it is the recommended next step after basic Cowork setup. See [Getting Started Step 8](../guide/01-getting-started.md#step-8-install-desktop-commander-recommended).
+
+### Q: What are MCP Connectors?
+**A:** MCP (Model Context Protocol) connectors let Cowork interact with external tools and services. Three types: web search connectors, desktop/local file connectors (via Desktop Commander), and custom JSON connectors for advanced integrations. You can set permissions per tool: Allow (automatic), Ask (confirm each time), or Block (never use). No coding required, just a few clicks in the Customize tab.
+
+### Q: Where can I find community skills?
+**A:** Beyond Anthropic's official skills at `github.com/anthropics/skills`, community-built skills are available at `claudemarketplaces.com`, `skills.sh`, and `skillhub.club`. Install any skill from the Customize tab by searching by name or pasting the skill URL.
+
 ### Q: What are Cowork Plugins?
 **A:** Cowork Plugins are official third-party integrations announced January 30, 2026. There are currently 11 plugins: Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, and Slack. They allow Cowork to interact directly with these services without browser automation.
 
@@ -106,7 +121,19 @@ See [detailed comparison](comparison.md#common-confusion).
 **A:** Opus 4.6 (the model powering Cowork) supports up to 1M tokens in beta, a major upgrade from the previous ~200K effective limit. Output tokens have also increased to 128K (from 64K). Opus 4.6 also features adaptive thinking with 4 effort levels for better efficiency.
 
 ### Q: What are scheduled tasks?
-**A:** Scheduled tasks let you automate recurring Cowork operations. You can set up tasks that run on a schedule (e.g., daily report compilation, weekly file organization) without manual triggering each time. This is a new feature in the February 2026 update.
+**A:** Scheduled tasks automate recurring Cowork operations. Two types: **recurring** (run automatically on a set cadence) and **on-demand** (triggered manually, run once).
+
+Set them up in **Claude Desktop → left sidebar → Scheduled section → New Task**. Available cadences: hourly, daily, weekly, weekdays-only, or custom. After the first run, Cowork automatically rewrites your prompt to optimize it.
+
+Important: Claude Desktop must be open and your device awake when a task fires. If the device is asleep, the task is skipped and runs when the device wakes.
+
+See [Scheduled Automation workflow](../workflows/scheduled-automation.md) for copy-paste prompts and patterns.
+
+### Q: Can I build custom plugins for Cowork?
+**A:** Yes, with no coding required. Open the Plugins panel in Cowork, click Create Plugin, define your skills (reusable AI tasks), assign slash commands (e.g., `/invoice`, `/followup`), and bundle with connectors. Anthropic's 11 official plugins are open-sourced and serve as templates to adapt. Custom plugins can be shared across your team. Admin users can also create private plugin marketplaces with organization-specific catalogs.
+
+### Q: What new connectors were added in February 2026?
+**A:** On February 24, 2026, Anthropic added 12+ new MCP connectors. Key ones for SMBs: **Google Calendar** (scheduling), **Gmail** (email without Chrome), **DocuSign** (contract signing), **WordPress** (content management), and sales tools (Apollo, Clay, Outreach). Finance connectors (FactSet, MSCI, LSEG) target institutional workflows. All connectors are managed from the Customize tab with per-tool Allow/Ask/Block permissions.
 
 ### Q: What is context compaction?
 **A:** Context compaction (beta) automatically compresses conversation history during long sessions. This allows much longer effective sessions by keeping relevant context while removing redundant information. It partially addresses the previous limitation of no session persistence.
@@ -242,7 +269,7 @@ There's no workaround that keeps VPN active. See [Troubleshooting](../guide/04-t
 Context compaction (beta) further extends effective session length by compressing older conversation history.
 
 ### Q: Does Cowork remember across sessions?
-**A:** No built-in memory across sessions. However, context compaction (beta) now allows much longer sessions by compressing conversation history. Workaround for cross-session memory: Save context to a file and load it next session.
+**A:** Not by default, each session starts fresh. With **Desktop Commander** installed, you can create a `memory.md` file that persists context across sessions. Start each session with "Read ~/Cowork-Workspace/memory.md first." Without Desktop Commander, the workaround remains saving context to a file and loading it next session. See [Memory Setup workflow](../workflows/memory-setup.md) for details.
 
 ### Q: Can I automate Cowork with scripts?
 **A:** Not currently. Cowork has no API or automation interface (January 2026). For automation, use Claude Code.

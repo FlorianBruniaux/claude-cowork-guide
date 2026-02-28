@@ -34,14 +34,15 @@ Format: [specific format requirements]
 
 ## Model Selection
 
-| Model | Use For | Speed |
-|-------|---------|-------|
-| **Haiku** | Very simple tasks, quick queries | Very Fast |
-| **Sonnet** | Daily tasks (emails, files) | Fast |
-| **Opus 4.6** | Complex analysis, synthesis | Slower |
+| Model | Use For | Speed | Context |
+|-------|---------|-------|---------|
+| **Haiku** | Very simple tasks, quick queries | Very Fast | Standard |
+| **Sonnet 4.6** ⭐ | All Cowork workflows, agentic tasks | Fast | 1M tokens (beta) |
+| **Opus 4.6** | Deep reasoning, legal/scientific analysis | Slower | 1M tokens (beta) |
 
-**Default**: Start with Sonnet. Use Haiku for simple queries. Switch to Opus 4.6 if results lack depth.
-**Note**: Opus 4.6 supports 1M tokens (beta) context window, 128K output tokens, and adaptive thinking (4 effort levels).
+**Default**: Sonnet 4.6 for everything. Sonnet 4.6 = #1 for agentic/computer use tasks at 5x lower cost than Opus.
+**Switch to Opus** only for: expert legal reasoning, scientific analysis, complex multi-agent coordination.
+**Both models**: 1M token context window (beta), 128K output, adaptive thinking.
 
 ---
 
@@ -76,6 +77,24 @@ Create `my-profile.md` in your workspace:
 | 11 plugins (Asana, GitHub, Notion, Slack...) | |
 | Scheduled tasks | |
 | Direct Excel/PowerPoint integrations | |
+
+---
+
+## Customize Tab & Skills
+
+| Feature | How to Access | Example Usage |
+|---------|--------------|---------------|
+| **Skills** | Customize tab → Skills | `/pdf`, `/docx`, `/xlsx` |
+| **Skill chaining** | Chain two skills in a prompt | `/pdf` then `/xlsx` in sequence |
+| **Connectors** | Customize tab → Connectors | Web search, local files, custom JSON |
+| **Permissions** | Per-tool: Allow / Ask / Block | Set web search to "Ask" |
+| **Memory** | Desktop Commander + memory.md | "Read memory.md first, then..." |
+| **Scheduled tasks** | Settings → Scheduled Tasks | Daily brief, weekly report |
+
+### Skills Ecosystem
+- Official skills: `github.com/anthropics/skills`
+- Community: `claudemarketplaces.com` | `skills.sh` | `skillhub.club`
+- Install via: Customize tab → search by name or paste URL
 
 ---
 
@@ -258,4 +277,4 @@ Context compaction (beta) extends effective session length. Hit limit? → Break
 
 ---
 
-*Cowork v1.4.0 (Research Preview) | Part of Claude Cowork Guide*
+*Cowork v1.5.0 (Research Preview) | Part of Claude Cowork Guide*

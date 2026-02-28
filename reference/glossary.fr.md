@@ -29,6 +29,12 @@ Ce guide utilise parfois des termes techniques. Voici leur équivalent simple :
 | **Tâche planifiée** | Tâche automatique récurrente | Comme un rappel qui fait le travail à votre place |
 | **Agent Teams** | Équipe d'assistants IA | Comme une équipe de collègues spécialisés |
 | **Compaction** | Compression de l'historique | Comme résumer une réunion pour garder l'essentiel |
+| **Compétence (Skill)** | Pouvoir supplémentaire | Comme un outil spécialisé dans votre boîte à outils |
+| **Connecteur MCP** | Lien vers un outil externe | Comme brancher un accessoire sur votre appareil |
+| **Commande /** | Raccourci pour activer un outil | Comme un raccourci clavier |
+| **Onglet Personnaliser** | Centre de configuration | Comme les réglages de votre téléphone |
+| **Desktop Commander** | Extension fichiers + mémoire | Comme un assistant qui se souvient de vos préférences |
+| **Fichier mémoire** | Aide-mémoire persistant | Comme un carnet de notes que vous relisez chaque matin |
 
 **Règle de lecture** : À la première mention d'un terme technique, vous verrez : *terme simple (terme technique)*. Ensuite, seul le terme simple sera utilisé.
 
@@ -64,6 +70,9 @@ L'application macOS et Windows qui héberge Cowork. Différente de l'interface w
 ### Compaction de contexte (Context Compaction)
 Fonctionnalité beta qui compresse automatiquement l'historique de conversation pendant les sessions longues. Cela permet des sessions effectives beaucoup plus longues en gardant le contexte pertinent tout en supprimant les informations redondantes.
 
+### Customize Tab (Onglet Personnaliser)
+L'espace de configuration dans Claude Desktop pour gérer les Compétences, les Connecteurs et les personnalisations. Accédez-y depuis la navigation principale de l'app pour installer des compétences, configurer des connexions avec des outils externes, et définir des permissions par outil.
+
 ### Context Limit (Limite de contexte)
 La quantité maximale de texte/données que Claude peut traiter dans une seule session (~200K tokens). Quand dépassée, les tâches peuvent échouer ou produire des résultats incomplets.
 
@@ -72,6 +81,9 @@ L'espace "mémoire" où Claude conserve votre conversation et le contenu des fic
 
 ### Cowork
 La fonctionnalité desktop agentique de Claude pour les travailleurs du savoir. Manipule les fichiers sans exécution de code.
+
+### Desktop Commander
+Extension officielle de Cowork installée depuis l'onglet Personnaliser. Active : (1) l'accès au système de fichiers au-delà du dossier workspace, (2) la mémoire cross-session via un fichier `memory.md`, (3) l'installation de serveurs MCP en un clic. Recommandé pour tous les utilisateurs réguliers de Cowork.
 
 ---
 
@@ -114,6 +126,12 @@ Le niveau d'abonnement Claude le plus élevé (100-200$/mois, avec multiplicateu
 ### Pro Tier
 Le niveau d'abonnement Claude standard (20$/mois). Inclut maintenant l'accès Cowork, mais avec des limites d'usage plus strictes (~1-1.5 heures d'utilisation intensive avant réinitialisation du quota).
 
+### Connecteur MCP (MCP Connector)
+Intégration Model Context Protocol permettant à Cowork d'interagir avec des outils et services externes. Trois types : recherche web, desktop/fichiers locaux, et JSON personnalisé. Les outils de chaque connecteur peuvent être réglés sur Autoriser (automatique), Demander (confirmation à chaque fois), ou Bloquer. Aucun code requis pour la configuration.
+
+### Fichier Mémoire (Memory File)
+Un fichier markdown (typiquement `memory.md`) utilisé avec Desktop Commander pour conserver le contexte entre les sessions Cowork. Contient le contexte métier, les préférences clients et les informations de tâches récurrentes. Référencez-le au début de chaque session : "Lis ~/Cowork-Workspace/memory.md d'abord."
+
 ### Multi-Step Task (Tâche multi-étapes)
 Une opération nécessitant plusieurs actions séquentielles. Exemple : "lire fichiers → analyser → créer rapport → organiser sortie." Cowork excelle dans ces tâches.
 
@@ -153,6 +171,15 @@ Terme d'Anthropic pour les fonctionnalités en accès anticipé qui ne sont pas 
 ---
 
 ## S
+
+### Compétence / Skill
+Capacité supplémentaire pour Cowork, installée via l'onglet Personnaliser. S'active via des commandes / (par ex. `/pdf`, `/docx`, `/xlsx`, `/canvas-design`). Les compétences étendent ce que Cowork peut faire au-delà de ses fonctions par défaut. Compétences officielles : `github.com/anthropics/skills`.
+
+### Enchaînement de compétences (Skill Chaining)
+Combinaison de plusieurs compétences dans un même workflow. Exemple : `/pdf` pour extraire le contenu d'un document, puis `/xlsx` pour l'organiser en tableur. Les compétences s'exécutent séquentiellement.
+
+### Commande / (Slash Command)
+Un raccourci pour invoquer une compétence dans Cowork (par ex. `/pdf`, `/docx`, `/xlsx`). Tapez la commande / au début de votre message dans l'interface chat de Cowork.
 
 ### Scheduled Tasks (Tâches planifiées)
 Fonctionnalité permettant d'automatiser des opérations Cowork récurrentes selon un calendrier défini (ex : compilation de rapport quotidien, organisation de fichiers hebdomadaire). Supprime le besoin de déclencher manuellement les tâches répétitives.

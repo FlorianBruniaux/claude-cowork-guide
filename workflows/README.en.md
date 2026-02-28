@@ -73,6 +73,8 @@ Files, notes, meetings, expenses
 | [Expense Tracking](expense-tracking.en.md) · [FR](expense-tracking.md) | Receipts → Excel accounting | 20 min | Intermediate |
 | [Meeting Preparation](meeting-prep.en.md) · [FR](meeting-prep.md) | Client/supplier briefings | 20 min | Intermediate |
 | [Knowledge Transfer](knowledge-transfer.en.md) · [FR](knowledge-transfer.md) | Apprentice training documentation | 2-4h | Advanced |
+| [Scheduled Automation](scheduled-automation.en.md) · [FR](scheduled-automation.md) | Automated recurring tasks | 15 min | Intermediate |
+| [Memory Setup](memory-setup.en.md) · [FR](memory-setup.md) | Cross-session memory via Desktop Commander | 10 min | Beginner |
 
 ---
 
@@ -197,7 +199,7 @@ cp ~/Cowork-Workspace/output/validated-invoice.pdf \
 
 ## 📈 Workflow Evolution
 
-**Current version**: 24 workflows (v1.3.0)
+**Current version**: 28 workflows (v1.5.0)
 
 **Contribute**:
 - Suggest improvements: [GitHub Issues](https://github.com/FlorianBruniaux/claude-cowork-guide)

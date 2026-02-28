@@ -347,6 +347,64 @@ with a comparison table.
 
 ---
 
+## Step 8: Install Desktop Commander (Recommended)
+
+Desktop Commander is a free official extension that expands what Cowork can do. Most users benefit from it, especially for recurring work.
+
+### What Desktop Commander Enables
+
+| Capability | Without Desktop Commander | With Desktop Commander |
+|-----------|--------------------------|----------------------|
+| **File access** | Workspace folder only | Any folder you authorize |
+| **Memory between sessions** | None — starts fresh each time | Persistent via memory.md |
+| **MCP server setup** | Manual, technical | One-click install |
+
+### Installation
+
+1. Open Claude Desktop → **Customize** tab (or Settings → Extensions)
+2. Find **Desktop Commander** in the list
+3. Click **Install**
+4. Restart Claude Desktop when prompted
+
+Takes under 2 minutes. No technical knowledge required.
+
+### Set Up Your Memory File
+
+Once Desktop Commander is installed, create a persistent memory file so Cowork remembers your context between sessions:
+
+1. Create `~/Cowork-Workspace/memory.md`
+2. Add your recurring context, here's a starting template:
+
+```markdown
+# My Cowork Memory
+
+## Business Context
+- Business type: [your type — consulting, retail, trades, etc.]
+- Primary file formats: [Word, Excel, PDF, etc.]
+
+## Client Preferences
+- Client Dupont: formal tone, PDF invoices preferred
+- Client Martin: needs itemized quotes with separate labor/materials
+
+## Things I Never Do
+- Use exclamation marks in client emails
+- Promise specific delivery dates without checking first
+
+## Recurring Tasks
+- Weekly: [what you compile or report each week]
+- Monthly: [what you do at month end]
+```
+
+3. Start future sessions with: "Read ~/Cowork-Workspace/memory.md first. Then [your actual request]"
+
+### Why This Matters
+
+Without a memory file, you'd repeat preferences and context at the start of every session. With it, Cowork picks up where you left off, knowing your clients, your style, and your recurring work patterns.
+
+> **Note**: Desktop Commander is available via the Customize tab in Claude Desktop. The exact UI location may shift as Cowork updates during research preview. If you don't see it immediately, check Settings → Extensions.
+
+---
+
 ## Troubleshooting First Run
 
 ### "Cannot access folder"

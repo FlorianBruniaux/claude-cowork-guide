@@ -10,43 +10,47 @@
 
 ## Model Selection
 
-Cowork supports different Claude models. Choose based on your task complexity.
+Cowork supports different Claude models. Since Sonnet 4.6 launched (February 17, 2026), the model selection calculus has changed significantly.
 
 ### Available Models
 
 | Model | Best For | Speed | Context Window | Usage Cost |
 |-------|----------|-------|----------------|------------|
 | **Haiku** | Very simple tasks, quick queries | Very Fast | Standard | Low |
-| **Sonnet** | Daily tasks, emails, organization | Fast | Standard | Standard |
-| **Opus 4.6** | Complex analysis, multi-document synthesis | Slower | 1M tokens (beta), 128K output | Higher |
+| **Sonnet 4.6** ⭐ | Agentic tasks, file automation, daily Cowork workflows | Fast | 1M tokens (beta), 128K output | Standard |
+| **Opus 4.6** | Deep reasoning, scientific analysis, complex multi-agent tasks | Slower | 1M tokens (beta), 128K output | Higher (5x Sonnet) |
 
 **Model Notes** (February 2026):
-- **Opus versions**: Opus 4.5 and Opus 4.6 are available. Opus 4.0 and 4.1 have been retired.
-- **Opus 4.6 capabilities**: Opus 4.6 achieved 90.2% on BigLaw Bench, making it particularly effective for legal document review, contract analysis, and compliance-related tasks. It features a 1M token context window (beta) and 128K output tokens, with adaptive thinking at 4 effort levels.
+- **Sonnet 4.6** (released February 17, 2026): Now the recommended default for Cowork. Achieves 72.5% on OSWorld-Verified (computer use benchmark) vs Opus 4.6's 72.7% — essentially identical performance on agentic tasks, at 5x lower cost. Also includes the 1M token context window (beta), 128K output, and adaptive thinking.
+- **Opus 4.6** (released February 5, 2026): Retains advantages for deep scientific reasoning (91.3% on GPQA Diamond) and complex multi-agent coordination. For standard Cowork file operations and automation, the performance gap with Sonnet 4.6 is negligible.
 - **Context compaction (beta)**: Cowork now uses automatic compaction to compress conversation history, enabling longer sessions without losing important context.
-- **Context window**: The standard ~200K context applies to Haiku and Sonnet. Opus 4.6 extends this to 1M tokens in beta.
 
 ### When to Use Each
 
-| Task Type | Recommended Model |
-|-----------|-------------------|
-| Quick emails, simple edits | Sonnet |
-| File organization | Sonnet |
-| Receipt data extraction | Sonnet |
-| Complex document synthesis | Opus |
-| Multi-source research reports | Opus |
-| Strategic analysis | Opus |
+| Task Type | Recommended Model | Why |
+|-----------|-------------------|-----|
+| File organization, renaming | **Sonnet 4.6** | Agentic tasks — Sonnet's strength |
+| Receipt extraction, OCR batches | **Sonnet 4.6** | Tool-calling — Sonnet's #1 ranking |
+| Email drafts, document creation | **Sonnet 4.6** | Fast, sufficient quality |
+| Daily automations, scheduled tasks | **Sonnet 4.6** | Same agentic performance, 5x cheaper |
+| Multi-source research synthesis | **Sonnet 4.6** | 1M context handles large volumes |
+| Contract review, legal analysis | **Opus 4.6** | Deep reasoning advantage |
+| Complex scientific/technical reports | **Opus 4.6** | GPQA-level reasoning needed |
+| Multi-agent coordination | **Opus 4.6** | Coordination logic benefits from Opus |
 
 ### Selection Tips
 
-1. **Start with Sonnet** — Sufficient for 80% of tasks
-2. **Switch to Opus** when:
-   - Results lack depth or nuance
-   - Task involves 10+ source documents
-   - You need detailed analysis, not just summarization
-3. **Mind your limits** — Opus consumes quota faster than Sonnet
+1. **Default to Sonnet 4.6** — Handles 90%+ of Cowork tasks with near-identical agentic performance to Opus
+2. **Switch to Opus 4.6** only when:
+   - Results require expert-level reasoning (legal, scientific, regulatory)
+   - Task involves complex multi-agent coordination
+   - Output quality from Sonnet falls consistently short despite good prompts
+3. **Avoid Opus for file operations** — No measurable benefit over Sonnet for organizing files, extracting data, or running scheduled automations
+4. **Mind your quota** — Opus consumes 5x more quota per token. On Pro plan, this compounds quickly.
 
-> **Pro plan users**: Sonnet is your best default. Use Opus sparingly to maximize your 5-hour usage window.
+> **Pro plan users**: Sonnet 4.6 is your default for everything. Reserve Opus for the rare task where reasoning depth genuinely matters.
+>
+> **Max plan users**: Still start with Sonnet 4.6. Switch to Opus for contract review, strategic analysis, or when Sonnet's output needs more depth.
 
 ---
 
@@ -344,14 +348,16 @@ Identify key terms, obligations, and potential risks.
 Generate a summary with flagged issues for legal review.
 ```
 
-### Official Plugins (announced January 30, 2026)
+### Official Plugins (January 30, 2026) + Expanded Ecosystem (February 24, 2026)
 
-Cowork supports 11 official plugins that connect to third-party services, enabling direct integration with your existing tools:
+The plugin ecosystem has grown significantly. Starting from 11 core plugins (January 30), Anthropic expanded with enterprise connectors and functional plugins on February 24.
 
-| Plugin | Category | Use Cases |
-|--------|----------|-----------|
+#### Core Plugins (all users)
+
+| Plugin | Category | SMB Use Cases |
+|--------|----------|---------------|
 | **Asana** | Project Management | Task tracking, project status |
-| **Canva** | Design | Create and edit designs |
+| **Canva** | Design | Create visuals, social posts |
 | **Cloudflare** | Infrastructure | Site management, analytics |
 | **Figma** | Design | Design file access, review |
 | **GitHub** | Development | Repository management, issues |
@@ -362,11 +368,58 @@ Cowork supports 11 official plugins that connect to third-party services, enabli
 | **Sentry** | Monitoring | Error tracking, performance |
 | **Slack** | Communication | Messages, channel management |
 
-> **Note**: Plugin availability and capabilities may evolve during the research preview period. Check Cowork settings for currently available plugins.
+#### New Connectors (February 24, 2026)
 
-### Future Extensions
+Key additions relevant for SMBs:
 
-Anthropic may release additional specialized extensions for other domains (accounting, technical documentation, etc.). Check the official Anthropic announcements for updates.
+| Connector | Category | Use Cases |
+|-----------|----------|-----------|
+| **Google Calendar** | Productivity | Meeting scheduling, availability checks |
+| **Gmail** | Communication | Email workflows without Chrome |
+| **DocuSign** | Documents | Contract signing, document workflows |
+| **WordPress** | Publishing | Post management, content updates |
+| **Apollo** | Sales | Contact research, prospecting |
+| **Clay** | Sales | Lead enrichment, CRM data |
+| **Outreach** | Sales | Sales sequences, follow-ups |
+| **Similarweb** | Research | Competitor web traffic analysis |
+| **Harvey** | Legal | Legal document analysis |
+| **LegalZoom** | Legal | Document templates, compliance |
+
+Finance/institutional connectors also added (FactSet, MSCI, LSEG, S&P Global) — primarily enterprise/investment workflows.
+
+#### Functional Plugins by Department
+
+Beyond individual app connectors, Anthropic launched pre-built plugins that combine connectors and skills for specific job functions:
+
+| Function | Covers |
+|----------|--------|
+| **HR** | Full employee lifecycle: job descriptions, onboarding docs, offer letters, offboarding |
+| **Legal & Design** | UX copy, accessibility audits, design critiques |
+| **Operations** | Process documentation, vendor evaluations, change request tracking, brand voice |
+| **Engineering** | Development workflows, code review processes |
+| **Finance** | Financial analysis workflows (enterprise-focused) |
+
+#### Build Your Own Plugin (No Code Required)
+
+You can create custom plugins tailored to your specific workflow:
+
+1. Open Cowork's **Plugins panel** in the interface
+2. Click **Create Plugin**
+3. Define your skills (reusable AI tasks) with descriptions
+4. Assign slash commands to each skill (e.g., `/quote`, `/followup`)
+5. Bundle skills with relevant connectors
+6. Share across your team
+
+Starting point: Anthropic's 11 official plugins are open-sourced and available as templates to adapt.
+
+#### Admin: Private Plugin Marketplace
+
+Organizations can create a private catalog of approved plugins:
+- Admins control which plugins and connectors are available to users
+- Plugins can be bundled with pre-configured connector permissions
+- Organization-wide sharing tools in development
+
+> **Note**: Plugin availability and connector functionality may evolve during research preview. Google Calendar, Gmail, and DocuSign connectors were announced February 24, 2026 — check current availability in your Cowork settings.
 
 ---
 
@@ -374,10 +427,81 @@ Anthropic may release additional specialized extensions for other domains (accou
 
 ### Scheduled Tasks
 
-Cowork can now schedule automated tasks to run at specified times or intervals. This enables recurring workflows such as:
-- Daily report generation
-- Periodic file organization
-- Scheduled data extraction and compilation
+Cowork can automate recurring tasks, run them at set times without manually triggering each time. Set it up once, and it handles your daily, weekly, or monthly operations.
+
+#### Two Task Types
+
+**Recurring tasks** — Run automatically at set intervals without any manual action:
+- Hourly, daily, weekly, weekdays-only, or custom schedules
+- Cowork rewrites your prompt after the first run, optimizing it based on what it learned
+
+**On-demand tasks** — Run once when you trigger them manually:
+- Useful for irregular or one-off operations
+- Same setup process, just triggered via "Run now" instead of a schedule
+
+#### How to Set Up a Task
+
+1. Open **Claude Desktop → left sidebar → Scheduled** section
+2. Click **New Task**
+3. Write your task prompt (CTOC format recommended)
+4. Choose task type:
+   - Recurring: set cadence (hourly / daily / weekly / weekdays / custom)
+   - On-demand: will run when you click "Run now"
+5. Activate
+
+**Managing tasks from the sidebar**: view upcoming runs, see past run history, edit prompt or cadence, pause, resume, delete, or trigger an on-demand run at any time.
+
+> **Note**: Scheduled Tasks is in research preview. Reliability may vary. Always verify automated outputs before acting on them.
+>
+> ⚠️ **Device must be awake**: If your computer is asleep or Claude Desktop is closed when a task fires, it will be skipped and re-run once the device wakes and the app reopens. Plan accordingly for overnight or early-morning schedules.
+
+#### 4 Essential Patterns
+
+**Pattern 1: Daily Morning Brief**
+Triggers every day at 9am. Consolidates overnight inputs into a usable brief.
+
+```
+CONTEXT: Files added yesterday to ~/Cowork-Workspace/input/daily/
+TASK: Summarize new documents, key information, items requiring action today
+OUTPUT: ~/Cowork-Workspace/output/brief-[date].md with sections: Actions Today, Key Info, Nothing Urgent
+CONSTRAINTS: Max 1 page. Bullet points only. Flag anything time-sensitive.
+```
+
+**Pattern 2: Weekly Sales Compilation**
+Triggers every Monday at 8am. Pulls together the past week's data.
+
+```
+CONTEXT: Files in ~/Cowork-Workspace/input/weekly/ from the past 7 days
+TASK: Compile into a weekly summary, totals, notable items, open follow-ups
+OUTPUT: ~/Cowork-Workspace/output/weekly-[date].docx
+CONSTRAINTS: One-page executive format. Include totals. Flag overdue items.
+```
+
+**Pattern 3: Friday Wrap-Up**
+Triggers every Friday at 5pm. Documents what happened this week.
+
+```
+CONTEXT: All files modified this week in ~/Cowork-Workspace/
+TASK: Create end-of-week recap, work done, pending items, notes for next Monday
+OUTPUT: ~/Cowork-Workspace/output/recap-[date].md
+CONSTRAINTS: Focus on what's actionable next week. Brief format.
+```
+
+**Pattern 4: Monthly Dashboard**
+Triggers on the 1st of each month. Creates your monthly overview.
+
+```
+CONTEXT: ~/Cowork-Workspace/input/monthly/ for the past month
+TASK: Monthly summary, key metrics, trends, outstanding issues
+OUTPUT: ~/Cowork-Workspace/output/dashboard-[month].xlsx with Summary and Details tabs
+CONSTRAINTS: Use EU formula syntax. Month-over-month comparison where data allows.
+```
+
+#### Reliability Notes
+
+Scheduled tasks work well for straightforward, repeatable operations. For complex multi-step workflows or tasks that depend on external data availability, check outputs manually the first few runs to validate behavior.
+
+Alternative for advanced automation: **n8n** (open source) can trigger Cowork Desktop via the n8n-nodes-claude-desktop community node, enabling more sophisticated scheduling and conditional logic.
 
 ### Improved Browser Automation
 
@@ -389,9 +513,222 @@ Beyond generating `.xlsx` and `.pptx` files from scratch, Cowork can now directl
 
 ### Agent Teams (Research Preview)
 
-Coordinate multiple Claude agents on complex tasks. Agent Teams allow you to break down large projects into parallel workstreams, with each agent handling a specific part of the task. This is particularly useful for multi-document analysis, large-scale file processing, and research projects spanning many sources.
+Agent Teams lets multiple Claude agents work on a task simultaneously. Instead of one agent processing 50 documents sequentially, you can split the work across several agents, each handling a portion, and get results faster.
 
-> **Note**: Agent Teams is in research preview and may have limitations in coordination and reliability.
+#### When to Use Agent Teams
+
+| Situation | Example |
+|-----------|---------|
+| **Large document batches** | Analyze 50 supplier invoices at once |
+| **Multi-source research** | Research 10 competitors simultaneously |
+| **Parallel categorization** | Sort 200 files by type and date at the same time |
+| **Complex synthesis** | Combine data from multiple file types into one report |
+
+For tasks with 5-10 files or simple sequential operations, standard Cowork without Agent Teams is usually sufficient.
+
+#### How to Invoke Agent Teams
+
+Ask Cowork to use multiple agents explicitly:
+
+```
+Process all PDF invoices in ~/Cowork-Workspace/input/invoices/
+Use parallel agents to analyze each invoice simultaneously.
+Extract: Date, Supplier, Amount, Payment Terms, VAT
+Compile into a single Excel at ~/Cowork-Workspace/output/invoice-analysis.xlsx
+```
+
+Or for research:
+```
+Research these 8 competitors: [list]
+Use separate agents for each company.
+For each: products, pricing, target market, main differentiators.
+Compile into ~/Cowork-Workspace/output/competitor-analysis.docx
+```
+
+#### SMB Use Cases
+
+- **Accounting**: Process a month's receipts in a fraction of the time
+- **Procurement**: Compare quotes from multiple suppliers simultaneously
+- **Compliance**: Check multiple contracts against a compliance checklist in parallel
+- **Content**: Generate variations of a document for different client types at once
+
+#### Limitations
+
+Agent Teams is in research preview. Coordination between agents can occasionally be imperfect, one agent may not correctly pass context to another. For critical work, verify the assembled output carefully. The feature works most reliably with clearly scoped, parallel tasks rather than tightly interdependent workflows.
+
+### Cross-Session Memory (via Desktop Commander)
+
+By default, each Cowork session starts fresh, Cowork doesn't remember preferences, client names, or context from previous sessions. With **Desktop Commander** installed, you can solve this with a `memory.md` file.
+
+#### How It Works
+
+1. Create `~/Cowork-Workspace/memory.md` with your recurring context
+2. At the start of each session: "Read ~/Cowork-Workspace/memory.md first. Then [your request]"
+3. Cowork loads your preferences and context before starting work
+
+#### Recommended memory.md Structure
+
+```markdown
+# My Cowork Memory
+
+## Business Context
+- Business type: [your type]
+- Main clients: [names and key info]
+- Preferred document formats: [list]
+
+## Communication Preferences
+- Tone with clients: [formal/casual]
+- Language: [French/English/both]
+- Things to never do: [list]
+
+## Recurring Tasks
+- Weekly: [what you do each week]
+- Monthly: [what you do each month]
+
+## Important Details
+- VAT number: [if relevant for invoices]
+- Standard payment terms: [your terms]
+```
+
+#### Templates by Business Type
+
+**Tradesperson (plumber, electrician, builder)**
+```markdown
+# Memory — [Your name], [Trade]
+
+## Clients
+- Client Dupont: apartment at [address], prefers afternoon calls, always requests itemized quotes
+- Client Martin: villa renovation ongoing, needs formal invoices
+
+## Standards
+- Quote format: always include labor and materials separately
+- Payment terms: 30 days net
+- Default VAT rate: 20%
+```
+
+**Retail (shop, boutique)**
+```markdown
+# Memory — [Shop name]
+
+## Inventory Priorities
+- Fast movers: [top 5 products]
+- Seasonal: [periods and categories]
+- Reorder threshold: [quantity]
+
+## Supplier Preferences
+- Primary supplier: [name, contact, lead time]
+- Backup: [name]
+```
+
+**Professional Services (consultant, accountant, coach)**
+```markdown
+# Memory — [Your name], [Profession]
+
+## Active Clients
+- Client A: monthly strategic consulting, formal reports in Word
+- Client B: needs bilingual documents (FR/EN)
+
+## Document Templates
+- Proposal: see ~/Cowork-Workspace/templates/proposal-template.docx
+- Report: [structure preferences]
+```
+
+> **Requires**: Desktop Commander extension (see [Getting Started Step 8](01-getting-started.md#step-8-install-desktop-commander-recommended)).
+
+---
+
+## Customize Cowork
+
+The **Customize tab** in Claude Desktop is where you extend and personalize Cowork. You'll find it in the main app navigation. Three main areas: Skills, Connectors, and personalizations.
+
+### Skills — Extra Capabilities
+
+Skills add specific powers to Cowork, invoked via slash commands. Think of them as specialized tools you activate when needed.
+
+#### Official Skills (Anthropic)
+
+| Skill | Slash Command | What It Does |
+|-------|--------------|--------------|
+| **PDF** | `/pdf` | Advanced PDF processing and extraction |
+| **Word** | `/docx` | Enhanced Word document creation and editing |
+| **PowerPoint** | `/pptx` | Richer slide generation and formatting |
+| **Excel** | `/xlsx` | Advanced spreadsheet operations |
+| **Canvas Design** | `/canvas-design` | Visual layout and design creation |
+| **Algorithmic Art** | `/algorithmic-art` | Pattern and visual generation |
+| **Skill Creator** | `/skill-creator` | Create custom skills for your specific needs |
+
+#### How to Use Skills
+
+```
+/pdf Extract all tables from the contracts in ~/Cowork-Workspace/input/contracts/
+     Save each table as a separate CSV in ~/Cowork-Workspace/output/
+```
+
+#### Skill Chaining
+
+Combine skills in sequence for multi-step operations:
+
+```
+/pdf Extract the data from these receipts
+/xlsx Organize it into a monthly expense tracker with totals and categories
+Input: ~/Cowork-Workspace/input/receipts/
+Output: ~/Cowork-Workspace/output/expenses-[month].xlsx
+```
+
+#### Community Skills
+
+Beyond official skills, the community builds and shares skills:
+
+| Resource | What You'll Find |
+|----------|-----------------|
+| **github.com/anthropics/skills** | Official Anthropic skill repository |
+| **claudemarketplaces.com** | Community-contributed skills |
+| **skills.sh** | Skills with one-line install |
+| **skillhub.club** | Curated skill collections |
+
+Install any skill from the Customize tab: search by name or paste the skill URL.
+
+### Connectors — Connect External Tools
+
+Connectors let Cowork interact with tools beyond your local files. Three connector types:
+
+| Type | What It Does | Setup |
+|------|-------------|-------|
+| **Web Search** | Searches the web (alternative to Chrome) | Toggle in Customize tab |
+| **Desktop (local files)** | Access files outside your workspace | Via Desktop Commander |
+| **Custom JSON** | Connect to any service with a JSON definition | Advanced users |
+
+#### Permission Levels Per Tool
+
+Each connector tool can be set independently:
+
+| Permission | Behavior |
+|-----------|----------|
+| **Allow** | Cowork uses this tool automatically without asking |
+| **Ask** | Cowork asks your permission each time before using |
+| **Block** | Cowork never uses this tool |
+
+Example: Set web search to **Ask** so Cowork confirms before going online. Set local file reading to **Allow** for seamless file access.
+
+#### Setting Up Connectors (No Coding Required)
+
+1. Go to **Customize tab → Connectors**
+2. Browse available connectors
+3. Click a connector → set individual tool permissions
+4. Save, connector is active immediately
+
+> **Note**: Desktop Commander (a connector) is covered separately in [Getting Started Step 8](01-getting-started.md#step-8-install-desktop-commander-recommended). It's the recommended first connector for most users.
+
+### The Customize Tab Ecosystem
+
+| Area | Find It In | Key Action |
+|------|-----------|-----------|
+| **Skills** | Customize → Skills | Install, manage slash commands |
+| **Connectors** | Customize → Connectors | Add tools, set permissions |
+| **Desktop Commander** | Customize → Extensions | Enable cross-session memory |
+| **Personalizations** | Customize → Profile | Default behaviors, language settings |
+
+> **Note**: The Customize tab UI may evolve as Cowork exits research preview. Feature locations described here reflect the February 2026 interface.
 
 ---
 

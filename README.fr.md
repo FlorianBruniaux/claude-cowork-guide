@@ -19,7 +19,7 @@
 
 <p align="center">
   <a href="https://github.com/FlorianBruniaux/claude-cowork-guide/stargazers"><img src="https://img.shields.io/github/stars/FlorianBruniaux/claude-cowork-guide?style=social" alt="Stars"/></a>
-  <a href="./workflows/"><img src="https://img.shields.io/badge/Workflows-26-green" alt="Workflows"/></a>
+  <a href="./workflows/"><img src="https://img.shields.io/badge/Workflows-28-green" alt="Workflows"/></a>
   <a href="./prompts/"><img src="https://img.shields.io/badge/Prompts-70-blue" alt="Prompts"/></a>
 </p>
 
@@ -27,7 +27,7 @@
   <img src="https://img.shields.io/badge/Status-Research%20Preview-yellow" alt="Status"/>
   <img src="https://img.shields.io/badge/Platform-macOS%20%26%20Windows-blue" alt="Platform"/>
   <img src="https://img.shields.io/badge/Subscription-Pro%20%26%20Max-purple" alt="Subscription"/>
-  <img src="https://img.shields.io/badge/Version-1.4.0-orange" alt="Version"/>
+  <img src="https://img.shields.io/badge/Version-1.5.0-orange" alt="Version"/>
 </p>
 
 > Guide complet de l'assistant desktop de Claude pour les travailleurs du savoir et les petites entreprises.
@@ -67,7 +67,7 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 **Le problème** : La documentation officielle est dense. Les tutoriels deviennent obsolètes rapidement.
 Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalités.
 
-**Ce guide** : 26 workflows métiers, 70 prompts copier-coller, 11 plugins officiels documentés, exemples pratiques.
+**Ce guide** : 28 workflows métiers, 70 prompts copier-coller, 11 plugins officiels documentés, guide Desktop Commander, documentation Skills/Onglet Personnaliser, exemples pratiques.
 
 **Temps de lecture** : Démarrage 5 min | Guide complet 45 min
 
@@ -108,7 +108,7 @@ Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalit
 <summary><strong>Utilisateur avancé</strong> — Exploration approfondie (6 étapes)</summary>
 
 1. [Capacités complètes](guide/02-capabilities.fr.md) — Matrice de fonctionnalités
-2. [Tous les workflows](workflows/) — 26 guides étape par étape
+2. [Tous les workflows](workflows/) — 28 guides étape par étape
 
 3. [Dépannage](guide/04-troubleshooting.fr.md) — Résolution d'erreurs
 4. [FAQ](reference/faq.fr.md) — 20+ questions
@@ -135,7 +135,7 @@ Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalit
 
 Claude Cowork supporte 11 plugins officiels : Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack. Les plugins étendent les capacités de Cowork en se connectant directement à des outils externes.
 
-### Workflows (26 guides)
+### Workflows (28 guides)
 
 **📋 Administratif** (6)
 - [Génération de factures](workflows/invoice-generation.md) — Modèles professionnels
@@ -166,10 +166,12 @@ Claude Cowork supporte 11 plugins officiels : Asana, Canva, Cloudflare, Figma, G
 - [Audit de site web](workflows/website-audit.md) — Diagnostic et plan d'action
 - [Transfert de connaissances](workflows/knowledge-transfer.md) — Formation, succession
 
-**🗂️ Organisation** (4)
+**🗂️ Organisation** (6)
 - [Organisation de fichiers](workflows/file-organization.md) — Tri automatique des dossiers
 - [Suivi des dépenses](workflows/expense-tracking.md) — Tickets vers Excel
 - [Préparation de réunions](workflows/meeting-prep.md) — Briefings clients/fournisseurs
+- [Automatisation planifiée](workflows/scheduled-automation.md) — Tâches récurrentes automatisées
+- [Mise en place mémoire](workflows/memory-setup.md) — Mémoire cross-session avec Desktop Commander
 
 → [Tous les workflows](workflows/README.md)
 
@@ -279,4 +281,4 @@ Sous licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ---
 
-*Version 1.4.0 | Février 2026 | Créé avec Claude*
+*Version 1.5.0 | Février 2026 | Créé avec Claude*

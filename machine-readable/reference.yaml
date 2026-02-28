@@ -3,8 +3,8 @@
 # Source: cowork/ documentation
 # Purpose: Condensed index for LLMs to quickly answer user questions about Cowork
 
-version: "1.4.0"
-updated: "2026-02-18"
+version: "1.5.0"
+updated: "2026-02-28"
 status: "research-preview"
 
 # ════════════════════════════════════════════════════════════════

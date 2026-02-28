@@ -36,6 +36,9 @@ A beta feature that automatically compresses conversation history during long se
 ### Claude in Excel
 Microsoft Excel add-in (launched January 24, 2026) that provides AI assistance inside Excel. **Not the same as Cowork**. The add-in helps with formula writing, data analysis, and chart creation within existing Excel files. Cowork's Excel capabilities generate new spreadsheets from unstructured data. See [comparison](comparison.md#common-confusion).
 
+### Customize Tab
+The settings area in Claude Desktop for managing Skills, Connectors, and personalizations. Access it from the main app navigation to install skills, configure external tool connections, and set per-tool permissions.
+
 ### Context Limit
 The maximum amount of text/data Claude can process in a single session (~200K tokens). When exceeded, tasks may fail or produce incomplete results.
 
@@ -44,6 +47,9 @@ The "memory" space where Claude holds your conversation and file contents during
 
 ### Cowork
 Claude's agentic desktop feature for knowledge workers. Manipulates files without code execution.
+
+### Desktop Commander
+An official Cowork extension installed from the Customize tab. Enables: (1) file system access beyond the workspace folder, (2) cross-session memory via a `memory.md` file, (3) one-click MCP server installation. Recommended for all regular Cowork users.
 
 ---
 
@@ -86,6 +92,12 @@ The highest Claude subscription level ($100-200/month, with 5x or 20x usage mult
 ### Pro Tier
 The standard Claude subscription level ($20/month). Now includes Cowork access, but with tighter usage limits (~1-1.5 hours intensive use before quota resets).
 
+### MCP Connector
+A Model Context Protocol integration allowing Cowork to interact with external tools and services. Three types: web search, desktop/local files, and custom JSON. Each connector's tools can be set to Allow (automatic), Ask (prompt each time), or Block. No coding required for setup.
+
+### Memory File
+A markdown file (typically `memory.md`) used with Desktop Commander to persist context across Cowork sessions. Contains business context, client preferences, and recurring task information. Reference it at the start of each session: "Read ~/Cowork-Workspace/memory.md first."
+
 ### Multi-Step Task
 An operation requiring multiple sequential actions. Example: "read files → analyze → create report → organize output." Cowork excels at these.
 
@@ -125,6 +137,15 @@ Anthropic's term for early-access features that aren't production-ready. Cowork 
 ---
 
 ## S
+
+### Skill
+An add-on capability for Cowork, installed via the Customize tab. Invoked via slash commands (e.g., `/pdf`, `/docx`, `/xlsx`, `/canvas-design`). Skills extend what Cowork can do beyond its defaults. Official skills: `github.com/anthropics/skills`.
+
+### Skill Chaining
+Combining multiple skills in a single workflow. Example: `/pdf` to extract content from a document, then `/xlsx` to organize it into a spreadsheet. Skills execute sequentially.
+
+### Slash Command
+A shortcut for invoking a skill in Cowork (e.g., `/pdf`, `/docx`, `/xlsx`). Type the slash command at the start of your message in the Cowork chat interface.
 
 ### Scheduled Tasks
 A feature allowing automated recurring Cowork operations on a set schedule (e.g., daily report compilation, weekly file organization). Removes the need to manually trigger repetitive tasks each time.

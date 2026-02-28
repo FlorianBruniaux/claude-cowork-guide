@@ -2,7 +2,7 @@
 # This file enables future separation into standalone repository
 
 name: claude-cowork-guide
-version: "1.4.0"
+version: "1.5.0"
 description: Complete documentation for Claude Cowork - agentic desktop for knowledge workers
 
 # Relationship to parent repo
@@ -70,6 +70,8 @@ structure:
     - website-audit.md
     - work-log.md
     - workforce-planning.md
+    - scheduled-automation.md
+    - memory-setup.md
   prompts:
     - file-ops.md
     - document-creation.md
@@ -97,12 +99,12 @@ structure:
 # Content metadata
 metadata:
   language: en
-  last_updated: 2026-02-18
+  last_updated: 2026-02-28
   maintainer: claude-code-ultimate-guide contributors
   license: CC-BY-SA-4.0
   total_files: 36
-  total_prompts: 67
-  total_workflows: 26
+  total_prompts: 70
+  total_workflows: 28
   features_v140:
     - "Windows support (Feb 10, 2026)"
     - "11 official plugins (Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack)"
@@ -112,6 +114,15 @@ metadata:
     - "Agent Teams (research preview)"
     - "Improved browser automation"
     - "Direct Excel and PowerPoint integrations"
+  features_v150:
+    - "Desktop Commander installation guide (Step 8)"
+    - "Cross-session memory via memory.md"
+    - "Customize Tab documentation: Skills, Connectors, permissions"
+    - "Skills system with slash commands and chaining"
+    - "MCP Connectors (3 types, per-tool Allow/Ask/Block)"
+    - "Expanded Scheduled Tasks guide (4 patterns with prompts)"
+    - "Expanded Agent Teams guide"
+    - "2 new workflows: scheduled-automation, memory-setup"
 
 # Future standalone repo configuration
 standalone_config:

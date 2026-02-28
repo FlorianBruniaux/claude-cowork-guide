@@ -73,6 +73,8 @@ Fichiers, notes, réunions, dépenses
 | [Suivi Dépenses](expense-tracking.md) · [EN](expense-tracking.en.md) | Tickets → Excel comptabilité | 20 min | Intermédiaire |
 | [Préparation Réunions](meeting-prep.md) · [EN](meeting-prep.en.md) | Briefings clients/fournisseurs | 20 min | Intermédiaire |
 | [Transmission Savoir-Faire](knowledge-transfer.md) · [EN](knowledge-transfer.en.md) | Documentation formation apprentis | 2-4h | Avancé |
+| [Automatisation Planifiée](scheduled-automation.md) · [EN](scheduled-automation.en.md) | Tâches récurrentes automatisées | 15 min | Intermédiaire |
+| [Mise en place Mémoire](memory-setup.md) · [EN](memory-setup.en.md) | Mémoire cross-session via Desktop Commander | 10 min | Débutant |
 
 ---
 
@@ -198,7 +200,7 @@ cp ~/Cowork-Workspace/output/facture-validee.pdf \
 
 ## 📈 Évolution des Workflows
 
-**Version actuelle**: 24 workflows (v1.3.0)
+**Version actuelle**: 28 workflows (v1.5.0)
 
 **Contribuer**:
 - Proposer améliorations: [Issues GitHub](https://github.com/FlorianBruniaux/claude-cowork-guide)
