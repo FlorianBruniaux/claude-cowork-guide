@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.6.0] - 2026-03-04
+
+### Added
+- **Claude in Chrome** (bêta, tous plans payants) : extension Chrome intégrée à l'écosystème Cowork — gestion multi-onglets, tâches navigateur planifiées, /slash commands réutilisables. Disponible Pro/Max/Team/Enterprise. Listé comme produit officiel Anthropic sur anthropic.com.
+- **Import Memory** (2-3 mars 2026) : nouvel outil permettant d'importer ses préférences et contexte depuis ChatGPT, Gemini, Copilot ou tout autre service IA via un prompt dédié fourni par Anthropic. Facilite la migration vers Claude.
+- **Acquisition Vercept + Computer Use 72.5%** (25 fév 2026) : Anthropic acquiert Vercept (Allen Institute for AI), spécialisée en perception d'interfaces UI. Leur modèle VyUI améliore le grounding écran. Résultat : benchmark OSWorld passe de 15% (fin 2024) à 72.5% (fév 2026). Documenter dans guide/02-capabilities.md section Computer Use.
+- **Instructions globales et par dossier dans Cowork** : possibilité de définir des instructions persistantes s'appliquant à toutes les sessions Cowork (global) ou à des dossiers spécifiques. Complément aux tâches planifiées (v1.5.0).
+- **Desktop Extensions — interface graphique d'installation MCP** : nouveau UI graphique pour installer les extensions/MCP servers directement depuis Claude Desktop — validation des inputs, stockage sécurisé des credentials. Rend l'installation accessible aux non-développeurs.
+
+### Changed
+- **Memory disponible pour tous** (2 mars 2026) : la fonctionnalité Memory, auparavant réservée aux plans payants (Pro/Max/Team/Enterprise), est désormais accessible à tous les utilisateurs y compris le tier gratuit. Mettre à jour la comparison matrix et la FAQ.
+- **Claude in Excel × PowerPoint — workflows cross-app** : nouvelle capacité de travail simultané Excel + PowerPoint dans le même contexte de tâche (ex : analyser un tableau Excel et générer automatiquement la présentation PowerPoint associée). Enrichir la section intégrations Office dans guide/02-capabilities.md.
+
 ## [1.5.1] - 2026-03-04
 
 ### Added

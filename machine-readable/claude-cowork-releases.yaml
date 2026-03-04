@@ -2,13 +2,29 @@
 # Source: CHANGELOG.md + Anthropic product announcements
 # Purpose: Track Cowork documentation + product releases
 
-latest: "1.5.1"
+latest: "1.6.0"
 updated: "2026-03-04"
 
 # ════════════════════════════════════════════════════════════════
 # RELEASES (newest first, condensed highlights only)
 # ════════════════════════════════════════════════════════════════
 releases:
+
+  # ─────────────────────────────────────────────────────────────
+  # 1.6.x Series (March 2026)
+  # ─────────────────────────────────────────────────────────────
+
+  - version: "1.6.0"
+    date: "2026-03-04"
+    highlights:
+      - "⭐ Claude in Chrome (bêta) : extension Chrome pour tous plans payants — multi-onglets, tâches navigateur planifiées, /slash commands"
+      - "⭐ Import Memory : migration depuis ChatGPT/Gemini/Copilot via prompt Anthropic dédié"
+      - "⭐ Acquisition Vercept + Computer Use 72.5% sur OSWorld (vs 15% fin 2024)"
+      - "Instructions globales et par dossier dans Cowork (complément aux tâches planifiées)"
+      - "Desktop Extensions : interface graphique d'installation MCP (accessible non-développeurs)"
+      - "Memory disponible pour tous y compris tier gratuit (était payant uniquement)"
+      - "Claude in Excel × PowerPoint : workflows cross-app dans le même contexte de tâche"
+    breaking: []
 
   # ─────────────────────────────────────────────────────────────
   # 1.5.x Series (February-March 2026)
