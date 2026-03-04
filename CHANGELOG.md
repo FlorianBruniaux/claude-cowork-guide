@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.1] - 2026-03-04
+
+### Added
+- `audit-prompt.md` : prompt réutilisable pour auditer l'accessibilité linguistique des fichiers FR (3 axes : passages non traduits, anglicismes, jargon technique)
+
+### Changed
+- Traduction EN→FR de ~70 prompts dans `prompts/file-ops.fr.md`, `prompts/document-creation.fr.md`, `prompts/research.fr.md`, `prompts/data-extraction.fr.md`
+- Corrections terminologiques dans `guide/00-overview.fr.md` : anglicismes remplacés (knowledge workers → travailleurs du savoir, Setup → Configuration, Scaling → Mise à l'échelle, shell complet → ligne de commande complète)
+- Ajout d'explications parenthétiques à la première occurrence des termes techniques incontournables : prompt, workflow, token, script, Markdown
+- Remplacement des anglicismes évitables : template → modèle, screenshot → capture d'écran, Power User → Utilisation avancée, scope → périmètre
+
 ## [1.5.0] - 2026-02-28
 
 ### Added
