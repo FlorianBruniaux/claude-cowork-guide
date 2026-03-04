@@ -1,0 +1,97 @@
+# Claude Cowork Guide Releases
+# Source: CHANGELOG.md + Anthropic product announcements
+# Purpose: Track Cowork documentation + product releases
+
+latest: "1.5.1"
+updated: "2026-03-04"
+
+# ════════════════════════════════════════════════════════════════
+# RELEASES (newest first, condensed highlights only)
+# ════════════════════════════════════════════════════════════════
+releases:
+
+  # ─────────────────────────────────────────────────────────────
+  # 1.5.x Series (February-March 2026)
+  # ─────────────────────────────────────────────────────────────
+
+  - version: "1.5.1"
+    date: "2026-03-04"
+    highlights:
+      - "New audit-prompt.md for French linguistic accessibility auditing"
+      - "Translated ~70 prompts EN→FR across file-ops, document-creation, research, data-extraction"
+      - "Terminology corrections: anglicismes replaced throughout overview (knowledge workers, Setup, Scaling, etc.)"
+    breaking: []
+
+  - version: "1.5.0"
+    date: "2026-02-28"
+    highlights:
+      - "⭐ Desktop Commander integration: Step 8 in Getting Started (EN + FR)"
+      - "⭐ Cross-session memory via Desktop Commander + memory.md"
+      - "⭐ Customize Tab full documentation: Skills, Connectors, permissions system"
+      - "⭐ Skills system: slash commands (/pdf, /docx, /xlsx), skill chaining, community registries"
+      - "⭐ MCP Connectors: 3 types (web, desktop, custom JSON), per-tool permissions"
+      - "Plugin ecosystem expansion (Feb 24): 12 new MCP connectors (Google Calendar, Gmail, DocuSign, WordPress, Apollo, Clay, Outreach, Similarweb, Harvey, LegalZoom)"
+      - "Sonnet 4.6 as recommended default model for Cowork (replaces Opus for agentic tasks)"
+      - "New workflows: Scheduled Automation + Memory Setup (FR + EN)"
+      - "Workflow count: 26 → 28"
+    breaking: []
+
+  # ─────────────────────────────────────────────────────────────
+  # 1.4.x Series (February 2026)
+  # ─────────────────────────────────────────────────────────────
+
+  - version: "1.4.0"
+    date: "2026-02-18"
+    highlights:
+      - "⭐ Windows support: Claude Cowork now available on macOS and Windows"
+      - "⭐ 11 official Cowork Plugins: Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack"
+      - "⭐ Scheduled tasks: automate recurring Claude tasks"
+      - "⭐ Agent Teams (research preview): coordinate multiple Claude agents"
+      - "Opus 4.6 capabilities: 1M token context window (beta), 128K output tokens, adaptive thinking"
+      - "Context compaction (beta): automatic conversation history compression"
+      - "Direct Excel and PowerPoint integrations"
+    breaking: []
+
+  # ─────────────────────────────────────────────────────────────
+  # 1.3.x Series (February 2026)
+  # ─────────────────────────────────────────────────────────────
+
+  - version: "1.3.1"
+    date: "2026-02-06"
+    highlights:
+      - "⭐ Claude Legal Extension: first official Cowork Plugin (contract review, risk detection, NDA triage, compliance tracking)"
+      - "Capabilities section updated: Extensions & Plugins documentation (EN + FR)"
+      - "FAQ: new 'What is Claude Legal?' Q&A entry"
+      - "Machine-readable reference.yaml: new extensions section with claude_legal entry"
+    breaking: []
+
+  - version: "1.3.0"
+    date: "2026-02-03"
+    highlights:
+      - "Version synchronization across all documentation files"
+      - "Model documentation: Haiku added to model tables, Opus 4.5 clarification (4.0/4.1 retired)"
+      - "macOS terminology updated: System Preferences → System Settings (Ventura+)"
+      - "Cloud Connectors status clarified: Gmail/Drive experimental (unreliable, January 2026)"
+      - "Workflow categorization fixed: 5 misclassified workflows corrected"
+      - "Deprecated workflow files removed: report-synthesis, team-handoff"
+    breaking: []
+
+  # ─────────────────────────────────────────────────────────────
+  # 1.2.x Series (January 2026)
+  # ─────────────────────────────────────────────────────────────
+
+  - version: "1.2.1"
+    date: "2026-01-27"
+    highlights:
+      - "Work Log workflow: new Weekly/Monthly Progress Reporting section"
+      - "Client Follow-up Tracker: new Client Onboarding Checklist section"
+      - "Workflow count corrected: 25 → 26 across README files"
+    breaking: []
+
+  - version: "1.2.0"
+    date: "2026-01-23"
+    highlights:
+      - "⭐ New workflow: Website Audit (25-point evaluation grid, competitive benchmark)"
+      - "Email Sequences: Automated sequences section with 2 complete sequences"
+      - "Local Visibility Audit: Google My Business comparison section"
+    breaking: []
