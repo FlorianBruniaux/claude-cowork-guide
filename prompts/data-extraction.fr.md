@@ -2,7 +2,7 @@
 
 🌐 **Langues** : [Français](data-extraction.fr.md) | [English](data-extraction.md)
 
-> **15+ prompts prêts à l'emploi pour extraire des données structurées depuis des images, PDFs et documents**
+> **15+ prompts (instructions données à l'IA) prêts à l'emploi pour extraire des données structurées depuis des images, PDFs et documents**
 
 ---
 
@@ -11,74 +11,74 @@
 ### 1. Extraction Basique de Reçus
 
 ```
-Extract expense data from receipt images in ~/Cowork-Workspace/input/receipts/
+Extraire les données de dépenses des images de reçus dans ~/Cowork-Workspace/input/receipts/
 
-Create an Excel file with columns:
+Créer un fichier Excel avec les colonnes :
 - Date
-- Vendor/Store
-- Amount
-- Currency
-- Category (auto-detect: Food, Transport, Office, etc.)
-- Payment Method (if visible)
+- Fournisseur/Magasin
+- Montant
+- Devise
+- Catégorie (détection automatique : Alimentation, Transport, Bureau, etc.)
+- Moyen de paiement (si visible)
 - Notes
 
-Add a totals row at the bottom.
-Save to: ~/Cowork-Workspace/output/expenses.xlsx
+Ajouter une ligne de totaux en bas.
+Enregistrer dans : ~/Cowork-Workspace/output/expenses.xlsx
 ```
 
 ### 2. Traitement Détaillé de Reçus
 
 ```
-Process receipts in ~/Cowork-Workspace/input/receipts/ with detailed extraction.
+Traiter les reçus dans ~/Cowork-Workspace/input/receipts/ avec extraction détaillée.
 
-Excel structure:
-Sheet 1 - Line Items:
-- Receipt ID
+Structure Excel :
+Feuille 1 - Lignes détaillées :
+- ID Reçu
 - Date
-- Vendor
-- Item Description
-- Quantity
-- Unit Price
-- Total Price
-- Category
+- Fournisseur
+- Description article
+- Quantité
+- Prix unitaire
+- Prix total
+- Catégorie
 
-Sheet 2 - Summary:
-- Total by Category
-- Total by Vendor
-- Total by Month
-- Grand Total
+Feuille 2 - Synthèse :
+- Total par catégorie
+- Total par fournisseur
+- Total par mois
+- Total général
 
-Sheet 3 - Receipt Index:
-- Receipt ID
-- Filename
+Feuille 3 - Index des reçus :
+- ID Reçu
+- Nom de fichier
 - Date
-- Vendor
+- Fournisseur
 - Total
-- Status (complete/partial extraction)
+- Statut (extraction complète/partielle)
 
-Use [European/US] formula syntax.
-Save to: ~/Cowork-Workspace/output/detailed-expenses.xlsx
+Utiliser la syntaxe de formule [européenne/américaine].
+Enregistrer dans : ~/Cowork-Workspace/output/detailed-expenses.xlsx
 ```
 
 ### 3. Extraction de Données de Factures
 
 ```
-Extract data from invoices in ~/Cowork-Workspace/input/invoices/
+Extraire les données des factures dans ~/Cowork-Workspace/input/invoices/
 
-Create Excel with:
-- Invoice Number
-- Invoice Date
-- Due Date
-- Vendor Name
-- Vendor Address
-- Subtotal
-- Tax Amount
-- Total Amount
-- Payment Status (if detectable)
-- Line Items (separate sheet)
+Créer un fichier Excel avec :
+- Numéro de facture
+- Date de facture
+- Date d'échéance
+- Nom du fournisseur
+- Adresse du fournisseur
+- Sous-total
+- Montant TVA
+- Montant total
+- Statut de paiement (si détectable)
+- Lignes détaillées (feuille séparée)
 
-Flag any invoices that couldn't be fully parsed.
-Save to: ~/Cowork-Workspace/output/invoice-tracker.xlsx
+Signaler les factures qui n'ont pas pu être entièrement analysées.
+Enregistrer dans : ~/Cowork-Workspace/output/invoice-tracker.xlsx
 ```
 
 ---
@@ -88,50 +88,50 @@ Save to: ~/Cowork-Workspace/output/invoice-tracker.xlsx
 ### 4. Extraction de Tableaux PDF
 
 ```
-Extract tables from PDF documents in ~/Cowork-Workspace/input/pdfs/
+Extraire les tableaux des documents PDF dans ~/Cowork-Workspace/input/pdfs/
 
-For each PDF:
-- Identify all tables
-- Extract to separate Excel sheets
-- Preserve table structure and headers
-- Note source PDF and page number
+Pour chaque PDF :
+- Identifier tous les tableaux
+- Extraire vers des feuilles Excel séparées
+- Préserver la structure des tableaux et les en-têtes
+- Noter le PDF source et le numéro de page
 
-Output: One Excel file per PDF
-Save to: ~/Cowork-Workspace/output/extracted-tables/
-Create index file: ~/Cowork-Workspace/output/table-index.txt
+Sortie : Un fichier Excel par PDF
+Enregistrer dans : ~/Cowork-Workspace/output/extracted-tables/
+Créer un fichier index : ~/Cowork-Workspace/output/table-index.txt
 ```
 
 ### 5. Extraction de Données de Formulaires PDF
 
 ```
-Extract filled form data from PDFs in ~/Cowork-Workspace/input/forms/
+Extraire les données de formulaires remplis depuis les PDFs dans ~/Cowork-Workspace/input/forms/
 
-Create a structured output:
-- One row per form
-- Columns for each form field
-- Include filename for reference
+Créer une sortie structurée :
+- Une ligne par formulaire
+- Colonnes pour chaque champ du formulaire
+- Inclure le nom de fichier comme référence
 
-Handle variations in form completion (empty fields = blank cell).
-Save to: ~/Cowork-Workspace/output/form-data.xlsx
+Gérer les variations de remplissage (champs vides = cellule vide).
+Enregistrer dans : ~/Cowork-Workspace/output/form-data.xlsx
 ```
 
 ### 6. Termes Clés de Contrats PDF
 
 ```
-Extract key terms from contracts in ~/Cowork-Workspace/input/contracts/
+Extraire les termes clés des contrats dans ~/Cowork-Workspace/input/contracts/
 
-For each contract, identify:
-- Parties involved
-- Effective date
-- Term/Duration
-- Renewal terms
-- Termination clause summary
-- Key obligations
-- Payment terms
-- Important dates
+Pour chaque contrat, identifier :
+- Parties impliquées
+- Date d'effet
+- Durée
+- Conditions de renouvellement
+- Résumé de la clause de résiliation
+- Obligations principales
+- Conditions de paiement
+- Dates importantes
 
-Create Excel with one row per contract.
-Save to: ~/Cowork-Workspace/output/contract-summary.xlsx
+Créer un fichier Excel avec une ligne par contrat.
+Enregistrer dans : ~/Cowork-Workspace/output/contract-summary.xlsx
 ```
 
 > 💡 **Note Claude Legal** : Si vous avez accès à Claude Legal (extension Cowork), cette extraction de termes contractuels peut être automatisée avec détection de risques et clauses problématiques supplémentaire. Voir [Extensions & Plugins](../guide/02-capabilities.fr.md#extensions--plugins).
@@ -143,54 +143,54 @@ Save to: ~/Cowork-Workspace/output/contract-summary.xlsx
 ### 7. Extraction de Cartes de Visite
 
 ```
-Extract contact information from business card images in ~/Cowork-Workspace/input/cards/
+Extraire les informations de contact des images de cartes de visite dans ~/Cowork-Workspace/input/cards/
 
-Create Excel with columns:
-- Name
-- Title
-- Company
+Créer un fichier Excel avec les colonnes :
+- Nom
+- Titre
+- Entreprise
 - Email
-- Phone
+- Téléphone
 - Mobile
-- Address
-- Website
-- LinkedIn (if present)
-- Source Filename
+- Adresse
+- Site web
+- LinkedIn (si présent)
+- Nom du fichier source
 
-Save to: ~/Cowork-Workspace/output/contacts.xlsx
+Enregistrer dans : ~/Cowork-Workspace/output/contacts.xlsx
 
-Also create a VCF file for import: ~/Cowork-Workspace/output/contacts.vcf
+Créer également un fichier VCF pour import : ~/Cowork-Workspace/output/contacts.vcf
 ```
 
 ### 8. Extraction de Données de Captures d'Écran
 
 ```
-Extract data from screenshots in ~/Cowork-Workspace/input/screenshots/
+Extraire les données des captures d'écran dans ~/Cowork-Workspace/input/screenshots/
 
-Screenshots contain: [describe what - e.g., "software settings", "web forms", "charts"]
+Les captures d'écran contiennent : [décrire le contenu, ex. "paramètres logiciels", "formulaires web", "graphiques"]
 
-Create structured output with:
-- Screenshot filename
-- Type of content
-- Extracted text/data
-- Key values identified
+Créer une sortie structurée avec :
+- Nom du fichier de la capture d'écran
+- Type de contenu
+- Texte/données extraits
+- Valeurs clés identifiées
 
-Save to: ~/Cowork-Workspace/output/screenshot-data.xlsx
+Enregistrer dans : ~/Cowork-Workspace/output/screenshot-data.xlsx
 ```
 
 ### 9. Extraction de Notes Manuscrites
 
 ```
-Extract text from handwritten note images in ~/Cowork-Workspace/input/notes/
+Extraire le texte des images de notes manuscrites dans ~/Cowork-Workspace/input/notes/
 
-Create a document with:
-- Source image filename
-- Extracted text (best interpretation)
-- Confidence notes (unclear sections marked)
-- Date if visible
+Créer un document avec :
+- Nom du fichier image source
+- Texte extrait (meilleure interprétation)
+- Notes de confiance (sections incertaines signalées)
+- Date si visible
 
-Format: Word document
-Save to: ~/Cowork-Workspace/output/transcribed-notes.docx
+Format : Document Word
+Enregistrer dans : ~/Cowork-Workspace/output/transcribed-notes.docx
 ```
 
 ---
@@ -200,50 +200,50 @@ Save to: ~/Cowork-Workspace/output/transcribed-notes.docx
 ### 10. Nettoyage et Standardisation CSV
 
 ```
-Clean and standardize CSV files in ~/Cowork-Workspace/input/csv-files/
+Nettoyer et standardiser les fichiers CSV dans ~/Cowork-Workspace/input/csv-files/
 
-Operations:
-- Standardize date formats to YYYY-MM-DD
-- Trim whitespace from all cells
-- Standardize phone number format
-- Normalize country names
-- Remove duplicate rows
-- Flag data quality issues
+Opérations :
+- Standardiser les formats de date en AAAA-MM-JJ
+- Supprimer les espaces superflus de toutes les cellules
+- Standardiser le format des numéros de téléphone
+- Normaliser les noms de pays
+- Supprimer les lignes en double
+- Signaler les problèmes de qualité des données
 
-Output cleaned files to: ~/Cowork-Workspace/output/cleaned/
-Create data quality report: ~/Cowork-Workspace/output/data-quality-report.md
+Enregistrer les fichiers nettoyés dans : ~/Cowork-Workspace/output/cleaned/
+Créer un rapport de qualité des données : ~/Cowork-Workspace/output/data-quality-report.md
 ```
 
 ### 11. Consolidation de Données Multi-Sources
 
 ```
-Consolidate data from multiple files in ~/Cowork-Workspace/input/data-sources/
+Consolider les données de plusieurs fichiers dans ~/Cowork-Workspace/input/data-sources/
 
-Files may include: [CSV, Excel, text files]
-Common field: [specify key field, e.g., "email address"]
+Les fichiers peuvent inclure : [CSV, Excel, fichiers texte]
+Champ commun : [spécifier le champ clé, ex. "adresse email"]
 
-Create a master Excel file with:
-- All unique records
-- Combined data from all sources
-- Source tracking (which file each data point came from)
-- Duplicate flagging
+Créer un fichier Excel maître avec :
+- Tous les enregistrements uniques
+- Données combinées de toutes les sources
+- Suivi de la source (de quel fichier provient chaque donnée)
+- Signalement des doublons
 
-Save to: ~/Cowork-Workspace/output/consolidated-data.xlsx
+Enregistrer dans : ~/Cowork-Workspace/output/consolidated-data.xlsx
 ```
 
 ### 12. JSON/XML vers Excel
 
 ```
-Convert JSON/XML files in ~/Cowork-Workspace/input/data/ to Excel format.
+Convertir les fichiers JSON/XML dans ~/Cowork-Workspace/input/data/ au format Excel.
 
-For each file:
-- Flatten nested structures appropriately
-- Create clear column headers
-- Handle arrays as multiple rows
-- Preserve data types where possible
+Pour chaque fichier :
+- Aplatir les structures imbriquées de manière appropriée
+- Créer des en-têtes de colonnes clairs
+- Gérer les tableaux comme lignes multiples
+- Préserver les types de données quand possible
 
-Save converted files to: ~/Cowork-Workspace/output/converted/
-Use original filename with .xlsx extension.
+Enregistrer les fichiers convertis dans : ~/Cowork-Workspace/output/converted/
+Utiliser le nom de fichier original avec l'extension .xlsx.
 ```
 
 ---
@@ -253,80 +253,80 @@ Use original filename with .xlsx extension.
 ### 13. Extraction de Détails de Réunions/Événements
 
 ```
-Extract event details from documents in ~/Cowork-Workspace/input/events/
+Extraire les détails d'événements depuis les documents dans ~/Cowork-Workspace/input/events/
 
-For each event, capture:
-- Event name
+Pour chaque événement, capturer :
+- Nom de l'événement
 - Date
-- Time
-- Location/Venue
-- Organizer
-- Attendees (if listed)
-- Agenda items
-- Special notes
+- Heure
+- Lieu
+- Organisateur
+- Participants (si listés)
+- Points à l'ordre du jour
+- Notes particulières
 
-Create Excel with one row per event.
-Create ICS calendar file for import.
-Save to: ~/Cowork-Workspace/output/events.xlsx
-Save to: ~/Cowork-Workspace/output/events.ics
+Créer un fichier Excel avec une ligne par événement.
+Créer un fichier ICS pour import dans le calendrier.
+Enregistrer dans : ~/Cowork-Workspace/output/events.xlsx
+Enregistrer dans : ~/Cowork-Workspace/output/events.ics
 ```
 
 ### 14. Données Produits/Inventaire
 
 ```
-Extract product information from documents/images in ~/Cowork-Workspace/input/products/
+Extraire les informations produits depuis les documents/images dans ~/Cowork-Workspace/input/products/
 
-Capture:
-- Product name
-- SKU/ID (if visible)
+Capturer :
+- Nom du produit
+- SKU/ID (si visible)
 - Description
-- Price
-- Category
-- Specifications
-- Source document
+- Prix
+- Catégorie
+- Spécifications
+- Document source
 
-Create Excel product catalog.
-Save to: ~/Cowork-Workspace/output/product-catalog.xlsx
+Créer un catalogue produits Excel.
+Enregistrer dans : ~/Cowork-Workspace/output/product-catalog.xlsx
 ```
 
 ### 15. Données d'Articles de Recherche
 
 ```
-Extract structured data from research papers in ~/Cowork-Workspace/input/papers/
+Extraire les données structurées des articles de recherche dans ~/Cowork-Workspace/input/papers/
 
-For each paper:
-- Title
-- Authors
-- Publication date
-- Journal/Conference
-- Abstract (first 200 words)
-- Keywords
-- Methodology (brief)
-- Key findings (3-5 points)
-- Cited count (if available)
+Pour chaque article :
+- Titre
+- Auteurs
+- Date de publication
+- Revue/Conférence
+- Résumé (200 premiers mots)
+- Mots-clés
+- Méthodologie (bref)
+- Résultats clés (3-5 points)
+- Nombre de citations (si disponible)
 
-Create Excel bibliography.
-Save to: ~/Cowork-Workspace/output/research-catalog.xlsx
+Créer une bibliographie Excel.
+Enregistrer dans : ~/Cowork-Workspace/output/research-catalog.xlsx
 ```
 
 ### 16. Comparaison de Devis/Estimations
 
 ```
-Extract and compare quotes from ~/Cowork-Workspace/input/quotes/
+Extraire et comparer les devis depuis ~/Cowork-Workspace/input/quotes/
 
-For each quote:
-- Vendor name
-- Quote date
-- Valid until
-- Line items with prices
-- Subtotal
-- Tax
+Pour chaque devis :
+- Nom du fournisseur
+- Date du devis
+- Valide jusqu'au
+- Lignes détaillées avec prix
+- Sous-total
+- TVA
 - Total
-- Terms
+- Conditions
 
-Create comparison matrix in Excel.
-Highlight: lowest price, best terms, recommended option.
-Save to: ~/Cowork-Workspace/output/quote-comparison.xlsx
+Créer une matrice de comparaison en Excel.
+Mettre en évidence : le prix le plus bas, les meilleures conditions, l'option recommandée.
+Enregistrer dans : ~/Cowork-Workspace/output/quote-comparison.xlsx
 ```
 
 ---
@@ -336,23 +336,23 @@ Save to: ~/Cowork-Workspace/output/quote-comparison.xlsx
 ### 17. Rapport de Validation de Données
 
 ```
-Validate data extracted to ~/Cowork-Workspace/output/[previous-output].xlsx
+Valider les données extraites dans ~/Cowork-Workspace/output/[sortie-precedente].xlsx
 
-Check for:
-- Missing required fields
-- Invalid date formats
-- Numeric fields with text
-- Duplicate entries
-- Outlier values
-- Inconsistent formatting
+Vérifier :
+- Champs obligatoires manquants
+- Formats de date invalides
+- Champs numériques contenant du texte
+- Entrées en double
+- Valeurs aberrantes
+- Formatage incohérent
 
-Create validation report with:
-- Issue type
-- Row/Cell reference
-- Current value
-- Suggested correction
+Créer un rapport de validation avec :
+- Type de problème
+- Référence ligne/cellule
+- Valeur actuelle
+- Correction suggérée
 
-Save to: ~/Cowork-Workspace/output/validation-report.xlsx
+Enregistrer dans : ~/Cowork-Workspace/output/validation-report.xlsx
 ```
 
 ---
@@ -360,19 +360,19 @@ Save to: ~/Cowork-Workspace/output/validation-report.xlsx
 ## Notes de Personnalisation
 
 **Pour la précision OCR :**
-- "Images are [high/medium/low] quality"
-- "Text is [printed/handwritten]"
-- "Language is [English/French/etc.]"
+- "Les images sont de qualité [haute/moyenne/basse]"
+- "Le texte est [imprimé/manuscrit]"
+- "La langue est [français/anglais/etc.]"
 
 **Pour les paramètres régionaux :**
-- "Use [European/US] date format"
-- "Currency is [USD/EUR/etc.]"
-- "Use [comma/period] as decimal separator"
+- "Utiliser le format de date [européen/américain]"
+- "La devise est [USD/EUR/etc.]"
+- "Utiliser [la virgule/le point] comme séparateur décimal"
 
 **Pour la gestion des erreurs :**
-- "Mark uncertain extractions with [?]"
-- "Skip files that can't be processed"
-- "Create error log for failed extractions"
+- "Marquer les extractions incertaines avec [?]"
+- "Ignorer les fichiers qui ne peuvent pas être traités"
+- "Créer un journal d'erreurs pour les extractions échouées"
 
 ---
 

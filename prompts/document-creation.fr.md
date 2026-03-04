@@ -11,72 +11,72 @@
 ### 1. Rapport de Statut de Projet
 
 ```
-Create a project status report from the notes in ~/Cowork-Workspace/input/notes/
+Crée un rapport de statut de projet à partir des notes dans ~/Cowork-Workspace/input/notes/
 
-Structure:
-1. Executive Summary (1 paragraph)
-2. Progress This Period
-   - Completed items
-   - In progress items
-3. Key Metrics (if data available)
-4. Risks and Issues
-5. Next Period Plans
-6. Action Items with owners and due dates
+Structure :
+1. Résumé exécutif (1 paragraphe)
+2. Progrès de la période
+   - Éléments terminés
+   - Éléments en cours
+3. Indicateurs clés (si données disponibles)
+4. Risques et problèmes
+5. Plans pour la période suivante
+6. Actions à mener avec responsables et échéances
 
-Format: Word document
-Save to: ~/Cowork-Workspace/output/status-report.docx
-Include: Date and project name in header
+Format : document Word
+Enregistrer dans : ~/Cowork-Workspace/output/status-report.docx
+Inclure : date et nom du projet dans l'en-tête
 ```
 
 ### 2. Rapport de Synthèse de Réunion
 
 ```
-Create a meeting summary from ~/Cowork-Workspace/input/meeting-notes.txt
+Crée un résumé de réunion à partir de ~/Cowork-Workspace/input/meeting-notes.txt
 
-Structure:
-- Meeting Details (date, attendees, duration)
-- Key Discussion Points (bulleted)
-- Decisions Made
-- Action Items (table with: Action, Owner, Due Date, Status)
-- Next Meeting Date/Topics
+Structure :
+- Détails de la réunion (date, participants, durée)
+- Points de discussion clés (liste à puces)
+- Décisions prises
+- Actions à mener (tableau avec : Action, Responsable, Échéance, Statut)
+- Prochaine réunion : date et sujets
 
-Format: Word document
-Tone: Professional, concise
-Save to: ~/Cowork-Workspace/output/meeting-summary.docx
+Format : document Word
+Ton : professionnel, concis
+Enregistrer dans : ~/Cowork-Workspace/output/meeting-summary.docx
 ```
 
 ### 3. Rapport Hebdomadaire
 
 ```
-Compile a weekly summary from all documents in ~/Cowork-Workspace/input/week-[date]/
+Compile un résumé hebdomadaire à partir de tous les documents dans ~/Cowork-Workspace/input/week-[date]/
 
-Include:
-- Week Overview
-- Key Accomplishments
-- Challenges Faced
-- Metrics/Numbers (if available)
-- Next Week Priorities
+Inclure :
+- Vue d'ensemble de la semaine
+- Réalisations principales
+- Difficultés rencontrées
+- Indicateurs/chiffres (si disponibles)
+- Priorités de la semaine prochaine
 
-Format: Word document, max 2 pages
-Save to: ~/Cowork-Workspace/output/weekly-summary-[date].docx
+Format : document Word, 2 pages maximum
+Enregistrer dans : ~/Cowork-Workspace/output/weekly-summary-[date].docx
 ```
 
 ### 4. Revue Trimestrielle d'Activité
 
 ```
-Create a QBR document from materials in ~/Cowork-Workspace/input/q[X]-materials/
+Crée un document de revue trimestrielle à partir des matériaux dans ~/Cowork-Workspace/input/q[X]-materials/
 
-Structure:
-1. Quarter Highlights
-2. Goals vs. Actuals (table format)
-3. Key Wins
-4. Challenges and Learnings
-5. Next Quarter Goals
-6. Resource Needs
+Structure :
+1. Faits marquants du trimestre
+2. Objectifs vs. résultats (format tableau)
+3. Succès principaux
+4. Difficultés et enseignements
+5. Objectifs du trimestre suivant
+6. Besoins en ressources
 
-Format: Word document with professional formatting
-Include charts/tables where data supports
-Save to: ~/Cowork-Workspace/output/q[X]-review.docx
+Format : document Word avec mise en page professionnelle
+Inclure graphiques/tableaux quand les données le justifient
+Enregistrer dans : ~/Cowork-Workspace/output/q[X]-review.docx
 ```
 
 ---
@@ -86,51 +86,51 @@ Save to: ~/Cowork-Workspace/output/q[X]-review.docx
 ### 5. Synthèse de Document
 
 ```
-Create a summary of the document in ~/Cowork-Workspace/input/[document.pdf]
+Crée un résumé du document dans ~/Cowork-Workspace/input/[document.pdf]
 
-Include:
-- One-paragraph overview
-- Key points (5-7 bullets)
-- Important data/numbers
-- Conclusions or recommendations
-- Questions raised
+Inclure :
+- Aperçu en un paragraphe
+- Points clés (5 à 7 puces)
+- Données/chiffres importants
+- Conclusions ou recommandations
+- Questions soulevées
 
-Format: Markdown
-Length: Max 1 page
-Save to: ~/Cowork-Workspace/output/[document]-summary.md
+Format : Markdown (format de texte simplifié)
+Longueur : 1 page maximum
+Enregistrer dans : ~/Cowork-Workspace/output/[document]-summary.md
 ```
 
 ### 6. Synthèse Multi-Documents
 
 ```
-Synthesize the following documents in ~/Cowork-Workspace/input/research/:
-[List specific files or "all documents"]
+Synthétise les documents suivants dans ~/Cowork-Workspace/input/research/ :
+[Lister les fichiers spécifiques ou "tous les documents"]
 
-Create a unified summary covering:
-- Common themes
-- Contrasting viewpoints
-- Key facts and figures
-- Gaps in information
-- Synthesis conclusions
+Crée un résumé unifié couvrant :
+- Thèmes communs
+- Points de vue divergents
+- Faits et chiffres clés
+- Lacunes dans l'information
+- Conclusions de la synthèse
 
-Format: Word document
-Save to: ~/Cowork-Workspace/output/synthesis-report.docx
+Format : document Word
+Enregistrer dans : ~/Cowork-Workspace/output/synthesis-report.docx
 ```
 
 ### 7. Synthèse Exécutive
 
 ```
-Create an executive brief from ~/Cowork-Workspace/input/detailed-report.pdf
+Crée un résumé exécutif à partir de ~/Cowork-Workspace/input/detailed-report.pdf
 
-Requirements:
-- One page maximum
-- Focus on: What, So What, Now What
-- Include key numbers only
-- Bullet points preferred
-- Clear recommendations
+Exigences :
+- Une page maximum
+- Se concentrer sur : Quoi, Et alors, Et maintenant
+- Inclure uniquement les chiffres clés
+- Privilégier les listes à puces
+- Recommandations claires
 
-Format: Word document
-Save to: ~/Cowork-Workspace/output/executive-brief.docx
+Format : document Word
+Enregistrer dans : ~/Cowork-Workspace/output/executive-brief.docx
 ```
 
 ---
@@ -140,57 +140,57 @@ Save to: ~/Cowork-Workspace/output/executive-brief.docx
 ### 8. Slides depuis un Rapport
 
 ```
-Create a PowerPoint presentation from ~/Cowork-Workspace/input/report.docx
+Crée une présentation PowerPoint à partir de ~/Cowork-Workspace/input/report.docx
 
-Structure:
-- Title slide
-- Agenda/Overview
-- 5-7 content slides (key points from report)
-- Summary/Conclusions
-- Next Steps
-- Q&A slide
+Structure :
+- Slide de titre
+- Sommaire/Vue d'ensemble
+- 5 à 7 slides de contenu (points clés du rapport)
+- Résumé/Conclusions
+- Prochaines étapes
+- Slide Questions/Réponses
 
-Design: Clean, professional, minimal text per slide
-Save to: ~/Cowork-Workspace/output/presentation.pptx
+Design : épuré, professionnel, texte minimal par slide
+Enregistrer dans : ~/Cowork-Workspace/output/presentation.pptx
 ```
 
 ### 9. Présentation de Lancement de Projet
 
 ```
-Create a project kickoff presentation.
+Crée une présentation de lancement de projet.
 
-Content source: ~/Cowork-Workspace/input/project-charter/
+Source de contenu : ~/Cowork-Workspace/input/project-charter/
 
-Include slides for:
-1. Project Overview
-2. Goals and Objectives
-3. Scope (In/Out)
-4. Timeline and Milestones
-5. Team and Roles
-6. Risks and Mitigations
-7. Success Criteria
-8. Next Steps
+Inclure des slides pour :
+1. Vue d'ensemble du projet
+2. Objectifs
+3. Périmètre (inclus/exclus)
+4. Calendrier et jalons
+5. Équipe et rôles
+6. Risques et mesures d'atténuation
+7. Critères de succès
+8. Prochaines étapes
 
-Format: PowerPoint
-Save to: ~/Cowork-Workspace/output/kickoff-deck.pptx
+Format : PowerPoint
+Enregistrer dans : ~/Cowork-Workspace/output/kickoff-deck.pptx
 ```
 
 ### 10. Matériel de Formation
 
 ```
-Create training slides from ~/Cowork-Workspace/input/process-documentation/
+Crée des slides de formation à partir de ~/Cowork-Workspace/input/process-documentation/
 
-Structure:
-- Introduction/Objectives
-- Key Concepts (one per slide)
-- Step-by-step procedures
-- Examples/Screenshots placeholders
-- Practice exercises
-- Summary and resources
+Structure :
+- Introduction/Objectifs
+- Concepts clés (un par slide)
+- Procédures pas à pas
+- Emplacements réservés pour exemples et captures d'écran
+- Exercices pratiques
+- Résumé et ressources
 
-Include speaker notes for each slide
-Format: PowerPoint
-Save to: ~/Cowork-Workspace/output/training-deck.pptx
+Inclure des notes de présentation pour chaque slide
+Format : PowerPoint
+Enregistrer dans : ~/Cowork-Workspace/output/training-deck.pptx
 ```
 
 ---
@@ -200,65 +200,65 @@ Save to: ~/Cowork-Workspace/output/training-deck.pptx
 ### 11. Document de Proposition
 
 ```
-Create a proposal document from notes in ~/Cowork-Workspace/input/proposal-notes/
+Crée un document de proposition à partir des notes dans ~/Cowork-Workspace/input/proposal-notes/
 
-Structure:
-1. Executive Summary
-2. Understanding of Needs
-3. Proposed Solution
-4. Approach and Methodology
-5. Timeline
-6. Team/Resources
-7. Pricing (if data available)
-8. Why Choose Us
-9. Next Steps
+Structure :
+1. Résumé exécutif
+2. Compréhension des besoins
+3. Solution proposée
+4. Approche et méthodologie
+5. Calendrier
+6. Équipe/Ressources
+7. Tarification (si données disponibles)
+8. Pourquoi nous choisir
+9. Prochaines étapes
 
-Format: Word document, professional formatting
-Include table of contents
-Save to: ~/Cowork-Workspace/output/proposal.docx
+Format : document Word, mise en page professionnelle
+Inclure une table des matières
+Enregistrer dans : ~/Cowork-Workspace/output/proposal.docx
 ```
 
 ### 12. Procédure Opérationnelle Standard (SOP)
 
 ```
-Create an SOP document from process notes in ~/Cowork-Workspace/input/process-notes.txt
+Crée un document SOP à partir des notes de processus dans ~/Cowork-Workspace/input/process-notes.txt
 
-Structure:
-1. Purpose
-2. Scope
-3. Responsibilities
-4. Prerequisites
-5. Procedure (numbered steps)
-6. Quality Checks
-7. Troubleshooting
-8. Related Documents
-9. Revision History
+Structure :
+1. Objectif
+2. Périmètre
+3. Responsabilités
+4. Prérequis
+5. Procédure (étapes numérotées)
+6. Contrôles qualité
+7. Dépannage
+8. Documents associés
+9. Historique des révisions
 
-Format: Word document
-Include: Version number, date, author fields
-Save to: ~/Cowork-Workspace/output/sop-[process-name].docx
+Format : document Word
+Inclure : numéro de version, date, champs auteur
+Enregistrer dans : ~/Cowork-Workspace/output/sop-[process-name].docx
 ```
 
 ### 13. Document de Briefing Client
 
 ```
-Create a client briefing document from materials in ~/Cowork-Workspace/input/client-[name]/
+Crée un document de briefing client à partir des matériaux dans ~/Cowork-Workspace/input/client-[name]/
 
-Include:
-1. Company Overview
-   - About, size, industry
-   - Key products/services
-2. Key Contacts
-   - Names, titles, LinkedIn (if available)
-3. Recent News
-   - Last 3-6 months
-4. Relationship History (if data available)
-5. Talking Points
-6. Questions to Ask
-7. Potential Opportunities
+Inclure :
+1. Présentation de l'entreprise
+   - À propos, taille, secteur
+   - Produits/services principaux
+2. Contacts clés
+   - Noms, titres, LinkedIn (si disponible)
+3. Actualités récentes
+   - 3 à 6 derniers mois
+4. Historique de la relation (si données disponibles)
+5. Points de discussion
+6. Questions à poser
+7. Opportunités potentielles
 
-Format: Word document
-Save to: ~/Cowork-Workspace/output/[client]-briefing.docx
+Format : document Word
+Enregistrer dans : ~/Cowork-Workspace/output/[client]-briefing.docx
 ```
 
 ---
@@ -268,55 +268,55 @@ Save to: ~/Cowork-Workspace/output/[client]-briefing.docx
 ### 14. Document avec Tableau Formaté
 
 ```
-Create a formatted table document from data in ~/Cowork-Workspace/input/raw-data.csv
+Crée un document avec tableau formaté à partir des données dans ~/Cowork-Workspace/input/raw-data.csv
 
-Table requirements:
-- Clear headers
-- Alternating row colors
-- Sortable columns
-- Summary row at bottom
+Exigences du tableau :
+- En-têtes clairs
+- Couleurs de lignes alternées
+- Colonnes triables
+- Ligne de synthèse en bas
 
-Add:
-- Title and date
-- Data source attribution
-- Notes section for any data quality issues
+Ajouter :
+- Titre et date
+- Attribution de la source des données
+- Section notes pour signaler tout problème de qualité des données
 
-Format: Word document
-Save to: ~/Cowork-Workspace/output/formatted-table.docx
+Format : document Word
+Enregistrer dans : ~/Cowork-Workspace/output/formatted-table.docx
 ```
 
 ### 15. Newsletter/Document d'Actualités
 
 ```
-Create a newsletter from content in ~/Cowork-Workspace/input/newsletter-content/
+Crée une newsletter à partir du contenu dans ~/Cowork-Workspace/input/newsletter-content/
 
-Structure:
-- Header with title and date
-- Lead story (featured item)
-- News items (3-5 shorter items)
-- Upcoming events/dates
-- Quick links/resources
-- Contact information
+Structure :
+- En-tête avec titre et date
+- Article principal (élément mis en avant)
+- Brèves (3 à 5 articles courts)
+- Événements/dates à venir
+- Liens rapides/ressources
+- Coordonnées
 
-Format: Word document with two-column layout
-Save to: ~/Cowork-Workspace/output/newsletter-[date].docx
+Format : document Word avec mise en page deux colonnes
+Enregistrer dans : ~/Cowork-Workspace/output/newsletter-[date].docx
 ```
 
 ### 16. Document de Comparaison
 
 ```
-Create a comparison document from materials in ~/Cowork-Workspace/input/comparison/
+Crée un document de comparaison à partir des matériaux dans ~/Cowork-Workspace/input/comparison/
 
-Structure:
-- Overview of items being compared
-- Comparison matrix (table)
-- Detailed analysis of each option
-- Pros and cons for each
-- Recommendation with rationale
+Structure :
+- Vue d'ensemble des éléments comparés
+- Matrice de comparaison (tableau)
+- Analyse détaillée de chaque option
+- Avantages et inconvénients pour chacune
+- Recommandation avec justification
 
-Format: Word document
-Include comparison table that can be extracted
-Save to: ~/Cowork-Workspace/output/comparison-analysis.docx
+Format : document Word
+Inclure un tableau de comparaison extractible
+Enregistrer dans : ~/Cowork-Workspace/output/comparison-analysis.docx
 ```
 
 ---
@@ -324,21 +324,21 @@ Save to: ~/Cowork-Workspace/output/comparison-analysis.docx
 ## Notes de Personnalisation
 
 **Options de ton :**
-- "Professional and formal"
-- "Conversational but professional"
-- "Technical and detailed"
-- "Executive/brief"
+- "Professionnel et formel"
+- "Conversationnel mais professionnel"
+- "Technique et détaillé"
+- "Exécutif/synthétique"
 
 **Contrôles de longueur :**
 - "Maximum X pages"
-- "Approximately X words"
-- "Brief: under 500 words"
+- "Environ X mots"
+- "Bref : moins de 500 mots"
 
 **Préférences de formatage :**
-- "Use bullet points heavily"
-- "Include tables where possible"
-- "Minimize jargon"
-- "Include source citations"
+- "Utiliser beaucoup les listes à puces"
+- "Inclure des tableaux quand c'est possible"
+- "Minimiser le jargon"
+- "Inclure les citations des sources"
 
 ---
 

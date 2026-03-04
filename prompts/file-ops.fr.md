@@ -11,28 +11,28 @@
 ### 1. Organiser par type de fichier
 
 ```
-Organize all files in ~/Cowork-Workspace/input/ by file type.
+Organise tous les fichiers dans ~/Cowork-Workspace/input/ par type de fichier.
 
-Create these folders:
+Crée ces dossiers :
 - Documents (pdf, doc, docx, txt, md)
 - Spreadsheets (xls, xlsx, csv)
 - Images (jpg, jpeg, png, gif, svg)
 - Archives (zip, tar, gz, rar)
-- Other (everything else)
+- Other (tout le reste)
 
-Move files to appropriate folders. Don't copy.
-Create a summary in ~/Cowork-Workspace/output/organization-report.txt showing:
-- Total files processed
-- Files per category
-- Any files that couldn't be categorized
+Déplace les fichiers dans les dossiers appropriés. Ne pas copier.
+Crée un résumé dans ~/Cowork-Workspace/output/organization-report.txt indiquant :
+- Nombre total de fichiers traités
+- Fichiers par catégorie
+- Fichiers impossibles à catégoriser
 ```
 
 ### 2. Organiser par date
 
 ```
-Organize files in ~/Cowork-Workspace/input/ by date.
+Organise les fichiers dans ~/Cowork-Workspace/input/ par date.
 
-Create year/month folder structure:
+Crée une structure de dossiers année/mois :
 - 2024/
   - 01-January/
   - 02-February/
@@ -40,33 +40,33 @@ Create year/month folder structure:
 - 2025/
   - ...
 
-Use file modification date for sorting.
-Move files to appropriate folders.
-Save summary to ~/Cowork-Workspace/output/date-organization.txt
+Utilise la date de modification du fichier pour le tri.
+Déplace les fichiers dans les dossiers appropriés.
+Enregistre le résumé dans ~/Cowork-Workspace/output/date-organization.txt
 ```
 
 ### 3. Organiser par projet
 
 ```
-Organize files in ~/Cowork-Workspace/input/ by project.
+Organise les fichiers dans ~/Cowork-Workspace/input/ par projet.
 
-Analyze filenames and content to identify projects.
-Create a folder for each project identified.
-Put unclassifiable files in "Uncategorized/" folder.
+Analyse les noms de fichiers et leur contenu pour identifier les projets.
+Crée un dossier pour chaque projet identifié.
+Place les fichiers inclassables dans un dossier "Uncategorized/".
 
-Save a project index to ~/Cowork-Workspace/output/project-index.md with:
-- Project name
-- Number of files
-- File types present
-- Date range of files
+Enregistre un index de projets dans ~/Cowork-Workspace/output/project-index.md avec :
+- Nom du projet
+- Nombre de fichiers
+- Types de fichiers présents
+- Plage de dates des fichiers
 ```
 
 ### 4. Organiser le dossier Téléchargements
 
 ```
-Organize my downloaded files in ~/Cowork-Workspace/input/downloads/
+Organise mes fichiers téléchargés dans ~/Cowork-Workspace/input/downloads/
 
-Create structure:
+Crée la structure :
 - Applications/ (dmg, pkg, exe, app)
 - Documents/ (pdf, doc, docx, txt)
 - Images/ (jpg, png, gif, svg)
@@ -76,8 +76,8 @@ Create structure:
 - Code/ (js, py, html, css, json)
 - Other/
 
-Move files appropriately. Delete empty source folders after.
-Report to ~/Cowork-Workspace/output/downloads-cleanup.txt
+Déplace les fichiers de manière appropriée. Supprime les dossiers source vides ensuite.
+Rapport dans ~/Cowork-Workspace/output/downloads-cleanup.txt
 ```
 
 ---
@@ -87,57 +87,57 @@ Report to ~/Cowork-Workspace/output/downloads-cleanup.txt
 ### 5. Standardiser les noms de fichiers
 
 ```
-Rename files in ~/Cowork-Workspace/input/ to follow this pattern:
+Renomme les fichiers dans ~/Cowork-Workspace/input/ selon ce format :
 YYYY-MM-DD_descriptive-name.ext
 
-Rules:
-- Use file date for YYYY-MM-DD
-- Convert spaces to hyphens
-- Remove special characters
-- Convert to lowercase
-- Keep original extension
+Règles :
+- Utiliser la date du fichier pour YYYY-MM-DD
+- Convertir les espaces en tirets
+- Supprimer les caractères spéciaux
+- Convertir en minuscules
+- Garder l'extension d'origine
 
-Create a rename log in ~/Cowork-Workspace/output/rename-log.csv with:
+Crée un journal de renommage dans ~/Cowork-Workspace/output/rename-log.csv avec :
 Original Name, New Name, Date
 ```
 
 ### 6. Ajouter un préfixe aux fichiers
 
 ```
-Add prefix "[PROJECT-X]_" to all files in ~/Cowork-Workspace/input/
+Ajoute le préfixe "[PROJECT-X]_" à tous les fichiers dans ~/Cowork-Workspace/input/
 
-Keep original filename after prefix.
-Example: document.pdf → [PROJECT-X]_document.pdf
+Garde le nom de fichier original après le préfixe.
+Exemple : document.pdf → [PROJECT-X]_document.pdf
 
-Log changes to ~/Cowork-Workspace/output/prefix-log.txt
+Enregistre les changements dans ~/Cowork-Workspace/output/prefix-log.txt
 ```
 
 ### 7. Numérotation séquentielle
 
 ```
-Rename files in ~/Cowork-Workspace/input/ with sequential numbers.
+Renomme les fichiers dans ~/Cowork-Workspace/input/ avec des numéros séquentiels.
 
-Pattern: 001_original-name.ext, 002_original-name.ext, etc.
+Format : 001_original-name.ext, 002_original-name.ext, etc.
 
-Sort by: [file date / alphabetically / file size]
-Start numbering at: 001
+Trier par : [date du fichier / alphabétiquement / taille du fichier]
+Commencer la numérotation à : 001
 
-Save mapping to ~/Cowork-Workspace/output/number-mapping.csv
+Enregistre le mapping dans ~/Cowork-Workspace/output/number-mapping.csv
 ```
 
 ### 8. Supprimer les dates des noms de fichiers
 
 ```
-Remove date patterns from filenames in ~/Cowork-Workspace/input/
+Supprime les motifs de date des noms de fichiers dans ~/Cowork-Workspace/input/
 
-Patterns to remove:
+Motifs à supprimer :
 - YYYY-MM-DD
 - YYYYMMDD
 - DD-MM-YYYY
 - MM-DD-YYYY
 
-Keep the rest of the filename intact.
-Log changes to ~/Cowork-Workspace/output/date-removal-log.txt
+Garde le reste du nom de fichier intact.
+Enregistre les changements dans ~/Cowork-Workspace/output/date-removal-log.txt
 ```
 
 ---
@@ -147,62 +147,62 @@ Log changes to ~/Cowork-Workspace/output/date-removal-log.txt
 ### 9. Trouver les doublons
 
 ```
-Find duplicate files in ~/Cowork-Workspace/input/
+Trouve les fichiers en doublon dans ~/Cowork-Workspace/input/
 
-Check for:
-- Exact duplicates (same content)
-- Similar filenames
-- Same size files
+Vérifie :
+- Les doublons exacts (même contenu)
+- Les noms de fichiers similaires
+- Les fichiers de même taille
 
-DO NOT DELETE ANYTHING.
-Create a report in ~/Cowork-Workspace/output/duplicates-report.md with:
-- Groups of potential duplicates
-- File sizes
-- Locations
-- Recommendation (which to keep)
+NE RIEN SUPPRIMER.
+Crée un rapport dans ~/Cowork-Workspace/output/duplicates-report.md avec :
+- Groupes de doublons potentiels
+- Tailles des fichiers
+- Emplacements
+- Recommandation (lequel garder)
 ```
 
 ### 10. Archiver les anciens fichiers
 
 ```
-Identify files older than [6 months / 1 year] in ~/Cowork-Workspace/input/
+Identifie les fichiers de plus de [6 mois / 1 an] dans ~/Cowork-Workspace/input/
 
-Create an archive folder: ~/Cowork-Workspace/input/archive-[date]/
-Move old files there (don't delete).
+Crée un dossier d'archive : ~/Cowork-Workspace/input/archive-[date]/
+Déplace les anciens fichiers dedans (ne pas supprimer).
 
-Create manifest in ~/Cowork-Workspace/output/archive-manifest.txt with:
-- Files archived
-- Original locations
-- File dates
-- Total size archived
+Crée un manifeste dans ~/Cowork-Workspace/output/archive-manifest.txt avec :
+- Fichiers archivés
+- Emplacements d'origine
+- Dates des fichiers
+- Taille totale archivée
 ```
 
 ### 11. Trouver les fichiers volumineux
 
 ```
-Find files larger than [100MB / 500MB / 1GB] in ~/Cowork-Workspace/input/
+Trouve les fichiers de plus de [100MB / 500MB / 1GB] dans ~/Cowork-Workspace/input/
 
-Create a report in ~/Cowork-Workspace/output/large-files.md with:
-- File path
-- Size
+Crée un rapport dans ~/Cowork-Workspace/output/large-files.md avec :
+- Chemin du fichier
+- Taille
 - Type
-- Last modified date
+- Date de dernière modification
 
-Sort by size, largest first.
-Include total size of all large files.
+Trier par taille, du plus gros au plus petit.
+Inclure la taille totale de tous les fichiers volumineux.
 ```
 
 ### 12. Nettoyage des dossiers vides
 
 ```
-Find empty folders in ~/Cowork-Workspace/input/
+Trouve les dossiers vides dans ~/Cowork-Workspace/input/
 
-List all empty folders found.
-DO NOT DELETE without my confirmation.
+Liste tous les dossiers vides trouvés.
+NE PAS SUPPRIMER sans ma confirmation.
 
-Report to ~/Cowork-Workspace/output/empty-folders.txt with:
-- Folder path
-- Parent folder
+Rapport dans ~/Cowork-Workspace/output/empty-folders.txt avec :
+- Chemin du dossier
+- Dossier parent
 ```
 
 ---
@@ -212,34 +212,34 @@ Report to ~/Cowork-Workspace/output/empty-folders.txt with:
 ### 13. Extraire par type de fichier
 
 ```
-Copy all [PDF / image / spreadsheet] files from ~/Cowork-Workspace/input/
-to ~/Cowork-Workspace/output/extracted-[type]/
+Copie tous les fichiers [PDF / image / tableur] depuis ~/Cowork-Workspace/input/
+vers ~/Cowork-Workspace/output/extracted-[type]/
 
-Include files in subfolders.
-Maintain original subfolder structure in destination.
-Create a list of extracted files in ~/Cowork-Workspace/output/extracted-files.txt
+Inclure les fichiers dans les sous-dossiers.
+Maintenir la structure de sous-dossiers d'origine dans la destination.
+Créer une liste des fichiers extraits dans ~/Cowork-Workspace/output/extracted-files.txt
 ```
 
 ### 14. Filtrer par motif de nom de fichier
 
 ```
-Find all files matching pattern "*[pattern]*" in ~/Cowork-Workspace/input/
+Trouve tous les fichiers correspondant au motif "*[pattern]*" dans ~/Cowork-Workspace/input/
 
-Copy matching files to ~/Cowork-Workspace/output/matching-files/
-Create a list with full paths in ~/Cowork-Workspace/output/pattern-matches.txt
+Copie les fichiers correspondants dans ~/Cowork-Workspace/output/matching-files/
+Crée une liste avec les chemins complets dans ~/Cowork-Workspace/output/pattern-matches.txt
 ```
 
 ### 15. Filtrer par contenu
 
 ```
-Find all text files in ~/Cowork-Workspace/input/ containing "[search term]"
+Trouve tous les fichiers texte dans ~/Cowork-Workspace/input/ contenant "[terme recherché]"
 
-Create a report in ~/Cowork-Workspace/output/content-search.md with:
-- File path
-- Line numbers containing the term
-- Context (line before and after)
+Crée un rapport dans ~/Cowork-Workspace/output/content-search.md avec :
+- Chemin du fichier
+- Numéros de lignes contenant le terme
+- Contexte (ligne avant et après)
 
-Copy matching files to ~/Cowork-Workspace/output/matching-content/
+Copie les fichiers correspondants dans ~/Cowork-Workspace/output/matching-content/
 ```
 
 ---
@@ -249,7 +249,7 @@ Copy matching files to ~/Cowork-Workspace/output/matching-content/
 ### 16. Créer une structure de dossiers
 
 ```
-Create this folder structure in ~/Cowork-Workspace/input/:
+Crée cette structure de dossiers dans ~/Cowork-Workspace/input/ :
 
 Projects/
 ├── Active/
@@ -264,15 +264,15 @@ Projects/
 ├── Completed/
 └── Templates/
 
-Confirm structure created.
+Confirme la structure créée.
 ```
 
 ### 17. Inventaire de fichiers
 
 ```
-Create a complete inventory of ~/Cowork-Workspace/input/
+Crée un inventaire complet de ~/Cowork-Workspace/input/
 
-Output to ~/Cowork-Workspace/output/inventory.xlsx with columns:
+Résultat dans ~/Cowork-Workspace/output/inventory.xlsx avec les colonnes :
 - Filename
 - Path
 - Extension
@@ -280,46 +280,46 @@ Output to ~/Cowork-Workspace/output/inventory.xlsx with columns:
 - Date Modified
 - Type Category
 
-Include summary sheet with:
-- Total files
-- Total size
-- Files by type
-- Files by year
+Inclure une feuille de résumé avec :
+- Nombre total de fichiers
+- Taille totale
+- Fichiers par type
+- Fichiers par année
 ```
 
 ---
 
-## Power User : Organisation basée sur des règles
+## Utilisation avancée : Organisation basée sur des règles
 
 Issu d'une utilisation réelle — tri complexe avec règles explicites :
 
 ### 18. Système de tri multi-règles
 
 ```
-CONTEXT: My ~/Cowork-Workspace/input/downloads/ has 200+ files accumulated over months.
-I need them organized for a project handoff.
+CONTEXTE : Mon dossier ~/Cowork-Workspace/input/downloads/ contient plus de 200 fichiers accumulés sur plusieurs mois.
+J'ai besoin de les organiser pour une passation de projet.
 
-TASK: Organize files following these rules in priority order:
+TÂCHE : Organise les fichiers selon ces règles par ordre de priorité :
 
-RULES:
-1. Client files (containing "ClientX" or "ProjectY") → Clients/[ClientName]/
-2. Financial (invoices, receipts, quotes) → Finance/[Year]/
-3. Design assets (.psd, .ai, .fig, .sketch) → Design/
+RÈGLES :
+1. Fichiers client (contenant "ClientX" ou "ProjectY") → Clients/[ClientName]/
+2. Financier (factures, reçus, devis) → Finance/[Year]/
+3. Ressources design (.psd, .ai, .fig, .sketch) → Design/
 4. Documentation (.doc, .pdf, .md) → Docs/[Topic]/
 5. Code/scripts → Code/
-6. Everything else → Archive/[Month-Year]/
+6. Tout le reste → Archive/[Month-Year]/
 
-OUTPUT:
-- Move files according to rules
-- Create ~/Cowork-Workspace/output/organization-manifest.xlsx with:
-  - Original path, New path, Rule applied, Date moved
-- Summary counts per category
+RÉSULTAT :
+- Déplacer les fichiers selon les règles
+- Créer ~/Cowork-Workspace/output/organization-manifest.xlsx avec :
+  - Chemin d'origine, Nouveau chemin, Règle appliquée, Date de déplacement
+- Totaux par catégorie
 
-CONSTRAINTS:
-- Process in batches of 20 files (for token efficiency)
-- Ask confirmation before each batch
-- Never delete, only move
-- Report any ambiguous files for manual decision
+CONTRAINTES :
+- Traiter par lots de 20 fichiers (pour l'efficacité des tokens)
+- Demander confirmation avant chaque lot
+- Ne jamais supprimer, uniquement déplacer
+- Signaler les fichiers ambigus pour décision manuelle
 ```
 
 ---
@@ -340,35 +340,35 @@ L'organisation de fichiers consomme rapidement des tokens. Optimisez avec ces st
 ### 19. Traitement optimisé de grands lots
 
 ```
-CONTEXT: ~/Cowork-Workspace/input/ contains 80+ files to organize.
+CONTEXTE : ~/Cowork-Workspace/input/ contient plus de 80 fichiers à organiser.
 
-TASK: Organize by type, but work efficiently:
+TÂCHE : Organise par type, mais travaille efficacement :
 
-APPROACH:
-1. First: List all files and create a sorting plan (don't move yet)
-2. Save plan to ~/Cowork-Workspace/output/sorting-plan.md
-3. Wait for my approval
-4. Then process in batches of 20 files
-5. After each batch, report progress and wait for "continue"
+APPROCHE :
+1. D'abord : liste tous les fichiers et crée un plan de tri (ne rien déplacer encore)
+2. Enregistre le plan dans ~/Cowork-Workspace/output/sorting-plan.md
+3. Attends mon approbation
+4. Puis traite par lots de 20 fichiers
+5. Après chaque lot, fais un rapport d'avancement et attends "continue"
 
-CONSTRAINTS:
-- Checkpoint progress after each batch
-- If interrupted, the plan file shows what's done vs remaining
-- Estimated total: 4-5 batches
+CONTRAINTES :
+- Faire un checkpoint après chaque lot
+- En cas d'interruption, le fichier de plan montre ce qui est fait vs ce qui reste
+- Estimation totale : 4-5 lots
 ```
 
 ### 20. Reprendre après interruption
 
 ```
-CONTEXT: File organization was interrupted.
-~/Cowork-Workspace/output/sorting-plan.md shows progress.
-Files marked [DONE] are already processed.
+CONTEXTE : L'organisation des fichiers a été interrompue.
+~/Cowork-Workspace/output/sorting-plan.md indique la progression.
+Les fichiers marqués [DONE] sont déjà traités.
 
-TASK: Continue from where we stopped.
-Process only items NOT marked [DONE] in the plan.
+TÂCHE : Continue là où on s'est arrêté.
+Traite uniquement les éléments NON marqués [DONE] dans le plan.
 
-OUTPUT: Update sorting-plan.md as you process.
-Mark completed items with [DONE].
+RÉSULTAT : Mets à jour sorting-plan.md au fur et à mesure.
+Marque les éléments terminés avec [DONE].
 ```
 
 ---

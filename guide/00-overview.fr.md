@@ -20,7 +20,7 @@ Imaginez un assistant de bureau très compétent qui :
 
 ### Version technique
 
-**Cowork** est la fonctionnalité desktop autonome (agentique) de Claude qui étend les capacités d'IA autonome aux professionnels non-développeurs (knowledge workers) via l'application Claude Desktop. Au lieu de commandes terminal, Cowork accède directement aux dossiers et fichiers locaux.
+**Cowork** est la fonctionnalité desktop autonome (agentique) de Claude qui étend les capacités d'IA autonome aux professionnels non-développeurs (travailleurs du savoir) via l'application Claude Desktop. Au lieu de commandes terminal, Cowork accède directement aux dossiers et fichiers locaux.
 
 ### Faits clés
 
@@ -39,8 +39,8 @@ Cowork partage la même architecture backend que Claude Code :
 
 | Partagé | Différent |
 |---------|-----------|
-| Mêmes capacités du modèle | App desktop vs Terminal |
-| Pensée étendue | Fichiers uniquement vs shell complet |
+| Mêmes capacités du modèle | Application bureau vs Terminal |
+| Pensée étendue | Fichiers uniquement vs ligne de commande complète |
 | Boucles agentiques | Travailleurs du savoir vs développeurs |
 | Architecture de sous-agents | Pas d'exécution de code |
 
@@ -124,7 +124,7 @@ Cowork partage la même architecture backend que Claude Code :
 | **Sous-agents** | Exécution parallèle avec contexte frais par agent |
 | **Exécution de code** | **Aucune** — Fichiers uniquement (pas de scripts, pas de commandes) |
 | **Navigateur** | Intégration Chrome pour tâches de recherche web |
-| **Limite de contexte** | ~200K tokens (~150-500 pages par session) |
+| **Limite de contexte** | ~200K tokens (unités de mesure de la consommation IA) (~150-500 pages par session) |
 | **Formats de sortie** | Excel (.xlsx avec formules), PowerPoint, Word, PDF, texte, images |
 
 ### Comment fonctionnent les sous-agents
@@ -132,9 +132,9 @@ Cowork partage la même architecture backend que Claude Code :
 1. **Contexte frais** — Chaque sous-agent démarre proprement (pas de mémoire des autres agents)
 2. **Exécution parallèle** — Plusieurs agents peuvent travailler simultanément
 3. **Coordination orchestrateur** — L'agent principal assemble les résultats
-4. **Isolation de scope** — Chaque agent ne voit que ce dont il a besoin
+4. **Isolation de périmètre** — Chaque agent ne voit que ce dont il a besoin
 
-Cette architecture permet des workflows complexes multi-étapes tout en maintenant des frontières de sécurité.
+Cette architecture permet des workflows (enchaînements d'étapes automatisés) complexes multi-étapes tout en maintenant des frontières de sécurité.
 
 ---
 
@@ -176,7 +176,7 @@ Pensez à Cowork comme un **artisan qualifié travaillant dans son propre atelie
 
 **Ce qu'il ne peut PAS faire :**
 - Sortir de son atelier pour aller chercher des fichiers ailleurs sur votre ordinateur
-- Exécuter des programmes ou scripts (ce n'est pas un développeur)
+- Exécuter des programmes ou scripts (programmes automatisés) (ce n'est pas un développeur)
 - Se connecter à Internet directement (sauf si vous lui donnez accès à votre navigateur)
 
 **Pourquoi cette limite ?** C'est une sécurité volontaire. Comme un atelier avec une seule porte, vous contrôlez exactement ce qui entre et ce qui sort. Cette contrainte crée un espace de travail isolé (sandbox) sûr pour laisser Claude travailler de façon autonome.
@@ -208,9 +208,9 @@ Si vous cherchez à optimiser vos workflows pour un usage intensif (>100 tâches
 
 **Optimisation modèle** : Opus 4.5 peut sembler plus cher par requête, mais sa précision réduit le nombre total de tentatives nécessaires, le rendant plus économique à long terme pour les analyses complexes.
 
-**Scaling et parallélisation** : Pour des besoins de traitement par lots ou d'automatisation poussée, consultez les ressources de Boris (créateur de Claude Code) sur les [workflows multi-sessions](https://www.youtube.com/watch?v=DW4a1Cm8nG4) et les [pratiques avancées](https://blog.devgenius.io/the-claude-code-creator-says-ai-writes-100-of-his-code-now-956b2a5905ba).
+**Mise à l'échelle et parallélisation** : Pour des besoins de traitement par lots ou d'automatisation poussée, consultez les ressources de Boris (créateur de Claude Code) sur les [workflows multi-sessions](https://www.youtube.com/watch?v=DW4a1Cm8nG4) et les [pratiques avancées](https://blog.devgenius.io/the-claude-code-creator-says-ai-writes-100-of-his-code-now-956b2a5905ba).
 
-**Setup équipe** : Pour les organisations de 20+ employés, consultez le [Guide Enterprise Anthropic](https://www.anthropic.com/enterprise) pour les fonctionnalités d'audit et de contrôle d'accès.
+**Configuration équipe** : Pour les organisations de 20+ employés, consultez le [Guide Enterprise Anthropic](https://www.anthropic.com/enterprise) pour les fonctionnalités d'audit et de contrôle d'accès.
 
 > **Note** : Ces techniques sont destinées aux utilisateurs expérimentés. Pour la majorité des TPE/PME, les workflows standards documentés dans ce guide suffisent amplement.
 

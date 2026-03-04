@@ -11,67 +11,67 @@
 ### 1. Recherche Concurrentielle de Base
 
 ```
-Research the top 5 competitors in [industry/market].
+Recherche les 5 principaux concurrents dans [secteur/marché].
 
-For each competitor:
-- Company name and website
-- Brief description (1-2 sentences)
-- Key products/services
-- Target market
-- Pricing (if public)
-- Key differentiators
+Pour chaque concurrent :
+- Nom de l'entreprise et site web
+- Description courte (1 à 2 phrases)
+- Produits/services principaux
+- Marché cible
+- Tarification (si publique)
+- Différenciateurs clés
 
-Create comparison table.
-Save to: ~/Cowork-Workspace/output/competitive-analysis.md
+Crée un tableau comparatif.
+Enregistrer dans : ~/Cowork-Workspace/output/competitive-analysis.md
 ```
 
 ### 2. Profil Détaillé de Concurrent
 
 ```
-Create a detailed profile for [Company Name].
+Crée un profil détaillé pour [Nom de l'entreprise].
 
-Research:
-1. Company Overview
-   - Founded, headquarters, size
+Rechercher :
+1. Présentation de l'entreprise
+   - Date de création, siège, taille
    - Mission/Vision
-   - Key leadership
+   - Dirigeants clés
 
-2. Products/Services
-   - Main offerings
-   - Pricing structure
-   - Target customers
+2. Produits/Services
+   - Offres principales
+   - Structure tarifaire
+   - Clients cibles
 
-3. Market Position
-   - Market share (if available)
-   - Key partnerships
-   - Recent news/announcements
+3. Position sur le marché
+   - Part de marché (si disponible)
+   - Partenariats clés
+   - Actualités/annonces récentes
 
-4. Strengths and Weaknesses
-   - Based on reviews and public info
+4. Forces et faiblesses
+   - Basées sur les avis et informations publiques
 
-5. Competitive Implications
-   - How they compare to us
-   - Threats and opportunities
+5. Implications concurrentielles
+   - Comparaison avec nous
+   - Menaces et opportunités
 
-Save to: ~/Cowork-Workspace/output/[company]-profile.docx
+Enregistrer dans : ~/Cowork-Workspace/output/[company]-profile.docx
 ```
 
 ### 3. Recherche de Prix
 
 ```
-Research pricing for [product/service category].
+Recherche les tarifs pour [catégorie de produit/service].
 
-Compile data on:
-- Vendor/Product name
-- Pricing tiers
-- Features per tier
-- Free trial/Freemium options
-- Contract requirements
-- Notable terms
+Compiler les données sur :
+- Nom du fournisseur/produit
+- Niveaux de tarification
+- Fonctionnalités par niveau
+- Essai gratuit/options freemium
+- Exigences contractuelles
+- Conditions notables
 
-Create comparison matrix in Excel.
-Include pricing trend observations.
-Save to: ~/Cowork-Workspace/output/pricing-research.xlsx
+Crée une matrice de comparaison dans Excel.
+Inclure les observations sur les tendances de prix.
+Enregistrer dans : ~/Cowork-Workspace/output/pricing-research.xlsx
 ```
 
 ---
@@ -81,80 +81,80 @@ Save to: ~/Cowork-Workspace/output/pricing-research.xlsx
 ### 4. Recherche Générale sur un Sujet
 
 ```
-Research [topic] and create a comprehensive overview.
+Recherche [sujet] et crée un aperçu complet.
 
-Include:
-1. Topic Overview
-   - Definition and scope
-   - Why it matters
+Inclure :
+1. Présentation du sujet
+   - Définition et périmètre
+   - Pourquoi c'est important
 
-2. Key Concepts
-   - Main ideas and terminology
-   - How they relate
+2. Concepts clés
+   - Idées et terminologie principales
+   - Comment ils sont liés
 
-3. Current State
-   - Latest developments
-   - Key players/contributors
+3. État actuel
+   - Derniers développements
+   - Acteurs/contributeurs clés
 
-4. Best Practices
-   - Industry standards
-   - Common approaches
+4. Bonnes pratiques
+   - Standards du secteur
+   - Approches courantes
 
-5. Resources
-   - Recommended reading
-   - Tools/Platforms
-   - Communities
+5. Ressources
+   - Lectures recommandées
+   - Outils/plateformes
+   - Communautés
 
-Save to: ~/Cowork-Workspace/output/[topic]-research.md
+Enregistrer dans : ~/Cowork-Workspace/output/[topic]-research.md
 ```
 
 ### 5. Évaluation de Technologie/Outil
 
 ```
-Evaluate [technology/tool type] options for [use case].
+Évalue les options [type de technologie/outil] pour [cas d'usage].
 
-Research criteria:
-- Core features
-- Ease of use
-- Integration capabilities
-- Pricing
-- Community/Support
-- Maturity/Stability
-- Pros and Cons
+Critères de recherche :
+- Fonctionnalités principales
+- Facilité d'utilisation
+- Capacités d'intégration
+- Tarification
+- Communauté/Support
+- Maturité/Stabilité
+- Avantages et inconvénients
 
-Evaluate top 5 options.
-Provide recommendation with rationale.
-Save to: ~/Cowork-Workspace/output/[technology]-evaluation.md
+Évaluer les 5 meilleures options.
+Fournir une recommandation avec justification.
+Enregistrer dans : ~/Cowork-Workspace/output/[technology]-evaluation.md
 ```
 
 ### 6. Analyse de Tendances
 
 ```
-Research trends in [industry/topic] for [year/period].
+Recherche les tendances dans [secteur/sujet] pour [année/période].
 
-Cover:
-1. Current Trends
-   - What's growing
-   - What's declining
+Couvrir :
+1. Tendances actuelles
+   - Ce qui progresse
+   - Ce qui décline
 
-2. Driving Forces
-   - Technology changes
-   - Market shifts
-   - Regulatory factors
+2. Facteurs moteurs
+   - Évolutions technologiques
+   - Mutations du marché
+   - Facteurs réglementaires
 
-3. Key Statistics
-   - Market size
-   - Growth rates
-   - Adoption metrics
+3. Statistiques clés
+   - Taille du marché
+   - Taux de croissance
+   - Indicateurs d'adoption
 
-4. Predictions
-   - Expert opinions
-   - Market forecasts
+4. Prédictions
+   - Avis d'experts
+   - Prévisions de marché
 
 5. Implications
-   - What this means for [our business/project]
+   - Ce que cela signifie pour [notre activité/projet]
 
-Save to: ~/Cowork-Workspace/output/trend-analysis.md
+Enregistrer dans : ~/Cowork-Workspace/output/trend-analysis.md
 ```
 
 ---
@@ -164,55 +164,55 @@ Save to: ~/Cowork-Workspace/output/trend-analysis.md
 ### 7. Vue d'Ensemble du Marché
 
 ```
-Create a market overview for [market/industry].
+Crée une vue d'ensemble du marché pour [marché/secteur].
 
-Research:
-1. Market Definition
-   - Scope and segments
-   - Key products/services
+Rechercher :
+1. Définition du marché
+   - Périmètre et segments
+   - Produits/services principaux
 
-2. Market Size
-   - Current value
-   - Growth rate
+2. Taille du marché
+   - Valeur actuelle
+   - Taux de croissance
    - Projections
 
-3. Key Players
-   - Major companies
-   - Market share distribution
+3. Acteurs clés
+   - Entreprises majeures
+   - Répartition des parts de marché
 
-4. Customer Segments
-   - Who buys
-   - What they value
+4. Segments de clientèle
+   - Qui achète
+   - Ce qu'ils valorisent
 
-5. Distribution Channels
-   - How products reach customers
+5. Canaux de distribution
+   - Comment les produits atteignent les clients
 
-6. Barriers to Entry
-   - What makes this market challenging
+6. Barrières à l'entrée
+   - Ce qui rend ce marché difficile
 
-Save to: ~/Cowork-Workspace/output/market-overview.docx
+Enregistrer dans : ~/Cowork-Workspace/output/market-overview.docx
 ```
 
 ### 8. Synthèse de Recherche Client
 
 ```
-Research customer perspectives on [product/service/topic].
+Recherche les perspectives clients sur [produit/service/sujet].
 
-Sources to explore:
-- Review sites
-- Forums and communities
-- Social media discussions
-- Industry publications
+Sources à explorer :
+- Sites d'avis
+- Forums et communautés
+- Discussions sur les réseaux sociaux
+- Publications sectorielles
 
-Compile:
-1. Common Pain Points
-2. Desired Features
-3. Satisfaction Drivers
-4. Complaints/Frustrations
-5. Comparison Factors
-6. Decision Criteria
+Compiler :
+1. Points de friction courants
+2. Fonctionnalités souhaitées
+3. Facteurs de satisfaction
+4. Plaintes/frustrations
+5. Critères de comparaison
+6. Critères de décision
 
-Save to: ~/Cowork-Workspace/output/customer-research.md
+Enregistrer dans : ~/Cowork-Workspace/output/customer-research.md
 ```
 
 ---
@@ -222,38 +222,38 @@ Save to: ~/Cowork-Workspace/output/customer-research.md
 ### 9. Recherche sur une Personne/Intervenant
 
 ```
-Research [Person Name] for [meeting/event] preparation.
+Recherche [Nom de la personne] pour la préparation de [réunion/événement].
 
-Find:
-- Current role and company
-- Professional background
-- Recent talks/publications
-- Areas of expertise
-- Notable quotes/positions
-- Social media presence
-- Common talking points
+Trouver :
+- Rôle actuel et entreprise
+- Parcours professionnel
+- Conférences/publications récentes
+- Domaines d'expertise
+- Citations/positions notables
+- Présence sur les réseaux sociaux
+- Points de discussion habituels
 
-Create briefing document.
-Save to: ~/Cowork-Workspace/output/[name]-profile.md
+Crée un document de briefing.
+Enregistrer dans : ~/Cowork-Workspace/output/[name]-profile.md
 ```
 
 ### 10. Recherche sur un Événement/Conférence
 
 ```
-Research [Event/Conference Name].
+Recherche [Nom de l'événement/conférence].
 
-Compile:
-- Event dates and location
-- Theme/Focus areas
-- Key speakers
-- Session highlights
-- Attendance info
-- Past event insights
-- Networking opportunities
-- Relevant hashtags
+Compiler :
+- Dates et lieu de l'événement
+- Thème/axes principaux
+- Intervenants clés
+- Sessions remarquables
+- Informations de participation
+- Retours d'expérience des éditions précédentes
+- Opportunités de networking
+- Hashtags pertinents
 
-Create event brief.
-Save to: ~/Cowork-Workspace/output/[event]-research.md
+Crée un résumé de l'événement.
+Enregistrer dans : ~/Cowork-Workspace/output/[event]-research.md
 ```
 
 ---
@@ -263,50 +263,50 @@ Save to: ~/Cowork-Workspace/output/[event]-research.md
 ### 11. Revue de Littérature
 
 ```
-Create a literature review from documents in ~/Cowork-Workspace/input/papers/
-and supplementary web research on [topic].
+Crée une revue de littérature à partir des documents dans ~/Cowork-Workspace/input/papers/
+et d'une recherche web complémentaire sur [sujet].
 
-Structure:
+Structure :
 1. Introduction
-   - Topic scope
-   - Research questions
+   - Périmètre du sujet
+   - Questions de recherche
 
-2. Methodology
-   - Sources used
-   - Selection criteria
+2. Méthodologie
+   - Sources utilisées
+   - Critères de sélection
 
-3. Findings by Theme
-   - Theme 1: [findings]
-   - Theme 2: [findings]
-   - Theme 3: [findings]
+3. Résultats par thème
+   - Thème 1 : [résultats]
+   - Thème 2 : [résultats]
+   - Thème 3 : [résultats]
 
-4. Gaps and Opportunities
-   - What's missing
-   - Future research areas
+4. Lacunes et opportunités
+   - Ce qui manque
+   - Axes de recherche futurs
 
 5. Conclusions
 
-6. References
+6. Références
 
-Save to: ~/Cowork-Workspace/output/literature-review.docx
+Enregistrer dans : ~/Cowork-Workspace/output/literature-review.docx
 ```
 
 ### 12. Synthèse de Recherche
 
 ```
-Synthesize research from:
+Synthétise les recherches à partir de :
 - ~/Cowork-Workspace/input/research-docs/
-- Web research on [topic]
+- Recherche web sur [sujet]
 
-Create unified report covering:
-1. Key Findings (consolidated)
-2. Consensus Points (agreement across sources)
-3. Contradictions (disagreements)
-4. Evidence Quality (strong vs weak support)
-5. Recommendations (based on evidence)
-6. Source Assessment (reliability)
+Crée un rapport unifié couvrant :
+1. Résultats clés (consolidés)
+2. Points de consensus (accord entre les sources)
+3. Contradictions (désaccords)
+4. Qualité des preuves (support fort vs faible)
+5. Recommandations (basées sur les preuves)
+6. Évaluation des sources (fiabilité)
 
-Save to: ~/Cowork-Workspace/output/research-synthesis.md
+Enregistrer dans : ~/Cowork-Workspace/output/research-synthesis.md
 ```
 
 ---
@@ -316,35 +316,35 @@ Save to: ~/Cowork-Workspace/output/research-synthesis.md
 ### 13. Faits Rapides
 
 ```
-Research quick facts about [company/product/topic].
+Recherche des faits rapides sur [entreprise/produit/sujet].
 
-Provide:
-- 10 key facts
-- 5 recent news items
-- 3 notable statistics
-- Key dates/milestones
+Fournir :
+- 10 faits clés
+- 5 actualités récentes
+- 3 statistiques notables
+- Dates/jalons importants
 
-Format: Bullet points
-Save to: ~/Cowork-Workspace/output/quick-facts.md
+Format : listes à puces
+Enregistrer dans : ~/Cowork-Workspace/output/quick-facts.md
 ```
 
 ### 14. Recherche FAQ
 
 ```
-Research common questions about [topic].
+Recherche les questions fréquentes sur [sujet].
 
-Find and answer:
-- Top 10 frequently asked questions
-- Include brief, accurate answers
-- Cite sources where possible
+Trouver et répondre à :
+- Les 10 questions les plus fréquentes
+- Inclure des réponses brèves et précises
+- Citer les sources quand c'est possible
 
-Format as FAQ document.
-Save to: ~/Cowork-Workspace/output/faq.md
+Formater en document FAQ.
+Enregistrer dans : ~/Cowork-Workspace/output/faq.md
 ```
 
 ---
 
-## Power User : Workflows d'Analyse de Contenu
+## Utilisation avancée : workflows (enchaînements d'étapes) d'Analyse de Contenu
 
 Exemples concrets d'utilisateurs professionnels :
 
@@ -353,39 +353,39 @@ Exemples concrets d'utilisateurs professionnels :
 D'un workflow de créateur de newsletter analysant des transcriptions de podcasts :
 
 ```
-CONTEXT: I have podcast transcript(s) in ~/Cowork-Workspace/input/podcasts/
-These are long-form interviews with industry experts.
+CONTEXTE : J'ai des transcription(s) de podcast dans ~/Cowork-Workspace/input/podcasts/
+Ce sont des interviews longues avec des experts du secteur.
 
-TASK: Create a comprehensive analysis document.
+TÂCHE : Crée un document d'analyse complet.
 
-OUTPUT: ~/Cowork-Workspace/output/podcast-analysis.docx
+SORTIE : ~/Cowork-Workspace/output/podcast-analysis.docx
 
-STRUCTURE:
-1. Episode Overview
-   - Guest, topic, date, duration
+STRUCTURE :
+1. Vue d'ensemble de l'épisode
+   - Invité, sujet, date, durée
 
-2. Key Insights (5-10 bullets)
-   - Actionable takeaways
-   - Quotable moments
+2. Insights clés (5 à 10 puces)
+   - Points d'action concrets
+   - Moments citables
 
-3. Mental Models & Frameworks
-   - Any frameworks mentioned
-   - Decision-making approaches
+3. Modèles mentaux et cadres de réflexion
+   - Cadres mentionnés
+   - Approches de prise de décision
 
-4. Practical Tactics
-   - Specific how-to advice
-   - Tools/resources mentioned
+4. Tactiques pratiques
+   - Conseils concrets (comment faire)
+   - Outils/ressources mentionnés
 
-5. Contrarian/Surprising Points
-   - What goes against conventional wisdom
+5. Points surprenants/à contre-courant
+   - Ce qui va à l'encontre de la sagesse conventionnelle
 
-6. Questions Raised
-   - Follow-up topics to explore
+6. Questions soulevées
+   - Sujets de suivi à explorer
 
-CONSTRAINTS:
-- Use direct quotes with timestamps when available
-- Flag any claims that need fact-checking
-- Note recurring themes across episodes
+CONTRAINTES :
+- Utiliser des citations directes avec horodatage quand disponible
+- Signaler les affirmations nécessitant une vérification
+- Noter les thèmes récurrents entre les épisodes
 ```
 
 ### 16. Synthèse de Recherche Multi-Sources
@@ -393,30 +393,30 @@ CONSTRAINTS:
 Pour une analyse complète combinant documents locaux et recherche web :
 
 ```
-CONTEXT:
-- Local documents in ~/Cowork-Workspace/input/research/
-- Need supplementary web research on [topic]
+CONTEXTE :
+- Documents locaux dans ~/Cowork-Workspace/input/research/
+- Besoin de recherche web complémentaire sur [sujet]
 
-TASK: Create a unified research brief combining all sources.
+TÂCHE : Crée un résumé de recherche unifié combinant toutes les sources.
 
-OUTPUT: ~/Cowork-Workspace/output/research-brief.md
+SORTIE : ~/Cowork-Workspace/output/research-brief.md
 
-STRUCTURE:
-1. Research Question
-2. Sources Used (local + web)
-3. Key Findings (consolidated)
-4. Consensus Points (agreement across sources)
-5. Contradictions (where sources disagree)
-6. Evidence Quality Assessment
-7. Gaps (what's missing)
-8. Recommendations
-9. Full Source List with notes
+STRUCTURE :
+1. Question de recherche
+2. Sources utilisées (locales + web)
+3. Résultats clés (consolidés)
+4. Points de consensus (accord entre les sources)
+5. Contradictions (désaccords entre les sources)
+6. Évaluation de la qualité des preuves
+7. Lacunes (ce qui manque)
+8. Recommandations
+9. Liste complète des sources avec notes
 
-CONSTRAINTS:
-- Clearly attribute each finding to its source
-- Rate evidence strength (strong/moderate/weak)
-- Distinguish fact from opinion
-- Flag outdated information
+CONTRAINTES :
+- Attribuer clairement chaque résultat à sa source
+- Évaluer la solidité des preuves (forte/modérée/faible)
+- Distinguer les faits des opinions
+- Signaler les informations obsolètes
 ```
 
 ### 17. Étude de Marché vers PRD
@@ -424,27 +424,27 @@ CONSTRAINTS:
 Pour les product managers convertissant la recherche en spécifications :
 
 ```
-CONTEXT: Market research notes in ~/Cowork-Workspace/input/market-research/
-Include: competitor analysis, user interviews, industry reports.
+CONTEXTE : Notes d'étude de marché dans ~/Cowork-Workspace/input/market-research/
+Incluent : analyse concurrentielle, entretiens utilisateurs, rapports sectoriels.
 
-TASK: Transform into a Product Requirements Document outline.
+TÂCHE : Transformer en ébauche de document d'exigences produit (PRD).
 
-OUTPUT: ~/Cowork-Workspace/output/prd-draft.docx
+SORTIE : ~/Cowork-Workspace/output/prd-draft.docx
 
-SECTIONS:
-1. Market Opportunity Summary
-2. Target User Personas (from interview data)
-3. Competitive Landscape
-4. Feature Requirements (prioritized)
-5. Success Metrics
-6. Risks and Mitigations
-7. Open Questions
+SECTIONS :
+1. Résumé de l'opportunité de marché
+2. Personas utilisateurs cibles (à partir des données d'entretien)
+3. Paysage concurrentiel
+4. Exigences fonctionnelles (priorisées)
+5. Indicateurs de succès
+6. Risques et mesures d'atténuation
+7. Questions ouvertes
 
-CONSTRAINTS:
-- Link each requirement to supporting research
-- Use MoSCoW prioritization (Must/Should/Could/Won't)
-- Include counter-arguments where relevant
-- Note confidence level for each insight
+CONTRAINTES :
+- Lier chaque exigence à la recherche qui la soutient
+- Utiliser la priorisation MoSCoW (Must/Should/Could/Won't)
+- Inclure les contre-arguments quand pertinent
+- Indiquer le niveau de confiance pour chaque insight
 ```
 
 ---
@@ -452,24 +452,24 @@ CONSTRAINTS:
 ## Notes de Personnalisation
 
 **Profondeur de recherche :**
-- "Quick overview (15 minutes research)"
-- "Standard depth (30-60 minutes)"
-- "Comprehensive (thorough analysis)"
+- "Aperçu rapide (15 minutes de recherche)"
+- "Profondeur standard (30 à 60 minutes)"
+- "Complet (analyse approfondie)"
 
 **Préférences de sources :**
-- "Focus on official sources"
-- "Include industry publications"
-- "Prioritize recent sources (last 12 months)"
+- "Se concentrer sur les sources officielles"
+- "Inclure les publications sectorielles"
+- "Prioriser les sources récentes (12 derniers mois)"
 
 **Préférences de format :**
-- "Executive brief (1 page max)"
-- "Detailed report (no length limit)"
-- "Comparison matrix format"
+- "Résumé exécutif (1 page maximum)"
+- "Rapport détaillé (sans limite de longueur)"
+- "Format matrice de comparaison"
 
 **Contrôles qualité :**
-- "Include source URLs"
-- "Note information date/freshness"
-- "Flag uncertain information"
+- "Inclure les URLs des sources"
+- "Indiquer la date/fraîcheur de l'information"
+- "Signaler les informations incertaines"
 
 ---
 

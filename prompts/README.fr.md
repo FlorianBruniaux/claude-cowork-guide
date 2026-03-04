@@ -2,7 +2,7 @@
 
 🌐 **Langues** : [Français](README.fr.md) | [English](README.md)
 
-> **Prompts prêts à l'emploi organisés par catégorie**
+> **Prompts (instructions données à l'IA) prêts à l'emploi organisés par catégorie**
 
 ---
 
@@ -30,7 +30,7 @@ Sortie : [Destination et format]
 |----------|-------------|---------|
 | [Opérations sur fichiers](file-ops.fr.md) | Organisation, renommage, nettoyage | 15+ |
 | [Création de documents](document-creation.fr.md) | Rapports, synthèses, présentations | 15+ |
-| [Extraction de données](data-extraction.fr.md) | Images → données, parsing PDF | 15+ |
+| [Extraction de données](data-extraction.fr.md) | Images vers données, parsing PDF | 15+ |
 | [Recherche](research.fr.md) | Recherche web, synthèse | 10+ |
 
 ---
@@ -75,7 +75,7 @@ Enregistrer dans ~/Cowork-Workspace/output/recherche-[sujet].md
 
 ## Conseils pour de meilleurs prompts
 
-### Soyez spécifique sur le scope
+### Soyez spécifique sur le périmètre
 
 ```
 ❌ "Organiser mes fichiers"
