@@ -13,6 +13,7 @@ Thumbs.db
 
 # Claude-specific internal docs
 .claudedocs/
+claudedocs/
 
 # Temporary files
 *.tmp
