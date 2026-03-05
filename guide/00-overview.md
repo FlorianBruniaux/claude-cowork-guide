@@ -21,6 +21,23 @@
 | **Focus** | File manipulation, organization, document generation |
 | **Usage limits** | Resets every 5 hours; heavy tasks consume quota rapidly |
 
+
+### The Three Tabs: One App for the Whole Team
+
+The Claude Desktop app has three tabs, each designed for a different type of work:
+
+| Tab | For who | What it does |
+|-----|---------|--------------|
+| **Chat** | Everyone | Conversational Claude, no file access |
+| **Cowork** | Knowledge workers | Autonomous agent for files, docs, reports |
+| **Code** | Developers | Full Claude Code with graphical interface |
+
+All three tabs run under the same subscription (Pro, Max, Teams, or Enterprise). **Your developers use the Code tab; you use Cowork. Same app, same invoice.**
+
+**Collaboration pattern**: a developer uses the Code tab to build a feature and update the technical spec → you use Cowork to turn that spec into a client-ready presentation. You can share context between both via a shared `CLAUDE.md` file in a common folder.
+
+> **For developers on your team**: the Code tab is Claude Code with visual diff review, live app preview, GitHub PR monitoring, and parallel sessions — no terminal required. Full reference: [code.claude.com/docs/en/desktop](https://code.claude.com/docs/en/desktop)
+
 ### Relationship to Claude Code
 
 Cowork shares the same backend architecture as Claude Code:
