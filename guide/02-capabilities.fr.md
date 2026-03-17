@@ -78,7 +78,7 @@ Cowork supporte différents modèles Claude. Depuis le lancement de Sonnet 4.6 (
 | **Markdown** (.md) | ✅ Oui | Formatage complet |
 | **Word** (.docx) | ✅ Oui | En-têtes, tableaux, formatage |
 | **Excel** (.xlsx) | ✅ Oui | Formules, feuilles multiples, formatage |
-| **PowerPoint** (.pptx) | ✅ Oui | Diapositives, formatage de base |
+| **PowerPoint** (.pptx) | ✅ Oui | Diapositives, formatage de base — voir [workflow template réutilisable →](../workflows/presentation-slides.md#template-réutilisable-depuis-fichier-existant) |
 | **PDF** | ✅ Oui | Généré depuis le contenu |
 | **HTML** | ✅ Oui | HTML/CSS complet |
 | **CSV** | ✅ Oui | Export de données |
@@ -516,6 +516,8 @@ Au-dela de la simple generation de fichiers, Cowork peut desormais **modifier di
 - Edition de cellules et formules dans des fichiers `.xlsx` existants
 - Ajout de diapositives et modification de contenu dans des `.pptx` existants
 - Mise a jour de graphiques et tableaux dans des documents existants
+
+> **Cas d'usage concret** : Créez un template PPTX réutilisable à partir de votre présentation d'entreprise existante (charte graphique, structure maison), puis générez chaque nouvelle présentation en 3 étapes. Voir le [workflow template réutilisable](../workflows/presentation-slides.md#template-réutilisable-depuis-fichier-existant).
 
 ### Agent Teams (aperçu recherche)
 

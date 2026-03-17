@@ -542,6 +542,69 @@ Increased engagement but more preparation
 Save: ~/Cowork-Workspace/presentations/workshop-[client].pptx
 ```
 
+### Reusable template from existing file
+
+```
+You have a branded company presentation and want to use it as a base
+for all future presentations, preserving your visual identity.
+```
+
+**Step 1: Set up your working directory**
+
+Create a dedicated folder and drop in your reference presentation:
+
+```bash
+mkdir -p ~/Cowork-Workspace/presentations/wrk
+cp ~/Documents/my-company-presentation.pptx ~/Cowork-Workspace/presentations/wrk/
+```
+
+**Step 2: Generate the template via Cowork**
+
+In Cowork, with the `wrk/` folder accessible:
+
+```
+/pptx Analyze the presentation in ~/Cowork-Workspace/presentations/wrk/
+Generate a reusable PPTX template.
+
+What I need:
+- Preserve brand identity (colors, fonts, logo position)
+- Create blank slides with pre-structured content zones
+- Include: title slide, agenda slide, standard content slide, conclusion slide
+- Save to ~/Cowork-Workspace/presentations/wrk/company-template.pptx
+```
+
+Cowork will ask clarifying questions (business sections, slide types, layout style). Answer them — that's what produces an adapted template rather than a generic one.
+
+**Step 3: Generate the final presentation**
+
+Once the template exists, it serves all your future presentations. Drop your notes in the same folder:
+
+```bash
+cp ~/Desktop/client-notes.txt ~/Cowork-Workspace/presentations/wrk/
+```
+
+Then in Cowork:
+
+```
+/pptx Use the template ~/Cowork-Workspace/presentations/wrk/company-template.pptx
+and the notes in ~/Cowork-Workspace/presentations/wrk/client-notes.txt
+
+Generate a complete presentation for [Client name / topic].
+Target duration: [20/30] minutes.
+Save to ~/Cowork-Workspace/presentations/[client-name]-[date].pptx
+```
+
+**What this produces**: a branded presentation with your notes content, without rebuilding your visual identity each time.
+
+**Key points:**
+- The `company-template.pptx` file is your durable asset: created once, used for every presentation going forward
+- Possible variants based on your recurring needs: `technical-template.pptx`, `training-template.pptx`
+- Same logic applies to DOCX for reports and meeting summaries
+
+> **Go further**: Create a Cowork skill (`/skill-creator`) that encodes this workflow once and for all. See [Skills & Customization](../guide/02-capabilities.md#skills--additional-capabilities).
+
+Template save path: `~/Cowork-Workspace/presentations/wrk/company-template.pptx`
+
 ---
 
 ## Best Practices

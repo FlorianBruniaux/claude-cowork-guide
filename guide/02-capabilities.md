@@ -78,7 +78,7 @@ Cowork supports different Claude models. Since Sonnet 4.6 launched (February 17,
 | **Markdown** (.md) | ✅ Yes | Full formatting |
 | **Word** (.docx) | ✅ Yes | Headers, tables, formatting |
 | **Excel** (.xlsx) | ✅ Yes | Formulas, multiple sheets, formatting |
-| **PowerPoint** (.pptx) | ✅ Yes | Slides, basic formatting |
+| **PowerPoint** (.pptx) | ✅ Yes | Slides, basic formatting — see [reusable template workflow →](../workflows/presentation-slides.en.md#reusable-template-from-existing-file) |
 | **PDF** | ✅ Yes | Generated from content |
 | **HTML** | ✅ Yes | Full HTML/CSS |
 | **CSV** | ✅ Yes | Data export |
@@ -510,6 +510,8 @@ Browser automation capabilities have been enhanced for more reliable web researc
 ### Direct Excel and PowerPoint Integrations
 
 Beyond generating `.xlsx` and `.pptx` files from scratch, Cowork can now directly edit existing Excel and PowerPoint files — modifying content, adding sheets/slides, and updating formulas in place.
+
+> **Practical use case**: Build a reusable PPTX template from your existing company presentation (brand colors, house structure), then generate each new presentation from notes in 3 steps. See the [reusable template workflow](../workflows/presentation-slides.en.md#reusable-template-from-existing-file).
 
 ### Agent Teams (Research Preview)
 

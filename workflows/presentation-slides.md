@@ -543,6 +543,69 @@ Engagement accru mais préparation ++
 Sauvegarde: ~/Cowork-Workspace/presentations/workshop-[client].pptx
 ```
 
+### Template réutilisable depuis fichier existant
+
+```
+Vous avez une présentation aux couleurs de votre boîte et voulez
+l'utiliser comme base pour toutes vos futures présentations.
+```
+
+**Étape 1 : Préparer le répertoire de travail**
+
+Créez un dossier dédié et déposez-y votre présentation de référence :
+
+```bash
+mkdir -p ~/Cowork-Workspace/presentations/wrk
+cp ~/Documents/ma-presentation-entreprise.pptx ~/Cowork-Workspace/presentations/wrk/
+```
+
+**Étape 2 : Générer le template via Cowork**
+
+Dans Cowork, avec le dossier `wrk/` accessible :
+
+```
+/pptx Analyse la présentation dans ~/Cowork-Workspace/presentations/wrk/
+Génère un template PPTX réutilisable.
+
+Ce que j'attends :
+- Conserver la charte graphique (couleurs, polices, position logo)
+- Créer des slides vides avec zones de contenu pré-structurées
+- Inclure : slide titre, slide agenda, slide contenu standard, slide conclusion
+- Sauvegarder dans ~/Cowork-Workspace/presentations/wrk/template-entreprise.pptx
+```
+
+Cowork va poser des questions pour affiner (sections métier, nombre de slides types, style de mise en page). Répondez-y — c'est ce qui produit un template adapté plutôt qu'un template générique.
+
+**Étape 3 : Produire la présentation finale**
+
+Une fois le template créé, il sert pour toutes vos présentations suivantes. Déposez vos notes dans le même dossier :
+
+```bash
+cp ~/Desktop/mes-notes-client.txt ~/Cowork-Workspace/presentations/wrk/
+```
+
+Puis dans Cowork :
+
+```
+/pptx Utilise le template ~/Cowork-Workspace/presentations/wrk/template-entreprise.pptx
+et les notes dans ~/Cowork-Workspace/presentations/wrk/mes-notes-client.txt
+
+Génère une présentation complète pour [Nom client / sujet].
+Durée cible : [20/30] minutes.
+Sauvegarder dans ~/Cowork-Workspace/presentations/[nom-client]-[date].pptx
+```
+
+**Ce que ça produit** : une présentation aux couleurs de votre boîte, avec le contenu de vos notes, sans retravailler la charte à chaque fois.
+
+**Points clés :**
+- Le fichier `template-entreprise.pptx` est votre actif durable : créé une fois, utilisé pour toutes les présentations suivantes
+- Variantes possibles selon vos besoins : `template-technique.pptx`, `template-formation.pptx`
+- Même logique applicable aux DOCX pour vos rapports et comptes-rendus
+
+> **Aller plus loin** : Créez une compétence Cowork (`/skill-creator`) qui encode ce workflow une fois pour toutes. Voir [Compétences & Personnalisation](../guide/02-capabilities.fr.md#compétences-skills--capacités-supplémentaires).
+
+Sauvegarde template : `~/Cowork-Workspace/presentations/wrk/template-entreprise.pptx`
+
 ---
 
 ## Bonnes pratiques

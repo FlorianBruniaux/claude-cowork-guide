@@ -19,3 +19,6 @@ claudedocs/
 *.tmp
 *.bak
 *~
+
+# Vitals provenance data
+.vitals/
