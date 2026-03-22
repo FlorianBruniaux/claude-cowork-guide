@@ -2,13 +2,26 @@
 # Source: CHANGELOG.md + Anthropic product announcements
 # Purpose: Track Cowork documentation + product releases
 
-latest: "1.6.1"
-updated: "2026-03-17"
+latest: "1.7.0"
+updated: "2026-03-22"
 
 # ════════════════════════════════════════════════════════════════
 # RELEASES (newest first, condensed highlights only)
 # ════════════════════════════════════════════════════════════════
 releases:
+
+  # ─────────────────────────────────────────────────────────────
+  # 1.7.x Series (March 2026)
+  # ─────────────────────────────────────────────────────────────
+
+  - version: "1.7.0"
+    date: "2026-03-22"
+    highlights:
+      - "⭐ Claude Dispatch (17 mars, research preview Max → Pro) : contrôler Cowork depuis son smartphone — tâches envoyées du mobile, exécutées sur desktop, fichiers locaux, sandbox, approbation requise"
+      - "⭐ Projects dans Cowork : workspaces persistants par zone de travail (fichiers, contexte, instructions, mémoire) — import en 1 clic ou départ de zéro"
+      - "Workflow: PPTX reusable template — variation 'Reusable template from existing file' (3 étapes, prompts copy-paste)"
+      - "Changed: LLM Gateway pour add-ins Excel × PowerPoint (Amazon Bedrock, Google Cloud Vertex AI, Microsoft Foundry)"
+    breaking: []
 
   # ─────────────────────────────────────────────────────────────
   # 1.6.x Series (March 2026)

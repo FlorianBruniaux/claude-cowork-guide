@@ -7,9 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.7.0] - 2026-03-22
+
 ### Added
+- **Claude Dispatch** (17 mars 2026, research preview Max → Pro) : thread persistant entre le desktop et le mobile. L'utilisateur envoie une tâche depuis son smartphone ; Claude l'exécute sur le desktop avec les fichiers locaux et les plugins installés. Traitement en sandbox sur le device, fichiers restent locaux, approbation utilisateur requise avant toute action. Desktop doit rester ouvert et connecté. Documenter dans `guide/02-capabilities.md` (section Scheduled Tasks / Agent Teams) et `guide/01-getting-started.md`.
+- **Projects dans Cowork** (post 17 mars 2026) : workspaces persistants par zone de travail — fichiers, contexte, instructions et mémoire associés à chaque projet. La mémoire est active dans le projet, non partagée entre sessions standalone. Import d'un projet existant en 1 clic ou départ de zéro. Disponible via mise à jour de Claude Desktop. Documenter dans `guide/00-overview.md`, `guide/01-getting-started.md`, `guide/02-capabilities.md`, nouveau workflow `workflows/project-setup.md`.
 - **Workflow: PPTX reusable template** (`workflows/presentation-slides.md` + `.en.md`): new variation "Reusable template from existing file" — 3-step workflow (reference file → generate template → produce final presentation), copy-paste prompts with `/pptx` skill, link to `/skill-creator` for automation. Inspired by community feedback (Arnaud Gaches) on real Cowork usage with company PPTX files.
 - **Capabilities cross-reference** (`guide/02-capabilities.fr.md`): added pointer to PPTX template workflow in the "PowerPoint (.pptx)" matrix row and a contextual note in the "Excel & PowerPoint Integrations" section.
+
+### Changed
+- **LLM Gateway pour add-ins Excel × PowerPoint** (11 mars 2026) : les utilisateurs sur Amazon Bedrock, Google Cloud Vertex AI ou Microsoft Foundry peuvent désormais connecter les add-ins via LLM gateway. Complément non documenté dans v1.6.1. À ajouter dans `guide/02-capabilities.md` section "Excel & PowerPoint Integrations".
 
 ## [1.6.1] - 2026-03-17
 
