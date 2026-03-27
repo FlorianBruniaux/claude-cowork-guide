@@ -42,6 +42,8 @@ Before starting, ensure you have:
 |------|------|--------------|
 | **Pro** | $20/mo | Light use (~1-1.5h intensive before reset) |
 | **Max** | $100-200/mo | Heavy use (5x-20x Pro's limit) |
+| **Team** | Per seat | Full Cowork access, admin controls |
+| **Enterprise** | Custom pricing | Full Cowork access, SSO, admin controls |
 
 ### Don't Have Access?
 
@@ -402,6 +404,53 @@ Once Desktop Commander is installed, create a persistent memory file so Cowork r
 Without a memory file, you'd repeat preferences and context at the start of every session. With it, Cowork picks up where you left off, knowing your clients, your style, and your recurring work patterns.
 
 > **Note**: Desktop Commander is available via the Customize tab in Claude Desktop. The exact UI location may shift as Cowork updates during research preview. If you don't see it immediately, check Settings → Extensions.
+
+---
+
+## Step 9: Enable Computer Use (macOS, Optional)
+
+Computer Use lets Claude control your desktop directly — open apps, click, fill forms, navigate the browser — without any custom integration. Available on Pro and Max plans, macOS only.
+
+> **Note**: Computer Use is a research preview. Use it for supervised tasks where you can review each action.
+
+### 9.1 Enable in Claude Desktop
+
+1. Open **Claude Desktop**
+2. Go to **Settings → Features → Computer Use**
+3. Toggle it **on**
+4. Confirm the permission dialog
+
+### 9.2 Grant macOS System Permissions
+
+Claude needs two system permissions to control your screen:
+
+**Screen Recording** (required to see your screen):
+1. Open **System Settings → Privacy & Security → Screen Recording**
+2. Find **Claude Desktop** in the list
+3. Toggle it on (if it doesn't appear, click `+` and add it manually)
+
+**Accessibility** (required to click and type):
+1. Open **System Settings → Privacy & Security → Accessibility**
+2. Find **Claude Desktop** in the list
+3. Toggle it on
+
+### 9.3 (Optional) Pair Your Phone with Dispatch
+
+To send tasks to your desktop from your phone while you're away:
+
+1. Open **Claude for iOS or Android**
+2. In the Cowork thread, tap **Pair Desktop**
+3. Scan the **QR code** shown in your Claude Desktop app
+4. Your phone is now connected — send tasks remotely
+
+> **Requirements**: Mac must stay awake with Claude Desktop open. Claude uses the paired thread (Dispatch) to run tasks on your computer while you're away.
+
+### Security Notes for Computer Use
+
+- Claude requests **explicit permission per task** before accessing a new application
+- Anthropic recommends **not granting access to sensitive apps** (banking, health, legal)
+- Claude is trained to **refuse**: stock trading, saving sensitive credentials, scraping facial images
+- **Token cost is higher** than standard Cowork: every action cycle requires a screenshot
 
 ---
 

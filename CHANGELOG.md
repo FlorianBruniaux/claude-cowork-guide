@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.8.0] - 2026-03-27
+
+### Added
+- **Computer Use — research preview dans Cowork** (23 mars 2026, Pro et Max, macOS) : Claude peut désormais contrôler directement le bureau — ouvrir des applications, pointer/cliquer, remplir des formulaires, naviguer dans le navigateur — sans configuration préalable. S'intègre avec Dispatch pour exécuter des tâches desktop depuis le téléphone. Feature distincte de l'acquisition Vercept (v1.6.0) : c'est le lancement effectif pour les utilisateurs finaux. Documenté dans `guide/02-capabilities.md` section Computer Use + `guide/01-getting-started.md` Step 9.
+- **Applications interactives sur iOS et Android** (25 mars 2026) : l'app mobile se connecte à des applications interactives complètes — graphiques live, croquis, contenu partageable directement dans les conversations. Extension de la feature "visuels interactifs" déjà disponible sur desktop (v1.6.1). Documenté dans `guide/02-capabilities.md`.
+
+### Changed
+- **Dispatch — détails techniques et limitations** (23 mars 2026) : jumelage mobile/desktop via QR code depuis l'app mobile. Limitations documentées : exécution en thread unique (délais possibles sur tâches complexes), impossibilité d'ouvrir des applications Mac natives comme Photos. Documenté dans `guide/02-capabilities.md` et `guide/01-getting-started.md` Step 9.
+- **Cowork disponible sur Team et Enterprise** : la page officielle Anthropic confirme "Pro, Max, Team, Enterprise" — correction appliquée dans le tableau subscription tiers de `guide/01-getting-started.md`.
+- **VM isolée** : terminologie officielle Anthropic = "virtual machine (VM) environment". La doc utilisait "sandbox" sans préciser. Mis à jour dans `guide/03-security.md` section "What Makes Cowork Different".
+
+### Fixed
+- **Audit Logs / Compliance API — limitation critique** (source officielle Anthropic help center) : les activités Cowork ne sont pas capturées par les Audit Logs ni la Compliance API. Avertissement explicite ajouté dans `guide/03-security.md` section "Enterprise Considerations" + nouvelle section "Secteurs réglementés" (finance, santé, légal, secteur public).
+- **Computer Use — procédure d'activation macOS** : étapes setup documentées (Settings → Features → Computer Use, permissions Screen Recording + Accessibility dans System Settings, pairing QR code Dispatch). Ajouté dans `guide/01-getting-started.md` Step 9.
+
 ## [1.7.0] - 2026-03-22
 
 ### Added

@@ -2,13 +2,28 @@
 # Source: CHANGELOG.md + Anthropic product announcements
 # Purpose: Track Cowork documentation + product releases
 
-latest: "1.7.0"
-updated: "2026-03-22"
+latest: "1.8.0"
+updated: "2026-03-27"
 
 # ════════════════════════════════════════════════════════════════
 # RELEASES (newest first, condensed highlights only)
 # ════════════════════════════════════════════════════════════════
 releases:
+
+  # ─────────────────────────────────────────────────────────────
+  # 1.8.x Series (March 2026)
+  # ─────────────────────────────────────────────────────────────
+
+  - version: "1.8.0"
+    date: "2026-03-27"
+    highlights:
+      - "⭐ Computer Use — research preview dans Cowork (23 mars, Pro et Max, macOS) : Claude contrôle directement le bureau (ouvrir apps, cliquer, remplir formulaires, naviguer). Setup en 4 étapes documenté dans Getting Started Step 9."
+      - "⭐ Applications interactives sur iOS et Android (25 mars) : graphiques live, croquis, contenu partageable dans l'app mobile — extension de la feature desktop (v1.6.1)"
+      - "Changed: Dispatch — détails techniques (QR code pairing, thread unique, limitation apps natives Mac)"
+      - "Changed: Cowork disponible sur Team et Enterprise (correction availability matrix)"
+      - "Fixed: Audit Logs / Compliance API ne capturent pas l'activité Cowork — avertissement secteurs réglementés ajouté dans Security guide"
+      - "Fixed: VM isolée — terminologie officielle Anthropic remplace 'sandbox' dans Security guide"
+    breaking: []
 
   # ─────────────────────────────────────────────────────────────
   # 1.7.x Series (March 2026)

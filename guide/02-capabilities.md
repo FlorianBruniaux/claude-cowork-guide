@@ -734,6 +734,80 @@ Example: Set web search to **Ask** so Cowork confirms before going online. Set l
 
 ---
 
+## New Capabilities (March 2026)
+
+### Dispatch — Control Cowork from Your Phone
+
+Dispatch lets you manage Cowork tasks remotely from your iOS or Android app while your desktop runs the work.
+
+**How it works**:
+1. Open Claude for iOS/Android
+2. A persistent Cowork thread is available in the mobile app
+3. Pair your phone to your desktop by scanning a QR code in Claude Desktop settings
+4. Send tasks, check progress, or add instructions from anywhere — Claude works on your Mac while you're away
+
+**Requirements**: Mac must stay awake, Claude Desktop must remain open.
+
+**Known limitations (research preview)**:
+- Tasks run in a single thread — complex tasks may queue and delay by a minute or two
+- Claude cannot open native Mac apps like Photos through Dispatch
+- Task completion notifications require manual checking
+
+### Interactive Visualizations
+
+Claude can now generate fully interactive charts, diagrams, and visual assets directly inline in responses — no export or third-party tool needed.
+
+| Surface | Available | Examples |
+|---------|-----------|---------|
+| **Claude Desktop** | ✅ Yes | Interactive charts, sliders, decision trees, weather widgets, recipe cards |
+| **Claude for iOS/Android** | ✅ Yes (March 25, 2026) | Live charts, sketches, shareable interactive assets |
+
+Visualizations are rendered in HTML/CSS/JS (Chart.js and similar). Users can interact with sliders, inputs, and clickable elements directly in the chat.
+
+> **Practical use cases for SMBs**: Price calculators with sliders, project timeline visualizers, multi-choice decision trees for client onboarding, interactive quote summaries.
+
+### Computer Use — Direct Desktop Control
+
+Computer Use lets Claude control your Mac directly: open applications, navigate the screen, click, type, and fill forms — without custom API integrations or setup.
+
+**How to enable**: See [Getting Started Step 9](01-getting-started.md#step-9-enable-computer-use-macos-optional).
+
+**Available on**: Pro and Max plans, macOS (March 23, 2026, research preview).
+
+#### What Claude Can Do
+
+| Action | Example |
+|--------|---------|
+| Open applications | Launch Excel, Word, Finder, browser |
+| Navigate and click | Click buttons, menus, checkboxes |
+| Fill forms | Enter data in any app or web form |
+| Transfer data | Copy content between applications without an API |
+| Browse the web | Navigate sites that lack integrations |
+| Work with legacy software | Any GUI app, even without API access |
+
+#### How Claude Decides When to Use It
+
+Claude prioritizes existing integrations (Slack, Google Calendar, etc.) before resorting to direct desktop control. Computer Use is the fallback when no connector or plugin is available for the task.
+
+#### Security Behavior
+
+- **Explicit permission per task**: Claude requests access before interacting with each new application
+- **Trained refusals**: Claude will not perform stock trading, save sensitive credentials, or scrape facial images
+- **Recommended**: Do not grant access to banking, medical, or legal applications
+- **Token cost**: Higher than standard Cowork — each action cycle captures a screenshot
+
+#### Practical SMB Use Cases
+
+- Fill in supplier portals that have no API
+- Update legacy ERP or accounting software
+- Cross-copy data between apps that don't connect
+- Automate repetitive GUI operations (form entry, status updates)
+- Test user flows on your own products
+
+> ⚠️ **Research preview caveats**: Computer Use can make mistakes navigating unfamiliar interfaces. Always supervise the first runs of a new task. Stop execution immediately if Claude takes an unexpected action.
+
+---
+
 ## What Cowork CANNOT Do
 
 ### Code Execution

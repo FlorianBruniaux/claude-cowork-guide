@@ -23,6 +23,8 @@ Unlike regular Claude conversations, Cowork has **autonomous file access**:
 
 This expanded capability requires expanded caution.
 
+> **Technical note**: Cowork executes tasks inside an **isolated virtual machine (VM)** on your device. Files remain local and are not uploaded to Anthropic servers. The VM provides isolation between Cowork's execution environment and your system, but Claude can still make real changes to files in folders you have granted access to. "Isolated" means process-level separation, not a guarantee against unintended file operations.
+
 ### Anthropic's Security Posture
 
 As of January 2026:
@@ -426,11 +428,26 @@ Revenue increased 15% year over year...
 
 | Missing Feature | Impact |
 |-----------------|--------|
-| Audit trail | Cannot track actions |
+| **Audit Logs** | Cowork activity is NOT captured by Audit Logs or the Compliance API (confirmed by Anthropic) |
 | Access controls | Cannot limit by role |
 | SSO integration | Cannot use corp identity |
 | DLP integration | Cannot prevent data leakage |
 | Compliance certs | Cannot meet regulatory requirements |
+
+> ⚠️ **Official Anthropic limitation**: "Audit Logs and the Compliance API do not capture Cowork activity." Source: Anthropic Help Center, March 2026.
+
+### Regulated Sectors: Do Not Use Cowork for Sensitive Workflows
+
+If your business operates in a regulated sector, Cowork is currently unsuitable for workflows involving sensitive data:
+
+| Sector | Why Cowork Is Problematic |
+|--------|--------------------------|
+| **Finance** (banking, accounting, investment) | No audit trail, no Compliance API capture |
+| **Healthcare** (clinics, pharmacies, medical) | No HIPAA-equivalent guarantees, no DLP |
+| **Legal** (law firms, notaries, compliance) | Actions untraceable, no chain-of-custody |
+| **Public sector** (administration, municipalities) | No certified security documentation |
+
+**What you can use instead**: For regulated document processing, use Claude in Chat mode (no autonomous file access) with manual copy-paste, or wait for Enterprise-tier Cowork with audit controls.
 
 ### When Enterprise Might Be Ready
 
@@ -438,7 +455,8 @@ Watch for:
 - Official security documentation
 - SOC2 Type II certification
 - Enterprise tier with admin controls
-- Audit logging feature
+- Audit Logs covering Cowork activity
+- Compliance API integration for Cowork
 - Integration with enterprise identity
 
 ---
