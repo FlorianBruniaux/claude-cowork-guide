@@ -2,8 +2,8 @@
 # Source: CHANGELOG.md + Anthropic product announcements
 # Purpose: Track Cowork documentation + product releases
 
-latest: "1.8.0"
-updated: "2026-03-27"
+latest: "1.8.1"
+updated: "2026-04-01"
 
 # ════════════════════════════════════════════════════════════════
 # RELEASES (newest first, condensed highlights only)
@@ -11,8 +11,17 @@ updated: "2026-03-27"
 releases:
 
   # ─────────────────────────────────────────────────────────────
-  # 1.8.x Series (March 2026)
+  # 1.8.x Series (March–April 2026)
   # ─────────────────────────────────────────────────────────────
+
+  - version: "1.8.1"
+    date: "2026-04-01"
+    highlights:
+      - "Computer Use — hiérarchie d'accès en 3 niveaux : connectors → Chrome → contrôle écran (tableau + implications performance)"
+      - "Computer Use — warnings officiels Anthropic documentés : interdiction santé, finance, données personnelles. Section dédiée dans Security Guide avec tableau risques par catégorie d'app"
+      - "Computer Use opère hors VM : précision critique dans Security Guide (contrôle bureau réel, pas VM isolée)"
+      - "FAQ : nouvelle Q&A Dispatch vs Channels — clarifie la confusion Telegram/Discord (Channels = Claude Code CLI, pas Cowork)"
+    breaking: []
 
   - version: "1.8.0"
     date: "2026-03-27"

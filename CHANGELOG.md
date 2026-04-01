@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.8.1] - 2026-04-01
+
 ### Changed
 - **Computer Use — hiérarchie d'accès en 3 niveaux** : documentation de la priorité connectors → Chrome → contrôle écran dans `guide/02-capabilities.md`. Ajoute un tableau explicite et une note sur les implications de performance (le contrôle écran est plus lent car il capte un screenshot à chaque action).
 - **Computer Use — warnings officiels Anthropic** : renforcement du langage de sécurité dans `guide/02-capabilities.md` et `guide/03-security.md` avec la guideline officielle ("ne pas utiliser Computer Use sur des apps avec accès à des données de santé, financières, ou personnelles"). Ajout d'une section dédiée dans le Security Guide avec tableau de risques par catégorie d'app.
