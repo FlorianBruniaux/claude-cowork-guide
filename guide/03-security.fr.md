@@ -256,7 +256,29 @@ Vous lisez le devis. Si quelque chose ne va pas ("Je vais aussi refaire toute la
 3. Supprimez le contenu de l'espace de travail après
 4. Demandez-vous si Cowork est approprié
 
-### 5. Gestion des permissions navigateur (Élevé)
+### 5. Computer Use : couche de sécurité supplémentaire (Élevé)
+
+Computer Use fonctionne **en dehors de la VM isolée** — il contrôle directement votre bureau réel. C'est la fonctionnalité Cowork la plus risquée.
+
+**Recommandation officielle Anthropic** : ne pas utiliser Computer Use avec des applications qui accèdent à des données de santé, des comptes financiers ou des informations personnelles.
+
+| Catégorie d'application | Risque | Recommandation |
+|---|---|---|
+| Banque, investissement | 🔴 Critique | Ne jamais accorder l'accès Computer Use |
+| Dossiers médicaux/santé | 🔴 Critique | Ne jamais accorder l'accès Computer Use |
+| Documents juridiques, notaire | 🔴 Critique | Ne jamais accorder l'accès Computer Use |
+| RH, paie | 🟠 Élevé | À éviter — données personnelles sensibles |
+| ERP/logiciels comptables anciens | 🟡 Moyen | Possible pour opérations non-sensibles, supervisez |
+| Navigateurs web (sans données sensibles) | 🟡 Moyen | Acceptable avec examen du plan |
+| Applications bureautiques standard | 🟢 Faible | Cas d'usage acceptable |
+
+**Précautions spécifiques à Computer Use** :
+- Supervisez toujours les premières utilisations sur une nouvelle application
+- Utilisez la touche Échap pour interrompre immédiatement si une action inattendue se produit
+- Définissez les permissions par application sur **Demander** (pas Autoriser) au début
+- Ne laissez pas les sessions Computer Use sans surveillance pour des opérations à fort enjeu
+
+### 6. Gestion des permissions navigateur (Élevé)
 
 L'intégration Chrome crée une surface d'attaque supplémentaire.
 
@@ -275,7 +297,7 @@ L'intégration Chrome crée une surface d'attaque supplémentaire.
 - Comprendre ce que Cowork va faire
 - Ne pas autoriser les soumissions de formulaires sans examen
 
-### 6. Toujours faire une sauvegarde avant de modifier vos fichiers (ÉLEVÉ)
+### 7. Toujours faire une sauvegarde avant de modifier vos fichiers (ÉLEVÉ)
 
 **L'analogie du brouillon**
 
@@ -308,7 +330,7 @@ Si vous utilisez Time Machine (la sauvegarde automatique de macOS), vérifiez qu
 - "Supprime les doublons" → supprime des fichiers
 - "Nettoie le dossier" → peut supprimer des fichiers
 
-### 7. Hygiène de session (Moyen)
+### 8. Hygiène de session (Moyen)
 
 **Début de session** :
 - Nettoyer l'espace de travail du contenu sensible précédent

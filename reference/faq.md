@@ -117,6 +117,19 @@ See [detailed comparison](comparison.md#common-confusion).
 ### Q: What are Cowork Plugins?
 **A:** Cowork Plugins are official third-party integrations announced January 30, 2026. There are currently 11 plugins: Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, and Slack. They allow Cowork to interact directly with these services without browser automation.
 
+### Q: What is the difference between Dispatch and Channels?
+
+**A:** These are two different features that are often confused in tech press:
+
+| Feature | Product | What it does | Channels |
+|---|---|---|---|
+| **Dispatch** | Cowork (desktop app) | Send tasks from your phone to your desktop Cowork session via QR code pairing | iOS/Android app only |
+| **Channels** | Claude Code (CLI) | Connect a running Claude Code terminal session to Telegram or Discord | Telegram, Discord |
+
+**Practical rule**: If you're using Claude Desktop (Cowork), you use **Dispatch** — pair your phone via QR code in Settings, then send tasks from the mobile app while your Mac runs them. Telegram and Discord integration belongs to **Claude Code Channels**, a separate developer tool.
+
+If you're seeing articles about "Claude on Telegram" or "Claude on Discord" — that's Claude Code Channels, not Cowork.
+
 ### Q: What is Opus 4.6's context window?
 **A:** Opus 4.6 (the model powering Cowork) supports up to 1M tokens in beta, a major upgrade from the previous ~200K effective limit. Output tokens have also increased to 128K (from 64K). Opus 4.6 also features adaptive thinking with 4 effort levels for better efficiency.
 

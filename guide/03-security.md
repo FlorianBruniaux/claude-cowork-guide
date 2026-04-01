@@ -214,7 +214,29 @@ What to look for:
 3. Delete workspace contents after
 4. Consider if Cowork is appropriate at all
 
-### 5. Browser Permission Management (High)
+### 5. Computer Use: Additional Security Layer (High)
+
+Computer Use operates **outside the VM sandbox** — it controls your actual desktop directly. This makes it the highest-risk Cowork feature.
+
+**Official Anthropic guidance**: Do not use Computer Use with applications that access healthcare data, financial accounts, or personal records.
+
+| App Category | Risk | Guidance |
+|---|---|---|
+| Banking, investment apps | 🔴 Critical | Never grant Computer Use access |
+| Medical/health records | 🔴 Critical | Never grant Computer Use access |
+| Legal documents, notary apps | 🔴 Critical | Never grant Computer Use access |
+| HR systems, payroll | 🟠 High | Avoid — sensitive personal data |
+| Legacy ERP/accounting | 🟡 Medium | OK for non-sensitive ops, supervise closely |
+| Web browsers (no sensitive data) | 🟡 Medium | Acceptable with plan review |
+| Low-stakes desktop apps | 🟢 Low | Acceptable use case |
+
+**Additional precautions specific to Computer Use**:
+- Always supervise the first runs on any new application — Computer Use can misinterpret unfamiliar UIs
+- Use the Escape key to abort immediately if Claude takes an unexpected action
+- Set per-app permissions to **Ask** (not Allow) until you trust the behavior on a given app
+- Do not leave Computer Use sessions unattended for high-stakes operations
+
+### 6. Browser Permission Management (High)
 
 Chrome integration creates additional attack surface.
 
@@ -233,7 +255,7 @@ Chrome integration creates additional attack surface.
 - Understand what Cowork will do
 - Don't allow form submissions without review
 
-### 6. Backup Before Destructive Operations (High)
+### 7. Backup Before Destructive Operations (High)
 
 Before any task that moves, renames, or deletes files:
 
@@ -251,7 +273,7 @@ cp -R ~/Cowork-Workspace/ ~/Cowork-Backup-$(date +%Y%m%d)/
 - "Delete duplicates" (deletes)
 - "Clean up folder" (may delete)
 
-### 7. Session Hygiene (Medium)
+### 8. Session Hygiene (Medium)
 
 **Start of Session**:
 - Clear workspace of previous sensitive content

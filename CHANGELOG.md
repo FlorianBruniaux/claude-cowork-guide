@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- **Computer Use — hiérarchie d'accès en 3 niveaux** : documentation de la priorité connectors → Chrome → contrôle écran dans `guide/02-capabilities.md`. Ajoute un tableau explicite et une note sur les implications de performance (le contrôle écran est plus lent car il capte un screenshot à chaque action).
+- **Computer Use — warnings officiels Anthropic** : renforcement du langage de sécurité dans `guide/02-capabilities.md` et `guide/03-security.md` avec la guideline officielle ("ne pas utiliser Computer Use sur des apps avec accès à des données de santé, financières, ou personnelles"). Ajout d'une section dédiée dans le Security Guide avec tableau de risques par catégorie d'app.
+- **Computer Use opère hors VM** : précision documentée dans `guide/03-security.md` — Computer Use contrôle le bureau réel, pas l'environnement VM isolé des opérations fichiers standard.
+- **FAQ : Dispatch vs Channels** (clarification) : nouvelle Q&A dans `reference/faq.md` distinguant Dispatch (Cowork, QR code iOS/Android) de Channels (Claude Code CLI, Telegram/Discord). Confusion fréquente dans la presse tech.
+
 ## [1.8.0] - 2026-03-27
 
 ### Added

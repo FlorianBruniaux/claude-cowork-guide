@@ -787,14 +787,25 @@ Computer Use lets Claude control your Mac directly: open applications, navigate 
 
 #### How Claude Decides When to Use It
 
-Claude prioritizes existing integrations (Slack, Google Calendar, etc.) before resorting to direct desktop control. Computer Use is the fallback when no connector or plugin is available for the task.
+Claude follows a 3-level access hierarchy before resorting to screen control:
+
+| Priority | Method | When Used |
+|----------|--------|-----------|
+| **1 — Connectors/Plugins** | Direct API integration (Slack, Google Calendar, etc.) | Preferred — faster, more reliable |
+| **2 — Chrome** | Browser automation via Chrome integration | When no connector exists but the service has a web interface |
+| **3 — Screen control** | Mouse, keyboard, screenshot loop | Last resort — when neither connector nor Chrome can complete the task |
+
+This means Computer Use activates only when the two faster methods aren't available. A task involving a legacy desktop app with no web interface or API will trigger screen control directly. A task involving a web-based tool without a connector will go through Chrome first.
+
+> **Practical implication**: Computer Use is slower than connector-based integrations because each action requires a screenshot cycle. If your workflow is time-sensitive, check whether a connector or Chrome automation can handle the task first.
 
 #### Security Behavior
 
 - **Explicit permission per task**: Claude requests access before interacting with each new application
 - **Trained refusals**: Claude will not perform stock trading, save sensitive credentials, or scrape facial images
-- **Recommended**: Do not grant access to banking, medical, or legal applications
 - **Token cost**: Higher than standard Cowork — each action cycle captures a screenshot
+
+> ⚠️ **Official Anthropic guidance**: Do not use Computer Use with applications that have access to healthcare data, financial accounts, or personal records. Anthropic explicitly acknowledges Computer Use is "still early" and recommends against granting access to sensitive systems until the feature matures. Start with low-stakes, reversible tasks on apps that don't hold critical data.
 
 #### Practical SMB Use Cases
 
