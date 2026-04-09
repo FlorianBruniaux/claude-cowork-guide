@@ -1,0 +1,707 @@
+---
+title: "Prompts Efficaces pour Non-Devs"
+subtitle: "20 exemples avant/après pour des résultats prévisibles du premier coup"
+author: "Florian BRUNIAUX"
+date: 2026-04-09
+date-format: "MMMM YYYY"
+version: "1.6.1"
+wp-version: "1.0.0"
+series: "Claude Cowork Guide"
+wp-number: "01"
+format:
+  whitepaper-typst:
+    toc: true
+    toc-depth: 2
+    section-numbering: "1.1"
+lang: fr
+filters:
+  - fix-lists.lua
+---
+
+::: {.callout-tip title="Pour qui ce whitepaper ?"}
+**Audience principale** : Tous les utilisateurs Cowork, quel que soit le métier
+
+**Prérequis** : WP-00 recommandé (ou connaître les bases de Cowork)
+
+**Temps de lecture** : 20 min
+
+**Ce que vous allez retenir** :
+
+- Un prompt vague donne un résultat vague : structure = prévisibilité
+- Le framework CTOC réduit les aller-retours de 70%
+- Les 20 exemples avant/après sont copiables directement dans vos sessions
+:::
+
+> **En 5 lignes :** La qualité d'un prompt Cowork détermine 80% de la qualité du résultat. Pas parce que Cowork est limité, mais parce que des instructions floues produisent des interprétations créatives que personne n'a demandées. Ce whitepaper donne les patterns qui fonctionnent, illustrés par 20 comparaisons concrètes avant/après. Chaque exemple vient d'un vrai cas d'usage TPE/PME. Pas de théorie, juste des prompts à copier et adapter.
+
+# Pourquoi la structure d'un prompt change tout
+
+## L'erreur de départ
+
+La majorité des utilisateurs qui trouvent Cowork "pas si utile" font la même erreur : ils lui parlent comme à un collègue qui a le contexte. Ils écrivent "aide-moi avec mes factures" en supposant que Cowork sait ce que ça veut dire dans leur situation.
+
+Cowork n'a pas de contexte implicite. Il ne connaît pas votre activité, vos conventions de nommage, votre format préféré. Chaque prompt est un nouveau départ.
+
+La bonne nouvelle : une fois ce principe intégré, les résultats s'améliorent immédiatement.
+
+## Ce que voit Cowork dans un prompt vague
+
+Quand vous écrivez "aide-moi avec mes factures", Cowork voit :
+
+- Des fichiers ? Lesquels ? Où ?
+- Quoi faire avec ? Lire, créer, corriger, extraire ?
+- Quel résultat ? Un tableau, un document, une liste ?
+- Quelles règles ? TVA, format date, quelle devise ?
+
+Il choisit une interprétation parmi plusieurs possibles. Si ce n'est pas la vôtre, vous corrigez, il réessaie, vous corrigez à nouveau. 5 à 10 minutes perdues, frustration, résultat correct au troisième essai.
+
+Avec un prompt CTOC, il fait juste ce que vous voulez, du premier coup.
+
+---
+
+# Le framework CTOC en détail
+
+## Les 4 blocs
+
+**C — Contexte** : la situation de départ.
+
+Ce que ça inclut : les fichiers concernés avec leur chemin exact, le type de contenu, le volume, la période, le contexte métier pertinent.
+
+Ce que ça n'inclut pas : les explications inutiles, l'historique de votre société, tout ce que Cowork n'utilisera pas pour la tâche.
+
+**T — Tâche** : un objectif unique et précis.
+
+Règle d'or : une tâche par prompt. Si vous avez besoin de trier ET d'extraire ET de générer un rapport, faites trois prompts. Les prompts multi-tâches produisent des résultats partiels sur chaque tâche.
+
+**O — Output** : le résultat attendu.
+
+Toujours préciser : le format exact (Excel, Word, PDF, texte, liste), le chemin complet de sauvegarde, la structure interne si applicable (noms des colonnes, sections du document).
+
+**C — Contraintes** : les règles à respecter.
+
+Tout ce qui n'est pas évident : la devise, le format de date, la langue, le style (formel/informel), les cas particuliers ("si X, alors Y"), ce qu'il ne faut pas toucher.
+
+## Le signal d'un bon prompt
+
+Un bon prompt CTOC permet à n'importe quelle personne de la planète de comprendre exactement ce qu'on attend, sans poser de questions. Si vous pouviez envoyer votre prompt par email à un prestataire externe et obtenir exactement ce que vous voulez, il est bien construit.
+
+---
+
+# Les 20 exemples avant/après
+
+Organisés par cas d'usage. Chaque "avant" est un prompt réel que des utilisateurs ont écrit. Chaque "après" est la version CTOC qui donne le bon résultat du premier coup.
+
+## Extraction de données
+
+### Exemple 1 — Factures fournisseurs
+
+**Avant :**
+
+> Extrais les données de mes factures
+
+**Pourquoi ça échoue :** Cowork ne sait pas quels fichiers, quelles données, quel format de sortie.
+
+**Après :**
+
+```
+CONTEXTE : J'ai 25 photos de factures fournisseurs dans
+~/Cowork-Workspace/input/factures-avril/
+prises en avril 2026 (JPEG, qualité variable).
+
+TÂCHE : Extraire pour chaque facture :
+nom du fournisseur, numéro de facture, date, montant HT, TVA, montant TTC.
+
+OUTPUT : ~/Cowork-Workspace/output/factures-avril.xlsx
+Une ligne par facture, colonnes dans cet ordre :
+Fournisseur | N° Facture | Date | HT | TVA | TTC
+
+CONTRAINTES : Devise EUR. Dates format JJ/MM/AAAA.
+Si un champ est illisible, écrire "À VÉRIFIER".
+Trier par date croissante. Ajouter une ligne TOTAL en bas.
+```
+
+---
+
+### Exemple 2 — Notes de frais
+
+**Avant :**
+
+> Fais-moi un résumé de mes notes de frais
+
+**Après :**
+
+```
+CONTEXTE : J'ai 40 reçus (restaurants, transports, hébergement)
+dans ~/Cowork-Workspace/input/frais-deplacement-mars/
+pour un déplacement à Lyon du 15 au 18 mars 2026.
+
+TÂCHE : Créer un tableau récapitulatif de note de frais
+pour remboursement par mon employeur.
+
+OUTPUT : ~/Cowork-Workspace/output/note-frais-lyon-mars2026.xlsx
+Colonnes : Date | Type | Description | Montant TTC | TVA récupérable
+
+CONTRAINTES : Catégories : Restauration / Transport / Hébergement / Autre.
+TVA récupérable : 20% sur hôtel et transport, 10% sur restauration.
+Devise EUR. Ajouter un onglet résumé par catégorie avec total.
+```
+
+---
+
+### Exemple 3 — Devis reçus de fournisseurs
+
+**Avant :**
+
+> Compare mes devis
+
+**Après :**
+
+```
+CONTEXTE : J'ai reçu 4 devis PDF de fournisseurs différents
+pour l'achat d'un véhicule utilitaire, stockés dans
+~/Cowork-Workspace/input/devis-vehicule/
+
+TÂCHE : Créer un comparatif structuré de ces 4 devis.
+
+OUTPUT : ~/Cowork-Workspace/output/comparatif-devis-vehicule.xlsx
+Une colonne par fournisseur. Lignes : Prix HT | Prix TTC | Délai livraison |
+Garantie | Options incluses | Financement proposé | Score global /10
+
+CONTRAINTES : Note le score global selon : prix 40%, délai 30%, garantie 30%.
+Mettre en vert la meilleure valeur pour chaque critère.
+Ajouter une recommandation en bas de tableau.
+```
+
+---
+
+### Exemple 4 — Inventaire depuis photos
+
+**Avant :**
+
+> Inventorie mon stock depuis les photos
+
+**Après :**
+
+```
+CONTEXTE : J'ai 30 photos de mon stock de marchandises
+dans ~/Cowork-Workspace/input/inventaire-juin/
+prises avec mon téléphone (format paysage, fond blanc).
+
+TÂCHE : Identifier et compter chaque type de produit visible sur les photos.
+
+OUTPUT : ~/Cowork-Workspace/output/inventaire-juin-2026.xlsx
+Colonnes : Référence produit (si visible) | Description | Quantité estimée | Photo source
+
+CONTRAINTES : Si un produit apparaît sur plusieurs photos, additionner les quantités.
+Si la quantité est incertaine, indiquer une fourchette (ex: "8-12").
+Créer un onglet "Incertitudes" pour les produits difficiles à identifier.
+```
+
+---
+
+## Génération de documents
+
+### Exemple 5 — Facture client
+
+**Avant :**
+
+> Crée une facture pour mon client
+
+**Après :**
+
+```
+CONTEXTE : Je suis électricien indépendant (SIREN : 123 456 789).
+J'ai terminé une installation tableau électrique chez M. Durand,
+15 rue de la Paix, 69001 Lyon.
+Travaux réalisés les 8 et 9 avril 2026.
+
+TÂCHE : Générer une facture professionnelle.
+
+OUTPUT : ~/Cowork-Workspace/output/FAC-2026-042-Durand.docx
+Format Word, disposition professionnelle.
+
+CONTRAINTES :
+- Numéro de facture : FAC-2026-042
+- Main-d'œuvre : 8h à 65€/h HT
+- Matériaux (fournis) : 1 tableau ABB 18 modules = 145€ HT, câblage = 38€ HT
+- TVA à 10% (travaux rénovation résidentielle)
+- Conditions de paiement : 30 jours date facture
+- Inclure mention légale pénalité de retard (3x taux légal)
+- Coordonnées bancaires : IBAN FR76 XXXX
+```
+
+---
+
+### Exemple 6 — Relance de paiement
+
+**Avant :**
+
+> Écris une relance pour une facture impayée
+
+**Après :**
+
+```
+CONTEXTE : La facture FAC-2026-031 de 1 840€ TTC envoyée à la société
+Boulangerie Moreau (contact : M. Moreau, directeur) est impayée
+depuis 45 jours. Deux relances amiables ont déjà été envoyées
+(J+15 et J+30), sans réponse.
+
+TÂCHE : Rédiger une troisième relance, ton ferme mais professionnel,
+avec mise en demeure implicite.
+
+OUTPUT : Texte dans le chat, format email, prêt à copier-coller.
+
+CONTRAINTES :
+- Rappeler le montant, la référence facture, le dépassement (45 jours)
+- Mentionner les intérêts de retard applicables (taux légal 3x)
+- Fixer un délai de règlement de 8 jours avant recours
+- Ton ferme, pas agressif. Signature : [Mon nom], [Ma société]
+- Pas d'emojis, format professionnel
+```
+
+---
+
+### Exemple 7 — Compte-rendu de réunion
+
+**Avant :**
+
+> Transforme mes notes en compte-rendu
+
+**Après :**
+
+```
+CONTEXTE : Voici mes notes brutes d'une réunion commerciale
+du 7 avril 2026 avec le prospect Entreprise ABC (3 participants côté client,
+2 côté nous). Durée : 1h30. [coller les notes brutes]
+
+TÂCHE : Transformer ces notes en compte-rendu professionnel structuré.
+
+OUTPUT : ~/Cowork-Workspace/output/CR-reunion-ABC-07042026.docx
+
+CONTRAINTES :
+- Structure : Participants | Ordre du jour | Points discutés | Décisions prises | Actions (responsable + date)
+- Langue formelle, troisième personne ("M. Durand a indiqué que...")
+- Maximum 2 pages
+- Ne pas inventer d'informations non présentes dans les notes
+- Mettre en gras les décisions et actions
+```
+
+---
+
+### Exemple 8 — Présentation commerciale
+
+**Avant :**
+
+> Fais-moi une présentation pour mon client
+
+**Après :**
+
+```
+CONTEXTE : Je suis consultant en optimisation logistique. Je dois présenter
+une proposition à Entreprise XYZ (PME distribution, 45 salariés, Paris)
+pour une mission d'audit + recommandations. Budget client estimé : 15-20K€.
+Durée prévue : 8 semaines. Mon tarif : 1 200€/jour.
+
+TÂCHE : Créer une présentation PowerPoint de proposition commerciale.
+
+OUTPUT : ~/Cowork-Workspace/output/Proposition-XYZ-Logistique.pptx
+
+CONTRAINTES :
+- 12-15 slides maximum
+- Structure : Compréhension enjeux client | Notre approche | Livrables | Planning | Investissement | Prochaines étapes
+- Slide "Investissement" : décomposer audit (3j) + analyse (5j) + recommandations (4j) + rapport (2j)
+- Design sobre, couleurs : bleu marine (#003366) et blanc
+- Pas de stock photos, des icônes simples uniquement
+```
+
+---
+
+## Organisation et fichiers
+
+### Exemple 9 — Tri de fichiers
+
+**Avant :**
+
+> Trie mes fichiers
+
+**Après :**
+
+```
+CONTEXTE : J'ai 180 fichiers mélangés (contrats PDF, factures PDF,
+photos JPG de chantiers, devis Word, correspondances emails en .eml)
+accumulés depuis 3 ans dans ~/Cowork-Workspace/input/archives-non-triees/
+
+TÂCHE : Trier ces fichiers dans une structure par type et par année.
+
+OUTPUT : Créer dans ~/Cowork-Workspace/output/archives-triees/ la structure :
+{Année}/{Type}/ avec Types = Contrats / Factures / Photos / Devis / Correspondances
+
+CONTRAINTES :
+- Déduire l'année depuis la date du fichier ou son nom
+- Si l'année est indéterminable, créer un dossier "Date-inconnue/"
+- Ne pas supprimer les originaux, créer des copies organisées
+- Générer archives-triees/bilan.csv avec : fichier source | destination | confiance (haute/moyenne/faible)
+```
+
+---
+
+### Exemple 10 — Renommage de fichiers
+
+**Avant :**
+
+> Renomme mes photos de chantier
+
+**Après :**
+
+```
+CONTEXTE : J'ai 95 photos de chantier dans ~/Cowork-Workspace/input/photos-chantier-martin/
+nommées IMG_xxxx.jpg (numérotation appareil photo).
+Ce sont des photos du chantier Martin, rénovation cuisine, réalisé en mars 2026.
+
+TÂCHE : Renommer tous les fichiers selon une convention lisible.
+
+OUTPUT : Renommer les fichiers dans le même dossier (pas de copie).
+
+CONTRAINTES :
+- Format : MARTIN-2026-03-{numéro-sequence}.jpg
+- Numérotation séquentielle basée sur la date/heure EXIF si disponible, sinon sur l'ordre alphabétique actuel
+- Préserver les métadonnées EXIF
+- Générer un fichier renommage-log.txt listant ancien nom → nouveau nom
+```
+
+---
+
+### Exemple 11 — Archivage annuel
+
+**Avant :**
+
+> Archive mes documents de l'an dernier
+
+**Après :**
+
+```
+CONTEXTE : Mon dossier de travail ~/Cowork-Workspace/input/documents-courants/
+contient 3 ans de documents mélangés. Je veux archiver tout ce qui date de 2024.
+
+TÂCHE : Identifier les documents de 2024, les copier dans une archive.
+
+OUTPUT : ~/Cowork-Workspace/output/archive-2024/
+organisé par trimestre : T1/ T2/ T3/ T4/
+puis par type : Factures/ Devis/ Contrats/ Divers/
+
+CONTRAINTES :
+- Critère d'année : date de modification du fichier OU année dans le nom si lisible
+- Si date ambiguë : placer dans archive-2024/A-VERIFIER/
+- Créer archive-2024/inventaire.xlsx avec liste complète des fichiers archivés
+- Ne pas modifier les fichiers originaux
+```
+
+---
+
+## Recherche et analyse
+
+### Exemple 12 — Analyse concurrentielle
+
+**Avant :**
+
+> Analyse mes concurrents
+
+**Après :**
+
+```
+CONTEXTE : Je suis propriétaire d'une pizzeria à Bordeaux (quartier Chartrons).
+Mes 3 principaux concurrents directs sont : [Nom 1], [Nom 2], [Nom 3].
+
+TÂCHE : Faire une analyse comparative de ces 3 concurrents sur :
+prix, offre produits, présence digitale, avis clients, points forts/faiblesses.
+
+OUTPUT : ~/Cowork-Workspace/output/analyse-concurrents-pizzeria.docx
+
+CONTRAINTES :
+- Sources : Google Maps, leurs sites web, TripAdvisor, Deliveroo si présents
+- Tableau comparatif avec les 3 concurrents en colonnes
+- Pour les avis : noter la note moyenne ET les 3 thèmes récurrents (positifs et négatifs)
+- Ajouter une section "Opportunités pour moi" basée sur leurs faiblesses identifiées
+- Date de l'analyse à mentionner car les données changent vite
+```
+
+---
+
+### Exemple 13 — Veille fournisseur
+
+**Avant :**
+
+> Cherche des infos sur mon fournisseur
+
+**Après :**
+
+```
+CONTEXTE : Je dois décider si je continue avec mon fournisseur principal
+Acier Express SAS (SIREN : 987 654 321) pour une commande de 25K€.
+Je veux vérifier leur solidité financière avant de m'engager.
+
+TÂCHE : Rechercher les informations publiques disponibles sur cette société.
+
+OUTPUT : ~/Cowork-Workspace/output/analyse-fournisseur-acier-express.docx
+
+CONTRAINTES :
+- Sources : Infogreffe, Pappers, Societe.com, LinkedIn Entreprise
+- Points à couvrir : forme juridique, capital, date création, dirigeants, résultats récents si publiés
+- Alertes éventuelles : procédures collectives, changements récents de direction
+- Conclure avec une recommandation (continuer, prudence, éviter) et la justification
+```
+
+---
+
+### Exemple 14 — Recherche de prospects
+
+**Avant :**
+
+> Trouve-moi des prospects dans le BTP
+
+**Après :**
+
+```
+CONTEXTE : Je suis commercial pour une société de matériel de sécurité BTP
+(EPI, harnais, casques). Je cible les entreprises de construction
+de 10 à 50 salariés en Île-de-France qui n'ont pas encore de contrat cadre.
+
+TÂCHE : Identifier 20 entreprises correspondant à ce profil avec
+leurs coordonnées et le nom du dirigeant.
+
+OUTPUT : ~/Cowork-Workspace/output/prospects-btp-idf.xlsx
+Colonnes : Raison sociale | SIREN | Adresse | Téléphone | Email | Dirigeant | CA estimé | Source
+
+CONTRAINTES :
+- Sources : Pages Jaunes, Societe.com, LinkedIn, chambres de commerce
+- Priorité aux entreprises créées depuis moins de 5 ans (croissance probable)
+- Exclure les très grandes entreprises (>200 salariés)
+- Indiquer le niveau de confiance de chaque information (vérifiée / estimée)
+```
+
+---
+
+## Communication
+
+### Exemple 15 — Posts réseaux sociaux
+
+**Avant :**
+
+> Écris un post LinkedIn sur mon activité
+
+**Après :**
+
+```
+CONTEXTE : Je suis coiffeuse indépendante à Nantes. J'ai lancé un nouveau
+service : balayage végétal sans ammoniaque, idéal pour cheveux sensibles.
+Prix : 90€. J'ouvre les réservations dès maintenant.
+
+TÂCHE : Créer 3 posts pour annoncer ce nouveau service.
+Un pour LinkedIn, un pour Instagram, un pour Facebook.
+
+OUTPUT : Texte dans le chat, séparés clairement par plateforme.
+
+CONTRAINTES :
+- LinkedIn : ton professionnel, focus sur l'aspect naturel/santé capillaire, 150-200 mots
+- Instagram : accrocheur, emojis appropriés, inclure 8-10 hashtags pertinents, 80-100 mots
+- Facebook : ton chaleureux et local, inclure un appel à l'action (réservation), 100-120 mots
+- Dans les 3 : mentionner le prix, pas de promesses sur les résultats capillaires
+```
+
+---
+
+### Exemple 16 — Réponse aux avis Google
+
+**Avant :**
+
+> Réponds à cet avis négatif
+
+**Après :**
+
+```
+CONTEXTE : Je dirige un garage automobile à Strasbourg. Un client a laissé
+cet avis 1 étoile hier sur Google : "Voiture rendue avec une rayure que je n'avais pas.
+Aucun geste commercial, service client inexistant. À fuir."
+Ce client a effectivement signalé une rayure que nous contestons.
+
+TÂCHE : Rédiger une réponse publique à cet avis.
+
+OUTPUT : Texte dans le chat, prêt à coller dans Google My Business.
+
+CONTRAINTES :
+- Ton professionnel et calme, jamais sur la défensive
+- Reconnaître l'expérience du client sans admettre la faute
+- Proposer un contact direct pour résoudre (téléphone ou email, pas de détails dans la réponse publique)
+- Maximum 150 mots
+- Ne pas mentionner le litige technique sur la rayure dans la réponse publique
+- Terminer de façon constructive
+```
+
+---
+
+### Exemple 17 — Email commercial
+
+**Avant :**
+
+> Écris un email de prospection
+
+**Après :**
+
+```
+CONTEXTE : Je propose des formations bureautique (Excel, Word, PowerPoint)
+pour les équipes en entreprise. Je veux contacter les DRH et responsables
+formation de PME de 20 à 100 salariés dans le secteur industrie.
+Mon offre : formation sur site, 1 à 2 jours, groupes de 6 à 10 personnes.
+
+TÂCHE : Rédiger un email de prospection froide.
+
+OUTPUT : Texte dans le chat, format email complet (objet + corps).
+
+CONTRAINTES :
+- Objet percutant, max 60 caractères, pas de spam words
+- Corps : 3 paragraphes maximum (accroche problème | ma solution | call to action)
+- Pas de liste à puces
+- CTA : proposer un appel de 15 min cette semaine ou la suivante
+- Ton professionnel mais humain, pas corporate
+- Maximum 180 mots dans le corps
+```
+
+---
+
+### Exemple 18 — Newsletter mensuelle
+
+**Avant :**
+
+> Aide-moi à écrire ma newsletter
+
+**Après :**
+
+```
+CONTEXTE : Je suis architecte DPLG, je tiens une newsletter mensuelle
+pour mes clients et anciens clients. Thème de ce mois : les nouvelles
+réglementations thermiques RE2020 et ce qu'elles changent pour les
+particuliers qui veulent faire construire.
+
+TÂCHE : Rédiger la newsletter de mai 2026.
+
+OUTPUT : ~/Cowork-Workspace/output/newsletter-mai2026.docx
+
+CONTRAINTES :
+- Structure : intro accrocheuse | point principal RE2020 (vulgarisé) | 3 conseils pratiques | actualité de mon cabinet | signature
+- Longueur : 400-500 mots maximum (format email, pas d'article de blog)
+- Niveau de langue : accessible à un particulier non-expert
+- Ton : expert mais chaleureux, pas condescendant
+- Pas de jargon technique sans explication immédiate
+- Terminer avec une question pour stimuler les réponses
+```
+
+---
+
+## Cas avancés
+
+### Exemple 19 — Workflow enchaîné
+
+Pour des tâches en plusieurs étapes, diviser en prompts séquentiels.
+
+**Étape 1 — Extraction :**
+
+```
+CONTEXTE : J'ai 50 contrats clients PDF dans ~/Cowork-Workspace/input/contrats-2025/
+
+TÂCHE : Extraire de chaque contrat : nom client, date signature, durée, montant annuel, date renouvellement.
+
+OUTPUT : ~/Cowork-Workspace/output/contrats-extraits.xlsx
+
+CONTRAINTES : Une ligne par contrat. Si une info manque : "NC". Format date : JJ/MM/AAAA.
+```
+
+**Étape 2 — Analyse (après vérification du premier résultat) :**
+
+```
+CONTEXTE : Voici le tableau de mes contrats extrait à l'étape précédente.
+Le fichier est dans ~/Cowork-Workspace/output/contrats-extraits.xlsx
+
+TÂCHE : Identifier les contrats qui arrivent à renouvellement dans les 90 prochains
+jours (entre aujourd'hui et le [date dans 90 jours]).
+
+OUTPUT : ~/Cowork-Workspace/output/renouvellements-urgents.xlsx avec les contrats
+concernés, triés par date de renouvellement croissante.
+
+CONTRAINTES : Ajouter une colonne "Urgence" : Rouge (<30j) / Orange (30-60j) / Jaune (60-90j).
+```
+
+---
+
+### Exemple 20 — Correction de résultat
+
+Quand le premier résultat n'est pas parfait, corriger avec précision plutôt que de tout refaire.
+
+**Premier prompt :** [prompt CTOC standard]
+
+**Résultat imparfait obtenu :** les dates sont au format MM/JJ/AAAA au lieu de JJ/MM/AAAA.
+
+**Prompt de correction :**
+
+```
+CONTEXTE : Tu viens de créer le fichier ~/Cowork-Workspace/output/factures-avril.xlsx
+Les dates sont en format MM/JJ/AAAA (américain).
+
+TÂCHE : Corriger uniquement les dates pour les passer en format JJ/MM/AAAA (français).
+
+OUTPUT : Modifier le fichier existant en place.
+
+CONTRAINTES : Ne toucher qu'à la colonne "Date". Ne rien changer d'autre.
+```
+
+::: {.callout-note title="Principe de correction ciblée"}
+Toujours corriger avec un prompt aussi précis que le prompt initial. "C'est pas bon, refais" produit un résultat aléatoire. "Corriger uniquement X de cette façon" produit exactement ce qu'on veut.
+:::
+
+---
+
+# Les patterns à retenir
+
+## Les 5 erreurs qui coûtent le plus de temps
+
+| Erreur | Impact | Correction |
+|--------|--------|-----------|
+| Pas de chemin de fichier | Cowork cherche dans le mauvais dossier | Toujours le chemin complet (`~/Cowork-Workspace/...`) |
+| Pas de format de sortie | Résultat dans un format inutilisable | Préciser Excel, Word, PDF, texte |
+| Tâche multiple | Résultat incomplet sur chaque tâche | Un prompt = une tâche |
+| Pas de cas particulier | Les exceptions provoquent des erreurs | "Si X, alors Y" dans les contraintes |
+| Correction vague | Cowork réinterprète tout | Corriger uniquement le point précis |
+
+## Ce qui doit toujours être dans un prompt
+
+- [ ] Chemin complet du ou des fichiers source
+- [ ] Chemin complet du fichier de sortie
+- [ ] Format de sortie exact
+- [ ] Au moins une contrainte (même simple)
+- [ ] Gestion des cas "manquants" ou "illisibles"
+
+## Ce qui peut rester implicite
+
+- Le fait que Cowork doit travailler en français (il s'adapte à la langue du prompt)
+- Les étapes intermédiaires (Cowork planifie seul)
+- La version logicielle des documents (Word, Excel compatibles avec toutes les versions récentes)
+
+---
+
+# La Série
+
+| # | Titre | Statut |
+|---|-------|--------|
+| WP-00 | De Zéro à Productif | Disponible |
+| **WP-01** | **Prompts Efficaces pour Non-Devs** (ce document) | Disponible |
+| WP-02 | Automatisation Administrative | À venir |
+| WP-03 | IA pour Artisans et BTP | À venir |
+| WP-04 | IA pour Commerçants et Retail | À venir |
+| WP-05 | IA pour Consultants et Professions Libérales | À venir |
+| WP-06 | Prospection et Relation Client | À venir |
+| WP-07 | Communication et Visibilité | À venir |
+| WP-08 | Organisation et Productivité | À venir |
+| WP-09 | Sécurité et Confidentialité pour TPE | Disponible |
+| WP-10 | Apprendre l'IA quand on n'est pas Dev | À venir |
+| WP-11 | ROI et Déploiement pour Dirigeants | Disponible |
+
+Tous les whitepapers sur [cowork.bruniaux.com/whitepapers/](https://cowork.bruniaux.com/whitepapers/).

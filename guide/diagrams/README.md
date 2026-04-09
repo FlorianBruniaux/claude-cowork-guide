@@ -41,14 +41,14 @@ Tous les diagrammes utilisent la palette Bold Guy :
 | Fichier | Diagrammes | Sujets |
 |---------|-----------|--------|
 | [01-getting-started.md](./01-getting-started.md) | 3 | Cowork vs Chat vs Code, setup workspace, CTOC anatomie |
-| [02-capabilities.md](./02-capabilities.md) | 2 | Carte des capacités, écosystème 11 plugins |
+| [02-capabilities.md](./02-capabilities.md) | 3 | Carte des capacités, écosystème 11 plugins, automatisation planifiée |
 | [03-security.md](./03-security.md) | 2 | "Où vont mes données ?", arbre décision document sensible |
 | [04-troubleshooting.md](./04-troubleshooting.md) | 1 | Arbre diagnostic "ça marche pas" |
 | [05-workflows-admin.md](./05-workflows-admin.md) | 4 | Pipeline facturation, devis-facture, conformité, relances |
 | [06-workflows-commercial.md](./06-workflows-commercial.md) | 3 | Prospection SIREN, analyse concurrence, cycle client |
 | [07-workflows-production.md](./07-workflows-production.md) | 3 | Planification projet, inventaire, contrôle qualité |
 | [08-workflows-commu-orga.md](./08-workflows-commu-orga.md) | 4 | Création contenu, templates email, organisation fichiers, transfert connaissances |
-| **Total** | **22** | Phase 1-3 complète |
+| **Total** | **23** | Phase 1-2 : 16 diagrammes |
 
 ---
 
