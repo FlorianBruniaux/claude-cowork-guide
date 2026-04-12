@@ -387,6 +387,14 @@ Key additions relevant for SMBs:
 
 Finance/institutional connectors also added (FactSet, MSCI, LSEG, S&P Global) — primarily enterprise/investment workflows.
 
+#### GA Connectors (April 9, 2026)
+
+Launched alongside Cowork's general availability:
+
+| Connector | Category | Use Cases |
+|-----------|----------|-----------|
+| **Zoom** | Communication | Meeting management, transcript retrieval, workflow automation from Cowork |
+
 #### Functional Plugins by Department
 
 Beyond individual app connectors, Anthropic launched pre-built plugins that combine connectors and skills for specific job functions:
@@ -419,7 +427,7 @@ Organizations can create a private catalog of approved plugins:
 - Plugins can be bundled with pre-configured connector permissions
 - Organization-wide sharing tools in development
 
-> **Note**: Plugin availability and connector functionality may evolve during research preview. Google Calendar, Gmail, and DocuSign connectors were announced February 24, 2026 — check current availability in your Cowork settings.
+> **Note**: Google Calendar, Gmail, and DocuSign connectors were announced February 24, 2026. Zoom was added at GA (April 9, 2026). Check current availability in your Cowork settings.
 
 ---
 
@@ -677,6 +685,12 @@ Input: ~/Cowork-Workspace/input/receipts/
 Output: ~/Cowork-Workspace/output/expenses-[month].xlsx
 ```
 
+#### Smart Skills Loading
+
+Skills no longer consume your entire context window. Claude loads only the skills it needs for the current task, when it needs them. On long sessions with many installed skills, this significantly extends effective working capacity.
+
+**Practical impact**: You can install 20+ skills without worrying about context overhead on every task.
+
 #### Community Skills
 
 Beyond official skills, the community builds and shares skills:
@@ -730,7 +744,7 @@ Example: Set web search to **Ask** so Cowork confirms before going online. Set l
 | **Desktop Commander** | Customize → Extensions | Enable cross-session memory |
 | **Personalizations** | Customize → Profile | Default behaviors, language settings |
 
-> **Note**: The Customize tab UI may evolve as Cowork exits research preview. Feature locations described here reflect the February 2026 interface.
+> **Note**: Feature locations described here reflect the April 2026 interface.
 
 ---
 

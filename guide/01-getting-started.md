@@ -68,7 +68,7 @@ Before starting, ensure you have:
 2. Find **Cowork** toggle
 3. Enable it
 
-> **Note**: The exact location may vary as the app is updated during research preview.
+> **Note**: The exact location may vary slightly as the app is updated.
 
 ### 1.3 Verify Activation
 
@@ -403,7 +403,7 @@ Once Desktop Commander is installed, create a persistent memory file so Cowork r
 
 Without a memory file, you'd repeat preferences and context at the start of every session. With it, Cowork picks up where you left off, knowing your clients, your style, and your recurring work patterns.
 
-> **Note**: Desktop Commander is available via the Customize tab in Claude Desktop. The exact UI location may shift as Cowork updates during research preview. If you don't see it immediately, check Settings → Extensions.
+> **Note**: Desktop Commander is available via the Customize tab in Claude Desktop. If you don't see it immediately, check Settings → Extensions.
 
 ---
 
@@ -411,7 +411,7 @@ Without a memory file, you'd repeat preferences and context at the start of ever
 
 Computer Use lets Claude control your desktop directly — open apps, click, fill forms, navigate the browser — without any custom integration. Available on Pro and Max plans, macOS only.
 
-> **Note**: Computer Use is a research preview. Use it for supervised tasks where you can review each action.
+> **Note**: Computer Use is available on Pro and Max plans. Use it for supervised tasks where you can review each action.
 
 ### 9.1 Enable in Claude Desktop
 

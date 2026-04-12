@@ -2,13 +2,29 @@
 # Source: CHANGELOG.md + Anthropic product announcements
 # Purpose: Track Cowork documentation + product releases
 
-latest: "1.8.1"
-updated: "2026-04-01"
+latest: "1.9.0"
+updated: "2026-04-11"
 
 # ════════════════════════════════════════════════════════════════
 # RELEASES (newest first, condensed highlights only)
 # ════════════════════════════════════════════════════════════════
 releases:
+
+  # ─────────────────────────────────────────────────────────────
+  # 1.9.x Series (April 2026)
+  # ─────────────────────────────────────────────────────────────
+
+  - version: "1.9.0"
+    date: "2026-04-11"
+    highlights:
+      - "⭐ Cowork disponibilité générale (GA) — passe de research preview à GA sur macOS et Windows (Pro, Max, Team, Enterprise)"
+      - "⭐ Connecteur Zoom MCP — nouveau connecteur officiel Anthropic : gestion de réunions, récupération de transcripts, automatisation depuis Cowork"
+      - "⭐ Contrôle d'accès par rôle — Enterprise : groupes, rôles personnalisés, activation Cowork par équipe"
+      - "⭐ Analytics d'utilisation — intégration Analytics API pour monitoring d'activité et reporting par équipe"
+      - "Limites de dépenses par groupe (Enterprise) — plafonds budgétaires par département"
+      - "OpenTelemetry étendu — connecter l'activité Cowork aux stacks de monitoring existantes (Datadog, Grafana, etc.)"
+      - "Smart Skills Loading — les Skills ne consomment plus l'intégralité de la fenêtre de contexte"
+    breaking: []
 
   # ─────────────────────────────────────────────────────────────
   # 1.8.x Series (March–April 2026)

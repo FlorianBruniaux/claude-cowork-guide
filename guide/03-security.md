@@ -27,14 +27,13 @@ This expanded capability requires expanded caution.
 
 ### Anthropic's Security Posture
 
-As of January 2026:
+Updated April 2026 — **Cowork is now generally available (GA)**:
 - No official security documentation for Cowork
-- No audit trail feature
-- No enterprise access controls
+- **Audit Logs**: Cowork activity is NOT captured by Audit Logs or the Compliance API (confirmed limitation)
+- ✅ Enterprise access controls now available: role-based access, group spend limits, usage analytics, OpenTelemetry
 - No SOC2 specific to Cowork
-- Research preview status
 
-**Implication**: You are responsible for your own security practices.
+**Implication**: Organizational controls are available for Enterprise plans. Audit trail gaps remain — you are responsible for your own security practices regardless of plan.
 
 ---
 
@@ -446,17 +445,31 @@ Revenue increased 15% year over year...
 
 ## Enterprise Considerations
 
-### Why Enterprises Should Wait
+### Enterprise Features Available (GA, April 9, 2026)
 
-| Missing Feature | Impact |
-|-----------------|--------|
+With Cowork's general availability, Enterprise-tier controls are now live:
+
+| Feature | What It Enables |
+|---------|----------------|
+| **Role-based access controls** | Admins create groups, assign custom roles, control per-team Cowork access |
+| **Group spend limits** | Budget caps per user group or department |
+| **Usage analytics** | Analytics API integration — activity monitoring, usage patterns, team reporting |
+| **OpenTelemetry support** | Connect Cowork activity to existing monitoring stacks (Datadog, Grafana, etc.) |
+| **Zoom MCP connector** | Native Zoom integration for meeting and workflow automation |
+| **Per-tool connector controls** | Granular permission management for individual connector tools |
+
+### Remaining Limitations for Regulated Sectors
+
+Even with GA enterprise controls, critical gaps remain:
+
+| Limitation | Impact |
+|-----------|--------|
 | **Audit Logs** | Cowork activity is NOT captured by Audit Logs or the Compliance API (confirmed by Anthropic) |
-| Access controls | Cannot limit by role |
-| SSO integration | Cannot use corp identity |
-| DLP integration | Cannot prevent data leakage |
-| Compliance certs | Cannot meet regulatory requirements |
+| **DLP integration** | No native data loss prevention |
+| **Compliance certs** | No SOC2 specific to Cowork |
+| **SSO** | No corp identity integration announced |
 
-> ⚠️ **Official Anthropic limitation**: "Audit Logs and the Compliance API do not capture Cowork activity." Source: Anthropic Help Center, March 2026.
+> ⚠️ **Official Anthropic limitation**: "Audit Logs and the Compliance API do not capture Cowork activity." Source: Anthropic Help Center, March 2026. This remains true post-GA.
 
 ### Regulated Sectors: Do Not Use Cowork for Sensitive Workflows
 
@@ -471,15 +484,14 @@ If your business operates in a regulated sector, Cowork is currently unsuitable 
 
 **What you can use instead**: For regulated document processing, use Claude in Chat mode (no autonomous file access) with manual copy-paste, or wait for Enterprise-tier Cowork with audit controls.
 
-### When Enterprise Might Be Ready
+### What to Watch for Next
 
-Watch for:
-- Official security documentation
-- SOC2 Type II certification
-- Enterprise tier with admin controls
-- Audit Logs covering Cowork activity
+Still pending from Anthropic:
+- Official security documentation for Cowork
+- SOC2 Type II certification for Cowork
+- Audit Logs coverage for Cowork activity
 - Compliance API integration for Cowork
-- Integration with enterprise identity
+- SSO / enterprise identity integration
 
 ---
 

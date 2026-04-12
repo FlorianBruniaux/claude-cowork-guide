@@ -26,8 +26,8 @@ Imaginez un assistant de bureau très compétent qui :
 
 | Aspect | Détails |
 |--------|---------|
-| **Publication** | Preview recherche, janvier 2026 |
-| **Disponibilité** | Abonnés Pro (20$/mois) ou Max (100-200$/mois) |
+| **Publication** | Disponibilité générale (GA), 9 avril 2026 |
+| **Disponibilité** | Abonnés Pro, Max, Team et Enterprise |
 | **Plateforme** | macOS et Windows (Linux non annoncé) |
 | **Développement** | ~90% écrit par Claude lui-même ([source](https://claude.com/download)) |
 | **Focus** | Manipulation de fichiers, organisation, génération de documents |
@@ -65,7 +65,7 @@ Cowork partage la même architecture backend que Claude Code :
 
 | Persona | Limitation | Alternative |
 |---------|------------|-------------|
-| **Entreprises soucieuses de sécurité** | Pas de piste d'audit, pas de contrôles d'accès | Attendre les fonctionnalités enterprise |
+| **Workflows très réglementés** | Les Audit Logs ne capturent pas l'activité Cowork (limitation confirmée Anthropic) | Consulter les [Considérations Enterprise](03-security.fr.md#considérations-entreprise) avant usage |
 | **Gros utilisateurs cloud** | Pas de Google Drive/Dropbox confirmé | Utiliser les apps cloud natives |
 | **Besoin de fiabilité** | Preview = bugs, comportement inattendu | Attendre la version stable |
 | **Besoin d'exécution de code** | Fichiers uniquement, pas de scripts | Utiliser Claude Code |
@@ -185,7 +185,7 @@ Pensez à Cowork comme un **artisan qualifié travaillant dans son propre atelie
 
 ## Validation enterprise (Adoption de Claude)
 
-Bien que Cowork soit en preview recherche, les capacités sous-jacentes de Claude sont validées à l'échelle enterprise :
+Cowork étant désormais en disponibilité générale (GA depuis le 9 avril 2026), les capacités sous-jacentes de Claude sont validées à l'échelle enterprise :
 
 | Entreprise | Résultats | Contexte |
 |------------|-----------|----------|
@@ -198,7 +198,7 @@ Bien que Cowork soit en preview recherche, les capacités sous-jacentes de Claud
 **Ce que cela signifie pour vous** :
 - Le modèle IA fonctionne de manière fiable à l'échelle enterprise
 - La compréhension et génération de documents sont prêtes pour la production
-- Le label "research preview" s'applique à l'interface Cowork, pas aux capacités Claude sous-jacentes
+- Les contrôles enterprise (contrôle d'accès par rôle, analytics, OpenTelemetry) ont été lancés avec le GA le 9 avril 2026
 
 ---
 

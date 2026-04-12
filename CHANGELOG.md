@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.9.0] - 2026-04-11
+
+### Added
+- **Connecteur Zoom MCP** (9 avril 2026, tous plans payants) : nouveau connecteur officiel Anthropic ajouté au catalogue Cowork au moment du GA. Permet d'intégrer Zoom dans les workflows automatisés — gestion de réunions, récupération de transcripts, déclenchement d'actions depuis Cowork. Documenté dans `guide/02-capabilities.md` section Plugins.
+- **Contrôle d'accès par rôle — Enterprise** (9 avril 2026, Team/Enterprise) : les admins peuvent organiser les utilisateurs en groupes, assigner des rôles personnalisés définissant l'accès aux fonctionnalités Cowork, et activer/désactiver Cowork par équipe. Documenté dans `guide/03-security.md` section Enterprise.
+- **Limites de dépenses par groupe** (9 avril 2026, Enterprise) : plafonds budgétaires configurables par groupe d'utilisateurs — permet aux DSI et responsables IA de contrôler la consommation par département ou projet. Documenté dans `guide/03-security.md`.
+- **Analytics d'utilisation** (9 avril 2026, Enterprise) : intégration Analytics API pour monitorer l'activité Cowork — patterns d'utilisation, volume de tâches, consommation par équipe. Documenté dans `guide/03-security.md`.
+- **Smart Skills Loading** (Q1 2026) : les Skills ne consomment plus l'intégralité de la fenêtre de contexte — Claude charge uniquement les Skills nécessaires au moment voulu. Améliore la gestion du contexte sur les sessions longues avec de nombreuses Skills installées. Documenté dans `guide/02-capabilities.md` section Skills.
+
+### Changed
+- **Cowork — disponibilité générale (GA)** (9 avril 2026) : Claude Cowork passe du statut "research preview" à disponibilité générale sur macOS et Windows. Disponible pour tous les abonnés payants (Pro, Max, Team, Enterprise). Mis à jour dans `guide/00-overview.md`, `guide/01-getting-started.md`, `guide/03-security.md` (mentions "research preview" retirées, tableau Enterprise revu).
+- **OpenTelemetry — support étendu** (9 avril 2026, Enterprise) : observabilité Cowork renforcée via OpenTelemetry — traçabilité des actions dans les stacks de monitoring existantes (Datadog, Grafana, etc.). Documenté dans `guide/03-security.md`.
+
 ## [1.8.1] - 2026-04-01
 
 ### Changed

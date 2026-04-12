@@ -42,6 +42,8 @@ Avant de commencer, assurez-vous d'avoir :
 |------|------|--------------|
 | **Pro** | 20$/mois | Usage léger (~1-1.5h intensive avant réinitialisation) |
 | **Max** | 100-200$/mois | Usage intensif (5x-20x la limite du Pro) |
+| **Team** | Par utilisateur | Accès Cowork complet, contrôles admin |
+| **Enterprise** | Tarif personnalisé | Accès Cowork complet, SSO, contrôles admin, analytics |
 
 ### Vous n'avez pas accès ?
 
@@ -66,7 +68,7 @@ Avant de commencer, assurez-vous d'avoir :
 2. Trouvez le bouton **Cowork**
 3. Activez-le
 
-> **Note** : L'emplacement exact peut varier car l'application est mise à jour pendant la preview recherche.
+> **Note** : L'emplacement exact peut légèrement varier selon les versions de l'application.
 
 ### 1.3 Vérifier l'activation
 

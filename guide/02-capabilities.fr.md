@@ -387,6 +387,14 @@ Ajouts clés pour les TPE/PME :
 
 Des connecteurs finance/institutionnels ont aussi été ajoutés (FactSet, MSCI, LSEG, S&P Global) — principalement pour les workflows entreprise et investissement.
 
+#### Connecteurs GA (9 avril 2026)
+
+Lancés avec la disponibilité générale de Cowork :
+
+| Connecteur | Catégorie | Cas d'usage |
+|------------|-----------|-------------|
+| **Zoom** | Communication | Gestion de réunions, récupération de transcripts, automatisation de workflows depuis Cowork |
+
 #### Plugins fonctionnels par service
 
 Au-delà des connecteurs individuels, Anthropic a lancé des plugins pré-construits qui combinent connecteurs et compétences pour des fonctions métier spécifiques :
@@ -419,7 +427,7 @@ Les organisations peuvent créer un catalogue privé de plugins approuvés :
 - Les plugins peuvent être regroupés avec des permissions de connecteurs préconfigurées
 - Outils de partage à l'échelle de l'organisation en cours de développement
 
-> **Note** : La disponibilité des plugins et connecteurs peut évoluer pendant la période de preview. Les connecteurs Google Calendar, Gmail et DocuSign ont été annoncés le 24 février 2026 — vérifiez la disponibilité actuelle dans vos paramètres Cowork.
+> **Note** : Les connecteurs Google Calendar, Gmail et DocuSign ont été annoncés le 24 février 2026. Zoom a été ajouté au GA (9 avril 2026). Vérifiez la disponibilité actuelle dans vos paramètres Cowork.
 
 ---
 
@@ -664,6 +672,12 @@ Les compétences ajoutent des pouvoirs spécifiques à Cowork, activés via des 
      Sauvegarde chaque tableau en CSV séparé dans ~/Cowork-Workspace/output/
 ```
 
+#### Chargement intelligent des compétences (Smart Skills Loading)
+
+Les compétences ne consomment plus l'intégralité de votre fenêtre de contexte. Claude charge uniquement les compétences nécessaires à la tâche en cours, au moment où il en a besoin. Sur les sessions longues avec de nombreuses compétences installées, cela étend significativement la capacité de travail effective.
+
+**Impact pratique** : Vous pouvez installer 20+ compétences sans craindre une surcharge de contexte à chaque tâche.
+
 #### Enchaînement de compétences (Skill Chaining)
 
 Combinez des compétences en séquence pour des opérations en plusieurs étapes :
@@ -728,7 +742,7 @@ Exemple : Mettez la recherche web sur **Demander** pour que Cowork confirme avan
 | **Desktop Commander** | Personnaliser → Extensions | Activer la mémoire cross-session |
 | **Personnalisations** | Personnaliser → Profil | Comportements par défaut, langue |
 
-> **Note** : L'interface de l'onglet Personnaliser peut évoluer au fil des mises à jour. La description ci-dessus reflète l'interface de février 2026.
+> **Note** : La description ci-dessus reflète l'interface d'avril 2026.
 
 ---
 

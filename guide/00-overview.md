@@ -14,8 +14,8 @@
 
 | Aspect | Details |
 |--------|---------|
-| **Release** | Research preview, January 2026 |
-| **Availability** | Pro ($20/mo) or Max ($100-200/mo) subscribers |
+| **Release** | Generally available (GA), April 9, 2026 |
+| **Availability** | Pro, Max, Team, and Enterprise subscribers |
 | **Platform** | macOS and Windows (Linux not announced) |
 | **Built by** | ~90% written by Claude itself ([source](https://claude.com/download)) |
 | **Focus** | File manipulation, organization, document generation |
@@ -70,7 +70,7 @@ Cowork shares the same backend architecture as Claude Code:
 
 | Persona | Limitation | Alternative |
 |---------|------------|-------------|
-| **Security-conscious enterprises** | No audit trail, no access controls | Wait for enterprise features |
+| **Compliance-heavy workflows** | Audit Logs don't capture Cowork activity (confirmed Anthropic limitation) | Review [Enterprise Considerations](03-security.md#enterprise-considerations) before use |
 | **Heavy cloud users** | No Google Drive/Dropbox confirmed | Use native cloud apps |
 | **Anyone needing reliability** | Preview = bugs, unexpected behavior | Wait for stable release |
 | **Code execution needs** | Files only, no scripts | Use Claude Code |
@@ -184,7 +184,7 @@ This constraint is a **feature, not a bug** — it creates a safe sandbox for au
 
 ## Enterprise Validation (Claude Adoption)
 
-While Cowork is in research preview, Claude's underlying capabilities are validated at enterprise scale:
+With Cowork now generally available (GA since April 9, 2026), Claude's underlying capabilities are validated at enterprise scale:
 
 | Company | Results | Context |
 |---------|---------|---------|
@@ -197,7 +197,7 @@ While Cowork is in research preview, Claude's underlying capabilities are valida
 **What this means for you**:
 - The AI model works reliably at enterprise scale
 - Document understanding and generation are production-ready
-- The "research preview" label applies to the Cowork interface, not the underlying Claude capabilities
+- Enterprise-tier controls (role-based access, analytics, OpenTelemetry) launched with GA on April 9, 2026
 
 ---
 
