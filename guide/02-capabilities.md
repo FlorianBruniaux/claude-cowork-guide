@@ -540,6 +540,63 @@ Beyond generating `.xlsx` and `.pptx` files from scratch, Cowork can now directl
 
 > **Practical use case**: Build a reusable PPTX template from your existing company presentation (brand colors, house structure), then generate each new presentation from notes in 3 steps. See the [reusable template workflow](../workflows/presentation-slides.en.md#reusable-template-from-existing-file).
 
+### Claude Add-ins for Microsoft Office (Word, Excel, PowerPoint)
+
+Beyond Cowork's file generation, Claude is also available as a **persistent sidebar directly inside Office apps**, installed once from Microsoft AppSource and present every time you open a file.
+
+> **Install**: In any Office app, go to Insert > Get Add-ins, then search "Claude by Anthropic".
+
+#### Availability
+
+| App | Status | Plans |
+|-----|--------|-------|
+| **Claude for Excel** | ✅ Available | Pro, Team, Enterprise |
+| **Claude for PowerPoint** | ✅ Available | Pro, Team, Enterprise |
+| **Claude for Word** | 🔵 Beta (launched April 10, 2026) | Pro, Team, Enterprise |
+
+> Free plan access is very limited. A paid plan is required for regular use.
+
+#### What Each Add-in Does
+
+**Excel**
+- Analyze complex datasets without leaving the spreadsheet
+- Generate formulas with cell-by-cell explanations
+- Build pivot tables, charts, and financial models on demand
+
+**PowerPoint**
+- Reads your existing template (layouts, fonts, colors, slide masters)
+- Generates and edits slides while respecting your brand guidelines
+- Rewrites and reorganizes content within existing presentations
+
+**Word (beta)**
+- Drafts and revises `.docx` documents from a persistent sidebar
+- All changes appear as **native Word Track Changes**, reviewable and accept/reject per edit
+- Preserves native document formatting throughout
+
+#### Shared Context Across Apps (since March 2026)
+
+The three add-ins share a common conversation context. Load an Excel file in the sidebar, then switch to PowerPoint or Word and Claude still has your data available, with no copy-pasting between apps.
+
+**Practical workflow: Q1 board report from a single dataset**
+
+1. Open your sales Excel file with the Claude sidebar active
+2. Ask: *"Summarize the key trends from this data"*
+3. Switch to PowerPoint (Claude keeps the context) → *"Build 5 slides from the Excel data, match this brand template"*
+4. Switch to Word (still in context) → *"Write a 1-page executive summary from the same data"*
+
+Three files produced from one data load, without leaving the Office suite.
+
+#### How This Differs from Cowork
+
+| | Cowork | Claude Office Add-ins |
+|---|--------|----------------------|
+| **Starting point** | Raw data (emails, PDFs, notes, images) | An Office file already open |
+| **Output** | Generates a new `.xlsx` / `.pptx` / `.docx` | Edits or extends the current document |
+| **Interface** | Standalone Claude Desktop app | Sidebar inside Word, Excel, or PowerPoint |
+| **Best for** | "Create this file from scratch" | "Help me work on this file right now" |
+
+> For formula generation specifically, also see: [Not to Be Confused With: Claude in Excel Add-in](#not-to-be-confused-with-claude-in-excel-add-in).
+
 ### Agent Teams (Research Preview)
 
 Agent Teams lets multiple Claude agents work on a task simultaneously. Instead of one agent processing 50 documents sequentially, you can split the work across several agents, each handling a portion, and get results faster.

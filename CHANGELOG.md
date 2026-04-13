@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **docs: add Claude for Office add-ins section (Word, Excel, PowerPoint + shared context)**: nouvelle section dans `guide/02-capabilities.md` et `guide/02-capabilities.fr.md` documentant Claude comme add-in natif dans les applications Microsoft Office. Couvre la disponibilité (Excel et PowerPoint disponibles, Word bêta lancé le 10 avril 2026), les fonctionnalités par application, le contexte partagé entre les trois add-ins depuis mars 2026, un workflow pratique en 4 étapes, et le tableau comparatif Cowork vs. add-ins.
+
 ## [1.9.0] - 2026-04-11
 
 ### Added

@@ -546,6 +546,63 @@ Au-dela de la simple generation de fichiers, Cowork peut desormais **modifier di
 
 > **Cas d'usage concret** : Créez un template PPTX réutilisable à partir de votre présentation d'entreprise existante (charte graphique, structure maison), puis générez chaque nouvelle présentation en 3 étapes. Voir le [workflow template réutilisable](../workflows/presentation-slides.md#template-réutilisable-depuis-fichier-existant).
 
+### Add-ins Claude pour Microsoft Office (Word, Excel, PowerPoint)
+
+Au-delà de la génération de fichiers par Cowork, Claude est aussi disponible comme **panneau latéral persistant directement dans les applications Office**, installé une fois depuis Microsoft AppSource et présent à chaque ouverture de fichier.
+
+> **Installation** : Dans n'importe quelle application Office, allez dans Insertion > Obtenir des compléments, puis recherchez "Claude by Anthropic".
+
+#### Disponibilité
+
+| Application | Statut | Plans |
+|-------------|--------|-------|
+| **Claude pour Excel** | ✅ Disponible | Pro, Team, Enterprise |
+| **Claude pour PowerPoint** | ✅ Disponible | Pro, Team, Enterprise |
+| **Claude pour Word** | 🔵 Bêta (lancé le 10 avril 2026) | Pro, Team, Enterprise |
+
+> L'accès en plan gratuit est très limité. Un plan payant est nécessaire pour une utilisation régulière.
+
+#### Ce que fait chaque add-in
+
+**Excel**
+- Analyser des jeux de données complexes sans quitter le tableur
+- Générer des formules avec explication cellule par cellule
+- Créer des tableaux croisés dynamiques, graphiques et modèles financiers à la demande
+
+**PowerPoint**
+- Lit votre template existant (mises en page, polices, couleurs, masques de diapositives)
+- Génère et modifie des diapositives en respectant votre charte graphique
+- Reformule et réorganise le contenu dans les présentations existantes
+
+**Word (bêta)**
+- Rédige et révise des fichiers `.docx` depuis un panneau latéral persistant
+- Toutes les modifications apparaissent comme **suivi des modifications natif Word**, acceptables ou refusables une par une
+- Préserve la mise en forme native du document tout au long de l'édition
+
+#### Contexte partagé entre les applications (depuis mars 2026)
+
+Les trois add-ins partagent un contexte conversationnel commun. Chargez un fichier Excel dans la barre latérale, passez ensuite à PowerPoint ou Word : Claude a toujours vos données disponibles, sans copier-coller entre applications.
+
+**Exemple de workflow : rapport trimestriel en trois fichiers depuis un seul jeu de données**
+
+1. Ouvrez votre fichier Excel de ventes avec le panneau Claude actif
+2. Demandez : *"Résume les tendances clés de ces données"*
+3. Passez à PowerPoint (Claude conserve le contexte) → *"Génère 5 diapositives depuis les données Excel, en respectant ce template"*
+4. Passez à Word (toujours en contexte) → *"Rédige un résumé exécutif d'une page depuis les mêmes données"*
+
+Trois fichiers produits depuis un seul chargement de données, sans quitter la suite Office.
+
+#### Distinction avec Cowork
+
+| | Cowork | Add-ins Claude pour Office |
+|---|--------|---------------------------|
+| **Point de départ** | Données brutes (emails, PDFs, notes, images) | Un fichier Office déjà ouvert |
+| **Résultat** | Génère un nouveau `.xlsx` / `.pptx` / `.docx` | Modifie ou enrichit le document en cours |
+| **Interface** | Application Claude Desktop autonome | Panneau latéral dans Word, Excel ou PowerPoint |
+| **Idéal pour** | "Crée ce fichier depuis zéro" | "Aide-moi à travailler sur ce fichier maintenant" |
+
+> Pour la génération de formules spécifiquement, voir aussi : [À ne pas confondre : Add-in Claude in Excel](#à-ne-pas-confondre--add-in-claude-in-excel).
+
 ### Agent Teams (aperçu recherche)
 
 Agent Teams permet à plusieurs agents Claude de travailler en parallèle sur une même tâche. Plutôt qu'un seul agent qui traite 50 documents l'un après l'autre, vous répartissez le travail entre plusieurs agents et obtenez les résultats bien plus vite.
