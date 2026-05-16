@@ -63,7 +63,7 @@ See [full comparison](comparison.md).
 **A:** Yes, through Chrome integration. You grant Chrome access for specific tasks, and Cowork can search, read pages, and extract information. Form filling is limited and requires explicit user approval for each action. Purchases and logins are prohibited for security reasons.
 
 ### Q: Can Cowork access Google Drive or Dropbox?
-**A:** Experimental connectors available but unreliable (January 2026). Gmail and Drive connectors exist but have inconsistent authentication and task completion. Recommended workaround: Download cloud files to your local workspace first for reliable processing.
+**A:** Experimental connectors available but unreliable. Gmail and Drive connectors exist but have inconsistent authentication and task completion. Recommended workaround: Download cloud files to your local workspace first for reliable processing.
 
 ### Q: Can Cowork run Python or shell scripts?
 **A:** No. Cowork manipulates files only—it cannot execute code. Use Claude Code for code execution.
@@ -130,8 +130,8 @@ See [detailed comparison](comparison.md#common-confusion).
 
 If you're seeing articles about "Claude on Telegram" or "Claude on Discord" — that's Claude Code Channels, not Cowork.
 
-### Q: What is Opus 4.6's context window?
-**A:** Opus 4.6 (the model powering Cowork) supports up to 1M tokens in beta, a major upgrade from the previous ~200K effective limit. Output tokens have also increased to 128K (from 64K). Opus 4.6 also features adaptive thinking with 4 effort levels for better efficiency.
+### Q: What is Opus 4.7's context window?
+**A:** Opus 4.7 (the model powering Cowork) supports up to 1M tokens, a major upgrade from the previous ~200K effective limit. Output tokens have also increased to 128K (from 64K). Opus 4.7 also features adaptive thinking with 4 effort levels for better efficiency.
 
 ### Q: What are scheduled tasks?
 **A:** Scheduled tasks automate recurring Cowork operations. Two types: **recurring** (run automatically on a set cadence) and **on-demand** (triggered manually, run once).
@@ -159,14 +159,7 @@ See [Scheduled Automation workflow](../workflows/scheduled-automation.md) for co
 ## Security
 
 ### Q: Is Cowork secure?
-**A:** There's no official security documentation yet (research preview). You should:
-- Use a dedicated workspace folder
-- Never grant access to Documents/Desktop
-- Keep credentials out of workspace
-- Review every execution plan
-- Backup before destructive operations
-
-See [Security Guide](../guide/03-security.md).
+**A:** Enterprise-grade security controls launched with GA on April 9, 2026 — role-based access control, usage analytics, and OpenTelemetry. See the [Security Guide](../guide/03-security.md) for full details.
 
 ### Q: Can Cowork access all my files?
 **A:** Only folders you explicitly grant access to. Best practice: create a dedicated `~/Cowork-Workspace/` folder and only grant access there.
@@ -181,10 +174,7 @@ See [Security Guide](../guide/03-security.md).
 **A:** File content is processed by Claude's API, similar to pasting text in chat. No official data retention policy specific to Cowork yet. For sensitive data, consider if cloud AI processing is appropriate.
 
 ### Q: Can I use Cowork for confidential business documents?
-**A:** Not recommended during research preview. Wait for:
-- Official security documentation
-- Enterprise features (audit trail, access controls)
-- Compliance certifications
+**A:** **Use with caution for sensitive data.** Enterprise controls are live (role-based access, spend limits, usage analytics, OpenTelemetry). However, two blockers remain for compliance-heavy workflows: (1) Audit Logs don't capture Cowork activity — confirmed Anthropic limitation; (2) No compliance certifications yet. For regulated industries (finance, health, legal, public sector), review the [Enterprise Considerations](../guide/03-security.md#enterprise-considerations) section before using Cowork with confidential data.
 
 ---
 
@@ -264,7 +254,7 @@ There's no workaround that keeps VPN active. See [Troubleshooting](../guide/04-t
 - **Max ($100-200/mo)**: Heavy daily use, large batch processing, document-intensive workflows. 5x-20x more usage than Pro.
 
 ### Q: Is there a usage limit with Cowork?
-**A:** Yes. Usage resets every 5 hours (not daily/monthly). The ~200K token context window is the limit per session. Heavy tasks (file processing, OCR) consume tokens faster than chat.
+**A:** Yes. Usage resets every 5 hours (not daily/monthly). With Opus 4.7, the context window is up to 1M tokens per session. Heavy tasks (file processing, OCR) consume tokens faster than chat.
 
 ---
 
@@ -274,7 +264,7 @@ There's no workaround that keeps VPN active. See [Troubleshooting](../guide/04-t
 **A:** Cowork can spawn sub-agents that work in parallel. Each sub-agent has fresh context and works on part of the task. The main orchestrator assembles results.
 
 ### Q: What's the context limit?
-**A:** With Opus 4.6, up to 1M tokens in beta (previously ~200K). Roughly:
+**A:** With Opus 4.7, up to 1M tokens (previously ~200K). Roughly:
 - 600-2000+ text pages
 - 200-400+ typical documents
 - 200-400+ images (OCR)
@@ -324,16 +314,17 @@ Context compaction (beta) further extends effective session length by compressin
 ## Future
 
 ### Q: Is Cowork still in beta?
-**A:** It's in "research preview" status as of January 2026. Expect bugs and missing features. Not recommended for production use.
+**A:** **No — Cowork is generally available (GA) since April 9, 2026.** Available on Pro, Max, Team, and Enterprise plans for macOS and Windows. Enterprise controls (role-based access, usage analytics, OpenTelemetry) launched simultaneously. Some features remain in research preview (Computer Use, Dispatch), but Cowork itself is production-ready. Report bugs via in-app feedback.
 
 ### Q: What features are coming?
-**A:** Recent additions (February 2026):
-- Windows support (released Feb 10, 2026)
-- 11 official plugins (Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack)
-- Scheduled tasks, Agent Teams (research preview), context compaction (beta)
-- Improved browser automation, Excel and PowerPoint direct integrations
+**A:** Recent additions (since GA launch, April 2026):
+- Opus 4.7 (Apr 16, 2026)
+- Claude Design (Apr 17, 2026)
+- Creative Connectors (Apr 28, 2026)
+- Claude for Small Business (May 13, 2026)
+- Office add-ins Outlook beta (May 7, 2026)
 
-Still unannounced: Linux support, enterprise features.
+Still unannounced: Linux support.
 
 ### Q: Will there be an API for Cowork?
 **A:** Unknown. Currently Cowork is desktop-only with no automation interface.

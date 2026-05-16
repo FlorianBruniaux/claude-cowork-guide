@@ -14,7 +14,7 @@ Before starting, ensure you have:
 
 | Requirement | How to Check |
 |-------------|--------------|
-| **Pro or Max subscription** | claude.ai → Settings → Subscription shows "Pro" or "Max" |
+| **Pro, Max, Team, or Enterprise subscription** | claude.ai → Settings → Subscription shows your plan name |
 | **macOS or Windows** | macOS: Apple menu → About This Mac; Windows: Settings → System → About |
 | **Claude Desktop app** | Applications folder or Spotlight search |
 | **Latest app version** | See verification steps below ⚠️ |
@@ -64,7 +64,7 @@ Before starting, ensure you have:
 
 ### 1.2 Enable the Feature
 
-1. Navigate to **Features** or **Beta Features** section
+1. Navigate to **Features** section
 2. Find **Cowork** toggle
 3. Enable it
 
@@ -407,11 +407,11 @@ Without a memory file, you'd repeat preferences and context at the start of ever
 
 ---
 
-## Step 9: Enable Computer Use (macOS, Optional)
+## Step 9: Enable Computer Use (Research Preview, macOS Only)
 
 Computer Use lets Claude control your desktop directly — open apps, click, fill forms, navigate the browser — without any custom integration. Available on Pro and Max plans, macOS only.
 
-> **Note**: Computer Use is available on Pro and Max plans. Use it for supervised tasks where you can review each action.
+> **Note**: Computer Use is a research preview feature available on Pro and Max plans, macOS only. Use it for supervised tasks where you can review each action.
 
 ### 9.1 Enable in Claude Desktop
 

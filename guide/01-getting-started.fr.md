@@ -14,7 +14,7 @@ Avant de commencer, assurez-vous d'avoir :
 
 | Exigence | Comment vérifier |
 |----------|------------------|
-| **Abonnement Pro ou Max** | claude.ai → Paramètres → Abonnement affiche "Pro" ou "Max" |
+| **Abonnement Pro, Max, Team ou Enterprise** | claude.ai → Paramètres → Abonnement affiche votre nom de plan |
 | **macOS ou Windows** | macOS : Menu Apple → À propos de ce Mac / Windows : Paramètres → Système → À propos |
 | **Application Claude Desktop** | Dossier Applications ou recherche Spotlight |
 | **Dernière version de l'app** | Voir les étapes de vérification ci-dessous ⚠️ |
@@ -64,7 +64,7 @@ Avant de commencer, assurez-vous d'avoir :
 
 ### 1.2 Activer la fonctionnalité
 
-1. Naviguez vers la section **Fonctionnalités** ou **Fonctionnalités Beta**
+1. Naviguez vers la section **Fonctionnalités**
 2. Trouvez le bouton **Cowork**
 3. Activez-le
 
@@ -441,6 +441,53 @@ Une fois Desktop Commander installé, créez un fichier de mémoire persistante 
 Sans fichier mémoire, vous répétez vos préférences et votre contexte à chaque session. Avec ce fichier, Cowork reprend là où vous en étiez, connaissant vos clients, votre style, et vos habitudes de travail.
 
 > **Note** : Desktop Commander est disponible via l'onglet Personnaliser dans Claude Desktop. L'emplacement exact peut changer au fil des mises à jour. Si vous ne le trouvez pas, cherchez dans Paramètres → Extensions.
+
+---
+
+## Étape 9 : Activer Computer Use (Research Preview, macOS uniquement)
+
+Computer Use permet à Claude de contrôler directement ton bureau : ouvrir des applications, cliquer, remplir des formulaires, naviguer dans le navigateur, sans aucune intégration personnalisée. Disponible sur les plans Pro et Max, macOS uniquement.
+
+> **Note** : Computer Use est une fonctionnalité en research preview disponible sur les plans Pro et Max, macOS uniquement. Utilise-la pour des tâches supervisées où tu peux examiner chaque action.
+
+### 9.1 Activer dans Claude Desktop
+
+1. Ouvre **Claude Desktop**
+2. Va dans **Paramètres → Fonctionnalités → Computer Use**
+3. Active le bouton
+4. Confirme la fenêtre de permission
+
+### 9.2 Accorder les permissions système macOS
+
+Claude a besoin de deux permissions système pour contrôler ton écran :
+
+**Enregistrement d'écran** (requis pour voir ton écran) :
+1. Ouvre **Réglages Système → Confidentialité et sécurité → Enregistrement d'écran**
+2. Trouve **Claude Desktop** dans la liste
+3. Active-le (s'il n'apparaît pas, clique sur `+` et ajoute-le manuellement)
+
+**Accessibilité** (requis pour cliquer et taper) :
+1. Ouvre **Réglages Système → Confidentialité et sécurité → Accessibilité**
+2. Trouve **Claude Desktop** dans la liste
+3. Active-le
+
+### 9.3 (Optionnel) Associer ton téléphone avec Dispatch
+
+Pour envoyer des tâches à ton bureau depuis ton téléphone quand tu es absent :
+
+1. Ouvre **Claude pour iOS ou Android**
+2. Dans le fil Cowork, appuie sur **Pair Desktop**
+3. Scanne le **QR code** affiché dans ton application Claude Desktop
+4. Ton téléphone est maintenant connecté — envoie des tâches à distance
+
+> **Prérequis** : Le Mac doit rester allumé avec Claude Desktop ouvert. Claude utilise le fil associé (Dispatch) pour exécuter les tâches sur ton ordinateur quand tu es absent.
+
+### Notes de sécurité pour Computer Use
+
+- Claude demande **une permission explicite par tâche** avant d'accéder à une nouvelle application
+- Anthropic recommande de **ne pas accorder l'accès aux applications sensibles** (banque, santé, juridique)
+- Claude est entraîné à **refuser** : le trading boursier, la sauvegarde d'identifiants sensibles, le scraping d'images de visages
+- **Le coût en tokens est plus élevé** que Cowork standard : chaque cycle d'action nécessite une capture d'écran
 
 ---
 

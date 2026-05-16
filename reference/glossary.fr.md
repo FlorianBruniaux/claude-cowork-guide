@@ -74,7 +74,7 @@ Fonctionnalité beta qui compresse automatiquement l'historique de conversation 
 L'espace de configuration dans Claude Desktop pour gérer les Compétences, les Connecteurs et les personnalisations. Accédez-y depuis la navigation principale de l'app pour installer des compétences, configurer des connexions avec des outils externes, et définir des permissions par outil.
 
 ### Context Limit (Limite de contexte)
-La quantité maximale de texte/données que Claude peut traiter dans une seule session (~200K tokens). Quand dépassée, les tâches peuvent échouer ou produire des résultats incomplets.
+La quantité maximale de texte/données que Claude peut traiter dans une seule session. Avec Opus 4.7, la fenêtre de contexte est de jusqu'à 1M de tokens (précédemment ~200K). Quand dépassée, les tâches peuvent échouer ou produire des résultats incomplets.
 
 ### Context Window (Fenêtre de contexte)
 L'espace "mémoire" où Claude conserve votre conversation et le contenu des fichiers pendant une session. Mesuré en tokens.
@@ -166,7 +166,7 @@ L'interface de conversation de Claude sur claude.ai. Permet le téléchargement 
 ## R
 
 ### Research Preview (Preview recherche)
-Terme d'Anthropic pour les fonctionnalités en accès anticipé qui ne sont pas prêtes pour la production. Cowork est en preview recherche (janvier 2026). S'attendre à des bugs.
+Terme d'Anthropic pour les fonctionnalités en accès anticipé qui ne sont pas encore prêtes pour la production. Cowork était en preview recherche jusqu'au 9 avril 2026, date à laquelle il est passé en disponibilité générale (GA). Computer Use et Dispatch restent en preview recherche à partir de mai 2026.
 
 ---
 

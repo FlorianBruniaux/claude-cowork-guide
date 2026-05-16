@@ -40,7 +40,7 @@ Microsoft Excel add-in (launched January 24, 2026) that provides AI assistance i
 The settings area in Claude Desktop for managing Skills, Connectors, and personalizations. Access it from the main app navigation to install skills, configure external tool connections, and set per-tool permissions.
 
 ### Context Limit
-The maximum amount of text/data Claude can process in a single session (~200K tokens). When exceeded, tasks may fail or produce incomplete results.
+The maximum amount of text/data Claude can process in a single session. With Opus 4.7, the context window is up to 1M tokens (previously ~200K). When exceeded, tasks may fail or produce incomplete results.
 
 ### Context Window
 The "memory" space where Claude holds your conversation and file contents during a session. Measured in tokens.
@@ -132,7 +132,7 @@ Claude's conversation interface on claude.ai. Allows document uploads but no loc
 ## R
 
 ### Research Preview
-Anthropic's term for early-access features that aren't production-ready. Cowork is in research preview (January 2026). Expect bugs.
+Anthropic's term for early-access features that aren't yet production-ready. Cowork was in research preview until April 9, 2026, when it went generally available (GA). Computer Use and Dispatch remain in research preview as of May 2026.
 
 ---
 

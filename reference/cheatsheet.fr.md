@@ -38,11 +38,11 @@ Format : [exigences de format spécifiques]
 |--------|---------------|---------|----------|
 | **Haiku** | Tâches très simples, requêtes rapides | Très rapide | Standard |
 | **Sonnet 4.6** ⭐ | Tous les workflows Cowork, tâches agentiques | Rapide | 1M tokens (beta) |
-| **Opus 4.6** | Raisonnement approfondi, analyses juridiques/scientifiques | Plus lent | 1M tokens (beta) |
+| **Opus 4.7** | Raisonnement approfondi, analyses juridiques/scientifiques | Plus lent | 1M tokens |
 
 **Par défaut** : Sonnet 4.6 pour tout. Sonnet 4.6 = n°1 pour les tâches agentiques/computer use à un coût 5x inférieur à Opus.
 **Passer à Opus** uniquement pour : raisonnement juridique expert, analyses scientifiques, coordination multi-agents complexe.
-**Les deux modèles** : fenêtre de contexte 1M tokens (beta), 128K tokens en sortie, pensée adaptative.
+**Les deux modèles** : fenêtre de contexte 1M tokens, 128K tokens en sortie, pensée adaptative.
 
 ---
 
@@ -211,7 +211,7 @@ Requête → Analyse → Plan → ⚠️ Révision → Approbation → Exécutio
 
 ## Limites de contexte
 
-| Contenu | Capacité approximative (Opus 4.6, 1M beta) |
+| Contenu | Capacité approximative (Opus 4.7, 1M) |
 |---------|---------------------|
 | Pages de texte | 600-2000+ pages |
 | Documents | 200-400+ docs |
@@ -277,4 +277,4 @@ La compaction de contexte (beta) étend la durée effective des sessions. Limite
 
 ---
 
-*Cowork v1.5.0 (Research Preview) | Partie de Claude Cowork Guide*
+*Cowork v1.9.0 (GA — 9 avril 2026) | Partie de Claude Cowork Guide*

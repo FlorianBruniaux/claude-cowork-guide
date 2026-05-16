@@ -130,7 +130,7 @@ The Scheduled section in the sidebar lets you: view upcoming runs, browse run hi
 
 ## Important Notes
 
-**Reliability**: Scheduled Tasks is in research preview. Early executions may occasionally be imperfect. Check the first few outputs manually before relying on them.
+**Reliability**: Check the first few automated outputs manually before relying on them — Scheduled Tasks behavior can vary with complex multi-step workflows.
 
 **App open AND device awake**: Cowork requires Claude Desktop to be open AND your computer to be awake (not sleeping) at the scheduled time. If the device is asleep or the app is closed, the task is **skipped** and runs automatically when the device wakes. Plan accordingly for early-morning schedules — disable auto-sleep if needed.
 

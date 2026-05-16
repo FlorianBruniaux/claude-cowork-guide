@@ -31,7 +31,7 @@ Imaginez un assistant de bureau très compétent qui :
 | **Plateforme** | macOS et Windows (Linux non annoncé) |
 | **Développement** | ~90% écrit par Claude lui-même ([source](https://claude.com/download)) |
 | **Focus** | Manipulation de fichiers, organisation, génération de documents |
-| **Limites d'usage** | Réinitialisé toutes les 5 heures ; les tâches lourdes consomment rapidement le quota |
+| **Limites d'usage** | Doublées en mai 2026 (partenariat SpaceX) ; réinitialisé toutes les 5 heures ; restrictions heures de pointe supprimées pour Pro et Max |
 
 ### Relation avec Claude Code
 
@@ -67,7 +67,6 @@ Cowork partage la même architecture backend que Claude Code :
 |---------|------------|-------------|
 | **Workflows très réglementés** | Les Audit Logs ne capturent pas l'activité Cowork (limitation confirmée Anthropic) | Consulter les [Considérations Enterprise](03-security.fr.md#considérations-entreprise) avant usage |
 | **Gros utilisateurs cloud** | Pas de Google Drive/Dropbox confirmé | Utiliser les apps cloud natives |
-| **Besoin de fiabilité** | Preview = bugs, comportement inattendu | Attendre la version stable |
 | **Besoin d'exécution de code** | Fichiers uniquement, pas de scripts | Utiliser Claude Code |
 | **Utilisateurs Linux** | macOS et Windows uniquement (Linux non annoncé) | Attendre l'expansion de plateforme |
 | **Utilisateurs intensifs quotidiens** | Limites d'usage réinitialisées toutes les 5h ; Pro épuisé en ~1-1.5h d'utilisation intensive | Considérer le tier Max ou travailler par lots |
@@ -206,7 +205,7 @@ Cowork étant désormais en disponibilité générale (GA depuis le 9 avril 2026
 
 Si vous cherchez à optimiser vos workflows pour un usage intensif (>100 tâches/mois) ou à maîtriser les techniques avancées :
 
-**Optimisation modèle** : Opus 4.5 peut sembler plus cher par requête, mais sa précision réduit le nombre total de tentatives nécessaires, le rendant plus économique à long terme pour les analyses complexes.
+**Optimisation modèle** : Opus 4.7 peut sembler plus cher par requête, mais sa précision réduit le nombre total de tentatives nécessaires, le rendant plus économique à long terme pour les analyses complexes.
 
 **Mise à l'échelle et parallélisation** : Pour des besoins de traitement par lots ou d'automatisation poussée, consultez les ressources de Boris (créateur de Claude Code) sur les [workflows multi-sessions](https://www.youtube.com/watch?v=DW4a1Cm8nG4) et les [pratiques avancées](https://blog.devgenius.io/the-claude-code-creator-says-ai-writes-100-of-his-code-now-956b2a5905ba).
 

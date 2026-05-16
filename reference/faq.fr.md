@@ -63,7 +63,7 @@ Voir [comparaison complète](comparison.fr.md).
 **R:** Oui, via l'intégration Chrome. Vous accordez l'accès Chrome pour des tâches spécifiques, et Cowork peut rechercher, lire des pages et extraire des informations. Le remplissage de formulaires est limité et nécessite une approbation explicite de l'utilisateur pour chaque action. Les achats et connexions sont interdits pour des raisons de sécurité.
 
 ### Q: Est-ce que Cowork peut accéder à Google Drive ou Dropbox ?
-**R:** Connecteurs expérimentaux disponibles mais non fiables (janvier 2026). Les connecteurs Gmail et Drive existent mais ont une authentification et une complétion de tâches incohérentes. Solution de contournement recommandée : Téléchargez d'abord les fichiers cloud dans votre espace de travail local pour un traitement fiable.
+**R:** Connecteurs expérimentaux disponibles mais non fiables. Les connecteurs Gmail et Drive existent mais ont une authentification et une complétion de tâches incohérentes. Solution de contournement recommandée : Téléchargez d'abord les fichiers cloud dans votre espace de travail local pour un traitement fiable.
 
 ### Q: Est-ce que Cowork peut exécuter des scripts Python ou shell ?
 **R:** Non. Cowork manipule uniquement les fichiers—il ne peut pas exécuter de code. Utilisez Claude Code pour l'exécution de code.
@@ -130,8 +130,8 @@ Voir [comparaison détaillée](comparison.fr.md#confusion-frequente).
 
 Si vous voyez des articles sur "Claude sur Telegram" ou "Claude sur Discord", c'est Claude Code Channels, pas Cowork.
 
-### Q: Quelle est la fenêtre de contexte d'Opus 4.6 ?
-**R:** Opus 4.6 (le modèle alimentant Cowork) supporte jusqu'à 1M de tokens en beta, une amélioration majeure par rapport à la limite effective précédente de ~200K. Les tokens de sortie ont aussi augmenté à 128K (contre 64K). Opus 4.6 propose aussi la pensée adaptative avec 4 niveaux d'effort pour une meilleure efficacité.
+### Q: Quelle est la fenêtre de contexte d'Opus 4.7 ?
+**R:** Opus 4.7 (le modèle alimentant Cowork) supporte jusqu'à 1M de tokens, une amélioration majeure par rapport à la limite effective précédente de ~200K. Les tokens de sortie ont aussi augmenté à 128K (contre 64K). Opus 4.7 propose aussi la pensée adaptative avec 4 niveaux d'effort pour une meilleure efficacité.
 
 ### Q: Qu'est-ce que les tâches planifiées ?
 **R:** Les tâches planifiées automatisent vos opérations Cowork récurrentes. Deux types disponibles : **récurrentes** (s'exécutent automatiquement selon un calendrier) et **à la demande** (déclenchées manuellement, s'exécutent une seule fois).
@@ -159,14 +159,7 @@ Voir le [workflow Automatisation Planifiée](../workflows/scheduled-automation.m
 ## Sécurité
 
 ### Q: Est-ce que Cowork est sécurisé ?
-**R:** Il n'y a pas encore de documentation officielle sur la sécurité (preview recherche). Vous devriez :
-- Utiliser un dossier d'espace de travail dédié
-- Ne jamais accorder l'accès à Documents/Bureau
-- Garder les identifiants hors de l'espace de travail
-- Réviser chaque plan d'exécution
-- Sauvegarder avant les opérations destructives
-
-Voir [Guide de Sécurité](../guide/03-security.fr.md).
+**R:** Des contrôles de sécurité enterprise ont été lancés avec la GA le 9 avril 2026 — contrôle d'accès par rôle, analytics d'utilisation et OpenTelemetry. Voir le [Guide de Sécurité](../guide/03-security.fr.md) pour les détails complets.
 
 ### Q: Est-ce que Cowork peut accéder à tous mes fichiers ?
 **R:** Uniquement les dossiers auxquels vous accordez explicitement l'accès. Bonne pratique : créez un dossier dédié `~/Cowork-Workspace/` et accordez l'accès uniquement là.
@@ -181,10 +174,7 @@ Voir [Guide de Sécurité](../guide/03-security.fr.md).
 **R:** Le contenu des fichiers est traité par l'API de Claude, similaire à coller du texte dans le chat. Pas encore de politique officielle de rétention de données spécifique à Cowork. Pour les données sensibles, réfléchissez si le traitement IA cloud est approprié.
 
 ### Q: Puis-je utiliser Cowork pour des documents business confidentiels ?
-**R:** Non recommandé pendant la preview recherche. Attendez :
-- La documentation officielle de sécurité
-- Les fonctionnalités enterprise (piste d'audit, contrôles d'accès)
-- Les certifications de conformité
+**R:** **À utiliser avec prudence pour les données sensibles.** Les contrôles enterprise sont actifs (accès par rôle, limites de dépenses, analytics d'utilisation, OpenTelemetry). Cependant, deux points bloquants subsistent pour les workflows soumis à des exigences de conformité strictes : (1) les Audit Logs ne capturent pas l'activité Cowork — limitation confirmée par Anthropic ; (2) aucune certification de conformité à ce jour. Pour les secteurs réglementés (finance, santé, juridique, secteur public), consultez la section [Considérations entreprise](../guide/03-security.fr.md#considérations-entreprise) avant d'utiliser Cowork avec des données confidentielles.
 
 ---
 
@@ -264,7 +254,7 @@ Il n'y a pas de contournement qui garde le VPN actif. Voir [Dépannage](../guide
 - **Max (100-200$/mois)** : Usage quotidien lourd, traitement de gros lots, workflows intensifs en documents. 5x-20x plus d'usage que Pro.
 
 ### Q: Y a-t-il une limite d'usage avec Cowork ?
-**R:** Oui. L'usage se réinitialise toutes les 5 heures (pas quotidiennement/mensuellement). La fenêtre de contexte de ~200K tokens est la limite par session. Les tâches lourdes (traitement de fichiers, OCR) consomment les tokens plus rapidement que le chat.
+**R:** Oui. L'usage se réinitialise toutes les 5 heures (pas quotidiennement/mensuellement). Avec Opus 4.7, la fenêtre de contexte est de jusqu'à 1M de tokens par session. Les tâches lourdes (traitement de fichiers, OCR) consomment les tokens plus rapidement que le chat.
 
 ---
 
@@ -274,7 +264,7 @@ Il n'y a pas de contournement qui garde le VPN actif. Voir [Dépannage](../guide
 **R:** Cowork peut créer des sous-agents qui travaillent en parallèle. Chaque sous-agent a un contexte frais et travaille sur une partie de la tâche. L'orchestrateur principal assemble les résultats.
 
 ### Q: Quelle est la limite de contexte ?
-**R:** Avec Opus 4.6, jusqu'à 1M de tokens en beta (précédemment ~200K). Environ :
+**R:** Avec Opus 4.7, jusqu'à 1M de tokens (précédemment ~200K). Environ :
 - 600-2000+ pages de texte
 - 200-400+ documents typiques
 - 200-400+ images (OCR)
@@ -324,16 +314,17 @@ La compaction de contexte (beta) étend encore la durée effective des sessions 
 ## Futur
 
 ### Q: Est-ce que Cowork est toujours en beta ?
-**R:** C'est en statut "preview recherche" en janvier 2026. Attendez-vous à des bugs et des fonctionnalités manquantes. Non recommandé pour usage production.
+**R:** **Non — Cowork est en disponibilité générale (GA) depuis le 9 avril 2026.** Disponible sur les plans Pro, Max, Team et Enterprise pour macOS et Windows. Les contrôles enterprise (accès par rôle, analytics d'utilisation, OpenTelemetry) ont été lancés simultanément. Certaines fonctionnalités restent en preview recherche (Computer Use, Dispatch), mais Cowork lui-même est prêt pour la production. Signalez les bugs via le feedback intégré à l'application.
 
 ### Q: Quelles fonctionnalités arrivent ?
-**R:** Ajouts récents (février 2026) :
-- Support Windows (sorti 10 fév 2026)
-- 11 plugins officiels (Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack)
-- Tâches planifiées, Équipes d'agents (preview recherche), compaction de contexte (beta)
-- Automatisation navigateur améliorée, intégrations directes Excel et PowerPoint
+**R:** Ajouts récents (depuis le lancement GA, avril 2026) :
+- Opus 4.7 (16 avril 2026)
+- Claude Design (17 avril 2026)
+- Creative Connectors (28 avril 2026)
+- Claude for Small Business (13 mai 2026)
+- Add-ins Office Outlook beta (7 mai 2026)
 
-Toujours non annoncé : support Linux, fonctionnalités enterprise.
+Toujours non annoncé : support Linux.
 
 ### Q: Y aura-t-il une API pour Cowork ?
 **R:** Inconnu. Actuellement Cowork est desktop uniquement sans interface d'automatisation.

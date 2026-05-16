@@ -19,7 +19,7 @@
 | **Platform** | macOS and Windows (Linux not announced) |
 | **Built by** | ~90% written by Claude itself ([source](https://claude.com/download)) |
 | **Focus** | File manipulation, organization, document generation |
-| **Usage limits** | Resets every 5 hours; heavy tasks consume quota rapidly |
+| **Usage limits** | Doubled in May 2026 (SpaceX compute deal); resets every 5 hours; peak hour restrictions removed for Pro and Max |
 
 
 ### The Three Tabs: One App for the Whole Team
@@ -72,7 +72,6 @@ Cowork shares the same backend architecture as Claude Code:
 |---------|------------|-------------|
 | **Compliance-heavy workflows** | Audit Logs don't capture Cowork activity (confirmed Anthropic limitation) | Review [Enterprise Considerations](03-security.md#enterprise-considerations) before use |
 | **Heavy cloud users** | No Google Drive/Dropbox confirmed | Use native cloud apps |
-| **Anyone needing reliability** | Preview = bugs, unexpected behavior | Wait for stable release |
 | **Code execution needs** | Files only, no scripts | Use Claude Code |
 | **Linux users** | macOS and Windows only (Linux not announced) | Wait for platform expansion |
 | **Heavy daily users** | Usage limits reset every 5h; Pro exhausts in ~1-1.5h intensive use | Consider Max tier or batch work |

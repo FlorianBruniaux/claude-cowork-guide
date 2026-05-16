@@ -2,13 +2,32 @@
 # Source: CHANGELOG.md + Anthropic product announcements
 # Purpose: Track Cowork documentation + product releases
 
-latest: "1.9.0"
-updated: "2026-04-11"
+latest: "1.10.0"
+updated: "2026-05-16"
 
 # ════════════════════════════════════════════════════════════════
 # RELEASES (newest first, condensed highlights only)
 # ════════════════════════════════════════════════════════════════
 releases:
+
+  # ─────────────────────────────────────────────────────────────
+  # 1.10.x Series (May 2026)
+  # ─────────────────────────────────────────────────────────────
+
+  - version: "1.10.0"
+    date: "2026-05-16"
+    highlights:
+      - "⭐ Claude Opus 4.7 (16 avril 2026) — nouveau modèle : vision haute résolution 3x, auto-correction améliorée, effort xhigh, même prix qu'Opus 4.6 ($5/$25 par M tokens)"
+      - "⭐ Claude Design (17 avril 2026, research preview) — créer designs, slides, prototypes par conversation en langage naturel. Propulsé par Opus 4.7. Import DOCX/PPTX/XLSX, export PDF/PPTX/HTML/Canva"
+      - "⭐ 9 Creative Connectors (28 avril 2026) — Ableton, Adobe CC (50+ outils), Affinity by Canva, Autodesk Fusion, Blender, Resolume Arena, Resolume Wire, SketchUp, Splice"
+      - "⭐ Claude for Small Business (13 mai 2026) — 7 connecteurs préinstallés (QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, Microsoft 365) + 15 workflows agentic + 15 skills réutilisables"
+      - "⭐ Claude for Legal (12 mai 2026) — 12 plugins Cowork par domaine de pratique + 20+ connecteurs MCP (iManage, Westlaw, LexisNexis, Harvey, Relativity, Ironclad, etc.)"
+      - "⭐ Agents for Financial Services (5 mai 2026) — 10 templates d'agents + 8 nouveaux connecteurs : Dun & Bradstreet, Moody's, Verisk, Third Bridge, Experian, GLG, Guidepoint, IBISWorld"
+      - "Limites d'usage doublées (6 mai 2026) — partenariat SpaceX Colossus 1 : plus de throttling heures de pointe pour Pro/Max/Team/Enterprise"
+      - "Claude Security (30 avril, Enterprise beta) — scan codebases via agents parallèles, rapports vulnérabilités, patchs ciblés. Partenaires : CrowdStrike, Palo Alto, SentinelOne, Wiz"
+      - "Outlook add-in (beta) + Word GA (7 mai 2026) — 4 add-ins Office avec contexte partagé (Excel + PowerPoint + Word + Outlook)"
+      - "Opus 4.7 Fast Mode (12-13 mai, research preview API) — 2,5x plus rapide, tarif 6x le standard ($30/$150 MTok)"
+    breaking: []
 
   # ─────────────────────────────────────────────────────────────
   # 1.9.x Series (April 2026)

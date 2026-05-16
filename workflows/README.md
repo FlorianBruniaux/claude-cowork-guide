@@ -1,6 +1,6 @@
 # Cowork Workflows
 
-> **28 tutoriels étape par étape pour automatiser vos tâches professionnelles**
+> **29 tutoriels étape par étape pour automatiser vos tâches professionnelles**
 
 **Professions ciblées**: Artisans/BTP · Commerçants · Dirigeants TPE/PME · Indépendants
 
@@ -26,13 +26,14 @@ Gestion factures, devis, relances, conformité, modèles financiers
 | [Validation Modèle Financier](financial-model-validation.md) · [EN](financial-model-validation.en.md) | Audit formules Excel, hypothèses, erreurs | 30-45 min | Intermédiaire |
 | [Planification Effectifs](workforce-planning.md) · [EN](workforce-planning.en.md) | Modélisation croissance RH, coûts masse salariale | 40-60 min | Intermédiaire |
 
-### 💼 Commercial (5 workflows)
+### 💼 Commercial (6 workflows)
 
 Prospection, suivi clients, analyse marché
 
 | Workflow | Description | Temps | Niveau |
 |----------|-------------|-------|--------|
 | [Recherche Prospects](prospect-research.md) · [EN](prospect-research.en.md) | Investigation entreprise/client (SIREN, CA, décideurs) | 20 min | Intermédiaire |
+| [Prospection Conciergerie LCD](conciergerie-lcd-prospection.md) · [EN](conciergerie-lcd-prospection.en.md) | Analyse annonces LLD + estimation revenus LCD + message personnalisé | 15-30 min/lot | Intermédiaire |
 | [Création Devis Détaillé](quote-creation.md) · [EN](quote-creation.en.md) | Devis professionnels chiffrés | 20 min | Intermédiaire |
 | [Analyse Concurrence](competitor-analysis.md) · [EN](competitor-analysis.en.md) | Benchmarking local (prix, offres, avis) | 30 min | Intermédiaire |
 | [Suivi Relances Clients](client-followup-tracker.md) · [EN](client-followup-tracker.en.md) | Tableau de bord Excel | 15 min | Débutant |
@@ -200,7 +201,7 @@ cp ~/Cowork-Workspace/output/facture-validee.pdf \
 
 ## 📈 Évolution des Workflows
 
-**Version actuelle**: 28 workflows (v1.5.0)
+**Version actuelle**: 29 workflows (v1.5.0)
 
 **Contribuer**:
 - Proposer améliorations: [Issues GitHub](https://github.com/FlorianBruniaux/claude-cowork-guide)

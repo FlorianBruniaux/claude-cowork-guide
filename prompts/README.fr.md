@@ -32,6 +32,10 @@ Sortie : [Destination et format]
 | [Création de documents](document-creation.fr.md) | Rapports, synthèses, présentations | 15+ |
 | [Extraction de données](data-extraction.fr.md) | Images vers données, parsing PDF | 15+ |
 | [Recherche](research.fr.md) | Recherche web, synthèse | 10+ |
+| [Conciergerie et Location Saisonnière](conciergerie.fr.md) | Analyse prospects LBC, estimation LCD, messages personnalisés, argumentaires | 4 |
+| [Restauration](restauration.fr.md) | Carte saisonnière, food cost, réponses avis, comparatif fournisseurs, posts réseaux | 5 |
+| [Immobilier](immobilier.fr.md) | Annonces différenciantes, prospection vendeur, compte-rendu visite, estimation, relance acquéreur | 5 |
+| [E-commerce](ecommerce.fr.md) | Fiches produits SEO, batch fiches, réponses SAV, newsletter, posts réseaux | 5 |
 
 ---
 
@@ -170,6 +174,33 @@ Contraintes :
 - Recherche thématique
 - Matrices de comparaison
 - Synthèses de tendances
+
+### [Conciergerie et Location Saisonnière →](conciergerie.fr.md)
+- Analyse d'annonce Le Bon Coin (score potentiel 1-5, atouts quartier)
+- Estimation revenus LCD vs LLD (tableau comparatif chiffré)
+- Message de premier contact (150-200 mots, ton qualitatif)
+- Argumentaire propriétaire (document de suivi 1-2 pages)
+
+### [Restauration →](restauration.fr.md)
+- Carte saisonnière (entrées, plats, desserts avec allergènes et food cost)
+- Food cost par plat et tri par rentabilité
+- Réponse personnalisée aux avis Google et TripAdvisor
+- Comparatif fournisseurs (prix, qualité, logistique)
+- Posts réseaux sociaux (plat du jour ou événement)
+
+### [Immobilier →](immobilier.fr.md)
+- Annonce immobilière (3 versions : SeLoger, site agence, réseaux sociaux)
+- Email de prospection vendeur depuis une annonce particulier
+- Compte-rendu de visite pour le vendeur (J+1)
+- Estimation comparative de marché (avec comparables DVF)
+- Relance acquéreur après visite (J+5)
+
+### [E-commerce →](ecommerce.fr.md)
+- Fiche produit SEO (titre optimisé, accroche bénéfice, description, specs)
+- Batch fiches produits (10 fiches en une session)
+- Réponse SAV client (retard, produit abimé, remboursement)
+- Newsletter mensuelle (avec objet A/B testable)
+- Posts réseaux sociaux par plateforme (Instagram, Facebook, Pinterest)
 
 ---
 

@@ -38,11 +38,11 @@ Format: [specific format requirements]
 |-------|---------|-------|---------|
 | **Haiku** | Very simple tasks, quick queries | Very Fast | Standard |
 | **Sonnet 4.6** ⭐ | All Cowork workflows, agentic tasks | Fast | 1M tokens (beta) |
-| **Opus 4.6** | Deep reasoning, legal/scientific analysis | Slower | 1M tokens (beta) |
+| **Opus 4.7** | Deep reasoning, legal/scientific analysis | Slower | 1M tokens |
 
 **Default**: Sonnet 4.6 for everything. Sonnet 4.6 = #1 for agentic/computer use tasks at 5x lower cost than Opus.
 **Switch to Opus** only for: expert legal reasoning, scientific analysis, complex multi-agent coordination.
-**Both models**: 1M token context window (beta), 128K output, adaptive thinking.
+**Both models**: 1M token context window, 128K output, adaptive thinking.
 
 ---
 
@@ -211,7 +211,7 @@ Request → Analysis → Plan → ⚠️ Review → Approve → Execute → Veri
 
 ## Context Limits
 
-| Content | Approximate Capacity (Opus 4.6, 1M beta) |
+| Content | Approximate Capacity (Opus 4.7, 1M) |
 |---------|---------------------|
 | Text pages | 600-2000+ pages |
 | Documents | 200-400+ docs |
@@ -277,4 +277,4 @@ Context compaction (beta) extends effective session length. Hit limit? → Break
 
 ---
 
-*Cowork v1.5.0 (Research Preview) | Part of Claude Cowork Guide*
+*Cowork v1.9.0 (GA — April 9, 2026) | Part of Claude Cowork Guide*

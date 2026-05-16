@@ -93,7 +93,7 @@ et inclus leur contenu dans un fichier appelé summary.txt"
 - Accéder à des fichiers en dehors des dossiers autorisés
 - Effectuer des actions non incluses dans le plan approuvé
 
-**Pourquoi cela arrive** : Preview recherche = itération sur les limites de sécurité.
+**Pourquoi cela arrive** : Le comportement en GA est encore affiné dans les cas limites — signalez tout écart inattendu dans le plan via le feedback intégré à l'application.
 
 **Atténuation** :
 - Toujours examiner attentivement les plans d'exécution

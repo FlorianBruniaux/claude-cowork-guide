@@ -80,7 +80,7 @@ and include their contents in a file called summary.txt"
 - Access files outside granted folders
 - Perform actions not in the approved plan
 
-**Why this happens**: Research preview = iterating on safety boundaries.
+**Why this happens**: GA behavior is still being refined in edge cases — report unexpected plan deviations via in-app feedback.
 
 **Mitigation**:
 - Always review execution plans carefully

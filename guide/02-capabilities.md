@@ -16,14 +16,16 @@ Cowork supports different Claude models. Since Sonnet 4.6 launched (February 17,
 
 | Model | Best For | Speed | Context Window | Usage Cost |
 |-------|----------|-------|----------------|------------|
-| **Haiku** | Very simple tasks, quick queries | Very Fast | Standard | Low |
-| **Sonnet 4.6** ⭐ | Agentic tasks, file automation, daily Cowork workflows | Fast | 1M tokens (beta), 128K output | Standard |
-| **Opus 4.6** | Deep reasoning, scientific analysis, complex multi-agent tasks | Slower | 1M tokens (beta), 128K output | Higher (5x Sonnet) |
+| **Haiku 4.5** | Very simple tasks, quick queries | Very Fast | Standard | Low |
+| **Sonnet 4.6** ⭐ | Agentic tasks, file automation, daily Cowork workflows | Fast | 1M tokens, 128K output | Standard |
+| **Opus 4.6** | Deep reasoning, scientific analysis, complex multi-agent tasks | Slower | 1M tokens, 128K output | Higher (5x Sonnet) |
+| **Opus 4.7** | Hardest tasks, vision-heavy work, long multi-session projects | Slower | 1M tokens, 128K output | Higher (5x Sonnet) |
 
-**Model Notes** (February 2026):
-- **Sonnet 4.6** (released February 17, 2026): Now the recommended default for Cowork. Achieves 72.5% on OSWorld-Verified (computer use benchmark) vs Opus 4.6's 72.7% — essentially identical performance on agentic tasks, at 5x lower cost. Also includes the 1M token context window (beta), 128K output, and adaptive thinking.
-- **Opus 4.6** (released February 5, 2026): Retains advantages for deep scientific reasoning (91.3% on GPQA Diamond) and complex multi-agent coordination. For standard Cowork file operations and automation, the performance gap with Sonnet 4.6 is negligible.
-- **Context compaction (beta)**: Cowork now uses automatic compaction to compress conversation history, enabling longer sessions without losing important context.
+**Model Notes** (updated May 2026):
+- **Sonnet 4.6** (released February 17, 2026): Recommended default for Cowork. Achieves 72.5% on OSWorld-Verified (computer use benchmark) vs Opus 4.6's 72.7% — essentially identical agentic performance at 5x lower cost. 1M token context window, 128K output, adaptive thinking.
+- **Opus 4.6** (released February 5, 2026): Deep scientific reasoning (91.3% on GPQA Diamond) and complex multi-agent coordination. For standard Cowork file operations, the performance gap with Sonnet 4.6 is negligible.
+- **Opus 4.7** (released April 16, 2026): Notable improvement over Opus 4.6 on the hardest tasks — self-corrects logic errors during planning, better instruction following, stronger vision (images up to 2,576px / ~3.75 megapixels, 3× previous resolution). More tasteful output on slides, docs, and interfaces. Better filesystem memory across sessions. New `xhigh` effort level available. Same pricing as Opus 4.6. Use for complex multi-step workflows where quality matters most.
+- **Context compaction**: Cowork uses automatic compaction to compress conversation history, enabling longer sessions without losing important context.
 
 ### When to Use Each
 
@@ -34,23 +36,27 @@ Cowork supports different Claude models. Since Sonnet 4.6 launched (February 17,
 | Email drafts, document creation | **Sonnet 4.6** | Fast, sufficient quality |
 | Daily automations, scheduled tasks | **Sonnet 4.6** | Same agentic performance, 5x cheaper |
 | Multi-source research synthesis | **Sonnet 4.6** | 1M context handles large volumes |
-| Contract review, legal analysis | **Opus 4.6** | Deep reasoning advantage |
-| Complex scientific/technical reports | **Opus 4.6** | GPQA-level reasoning needed |
-| Multi-agent coordination | **Opus 4.6** | Coordination logic benefits from Opus |
+| Contract review, legal analysis | **Opus 4.6 / 4.7** | Deep reasoning advantage |
+| Complex scientific/technical reports | **Opus 4.6 / 4.7** | GPQA-level reasoning needed |
+| Multi-agent coordination | **Opus 4.7** | Better self-correction and planning |
+| Long multi-session projects | **Opus 4.7** | Superior cross-session memory |
+| Dense image/diagram analysis | **Opus 4.7** | 3× resolution improvement |
+| Claude Design (slides, decks) | **Opus 4.7** | More tasteful visual output |
 
 ### Selection Tips
 
 1. **Default to Sonnet 4.6** — Handles 90%+ of Cowork tasks with near-identical agentic performance to Opus
-2. **Switch to Opus 4.6** only when:
+2. **Switch to Opus 4.7** when:
    - Results require expert-level reasoning (legal, scientific, regulatory)
-   - Task involves complex multi-agent coordination
-   - Output quality from Sonnet falls consistently short despite good prompts
-3. **Avoid Opus for file operations** — No measurable benefit over Sonnet for organizing files, extracting data, or running scheduled automations
-4. **Mind your quota** — Opus consumes 5x more quota per token. On Pro plan, this compounds quickly.
+   - Task spans multiple sessions and needs persistent context
+   - You're processing dense images, screenshots, or diagrams
+   - Output quality on slides/docs consistently needs more depth
+3. **Opus 4.7 vs 4.6**: 4.7 catches its own logic errors during planning, follows instructions more precisely, produces better visual output. For pure file operations, the difference is marginal.
+4. **Mind your quota** — Opus consumes 5x more quota per token than Sonnet. On Pro plan, this compounds quickly.
 
-> **Pro plan users**: Sonnet 4.6 is your default for everything. Reserve Opus for the rare task where reasoning depth genuinely matters.
+> **Pro plan users**: Sonnet 4.6 is your default for everything. Reserve Opus 4.7 for the rare task where reasoning depth or visual quality genuinely matters.
 >
-> **Max plan users**: Still start with Sonnet 4.6. Switch to Opus for contract review, strategic analysis, or when Sonnet's output needs more depth.
+> **Max plan users**: Start with Sonnet 4.6. Switch to Opus 4.7 for contract review, multi-day projects, vision-heavy tasks, or when Sonnet's output falls short.
 
 ---
 
@@ -152,7 +158,7 @@ OUTPUT: Executive summary with key decisions and action items
 - Generates polished output document
 
 **Limitations**:
-- Context window limits (~200K tokens)
+- Context window limits (up to 1M tokens with Opus 4.7 or Sonnet 4.6)
 - Cannot access original email/calendar systems
 - Synthesis quality depends on source clarity
 
@@ -266,25 +272,26 @@ Create an Excel file using European formula syntax (semicolon separators)
 
 ## Context Window Usage
 
-Cowork shares Claude's ~200K token context limit, but **effective capacity is ~165K**.
+With Opus 4.7, Cowork supports up to **1M tokens of context** (generally available, no longer in beta). In practice, effective capacity depends on which model you select.
 
-### Why 165K, Not 200K?
+### Context by Model
 
-System overhead consumes tokens before your task starts:
-- Tool definitions: ~10K tokens
-- Safety instructions: ~10K tokens
-- Execution logs: ~5-15K tokens (varies)
+| Model | Context Window | Effective Usable |
+|-------|---------------|-----------------|
+| **Haiku 4.5** | Standard | Standard minus overhead |
+| **Sonnet 4.6** | 1M tokens | ~950K (system overhead ~50K) |
+| **Opus 4.7** | 1M tokens | ~950K (system overhead ~50K) |
 
-**Effective limit**: ~165-175K usable tokens
+System overhead (tool definitions, safety instructions, execution logs) consumes roughly 30-50K tokens regardless of model. This is negligible at 1M scale but still matters for session planning.
 
 ### Practical Limits
 
-| Content Type | Approximate Capacity |
-|--------------|---------------------|
-| Plain text pages | 100-400 pages |
-| Documents | 40-80 typical docs |
-| Spreadsheet rows | 8,000-40,000 rows |
-| Images (OCR) | 40-80 images |
+| Content Type | Approximate Capacity (1M window) |
+|--------------|----------------------------------|
+| Plain text pages | 500-2,000+ pages |
+| Documents | 200-400 typical docs |
+| Spreadsheet rows | 40,000-200,000 rows |
+| Images (OCR) | 200-400 images |
 
 ### When You Hit Limits
 
@@ -294,27 +301,61 @@ Context limit reached
 ```
 
 **Symptoms**:
-- Cowork stops mid-task (often around 165K, not 200K)
+- Cowork stops mid-task
 - Results are incomplete
 - Silent failure without clear message
 
 **Solutions**:
-- Break work into batches of 10-20 files
-- Process files in groups
+- Break very large batches into groups of 50-100 files
 - Save intermediate results to checkpoint files
-- Start fresh conversation for new tasks
+- Start fresh conversation for unrelated tasks
 
 ### Token Budget by Task Type
 
 | Task | Tokens | Pro Sessions |
 |------|--------|--------------|
 | Simple Q&A | 5K-10K | Many |
-| File inventory | 20K-30K | 6-8 |
-| Small file org (10-20 files) | 30K-50K | 3-5 |
-| Large file org (50+ files) | 80K-150K | 1-2 |
-| OCR batch (10+ images) | 60K-100K | 2-3 |
+| File inventory | 20K-30K | Many |
+| Small file org (10-20 files) | 30K-50K | Many |
+| Large file org (50+ files) | 80K-150K | Many |
+| OCR batch (10+ images) | 60K-100K | Many |
 
 **Agentic overhead**: Plan→Execute→Check cycles add 15-30% tokens.
+
+---
+
+## Claude Design (Anthropic Labs)
+
+Claude Design is a separate Anthropic product — not part of Cowork itself — but closely integrated and highly relevant for non-technical users who need to produce visual work.
+
+**Access**: `claude.ai/design` — available in research preview for Claude Pro, Max, Team, and Enterprise subscribers. No extra cost; uses existing subscription limits. Powered by **Claude Opus 4.7**.
+
+### What It Does
+
+Describe what you need, and Claude builds a first version. Refine through conversation, inline comments on specific elements, direct text edits, or custom adjustment sliders (generated by Claude) for spacing, color, and layout.
+
+**Use cases**:
+- Realistic prototypes for user testing, shareable without code review
+- Product wireframes and mockups for feature planning
+- Pitch decks and presentations (from outline to on-brand deck, exportable as PPTX)
+- Marketing collateral: landing pages, social assets, campaign visuals
+- Design explorations: quickly generate a range of visual directions
+
+### How It Works
+
+| Step | What Happens |
+|------|-------------|
+| **Brand setup** | During onboarding, Claude reads your codebase and design files and builds a design system (colors, typography, components) — applied automatically to every project |
+| **Import** | Start from text, upload DOCX/PPTX/XLSX, point to your codebase, or use the web capture tool to grab elements from an existing site |
+| **Refine** | Inline comments, direct edits, adjustment sliders — ask Claude to apply changes across the whole design |
+| **Collaborate** | Org-scoped sharing: keep private, share as view-only link, or grant edit access with group conversation |
+| **Export** | Internal URL, folder, Canva, PDF, PPTX, standalone HTML |
+
+> **Enterprise**: Claude Design is off by default. Admins must enable it in Organization settings.
+
+### Relationship to Cowork
+
+Claude Design handles the visual creation layer; Cowork handles the file and document automation layer. The two complement each other: use Cowork to process source data (receipts, research, reports), then use Claude Design to turn the output into a polished visual deliverable.
 
 ---
 
@@ -394,6 +435,53 @@ Launched alongside Cowork's general availability:
 | Connector | Category | Use Cases |
 |-----------|----------|-----------|
 | **Zoom** | Communication | Meeting management, transcript retrieval, workflow automation from Cowork |
+
+#### Creative Connectors — Claude for Creative Work (April 28, 2026)
+
+Nine new MCP connectors targeting creative professionals. All are based on the open Model Context Protocol, interoperable with other LLMs.
+
+| Connector | What Claude Can Do |
+|-----------|-------------------|
+| **Ableton** | Q&A on official Live and Push documentation |
+| **Adobe Creative Cloud** | 50+ tools across Photoshop, Premiere, Express, Illustrator, Lightroom, InDesign, Firefly — ~40 available on the free plan without an Adobe account |
+| **Affinity by Canva** | Automate repetitive production tasks (batch image adjustments, layer renaming, export), generate custom features |
+| **Autodesk Fusion** | Create and modify 3D models through conversation (Fusion subscription required) |
+| **Blender** | Natural-language interface to Blender's Python API: analyze and debug scenes, build batch scripts, add tools to the Blender interface |
+| **Resolume Arena** | VJ/live visual performance — control Resolume Arena via natural language for live shows |
+| **Resolume Wire** | Visual programming for Resolume — automate patch creation and routing |
+| **SketchUp** | Describe a room, piece of furniture, or building concept → Claude generates a 3D model starting point to open in SketchUp |
+| **Splice** | Search royalty-free sample catalogs from within Claude |
+
+> For SMBs: the most directly useful connectors are **Adobe** (design assets, social visuals), **Canva via Affinity** (batch production), and **SketchUp** (architecture, interior design, construction).
+
+#### Claude for Small Business (May 13, 2026)
+
+A pre-packaged bundle inside Claude Cowork, activated with a single toggle. Connects Claude to the tools small businesses already use and ships ready-to-run workflows for the most time-consuming tasks.
+
+**Included connectors (pre-installed)**:
+
+| Tool | Role |
+|------|------|
+| **QuickBooks** | Payroll planning, month-end close, cash flow, tax prep |
+| **PayPal** | Settlements, invoicing, dispute and refund management |
+| **HubSpot** | Lead triage, customer pulse, campaign attribution |
+| **Canva** | Campaign asset generation and multi-channel publishing |
+| **Docusign** | Contract sending, status tracking, executed copy filing |
+| **Google Workspace** | Docs, Drive, Calendar, Gmail workflows |
+| **Microsoft 365** | Office document workflows |
+
+**15 ready-to-run agentic workflows + 15 reusable skills for recurring tasks** covering finance, operations, sales, marketing, HR, and customer service — including:
+- **Payroll planning**: reconcile QuickBooks + PayPal settlements, build a 30-day forecast, queue reminders
+- **Month-end close**: reconcile books, flag mismatches, write a plain-English P&L, export a close packet for your accountant
+- **Business pulse**: cash position, sales trend, pipeline movement, weekly commitments — all on one page, on a schedule
+- **Campaign launch**: identify slow revenue periods, analyze HubSpot performance, draft strategy, generate assets in Canva
+- Invoice chaser, margin analyzer, lead triager, contract reviewer, and more
+
+**How it works**: toggle on inside Cowork → connect your tools → pick a workflow → Claude does the work → you approve before anything sends, posts, or pays. Existing tool permissions are respected — Claude can only access what your linked account is already allowed to see.
+
+**Pricing**: no additional fee beyond your Claude subscription and the partner tools you already use.
+
+> **To activate**: open Claude Cowork → sidebar → Claude for Small Business toggle.
 
 #### Functional Plugins by Department
 
@@ -540,7 +628,7 @@ Beyond generating `.xlsx` and `.pptx` files from scratch, Cowork can now directl
 
 > **Practical use case**: Build a reusable PPTX template from your existing company presentation (brand colors, house structure), then generate each new presentation from notes in 3 steps. See the [reusable template workflow](../workflows/presentation-slides.en.md#reusable-template-from-existing-file).
 
-### Claude Add-ins for Microsoft Office (Word, Excel, PowerPoint)
+### Claude Add-ins for Microsoft Office (Word, Excel, PowerPoint, Outlook)
 
 Beyond Cowork's file generation, Claude is also available as a **persistent sidebar directly inside Office apps**, installed once from Microsoft AppSource and present every time you open a file.
 
@@ -552,7 +640,8 @@ Beyond Cowork's file generation, Claude is also available as a **persistent side
 |-----|--------|-------|
 | **Claude for Excel** | ✅ Available | Pro, Team, Enterprise |
 | **Claude for PowerPoint** | ✅ Available | Pro, Team, Enterprise |
-| **Claude for Word** | 🔵 Beta (launched April 10, 2026) | Pro, Team, Enterprise |
+| **Claude for Word** | ✅ Generally available (since May 7, 2026) | Pro, Team, Enterprise |
+| **Claude for Outlook** | 🔵 Public beta (since May 7, 2026) | Pro, Team, Enterprise |
 
 > Free plan access is very limited. A paid plan is required for regular use.
 
@@ -568,14 +657,19 @@ Beyond Cowork's file generation, Claude is also available as a **persistent side
 - Generates and edits slides while respecting your brand guidelines
 - Rewrites and reorganizes content within existing presentations
 
-**Word (beta)**
+**Word** (generally available since May 7, 2026)
 - Drafts and revises `.docx` documents from a persistent sidebar
 - All changes appear as **native Word Track Changes**, reviewable and accept/reject per edit
 - Preserves native document formatting throughout
 
-#### Shared Context Across Apps (since March 2026)
+**Outlook** (public beta since May 7, 2026)
+- Assists with drafting, summarizing, and responding to emails
+- Accessible from the sidebar inside Outlook desktop and web
+- Shares the same conversation context as Excel, Word, and PowerPoint
 
-The three add-ins share a common conversation context. Load an Excel file in the sidebar, then switch to PowerPoint or Word and Claude still has your data available, with no copy-pasting between apps.
+#### Shared Context Across Apps (since March 2026, extended May 2026)
+
+The four add-ins share a common conversation context. Load an Excel file in the sidebar, switch to PowerPoint, Word, or Outlook — Claude still has your data available, no copy-pasting required.
 
 **Practical workflow: Q1 board report from a single dataset**
 
@@ -583,8 +677,9 @@ The three add-ins share a common conversation context. Load an Excel file in the
 2. Ask: *"Summarize the key trends from this data"*
 3. Switch to PowerPoint (Claude keeps the context) → *"Build 5 slides from the Excel data, match this brand template"*
 4. Switch to Word (still in context) → *"Write a 1-page executive summary from the same data"*
+5. Switch to Outlook → *"Draft an email to the board sharing the report highlights"*
 
-Three files produced from one data load, without leaving the Office suite.
+Four files and an email produced from one data load, without leaving Office.
 
 #### How This Differs from Cowork
 
@@ -592,10 +687,12 @@ Three files produced from one data load, without leaving the Office suite.
 |---|--------|----------------------|
 | **Starting point** | Raw data (emails, PDFs, notes, images) | An Office file already open |
 | **Output** | Generates a new `.xlsx` / `.pptx` / `.docx` | Edits or extends the current document |
-| **Interface** | Standalone Claude Desktop app | Sidebar inside Word, Excel, or PowerPoint |
+| **Interface** | Standalone Claude Desktop app | Sidebar inside Word, Excel, PowerPoint, or Outlook |
 | **Best for** | "Create this file from scratch" | "Help me work on this file right now" |
 
 > For formula generation specifically, also see: [Not to Be Confused With: Claude in Excel Add-in](#not-to-be-confused-with-claude-in-excel-add-in).
+
+> **Enterprise note**: All four Office add-ins support LLM Gateway connections — use Claude through Amazon Bedrock, Google Cloud Vertex AI, or Microsoft Azure Foundry without direct API exposure.
 
 ### Agent Teams (Research Preview)
 
