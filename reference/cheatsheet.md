@@ -93,7 +93,7 @@ Create `my-profile.md` in your workspace:
 
 ### Skills Ecosystem
 - Official skills: `github.com/anthropics/skills`
-- Community: `claudemarketplaces.com` | `skills.sh` | `skillhub.club`
+- Community: `claudemarketplaces.com` | `skills.sh` | `remoteopenclaw.com/skills/claude` | `skillhub.club`
 - Install via: Customize tab → search by name or paste URL
 
 ---

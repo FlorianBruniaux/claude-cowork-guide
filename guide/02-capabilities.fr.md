@@ -871,6 +871,7 @@ Au-delà des compétences officielles, la communauté en crée et partage :
 | **github.com/anthropics/skills** | Dépôt officiel Anthropic |
 | **claudemarketplaces.com** | Compétences de la communauté |
 | **skills.sh** | Installation en une commande |
+| **[remoteopenclaw.com/skills/claude](https://www.remoteopenclaw.com/skills/claude)** | Répertoire communautaire de compétences Claude avec catégories, guides d'installation et ressources de workflow |
 | **skillhub.club** | Collections de compétences sélectionnées |
 
 Installation : onglet Personnaliser → recherche par nom ou collez l'URL de la compétence.
