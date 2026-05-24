@@ -1,16 +1,16 @@
 ---
-title: "Diagrammes — Capacités"
+title: "Diagrammes : Capacités"
 description: "3 diagrammes : carte des capacités, écosystème 11 plugins, patterns d'automatisation planifiée"
 tags: [capabilities, plugins, features, automation, scheduled]
 ---
 
-# Capacités — Diagrammes
+# Capacités : Diagrammes
 
 3 diagrammes pour comprendre ce que Cowork peut faire, comment les plugins l'étendent, et comment orchestrer des automatisations récurrentes.
 
 ---
 
-## D06 — Carte des capacités {#d06}
+## D06 : Carte des capacités {#d06}
 
 **Quand l'utiliser** : tu veux savoir si Cowork peut faire X avant de t'y mettre.
 
@@ -48,7 +48,7 @@ mindmap
 ```
 
 <details>
-<summary>Fallback ASCII — Ce que Cowork PEUT faire</summary>
+<summary>Fallback ASCII : Ce que Cowork PEUT faire</summary>
 
 ```
 PEUT FAIRE
@@ -72,7 +72,7 @@ NE PEUT PAS FAIRE
 
 ---
 
-## D09 — Écosystème des 11 plugins officiels {#d09}
+## D09 : Écosystème des 11 plugins officiels {#d09}
 
 **Quand l'utiliser** : tu utilises déjà un outil (Notion, Slack, GitHub...) et tu veux savoir si Cowork peut s'y connecter directement.
 
@@ -111,7 +111,7 @@ flowchart TD
 <summary>Fallback ASCII</summary>
 
 ```
-Claude Cowork — 11 Plugins officiels
+Claude Cowork : 11 Plugins officiels
 =====================================
 
 Productivité  : Notion | Asana | Jira | Linear | Slack
@@ -128,7 +128,7 @@ sans copier-coller manuel.
 
 ---
 
-## D10 — Patterns d'automatisation planifiée {#d10}
+## D10 : Patterns d'automatisation planifiée {#d10}
 
 **Quand l'utiliser** : tu veux mettre en place des tâches récurrentes que Cowork exécute automatiquement, sans intervention manuelle à chaque fois.
 
@@ -170,7 +170,7 @@ flowchart TD
 ```
 
 <details>
-<summary>Fallback ASCII — Patterns d'automatisation planifiée</summary>
+<summary>Fallback ASCII : Patterns d'automatisation planifiée</summary>
 
 ```
 AUTOMATISATION PLANIFIÉE

@@ -137,13 +137,13 @@ cp -R ~/Cowork-Workspace/ ~/Cowork-Backup-$(date +%Y%m%d)/
 
 ### Structure de Chaque Workflow
 
-1. **Cas d'usage** — Quand utiliser ce workflow
-2. **Prérequis** — Ce dont vous avez besoin
-3. **Instructions étape par étape** — Procédure détaillée
-4. **Exemples de prompts** — Commandes prêtes à l'emploi
-5. **Troubleshooting** — Problèmes courants et solutions
-6. **Variations** — Adaptations selon contexte
-7. **Bonnes pratiques** — Conseils métier
+1. **Cas d'usage** : Quand utiliser ce workflow
+2. **Prérequis** : Ce dont vous avez besoin
+3. **Instructions étape par étape** : Procédure détaillée
+4. **Exemples de prompts** : Commandes prêtes à l'emploi
+5. **Troubleshooting** : Problèmes courants et solutions
+6. **Variations** : Adaptations selon contexte
+7. **Bonnes pratiques** : Conseils métier
 
 ---
 

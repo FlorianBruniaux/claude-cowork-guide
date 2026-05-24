@@ -2,7 +2,7 @@
 
 Prompts prêts à l'emploi pour agents immobiliers indépendants, mandataires et petites agences.
 
-**Whitepaper associé** : [WP-15 — IA pour Agents et Mandataires Immobiliers](../whitepapers/fr/15-ia-agents-immobiliers.qmd)
+**Whitepaper associé** : [WP-15 : IA pour Agents et Mandataires Immobiliers](../whitepapers/fr/15-ia-agents-immobiliers.qmd)
 
 ---
 

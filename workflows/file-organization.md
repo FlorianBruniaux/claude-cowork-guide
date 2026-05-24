@@ -11,7 +11,7 @@
 
 ## Use Case
 
-You have a messy folder with mixed files—Downloads folder, project folder, or any disorganized collection. This workflow helps you:
+You have a messy folder with mixed files (Downloads folder, project folder, or any disorganized collection). This workflow helps you:
 
 - Sort files by type, date, or project
 - Create logical folder structures
@@ -253,13 +253,13 @@ Create manifest of archived files.
 
 ## Best Practices
 
-1. **Always copy first** — Work on copies until satisfied
-2. **Review the plan** — Don't auto-approve
-3. **Check the report** — Verify categorization accuracy
-4. **Start with small tests** — Test with 20 files before 2000
-5. **Keep backups** — Until you're confident in results
-6. **Budget for review** — Plan 30-50% of time for checking and fixing misfiles
-7. **Watch your quota** — Large batches (500+ files) consume significant tokens; Pro users may hit limits
+1. **Always copy first** : Work on copies until satisfied
+2. **Review the plan** : Don't auto-approve
+3. **Check the report** : Verify categorization accuracy
+4. **Start with small tests** : Test with 20 files before 2000
+5. **Keep backups** : Until you're confident in results
+6. **Budget for review** : Plan 30-50% of time for checking and fixing misfiles
+7. **Watch your quota** : Large batches (500+ files) consume significant tokens; Pro users may hit limits
 
 ---
 

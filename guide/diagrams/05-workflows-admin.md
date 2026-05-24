@@ -1,16 +1,16 @@
 ---
-title: "Diagrammes — Workflows Administratifs"
+title: "Diagrammes : Workflows Administratifs"
 description: "4 diagrammes : pipeline facturation, flux devis-facture, conformité par secteur, escalade relances"
 tags: [admin, facturation, devis, relances, conformite]
 ---
 
-# Workflows Administratifs — Diagrammes
+# Workflows Administratifs : Diagrammes
 
 4 diagrammes pour les flux administratifs les plus courants en TPE/PME : facturation, devis, relances, conformité.
 
 ---
 
-## D19 — Pipeline de facturation complet {#d19}
+## D19 : Pipeline de facturation complet {#d19}
 
 **Quand l'utiliser** : tu veux visualiser le flux complet de la facturation, depuis la prestation jusqu'à l'encaissement.
 
@@ -49,7 +49,7 @@ flowchart LR
 ```
 
 <details>
-<summary>Fallback ASCII — Pipeline facturation</summary>
+<summary>Fallback ASCII : Pipeline facturation</summary>
 
 ```
 PIPELINE FACTURATION
@@ -77,7 +77,7 @@ PIPELINE FACTURATION
 
 ---
 
-## D20 — Flux devis vers facture {#d20}
+## D20 : Flux devis vers facture {#d20}
 
 **Quand l'utiliser** : tu veux comprendre comment transformer un devis accepté en facture sans ressaisie.
 
@@ -115,7 +115,7 @@ flowchart TD
 ```
 
 <details>
-<summary>Fallback ASCII — Flux devis vers facture</summary>
+<summary>Fallback ASCII : Flux devis vers facture</summary>
 
 ```
 FLUX DEVIS → FACTURE
@@ -138,7 +138,7 @@ Vérification rapide → Facture envoyée → Dossier mis à jour
 
 ---
 
-## D21 — Arbre de conformité par secteur {#d21}
+## D21 : Arbre de conformité par secteur {#d21}
 
 **Quand l'utiliser** : tu veux savoir quels documents sont obligatoires selon ton secteur et si Cowork peut les générer.
 
@@ -176,7 +176,7 @@ flowchart TD
 ```
 
 <details>
-<summary>Fallback ASCII — Conformité par secteur</summary>
+<summary>Fallback ASCII : Conformité par secteur</summary>
 
 ```
 DOCUMENTS OBLIGATOIRES PAR SECTEUR
@@ -208,7 +208,7 @@ Relecture humaine obligatoire avant envoi ou signature.
 
 ---
 
-## D22 — Escalade des relances impayées {#d22}
+## D22 : Escalade des relances impayées {#d22}
 
 **Quand l'utiliser** : une facture n'est pas payée, tu veux savoir quel ton adopter et quand passer à l'étape suivante.
 
@@ -248,7 +248,7 @@ flowchart TD
 ```
 
 <details>
-<summary>Fallback ASCII — Escalade relances</summary>
+<summary>Fallback ASCII : Escalade relances</summary>
 
 ```
 ESCALADE RELANCES IMPAYÉES

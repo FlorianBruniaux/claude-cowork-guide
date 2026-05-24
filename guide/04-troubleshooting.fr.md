@@ -141,7 +141,7 @@ Cowork s'exécute dans une machine virtuelle sandbox. Les VPN interceptent et re
 
 **Solutions** :
 1. Redémarrer complètement Claude Desktop (Cmd+Q, relancer)
-2. Vérifier les mises à jour de l'OS (macOS ou Windows — la VM nécessite des API spécifiques)
+2. Vérifier les mises à jour de l'OS (macOS ou Windows, la VM nécessite des API spécifiques à la version)
 3. S'assurer d'avoir 4 Go+ de RAM libre
 4. Essayer en mode sans échec : Maintenir Shift au démarrage de macOS
 
@@ -515,7 +515,7 @@ EOF
 |-------|--------|
 | 1 | **Verifier la version Windows** : Windows 10 (version 1903+) ou Windows 11 requis |
 | 2 | **Executer en administrateur** : Clic droit sur l'installateur → Executer en tant qu'administrateur |
-| 3 | **Verifier l'antivirus** : Certains antivirus bloquent l'installation — ajouter une exception pour Claude Desktop |
+| 3 | **Verifier l'antivirus** : Certains antivirus bloquent l'installation. Ajouter une exception pour Claude Desktop. |
 | 4 | **Telecharger a nouveau** : Recuperer la derniere version depuis [claude.ai/download](https://claude.ai/download) |
 
 ### Problemes de permissions Windows

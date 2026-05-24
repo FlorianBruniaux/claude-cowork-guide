@@ -1,4 +1,4 @@
-# Avant / Après — Prospection Commerciale
+# Avant / Après : Prospection Commerciale
 
 **Profil** : Thomas, consultant en transformation organisationnelle, indépendant depuis 3 ans. Cherche 2 à 3 nouvelles missions par trimestre.
 

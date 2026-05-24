@@ -440,14 +440,14 @@ Pour relances N2/N3:
 
 ## Bonnes pratiques
 
-1. **Escalade progressive** — Toujours courtoisie avant fermeté
-2. **Documentation exhaustive** — Tout écrit, daté, archivé (preuve tribunaux)
-3. **AR systématique** — Relances fermes en recommandé AR obligatoire
-4. **Calcul pénalités exact** — Erreur = contestation client
-5. **Délais raisonnables** — Laisser 8-10 jours entre relances
-6. **Rester professionnel** — Jamais agressif même si frustration
-7. **Ouverture dialogue** — Toujours proposer plan si difficultés avérées
-8. **Seuil contentieux** — Évaluer coût avocat/huissier vs montant récupérable
+1. **Escalade progressive** : Toujours courtoisie avant fermeté
+2. **Documentation exhaustive** : Tout écrit, daté, archivé (preuve tribunaux)
+3. **AR systématique** : Relances fermes en recommandé AR obligatoire
+4. **Calcul pénalités exact** : Erreur = contestation client
+5. **Délais raisonnables** : Laisser 8-10 jours entre relances
+6. **Rester professionnel** : Jamais agressif même si frustration
+7. **Ouverture dialogue** : Toujours proposer plan si difficultés avérées
+8. **Seuil contentieux** : Évaluer coût avocat/huissier vs montant récupérable
 
 ---
 

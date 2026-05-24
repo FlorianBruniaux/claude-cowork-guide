@@ -31,7 +31,7 @@
 </p>
 
 > Guide complet de l'assistant desktop de Claude pour les travailleurs du savoir et les petites entreprises.
-> Factures, devis, relances, prospection — automatisés sans coder.
+> Factures, devis, relances, prospection : automatisés sans coder.
 
 ---
 
@@ -48,8 +48,8 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 > "Organise les fichiers dans ~/Cowork-Workspace/input/ par type"
 
 ### 3. Aller plus loin
-- 📋 [Cheatsheet](reference/cheatsheet.md) — À imprimer
-- 📖 [Guide complet](guide/01-getting-started.fr.md) — 10 min
+- 📋 [Cheatsheet](reference/cheatsheet.md) : À imprimer
+- 📖 [Guide complet](guide/01-getting-started.fr.md) : 10 min
 
 <details>
 <summary><strong>Prérequis</strong></summary>
@@ -75,7 +75,7 @@ Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalit
 
 ## 👨‍💻 Vous êtes développeur ?
 
-**Claude Code** est le guide pour développeurs — même IA, interface terminal, exécution de code.
+**Claude Code** est le guide pour développeurs : même IA, interface terminal, exécution de code.
 
 → [Guide Claude Code](https://github.com/FlorianBruniaux/claude-code-ultimate-guide)
 
@@ -84,36 +84,36 @@ Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalit
 ## 🎯 Parcours d'apprentissage
 
 <details>
-<summary><strong>Débutant</strong> — Première semaine (5 étapes)</summary>
+<summary><strong>Débutant</strong> : Première semaine (5 étapes)</summary>
 
-1. [Aperçu](guide/00-overview.fr.md) — Ce que Cowork peut faire
-2. [Démarrage](guide/01-getting-started.fr.md) — Installation et premier workflow
-3. [Organisation de fichiers](workflows/file-organization.md) — Exemple pratique
-4. [Bibliothèque de prompts](prompts/file-ops.md) — 20 prompts prêts
-5. [Cheatsheet](reference/cheatsheet.md) — À imprimer
-
-</details>
-
-<details>
-<summary><strong>Décideur</strong> — Vue d'ensemble (4 étapes)</summary>
-
-1. [Contenu](#-contenu) — Capacités et ressources
-2. [Règles d'or](#-règles-dor) — Principes essentiels
-3. [Sécurité](guide/03-security.fr.md) — Bonnes pratiques
-4. [Comparaison](reference/comparison.fr.md) — vs Copilot/Gemini/ChatGPT
+1. [Aperçu](guide/00-overview.fr.md) : Ce que Cowork peut faire
+2. [Démarrage](guide/01-getting-started.fr.md) : Installation et premier workflow
+3. [Organisation de fichiers](workflows/file-organization.md) : Exemple pratique
+4. [Bibliothèque de prompts](prompts/file-ops.md) : 20 prompts prêts
+5. [Cheatsheet](reference/cheatsheet.md) : À imprimer
 
 </details>
 
 <details>
-<summary><strong>Utilisateur avancé</strong> — Exploration approfondie (6 étapes)</summary>
+<summary><strong>Décideur</strong> : Vue d'ensemble (4 étapes)</summary>
 
-1. [Capacités complètes](guide/02-capabilities.fr.md) — Matrice de fonctionnalités
-2. [Tous les workflows](workflows/) — 28 guides étape par étape
+1. [Contenu](#-contenu) : Capacités et ressources
+2. [Règles d'or](#-règles-dor) : Principes essentiels
+3. [Sécurité](guide/03-security.fr.md) : Bonnes pratiques
+4. [Comparaison](reference/comparison.fr.md) : vs Copilot/Gemini/ChatGPT
 
-3. [Dépannage](guide/04-troubleshooting.fr.md) — Résolution d'erreurs
-4. [FAQ](reference/faq.fr.md) — 20+ questions
-5. [Prompts avancés](prompts/research.md) — Recherche et synthèse
-6. [Glossaire](reference/glossary.fr.md) — Terminologie
+</details>
+
+<details>
+<summary><strong>Utilisateur avancé</strong> : Exploration approfondie (6 étapes)</summary>
+
+1. [Capacités complètes](guide/02-capabilities.fr.md) : Matrice de fonctionnalités
+2. [Tous les workflows](workflows/) : 28 guides étape par étape
+
+3. [Dépannage](guide/04-troubleshooting.fr.md) : Résolution d'erreurs
+4. [FAQ](reference/faq.fr.md) : 20+ questions
+5. [Prompts avancés](prompts/research.md) : Recherche et synthèse
+6. [Glossaire](reference/glossary.fr.md) : Terminologie
 
 </details>
 
@@ -138,40 +138,40 @@ Claude Cowork supporte 11 plugins officiels : Asana, Canva, Cloudflare, Figma, G
 ### Workflows (28 guides)
 
 **📋 Administratif** (6)
-- [Génération de factures](workflows/invoice-generation.md) — Modèles professionnels
-- [Devis → Facture](workflows/quote-to-invoice.md) — Transformation automatique
-- [Relances de paiement](workflows/payment-reminders.md) — R1, R2, R3, mise en demeure
-- [Checklist de conformité](workflows/compliance-checklist.md) — Documents obligatoires
-- [Suivi client](workflows/client-followup-tracker.md) — Tableau de bord Excel
-- [Comparaison de prix](workflows/price-comparison.md) — Multi-fournisseurs avec notation
+- [Génération de factures](workflows/invoice-generation.md) : Modèles professionnels
+- [Devis → Facture](workflows/quote-to-invoice.md) : Transformation automatique
+- [Relances de paiement](workflows/payment-reminders.md) : R1, R2, R3, mise en demeure
+- [Checklist de conformité](workflows/compliance-checklist.md) : Documents obligatoires
+- [Suivi client](workflows/client-followup-tracker.md) : Tableau de bord Excel
+- [Comparaison de prix](workflows/price-comparison.md) : Multi-fournisseurs avec notation
 
 **💼 Ventes & Marketing** (5)
-- [Recherche de prospects](workflows/prospect-research.md) — Données entreprises, décideurs
-- [Création de devis](workflows/quote-creation.md) — Détaillés avec variantes
-- [Analyse concurrentielle](workflows/competitor-analysis.md) — Prix, offres, avis
-- [Diapositives de présentation](workflows/presentation-slides.md) — PowerPoint/Keynote
-- [Création de newsletter](workflows/newsletter-creation.md) — HTML responsive
+- [Recherche de prospects](workflows/prospect-research.md) : Données entreprises, décideurs
+- [Création de devis](workflows/quote-creation.md) : Détaillés avec variantes
+- [Analyse concurrentielle](workflows/competitor-analysis.md) : Prix, offres, avis
+- [Diapositives de présentation](workflows/presentation-slides.md) : PowerPoint/Keynote
+- [Création de newsletter](workflows/newsletter-creation.md) : HTML responsive
 
 **🔧 Opérations** (5)
-- [Planification de projet](workflows/project-planning.md) — Gantt, jalons, dépendances
-- [Suivi des stocks](workflows/inventory-tracking.md) — Alertes de réapprovisionnement
-- [Journal de travail](workflows/work-log.md) — Documentation conforme
-- [Checklist qualité](workflows/quality-checklist.md) — Listes standardisées
-- [Commandes fournisseurs](workflows/supplier-order.md) — Approvisionnement optimisé
+- [Planification de projet](workflows/project-planning.md) : Gantt, jalons, dépendances
+- [Suivi des stocks](workflows/inventory-tracking.md) : Alertes de réapprovisionnement
+- [Journal de travail](workflows/work-log.md) : Documentation conforme
+- [Checklist qualité](workflows/quality-checklist.md) : Listes standardisées
+- [Commandes fournisseurs](workflows/supplier-order.md) : Approvisionnement optimisé
 
 **📣 Communication** (6)
-- [Publications réseaux sociaux](workflows/social-media-posts.md) — LinkedIn/Facebook/Instagram
-- [Modèles d'emails](workflows/email-templates.md) — Bibliothèque réutilisable
-- [Réponses aux avis](workflows/review-response.md) — Google/Facebook
-- [Audit de site web](workflows/website-audit.md) — Diagnostic et plan d'action
-- [Transfert de connaissances](workflows/knowledge-transfer.md) — Formation, succession
+- [Publications réseaux sociaux](workflows/social-media-posts.md) : LinkedIn/Facebook/Instagram
+- [Modèles d'emails](workflows/email-templates.md) : Bibliothèque réutilisable
+- [Réponses aux avis](workflows/review-response.md) : Google/Facebook
+- [Audit de site web](workflows/website-audit.md) : Diagnostic et plan d'action
+- [Transfert de connaissances](workflows/knowledge-transfer.md) : Formation, succession
 
 **🗂️ Organisation** (6)
-- [Organisation de fichiers](workflows/file-organization.md) — Tri automatique des dossiers
-- [Suivi des dépenses](workflows/expense-tracking.md) — Tickets vers Excel
-- [Préparation de réunions](workflows/meeting-prep.md) — Briefings clients/fournisseurs
-- [Automatisation planifiée](workflows/scheduled-automation.md) — Tâches récurrentes automatisées
-- [Mise en place mémoire](workflows/memory-setup.md) — Mémoire cross-session avec Desktop Commander
+- [Organisation de fichiers](workflows/file-organization.md) : Tri automatique des dossiers
+- [Suivi des dépenses](workflows/expense-tracking.md) : Tickets vers Excel
+- [Préparation de réunions](workflows/meeting-prep.md) : Briefings clients/fournisseurs
+- [Automatisation planifiée](workflows/scheduled-automation.md) : Tâches récurrentes automatisées
+- [Mise en place mémoire](workflows/memory-setup.md) : Mémoire cross-session avec Desktop Commander
 
 → [Tous les workflows](workflows/README.md)
 
@@ -203,12 +203,12 @@ Claude Cowork supporte 11 plugins officiels : Asana, Canva, Cloudflare, Figma, G
 
 ## 🔑 Règles d'or
 
-1. **Toujours revoir le plan** avant approbation — Cowork propose, vous décidez
-2. **Dossier dédié uniquement** — Ne jamais donner accès à Documents/Bureau/système
-3. **Pas d'identifiants** — Garder les mots de passe et clés API ailleurs
-4. **Vérifier les sources** — Les fichiers téléchargés peuvent contenir des prompts malveillants
-5. **Déconnecter le VPN** — Problème n°1, casse le réseau de la VM
-6. **Sauvegarder avant suppression** — Pas de retour arrière possible
+1. **Toujours revoir le plan** avant approbation : Cowork propose, vous décidez
+2. **Dossier dédié uniquement** : Ne jamais donner accès à Documents/Bureau/système
+3. **Pas d'identifiants** : Garder les mots de passe et clés API ailleurs
+4. **Vérifier les sources** : Les fichiers téléchargés peuvent contenir des prompts malveillants
+5. **Déconnecter le VPN** : Problème n°1, casse le réseau de la VM
+6. **Sauvegarder avant suppression** : Pas de retour arrière possible
 
 > Voir le [Guide de sécurité](guide/03-security.fr.md) pour les pratiques détaillées.
 
@@ -227,7 +227,7 @@ Ce guide existe parce que la documentation officielle est dense et les tutoriels
 
 **Créé avec Claude Code**. Maintenu par [Florian BRUNIAUX](https://github.com/FlorianBruniaux).
 
-**Connexe** : [Guide Claude Code](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) — Pour les développeurs
+**Connexe** : [Guide Claude Code](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) : Pour les développeurs
 
 </details>
 
@@ -257,7 +257,7 @@ Cowork envoie les prompts, fichiers et résultats aux serveurs Anthropic.
 - Pro : ~1-1,5h d'utilisation intensive avant limite
 - OCR : ~97% champs, ~63% précision lignes
 
-**Statut** : Research preview — attendez-vous à des bugs
+**Statut** : Research preview (attendez-vous à des bugs)
 
 </details>
 

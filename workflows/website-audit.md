@@ -381,14 +381,14 @@ Sauvegarde: ~/Cowork-Workspace/output/audit-site/audit-reseau-[date].xlsx
 
 ## Bonnes pratiques
 
-1. **Faites l'audit régulièrement** — 1 fois par trimestre minimum
-2. **Testez sur mobile** — 60%+ des visites sont mobiles (demandez à un proche de tester)
-3. **Vérifiez vos infos** — Téléphone, horaires, adresse doivent être à jour
-4. **Répondez aux avis** — Google favorise les entreprises qui répondent
-5. **Comparez-vous** — Vos concurrents s'améliorent, vous devez aussi
-6. **Priorisez** — Corrigez d'abord ce qui empêche le contact (téléphone, formulaire)
-7. **Mesurez** — Avant/après chaque amélioration, notez les résultats
-8. **Demandez des retours** — Vos clients sont les meilleurs testeurs
+1. **Faites l'audit régulièrement** : 1 fois par trimestre minimum
+2. **Testez sur mobile** : 60%+ des visites sont mobiles (demandez à un proche de tester)
+3. **Vérifiez vos infos** : Téléphone, horaires, adresse doivent être à jour
+4. **Répondez aux avis** : Google favorise les entreprises qui répondent
+5. **Comparez-vous** : Vos concurrents s'améliorent, vous devez aussi
+6. **Priorisez** : Corrigez d'abord ce qui empêche le contact (téléphone, formulaire)
+7. **Mesurez** : Avant/après chaque amélioration, notez les résultats
+8. **Demandez des retours** : Vos clients sont les meilleurs testeurs
 
 ---
 
@@ -403,10 +403,10 @@ Sauvegarde: ~/Cowork-Workspace/output/audit-site/audit-reseau-[date].xlsx
 | Identifier problèmes évidents | Audit SEO technique approfondi |
 
 **Pour un audit technique complet**, utilisez des outils spécialisés:
-- PageSpeed Insights (Google) — performance
-- GTmetrix — vitesse
-- Google Search Console — SEO
-- Mobile-Friendly Test (Google) — compatibilité mobile
+- PageSpeed Insights (Google) : performance
+- GTmetrix : vitesse
+- Google Search Console : SEO
+- Mobile-Friendly Test (Google) : compatibilité mobile
 
 ---
 

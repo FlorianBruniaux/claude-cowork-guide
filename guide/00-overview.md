@@ -36,7 +36,7 @@ All three tabs run under the same subscription (Pro, Max, Teams, or Enterprise).
 
 **Collaboration pattern**: a developer uses the Code tab to build a feature and update the technical spec → you use Cowork to turn that spec into a client-ready presentation. You can share context between both via a shared `CLAUDE.md` file in a common folder.
 
-> **For developers on your team**: the Code tab is Claude Code with visual diff review, live app preview, GitHub PR monitoring, and parallel sessions — no terminal required. Full reference: [code.claude.com/docs/en/desktop](https://code.claude.com/docs/en/desktop)
+> **For developers on your team**: the Code tab is Claude Code with visual diff review, live app preview, GitHub PR monitoring, and parallel sessions (no terminal required). Full reference: [code.claude.com/docs/en/desktop](https://code.claude.com/docs/en/desktop)
 
 ### Relationship to Claude Code
 
@@ -49,7 +49,7 @@ Cowork shares the same backend architecture as Claude Code:
 | Agentic loops | Knowledge workers vs developers |
 | Sub-agent architecture | No code execution |
 
-**Key difference**: Cowork cannot execute arbitrary code—it manipulates files only.
+**Key difference**: Cowork cannot execute arbitrary code. It manipulates files only.
 
 ---
 
@@ -126,17 +126,17 @@ Cowork shares the same backend architecture as Claude Code:
 | **Access model** | Local folder sandbox (user grants permission) |
 | **Cloud connectors** | Experimental, unreliable (Gmail, Drive available but inconsistent as of January 2026) |
 | **Sub-agents** | Parallel execution with fresh context per agent |
-| **Code execution** | **None** — Files only (no scripts, no commands) |
+| **Code execution** | **None** : Files only (no scripts, no commands) |
 | **Browser** | Chrome integration for web research tasks |
 | **Context limit** | ~200K tokens (~150-500 pages per session) |
 | **Output formats** | Excel (.xlsx with formulas), PowerPoint, Word, PDF, text, images |
 
 ### How Sub-Agents Work
 
-1. **Fresh context** — Each sub-agent starts clean (no memory from other agents)
-2. **Parallel execution** — Multiple agents can work simultaneously
-3. **Orchestrator coordination** — Main agent assembles results
-4. **Scope isolation** — Each agent sees only what it needs
+1. **Fresh context** : Each sub-agent starts clean (no memory from other agents)
+2. **Parallel execution** : Multiple agents can work simultaneously
+3. **Orchestrator coordination** : Main agent assembles results
+4. **Scope isolation** : Each agent sees only what it needs
 
 This architecture enables complex multi-step workflows while maintaining security boundaries.
 
@@ -144,7 +144,7 @@ This architecture enables complex multi-step workflows while maintaining securit
 
 ## What Cowork Cannot Do
 
-Understanding limitations is crucial for effective use:
+Knowing what Cowork cannot do shapes how you use it effectively:
 
 | Limitation | Implication |
 |------------|-------------|
@@ -177,7 +177,7 @@ Think of Cowork as a **highly capable assistant with physical access to one fold
 - Cannot run programs or scripts
 - Cannot make network connections directly
 
-This constraint is a **feature, not a bug** — it creates a safe sandbox for autonomous operation.
+This constraint is a **feature, not a bug**: it creates a safe sandbox for autonomous operation.
 
 ---
 
@@ -202,9 +202,9 @@ With Cowork now generally available (GA since April 9, 2026), Claude's underlyin
 
 ## Next Steps
 
-- [Getting Started](01-getting-started.md) — Setup and first workflow
-- [Capabilities](02-capabilities.md) — Detailed feature breakdown
-- [Security](03-security.md) — Safe usage practices
+- [Getting Started](01-getting-started.md) : Setup and first workflow
+- [Capabilities](02-capabilities.md) : Detailed feature breakdown
+- [Security](03-security.md) : Safe usage practices
 
 ---
 

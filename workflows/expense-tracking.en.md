@@ -48,7 +48,7 @@ cp ~/Downloads/*.pdf ~/Cowork-Workspace/input/receipts/
 
 ### Step 2: Review Receipt Quality
 
-Check image quality—Cowork uses OCR and works best with:
+Check image quality: Cowork uses OCR and works best with:
 - Clear, in-focus photos
 - Good lighting
 - Full receipt visible
@@ -318,13 +318,13 @@ Save to ~/Cowork-Workspace/output/team-expenses.xlsx
 
 ## Best Practices
 
-1. **Name receipt files well** — `YYYY-MM-DD-vendor.jpg` helps Cowork
-2. **Process in batches** — Don't do 200 receipts at once; do 20-30
-3. **Verify ALL totals** — OCR line-item accuracy is ~63%; always manually verify sums
-4. **Keep originals** — Don't delete receipt images until verified
-5. **Note uncertainties** — Ask Cowork to flag uncertain extractions
-6. **Budget for validation** — Plan 30-50% of "saved" time for error correction
-7. **Use Max for large batches** — Pro quota (~1.5h intensive) may not cover 50+ receipts
+1. **Name receipt files well** : `YYYY-MM-DD-vendor.jpg` helps Cowork
+2. **Process in batches** : Don't do 200 receipts at once; do 20-30
+3. **Verify ALL totals** : OCR line-item accuracy is ~63%; always manually verify sums
+4. **Keep originals** : Don't delete receipt images until verified
+5. **Note uncertainties** : Ask Cowork to flag uncertain extractions
+6. **Budget for validation** : Plan 30-50% of "saved" time for error correction
+7. **Use Max for large batches** : Pro quota (~1.5h intensive) may not cover 50+ receipts
 
 ---
 

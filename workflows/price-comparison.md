@@ -390,14 +390,14 @@ Sauvegarder: ~/Cowork-Workspace/output/comparatifs/nego-fournisseur-A-[date].txt
 
 ## Bonnes pratiques
 
-1. **Comparer 3 mini** — Minimum 3 fournisseurs pour vraie concurrence
-2. **Coût total** — Intégrer port, délai, conditions paiement (pas que prix)
-3. **Scoring multi-critères** — Prix ≠ seul critère (qualité, service comptent)
-4. **Historique** — Conserver comparatifs (suivre évolutions prix)
-5. **Relations fournisseurs** — Fidélité peut obtenir meilleurs tarifs long terme
-6. **Test nouveaux** — Tester 1 nouveau fournisseur/an (éviter routine coûteuse)
-7. **Négociation** — Montrer comparatifs pour obtenir alignement tarifs
-8. **Automatisation** — Si achats récurrents, créer template Excel réutilisable
+1. **Comparer 3 mini** : Minimum 3 fournisseurs pour vraie concurrence
+2. **Coût total** : Intégrer port, délai, conditions paiement (pas que prix)
+3. **Scoring multi-critères** : Prix ≠ seul critère (qualité, service comptent)
+4. **Historique** : Conserver comparatifs (suivre évolutions prix)
+5. **Relations fournisseurs** : Fidélité peut obtenir meilleurs tarifs long terme
+6. **Test nouveaux** : Tester 1 nouveau fournisseur/an (éviter routine coûteuse)
+7. **Négociation** : Montrer comparatifs pour obtenir alignement tarifs
+8. **Automatisation** : Si achats récurrents, créer template Excel réutilisable
 
 ---
 

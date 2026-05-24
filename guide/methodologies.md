@@ -4,7 +4,7 @@ description: "Working methodologies for non-technical users: CTOC, iterative ref
 tags: [methodologies, ctoc, workflow, quality, batch]
 ---
 
-# Methodologies — Working with Cowork
+# Methodologies : Working with Cowork
 
 Five core methodologies that make the difference between random results and consistent, professional outputs.
 
@@ -24,22 +24,22 @@ CTOC prompt: same task, framed correctly. Result: Cowork does exactly what you n
 
 ### The four blocks
 
-**CONTEXT** — Situation, files involved, business background.
+**CONTEXT** : Situation, files involved, business background.
 Answer: "What are we working with?"
 
 > "I have 30 supplier invoices in ~/Cowork-Workspace/input/invoices-march/ from March 2026"
 
-**TASK** — A single, precise objective.
+**TASK** : A single, precise objective.
 Answer: "What exactly needs to happen?"
 
 > "Extract supplier name, date, amount excl. tax, VAT, amount incl. tax from each invoice"
 
-**OUTPUT** — Exact format and save location.
+**OUTPUT** : Exact format and save location.
 Answer: "What does the result look like and where does it go?"
 
 > "Save as ~/Cowork-Workspace/output/invoices-march.xlsx, one row per invoice, one column per field"
 
-**CONSTRAINTS** — Rules, formats, preferences, edge cases.
+**CONSTRAINTS** : Rules, formats, preferences, edge cases.
 Answer: "What are the rules Cowork must follow?"
 
 > "Currency EUR, dates as DD/MM/YYYY, sort by ascending date. If a field is unreadable, write 'TO VERIFY'"
@@ -70,7 +70,7 @@ For documents and content, the right approach is never to ask for the final vers
 
 ### How to prompt at each stage
 
-**Stage 1 — Draft:**
+**Stage 1 : Draft**
 
 ```
 CONTEXT: I need to write a client proposal for [project description].
@@ -79,14 +79,14 @@ OUTPUT: Plain text in the chat, no formatting needed.
 CONSTRAINTS: 400-500 words max. I'll refine afterwards.
 ```
 
-**Stage 2 — Review:**
+**Stage 2 : Review**
 
 Read the draft. Note specifically:
 - What works
 - What's missing
 - What doesn't match your tone or context
 
-**Stage 3 — Polish:**
+**Stage 3 : Polish**
 
 ```
 CONTEXT: Here is the draft we wrote. [paste draft]
@@ -157,15 +157,15 @@ Never trust a Cowork output without verifying it. Not because Cowork makes mista
 
 ### The three-check method
 
-**Check 1 — Completeness:** Did Cowork process all the items it was supposed to?
+**Check 1 : Completeness.** Did Cowork process all the items it was supposed to?
 
 Open the output file. Count rows. Compare to the number of source files. If 30 invoices went in, 30 rows should come out.
 
-**Check 2 — Spot sampling:** Pick 3-5 random items and verify manually against the source.
+**Check 2 : Spot sampling.** Pick 3-5 random items and verify manually against the source.
 
 Compare the extracted data to the original file. This catches systematic errors (wrong column, wrong date format) before you rely on the full output.
 
-**Check 3 — Edge cases:** Check the items that were most likely to fail.
+**Check 3 : Edge cases.** Check the items that were most likely to fail.
 
 Handwritten documents, low-quality photos, non-standard formats, documents in a foreign language. These are where errors concentrate.
 

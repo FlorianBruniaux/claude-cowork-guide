@@ -1,10 +1,10 @@
 ---
-title: "Learning with AI — Working Effectively with Cowork"
+title: "Learning with AI : Working Effectively with Cowork"
 description: "How to build productive habits with Cowork: user profiles, UVAL protocol adapted for non-technical users, 30-day plan"
 tags: [learning, habits, uval, profiles, 30-day-plan]
 ---
 
-# Learning with AI — Working Effectively with Cowork
+# Learning with AI : Working Effectively with Cowork
 
 Most people use Cowork the same way they used Google: type something, get something, close it. That works. But it leaves 80% of the value on the table.
 
@@ -14,7 +14,7 @@ This guide is about the other 20%: how to build habits that compound.
 
 ## Three User Profiles
 
-Before the plan, identify where you are. These profiles are not judgments — they're starting points.
+Before the plan, identify where you are. These profiles are not judgments, they're starting points.
 
 ### The Dependent User
 
@@ -36,7 +36,7 @@ Before the plan, identify where you are. These profiles are not judgments — th
 
 **Signs**: Knows exactly which tasks to delegate and which to keep. Reviews outputs rather than redoing them from scratch. Has a library of working prompts. Gets results good enough for 95% of cases, then does the final 5% manually.
 
-**This is the target.** Not perfection — delegation.
+**This is the target.** Not perfection, but delegation.
 
 ---
 
@@ -44,13 +44,13 @@ Before the plan, identify where you are. These profiles are not judgments — th
 
 UVAL is a four-step loop for any new Cowork task. It prevents the most common mistake: giving up after one bad result.
 
-**U — Understand**: What exactly do I want as output? Not "help me with invoices" but "extract vendor name, date, and total from these 12 PDF invoices into a spreadsheet." The more specific the output, the better the result.
+**U : Understand.** What exactly do I want as output? Not "help me with invoices" but "extract vendor name, date, and total from these 12 PDF invoices into a spreadsheet." The more specific the output, the better the result.
 
-**V — Verify**: After Cowork returns a result, spot-check 3 items manually. Does the data match the source? Is the format right? This takes 2 minutes and catches 90% of issues before they become problems.
+**V : Verify.** After Cowork returns a result, spot-check 3 items manually. Does the data match the source? Is the format right? This takes 2 minutes and catches 90% of issues before they become problems.
 
-**A — Adjust**: If something is off, tell Cowork what specifically is wrong. "Row 3 has the wrong date format — it should be DD/MM/YYYY not MM/DD/YYYY" beats "this doesn't look right." Specific feedback gets specific corrections.
+**A : Adjust.** If something is off, tell Cowork what specifically is wrong. "Row 3 has the wrong date format (it should be DD/MM/YYYY not MM/DD/YYYY)" beats "this doesn't look right." Specific feedback gets specific corrections.
 
-**L — Log**: Write down what worked. The prompt that produced a good result, the file structure that worked, any constraints you had to add. This is the foundation of your personal prompt library.
+**L : Log.** Write down what worked. The prompt that produced a good result, the file structure that worked, any constraints you had to add. This is the foundation of your personal prompt library.
 
 One loop through UVAL on a new task type. Then you have a reusable template.
 
@@ -89,9 +89,9 @@ Never → this is your biggest current risk.
 
 This plan assumes 30 minutes per week of deliberate practice, on top of your regular Cowork usage.
 
-### Week 1 — One Task, Mastered
+### Week 1 : One Task, Mastered
 
-Pick the most repetitive task in your week. Not the most important — the most repetitive.
+Pick the most repetitive task in your week. Not the most important, the most repetitive.
 
 Day 1-2: Do the task manually and time it.
 Day 3-4: Use a prompt from this guide to do the same task.
@@ -99,7 +99,7 @@ Day 5-7: Refine the prompt until the output needs minimal correction.
 
 End of week: You have one working prompt. Write it down.
 
-### Week 2 — Understand Why It Works
+### Week 2 : Understand Why It Works
 
 Take the prompt from week 1. Break it down.
 
@@ -111,7 +111,7 @@ Try removing one constraint and see what breaks. Try changing the output format.
 
 End of week: You understand one prompt deeply enough to write a similar one from scratch.
 
-### Week 3 — Expand to Two More Tasks
+### Week 3 : Expand to Two More Tasks
 
 Apply what you learned in week 2 to two new tasks. This time, write the prompts yourself using the CTOC structure, without copying from the guide.
 
@@ -119,11 +119,11 @@ If a prompt doesn't work on the first try: use UVAL. Adjust, don't abandon.
 
 End of week: Three working prompts in your library.
 
-### Week 4 — Build the Team Library
+### Week 4 : Build the Team Library
 
 If you work with others: share your three prompts with at least one colleague. Watch them use it. Where do they get confused? What do they need to change for their context?
 
-If you work alone: document the three prompts properly — context notes, what to customize, what to watch for in the output.
+If you work alone: document the three prompts properly (context notes, what to customize, what to watch for in the output).
 
 End of week: A prompt library that's useful to someone other than you.
 
@@ -145,7 +145,7 @@ End of week: A prompt library that's useful to someone other than you.
 
 You're not learning to use software. You're learning to delegate.
 
-A good manager doesn't do the task themselves when they could delegate. They also don't delegate blindly — they verify the output, give feedback, and build up the person's (or tool's) ability to handle more.
+A good manager doesn't do the task themselves when they could delegate. They also don't delegate blindly: they verify the output, give feedback, and build up the person's (or tool's) ability to handle more.
 
 That's the job with Cowork. Delegate the task. Verify the output. Improve the instruction. Build the library.
 
@@ -155,7 +155,7 @@ The compounding effect is real: each prompt you document saves you the thinking 
 
 ## Related Resources
 
-- [Methodologies](../methodologies.md) — CTOC framework in detail
-- [Building Prompting Skills](./building-prompting-skills.md) — progression from copy-paste to writing your own
-- [Measuring Progress](./measuring-progress.md) — concrete tracking template
-- [WP-01: Effective Prompts](../../whitepapers/fr/01-prompts-efficaces-non-devs.qmd) — 20 before/after examples
+- [Methodologies](../methodologies.md) : CTOC framework in detail
+- [Building Prompting Skills](./building-prompting-skills.md) : progression from copy-paste to writing your own
+- [Measuring Progress](./measuring-progress.md) : concrete tracking template
+- [WP-01: Effective Prompts](../../whitepapers/fr/01-prompts-efficaces-non-devs.qmd) : 20 before/after examples

@@ -1,14 +1,14 @@
 ---
-title: "Diagrammes — Dépannage"
+title: "Diagrammes : Dépannage"
 description: "1 diagramme : arbre diagnostic complet quand Cowork ne fonctionne pas"
 tags: [troubleshooting, diagnostic, erreurs, vpn]
 ---
 
-# Dépannage — Diagrammes
+# Dépannage : Diagrammes
 
 ---
 
-## D15 — Arbre diagnostic "ça marche pas" {#d15}
+## D15 : Arbre diagnostic "ça marche pas" {#d15}
 
 **Quand l'utiliser** : Cowork plante, timeout, erreur, résultat mauvais. Ce diagramme couvre 90% des cas.
 
@@ -57,7 +57,7 @@ flowchart TD
 ```
 
 <details>
-<summary>Fallback ASCII — Check-list de démarrage rapide</summary>
+<summary>Fallback ASCII : Check-list de démarrage rapide</summary>
 
 ```
 COWORK NE DÉMARRE PAS

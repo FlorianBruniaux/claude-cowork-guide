@@ -1,4 +1,4 @@
-# Template CLAUDE.md — Consultant / Profession libérale
+# Template CLAUDE.md : Consultant / Profession libérale
 
 Copier ce fichier sous `~/Cowork-Workspace/CLAUDE.md` et remplacer les parties entre `[crochets]`.
 

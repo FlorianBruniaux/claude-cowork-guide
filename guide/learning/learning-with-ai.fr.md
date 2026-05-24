@@ -1,10 +1,10 @@
 ---
-title: "Apprendre avec l'IA — Travailler efficacement avec Cowork"
+title: "Apprendre avec l'IA : Travailler efficacement avec Cowork"
 description: "Comment construire de bonnes habitudes avec Cowork : profils d'utilisateurs, protocole UVAL adapté aux non-développeurs, plan 30 jours"
 tags: [apprentissage, habitudes, uval, profils, plan-30-jours]
 ---
 
-# Apprendre avec l'IA — Travailler efficacement avec Cowork
+# Apprendre avec l'IA : Travailler efficacement avec Cowork
 
 La plupart des gens utilisent Cowork comme Google : on tape quelque chose, on obtient quelque chose, on ferme. Ça marche. Mais ça laisse 80% de la valeur sur la table.
 
@@ -44,13 +44,13 @@ Avant le plan, identifie où tu en es. Ces profils ne sont pas des jugements, ce
 
 UVAL est une boucle en quatre étapes pour toute nouvelle tâche Cowork. Il prévient l'erreur la plus courante : abandonner après un mauvais premier résultat.
 
-**U — Understand (Comprendre)** : qu'est-ce que je veux exactement comme output ? Pas "aide-moi avec mes factures" mais "extraire le nom du fournisseur, la date et le total de ces 12 factures PDF dans un tableur." Plus l'output est précis, meilleur est le résultat.
+**U : Understand (Comprendre).** Qu'est-ce que je veux exactement comme output ? Pas "aide-moi avec mes factures" mais "extraire le nom du fournisseur, la date et le total de ces 12 factures PDF dans un tableur." Plus l'output est précis, meilleur est le résultat.
 
-**V — Verify (Vérifier)** : après que Cowork renvoie un résultat, vérifier 3 éléments manuellement. Les données correspondent-elles à la source ? Le format est-il correct ? Ça prend 2 minutes et ça détecte 90% des problèmes avant qu'ils deviennent des ennuis.
+**V : Verify (Vérifier).** Après que Cowork renvoie un résultat, vérifier 3 éléments manuellement. Les données correspondent-elles à la source ? Le format est-il correct ? Ça prend 2 minutes et ça détecte 90% des problèmes avant qu'ils deviennent des ennuis.
 
-**A — Adjust (Ajuster)** : si quelque chose est incorrect, dire à Cowork ce qui est spécifiquement faux. "La ligne 3 a le mauvais format de date, ça devrait être JJ/MM/AAAA et non MM/JJ/AAAA" vaut mieux que "c'est pas bon." Un feedback précis donne des corrections précises.
+**A : Adjust (Ajuster).** Si quelque chose est incorrect, dire à Cowork ce qui est spécifiquement faux. "La ligne 3 a le mauvais format de date, ça devrait être JJ/MM/AAAA et non MM/JJ/AAAA" vaut mieux que "c'est pas bon." Un feedback précis donne des corrections précises.
 
-**L — Log (Documenter)** : noter ce qui a fonctionné. Le prompt qui a produit un bon résultat, la structure de fichiers qui a marché, les contraintes qu'on a dû ajouter. C'est la base de la bibliothèque de prompts personnelle.
+**L : Log (Documenter).** noter ce qui a fonctionné. Le prompt qui a produit un bon résultat, la structure de fichiers qui a marché, les contraintes qu'on a dû ajouter. C'est la base de la bibliothèque de prompts personnelle.
 
 Une boucle UVAL sur un nouveau type de tâche. Ensuite on a un template réutilisable.
 
@@ -89,7 +89,7 @@ Jamais → c'est ton plus gros risque actuel.
 
 Ce plan suppose 30 minutes par semaine de pratique délibérée, en plus de l'usage habituel de Cowork.
 
-### Semaine 1 — Une tâche maîtrisée
+### Semaine 1 : Une tâche maîtrisée
 
 Choisir la tâche la plus répétitive de la semaine. Pas la plus importante : la plus répétitive.
 
@@ -99,7 +99,7 @@ Jours 5-7 : affiner le prompt jusqu'à ce que l'output nécessite peu de correct
 
 Fin de semaine : un prompt qui fonctionne. Le noter.
 
-### Semaine 2 — Comprendre pourquoi ça marche
+### Semaine 2 : Comprendre pourquoi ça marche
 
 Reprendre le prompt de la semaine 1. Le décomposer.
 
@@ -111,7 +111,7 @@ Essayer de supprimer une contrainte et voir ce que ça casse. Essayer de changer
 
 Fin de semaine : comprendre un prompt suffisamment pour en écrire un similaire de zéro.
 
-### Semaine 3 — Étendre à deux autres tâches
+### Semaine 3 : Étendre à deux autres tâches
 
 Appliquer ce qu'on a appris en semaine 2 à deux nouvelles tâches. Cette fois, écrire les prompts soi-même avec la structure CTOC, sans copier depuis le guide.
 
@@ -119,7 +119,7 @@ Si un prompt ne fonctionne pas du premier coup : utiliser UVAL. Ajuster, ne pas 
 
 Fin de semaine : trois prompts qui fonctionnent dans la bibliothèque.
 
-### Semaine 4 — Construire la bibliothèque de l'équipe
+### Semaine 4 : Construire la bibliothèque de l'équipe
 
 Si on travaille avec d'autres : partager les trois prompts avec au moins un collègue. Observer comment il les utilise. Où se perd-il ? Que doit-il changer pour son contexte ?
 
@@ -155,7 +155,7 @@ L'effet cumulatif est réel : chaque prompt documenté économise le temps de r�
 
 ## À lire aussi
 
-- [Méthodologies](../methodologies.md) — le framework CTOC en détail
-- [Construire ses compétences en prompting](./building-prompting-skills.md) — passer du copier-coller à l'autonomie
-- [Mesurer ses progrès](./measuring-progress.md) — template de suivi concret
-- [WP-01 : Prompts Efficaces](../../whitepapers/fr/01-prompts-efficaces-non-devs.qmd) — 20 exemples avant/après
+- [Méthodologies](../methodologies.md) : le framework CTOC en détail
+- [Construire ses compétences en prompting](./building-prompting-skills.md) : passer du copier-coller à l'autonomie
+- [Mesurer ses progrès](./measuring-progress.md) : template de suivi concret
+- [WP-01 : Prompts Efficaces](../../whitepapers/fr/01-prompts-efficaces-non-devs.qmd) : 20 exemples avant/après

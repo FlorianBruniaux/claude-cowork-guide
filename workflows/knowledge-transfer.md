@@ -864,14 +864,14 @@ Avantages:
 
 ## Bonnes pratiques
 
-1. **Start small** — Documenter 3 procédures critiques avant de viser exhaustivité
-2. **Montrer, faire faire, laisser faire** — Progression pédagogique classique efficace
-3. **Feedback loops** — Demander retours utilisateurs docs pour amélioration continue
-4. **Visuel prioritaire** — Photos/vidéos > texte long (compréhension +70%)
-5. **Langage métier** — Utiliser vocabulaire terrain, pas jargon académique
-6. **Erreurs valorisées** — Documenter erreurs courantes = prévention
-7. **Mise à jour vivante** — Base connaissance évolutive vs figée
-8. **Reconnaissance contributeurs** — Valoriser qui enrichit documentation (motivation collective)
+1. **Start small** : Documenter 3 procédures critiques avant de viser exhaustivité
+2. **Montrer, faire faire, laisser faire** : Progression pédagogique classique efficace
+3. **Feedback loops** : Demander retours utilisateurs docs pour amélioration continue
+4. **Visuel prioritaire** : Photos/vidéos > texte long (compréhension +70%)
+5. **Langage métier** : Utiliser vocabulaire terrain, pas jargon académique
+6. **Erreurs valorisées** : Documenter erreurs courantes = prévention
+7. **Mise à jour vivante** : Base connaissance évolutive vs figée
+8. **Reconnaissance contributeurs** : Valoriser qui enrichit documentation (motivation collective)
 
 **Règle d'or**: Transmission = investissement temps court terme, économie temps long terme. 20h documentation = 200h répétitions évitées sur 5 ans.
 

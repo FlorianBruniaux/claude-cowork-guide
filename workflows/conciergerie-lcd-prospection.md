@@ -1,4 +1,4 @@
-# Workflow: Prospection Conciergerie LCD — Conversion LLD vers Location Saisonnière
+# Workflow: Prospection Conciergerie LCD, Conversion LLD vers Location Saisonnière
 
 > **Temps estimé**: 15 à 30 min par lot de 10-15 prospects
 > **Difficulté**: Intermédiaire
@@ -30,7 +30,7 @@ Ce workflow vous aide à :
 ## Prérequis
 
 - [ ] Cowork activé dans Claude Desktop
-- [ ] Fichier `~/Cowork-Workspace/CLAUDE.md` créé avec vos données de calibrage marché — voir le [template CLAUDE.md conciergerie](../examples/claude-md-templates/conciergerie.md)
+- [ ] Fichier `~/Cowork-Workspace/CLAUDE.md` créé avec vos données de calibrage marché (voir le [template CLAUDE.md conciergerie](../examples/claude-md-templates/conciergerie.md))
 - [ ] Données de calibrage renseignées : prix nuit moyen par zone, taux d'occupation, commission, charges ménage
 - [ ] Dossiers créés :
   ```
@@ -128,7 +128,7 @@ CONTRAINTES :
 - Ton : professionnel mais humain, pas commercial agressif
 - Proposer un audit gratuit, pas une vente frontale
 - Citer au moins 2 éléments spécifiques au bien ou au quartier
-- Utiliser "revenu potentiel estimé" — jamais "garanti", "forcément" ou "à coup sûr"
+- Utiliser "revenu potentiel estimé", jamais "garanti", "forcément" ou "à coup sûr"
 - Structure : accroche liée au bien → une phrase sur qui je suis → observation sur le potentiel → proposition d'échange sans engagement → clôture détendue
 
 Sauvegarde : ~/Cowork-Workspace/output/prospects/batch-[date]/[nom-fichier]-message.txt
@@ -226,7 +226,7 @@ CONTEXTE : Consulte mon fichier ~/Cowork-Workspace/CLAUDE.md pour mes données d
 
 Voici l'annonce :
 
-Titre : "T2 meublé 45m² — Saint-Michel — 850€/mois"
+Titre : "T2 meublé 45m² - Saint-Michel - 850€/mois"
 Description : Appartement lumineux au 3ème étage avec ascenseur. Séjour avec coin cuisine ouverte, une chambre, salle de bain. Double vitrage. Proche tramway B. Quartier vivant, marché du samedi, nombreux restaurants. Disponible le 1er mai. Caution 2 mois.
 
 TÂCHE : Analyser ce bien pour évaluer son potentiel en location courte durée.
@@ -328,7 +328,7 @@ TÂCHE : Rédiger une réponse courte, rassurante et factuelle sur le cadre lég
 
 POINTS À COUVRIR :
 - Pour une résidence secondaire : pas de plafond de 120 nuits (uniquement pour la RP)
-- Déclaration en mairie obligatoire (formulaire cerfa) — je m'en charge
+- Déclaration en mairie obligatoire (formulaire cerfa), je m'en charge
 - Règlement de copropriété à vérifier (si appartement)
 - Régime fiscal : micro-BIC avec abattement 50% (meublé de tourisme classé : 71%)
 - Taxe de séjour : collectée par Airbnb et reversée directement dans la plupart des communes
@@ -397,21 +397,21 @@ Sauvegarde : ~/Cowork-Workspace/output/prospects/suivi-crm-[mois].xlsx
 
 ## Bonnes pratiques
 
-1. **Jamais de scraping automatisé** — Copier manuellement les annonces. Le scraping est illégal (CGU + art. 323-1 CP + droit sui generis L.341-1 CPI) et vous expose à des poursuites civiles et pénales.
+1. **Jamais de scraping automatisé** : Copier manuellement les annonces. Le scraping est illégal (CGU + art. 323-1 CP + droit sui generis L.341-1 CPI) et vous expose à des poursuites civiles et pénales.
 
-2. **Calibrer avec ses propres données d'abord** — Vos biens en gestion dans la même zone sont la meilleure source de calibrage. Plus fiable qu'AirDNA pour votre marché spécifique.
+2. **Calibrer avec ses propres données d'abord** : Vos biens en gestion dans la même zone sont la meilleure source de calibrage. Plus fiable qu'AirDNA pour votre marché spécifique.
 
-3. **Personnaliser chaque message** — Le minimum : 2 éléments spécifiques au bien ou au quartier. Un message qui mentionne le marché du samedi de Saint-Michel convertit mieux qu'un message qui parle de "votre beau quartier".
+3. **Personnaliser chaque message** : Le minimum : 2 éléments spécifiques au bien ou au quartier. Un message qui mentionne le marché du samedi de Saint-Michel convertit mieux qu'un message qui parle de "votre beau quartier".
 
-4. **Respecter le RGPD** — La base légale de votre prospection est l'intérêt légitime (art. 6.1.f RGPD). Cela implique : mentionner l'opt-out dans vos messages, ne pas recontacter un propriétaire qui refuse, ne pas stocker de données personnelles au-delà de ce qui est nécessaire.
+4. **Respecter le RGPD** : La base légale de votre prospection est l'intérêt légitime (art. 6.1.f RGPD). Cela implique : mentionner l'opt-out dans vos messages, ne pas recontacter un propriétaire qui refuse, ne pas stocker de données personnelles au-delà de ce qui est nécessaire.
 
-5. **Jamais de revenus garantis** — Utiliser systématiquement "revenu potentiel estimé", "selon notre expérience dans ce secteur", "sous réserve d'occupation". L'engagement de résultat vous expose juridiquement.
+5. **Jamais de revenus garantis** : Utiliser systématiquement "revenu potentiel estimé", "selon notre expérience dans ce secteur", "sous réserve d'occupation". L'engagement de résultat vous expose juridiquement.
 
-6. **Vérifier la carte G** — Si vous gérez des biens pour le compte de tiers (facturation, signature de contrats, encaissement des loyers), vous exercez une activité de gestion locative soumise à la carte G (loi Hoguet). Sans carte G, votre activité est illégale.
+6. **Vérifier la carte G** : Si vous gérez des biens pour le compte de tiers (facturation, signature de contrats, encaissement des loyers), vous exercez une activité de gestion locative soumise à la carte G (loi Hoguet). Sans carte G, votre activité est illégale.
 
-7. **Traiter en lots, pas en continu** — 10-15 annonces en une session de 30 min est plus efficace que traiter 2-3 annonces au fil de la journée. La concentration améliore la cohérence des analyses.
+7. **Traiter en lots, pas en continu** : 10-15 annonces en une session de 30 min est plus efficace que traiter 2-3 annonces au fil de la journée. La concentration améliore la cohérence des analyses.
 
-8. **Mesurer pour calibrer** — Suivre le taux de réponse par zone et par type de message. Un tableau CRM simple suffit. Après 1 mois, vous saurez quels quartiers et quels angles convertissent le mieux.
+8. **Mesurer pour calibrer** : Suivre le taux de réponse par zone et par type de message. Un tableau CRM simple suffit. Après 1 mois, vous saurez quels quartiers et quels angles convertissent le mieux.
 
 ---
 

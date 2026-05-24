@@ -291,7 +291,7 @@ Include summary sheet with:
 
 ## Power User: Rule-Based Organization
 
-From real-world usage—complex sorting with explicit rules:
+From real-world usage, complex sorting with explicit rules:
 
 ### 18. Multi-Rule Sorting System
 

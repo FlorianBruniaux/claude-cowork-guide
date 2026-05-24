@@ -245,12 +245,12 @@ Après génération de la facture PDF, crée aussi:
 
 ## Bonnes pratiques
 
-1. **Numérotation séquentielle** — Pas de trous dans la numérotation (obligation légale)
-2. **Sauvegarde systématique** — Conservez toutes vos factures pendant 10 ans
-3. **Vérification double** — Relisez toujours avant envoi au client
-4. **Template validé** — Faites valider votre template par votre comptable
-5. **Mentions légales à jour** — Vérifiez annuellement les obligations légales
-6. **Archivage organisé** — Nommage cohérent (année/numéro ou par client)
+1. **Numérotation séquentielle** : Pas de trous dans la numérotation (obligation légale)
+2. **Sauvegarde systématique** : Conservez toutes vos factures pendant 10 ans
+3. **Vérification double** : Relisez toujours avant envoi au client
+4. **Template validé** : Faites valider votre template par votre comptable
+5. **Mentions légales à jour** : Vérifiez annuellement les obligations légales
+6. **Archivage organisé** : Nommage cohérent (année/numéro ou par client)
 
 ---
 

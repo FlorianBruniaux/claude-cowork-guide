@@ -2,7 +2,7 @@
 
 🌐 **Langues** : [Français](cheatsheet.fr.md) | [English](cheatsheet.md)
 
-> **Référence rapide d'une page** — Format imprimable
+> **Référence rapide d'une page** : Format imprimable
 
 **Prérequis** : Abonnement Pro (20$/mois) ou Max (100-200$/mois), macOS ou Windows
 
@@ -277,4 +277,4 @@ La compaction de contexte (beta) étend la durée effective des sessions. Limite
 
 ---
 
-*Cowork v1.9.0 (GA — 9 avril 2026) | Partie de Claude Cowork Guide*
+*Cowork v1.9.0 (GA, 9 avril 2026) | Partie de Claude Cowork Guide*

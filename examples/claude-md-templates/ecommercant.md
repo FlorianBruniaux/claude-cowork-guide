@@ -1,4 +1,4 @@
-# Template CLAUDE.md — E-commerçant et Vendeur en Ligne
+# Template CLAUDE.md : E-commerçant et Vendeur en Ligne
 
 Copier ce fichier sous `~/Cowork-Workspace/CLAUDE.md` et remplacer les parties entre `[crochets]`.
 

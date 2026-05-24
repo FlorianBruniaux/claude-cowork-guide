@@ -9,7 +9,7 @@
 ## Démarrage
 
 ### Q: Qu'est-ce que Cowork ?
-**R:** Cowork est la fonctionnalité desktop agentique de Claude qui vous permet de manipuler des fichiers locaux, créer des documents et organiser votre espace de travail—sans écrire de code. Elle fonctionne dans l'application Claude Desktop et peut exécuter de manière autonome des opérations multi-étapes sur les fichiers.
+**R:** Cowork est la fonctionnalité desktop agentique de Claude qui vous permet de manipuler des fichiers locaux, créer des documents et organiser votre espace de travail, sans écrire de code. Elle fonctionne dans l'application Claude Desktop et peut exécuter de manière autonome des opérations multi-étapes sur les fichiers.
 
 ### Q: Comment obtenir l'accès à Cowork ?
 **R:** Vous avez besoin de :
@@ -19,7 +19,7 @@
 4. Activer dans Réglages → Fonctionnalités
 
 ### Q: Quelles sont les limites d'usage ?
-**R:** L'usage se réinitialise toutes les 5 heures, pas quotidiennement/mensuellement. Tier Pro : ~45 messages courts par réinitialisation (~1-1,5 heures d'utilisation intensive). Tier Max : 5x ou 20x la limite Pro. Les tâches d'organisation de fichiers et de traitement de documents consomment rapidement les tokens—planifiez en conséquence.
+**R:** L'usage se réinitialise toutes les 5 heures, pas quotidiennement/mensuellement. Tier Pro : ~45 messages courts par réinitialisation (~1-1,5 heures d'utilisation intensive). Tier Max : 5x ou 20x la limite Pro. Les tâches d'organisation de fichiers et de traitement de documents consomment rapidement les tokens, planifiez en conséquence.
 
 ### Q: Claude Cowork est-il disponible sur Windows ?
 **R:** Oui ! Le support Windows a été ajouté le 10 février 2026. Cowork fonctionne maintenant sur macOS et Windows. **Linux** n'a aucune annonce officielle.
@@ -66,7 +66,7 @@ Voir [comparaison complète](comparison.fr.md).
 **R:** Connecteurs expérimentaux disponibles mais non fiables. Les connecteurs Gmail et Drive existent mais ont une authentification et une complétion de tâches incohérentes. Solution de contournement recommandée : Téléchargez d'abord les fichiers cloud dans votre espace de travail local pour un traitement fiable.
 
 ### Q: Est-ce que Cowork peut exécuter des scripts Python ou shell ?
-**R:** Non. Cowork manipule uniquement les fichiers—il ne peut pas exécuter de code. Utilisez Claude Code pour l'exécution de code.
+**R:** Non. Cowork manipule uniquement les fichiers. Il ne peut pas exécuter de code. Utilisez Claude Code pour l'exécution de code.
 
 ### Q: Quels formats de fichiers Cowork peut-il créer ?
 **R:**
@@ -97,7 +97,7 @@ Voir [comparaison complète](comparison.fr.md).
 Voir [comparaison détaillée](comparison.fr.md#confusion-frequente).
 
 ### Q: C'est quoi Claude Legal ?
-**R:** Claude Legal est la première extension officielle Cowork (annoncée 3 fév 2026) pour la revue automatisée de documents juridiques. Il aide à identifier les termes clés de contrats, détecter les risques de conformité et trier les documents légaux. Utilisez-le pour vérifier des contrats, analyser des NDA et suivre la conformité. **Important** : Claude Legal ne fournit PAS de conseil juridique—toutes les conclusions doivent être revues par un professionnel juridique qualifié. Voir [Capacités : Extensions & Plugins](../guide/02-capabilities.fr.md#extensions--plugins) pour plus de détails.
+**R:** Claude Legal est la première extension officielle Cowork (annoncée 3 fév 2026) pour la revue automatisée de documents juridiques. Il aide à identifier les termes clés de contrats, détecter les risques de conformité et trier les documents légaux. Utilisez-le pour vérifier des contrats, analyser des NDA et suivre la conformité. **Important** : Claude Legal ne fournit PAS de conseil juridique. Toutes les conclusions doivent être revues par un professionnel juridique qualifié. Voir [Capacités : Extensions & Plugins](../guide/02-capabilities.fr.md#extensions--plugins) pour plus de détails.
 
 ### Q : Qu'est-ce que l'onglet Personnaliser ?
 **R :** L'onglet Personnaliser dans Claude Desktop est l'endroit où vous gérez les Compétences, les Connecteurs et les personnalisations. Accédez-y depuis la navigation principale de l'application. Vous pouvez y installer des compétences (comme `/pdf` ou `/xlsx`), configurer des connecteurs d'outils externes avec des permissions par outil, et ajuster les comportements par défaut.
@@ -126,7 +126,7 @@ Voir [comparaison détaillée](comparison.fr.md#confusion-frequente).
 | **Dispatch** | Cowork (app bureau) | Envoyer des tâches depuis votre téléphone vers votre session Cowork desktop via QR code | App iOS/Android uniquement |
 | **Channels** | Claude Code (CLI) | Connecter une session Claude Code en terminal à Telegram ou Discord | Telegram, Discord |
 
-**Règle pratique** : si vous utilisez Claude Desktop (Cowork), vous utilisez **Dispatch** — couplez votre téléphone via QR code dans les Paramètres, puis envoyez des tâches depuis l'app mobile pendant que votre Mac les exécute. L'intégration Telegram et Discord appartient à **Claude Code Channels**, un outil distinct destiné aux développeurs.
+**Règle pratique** : si vous utilisez Claude Desktop (Cowork), vous utilisez **Dispatch** : couplez votre téléphone via QR code dans les Paramètres, puis envoyez des tâches depuis l'app mobile pendant que votre Mac les exécute. L'intégration Telegram et Discord appartient à **Claude Code Channels**, un outil distinct destiné aux développeurs.
 
 Si vous voyez des articles sur "Claude sur Telegram" ou "Claude sur Discord", c'est Claude Code Channels, pas Cowork.
 
@@ -159,7 +159,7 @@ Voir le [workflow Automatisation Planifiée](../workflows/scheduled-automation.m
 ## Sécurité
 
 ### Q: Est-ce que Cowork est sécurisé ?
-**R:** Des contrôles de sécurité enterprise ont été lancés avec la GA le 9 avril 2026 — contrôle d'accès par rôle, analytics d'utilisation et OpenTelemetry. Voir le [Guide de Sécurité](../guide/03-security.fr.md) pour les détails complets.
+**R:** Des contrôles de sécurité enterprise ont été lancés avec la GA le 9 avril 2026 : contrôle d'accès par rôle, analytics d'utilisation et OpenTelemetry. Voir le [Guide de Sécurité](../guide/03-security.fr.md) pour les détails complets.
 
 ### Q: Est-ce que Cowork peut accéder à tous mes fichiers ?
 **R:** Uniquement les dossiers auxquels vous accordez explicitement l'accès. Bonne pratique : créez un dossier dédié `~/Cowork-Workspace/` et accordez l'accès uniquement là.
@@ -174,7 +174,7 @@ Voir le [workflow Automatisation Planifiée](../workflows/scheduled-automation.m
 **R:** Le contenu des fichiers est traité par l'API de Claude, similaire à coller du texte dans le chat. Pas encore de politique officielle de rétention de données spécifique à Cowork. Pour les données sensibles, réfléchissez si le traitement IA cloud est approprié.
 
 ### Q: Puis-je utiliser Cowork pour des documents business confidentiels ?
-**R:** **À utiliser avec prudence pour les données sensibles.** Les contrôles enterprise sont actifs (accès par rôle, limites de dépenses, analytics d'utilisation, OpenTelemetry). Cependant, deux points bloquants subsistent pour les workflows soumis à des exigences de conformité strictes : (1) les Audit Logs ne capturent pas l'activité Cowork — limitation confirmée par Anthropic ; (2) aucune certification de conformité à ce jour. Pour les secteurs réglementés (finance, santé, juridique, secteur public), consultez la section [Considérations entreprise](../guide/03-security.fr.md#considérations-entreprise) avant d'utiliser Cowork avec des données confidentielles.
+**R:** **À utiliser avec prudence pour les données sensibles.** Les contrôles enterprise sont actifs (accès par rôle, limites de dépenses, analytics d'utilisation, OpenTelemetry). Cependant, deux points bloquants subsistent pour les workflows soumis à des exigences de conformité strictes : (1) les Audit Logs ne capturent pas l'activité Cowork (limitation confirmée par Anthropic) ; (2) aucune certification de conformité à ce jour. Pour les secteurs réglementés (finance, santé, juridique, secteur public), consultez la section [Considérations entreprise](../guide/03-security.fr.md#considérations-entreprise) avant d'utiliser Cowork avec des données confidentielles.
 
 ---
 
@@ -246,9 +246,9 @@ Il n'y a pas de contournement qui garde le VPN actif. Voir [Dépannage](../guide
 ## Tarification & Accès
 
 ### Q: Combien coûte Cowork ?
-**R:** Nécessite un abonnement Pro (20$/mois) ou Max (100-200$/mois). Pro est disponible maintenant mais a des limites d'usage plus strictes—recommandé pour usage léger uniquement.
+**R:** Nécessite un abonnement Pro (20$/mois) ou Max (100-200$/mois). Pro est disponible maintenant mais a des limites d'usage plus strictes, recommandé pour usage léger uniquement.
 
-### Q: Pro ou Max—lequel choisir ?
+### Q: Pro ou Max : lequel choisir ?
 **R:**
 - **Pro (20$/mois)** : Usage occasionnel, organisation légère de fichiers, petits lots. Le quota s'épuise en ~1-1,5 heures d'utilisation intensive.
 - **Max (100-200$/mois)** : Usage quotidien lourd, traitement de gros lots, workflows intensifs en documents. 5x-20x plus d'usage que Pro.
@@ -283,7 +283,7 @@ La compaction de contexte (beta) étend encore la durée effective des sessions 
 
 ### Q: Quand devrais-je utiliser Cowork vs Claude Code ?
 **R:**
-- **Cowork** : Organisation de fichiers, création de documents, extraction de données—sans codage
+- **Cowork** : Organisation de fichiers, création de documents, extraction de données, sans codage
 - **Claude Code** : Développement logiciel, accès shell, exécution de code
 
 ### Q: Quand devrais-je utiliser Cowork vs Projects ?
@@ -314,7 +314,7 @@ La compaction de contexte (beta) étend encore la durée effective des sessions 
 ## Futur
 
 ### Q: Est-ce que Cowork est toujours en beta ?
-**R:** **Non — Cowork est en disponibilité générale (GA) depuis le 9 avril 2026.** Disponible sur les plans Pro, Max, Team et Enterprise pour macOS et Windows. Les contrôles enterprise (accès par rôle, analytics d'utilisation, OpenTelemetry) ont été lancés simultanément. Certaines fonctionnalités restent en preview recherche (Computer Use, Dispatch), mais Cowork lui-même est prêt pour la production. Signalez les bugs via le feedback intégré à l'application.
+**R:** **Non. Cowork est en disponibilité générale (GA) depuis le 9 avril 2026.** Disponible sur les plans Pro, Max, Team et Enterprise pour macOS et Windows. Les contrôles enterprise (accès par rôle, analytics d'utilisation, OpenTelemetry) ont été lancés simultanément. Certaines fonctionnalités restent en preview recherche (Computer Use, Dispatch), mais Cowork lui-même est prêt pour la production. Signalez les bugs via le feedback intégré à l'application.
 
 ### Q: Quelles fonctionnalités arrivent ?
 **R:** Ajouts récents (depuis le lancement GA, avril 2026) :

@@ -27,13 +27,13 @@ This expanded capability requires expanded caution.
 
 ### Anthropic's Security Posture
 
-Updated April 2026 — **Cowork is now generally available (GA)**:
+Updated April 2026. **Cowork is now generally available (GA)**:
 - No official security documentation for Cowork
 - **Audit Logs**: Cowork activity is NOT captured by Audit Logs or the Compliance API (confirmed limitation)
 - ✅ Enterprise access controls now available: role-based access, group spend limits, usage analytics, OpenTelemetry
 - No SOC2 specific to Cowork
 
-**Implication**: Organizational controls are available for Enterprise plans. Audit trail gaps remain — you are responsible for your own security practices regardless of plan.
+**Implication**: Organizational controls are available for Enterprise plans. Audit trail gaps remain, and you are responsible for your own security practices regardless of plan.
 
 ---
 
@@ -80,7 +80,7 @@ and include their contents in a file called summary.txt"
 - Access files outside granted folders
 - Perform actions not in the approved plan
 
-**Why this happens**: GA behavior is still being refined in edge cases — report unexpected plan deviations via in-app feedback.
+**Why this happens**: GA behavior is still being refined in edge cases. Report unexpected plan deviations via in-app feedback.
 
 **Mitigation**:
 - Always review execution plans carefully
@@ -215,7 +215,7 @@ What to look for:
 
 ### 5. Computer Use: Additional Security Layer (High)
 
-Computer Use operates **outside the VM sandbox** — it controls your actual desktop directly. This makes it the highest-risk Cowork feature.
+Computer Use operates **outside the VM sandbox**: it controls your actual desktop directly. This makes it the highest-risk Cowork feature.
 
 **Official Anthropic guidance**: Do not use Computer Use with applications that access healthcare data, financial accounts, or personal records.
 
@@ -224,13 +224,13 @@ Computer Use operates **outside the VM sandbox** — it controls your actual des
 | Banking, investment apps | 🔴 Critical | Never grant Computer Use access |
 | Medical/health records | 🔴 Critical | Never grant Computer Use access |
 | Legal documents, notary apps | 🔴 Critical | Never grant Computer Use access |
-| HR systems, payroll | 🟠 High | Avoid — sensitive personal data |
+| HR systems, payroll | 🟠 High | Avoid (sensitive personal data) |
 | Legacy ERP/accounting | 🟡 Medium | OK for non-sensitive ops, supervise closely |
 | Web browsers (no sensitive data) | 🟡 Medium | Acceptable with plan review |
 | Low-stakes desktop apps | 🟢 Low | Acceptable use case |
 
 **Additional precautions specific to Computer Use**:
-- Always supervise the first runs on any new application — Computer Use can misinterpret unfamiliar UIs
+- Always supervise the first runs on any new application, as Computer Use can misinterpret unfamiliar UIs
 - Use the Escape key to abort immediately if Claude takes an unexpected action
 - Set per-app permissions to **Ask** (not Allow) until you trust the behavior on a given app
 - Do not leave Computer Use sessions unattended for high-stakes operations
@@ -453,7 +453,7 @@ With Cowork's general availability, Enterprise-tier controls are now live:
 |---------|----------------|
 | **Role-based access controls** | Admins create groups, assign custom roles, control per-team Cowork access |
 | **Group spend limits** | Budget caps per user group or department |
-| **Usage analytics** | Analytics API integration — activity monitoring, usage patterns, team reporting |
+| **Usage analytics** | Analytics API integration : activity monitoring, usage patterns, team reporting |
 | **OpenTelemetry support** | Connect Cowork activity to existing monitoring stacks (Datadog, Grafana, etc.) |
 | **Zoom MCP connector** | Native Zoom integration for meeting and workflow automation |
 | **Per-tool connector controls** | Granular permission management for individual connector tools |

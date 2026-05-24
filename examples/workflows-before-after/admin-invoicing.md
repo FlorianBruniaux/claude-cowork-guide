@@ -1,4 +1,4 @@
-# Avant / Après — Facturation Administrative
+# Avant / Après : Facturation Administrative
 
 **Profil** : Sophie, plombière, 3 salariés, 30 chantiers par mois en moyenne.
 

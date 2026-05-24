@@ -1,4 +1,4 @@
-# Template CLAUDE.md — Commerçant
+# Template CLAUDE.md : Commerçant
 
 Copier ce fichier sous `~/Cowork-Workspace/CLAUDE.md` et remplacer les parties entre `[crochets]`.
 

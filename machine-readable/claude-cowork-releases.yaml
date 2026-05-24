@@ -17,16 +17,16 @@ releases:
   - version: "1.10.0"
     date: "2026-05-16"
     highlights:
-      - "⭐ Claude Opus 4.7 (16 avril 2026) — nouveau modèle : vision haute résolution 3x, auto-correction améliorée, effort xhigh, même prix qu'Opus 4.6 ($5/$25 par M tokens)"
-      - "⭐ Claude Design (17 avril 2026, research preview) — créer designs, slides, prototypes par conversation en langage naturel. Propulsé par Opus 4.7. Import DOCX/PPTX/XLSX, export PDF/PPTX/HTML/Canva"
-      - "⭐ 9 Creative Connectors (28 avril 2026) — Ableton, Adobe CC (50+ outils), Affinity by Canva, Autodesk Fusion, Blender, Resolume Arena, Resolume Wire, SketchUp, Splice"
-      - "⭐ Claude for Small Business (13 mai 2026) — 7 connecteurs préinstallés (QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, Microsoft 365) + 15 workflows agentic + 15 skills réutilisables"
-      - "⭐ Claude for Legal (12 mai 2026) — 12 plugins Cowork par domaine de pratique + 20+ connecteurs MCP (iManage, Westlaw, LexisNexis, Harvey, Relativity, Ironclad, etc.)"
-      - "⭐ Agents for Financial Services (5 mai 2026) — 10 templates d'agents + 8 nouveaux connecteurs : Dun & Bradstreet, Moody's, Verisk, Third Bridge, Experian, GLG, Guidepoint, IBISWorld"
-      - "Limites d'usage doublées (6 mai 2026) — partenariat SpaceX Colossus 1 : plus de throttling heures de pointe pour Pro/Max/Team/Enterprise"
-      - "Claude Security (30 avril, Enterprise beta) — scan codebases via agents parallèles, rapports vulnérabilités, patchs ciblés. Partenaires : CrowdStrike, Palo Alto, SentinelOne, Wiz"
-      - "Outlook add-in (beta) + Word GA (7 mai 2026) — 4 add-ins Office avec contexte partagé (Excel + PowerPoint + Word + Outlook)"
-      - "Opus 4.7 Fast Mode (12-13 mai, research preview API) — 2,5x plus rapide, tarif 6x le standard ($30/$150 MTok)"
+      - "⭐ Claude Opus 4.7 (16 avril 2026) : nouveau modèle : vision haute résolution 3x, auto-correction améliorée, effort xhigh, même prix qu'Opus 4.6 ($5/$25 par M tokens)"
+      - "⭐ Claude Design (17 avril 2026, research preview) : créer designs, slides, prototypes par conversation en langage naturel. Propulsé par Opus 4.7. Import DOCX/PPTX/XLSX, export PDF/PPTX/HTML/Canva"
+      - "⭐ 9 Creative Connectors (28 avril 2026) : Ableton, Adobe CC (50+ outils), Affinity by Canva, Autodesk Fusion, Blender, Resolume Arena, Resolume Wire, SketchUp, Splice"
+      - "⭐ Claude for Small Business (13 mai 2026) : 7 connecteurs préinstallés (QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, Microsoft 365) + 15 workflows agentic + 15 skills réutilisables"
+      - "⭐ Claude for Legal (12 mai 2026) : 12 plugins Cowork par domaine de pratique + 20+ connecteurs MCP (iManage, Westlaw, LexisNexis, Harvey, Relativity, Ironclad, etc.)"
+      - "⭐ Agents for Financial Services (5 mai 2026) : 10 templates d'agents + 8 nouveaux connecteurs : Dun & Bradstreet, Moody's, Verisk, Third Bridge, Experian, GLG, Guidepoint, IBISWorld"
+      - "Limites d'usage doublées (6 mai 2026) : partenariat SpaceX Colossus 1 : plus de throttling heures de pointe pour Pro/Max/Team/Enterprise"
+      - "Claude Security (30 avril, Enterprise beta) : scan codebases via agents parallèles, rapports vulnérabilités, patchs ciblés. Partenaires : CrowdStrike, Palo Alto, SentinelOne, Wiz"
+      - "Outlook add-in (beta) + Word GA (7 mai 2026) : 4 add-ins Office avec contexte partagé (Excel + PowerPoint + Word + Outlook)"
+      - "Opus 4.7 Fast Mode (12-13 mai, research preview API) : 2,5x plus rapide, tarif 6x le standard ($30/$150 MTok)"
     breaking: []
 
   # ─────────────────────────────────────────────────────────────
@@ -36,13 +36,13 @@ releases:
   - version: "1.9.0"
     date: "2026-04-11"
     highlights:
-      - "⭐ Cowork disponibilité générale (GA) — passe de research preview à GA sur macOS et Windows (Pro, Max, Team, Enterprise)"
-      - "⭐ Connecteur Zoom MCP — nouveau connecteur officiel Anthropic : gestion de réunions, récupération de transcripts, automatisation depuis Cowork"
-      - "⭐ Contrôle d'accès par rôle — Enterprise : groupes, rôles personnalisés, activation Cowork par équipe"
-      - "⭐ Analytics d'utilisation — intégration Analytics API pour monitoring d'activité et reporting par équipe"
-      - "Limites de dépenses par groupe (Enterprise) — plafonds budgétaires par département"
-      - "OpenTelemetry étendu — connecter l'activité Cowork aux stacks de monitoring existantes (Datadog, Grafana, etc.)"
-      - "Smart Skills Loading — les Skills ne consomment plus l'intégralité de la fenêtre de contexte"
+      - "⭐ Cowork disponibilité générale (GA) : passe de research preview à GA sur macOS et Windows (Pro, Max, Team, Enterprise)"
+      - "⭐ Connecteur Zoom MCP : nouveau connecteur officiel Anthropic : gestion de réunions, récupération de transcripts, automatisation depuis Cowork"
+      - "⭐ Contrôle d'accès par rôle : Enterprise : groupes, rôles personnalisés, activation Cowork par équipe"
+      - "⭐ Analytics d'utilisation : intégration Analytics API pour monitoring d'activité et reporting par équipe"
+      - "Limites de dépenses par groupe (Enterprise) : plafonds budgétaires par département"
+      - "OpenTelemetry étendu : connecter l'activité Cowork aux stacks de monitoring existantes (Datadog, Grafana, etc.)"
+      - "Smart Skills Loading : les Skills ne consomment plus l'intégralité de la fenêtre de contexte"
     breaking: []
 
   # ─────────────────────────────────────────────────────────────
@@ -52,21 +52,21 @@ releases:
   - version: "1.8.1"
     date: "2026-04-01"
     highlights:
-      - "Computer Use — hiérarchie d'accès en 3 niveaux : connectors → Chrome → contrôle écran (tableau + implications performance)"
-      - "Computer Use — warnings officiels Anthropic documentés : interdiction santé, finance, données personnelles. Section dédiée dans Security Guide avec tableau risques par catégorie d'app"
+      - "Computer Use : hiérarchie d'accès en 3 niveaux : connectors → Chrome → contrôle écran (tableau + implications performance)"
+      - "Computer Use : warnings officiels Anthropic documentés : interdiction santé, finance, données personnelles. Section dédiée dans Security Guide avec tableau risques par catégorie d'app"
       - "Computer Use opère hors VM : précision critique dans Security Guide (contrôle bureau réel, pas VM isolée)"
-      - "FAQ : nouvelle Q&A Dispatch vs Channels — clarifie la confusion Telegram/Discord (Channels = Claude Code CLI, pas Cowork)"
+      - "FAQ : nouvelle Q&A Dispatch vs Channels : clarifie la confusion Telegram/Discord (Channels = Claude Code CLI, pas Cowork)"
     breaking: []
 
   - version: "1.8.0"
     date: "2026-03-27"
     highlights:
-      - "⭐ Computer Use — research preview dans Cowork (23 mars, Pro et Max, macOS) : Claude contrôle directement le bureau (ouvrir apps, cliquer, remplir formulaires, naviguer). Setup en 4 étapes documenté dans Getting Started Step 9."
-      - "⭐ Applications interactives sur iOS et Android (25 mars) : graphiques live, croquis, contenu partageable dans l'app mobile — extension de la feature desktop (v1.6.1)"
-      - "Changed: Dispatch — détails techniques (QR code pairing, thread unique, limitation apps natives Mac)"
+      - "⭐ Computer Use : research preview dans Cowork (23 mars, Pro et Max, macOS) : Claude contrôle directement le bureau (ouvrir apps, cliquer, remplir formulaires, naviguer). Setup en 4 étapes documenté dans Getting Started Step 9."
+      - "⭐ Applications interactives sur iOS et Android (25 mars) : graphiques live, croquis, contenu partageable dans l'app mobile : extension de la feature desktop (v1.6.1)"
+      - "Changed: Dispatch : détails techniques (QR code pairing, thread unique, limitation apps natives Mac)"
       - "Changed: Cowork disponible sur Team et Enterprise (correction availability matrix)"
-      - "Fixed: Audit Logs / Compliance API ne capturent pas l'activité Cowork — avertissement secteurs réglementés ajouté dans Security guide"
-      - "Fixed: VM isolée — terminologie officielle Anthropic remplace 'sandbox' dans Security guide"
+      - "Fixed: Audit Logs / Compliance API ne capturent pas l'activité Cowork : avertissement secteurs réglementés ajouté dans Security guide"
+      - "Fixed: VM isolée : terminologie officielle Anthropic remplace 'sandbox' dans Security guide"
     breaking: []
 
   # ─────────────────────────────────────────────────────────────
@@ -76,9 +76,9 @@ releases:
   - version: "1.7.0"
     date: "2026-03-22"
     highlights:
-      - "⭐ Claude Dispatch (17 mars, research preview Max → Pro) : contrôler Cowork depuis son smartphone — tâches envoyées du mobile, exécutées sur desktop, fichiers locaux, sandbox, approbation requise"
-      - "⭐ Projects dans Cowork : workspaces persistants par zone de travail (fichiers, contexte, instructions, mémoire) — import en 1 clic ou départ de zéro"
-      - "Workflow: PPTX reusable template — variation 'Reusable template from existing file' (3 étapes, prompts copy-paste)"
+      - "⭐ Claude Dispatch (17 mars, research preview Max → Pro) : contrôler Cowork depuis son smartphone : tâches envoyées du mobile, exécutées sur desktop, fichiers locaux, sandbox, approbation requise"
+      - "⭐ Projects dans Cowork : workspaces persistants par zone de travail (fichiers, contexte, instructions, mémoire) : import en 1 clic ou départ de zéro"
+      - "Workflow: PPTX reusable template : variation 'Reusable template from existing file' (3 étapes, prompts copy-paste)"
       - "Changed: LLM Gateway pour add-ins Excel × PowerPoint (Amazon Bedrock, Google Cloud Vertex AI, Microsoft Foundry)"
     breaking: []
 
@@ -89,7 +89,7 @@ releases:
   - version: "1.6.1"
     date: "2026-03-17"
     highlights:
-      - "⭐ Visuels interactifs (bêta, 12 mars) : graphiques, diagrammes et visualisations HTML/JS directement dans le chat — sliders, arbres de décision, météo, recettes, inputs à choix multiples (desktop)"
+      - "⭐ Visuels interactifs (bêta, 12 mars) : graphiques, diagrammes et visualisations HTML/JS directement dans le chat : sliders, arbres de décision, météo, recettes, inputs à choix multiples (desktop)"
       - "Add-ins Excel × PowerPoint (11 mars) : partage du contexte complet entre les deux apps + Skills avec slash commands (ex. /quarterly-update)"
       - "Promotion usage mars 2026 (13-27 mars) : limites doublées hors heures de pointe pour tous les plans sauf Enterprise"
     breaking: []
@@ -97,7 +97,7 @@ releases:
   - version: "1.6.0"
     date: "2026-03-04"
     highlights:
-      - "⭐ Claude in Chrome (bêta) : extension Chrome pour tous plans payants — multi-onglets, tâches navigateur planifiées, /slash commands"
+      - "⭐ Claude in Chrome (bêta) : extension Chrome pour tous plans payants : multi-onglets, tâches navigateur planifiées, /slash commands"
       - "⭐ Import Memory : migration depuis ChatGPT/Gemini/Copilot via prompt Anthropic dédié"
       - "⭐ Acquisition Vercept + Computer Use 72.5% sur OSWorld (vs 15% fin 2024)"
       - "Instructions globales et par dossier dans Cowork (complément aux tâches planifiées)"

@@ -356,11 +356,11 @@ Save to: ~/Cowork-Workspace/output/updated-brief.docx
 
 ## Best Practices
 
-1. **Start research early** — Web research takes time
-2. **Focus on relevance** — Not everything about a company matters
-3. **Prepare questions** — Shows engagement and drives conversation
-4. **Know your goals** — Clear objectives guide the brief
-5. **Update and reuse** — Briefs for recurring meetings can be updated
+1. **Start research early** : Web research takes time
+2. **Focus on relevance** : Not everything about a company matters
+3. **Prepare questions** : Shows engagement and drives conversation
+4. **Know your goals** : Clear objectives guide the brief
+5. **Update and reuse** : Briefs for recurring meetings can be updated
 
 ---
 

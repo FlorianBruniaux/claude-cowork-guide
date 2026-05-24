@@ -390,14 +390,14 @@ Chef chantier:
 
 ## Bonnes pratiques
 
-1. **Exhaustif mais concis** — Tous points critiques, rien de superflu
-2. **Mise à jour régulière** — Réviser checklist si erreur trouvée
-3. **Retour d'expérience** — Ajouter point si incident récurrent
-4. **Format terrain** — Papier plastifié ou tablette tactile
-5. **Traçabilité** — Conserver checklists remplies (preuve contrôle)
-6. **Formation équipe** — Tous utilisent même checklist (cohérence)
-7. **Validation externe** — Faire valider checklist par organisme certification si applicable
-8. **Amélioration continue** — Si 1 point jamais coché, inutile → retirer
+1. **Exhaustif mais concis** : Tous points critiques, rien de superflu
+2. **Mise à jour régulière** : Réviser checklist si erreur trouvée
+3. **Retour d'expérience** : Ajouter point si incident récurrent
+4. **Format terrain** : Papier plastifié ou tablette tactile
+5. **Traçabilité** : Conserver checklists remplies (preuve contrôle)
+6. **Formation équipe** : Tous utilisent même checklist (cohérence)
+7. **Validation externe** : Faire valider checklist par organisme certification si applicable
+8. **Amélioration continue** : Si 1 point jamais coché, inutile → retirer
 
 ---
 

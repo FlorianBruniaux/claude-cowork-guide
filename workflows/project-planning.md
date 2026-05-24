@@ -409,14 +409,14 @@ Anticiper trésorerie (paiements fournisseurs vs facturations client)
 
 ## Bonnes pratiques
 
-1. **Buffer temporel** — Ajouter 10-15% marge sécurité (aléas)
-2. **Chemin critique** — Identifier tâches sans marge (priorité absolue)
-3. **Parallélisation** — Maximiser tâches simultanées (si intervenants différents)
-4. **Jalons** — Définir points validation client (éviter mauvaises surprises)
-5. **Communication** — Partager planning avec TOUS intervenants (coordination)
-6. **Mise à jour régulière** — Hebdomadaire minimum (planning obsolète = inutile)
-7. **Réserves anticipées** — Noter points incertains (ex: "vérifier état dalle")
-8. **Documentation** — Photos + notes à chaque jalon (traçabilité)
+1. **Buffer temporel** : Ajouter 10-15% marge sécurité (aléas)
+2. **Chemin critique** : Identifier tâches sans marge (priorité absolue)
+3. **Parallélisation** : Maximiser tâches simultanées (si intervenants différents)
+4. **Jalons** : Définir points validation client (éviter mauvaises surprises)
+5. **Communication** : Partager planning avec TOUS intervenants (coordination)
+6. **Mise à jour régulière** : Hebdomadaire minimum (planning obsolète = inutile)
+7. **Réserves anticipées** : Noter points incertains (ex: "vérifier état dalle")
+8. **Documentation** : Photos + notes à chaque jalon (traçabilité)
 
 ---
 

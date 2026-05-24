@@ -1,16 +1,16 @@
 ---
-title: "Diagrammes — Communication et Organisation"
+title: "Diagrammes : Communication et Organisation"
 description: "4 diagrammes : création contenu, choix template email, organisation fichiers, transfert connaissances"
 tags: [communication, organisation, contenu, email, fichiers]
 ---
 
-# Communication et Organisation — Diagrammes
+# Communication et Organisation : Diagrammes
 
 4 diagrammes pour structurer ta communication et ton organisation quotidienne : contenu régulier, emails professionnels, classement de fichiers, documentation interne.
 
 ---
 
-## D29 — Pipeline de création de contenu {#d29}
+## D29 : Pipeline de création de contenu {#d29}
 
 **Quand l'utiliser** : tu veux créer du contenu régulier pour tes réseaux sociaux ou ta newsletter sans y passer des heures.
 
@@ -87,7 +87,7 @@ flowchart TD
 
 ---
 
-## D30 — Arbre de choix du template email {#d30}
+## D30 : Arbre de choix du template email {#d30}
 
 **Quand l'utiliser** : tu dois envoyer un email professionnel et tu ne sais pas quel ton ou format adopter.
 
@@ -165,7 +165,7 @@ ADMINISTRATION → Objectif ?
 
 ---
 
-## D31 — Arbre d'organisation des fichiers {#d31}
+## D31 : Arbre d'organisation des fichiers {#d31}
 
 **Quand l'utiliser** : ton dossier de travail est en désordre et tu veux une structure que tout le monde peut suivre.
 
@@ -258,7 +258,7 @@ Doublon détecté ? → Alerte + décision humaine
 
 ---
 
-## D32 — Flux de transfert de connaissances {#d32}
+## D32 : Flux de transfert de connaissances {#d32}
 
 **Quand l'utiliser** : tu veux documenter tes processus pour former un nouvel employé ou pour ne pas tout réapprendre si tu reprends une tâche 6 mois plus tard.
 
@@ -310,7 +310,7 @@ flowchart TD
 ```
 [Processus à documenter]
           |
-[Session de travail — Cowork observe et note chaque étape]
+[Session de travail : Cowork observe et note chaque étape]
           |
 [Cowork génère la documentation étape par étape]
           |

@@ -280,14 +280,14 @@ Planning: 1 post tous les 2 jours
 
 ## Bonnes pratiques
 
-1. **Régularité > Quantité** — Mieux 2 posts/semaine réguliers que 10 puis silence
-2. **Visuels obligatoires** — Posts avec photo = 10x plus d'engagement
-3. **Heures optimales** — LinkedIn 8h-9h et 17h-18h, Facebook 13h-16h, Instagram 11h-13h et 19h-21h
-4. **Interaction** — Répondre à TOUS les commentaires (dans les 24h)
-5. **Hashtags stratégiques** — Rechercher volume avant d'utiliser
-6. **Cohérence** — Garder même ton/style sur durée
-7. **Analytics** — Noter quels types de posts marchent le mieux
-8. **Authenticité** — Montrer vraies réalisations, pas stock photos
+1. **Régularité > Quantité** : Mieux 2 posts/semaine réguliers que 10 puis silence
+2. **Visuels obligatoires** : Posts avec photo = 10x plus d'engagement
+3. **Heures optimales** : LinkedIn 8h-9h et 17h-18h, Facebook 13h-16h, Instagram 11h-13h et 19h-21h
+4. **Interaction** : Répondre à TOUS les commentaires (dans les 24h)
+5. **Hashtags stratégiques** : Rechercher volume avant d'utiliser
+6. **Cohérence** : Garder même ton/style sur durée
+7. **Analytics** : Noter quels types de posts marchent le mieux
+8. **Authenticité** : Montrer vraies réalisations, pas stock photos
 
 ---
 

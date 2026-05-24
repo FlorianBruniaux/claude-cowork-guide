@@ -1,4 +1,4 @@
-# Avant / Après — Création de Contenu Réseaux Sociaux
+# Avant / Après : Création de Contenu Réseaux Sociaux
 
 **Profil** : Marie, gérante d'une boutique de décoration intérieure, 1 employée à temps partiel. Présente sur Instagram (2 400 abonnés) et Facebook (890 abonnés).
 

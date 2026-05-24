@@ -246,14 +246,14 @@ If gap in numbering (ex: INV-2026-082 missing):
 
 ## Best Practices
 
-1. **Keep quotes** — Archive quote AND invoice together (traceability)
-2. **Formal acceptance** — Always have proof of acceptance (email, signature)
-3. **Reasonable delay** — Issue invoice max 1 month after quote acceptance
-4. **Amount consistency** — If modified, document and inform client
-5. **Unique numbering** — Never 2 invoices with same number
-6. **Double verification** — Review before sending (invoice error = credit note + new invoice)
-7. **Clear due date** — Always mention payment deadline
-8. **Prompt sending** — Send invoice within 48h of acceptance (professionalism)
+1. **Keep quotes** : Archive quote AND invoice together (traceability)
+2. **Formal acceptance** : Always have proof of acceptance (email, signature)
+3. **Reasonable delay** : Issue invoice max 1 month after quote acceptance
+4. **Amount consistency** : If modified, document and inform client
+5. **Unique numbering** : Never 2 invoices with same number
+6. **Double verification** : Review before sending (invoice error = credit note + new invoice)
+7. **Clear due date** : Always mention payment deadline
+8. **Prompt sending** : Send invoice within 48h of acceptance (professionalism)
 
 ---
 

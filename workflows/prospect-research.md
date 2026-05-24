@@ -479,14 +479,14 @@ Avantages vs Excel:
 
 ## Bonnes pratiques
 
-1. **Qualification AVANT contact** — 15 min recherche économise 2h démarchage inutile
-2. **Sources officielles priorité** — K-bis/BODACC pour données légales
-3. **Mise à jour régulière** — Requalifier prospects tous les 6 mois
-4. **RGPD compliance** — Ne stocker que données professionnelles publiques
-5. **Personnalisation systématique** — Utiliser infos recherchées dans approche commerciale
-6. **Score objectif** — Grille notation évite biais émotionnels
-7. **Documentation traçable** — Archiver sources et dates recherche
-8. **ROI temps** — Approfondir proportionnellement au montant deal potentiel
+1. **Qualification AVANT contact** : 15 min recherche économise 2h démarchage inutile
+2. **Sources officielles priorité** : K-bis/BODACC pour données légales
+3. **Mise à jour régulière** : Requalifier prospects tous les 6 mois
+4. **RGPD compliance** : Ne stocker que données professionnelles publiques
+5. **Personnalisation systématique** : Utiliser infos recherchées dans approche commerciale
+6. **Score objectif** : Grille notation évite biais émotionnels
+7. **Documentation traçable** : Archiver sources et dates recherche
+8. **ROI temps** : Approfondir proportionnellement au montant deal potentiel
 
 ---
 

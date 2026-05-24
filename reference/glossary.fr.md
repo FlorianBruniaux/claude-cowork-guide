@@ -49,7 +49,7 @@ Décrit des systèmes IA capables de planifier et exécuter des tâches multi-é
 Fonctionnalité en preview recherche permettant la coordination multi-agents où plusieurs agents Claude travaillent ensemble sur des tâches complexes. Un agent orchestre les autres, chacun gérant une sous-tâche spécialisée avec une coordination sophistiquée.
 
 ### Approval Gate (Porte d'approbation)
-Le point de contrôle où Cowork montre ses actions planifiées et attend votre confirmation avant d'exécuter. **Mesure de sécurité critique**—toujours vérifier avant d'approuver.
+Le point de contrôle où Cowork montre ses actions planifiées et attend votre confirmation avant d'exécuter. **Mesure de sécurité critique** : toujours vérifier avant d'approuver.
 
 ### Artefact (Artifact)
 Un fichier créé par Claude (document, tableur, image, etc.) pendant une session Cowork. Les artefacts apparaissent dans l'interface de Claude où vous pouvez les prévisualiser, les modifier ou les télécharger. Exemples : PDFs générés, tableurs organisés, fichiers de données extraites.

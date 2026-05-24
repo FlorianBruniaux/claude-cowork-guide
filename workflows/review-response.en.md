@@ -232,11 +232,11 @@ PROPOSED RESPONSE:
 
 Version A (formal):
 "Thank you so much for this feedback! We're delighted that our sourdough bread and Julie's welcome brighten your mornings. Looking forward to seeing you soon.
-— Pierre Martin, Martin Bakery"
+- Pierre Martin, Martin Bakery"
 
 Version B (warm):
 "What a pleasure to read this! 😊 Julie will be touched by your message. Our sourdough (and our smiles) await you tomorrow morning!
-— Pierre, Martin Bakery"
+- Pierre, Martin Bakery"
 
 Recommendation: Version B (better matches neighborhood bakery proximity tone)
 ```
@@ -535,7 +535,7 @@ EXAMPLE:
 Review: "Excellent haircut at this salon, I recommend!"
 
 Response:
-"Thank you Sophie for this recommendation! 😊 If you talk about us, feel free to share our code REFERRAL2024: -$15 for you and your referral on next visit. Looking forward! — Julie, Trendy Hair"
+"Thank you Sophie for this recommendation! 😊 If you talk about us, feel free to share our code REFERRAL2024: -$15 for you and your referral on next visit. Looking forward! - Julie, Trendy Hair"
 
 Balance: Recognition + Subtle commercial value (not spam)
 ```
@@ -544,14 +544,14 @@ Balance: Recognition + Subtle commercial value (not spam)
 
 ## Best Practices
 
-1. **Response speed** — Within 24-48h maximum (preferably <12h for negatives)
-2. **Personalization** — Always mention specific review detail (name, cited element)
-3. **Brand-consistent tone** — Adapt formality to business image (bakery ≠ law firm)
-4. **Problem transparency** — Own mistakes without defensive over-justifications
-5. **Public action** — Announce concrete improvement to show feedback consideration
-6. **Private contact if conflict** — Move negotiations/disputes out of public space
-7. **Team recognition** — Cite positively mentioned employees (internal motivation)
-8. **Post-response follow-up** — Follow up with dissatisfied customers privately to verify resolution
+1. **Response speed** : Within 24-48h maximum (preferably <12h for negatives)
+2. **Personalization** : Always mention specific review detail (name, cited element)
+3. **Brand-consistent tone** : Adapt formality to business image (bakery ≠ law firm)
+4. **Problem transparency** : Own mistakes without defensive over-justifications
+5. **Public action** : Announce concrete improvement to show feedback consideration
+6. **Private contact if conflict** : Move negotiations/disputes out of public space
+7. **Team recognition** : Cite positively mentioned employees (internal motivation)
+8. **Post-response follow-up** : Follow up with dissatisfied customers privately to verify resolution
 
 **Golden rule**: Each review response = permanent public showcase. Write as if prospects are reading (they are).
 

@@ -459,14 +459,14 @@ PJ: rapport-semaine-[numéro].pdf
 
 ## Bonnes pratiques
 
-1. **Quotidien impératif** — Remplir chaque soir, même si "RAS"
-2. **Factuel uniquement** — Décrire faits, pas interprétations
-3. **Horodatage** — Toujours dater et signer entrées
-4. **Photos systématiques** — Avant/après + étapes sensibles
-5. **Conservation longue** — Garder 10 ans (responsabilité décennale)
-6. **Backup** — Copier journal sur cloud/disque externe hebdomadairement
-7. **Validation client** — Faire signer étapes importantes
-8. **Incidents détaillés** — Plus de détails vaut mieux que pas assez
+1. **Quotidien impératif** : Remplir chaque soir, même si "RAS"
+2. **Factuel uniquement** : Décrire faits, pas interprétations
+3. **Horodatage** : Toujours dater et signer entrées
+4. **Photos systématiques** : Avant/après + étapes sensibles
+5. **Conservation longue** : Garder 10 ans (responsabilité décennale)
+6. **Backup** : Copier journal sur cloud/disque externe hebdomadairement
+7. **Validation client** : Faire signer étapes importantes
+8. **Incidents détaillés** : Plus de détails vaut mieux que pas assez
 
 ---
 

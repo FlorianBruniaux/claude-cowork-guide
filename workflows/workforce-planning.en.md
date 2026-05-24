@@ -384,9 +384,9 @@ For French company: include employer charges (45% of gross salary).
 
 ## Related Workflows
 
-- [Financial Model Validation](financial-model-validation.en.md) — Audit budget formulas
-- [Expense Tracking](expense-tracking.en.md) — Track actual labor costs
-- [Budget vs Actual Analysis](budget-vs-actual.en.md) — Compare planned vs real headcount costs
+- [Financial Model Validation](financial-model-validation.en.md) : Audit budget formulas
+- [Expense Tracking](expense-tracking.en.md) : Track actual labor costs
+- [Budget vs Actual Analysis](budget-vs-actual.en.md) : Compare planned vs real headcount costs
 
 ---
 

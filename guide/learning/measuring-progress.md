@@ -16,11 +16,11 @@ Measurement solves this: it shows you what's working, where to focus next, and w
 
 Three reasons, in order of importance.
 
-**Reason 1 — Avoid abandonment.** The first two weeks with any new tool feel awkward. Things take longer because you're learning. Without a baseline, you'll compare "Cowork week 2" to "manual work at my peak efficiency" and conclude Cowork is slower. The measurement shows you that week 2 Cowork is already 30% faster than manual baseline, even if it doesn't feel that way.
+**Reason 1 : Avoid abandonment.** The first two weeks with any new tool feel awkward. Things take longer because you're learning. Without a baseline, you'll compare "Cowork week 2" to "manual work at my peak efficiency" and conclude Cowork is slower. The measurement shows you that week 2 Cowork is already 30% faster than manual baseline, even if it doesn't feel that way.
 
-**Reason 2 — Know where to focus.** You have limited time to invest in getting better at Cowork. Measurement tells you which tasks are yielding the most time savings per hour of practice. Double down there.
+**Reason 2 : Know where to focus.** You have limited time to invest in getting better at Cowork. Measurement tells you which tasks are yielding the most time savings per hour of practice. Double down there.
 
-**Reason 3 — Convince others.** If you want to roll Cowork out to your team, or justify the subscription to a manager, you need numbers. "It feels faster" doesn't cut it. "Invoice processing went from 45 minutes to 9 minutes, verified over 8 invoices" does.
+**Reason 3 : Convince others.** If you want to roll Cowork out to your team, or justify the subscription to a manager, you need numbers. "It feels faster" doesn't cut it. "Invoice processing went from 45 minutes to 9 minutes, verified over 8 invoices" does.
 
 ---
 
@@ -28,7 +28,7 @@ Three reasons, in order of importance.
 
 Avoid tracking everything. These four are sufficient.
 
-### Metric 1 — Time Saved Per Task
+### Metric 1 : Time Saved Per Task
 
 **What it measures:** The direct time reduction on a specific task, before vs. after using Cowork.
 
@@ -45,7 +45,7 @@ Avoid tracking everything. These four are sufficient.
 
 **What good looks like:** 60-85% time reduction on structured, repetitive tasks. Less than 50% means the task is either too complex or the prompt needs refinement.
 
-### Metric 2 — Prompt Library Size
+### Metric 2 : Prompt Library Size
 
 **What it measures:** The accumulation of reusable, validated prompts for your specific context.
 
@@ -62,7 +62,7 @@ Avoid tracking everything. These four are sufficient.
 | End of month 3 | 15+ prompts |
 | Mature state | 25-30 prompts covering your core workflows |
 
-### Metric 3 — Team Adoption Rate
+### Metric 3 : Team Adoption Rate
 
 **What it measures:** What percentage of your team uses Cowork at least once per week.
 
@@ -72,7 +72,7 @@ Avoid tracking everything. These four are sufficient.
 
 **What good looks like:** 50% adoption after month 1, 80% after month 3. Below 30% after two months means the deployment approach needs rethinking (usually: prompts aren't shared, or the use cases chosen aren't relevant to enough people).
 
-### Metric 4 — Error Rate in Outputs
+### Metric 4 : Error Rate in Outputs
 
 **What it measures:** How often a Cowork output requires significant correction before use.
 
@@ -180,6 +180,6 @@ At that point, keep the monthly review (5 minutes) but drop the weekly table. Th
 
 ## Related Resources
 
-- [Learning with AI](./learning-with-ai.md) — the full learning framework
-- [Building Prompting Skills](./building-prompting-skills.md) — how to progress from copy-paste to autonomy
-- [WP-11: ROI and Deployment](../../whitepapers/fr/11-roi-deploiement-dirigeants.qmd) — ROI calculation for managers
+- [Learning with AI](./learning-with-ai.md) : the full learning framework
+- [Building Prompting Skills](./building-prompting-skills.md) : how to progress from copy-paste to autonomy
+- [WP-11: ROI and Deployment](../../whitepapers/fr/11-roi-deploiement-dirigeants.qmd) : ROI calculation for managers

@@ -26,7 +26,7 @@ Avant de commencer, assurez-vous d'avoir :
 **Comment vérifier :**
 
 1. Ouvrez l'application Claude Desktop
-2. Regardez en haut de la barre latérale — vous devriez voir trois modes :
+2. Regardez en haut de la barre latérale. Vous devriez voir trois modes :
    ```
    Chat    Cowork    Code
    ```
@@ -242,10 +242,10 @@ Chaque tâche Cowork suit ce schéma :
 
 ### Points clés
 
-1. **Examinez toujours le plan** — C'est votre point de contrôle de sécurité
-2. **Soyez spécifique** — Les requêtes vagues mènent à des résultats inattendus
-3. **Commencez petit** — Testez avec quelques fichiers avant les lots importants
-4. **Vérifiez les résultats** — Vérifiez la sortie avant de continuer
+1. **Examinez toujours le plan** : C'est votre point de contrôle de sécurité
+2. **Soyez spécifique** : Les requêtes vagues mènent à des résultats inattendus
+3. **Commencez petit** : Testez avec quelques fichiers avant les lots importants
+4. **Vérifiez les résultats** : Vérifiez la sortie avant de continuer
 
 ---
 
@@ -478,7 +478,7 @@ Pour envoyer des tâches à ton bureau depuis ton téléphone quand tu es absent
 1. Ouvre **Claude pour iOS ou Android**
 2. Dans le fil Cowork, appuie sur **Pair Desktop**
 3. Scanne le **QR code** affiché dans ton application Claude Desktop
-4. Ton téléphone est maintenant connecté — envoie des tâches à distance
+4. Ton téléphone est maintenant connecté. Envoie des tâches à distance depuis n'importe où.
 
 > **Prérequis** : Le Mac doit rester allumé avec Claude Desktop ouvert. Claude utilise le fil associé (Dispatch) pour exécuter les tâches sur ton ordinateur quand tu es absent.
 
@@ -503,7 +503,7 @@ Pour envoyer des tâches à ton bureau depuis ton téléphone quand tu es absent
 
 **Cause la plus fréquente** : Version de l'application obsolète.
 
-1. **Vérifiez votre version** — Voir la section [Prérequis](#️-vérifiez-que-vous-avez-la-dernière-version-de-claude-desktop) ci-dessus
+1. **Vérifiez votre version** : Voir la section [Prérequis](#️-vérifiez-que-vous-avez-la-dernière-version-de-claude-desktop) ci-dessus
 2. Si vous ne voyez pas "Chat | Cowork | Code" en haut, mettez à jour votre application
 3. Après la mise à jour, vérifiez Paramètres → Fonctionnalités → assurez-vous que Cowork est activé
 4. Redémarrez l'application
@@ -526,10 +526,10 @@ Pour envoyer des tâches à ton bureau depuis ton téléphone quand tu es absent
 
 Vous êtes maintenant prêt à :
 
-1. **[Explorer les capacités](02-capabilities.fr.md)** — Découvrez ce que Cowork peut faire
-2. **[Examiner la sécurité](03-security.fr.md)** — Pratiques d'utilisation sûres
-3. **[Essayer les workflows](../workflows/)** — Tutoriels étape par étape
-4. **[Utiliser les prompts prêts](../prompts/)** — Modèles copier-coller
+1. **[Explorer les capacités](02-capabilities.fr.md)** : Découvrez ce que Cowork peut faire
+2. **[Examiner la sécurité](03-security.fr.md)** : Pratiques d'utilisation sûres
+3. **[Essayer les workflows](../workflows/)** : Tutoriels étape par étape
+4. **[Utiliser les prompts prêts](../prompts/)** : Modèles copier-coller
 
 ---
 

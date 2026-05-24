@@ -22,17 +22,17 @@ Cowork supporte différents modèles Claude. Depuis le lancement de Sonnet 4.6 (
 | **Opus 4.7** | Tâches les plus difficiles, travail visuel dense, projets multi-sessions | Plus lent | 1M tokens, 128K sortie | 5x Sonnet |
 
 **Notes sur les modèles** (mis à jour mai 2026) :
-- **Sonnet 4.6** (sorti le 17 février 2026) : Modèle recommandé par défaut pour Cowork. 72,5% sur OSWorld-Verified vs 72,7% pour Opus 4.6 — performances pratiquement identiques sur les tâches agentiques, à 5x moins cher. Fenêtre 1M tokens, 128K sortie, adaptive thinking.
+- **Sonnet 4.6** (sorti le 17 février 2026) : Modèle recommandé par défaut pour Cowork. 72,5% sur OSWorld-Verified vs 72,7% pour Opus 4.6, soit des performances pratiquement identiques sur les tâches agentiques, à 5x moins cher. Fenêtre 1M tokens, 128K sortie, adaptive thinking.
 - **Opus 4.6** (sorti le 5 février 2026) : Avantage pour le raisonnement scientifique profond (91,3% sur GPQA Diamond) et la coordination multi-agents complexe. Pour les opérations Cowork standard, l'écart avec Sonnet 4.6 est négligeable.
-- **Opus 4.7** (sorti le 16 avril 2026) : Amélioration notable sur les tâches les plus difficiles — s'auto-corrige pendant la phase de planification, meilleur suivi d'instructions, vision haute résolution (jusqu'à 2 576 px / ~3,75 Mpx, 3x la résolution précédente). Meilleure qualité créative sur slides, docs et interfaces. Meilleure mémoire cross-sessions. Nouveau niveau d'effort `xhigh`. Même tarif qu'Opus 4.6.
+- **Opus 4.7** (sorti le 16 avril 2026) : Amélioration notable sur les tâches les plus difficiles. S'auto-corrige pendant la phase de planification, meilleur suivi d'instructions, vision haute résolution (jusqu'à 2 576 px / ~3,75 Mpx, 3x la résolution précédente). Meilleure qualité créative sur slides, docs et interfaces. Meilleure mémoire cross-sessions. Nouveau niveau d'effort `xhigh`. Même tarif qu'Opus 4.6.
 - **Compaction de contexte** : Cowork compresse automatiquement l'historique de conversation pour des sessions plus longues sans perte de contexte.
 
 ### Quand utiliser chaque modèle
 
 | Type de tâche | Modèle recommandé | Pourquoi |
 |---------------|-------------------|---------|
-| Organisation de fichiers, renommage | **Sonnet 4.6** | Tâches agentiques — point fort de Sonnet |
-| Extraction tickets de caisse, lots OCR | **Sonnet 4.6** | Tool-calling — Sonnet classé #1 mondial |
+| Organisation de fichiers, renommage | **Sonnet 4.6** | Tâches agentiques : point fort de Sonnet |
+| Extraction tickets de caisse, lots OCR | **Sonnet 4.6** | Tool-calling : Sonnet classé #1 mondial |
 | Rédaction emails, création documents | **Sonnet 4.6** | Rapide, qualité suffisante |
 | Automatisations, tâches planifiées | **Sonnet 4.6** | Même performance agentique, 5x moins cher |
 | Synthèse de recherches multi-sources | **Sonnet 4.6** | 1M tokens pour les grands volumes |
@@ -45,14 +45,14 @@ Cowork supporte différents modèles Claude. Depuis le lancement de Sonnet 4.6 (
 
 ### Conseils de sélection
 
-1. **Sonnet 4.6 par défaut** — Gère 90%+ des tâches Cowork avec des performances agentiques quasi-identiques à Opus
+1. **Sonnet 4.6 par défaut** : Gère 90%+ des tâches Cowork avec des performances agentiques quasi-identiques à Opus
 2. **Passez à Opus 4.7** quand :
    - Le résultat requiert un raisonnement expert (juridique, scientifique, réglementaire)
    - La tâche s'étend sur plusieurs sessions et nécessite de la mémoire persistante
    - Vous traitez des images denses, captures d'écran ou diagrammes complexes
    - La qualité visuelle sur slides/docs est critique
 3. **Opus 4.7 vs 4.6** : 4.7 détecte ses propres erreurs logiques pendant la planification, suit mieux les instructions, produit de meilleurs visuels. Pour les opérations fichiers standard, la différence est marginale.
-4. **Attention au quota** — Opus consomme 5x plus de quota par token que Sonnet. Sur le plan Pro, ça s'accumule vite.
+4. **Attention au quota** : Opus consomme 5x plus de quota par token que Sonnet. Sur le plan Pro, ça s'accumule vite.
 
 > **Utilisateurs Pro** : Sonnet 4.6 est votre défaut pour tout. Réservez Opus 4.7 aux rares tâches où la profondeur de raisonnement ou la qualité visuelle compte vraiment.
 >
@@ -84,7 +84,7 @@ Cowork supporte différents modèles Claude. Depuis le lancement de Sonnet 4.6 (
 | **Markdown** (.md) | ✅ Oui | Formatage complet |
 | **Word** (.docx) | ✅ Oui | En-têtes, tableaux, formatage |
 | **Excel** (.xlsx) | ✅ Oui | Formules, feuilles multiples, formatage |
-| **PowerPoint** (.pptx) | ✅ Oui | Diapositives, formatage de base — voir [workflow template réutilisable →](../workflows/presentation-slides.md#template-réutilisable-depuis-fichier-existant) |
+| **PowerPoint** (.pptx) | ✅ Oui | Diapositives, formatage de base (voir [workflow template réutilisable →](../workflows/presentation-slides.md#template-réutilisable-depuis-fichier-existant)) |
 | **PDF** | ✅ Oui | Généré depuis le contenu |
 | **HTML** | ✅ Oui | HTML/CSS complet |
 | **CSV** | ✅ Oui | Export de données |
@@ -179,7 +179,7 @@ SORTIE : Feuille Excel avec Date, Vendeur, Montant, Catégorie
 
 **Limitations** :
 - **Extraction de champs** : ~97% de précision (vendeur, date, totaux)
-- **Extraction de lignes détaillées** : ~63% de précision (lignes de tableaux) — vérifier manuellement
+- **Extraction de lignes détaillées** : ~63% de précision (lignes de tableaux), à vérifier manuellement
 - Le texte manuscrit est difficile
 - Certains formats de reçus peuvent ne pas s'analyser correctement
 - Budgétez 30-50% du temps "économisé" pour la correction d'erreurs
@@ -328,7 +328,7 @@ Limite de contexte atteinte
 
 Claude Design est un produit Anthropic distinct de Cowork, mais complémentaire et très pertinent pour les professionnels qui ont besoin de produire des livrables visuels sans passer par un graphiste.
 
-**Accès** : `claude.ai/design` — disponible en research preview pour les abonnés Pro, Max, Team et Enterprise. Sans surcoût ; consomme les limites d'abonnement existantes. Propulsé par **Claude Opus 4.7**.
+**Accès** : `claude.ai/design`, disponible en research preview pour les abonnés Pro, Max, Team et Enterprise. Sans surcoût ; consomme les limites d'abonnement existantes. Propulsé par **Claude Opus 4.7**.
 
 ### Ce que ça fait
 
@@ -347,7 +347,7 @@ Décrivez ce dont vous avez besoin, Claude génère une première version. Affin
 |-------|----------------|
 | **Charte intégrée** | À l'onboarding, Claude lit votre codebase et vos fichiers design, construit un système de design (couleurs, typographie, composants) et l'applique automatiquement à chaque projet |
 | **Import** | Texte, upload DOCX/PPTX/XLSX, pointage vers votre codebase, ou capture web d'un site existant |
-| **Affiner** | Commentaires inline, modifications directes, curseurs d'ajustement — demandez à Claude d'appliquer les changements à l'ensemble du design |
+| **Affiner** | Commentaires inline, modifications directes, curseurs d'ajustement. Demandez à Claude d'appliquer les changements à l'ensemble du design. |
 | **Collaborer** | Partage org-scoped : privé, lien lecture, ou accès édition avec conversation collective |
 | **Exporter** | URL interne, dossier local, Canva, PDF, PPTX, HTML standalone |
 
@@ -380,7 +380,7 @@ Cowork supporte des extensions officielles qui étendent ses capacités pour des
 
 > ⚠️ **Disclaimer juridique** : Claude Legal ne fournit PAS de conseil juridique. Il assiste dans l'analyse de documents et l'identification de risques. Toutes les conclusions doivent être revues par un professionnel juridique qualifié avant toute décision.
 
-**Comment utiliser** : Les capacités Claude Legal sont accessibles via les prompts Cowork standards lors du traitement de documents légaux. Aucune installation séparée requise—mentionnez simplement vos besoins d'analyse juridique dans la description de votre tâche.
+**Comment utiliser** : Les capacités Claude Legal sont accessibles via les prompts Cowork standards lors du traitement de documents légaux. Aucune installation séparée requise : mentionnez simplement vos besoins d'analyse juridique dans la description de votre tâche.
 
 **Exemple de prompt** :
 ```
@@ -426,7 +426,7 @@ Ajouts clés pour les TPE/PME :
 | **Harvey** | Juridique | Analyse de documents légaux |
 | **LegalZoom** | Juridique | Templates de documents, conformité |
 
-Des connecteurs finance/institutionnels ont aussi été ajoutés (FactSet, MSCI, LSEG, S&P Global) — principalement pour les workflows entreprise et investissement.
+Des connecteurs finance/institutionnels ont aussi été ajoutés (FactSet, MSCI, LSEG, S&P Global), principalement pour les workflows entreprise et investissement.
 
 #### Connecteurs GA (9 avril 2026)
 
@@ -436,19 +436,19 @@ Lancés avec la disponibilité générale de Cowork :
 |------------|-----------|-------------|
 | **Zoom** | Communication | Gestion de réunions, récupération de transcripts, automatisation de workflows depuis Cowork |
 
-#### Connecteurs créatifs — Claude for Creative Work (28 avril 2026)
+#### Connecteurs créatifs : Claude for Creative Work (28 avril 2026)
 
 9 nouveaux connecteurs MCP pour les professionnels créatifs. Tous basés sur MCP et interopérables avec d'autres LLMs.
 
 | Connecteur | Ce que Claude peut faire |
 |------------|--------------------------|
 | **Ableton** | Q&A sur la documentation officielle Live et Push |
-| **Adobe Creative Cloud** | 50+ outils : Photoshop, Premiere, Express, Illustrator, Lightroom, InDesign, Firefly — ~40 disponibles sur plan gratuit sans compte Adobe |
+| **Adobe Creative Cloud** | 50+ outils : Photoshop, Premiere, Express, Illustrator, Lightroom, InDesign, Firefly (~40 disponibles sur plan gratuit sans compte Adobe) |
 | **Affinity by Canva** | Automatisation de tâches répétitives (ajustements batch, renommage de calques, export), génération de fonctionnalités custom |
 | **Autodesk Fusion** | Création et modification de modèles 3D par conversation (abonnement Fusion requis) |
 | **Blender** | Interface en langage naturel vers l'API Python de Blender : debug de scènes, batch scripts, ajout d'outils à l'interface |
-| **Resolume Arena** | Performance visuelle en live — contrôle Resolume Arena en langage naturel pour les shows live |
-| **Resolume Wire** | Programmation visuelle pour Resolume — automatisation de la création de patches et du routage |
+| **Resolume Arena** | Performance visuelle en live : contrôle Resolume Arena en langage naturel pour les shows live |
+| **Resolume Wire** | Programmation visuelle pour Resolume : automatisation de la création de patches et du routage |
 | **SketchUp** | Décrire une pièce, un meuble ou un concept → point de départ modèle 3D à ouvrir dans SketchUp |
 | **Splice** | Recherche d'échantillons royalty-free depuis Claude |
 
@@ -473,7 +473,7 @@ Offre packagée dans Claude Cowork, activable via un simple toggle. Connecte Cla
 **15 workflows agentic prêts à l'emploi + 15 skills réutilisables pour les tâches récurrentes** (finance, opérations, ventes, marketing, RH, service client) :
 - **Planification de la paie** : réconciliation QuickBooks + PayPal, prévision 30j, file de relances
 - **Clôture mensuelle** : réconciliation des livres, signalement des écarts, P&L en français simple, export pour le comptable
-- **Tableau de bord business** : trésorerie, tendance CA, pipeline, engagements de la semaine — sur un seul écran, selon un planning
+- **Tableau de bord business** : trésorerie, tendance CA, pipeline, engagements de la semaine, sur un seul écran selon un planning
 - **Lancement de campagne** : identification des creux de revenus, analyse HubSpot, stratégie promo, génération d'assets Canva
 - Et aussi : relance factures, analyse de marges, préparation clôture, revue de contrats, trieur de leads, stratège contenu...
 
@@ -527,11 +527,11 @@ Cowork peut automatiser vos tâches récurrentes, elles s'exécutent aux horaire
 
 #### Deux types de tâches
 
-**Tâches récurrentes** — s'exécutent automatiquement selon un calendrier, sans action manuelle :
+**Tâches récurrentes** : s'exécutent automatiquement selon un calendrier, sans action manuelle :
 - Fréquences disponibles : horaire, quotidien, hebdomadaire, jours ouvrables, ou personnalisé
 - Après la première exécution, Cowork **réécrit automatiquement votre prompt** pour l'optimiser selon ce qu'il a appris
 
-**Tâches à la demande** — s'exécutent une seule fois quand vous les déclenchez manuellement :
+**Tâches à la demande** : s'exécutent une seule fois quand vous les déclenchez manuellement :
 - Utiles pour les opérations ponctuelles ou irrégulières
 - Même configuration, déclenchées via "Exécuter maintenant" au lieu d'un horaire
 
@@ -606,15 +606,15 @@ Selon votre setup, les tâches automatiques ne fonctionnent pas toutes de la mê
 | Méthode | Comment ça marche | Prérequis | Fonctionne dans Cowork ? |
 |---------|------------------|-----------|--------------------------|
 | **Interface native Cowork** | Barre latérale → Planifié → Nouvelle tâche | Claude Desktop ouvert, Mac allumé | ✅ Oui |
-| **Mac éteint ou en veille** | La tâche se déclenche quand vous n'êtes pas là | Exécution distante | ❌ Non — utiliser Dispatch ou Claude Code |
-| **Serveur / headless** | Serveur sans interface graphique | Pas de Claude Desktop | ❌ Non — utiliser Claude Code |
+| **Mac éteint ou en veille** | La tâche se déclenche quand vous n'êtes pas là | Exécution distante | ❌ Non (utiliser Dispatch ou Claude Code) |
+| **Serveur / headless** | Serveur sans interface graphique | Pas de Claude Desktop | ❌ Non (utiliser Claude Code) |
 
 **La réponse honnête** : les tâches planifiées Cowork nécessitent que Claude Desktop soit ouvert et que votre Mac soit allumé. Si le Mac se met en veille ou que l'app est fermée au moment où la tâche doit s'exécuter, elle est ignorée et relancée au réveil.
 
 **Pour les deux cas non supportés :**
 
 - **Vous êtes absent mais le Mac est allumé** → utilisez [Dispatch](#dispatch--contrôler-cowork-depuis-votre-téléphone) : envoyez la tâche depuis votre téléphone, elle s'exécute sur votre bureau
-- **Entièrement automatique, Mac éteint, ou serveur** → passez à Claude Code avec un cron système. Exemple : tous les lundis à 7h, Claude Code résume les tickets de la semaine et envoie sur Slack — sans machine, sans interface, sans intervention.
+- **Entièrement automatique, Mac éteint, ou serveur** → passez à Claude Code avec un cron système. Exemple : tous les lundis à 7h, Claude Code résume les tickets de la semaine et envoie sur Slack, sans machine, sans interface, sans intervention.
 
 > **Règle de décision** : les tâches planifiées Cowork sont idéales pour les routines "pendant que vous travaillez" (brief matinal, compilation hebdo). Pour une automatisation qui doit tourner même quand vous n'êtes pas là, Claude Code est le bon outil.
 
@@ -698,7 +698,7 @@ Quatre fichiers et un email produits depuis un seul chargement de données, sans
 
 > Pour la génération de formules spécifiquement, voir aussi : [À ne pas confondre : Add-in Claude in Excel](#à-ne-pas-confondre--add-in-claude-in-excel).
 
-> **Note Enterprise** : Les quatre add-ins Office supportent la connexion via LLM Gateway — utilisez Claude via Amazon Bedrock, Google Cloud Vertex AI ou Microsoft Azure Foundry sans exposition directe à l'API.
+> **Note Enterprise** : Les quatre add-ins Office supportent la connexion via LLM Gateway. Utilisez Claude via Amazon Bedrock, Google Cloud Vertex AI ou Microsoft Azure Foundry sans exposition directe à l'API.
 
 ### Agent Teams (aperçu recherche)
 
@@ -775,7 +775,7 @@ Par défaut, chaque session Cowork repart de zéro, Cowork ne se souvient pas de
 
 **Artisan (plombier, électricien, maçon)**
 ```markdown
-# Mémoire — [Votre nom], [Métier]
+# Mémoire : [Votre nom], [Métier]
 
 ## Clients
 - Client Dupont : appartement [adresse], préfère les appels l'après-midi, demande toujours devis détaillé
@@ -789,7 +789,7 @@ Par défaut, chaque session Cowork repart de zéro, Cowork ne se souvient pas de
 
 **Commerce (boutique, négoce)**
 ```markdown
-# Mémoire — [Nom de la boutique]
+# Mémoire : [Nom de la boutique]
 
 ## Priorités stock
 - Produits phares : [top 5]
@@ -803,7 +803,7 @@ Par défaut, chaque session Cowork repart de zéro, Cowork ne se souvient pas de
 
 **Services (consultant, comptable, coach)**
 ```markdown
-# Mémoire — [Votre nom], [Profession]
+# Mémoire : [Votre nom], [Profession]
 
 ## Clients actifs
 - Client A : consulting mensuel, rapports formels en Word
@@ -822,7 +822,7 @@ Par défaut, chaque session Cowork repart de zéro, Cowork ne se souvient pas de
 
 L'**onglet Personnaliser** dans Claude Desktop est l'endroit où vous étendez et adaptez Cowork à vos besoins. Il se trouve dans la navigation principale de l'application. Trois zones principales : Compétences, Connecteurs, et personnalisations.
 
-### Compétences (Skills) — Capacités supplémentaires
+### Compétences (Skills) : Capacités supplémentaires
 
 Les compétences ajoutent des pouvoirs spécifiques à Cowork, activés via des commandes /. Pensez-y comme des outils spécialisés que vous activez au besoin.
 
@@ -875,7 +875,7 @@ Au-delà des compétences officielles, la communauté en crée et partage :
 
 Installation : onglet Personnaliser → recherche par nom ou collez l'URL de la compétence.
 
-### Connecteurs — Connecter des outils externes
+### Connecteurs : Connecter des outils externes
 
 Les connecteurs permettent à Cowork d'interagir avec des outils au-delà de vos fichiers locaux. Trois types :
 
@@ -997,10 +997,10 @@ Besoin de faire quelque chose avec des fichiers ?
 
 ### Maximiser le succès
 
-1. **Faire correspondre la tâche à la capacité** — Vérifier la matrice avant de commencer
-2. **Préparer les entrées** — S'assurer que les fichiers sont dans des formats lisibles
-3. **Spécifier les formats** — Être explicite sur les exigences de sortie
-4. **Tester d'abord en petit** — Vérifier avec peu de fichiers avant le traitement par lots
+1. **Faire correspondre la tâche à la capacité** : Vérifier la matrice avant de commencer
+2. **Préparer les entrées** : S'assurer que les fichiers sont dans des formats lisibles
+3. **Spécifier les formats** : Être explicite sur les exigences de sortie
+4. **Tester d'abord en petit** : Vérifier avec peu de fichiers avant le traitement par lots
 
 ### Quand choisir des alternatives
 

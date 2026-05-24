@@ -304,14 +304,14 @@ Avec onglets:
 
 ## Bonnes pratiques
 
-1. **Numérotation unique** — Système de numérotation continu (D[année]-[numéro])
-2. **Validité limitée** — Généralement 3 mois (préciser explicitement)
-3. **Conditions claires** — Acompte, délais, paiement, garanties
-4. **Photos si utile** — Joindre photos chantier pour devis rénovation
-5. **Versions** — Conserver historique si devis modifié (v1, v2, etc.)
-6. **Relecture** — Faire relire par tiers si montant important
-7. **Délai réponse** — Relancer client après 1 semaine sans réponse
-8. **Devis = engagement** — Prix et prestations figés sauf mention contraire
+1. **Numérotation unique** : Système de numérotation continu (D[année]-[numéro])
+2. **Validité limitée** : Généralement 3 mois (préciser explicitement)
+3. **Conditions claires** : Acompte, délais, paiement, garanties
+4. **Photos si utile** : Joindre photos chantier pour devis rénovation
+5. **Versions** : Conserver historique si devis modifié (v1, v2, etc.)
+6. **Relecture** : Faire relire par tiers si montant important
+7. **Délai réponse** : Relancer client après 1 semaine sans réponse
+8. **Devis = engagement** : Prix et prestations figés sauf mention contraire
 
 ---
 

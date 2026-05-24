@@ -546,7 +546,7 @@ CLIENT TESTIMONIAL:
 
 "[Testimonial quote from client]"
 
-— [Client name], [Date]
+- [Client name], [Date]
 
 ──────────────────────────────────────
 
@@ -891,14 +891,14 @@ Attachment: week-[number]-report.pdf
 
 ## Best Practices
 
-1. **Consistency** — Log every single day, no exceptions
-2. **Timeliness** — Log same day (memory fades quickly)
-3. **Objectivity** — Factual descriptions, not opinions ("panel conflicts with cabinet" not "dumb design")
-4. **Completeness** — All work, incidents, visitors documented
-5. **Photos = Evidence** — Timestamped photos are your best legal protection
-6. **Backup Always** — Lose logs = lose legal protection and project memory
-7. **Client transparency** — Share weekly summaries, builds trust
-8. **Archive post-project** — Keep logs 7+ years (statute of limitations for construction)
+1. **Consistency** : Log every single day, no exceptions
+2. **Timeliness** : Log same day (memory fades quickly)
+3. **Objectivity** : Factual descriptions, not opinions ("panel conflicts with cabinet" not "dumb design")
+4. **Completeness** : All work, incidents, visitors documented
+5. **Photos = Evidence** : Timestamped photos are your best legal protection
+6. **Backup Always** : Lose logs = lose legal protection and project memory
+7. **Client transparency** : Share weekly summaries, builds trust
+8. **Archive post-project** : Keep logs 7+ years (statute of limitations for construction)
 
 ---
 

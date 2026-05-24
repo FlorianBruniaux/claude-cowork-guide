@@ -304,14 +304,14 @@ With sheets:
 
 ## Best Practices
 
-1. **Unique numbering** — Continuous numbering system (Q[year]-[number])
-2. **Limited validity** — Usually 3 months (state explicitly)
-3. **Clear conditions** — Deposit, deadlines, payment, warranties
-4. **Photos if helpful** — Include site photos for renovation quotes
-5. **Versions** — Keep history if quote modified (v1, v2, etc.)
-6. **Proofreading** — Have third party review if large amount
-7. **Follow-up timing** — Follow up with client after 1 week if no response
-8. **Quote = commitment** — Prices and services locked unless noted otherwise
+1. **Unique numbering** : Continuous numbering system (Q[year]-[number])
+2. **Limited validity** : Usually 3 months (state explicitly)
+3. **Clear conditions** : Deposit, deadlines, payment, warranties
+4. **Photos if helpful** : Include site photos for renovation quotes
+5. **Versions** : Keep history if quote modified (v1, v2, etc.)
+6. **Proofreading** : Have third party review if large amount
+7. **Follow-up timing** : Follow up with client after 1 week if no response
+8. **Quote = commitment** : Prices and services locked unless noted otherwise
 
 ---
 

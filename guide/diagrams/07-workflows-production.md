@@ -1,16 +1,16 @@
 ---
-title: "Diagrammes — Workflows Production"
+title: "Diagrammes : Workflows Production"
 description: "3 diagrammes : planification projet, cycle inventaire, contrôle qualité"
 tags: [production, projet, inventaire, qualite]
 ---
 
-# Workflows Production — Diagrammes
+# Workflows Production : Diagrammes
 
 3 diagrammes pour automatiser les tâches de production : planification de projets, gestion de stock, contrôle qualité avant livraison.
 
 ---
 
-## D26 — Flux de planification de projet {#d26}
+## D26 : Flux de planification de projet {#d26}
 
 **Quand l'utiliser** : tu dois planifier un projet ou une prestation et tu veux une structure claire dès le départ.
 
@@ -83,7 +83,7 @@ Ajustements    Validé
 
 ---
 
-## D27 — Cycle de gestion d'inventaire {#d27}
+## D27 : Cycle de gestion d'inventaire {#d27}
 
 **Quand l'utiliser** : tu veux automatiser le suivi de ton stock sans logiciel spécialisé.
 
@@ -176,7 +176,7 @@ FLUX INVENTAIRE PÉRIODIQUE
 
 ---
 
-## D28 — Flux de contrôle qualité {#d28}
+## D28 : Flux de contrôle qualité {#d28}
 
 **Quand l'utiliser** : tu livres un document ou une prestation à un client et tu veux t'assurer qu'il est correct avant envoi.
 
@@ -220,7 +220,7 @@ flowchart TD
 ```
 [Document / prestation à livrer]
              |
-[Cowork : relecture auto — orthographe, cohérence, mentions obligatoires]
+[Cowork : relecture auto - orthographe, cohérence, mentions obligatoires]
              |
       Erreurs détectées ?
        /             \

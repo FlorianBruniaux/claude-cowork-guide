@@ -1,4 +1,4 @@
-# Template CLAUDE.md — Agent et Mandataire Immobilier
+# Template CLAUDE.md : Agent et Mandataire Immobilier
 
 Copier ce fichier sous `~/Cowork-Workspace/CLAUDE.md` et remplacer les parties entre `[crochets]`.
 
@@ -25,7 +25,7 @@ Volume habituel : [X mandats actifs en même temps]
 
 Ton général : [ex. "professionnel et bienveillant, vouvoiement systématique avec les clients"]
 Ce qu'on ne fait jamais : [ex. "on ne promet pas de prix de vente supérieur à l'estimation"]
-Signature : [ex. "Karim Bensalem, Mandataire IAD — 06 XX XX XX XX — RSAC Bordeaux XXXXX"]
+Signature : [ex. "Karim Bensalem, Mandataire IAD, 06 XX XX XX XX, RSAC Bordeaux XXXXX"]
 
 ## Mes données de marché par secteur
 

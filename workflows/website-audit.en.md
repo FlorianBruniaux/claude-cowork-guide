@@ -381,14 +381,14 @@ Save: ~/Cowork-Workspace/output/website-audit/network-audit-[date].xlsx
 
 ## Best Practices
 
-1. **Audit regularly** — At least once per quarter
-2. **Test on mobile** — 60%+ of visits are mobile (ask someone to test)
-3. **Verify your info** — Phone, hours, address must be current
-4. **Respond to reviews** — Google favors businesses that respond
-5. **Benchmark yourself** — Your competitors improve, so should you
-6. **Prioritize** — Fix what blocks contact first (phone, form)
-7. **Measure** — Before/after each improvement, note results
-8. **Get feedback** — Your customers are the best testers
+1. **Audit regularly** : At least once per quarter
+2. **Test on mobile** : 60%+ of visits are mobile (ask someone to test)
+3. **Verify your info** : Phone, hours, address must be current
+4. **Respond to reviews** : Google favors businesses that respond
+5. **Benchmark yourself** : Your competitors improve, so should you
+6. **Prioritize** : Fix what blocks contact first (phone, form)
+7. **Measure** : Before/after each improvement, note results
+8. **Get feedback** : Your customers are the best testers
 
 ---
 
@@ -403,10 +403,10 @@ Save: ~/Cowork-Workspace/output/website-audit/network-audit-[date].xlsx
 | Identify obvious issues | Deep technical SEO audit |
 
 **For a complete technical audit**, use specialized tools:
-- PageSpeed Insights (Google) — performance
-- GTmetrix — speed
-- Google Search Console — SEO
-- Mobile-Friendly Test (Google) — mobile compatibility
+- PageSpeed Insights (Google) : performance
+- GTmetrix : speed
+- Google Search Console : SEO
+- Mobile-Friendly Test (Google) : mobile compatibility
 
 ---
 

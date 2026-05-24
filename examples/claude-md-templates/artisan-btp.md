@@ -1,4 +1,4 @@
-# Template CLAUDE.md — Artisan BTP
+# Template CLAUDE.md : Artisan BTP
 
 Copier ce fichier sous `~/Cowork-Workspace/CLAUDE.md` et remplacer les parties entre `[crochets]`.
 

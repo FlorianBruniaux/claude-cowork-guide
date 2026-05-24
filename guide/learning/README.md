@@ -42,12 +42,12 @@ En mois 2, tu écris tes propres prompts CTOC depuis une feuille blanche, pour d
 
 En mois 3+, tu formes ton équipe et tu documentes les prompts qui fonctionnent pour votre métier.
 
-C'est ça la progression. Pas "j'ai appris à coder" — "j'ai appris à déléguer intelligemment."
+C'est ça la progression. Pas "j'ai appris à coder", mais "j'ai appris à déléguer intelligemment."
 
 ---
 
 ## À lire aussi
 
-- [Methodologies](../methodologies.md) — CTOC, raffinement itératif, traitement par lots
-- [WP-01 : Prompts Efficaces](../../whitepapers/fr/01-prompts-efficaces-non-devs.qmd) — 20 exemples avant/après
-- [WP-11 : ROI et Déploiement](../../whitepapers/fr/11-roi-deploiement-dirigeants.qmd) — comment mesurer concrètement
+- [Methodologies](../methodologies.md) : CTOC, raffinement itératif, traitement par lots
+- [WP-01 : Prompts Efficaces](../../whitepapers/fr/01-prompts-efficaces-non-devs.qmd) : 20 exemples avant/après
+- [WP-11 : ROI et Déploiement](../../whitepapers/fr/11-roi-deploiement-dirigeants.qmd) : comment mesurer concrètement

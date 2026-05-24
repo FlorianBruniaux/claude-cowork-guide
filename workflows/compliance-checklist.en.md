@@ -569,16 +569,16 @@ Checklist: ~/Cowork-Workspace/output/compliance/federal-contract-ready.xlsx
 
 ## Best Practices
 
-1. **Calendar Reminders** — Set renewal alerts 60 days before expirations
-2. **Central Repository** — Keep all compliance documents in one organized location
-3. **Digital + Physical** — Maintain digital copies AND physical backups
-4. **Annual Review** — Review full compliance status every January
-5. **Change Tracking** — Note when regulations change in your industry
-6. **Over-Comply** — When in doubt, get the certification/insurance (safer than risking gaps)
-7. **Professional Guidance** — Consult attorney or insurance broker for complex situations
-8. **Client-Ready Packages** — Maintain up-to-date compliance packages for quick response
-9. **Employee Training** — Keep training records and certifications current
-10. **Document Everything** — Save proof of applications, renewals, correspondence with authorities
+1. **Calendar Reminders** : Set renewal alerts 60 days before expirations
+2. **Central Repository** : Keep all compliance documents in one organized location
+3. **Digital + Physical** : Maintain digital copies AND physical backups
+4. **Annual Review** : Review full compliance status every January
+5. **Change Tracking** : Note when regulations change in your industry
+6. **Over-Comply** : When in doubt, get the certification/insurance (safer than risking gaps)
+7. **Professional Guidance** : Consult attorney or insurance broker for complex situations
+8. **Client-Ready Packages** : Maintain up-to-date compliance packages for quick response
+9. **Employee Training** : Keep training records and certifications current
+10. **Document Everything** : Save proof of applications, renewals, correspondence with authorities
 
 ---
 

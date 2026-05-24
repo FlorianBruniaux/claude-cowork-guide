@@ -384,9 +384,9 @@ Pour entreprise française : inclus charges patronales (45% du salaire brut).
 
 ## Workflows associés
 
-- [Validation Modèle Financier](financial-model-validation.md) — Auditer formules budgétaires
-- [Suivi des Dépenses](expense-tracking.md) — Suivre coûts réels masse salariale
-- [Analyse Budget vs Réel](budget-vs-actual.md) — Comparer coûts effectifs prévus vs réels
+- [Validation Modèle Financier](financial-model-validation.md) : Auditer formules budgétaires
+- [Suivi des Dépenses](expense-tracking.md) : Suivre coûts réels masse salariale
+- [Analyse Budget vs Réel](budget-vs-actual.md) : Comparer coûts effectifs prévus vs réels
 
 ---
 

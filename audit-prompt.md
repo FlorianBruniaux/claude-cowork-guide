@@ -1,4 +1,4 @@
-# Prompt d'audit accessibilité — Guide Cowork
+# Prompt d'audit accessibilité : Guide Cowork
 
 > **Usage** : Coller ce prompt dans une session Claude (chat ou Code) suivi du contenu d'un fichier `.fr.md`. Claude retourne un rapport structuré fichier par fichier.
 >
@@ -24,15 +24,15 @@ Tu es un expert en accessibilité linguistique pour les contenus numériques fra
 
 ### RÈGLES DE DÉCISION
 
-#### Règle 1 — Remplacer l'anglicisme
+#### Règle 1 : Remplacer l'anglicisme
 Quand un mot anglais a un équivalent français naturel et courant : on remplace.
 
-#### Règle 2 — Garder + expliquer à la première occurrence
+#### Règle 2 : Garder + expliquer à la première occurrence
 Quand le mot anglais est le terme standard de l'écosystème IA/tech (il sera vu partout), on le garde MAIS on ajoute une parenthèse explicative **à la première occurrence dans le fichier**. Les occurrences suivantes dans le même fichier ne nécessitent pas de répétition.
 
 **Format standard** : `prompt (instruction donnée à l'IA)`
 
-#### Règle 3 — Garder tel quel
+#### Règle 3 : Garder tel quel
 Quand le mot est passé dans le langage courant francophone ou quand c'est un nom de dossier/chemin technique.
 
 ---
@@ -72,7 +72,7 @@ Quand le mot est passé dans le langage courant francophone ou quand c'est un no
 
 ---
 
-### AXE 1 — PASSAGES NON TRADUITS
+### AXE 1 : PASSAGES NON TRADUITS
 
 Identifie toute phrase, bloc, liste ou titre resté en anglais dans le contenu FR.
 
@@ -86,7 +86,7 @@ Critères :
 
 ---
 
-### AXE 2 — ANGLICISMES
+### AXE 2 : ANGLICISMES
 
 Repère tous les termes du dictionnaire ci-dessus (et leurs variantes : pluriel, majuscule, conjugaison). Pour chaque occurrence :
 - Indique si c'est une **première occurrence** dans le fichier (→ action : ajouter l'explication entre parenthèses)
@@ -94,7 +94,7 @@ Repère tous les termes du dictionnaire ci-dessus (et leurs variantes : pluriel,
 
 ---
 
-### AXE 3 — JARGON TECHNIQUE
+### AXE 3 : JARGON TECHNIQUE
 
 Identifie les passages qui supposent un background technique absent de l'audience cible :
 - Références à des concepts de programmation non expliqués
@@ -114,21 +114,21 @@ Pour chaque fichier audité, produis exactement ce format :
 
 ## [nom-du-fichier.fr.md]
 
-### Axe 1 — Passages non traduits
+### Axe 1 : Passages non traduits
 
 | Ligne | Texte EN détecté | Traduction proposée |
 |-------|------------------|---------------------|
 
 *(Écrire "Aucun passage détecté" si vide)*
 
-### Axe 2 — Anglicismes
+### Axe 2 : Anglicismes
 
 | Ligne | Terme | Occurrence dans fichier | Action | Suggestion |
 |-------|-------|------------------------|--------|------------|
 
 *(Écrire "Aucun anglicisme détecté" si vide)*
 
-### Axe 3 — Jargon technique
+### Axe 3 : Jargon technique
 
 | Ligne | Passage problématique | Reformulation accessible |
 |-------|-----------------------|--------------------------|
@@ -168,13 +168,13 @@ Si tu audites plusieurs fichiers en une session, ajoute en fin de rapport :
 
 ## guide/00-overview.fr.md
 
-### Axe 1 — Passages non traduits
+### Axe 1 : Passages non traduits
 
 | Ligne | Texte EN détecté | Traduction proposée |
 |-------|------------------|---------------------|
 | 45 | "Getting started with Claude Code" | "Démarrer avec Claude Code" |
 
-### Axe 2 — Anglicismes
+### Axe 2 : Anglicismes
 
 | Ligne | Terme | Occurrence dans fichier | Action | Suggestion |
 |-------|-------|------------------------|--------|------------|
@@ -183,7 +183,7 @@ Si tu audites plusieurs fichiers en une session, ajoute en fin de rapport :
 | 89 | "template" | 3ème occurrence | Remplacer | "modèle" |
 | 102 | "workflow" | 1ère occurrence | Garder + expliquer | "workflow (enchaînement d'étapes)" |
 
-### Axe 3 — Jargon technique
+### Axe 3 : Jargon technique
 
 | Ligne | Passage problématique | Reformulation accessible |
 |-------|-----------------------|--------------------------|
@@ -206,7 +206,7 @@ FIN DU PROMPT D'AUDIT. Voici le contenu du fichier à auditer :
 
 ## Mode d'emploi
 
-### Option 1 — Session Claude chat (fichier par fichier)
+### Option 1 : Session Claude chat (fichier par fichier)
 
 1. Copier tout le contenu entre les triple backticks ci-dessus
 2. Coller dans une nouvelle session Claude
@@ -219,7 +219,7 @@ FIN DU PROMPT D'AUDIT. Voici le contenu du fichier à auditer :
 3. `workflows/*.md` (gros volume, cœur du contenu)
 4. `guide/02-capabilities.fr.md` (35 Ko, fichier le plus dense)
 
-### Option 2 — Session Claude Code dans ce répertoire
+### Option 2 : Session Claude Code dans ce répertoire
 
 Dans une session Claude Code lancée depuis `claude-cowork-guide/` :
 

@@ -180,7 +180,7 @@ SLIDE 14: RÉFÉRENCES CLIENTS
 SLIDE 15: TÉMOIGNAGE CLIENT
 Citation client satisfait (avec photo si possible):
 "[Citation impactante]"
-— [Nom], [Fonction], [Entreprise]
+- [Nom], [Fonction], [Entreprise]
 
 SLIDE 16: CHIFFRES RÉSULTATS
 Étude de cas similaire:
@@ -574,7 +574,7 @@ Ce que j'attends :
 - Sauvegarder dans ~/Cowork-Workspace/presentations/wrk/template-entreprise.pptx
 ```
 
-Cowork va poser des questions pour affiner (sections métier, nombre de slides types, style de mise en page). Répondez-y — c'est ce qui produit un template adapté plutôt qu'un template générique.
+Cowork va poser des questions pour affiner (sections métier, nombre de slides types, style de mise en page). Répondez-y : c'est ce qui produit un template adapté plutôt qu'un template générique.
 
 **Étape 3 : Produire la présentation finale**
 
@@ -610,14 +610,14 @@ Sauvegarde template : `~/Cowork-Workspace/presentations/wrk/template-entreprise.
 
 ## Bonnes pratiques
 
-1. **Adapter audience** — Technique vs business selon interlocuteurs
-2. **Storytelling** — Cas clients concrets > features abstraites
-3. **Règle 10/20/30** — 10 slides, 20 min, police 30pt minimum
-4. **Répétition** — 3x minimum (fluidité + timing)
-5. **Interaction** — Poser questions (éviter monologue)
-6. **Backup** — Plan B si tech plante (PDF, clé USB, pitch oral)
-7. **Suivi post-présentation** — Email récap + devis dans 24-48h
-8. **Écoute** — Adapter en temps réel selon réactions
+1. **Adapter audience** : Technique vs business selon interlocuteurs
+2. **Storytelling** : Cas clients concrets > features abstraites
+3. **Règle 10/20/30** : 10 slides, 20 min, police 30pt minimum
+4. **Répétition** : 3x minimum (fluidité + timing)
+5. **Interaction** : Poser questions (éviter monologue)
+6. **Backup** : Plan B si tech plante (PDF, clé USB, pitch oral)
+7. **Suivi post-présentation** : Email récap + devis dans 24-48h
+8. **Écoute** : Adapter en temps réel selon réactions
 
 ---
 

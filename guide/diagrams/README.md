@@ -1,10 +1,10 @@
 ---
-title: "Claude Cowork — Diagrammes visuels"
+title: "Claude Cowork : Diagrammes visuels"
 description: "32 diagrammes Mermaid interactifs couvrant tous les concepts Claude Cowork"
 tags: [reference, diagrammes, mermaid, workflows]
 ---
 
-# Claude Cowork — Diagrammes visuels
+# Claude Cowork : Diagrammes visuels
 
 32 diagrammes planifiés, 23 disponibles (Phase 2), organisés en 8 fichiers thématiques. Chaque diagramme inclut une version Mermaid (rendue nativement sur GitHub) et un fallback ASCII.
 
@@ -48,33 +48,33 @@ Tous les diagrammes utilisent la palette Bold Guy :
 | [06-workflows-commercial.md](./06-workflows-commercial.md) | 3 | Prospection SIREN, analyse concurrence, cycle client |
 | [07-workflows-production.md](./07-workflows-production.md) | 3 | Planification projet, inventaire, contrôle qualité |
 | [08-workflows-commu-orga.md](./08-workflows-commu-orga.md) | 4 | Création contenu, templates email, organisation fichiers, transfert connaissances |
-| **Total** | **25 disponibles** | 32 planifiés — Phase 2 complète |
+| **Total** | **25 disponibles** | 32 planifiés, Phase 2 complète |
 
 ---
 
 ## Par use case
 
 **Je veux comprendre ce qu'est Cowork**
-→ [D01 — Cowork vs Chat vs Code](./01-getting-started.md#d01)
-→ [D06 — Carte des capacités](./02-capabilities.md#d06)
+→ [D01 : Cowork vs Chat vs Code](./01-getting-started.md#d01)
+→ [D06 : Carte des capacités](./02-capabilities.md#d06)
 
 **Je veux démarrer**
-→ [D02 — Setup workspace](./01-getting-started.md#d02)
-→ [D03 — CTOC anatomie](./01-getting-started.md#d03)
-→ [D04 — Choisir le bon modèle Claude](./01-getting-started.md#d04)
-→ [D05 — Dois-je utiliser Cowork pour cette tâche ?](./01-getting-started.md#d05)
+→ [D02 : Setup workspace](./01-getting-started.md#d02)
+→ [D03 : CTOC anatomie](./01-getting-started.md#d03)
+→ [D04 : Choisir le bon modèle Claude](./01-getting-started.md#d04)
+→ [D05 : Dois-je utiliser Cowork pour cette tâche ?](./01-getting-started.md#d05)
 
 **Je veux sécuriser mon usage**
-→ [D11 — Où vont mes données ?](./03-security.md#d11)
-→ [D13 — Arbre décision document sensible](./03-security.md#d13)
+→ [D11 : Où vont mes données ?](./03-security.md#d11)
+→ [D13 : Arbre décision document sensible](./03-security.md#d13)
 
 **Quelque chose ne fonctionne pas**
-→ [D15 — Arbre diagnostic](./04-troubleshooting.md#d15)
+→ [D15 : Arbre diagnostic](./04-troubleshooting.md#d15)
 
 **Je veux automatiser ma facturation**
-→ [D19 — Pipeline facturation](./05-workflows-admin.md#d19)
-→ [D20 — Devis vers facture](./05-workflows-admin.md#d20)
+→ [D19 : Pipeline facturation](./05-workflows-admin.md#d19)
+→ [D20 : Devis vers facture](./05-workflows-admin.md#d20)
 
 **Je veux prospecter**
-→ [D23 — Pipeline prospection](./06-workflows-commercial.md#d23)
-→ [D25 — Cycle de vie client](./06-workflows-commercial.md#d25)
+→ [D23 : Pipeline prospection](./06-workflows-commercial.md#d23)
+→ [D25 : Cycle de vie client](./06-workflows-commercial.md#d25)

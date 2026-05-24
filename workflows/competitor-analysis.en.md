@@ -645,14 +645,14 @@ If performance < national average despite little local competition
 
 ## Best Practices
 
-1. **Continuous monitoring** — Not one-time, track changes (quarterly minimum)
-2. **Ethics** — No disparagement, illegal espionage, defamation
-3. **Focus differentiation** — Objective isn't to copy but stand out
-4. **Customer-centric** — Analyze competition to better serve customers (not obsession)
-5. **Possible collaboration** — Some competitors = future partners (subcontracting, complementary specializations)
-6. **Positive benchmarking** — Inspired by best practices (not just criticize weaknesses)
-7. **Action > Analysis** — Monitoring useful IF leads to concrete actions
-8. **Measure impact** — Track if differentiation actions work (KPIs)
+1. **Continuous monitoring** : Not one-time, track changes (quarterly minimum)
+2. **Ethics** : No disparagement, illegal espionage, defamation
+3. **Focus differentiation** : Objective isn't to copy but stand out
+4. **Customer-centric** : Analyze competition to better serve customers (not obsession)
+5. **Possible collaboration** : Some competitors = future partners (subcontracting, complementary specializations)
+6. **Positive benchmarking** : Inspired by best practices (not just criticize weaknesses)
+7. **Action > Analysis** : Monitoring useful IF leads to concrete actions
+8. **Measure impact** : Track if differentiation actions work (KPIs)
 
 ---
 

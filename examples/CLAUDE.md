@@ -8,7 +8,7 @@
 
 ## Communication Profile (Optional)
 
-Customize how Cowork communicates. Focus on constraints — what you *don't* want.
+Customize how Cowork communicates. Focus on constraints, what you *don't* want.
 
 ### Tone & Style
 - [ ] Formal (use "vous") / [ ] Casual (use "tu")

@@ -31,14 +31,14 @@
 </p>
 
 > Complete guide to Claude's desktop assistant for knowledge workers and small businesses.
-> Invoices, quotes, follow-ups, prospecting — automated without coding.
+> Invoices, quotes, follow-ups, prospecting : automated without coding.
 
 <p align="center">
   <a href="https://starmapper.bruniaux.com/FlorianBruniaux/claude-cowork-guide">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://starmapper.bruniaux.com/api/map-image/FlorianBruniaux/claude-cowork-guide?theme=dark" />
       <source media="(prefers-color-scheme: light)" srcset="https://starmapper.bruniaux.com/api/map-image/FlorianBruniaux/claude-cowork-guide?theme=light" />
-      <img alt="StarMapper — see who stars this repo on a world map" src="https://starmapper.bruniaux.com/api/map-image/FlorianBruniaux/claude-cowork-guide" />
+      <img alt="StarMapper : see who stars this repo on a world map" src="https://starmapper.bruniaux.com/api/map-image/FlorianBruniaux/claude-cowork-guide" />
     </picture>
   </a>
 </p>
@@ -58,8 +58,8 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 > "Organize the files in ~/Cowork-Workspace/input/ by type"
 
 ### 3. Go further
-- 📋 [Cheatsheet](reference/cheatsheet.md) — Print this
-- 📖 [Complete guide](guide/01-getting-started.md) — 10 min
+- 📋 [Cheatsheet](reference/cheatsheet.md) : Print this
+- 📖 [Complete guide](guide/01-getting-started.md) : 10 min
 
 <details>
 <summary><strong>Prerequisites</strong></summary>
@@ -85,7 +85,7 @@ You need ready-to-use workflows, not feature lists.
 
 ## 👨‍💻 Are you a developer?
 
-**Claude Code** is the guide for developers — same AI, terminal interface, code execution.
+**Claude Code** is the guide for developers : same AI, terminal interface, code execution.
 
 → [Claude Code Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide)
 
@@ -94,36 +94,36 @@ You need ready-to-use workflows, not feature lists.
 ## 🎯 Learning Paths
 
 <details>
-<summary><strong>Beginner</strong> — First week (5 steps)</summary>
+<summary><strong>Beginner</strong> : First week (5 steps)</summary>
 
-1. [Overview](guide/00-overview.md) — What Cowork can do
-2. [Getting Started](guide/01-getting-started.md) — Installation and first workflow
-3. [File Organization](workflows/file-organization.md) — Practical example
-4. [Prompts Library](prompts/file-ops.md) — 20 ready prompts
-5. [Cheatsheet](reference/cheatsheet.md) — Print this
-
-</details>
-
-<details>
-<summary><strong>Decision Maker</strong> — Overview (4 steps)</summary>
-
-1. [Content](#-content) — Capabilities and resources
-2. [Golden Rules](#-golden-rules) — Essential principles
-3. [Security](guide/03-security.md) — Best practices
-4. [Comparison](reference/comparison.md) — vs Copilot/Gemini/ChatGPT
+1. [Overview](guide/00-overview.md) : What Cowork can do
+2. [Getting Started](guide/01-getting-started.md) : Installation and first workflow
+3. [File Organization](workflows/file-organization.md) : Practical example
+4. [Prompts Library](prompts/file-ops.md) : 20 ready prompts
+5. [Cheatsheet](reference/cheatsheet.md) : Print this
 
 </details>
 
 <details>
-<summary><strong>Power User</strong> — Deep dive (6 steps)</summary>
+<summary><strong>Decision Maker</strong> : Overview (4 steps)</summary>
 
-1. [Complete Capabilities](guide/02-capabilities.md) — Feature matrix
-2. [All Workflows](workflows/) — 28 step-by-step guides
+1. [Content](#-content) : Capabilities and resources
+2. [Golden Rules](#-golden-rules) : Essential principles
+3. [Security](guide/03-security.md) : Best practices
+4. [Comparison](reference/comparison.md) : vs Copilot/Gemini/ChatGPT
 
-3. [Troubleshooting](guide/04-troubleshooting.md) — Error resolution
-4. [FAQ](reference/faq.md) — 20+ questions
-5. [Advanced Prompts](prompts/research.md) — Research and synthesis
-6. [Glossary](reference/glossary.md) — Terminology
+</details>
+
+<details>
+<summary><strong>Power User</strong> : Deep dive (6 steps)</summary>
+
+1. [Complete Capabilities](guide/02-capabilities.md) : Feature matrix
+2. [All Workflows](workflows/) : 28 step-by-step guides
+
+3. [Troubleshooting](guide/04-troubleshooting.md) : Error resolution
+4. [FAQ](reference/faq.md) : 20+ questions
+5. [Advanced Prompts](prompts/research.md) : Research and synthesis
+6. [Glossary](reference/glossary.md) : Terminology
 
 </details>
 
@@ -148,40 +148,40 @@ Claude Cowork supports 11 official plugins: Asana, Canva, Cloudflare, Figma, Git
 ### Workflows (28 guides)
 
 **📋 Administrative** (6)
-- [Invoice Generation](workflows/invoice-generation.md) — Professional templates
-- [Quote → Invoice](workflows/quote-to-invoice.md) — Automatic transformation
-- [Payment Reminders](workflows/payment-reminders.md) — R1, R2, R3, legal notice
-- [Compliance Checklist](workflows/compliance-checklist.md) — Required documents
-- [Client Follow-up Tracker](workflows/client-followup-tracker.md) — Excel dashboard
-- [Price Comparison](workflows/price-comparison.md) — Multi-supplier with scoring
+- [Invoice Generation](workflows/invoice-generation.md) : Professional templates
+- [Quote → Invoice](workflows/quote-to-invoice.md) : Automatic transformation
+- [Payment Reminders](workflows/payment-reminders.md) : R1, R2, R3, legal notice
+- [Compliance Checklist](workflows/compliance-checklist.md) : Required documents
+- [Client Follow-up Tracker](workflows/client-followup-tracker.md) : Excel dashboard
+- [Price Comparison](workflows/price-comparison.md) : Multi-supplier with scoring
 
 **💼 Sales & Marketing** (5)
-- [Prospect Research](workflows/prospect-research.md) — Company data, decision makers
-- [Quote Creation](workflows/quote-creation.md) — Detailed with variants
-- [Competitor Analysis](workflows/competitor-analysis.md) — Pricing, offers, reviews
-- [Presentation Slides](workflows/presentation-slides.md) — PowerPoint/Keynote
-- [Newsletter Creation](workflows/newsletter-creation.md) — Responsive HTML
+- [Prospect Research](workflows/prospect-research.md) : Company data, decision makers
+- [Quote Creation](workflows/quote-creation.md) : Detailed with variants
+- [Competitor Analysis](workflows/competitor-analysis.md) : Pricing, offers, reviews
+- [Presentation Slides](workflows/presentation-slides.md) : PowerPoint/Keynote
+- [Newsletter Creation](workflows/newsletter-creation.md) : Responsive HTML
 
 **🔧 Operations** (5)
-- [Project Planning](workflows/project-planning.md) — Gantt, milestones, dependencies
-- [Inventory Tracking](workflows/inventory-tracking.md) — Restocking alerts
-- [Work Log](workflows/work-log.md) — Compliant documentation
-- [Quality Checklist](workflows/quality-checklist.md) — Standardized lists
-- [Supplier Orders](workflows/supplier-order.md) — Optimized procurement
+- [Project Planning](workflows/project-planning.md) : Gantt, milestones, dependencies
+- [Inventory Tracking](workflows/inventory-tracking.md) : Restocking alerts
+- [Work Log](workflows/work-log.md) : Compliant documentation
+- [Quality Checklist](workflows/quality-checklist.md) : Standardized lists
+- [Supplier Orders](workflows/supplier-order.md) : Optimized procurement
 
 **📣 Communication** (6)
-- [Social Media Posts](workflows/social-media-posts.md) — LinkedIn/Facebook/Instagram
-- [Email Templates](workflows/email-templates.md) — Reusable library
-- [Review Responses](workflows/review-response.md) — Google/Facebook
-- [Website Audit](workflows/website-audit.md) — Site diagnosis and action plan
-- [Knowledge Transfer](workflows/knowledge-transfer.md) — Training, succession
+- [Social Media Posts](workflows/social-media-posts.md) : LinkedIn/Facebook/Instagram
+- [Email Templates](workflows/email-templates.md) : Reusable library
+- [Review Responses](workflows/review-response.md) : Google/Facebook
+- [Website Audit](workflows/website-audit.md) : Site diagnosis and action plan
+- [Knowledge Transfer](workflows/knowledge-transfer.md) : Training, succession
 
 **🗂️ Organization** (6)
-- [File Organization](workflows/file-organization.md) — Automatic folder sorting
-- [Expense Tracking](workflows/expense-tracking.md) — Receipts to Excel
-- [Meeting Prep](workflows/meeting-prep.md) — Client/supplier briefings
-- [Scheduled Automation](workflows/scheduled-automation.md) — Recurring task automation
-- [Memory Setup](workflows/memory-setup.md) — Cross-session memory with Desktop Commander
+- [File Organization](workflows/file-organization.md) : Automatic folder sorting
+- [Expense Tracking](workflows/expense-tracking.md) : Receipts to Excel
+- [Meeting Prep](workflows/meeting-prep.md) : Client/supplier briefings
+- [Scheduled Automation](workflows/scheduled-automation.md) : Recurring task automation
+- [Memory Setup](workflows/memory-setup.md) : Cross-session memory with Desktop Commander
 
 → [All workflows](workflows/README.md)
 
@@ -213,12 +213,12 @@ Claude Cowork supports 11 official plugins: Asana, Canva, Cloudflare, Figma, Git
 
 ## 🔑 Golden Rules
 
-1. **Always review the plan** before approval — Cowork proposes, you decide
-2. **Dedicated folder only** — Never grant access to Documents/Desktop/system
-3. **No credentials** — Keep passwords and API keys elsewhere
-4. **Verify sources** — Downloaded files may contain malicious prompts
-5. **Disconnect VPN** — Issue #1, breaks VM networking
-6. **Backup before deletion** — No undo possible
+1. **Always review the plan** before approval : Cowork proposes, you decide
+2. **Dedicated folder only** : Never grant access to Documents/Desktop/system
+3. **No credentials** : Keep passwords and API keys elsewhere
+4. **Verify sources** : Downloaded files may contain malicious prompts
+5. **Disconnect VPN** : Issue #1, breaks VM networking
+6. **Backup before deletion** : No undo possible
 
 > See [Security Guide](guide/03-security.md) for detailed practices.
 
@@ -237,7 +237,7 @@ This guide exists because official docs are dense and tutorials get outdated qui
 
 **Created with Claude Code**. Maintained by [Florian BRUNIAUX](https://github.com/FlorianBruniaux).
 
-**Related**: [Claude Code Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) — For developers
+**Related**: [Claude Code Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) : For developers
 
 </details>
 
@@ -267,7 +267,7 @@ Cowork sends prompts, files, and results to Anthropic servers.
 - Pro: ~1-1.5h intensive use before limit
 - OCR: ~97% fields, ~63% line items accuracy
 
-**Status**: Research preview — expect bugs
+**Status**: Research preview (expect bugs)
 
 </details>
 

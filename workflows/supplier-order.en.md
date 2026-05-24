@@ -754,14 +754,14 @@ Inventory tracking: Separate "Consigned inventory" from owned
 
 ## Best Practices
 
-1. **Consolidate orders** — Combine needs to hit free shipping thresholds and bulk discounts
-2. **Early payment discounts** — 2% discount for 10-day payment = 36% annual return (take it!)
-3. **Verify on delivery** — Check quantities and condition before driver leaves
-4. **Track supplier performance** — Monthly scorecards identify best/worst suppliers
-5. **Diversify suppliers** — Don't rely 100% on one supplier (risk mitigation)
-6. **Build relationships** — Good supplier relationships = priority service, flexibility
-7. **Document everything** — POs, delivery receipts, discrepancies in writing (legal protection)
-8. **Forecast ahead** — Order based on upcoming needs + lead time + safety buffer
+1. **Consolidate orders** : Combine needs to hit free shipping thresholds and bulk discounts
+2. **Early payment discounts** : 2% discount for 10-day payment = 36% annual return (take it!)
+3. **Verify on delivery** : Check quantities and condition before driver leaves
+4. **Track supplier performance** : Monthly scorecards identify best/worst suppliers
+5. **Diversify suppliers** : Don't rely 100% on one supplier (risk mitigation)
+6. **Build relationships** : Good supplier relationships = priority service, flexibility
+7. **Document everything** : POs, delivery receipts, discrepancies in writing (legal protection)
+8. **Forecast ahead** : Order based on upcoming needs + lead time + safety buffer
 
 ---
 

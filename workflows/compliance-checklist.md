@@ -441,14 +441,14 @@ Accès mobile: App scan (pour montrer docs chantier si contrôle)
 
 ## Bonnes pratiques
 
-1. **Audit annuel complet** — Vérifier l'ensemble 1 fois/an minimum
-2. **Anticipation renouvellements** — Alertes -60 jours avant expiration
-3. **Centralisation documents** — 1 dossier unique (physique + numérique)
-4. **Veille réglementaire** — S'abonner newsletter Chambre des Métiers/Commerce
-5. **Conseil expert** — Faire valider checklist par comptable ou avocat
-6. **Formation continue** — Obligation certaines professions, bon pour tous
-7. **Budget conformité** — Provisionner coûts assurances/certifications
-8. **Traçabilité** — Conserver historique (prouver bonne foi si contrôle)
+1. **Audit annuel complet** : Vérifier l'ensemble 1 fois/an minimum
+2. **Anticipation renouvellements** : Alertes -60 jours avant expiration
+3. **Centralisation documents** : 1 dossier unique (physique + numérique)
+4. **Veille réglementaire** : S'abonner newsletter Chambre des Métiers/Commerce
+5. **Conseil expert** : Faire valider checklist par comptable ou avocat
+6. **Formation continue** : Obligation certaines professions, bon pour tous
+7. **Budget conformité** : Provisionner coûts assurances/certifications
+8. **Traçabilité** : Conserver historique (prouver bonne foi si contrôle)
 
 ---
 

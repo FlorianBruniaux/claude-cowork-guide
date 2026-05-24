@@ -1,16 +1,16 @@
 ---
-title: "Diagrammes — Sécurité"
+title: "Diagrammes : Sécurité"
 description: "2 diagrammes : où vont tes données, arbre décision document sensible"
 tags: [security, privacy, données, confiance]
 ---
 
-# Sécurité — Diagrammes
+# Sécurité : Diagrammes
 
 2 diagrammes pour comprendre où vont tes données et comment décider si un document peut être traité par Cowork.
 
 ---
 
-## D11 — Où vont mes données ? {#d11}
+## D11 : Où vont mes données ? {#d11}
 
 **Quand l'utiliser** : tu t'interroges sur la confidentialité avant de donner accès à des fichiers.
 
@@ -64,7 +64,7 @@ Opt-out disponible : claude.ai/settings/data-privacy-controls
 
 ---
 
-## D13 — Dois-je laisser Cowork traiter ce document ? {#d13}
+## D13 : Dois-je laisser Cowork traiter ce document ? {#d13}
 
 **Quand l'utiliser** : tu as un document sensible (contrat, RH, financier...) et tu hésites à le donner à Cowork.
 
@@ -96,7 +96,7 @@ flowchart TD
 ```
 
 <details>
-<summary>Fallback ASCII — Règle simple</summary>
+<summary>Fallback ASCII : Règle simple</summary>
 
 ```
 Document OK pour Cowork si :

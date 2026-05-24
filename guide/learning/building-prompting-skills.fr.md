@@ -1,10 +1,10 @@
 ---
-title: "Développer ses compétences en prompting — du copier-coller à l'écriture autonome"
+title: "Développer ses compétences en prompting : du copier-coller à l'écriture autonome"
 description: "Guide de progression du prompting : de l'utilisation des prompts prêts à l'emploi à l'écriture de prompts CTOC complets, avec exercices pratiques et modèle de bibliothèque"
 tags: [apprentissage, prompting, ctoc, compétences, bibliothèque]
 ---
 
-# Développer ses compétences en prompting — du copier-coller à l'écriture autonome
+# Développer ses compétences en prompting : du copier-coller à l'écriture autonome
 
 La plupart des gens commencent par copier des prompts. C'est exactement ce qu'il faut faire. Mais copier indéfiniment crée une dépendance permanente à la bibliothèque de quelqu'un d'autre, à sa structure, à son contexte. L'objectif est d'atteindre un niveau où on peut écrire un prompt pour n'importe quelle tâche, pas seulement celles qui sont déjà couvertes.
 
@@ -32,10 +32,10 @@ Copier des prompts n'est pas passif. Bien fait, c'est la manière de construire 
 
 Chaque prompt de ce guide suit la structure CTOC :
 
-- **C — Contexte** : qui vous êtes, ce que fait votre entreprise, dans quelle situation vous êtes
-- **T — Tâche** : l'action précise que Cowork doit accomplir
-- **O — Output** : le format exact, la longueur, le ton et la structure attendus
-- **C — Contraintes** : ce qu'il faut éviter, les limites de périmètre, tout ce qui rendrait le résultat inutilisable
+- **C : Contexte** : qui vous êtes, ce que fait votre entreprise, dans quelle situation vous êtes
+- **T : Tâche** : l'action précise que Cowork doit accomplir
+- **O : Output** : le format exact, la longueur, le ton et la structure attendus
+- **C : Contraintes** : ce qu'il faut éviter, les limites de périmètre, tout ce qui rendrait le résultat inutilisable
 
 Quand on copie un prompt, on ne colle pas et on n'envoie pas directement. On prend 90 secondes pour faire ceci :
 
@@ -169,10 +169,10 @@ C'est tout. Un prompt par semaine sur une tâche réelle qu'on maîtrise déjà.
 
 Avant d'envoyer un prompt écrit de zéro, vérifier ces cinq points :
 
-- [ ] **Le Contexte inclut un rôle et un type d'entreprise** — pas juste "je" mais "je dirige une entreprise de plomberie à 4 personnes"
-- [ ] **La Tâche a un verbe précis et un périmètre clair** — "rédiger une séquence de 3 emails" pas "aide-moi avec les emails"
-- [ ] **L'Output décrit le format exact** — format, longueur, langue, structure
-- [ ] **Les Contraintes listent au moins 2 choses précises à éviter** — pas "rends ça bien" mais des exclusions spécifiques
+- [ ] **Le Contexte inclut un rôle et un type d'entreprise** : pas juste "je" mais "je dirige une entreprise de plomberie à 4 personnes"
+- [ ] **La Tâche a un verbe précis et un périmètre clair** : "rédiger une séquence de 3 emails" pas "aide-moi avec les emails"
+- [ ] **L'Output décrit le format exact** : format, longueur, langue, structure
+- [ ] **Les Contraintes listent au moins 2 choses précises à éviter** : pas "rends ça bien" mais des exclusions spécifiques
 - [ ] **L'ensemble du prompt peut être lu par quelqu'un qui ne connaît pas votre situation, et cette personne comprend exactement ce que vous voulez**
 
 Si le dernier point échoue, ajouter du contexte. Il n'est jamais trop précis.

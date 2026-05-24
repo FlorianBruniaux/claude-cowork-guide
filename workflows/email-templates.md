@@ -414,14 +414,14 @@ SIGNATURE AUTO (mail interne):
 
 ## Bonnes pratiques
 
-1. **Objets clairs** — Indiquez l'action attendue (ex: "Devis D2026-042 à valider")
-2. **Court = mieux** — 100 mots max pour emails pro
-3. **1 email = 1 objectif** — Pas de multiples sujets dans un email
-4. **Call-to-action** — Toujours terminer par action attendue
-5. **Relecture** — Vérifier variables remplies avant envoi
-6. **Archivage** — Garder templates à jour (révision annuelle)
-7. **Test A/B** — Tester 2 versions pour emails importants (cold email, relances)
-8. **RGPD** — Ne pas stocker données clients dans templates (juste variables)
+1. **Objets clairs** : Indiquez l'action attendue (ex: "Devis D2026-042 à valider")
+2. **Court = mieux** : 100 mots max pour emails pro
+3. **1 email = 1 objectif** : Pas de multiples sujets dans un email
+4. **Call-to-action** : Toujours terminer par action attendue
+5. **Relecture** : Vérifier variables remplies avant envoi
+6. **Archivage** : Garder templates à jour (révision annuelle)
+7. **Test A/B** : Tester 2 versions pour emails importants (cold email, relances)
+8. **RGPD** : Ne pas stocker données clients dans templates (juste variables)
 
 ---
 

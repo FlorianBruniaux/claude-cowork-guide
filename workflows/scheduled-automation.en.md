@@ -42,7 +42,7 @@ Drop files into the right subfolder based on how often they need processing.
 CONTEXT: Files added yesterday to ~/Cowork-Workspace/input/daily/
 TASK: Summarize new documents and identify actions for today
 OUTPUT: ~/Cowork-Workspace/output/reports/brief-[date].md
-Structure: 3 sections — "Urgent Actions", "Handle Today", "For Your Information"
+Structure: 3 sections: "Urgent Actions", "Handle Today", "For Your Information"
 CONSTRAINTS: Max 1 page. Bullet points only. Flag anything urgent or overdue.
 ```
 
@@ -62,7 +62,7 @@ CONSTRAINTS: Max 1 page. Bullet points only. Flag anything urgent or overdue.
 **Prompt to configure**:
 ```
 CONTEXT: All files in ~/Cowork-Workspace/input/weekly/ from the past 7 days
-TASK: Compile the weekly summary — achievements, key figures, pending items, follow-ups needed
+TASK: Compile the weekly summary: achievements, key figures, pending items, follow-ups needed
 OUTPUT: ~/Cowork-Workspace/output/reports/weekly-summary-[date].docx
 Structure: Executive Summary (1 para), Achievements, Figures (if available), Pending, Monday actions
 CONSTRAINTS: Executive format, 2 pages max. Bold the critical points.
@@ -79,7 +79,7 @@ CONSTRAINTS: Executive format, 2 pages max. Bold the critical points.
 **Prompt to configure**:
 ```
 CONTEXT: Files modified or created this week in ~/Cowork-Workspace/
-TASK: Create end-of-week recap — done, in progress, waiting for Monday
+TASK: Create end-of-week recap: done, in progress, waiting for Monday
 OUTPUT: ~/Cowork-Workspace/output/reports/recap-[date].md
 Structure: Done this week, In progress (status), Monday morning priorities (ranked)
 CONSTRAINTS: Action-oriented. Short sentences. One page maximum.
@@ -96,7 +96,7 @@ CONSTRAINTS: Action-oriented. Short sentences. One page maximum.
 **Prompt to configure**:
 ```
 CONTEXT: Files in ~/Cowork-Workspace/input/monthly/ for the past month
-TASK: Create monthly dashboard — key metrics, trends, notable points, outlook
+TASK: Create monthly dashboard: key metrics, trends, notable points, outlook
 OUTPUT: ~/Cowork-Workspace/output/dashboards/dashboard-[month-year].xlsx
 Structure: "Summary" tab (executive view) + "Detail" tab (raw data)
 CONSTRAINTS: US formula syntax (comma separators). Compare with previous month where data allows. Red-highlight anything below targets.
@@ -108,9 +108,9 @@ CONSTRAINTS: US formula syntax (comma separators). Compare with previous month w
 
 ### Two Task Types
 
-**Recurring tasks** — run automatically on a set cadence. Available frequencies: hourly, daily, weekly, weekdays-only, or custom. After the first run, Cowork automatically rewrites your prompt to optimize it based on what it learned.
+**Recurring tasks** : run automatically on a set cadence. Available frequencies: hourly, daily, weekly, weekdays-only, or custom. After the first run, Cowork automatically rewrites your prompt to optimize it based on what it learned.
 
-**On-demand tasks** — run once when you click "Run now." Useful for irregular or one-off operations without creating a permanent schedule.
+**On-demand tasks** : run once when you click "Run now." Useful for irregular or one-off operations without creating a permanent schedule.
 
 ### Setup Steps
 
@@ -130,9 +130,9 @@ The Scheduled section in the sidebar lets you: view upcoming runs, browse run hi
 
 ## Important Notes
 
-**Reliability**: Check the first few automated outputs manually before relying on them — Scheduled Tasks behavior can vary with complex multi-step workflows.
+**Reliability**: Check the first few automated outputs manually before relying on them: Scheduled Tasks behavior can vary with complex multi-step workflows.
 
-**App open AND device awake**: Cowork requires Claude Desktop to be open AND your computer to be awake (not sleeping) at the scheduled time. If the device is asleep or the app is closed, the task is **skipped** and runs automatically when the device wakes. Plan accordingly for early-morning schedules — disable auto-sleep if needed.
+**App open AND device awake**: Cowork requires Claude Desktop to be open AND your computer to be awake (not sleeping) at the scheduled time. If the device is asleep or the app is closed, the task is **skipped** and runs automatically when the device wakes. Plan accordingly for early-morning schedules: disable auto-sleep if needed.
 
 **Automatic prompt optimization**: After a recurring task's first run, Cowork analyzes the output and rewrites your prompt to improve it. Check the updated prompt in the sidebar to confirm the changes.
 

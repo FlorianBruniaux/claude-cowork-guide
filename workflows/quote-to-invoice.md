@@ -323,14 +323,14 @@ Ajouter au fichier ~/Cowork-Workspace/output/export-compta-2026.csv
 
 ## Bonnes pratiques
 
-1. **Conservation devis** — Archiver devis ET facture ensemble (traçabilité)
-2. **Acceptation formelle** — Toujours avoir preuve acceptation (email, signature, BPA)
-3. **Délai raisonnable** — Émettre facture max 1 mois après acceptation devis
-4. **Cohérence montants** — Si modification, documenter et informer client
-5. **Numérotation unique** — Jamais 2 factures avec même numéro
-6. **Vérification double** — Relire avant envoi (erreur facture = avoir + nouvelle facture)
-7. **Échéance claire** — Toujours mentionner date limite paiement
-8. **Envoi rapide** — Envoyer facture dans 48h après acceptation (crédibilité)
+1. **Conservation devis** : Archiver devis ET facture ensemble (traçabilité)
+2. **Acceptation formelle** : Toujours avoir preuve acceptation (email, signature, BPA)
+3. **Délai raisonnable** : Émettre facture max 1 mois après acceptation devis
+4. **Cohérence montants** : Si modification, documenter et informer client
+5. **Numérotation unique** : Jamais 2 factures avec même numéro
+6. **Vérification double** : Relire avant envoi (erreur facture = avoir + nouvelle facture)
+7. **Échéance claire** : Toujours mentionner date limite paiement
+8. **Envoi rapide** : Envoyer facture dans 48h après acceptation (crédibilité)
 
 ---
 

@@ -517,16 +517,16 @@ DECISION RULE: When time-critical, pay for reliability not just speed
 
 ## Best Practices
 
-1. **Get 3+ Quotes** — Minimum 3 suppliers for meaningful comparison
-2. **Normalize Units** — Convert all prices to same unit for fair comparison
-3. **Include All Costs** — Shipping, taxes, fees, not just unit price
-4. **Weight Criteria** — Price isn't everything; consider delivery, quality, service
-5. **Document Decisions** — Record why you chose a supplier (useful for future)
-6. **Track Performance** — Rate suppliers after delivery to inform future decisions
-7. **Build Relationships** — Preferred suppliers often offer better terms over time
-8. **Negotiate** — Use competitive quotes as leverage ("Supplier B offered $X...")
-9. **Consider Total Cost** — Factor in long-term costs, not just purchase price
-10. **Review Annually** — Re-evaluate preferred suppliers yearly (market changes)
+1. **Get 3+ Quotes** : Minimum 3 suppliers for meaningful comparison
+2. **Normalize Units** : Convert all prices to same unit for fair comparison
+3. **Include All Costs** : Shipping, taxes, fees, not just unit price
+4. **Weight Criteria** : Price isn't everything; consider delivery, quality, service
+5. **Document Decisions** : Record why you chose a supplier (useful for future)
+6. **Track Performance** : Rate suppliers after delivery to inform future decisions
+7. **Build Relationships** : Preferred suppliers often offer better terms over time
+8. **Negotiate** : Use competitive quotes as leverage ("Supplier B offered $X...")
+9. **Consider Total Cost** : Factor in long-term costs, not just purchase price
+10. **Review Annually** : Re-evaluate preferred suppliers yearly (market changes)
 
 ---
 

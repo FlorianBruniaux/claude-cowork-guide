@@ -21,7 +21,7 @@ CONTEXTE : Consulte mon fichier ~/Cowork-Workspace/CLAUDE.md pour mes données d
 
 Voici l'annonce à analyser :
 
-[Coller le texte complet de l'annonce ici — titre, description, loyer, surface, localisation]
+[Coller le texte complet de l'annonce ici : titre, description, loyer, surface, localisation]
 
 TÂCHE : Analyser ce bien pour évaluer son potentiel en location courte durée.
 
@@ -39,11 +39,11 @@ SORTIE :
    - 2 à 3 éléments spécifiques à ce quartier que je pourrai citer dans mon message
 
 3. Score de potentiel LCD (1 à 5)
-   - 5 : Très fort potentiel — localisation prime, bien adapté
-   - 4 : Bon potentiel — quelques atouts majeurs
-   - 3 : Potentiel moyen — à creuser selon les charges
-   - 2 : Potentiel limité — marché saturé ou bien inadapté
-   - 1 : Déconseillé — problèmes structurels (zone difficile, bien trop grand, charges prohibitives)
+   - 5 : Très fort potentiel (localisation prime, bien adapté)
+   - 4 : Bon potentiel (quelques atouts majeurs)
+   - 3 : Potentiel moyen (à creuser selon les charges)
+   - 2 : Potentiel limité (marché saturé ou bien inadapté)
+   - 1 : Déconseillé (zone difficile, bien trop grand, charges prohibitives)
 
 4. Points d'accroche pour le message de contact
    - Raison principale pour laquelle ce propriétaire devrait envisager le LCD
@@ -122,13 +122,13 @@ Données du prospect :
 TÂCHE : Rédiger un message de premier contact pour ce propriétaire.
 
 CONTRAINTES DE FOND :
-- Longueur : 150 à 200 mots maximum — pas plus
+- Longueur : 150 à 200 mots maximum, pas plus
 - Ton : professionnel mais humain, pas commercial agressif
 - Approche : proposer un audit gratuit du potentiel, pas une vente frontale
 - Mentionner l'écart de revenus comme "revenu potentiel estimé" (jamais "garanti")
 - Citer au moins 2 éléments spécifiques au quartier ou au bien
 - Mots à éviter : "garanti", "forcément", "à coup sûr", "rentabilité maximale"
-- Ne pas mentionner les plateformes (Airbnb, Booking) par leur nom si possible — préférer "location courte durée" ou "location saisonnière"
+- Ne pas mentionner les plateformes (Airbnb, Booking) par leur nom si possible, préférer "location courte durée" ou "location saisonnière"
 
 STRUCTURE DU MESSAGE :
 1. Accroche liée au bien ou au quartier (1 phrase)
@@ -183,7 +183,7 @@ STRUCTURE :
    - Contact direct
 
 CONTRAINTES :
-- Ton rassurant et factuel — le propriétaire découvre souvent la LCD
+- Ton rassurant et factuel (le propriétaire découvre souvent la LCD)
 - Zéro promesse de revenus garantis
 - Mettre en avant la transparence (compte-rendu mensuel, accès aux réservations)
 - Format sobre : pas de jargon marketing
@@ -230,9 +230,9 @@ Sauvegarde :
 ## Notes de personnalisation
 
 **Adapter les placeholders prioritaires dans CLAUDE.md :**
-- Données de calibrage par zone (prix nuit, taux occupation) — c'est ce qui rend les estimations pertinentes
-- Commission de gestion — variable selon positionnement (15-25%)
-- Charges ménage — selon vos prestataires locaux (30-60€ par rotation)
+- Données de calibrage par zone (prix nuit, taux occupation) : c'est ce qui rend les estimations pertinentes
+- Commission de gestion : variable selon positionnement (15-25%)
+- Charges ménage : selon vos prestataires locaux (30-60€ par rotation)
 
 **Ajuster le ton selon votre positionnement :**
 - Conciergerie premium : insister sur la gestion haut de gamme, les clients professionnels en déplacement, le score Superhost
@@ -241,7 +241,7 @@ Sauvegarde :
 **Sur la collecte des annonces :**
 - Utiliser les alertes Le Bon Coin (gratuit, légal) pour être notifié des nouvelles annonces correspondant à vos critères
 - Copier manuellement le texte de l'annonce dans un fichier `.txt` (un fichier par annonce)
-- Ne jamais automatiser la collecte — le scraping est interdit par les CGU et passible de sanctions
+- Ne jamais automatiser la collecte : le scraping est interdit par les CGU et passible de sanctions
 
 ---
 

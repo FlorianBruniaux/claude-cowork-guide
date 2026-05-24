@@ -190,7 +190,7 @@ Include:
 | Issue | Solution |
 |-------|----------|
 | Model too large (>10MB) | Split into modules, validate separately |
-| Complex VBA macros | Cowork cannot execute macros—document manually |
+| Complex VBA macros | Cowork cannot execute macros: document manually |
 | External data links | Note dependencies, validate data sources separately |
 | Password-protected sheets | Unlock sheets before analysis |
 
@@ -280,9 +280,9 @@ Use European Excel syntax (semicolon separators, French function names).
 
 ## Related Workflows
 
-- [Expense Tracking](expense-tracking.en.md) — Extract financial data from receipts
-- [Workforce Planning](workforce-planning.en.md) — Validate headcount models
-- [Budget vs Actual Analysis](budget-vs-actual.en.md) — Compare planned vs real expenses
+- [Expense Tracking](expense-tracking.en.md) : Extract financial data from receipts
+- [Workforce Planning](workforce-planning.en.md) : Validate headcount models
+- [Budget vs Actual Analysis](budget-vs-actual.en.md) : Compare planned vs real expenses
 
 ---
 

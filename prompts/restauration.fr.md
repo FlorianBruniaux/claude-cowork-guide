@@ -2,7 +2,7 @@
 
 Prompts prêts à l'emploi pour restaurateurs indépendants, gérants, traiteurs.
 
-**Whitepaper associé** : [WP-14 — IA pour Restaurateurs et Hôteliers](../whitepapers/fr/14-ia-restauration-hotellerie.qmd)
+**Whitepaper associé** : [WP-14 : IA pour Restaurateurs et Hôteliers](../whitepapers/fr/14-ia-restauration-hotellerie.qmd)
 
 ---
 

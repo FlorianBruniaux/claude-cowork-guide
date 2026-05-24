@@ -1,4 +1,4 @@
-# Template CLAUDE.md — Restaurateur et Hôtelier
+# Template CLAUDE.md : Restaurateur et Hôtelier
 
 Copier ce fichier sous `~/Cowork-Workspace/CLAUDE.md` et remplacer les parties entre `[crochets]`.
 

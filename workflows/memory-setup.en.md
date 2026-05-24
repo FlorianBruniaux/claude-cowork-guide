@@ -68,7 +68,7 @@ Read ~/Cowork-Workspace/memory.md first. Then [your actual request]
 ### Tradesperson (plumber, electrician, builder, carpenter)
 
 ```markdown
-# Cowork Memory — [First Last], [Trade]
+# Cowork Memory: [First Last], [Trade]
 
 ## My Business
 - Trade: [your trade]
@@ -98,7 +98,7 @@ Read ~/Cowork-Workspace/memory.md first. Then [your actual request]
 ### Retail (shop, grocery, wholesale, bookstore)
 
 ```markdown
-# Cowork Memory — [Shop Name]
+# Cowork Memory: [Shop Name]
 
 ## My Business
 - Type: [description]
@@ -131,7 +131,7 @@ Read ~/Cowork-Workspace/memory.md first. Then [your actual request]
 ### Professional Services (consultant, accountant, coach, lawyer, agency)
 
 ```markdown
-# Cowork Memory — [First Last], [Profession]
+# Cowork Memory: [First Last], [Profession]
 
 ## My Business
 - Specialty: [your field]

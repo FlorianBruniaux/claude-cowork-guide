@@ -512,14 +512,14 @@ Sauvegarde: ~/Cowork-Workspace/newsletters/[mois]-FR.html + [mois]-EN.html
 
 ## Bonnes pratiques
 
-1. **Régularité** — Même fréquence chaque mois (prévisibilité)
-2. **Valeur d'abord** — 70% valeur ajoutée / 30% promotion
-3. **Mobile-first** — Tester rendu mobile (70% lectures)
-4. **Désabonnement facile** — Lien visible (RGPD + image positive)
-5. **Personnalisation** — Utiliser prénom, segmenter si possible
-6. **CTA clair** — 1 objectif principal par newsletter
-7. **Nettoyer liste** — Retirer bounces et inactifs (améliore délivrabilité)
-8. **Mesurer ROI** — Tracker conversions (pas que vanity metrics)
+1. **Régularité** : Même fréquence chaque mois (prévisibilité)
+2. **Valeur d'abord** : 70% valeur ajoutée / 30% promotion
+3. **Mobile-first** : Tester rendu mobile (70% lectures)
+4. **Désabonnement facile** : Lien visible (RGPD + image positive)
+5. **Personnalisation** : Utiliser prénom, segmenter si possible
+6. **CTA clair** : 1 objectif principal par newsletter
+7. **Nettoyer liste** : Retirer bounces et inactifs (améliore délivrabilité)
+8. **Mesurer ROI** : Tracker conversions (pas que vanity metrics)
 
 ---
 

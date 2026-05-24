@@ -9,7 +9,7 @@
 ## Getting Started
 
 ### Q: What is Cowork?
-**A:** Cowork is Claude's agentic desktop feature that lets you manipulate local files, create documents, and organize your workspace—without writing code. It runs in the Claude Desktop app and can autonomously execute multi-step file operations.
+**A:** Cowork is Claude's agentic desktop feature that lets you manipulate local files, create documents, and organize your workspace, without writing code. It runs in the Claude Desktop app and can autonomously execute multi-step file operations.
 
 ### Q: How do I get access to Cowork?
 **A:** You need:
@@ -19,7 +19,7 @@
 4. Enable in Settings → Features
 
 ### Q: What are the usage limits?
-**A:** Usage resets every 5 hours, not daily/monthly. Pro tier: ~45 short messages per reset (~1-1.5 hours intensive use). Max tier: 5x or 20x Pro's limit. File organization and document processing tasks consume tokens rapidly—budget accordingly.
+**A:** Usage resets every 5 hours, not daily/monthly. Pro tier: ~45 short messages per reset (~1-1.5 hours intensive use). Max tier: 5x or 20x Pro's limit. File organization and document processing tasks consume tokens rapidly, so budget accordingly.
 
 ### Q: Is Claude Cowork available on Windows?
 **A:** Yes! Windows support was added on February 10, 2026. Cowork now runs on both macOS and Windows. **Linux** has no official announcement.
@@ -66,7 +66,7 @@ See [full comparison](comparison.md).
 **A:** Experimental connectors available but unreliable. Gmail and Drive connectors exist but have inconsistent authentication and task completion. Recommended workaround: Download cloud files to your local workspace first for reliable processing.
 
 ### Q: Can Cowork run Python or shell scripts?
-**A:** No. Cowork manipulates files only—it cannot execute code. Use Claude Code for code execution.
+**A:** No. Cowork manipulates files only. It cannot execute code. Use Claude Code for code execution.
 
 ### Q: What file formats can Cowork create?
 **A:**
@@ -97,7 +97,7 @@ See [full comparison](comparison.md).
 See [detailed comparison](comparison.md#common-confusion).
 
 ### Q: What is Claude Legal?
-**A:** Claude Legal is the first official Cowork extension (announced Feb 3, 2026) for automated legal document review. It helps identify key contract terms, detect compliance risks, and triage legal documents. Use it for contract verification, NDA review, and compliance tracking. **Important**: Claude Legal does NOT provide legal advice—all findings should be reviewed by a qualified legal professional. See [Capabilities: Extensions & Plugins](../guide/02-capabilities.md#extensions--plugins) for details.
+**A:** Claude Legal is the first official Cowork extension (announced Feb 3, 2026) for automated legal document review. It helps identify key contract terms, detect compliance risks, and triage legal documents. Use it for contract verification, NDA review, and compliance tracking. **Important**: Claude Legal does NOT provide legal advice. All findings should be reviewed by a qualified legal professional. See [Capabilities: Extensions & Plugins](../guide/02-capabilities.md#extensions--plugins) for details.
 
 ### Q: What is the Customize tab?
 **A:** The Customize tab in Claude Desktop is where you manage Skills, Connectors, and personalizations. Access it from the main app navigation. From there, install skills (like `/pdf` or `/xlsx`), configure external tool connectors with per-tool permissions, and adjust default behaviors.
@@ -126,9 +126,9 @@ See [detailed comparison](comparison.md#common-confusion).
 | **Dispatch** | Cowork (desktop app) | Send tasks from your phone to your desktop Cowork session via QR code pairing | iOS/Android app only |
 | **Channels** | Claude Code (CLI) | Connect a running Claude Code terminal session to Telegram or Discord | Telegram, Discord |
 
-**Practical rule**: If you're using Claude Desktop (Cowork), you use **Dispatch** — pair your phone via QR code in Settings, then send tasks from the mobile app while your Mac runs them. Telegram and Discord integration belongs to **Claude Code Channels**, a separate developer tool.
+**Practical rule**: If you're using Claude Desktop (Cowork), you use **Dispatch** : pair your phone via QR code in Settings, then send tasks from the mobile app while your Mac runs them. Telegram and Discord integration belongs to **Claude Code Channels**, a separate developer tool.
 
-If you're seeing articles about "Claude on Telegram" or "Claude on Discord" — that's Claude Code Channels, not Cowork.
+If you're seeing articles about "Claude on Telegram" or "Claude on Discord", that's Claude Code Channels, not Cowork.
 
 ### Q: What is Opus 4.7's context window?
 **A:** Opus 4.7 (the model powering Cowork) supports up to 1M tokens, a major upgrade from the previous ~200K effective limit. Output tokens have also increased to 128K (from 64K). Opus 4.7 also features adaptive thinking with 4 effort levels for better efficiency.
@@ -159,7 +159,7 @@ See [Scheduled Automation workflow](../workflows/scheduled-automation.md) for co
 ## Security
 
 ### Q: Is Cowork secure?
-**A:** Enterprise-grade security controls launched with GA on April 9, 2026 — role-based access control, usage analytics, and OpenTelemetry. See the [Security Guide](../guide/03-security.md) for full details.
+**A:** Enterprise-grade security controls launched with GA on April 9, 2026 : role-based access control, usage analytics, and OpenTelemetry. See the [Security Guide](../guide/03-security.md) for full details.
 
 ### Q: Can Cowork access all my files?
 **A:** Only folders you explicitly grant access to. Best practice: create a dedicated `~/Cowork-Workspace/` folder and only grant access there.
@@ -174,7 +174,7 @@ See [Scheduled Automation workflow](../workflows/scheduled-automation.md) for co
 **A:** File content is processed by Claude's API, similar to pasting text in chat. No official data retention policy specific to Cowork yet. For sensitive data, consider if cloud AI processing is appropriate.
 
 ### Q: Can I use Cowork for confidential business documents?
-**A:** **Use with caution for sensitive data.** Enterprise controls are live (role-based access, spend limits, usage analytics, OpenTelemetry). However, two blockers remain for compliance-heavy workflows: (1) Audit Logs don't capture Cowork activity — confirmed Anthropic limitation; (2) No compliance certifications yet. For regulated industries (finance, health, legal, public sector), review the [Enterprise Considerations](../guide/03-security.md#enterprise-considerations) section before using Cowork with confidential data.
+**A:** **Use with caution for sensitive data.** Enterprise controls are live (role-based access, spend limits, usage analytics, OpenTelemetry). However, two blockers remain for compliance-heavy workflows: (1) Audit Logs don't capture Cowork activity (confirmed Anthropic limitation); (2) No compliance certifications yet. For regulated industries (finance, health, legal, public sector), review the [Enterprise Considerations](../guide/03-security.md#enterprise-considerations) section before using Cowork with confidential data.
 
 ---
 
@@ -246,9 +246,9 @@ There's no workaround that keeps VPN active. See [Troubleshooting](../guide/04-t
 ## Pricing & Access
 
 ### Q: How much does Cowork cost?
-**A:** Requires Pro ($20/month) or Max ($100-200/month) subscription. Pro is available now but has tighter usage limits—recommended for light use only.
+**A:** Requires Pro ($20/month) or Max ($100-200/month) subscription. Pro is available now but has tighter usage limits, recommended for light use only.
 
-### Q: Pro or Max—which should I choose?
+### Q: Pro or Max: which should I choose?
 **A:**
 - **Pro ($20/mo)**: Occasional use, light file organization, small batches. Quota exhausts in ~1-1.5 hours intensive use.
 - **Max ($100-200/mo)**: Heavy daily use, large batch processing, document-intensive workflows. 5x-20x more usage than Pro.
@@ -283,7 +283,7 @@ Context compaction (beta) further extends effective session length by compressin
 
 ### Q: When should I use Cowork vs Claude Code?
 **A:**
-- **Cowork**: File organization, document creation, data extraction—no coding
+- **Cowork**: File organization, document creation, data extraction, no coding required
 - **Claude Code**: Software development, shell access, code execution
 
 ### Q: When should I use Cowork vs Projects?
@@ -314,7 +314,7 @@ Context compaction (beta) further extends effective session length by compressin
 ## Future
 
 ### Q: Is Cowork still in beta?
-**A:** **No — Cowork is generally available (GA) since April 9, 2026.** Available on Pro, Max, Team, and Enterprise plans for macOS and Windows. Enterprise controls (role-based access, usage analytics, OpenTelemetry) launched simultaneously. Some features remain in research preview (Computer Use, Dispatch), but Cowork itself is production-ready. Report bugs via in-app feedback.
+**A:** **No. Cowork is generally available (GA) since April 9, 2026.** Available on Pro, Max, Team, and Enterprise plans for macOS and Windows. Enterprise controls (role-based access, usage analytics, OpenTelemetry) launched simultaneously. Some features remain in research preview (Computer Use, Dispatch), but Cowork itself is production-ready. Report bugs via in-app feedback.
 
 ### Q: What features are coming?
 **A:** Recent additions (since GA launch, April 2026):

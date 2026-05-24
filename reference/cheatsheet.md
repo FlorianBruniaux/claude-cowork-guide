@@ -2,7 +2,7 @@
 
 🌐 **Languages**: [English](cheatsheet.md) | [Français](cheatsheet.fr.md)
 
-> **One-page quick reference** — Print-friendly
+> **One-page quick reference** : Print-friendly
 
 **Requires**: Pro ($20/mo) or Max ($100-200/mo) subscription, macOS or Windows
 
@@ -277,4 +277,4 @@ Context compaction (beta) extends effective session length. Hit limit? → Break
 
 ---
 
-*Cowork v1.9.0 (GA — April 9, 2026) | Part of Claude Cowork Guide*
+*Cowork v1.9.0 (GA, April 9, 2026) | Part of Claude Cowork Guide*

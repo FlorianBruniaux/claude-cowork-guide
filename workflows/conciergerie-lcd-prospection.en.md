@@ -1,4 +1,4 @@
-# Workflow: STR Property Management Prospecting — Converting Long-Term Rentals
+# Workflow: STR Property Management Prospecting, Converting Long-Term Rentals
 
 > **Estimated time**: 15 to 30 min per batch of 10-15 prospects
 > **Difficulty**: Intermediate
@@ -30,7 +30,7 @@ This workflow helps you:
 ## Prerequisites
 
 - [ ] Cowork active in Claude Desktop
-- [ ] `~/Cowork-Workspace/CLAUDE.md` file created with your market calibration data — see the [STR property manager CLAUDE.md template](../examples/claude-md-templates/conciergerie.md)
+- [ ] `~/Cowork-Workspace/CLAUDE.md` file created with your market calibration data, see the [STR property manager CLAUDE.md template](../examples/claude-md-templates/conciergerie.md)
 - [ ] Calibration data filled in: average nightly rate by zone, occupancy rate, commission, cleaning costs
 - [ ] Folders created:
   ```
@@ -128,7 +128,7 @@ CONSTRAINTS:
 - Tone: professional but human, not aggressively salesy
 - Offer a free audit, not a direct pitch
 - Reference at least 2 specific neighborhood or property elements
-- Use "estimated potential revenue" — never "guaranteed," "certain," or "sure thing"
+- Use "estimated potential revenue": never "guaranteed," "certain," or "sure thing"
 - Structure: opening tied to the property → one sentence on who I am → observation on STR potential → no-commitment proposal → relaxed close
 
 Save to: ~/Cowork-Workspace/output/prospects/batch-[date]/[filename]-message.txt
@@ -226,7 +226,7 @@ CONTEXT: Check my file ~/Cowork-Workspace/CLAUDE.md for my market data and posit
 
 Here is the listing:
 
-Title: "Spacious 2BR/2BA — South Beach — $2,400/month"
+Title: "Spacious 2BR/2BA, South Beach, $2,400/month"
 Description: Bright corner apartment, 4th floor with ocean view. Open kitchen, king master bed, queen guest room. In-unit washer/dryer. Walk to Lincoln Road, Art Deco Historic District. Street parking available. Available June 1st.
 
 TASK: Analyze this property to assess its short-term rental potential.
@@ -359,21 +359,21 @@ Save to: ~/Cowork-Workspace/output/prospects/crm-[month].xlsx
 
 ## Best Practices
 
-1. **Never automate listing collection** — Copy listings manually. Scraping violates platform Terms of Service and may expose you to legal liability.
+1. **Never automate listing collection** : Copy listings manually. Scraping violates platform Terms of Service and may expose you to legal liability.
 
-2. **Calibrate with your own data first** — Your managed properties in the same zone are the best calibration source. More reliable than third-party data for your specific market.
+2. **Calibrate with your own data first** : Your managed properties in the same zone are the best calibration source. More reliable than third-party data for your specific market.
 
-3. **Personalize every message** — The minimum: 2 elements specific to the property or neighborhood. A message that mentions the Art Deco Historic District converts better than one that says "your great neighborhood."
+3. **Personalize every message** : The minimum: 2 elements specific to the property or neighborhood. A message that mentions the Art Deco Historic District converts better than one that says "your great neighborhood."
 
-4. **Respect platform anti-spam policies** — Space out your outreach. No more than one message per owner, a 7-day wait before a single follow-up, then stop.
+4. **Respect platform anti-spam policies** : Space out your outreach. No more than one message per owner, a 7-day wait before a single follow-up, then stop.
 
-5. **Never guarantee revenue** — Always use "estimated potential revenue," "based on our experience in this market," "subject to actual occupancy." Guaranteeing results creates legal liability.
+5. **Never guarantee revenue** : Always use "estimated potential revenue," "based on our experience in this market," "subject to actual occupancy." Guaranteeing results creates legal liability.
 
-6. **Verify your licensing** — Confirm you have the appropriate property management license required in your state/country before managing properties for third parties.
+6. **Verify your licensing** : Confirm you have the appropriate property management license required in your state/country before managing properties for third parties.
 
-7. **Process in batches, not continuously** — 10-15 listings in a 30-minute session is more efficient than processing 2-3 listings throughout the day. Concentration improves analysis consistency.
+7. **Process in batches, not continuously** : 10-15 listings in a 30-minute session is more efficient than processing 2-3 listings throughout the day. Concentration improves analysis consistency.
 
-8. **Measure to calibrate** — Track response rates by zone and message angle. A simple CRM spreadsheet is enough. After one month, you'll know which neighborhoods and which angles convert best.
+8. **Measure to calibrate** : Track response rates by zone and message angle. A simple CRM spreadsheet is enough. After one month, you'll know which neighborhoods and which angles convert best.
 
 ---
 

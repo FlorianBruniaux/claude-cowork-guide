@@ -872,14 +872,14 @@ Next: Email 3 (send 01/22)
 
 ## Best Practices
 
-1. **Start with 5-10 templates** — Cover most common emails, expand as needed
-2. **One template per file** — Easier to find and update
-3. **Version templates** — Track changes, know what's current
-4. **Test before mass use** — Send to yourself first, check formatting
-5. **Mobile-friendly** — Keep paragraphs short (reads well on phone)
-6. **Clear subject lines** — Recipient should know what email is about before opening
-7. **Review quarterly** — Delete unused, update outdated
-8. **Back up library** — Cloud storage so you never lose templates
+1. **Start with 5-10 templates** : Cover most common emails, expand as needed
+2. **One template per file** : Easier to find and update
+3. **Version templates** : Track changes, know what's current
+4. **Test before mass use** : Send to yourself first, check formatting
+5. **Mobile-friendly** : Keep paragraphs short (reads well on phone)
+6. **Clear subject lines** : Recipient should know what email is about before opening
+7. **Review quarterly** : Delete unused, update outdated
+8. **Back up library** : Cloud storage so you never lose templates
 
 ---
 

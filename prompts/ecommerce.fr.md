@@ -2,7 +2,7 @@
 
 Prompts prêts à l'emploi pour e-commerçants indépendants, vendeurs Etsy, Shopify, Amazon Seller.
 
-**Whitepaper associé** : [WP-16 — IA pour E-commerçants et Vendeurs en Ligne](../whitepapers/fr/16-ia-ecommerce-vendeurs-en-ligne.qmd)
+**Whitepaper associé** : [WP-16 : IA pour E-commerçants et Vendeurs en Ligne](../whitepapers/fr/16-ia-ecommerce-vendeurs-en-ligne.qmd)
 
 ---
 
@@ -49,10 +49,10 @@ Traite 10 descriptions fournisseurs en une seule session et génère toutes les 
 CONTEXTE : Consulte ~/Cowork-Workspace/CLAUDE.md.
 Voici [X] fiches fournisseur à réécrire dans mon ton de marque :
 
-[Fiche 1 — Référence : REF-001] :
+[Fiche 1 : Référence REF-001] :
 [texte brut]
 
-[Fiche 2 — Référence : REF-002] :
+[Fiche 2 : Référence REF-002] :
 [texte brut]
 
 [continuer pour chaque fiche...]

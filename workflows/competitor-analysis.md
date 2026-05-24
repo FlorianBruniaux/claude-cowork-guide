@@ -645,14 +645,14 @@ Si performance < moyenne nationale malgré peu de concurrence locale
 
 ## Bonnes pratiques
 
-1. **Veille continue** — Pas one-shot, surveiller évolutions (trimestriel minimum)
-2. **Éthique** — Pas de dénigrement, espionnage illégal, diffamation
-3. **Focus différenciation** — Objectif pas copier mais se démarquer
-4. **Client au centre** — Analyser concurrence pour mieux servir clients (pas obsession)
-5. **Collaboration possible** — Certains concurrents = futurs partenaires (sous-traitance, spécialisations complémentaires)
-6. **Benchmark positif** — S'inspirer best practices (pas juste critiquer faiblesses)
-7. **Action > Analyse** — Veille utile SI débouche sur actions concrètes
-8. **Mesure impact** — Tracker si actions différenciation fonctionnent (KPIs)
+1. **Veille continue** : Pas one-shot, surveiller évolutions (trimestriel minimum)
+2. **Éthique** : Pas de dénigrement, espionnage illégal, diffamation
+3. **Focus différenciation** : Objectif pas copier mais se démarquer
+4. **Client au centre** : Analyser concurrence pour mieux servir clients (pas obsession)
+5. **Collaboration possible** : Certains concurrents = futurs partenaires (sous-traitance, spécialisations complémentaires)
+6. **Benchmark positif** : S'inspirer best practices (pas juste critiquer faiblesses)
+7. **Action > Analyse** : Veille utile SI débouche sur actions concrètes
+8. **Mesure impact** : Tracker si actions différenciation fonctionnent (KPIs)
 
 ---
 

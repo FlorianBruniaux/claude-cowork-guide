@@ -678,14 +678,14 @@ DECISION: Fast-track only if deadline penalties > cost premium
 
 ## Best Practices
 
-1. **Critical Path Focus** — Protect critical path tasks from delays at all costs
-2. **Buffer Time** — Include 10-15% contingency for unknowns
-3. **Early Procurement** — Order long-lead items immediately after design approval
-4. **Daily Communication** — Brief daily coordination meetings with all active trades
-5. **Visual Planning** — Gantt charts, calendars visible on-site for all crews
-6. **Milestone Payments** — Tie payments to deliverables, not just time
-7. **Progress Photos** — Daily timestamped photos for documentation and disputes
-8. **Inspection Scheduling** — Book inspections 2 weeks ahead, don't assume availability
+1. **Critical Path Focus** : Protect critical path tasks from delays at all costs
+2. **Buffer Time** : Include 10-15% contingency for unknowns
+3. **Early Procurement** : Order long-lead items immediately after design approval
+4. **Daily Communication** : Brief daily coordination meetings with all active trades
+5. **Visual Planning** : Gantt charts, calendars visible on-site for all crews
+6. **Milestone Payments** : Tie payments to deliverables, not just time
+7. **Progress Photos** : Daily timestamped photos for documentation and disputes
+8. **Inspection Scheduling** : Book inspections 2 weeks ahead, don't assume availability
 
 ---
 

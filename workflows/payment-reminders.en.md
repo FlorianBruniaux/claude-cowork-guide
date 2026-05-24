@@ -360,16 +360,16 @@ Specify: "One-time exceptional offer, not replicable"
 
 ## Best Practices
 
-1. **Escalation Timing** — Respect delays between levels (R1 +10 days → R2 +7 days → R3)
-2. **Always Courteous** — Even R3 stays professional, avoid insults/threats
-3. **Legal Compliance** — Verify applicable rates and collection laws in your jurisdiction
-4. **Document Everything** — Keep copies of all reminders and delivery confirmations
-5. **Pick Your Battles** — Legal action costs money; evaluate if worth pursuing
-6. **Payment Facilitation** — Offer payment plans before formal notice (better recovery)
-7. **Registered Mail** — R2 and especially R3 should be sent via registered mail
-8. **Systematic Tracking** — Use spreadsheet to monitor all reminders (avoid forgetting cases)
-9. **Attorney Consultation** — For amounts >$5,000 or complex situations, consult attorney
-10. **Prevention** — Add clear payment terms and penalty clauses to contracts
+1. **Escalation Timing** : Respect delays between levels (R1 +10 days → R2 +7 days → R3)
+2. **Always Courteous** : Even R3 stays professional, avoid insults/threats
+3. **Legal Compliance** : Verify applicable rates and collection laws in your jurisdiction
+4. **Document Everything** : Keep copies of all reminders and delivery confirmations
+5. **Pick Your Battles** : Legal action costs money; evaluate if worth pursuing
+6. **Payment Facilitation** : Offer payment plans before formal notice (better recovery)
+7. **Registered Mail** : R2 and especially R3 should be sent via registered mail
+8. **Systematic Tracking** : Use spreadsheet to monitor all reminders (avoid forgetting cases)
+9. **Attorney Consultation** : For amounts >$5,000 or complex situations, consult attorney
+10. **Prevention** : Add clear payment terms and penalty clauses to contracts
 
 ---
 

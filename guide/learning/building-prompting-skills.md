@@ -1,10 +1,10 @@
 ---
-title: "Building Prompting Skills — From Copy-Paste to Writing Your Own"
+title: "Building Prompting Skills : From Copy-Paste to Writing Your Own"
 description: "A progression guide from copying ready-made prompts to writing your own CTOC prompts from scratch, with practical exercises and a prompt library template"
 tags: [learning, prompting, ctoc, skills, library]
 ---
 
-# Building Prompting Skills — From Copy-Paste to Writing Your Own
+# Building Prompting Skills : From Copy-Paste to Writing Your Own
 
 Most people start by copying prompts. That's exactly right. But copying forever means you're always dependent on someone else's library, someone else's structure, someone else's context. The goal is to reach the point where you can write a prompt for any task, not just the ones already covered.
 
@@ -32,10 +32,10 @@ Copying prompts is not passive. Done correctly, it's how you build pattern recog
 
 Every prompt in this guide follows the CTOC structure:
 
-- **C — Context**: who you are, what your business does, what situation you're in
-- **T — Task**: the specific action Cowork needs to take
-- **O — Output**: the exact format, length, tone, and structure you expect
-- **C — Constraints**: what to avoid, limits on scope, anything that would make the output unusable
+- **C : Context** : who you are, what your business does, what situation you're in
+- **T : Task** : the specific action Cowork needs to take
+- **O : Output** : the exact format, length, tone, and structure you expect
+- **C : Constraints** : what to avoid, limits on scope, anything that would make the output unusable
 
 When you copy a prompt, do not just paste and send. Take 90 seconds to do this:
 
@@ -77,7 +77,7 @@ You know you are ready to move to Level 2 when prompts from the library work on 
 
 ## Level 2: Adaptation
 
-Adaptation is the core skill. Most real-world situations are variations on situations that already exist in someone's prompt library. You do not need to write from scratch — you need to recognize the closest existing prompt and modify it.
+Adaptation is the core skill. Most real-world situations are variations on situations that already exist in someone's prompt library. You do not need to write from scratch. You need to recognize the closest existing prompt and modify it.
 
 ### How to adapt a prompt for a new context
 
@@ -141,7 +141,7 @@ What changed: company type, industry, the specific document type, the delay dura
 
 ## Level 3: Writing From Scratch
 
-Once you can adapt fluently, writing from scratch is the natural next step. You are already doing most of the work — you are just removing the scaffold of an existing prompt.
+Once you can adapt fluently, writing from scratch is the natural next step. You are already doing most of the work. You are just removing the scaffold of an existing prompt.
 
 ### How to write a complete CTOC prompt
 
@@ -169,10 +169,10 @@ That's it. One prompt per week on a real task you know well. After 8 weeks, you 
 
 Before you send a prompt you wrote from scratch, check these five points:
 
-- [ ] **Context includes a role and company type** — not just "I" but "I run a 4-person plumbing company"
-- [ ] **Task has a specific verb and clear scope** — "write a 3-email sequence" not "help me with emails"
-- [ ] **Output describes the exact format** — format, length, language, structure
-- [ ] **Constraints list at least 2 specific things to avoid** — not "make it good" but specific exclusions
+- [ ] **Context includes a role and company type** : not just "I" but "I run a 4-person plumbing company"
+- [ ] **Task has a specific verb and clear scope** : "write a 3-email sequence" not "help me with emails"
+- [ ] **Output describes the exact format** : format, length, language, structure
+- [ ] **Constraints list at least 2 specific things to avoid** : not "make it good" but specific exclusions
 - [ ] **The whole prompt can be read by someone unfamiliar with your situation and they would understand exactly what you want**
 
 If the last point fails, add context. It is never too specific.
@@ -227,7 +227,7 @@ Use this structure for every prompt you add to the library:
 
 ### Expected output
 
-[Description of what a good result looks like — format, typical length, what to check]
+[Description of what a good result looks like : format, typical length, what to check]
 
 ### Customization required
 
@@ -239,7 +239,7 @@ Use this structure for every prompt you add to the library:
 [Any specific situations where this prompt does not work well, edge cases, known issues]
 ```
 
-Fill in every field. "Last tested" and "Output quality" are the two most important fields for a team library — they tell you whether the prompt is still working or needs an update.
+Fill in every field. "Last tested" and "Output quality" are the two most important fields for a team library: they tell you whether the prompt is still working or needs an update.
 
 ### Keeping the library alive
 
@@ -249,7 +249,7 @@ Set a monthly 30-minute session to:
 
 1. Review any prompt marked "Needs review"
 2. Test 3 random prompts from categories you use most
-3. Archive any prompt that has not been used in 3 months (do not delete — archive)
+3. Archive any prompt that has not been used in 3 months (do not delete, archive)
 4. Add any new prompts created that month
 
 The library is not a monument. It is a living tool.

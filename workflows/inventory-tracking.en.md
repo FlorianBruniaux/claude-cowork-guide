@@ -674,14 +674,14 @@ DISADVANTAGES:
 
 ## Best Practices
 
-1. **Count Regularly** — Physical counts prevent system drift, monthly for high-value items
-2. **ABC Prioritization** — Focus attention on high-value items (80/20 rule)
-3. **Lead Time Accuracy** — Track actual supplier lead times, update reorder points accordingly
-4. **Single Source of Truth** — One master inventory file/system, all updates go there
-5. **First-In-First-Out (FIFO)** — Sell oldest stock first, especially for dated/perishable items
-6. **Visibility** — Stock should be organized, labeled, easy to count
-7. **Review Monthly** — Analyze turnover, slow-movers, dead stock every month
-8. **Supplier Relationships** — Good relationships = flexible terms, rush orders when needed
+1. **Count Regularly** : Physical counts prevent system drift, monthly for high-value items
+2. **ABC Prioritization** : Focus attention on high-value items (80/20 rule)
+3. **Lead Time Accuracy** : Track actual supplier lead times, update reorder points accordingly
+4. **Single Source of Truth** : One master inventory file/system, all updates go there
+5. **First-In-First-Out (FIFO)** : Sell oldest stock first, especially for dated/perishable items
+6. **Visibility** : Stock should be organized, labeled, easy to count
+7. **Review Monthly** : Analyze turnover, slow-movers, dead stock every month
+8. **Supplier Relationships** : Good relationships = flexible terms, rush orders when needed
 
 ---
 

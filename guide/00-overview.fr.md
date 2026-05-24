@@ -44,7 +44,7 @@ Cowork partage la même architecture backend que Claude Code :
 | Boucles agentiques | Travailleurs du savoir vs développeurs |
 | Architecture de sous-agents | Pas d'exécution de code |
 
-**Différence clé** : Cowork ne peut pas exécuter du code arbitraire — il manipule uniquement des fichiers.
+**Différence clé** : Cowork ne peut pas exécuter du code arbitraire. Il manipule uniquement des fichiers.
 
 ---
 
@@ -121,17 +121,17 @@ Cowork partage la même architecture backend que Claude Code :
 | **Modèle d'accès** | Sandbox dossier local (autorisation utilisateur) |
 | **Connecteurs cloud** | Expérimentaux, non fiables (Gmail, Drive disponibles mais incohérents en janvier 2026) |
 | **Sous-agents** | Exécution parallèle avec contexte frais par agent |
-| **Exécution de code** | **Aucune** — Fichiers uniquement (pas de scripts, pas de commandes) |
+| **Exécution de code** | **Aucune** : Fichiers uniquement (pas de scripts, pas de commandes) |
 | **Navigateur** | Intégration Chrome pour tâches de recherche web |
 | **Limite de contexte** | ~200K tokens (unités de mesure de la consommation IA) (~150-500 pages par session) |
 | **Formats de sortie** | Excel (.xlsx avec formules), PowerPoint, Word, PDF, texte, images |
 
 ### Comment fonctionnent les sous-agents
 
-1. **Contexte frais** — Chaque sous-agent démarre proprement (pas de mémoire des autres agents)
-2. **Exécution parallèle** — Plusieurs agents peuvent travailler simultanément
-3. **Coordination orchestrateur** — L'agent principal assemble les résultats
-4. **Isolation de périmètre** — Chaque agent ne voit que ce dont il a besoin
+1. **Contexte frais** : Chaque sous-agent démarre proprement (pas de mémoire des autres agents)
+2. **Exécution parallèle** : Plusieurs agents peuvent travailler simultanément
+3. **Coordination orchestrateur** : L'agent principal assemble les résultats
+4. **Isolation de périmètre** : Chaque agent ne voit que ce dont il a besoin
 
 Cette architecture permet des workflows (enchaînements d'étapes automatisés) complexes multi-étapes tout en maintenant des frontières de sécurité.
 
@@ -139,7 +139,7 @@ Cette architecture permet des workflows (enchaînements d'étapes automatisés) 
 
 ## Ce que Cowork ne peut pas faire
 
-Comprendre les limitations est crucial pour une utilisation efficace :
+Savoir ce que Cowork ne peut pas faire détermine comment bien l'utiliser :
 
 | Limitation | Implication |
 |------------|-------------|
@@ -217,9 +217,9 @@ Si vous cherchez à optimiser vos workflows pour un usage intensif (>100 tâches
 
 ## Prochaines étapes
 
-- [Démarrage](01-getting-started.fr.md) — Configuration et premier workflow
-- [Capacités](02-capabilities.fr.md) — Détail des fonctionnalités
-- [Sécurité](03-security.fr.md) — Pratiques d'utilisation sûres
+- [Démarrage](01-getting-started.fr.md) : Configuration et premier workflow
+- [Capacités](02-capabilities.fr.md) : Détail des fonctionnalités
+- [Sécurité](03-security.fr.md) : Pratiques d'utilisation sûres
 
 ---
 

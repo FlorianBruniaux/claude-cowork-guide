@@ -759,14 +759,14 @@ Checklist matches what they paid for
 
 ## Best Practices
 
-1. **Code-based** — Reference specific code sections (NEC, IPC, IRC, health codes)
-2. **Photo everything** — Photos prove work quality and protect from false claims
-3. **Non-negotiable gates** — Quality checks are mandatory, not optional
-4. **Objective criteria** — Measurable standards, not "looks good"
-5. **Training tool** — Use checklists to train new employees on standards
-6. **Version control** — Update checklists when codes change (date versions)
-7. **Client involvement** — Walk-through with customer builds trust and catches preferences
-8. **Track metrics** — Analyze deficiency patterns to prevent recurring issues
+1. **Code-based** : Reference specific code sections (NEC, IPC, IRC, health codes)
+2. **Photo everything** : Photos prove work quality and protect from false claims
+3. **Non-negotiable gates** : Quality checks are mandatory, not optional
+4. **Objective criteria** : Measurable standards, not "looks good"
+5. **Training tool** : Use checklists to train new employees on standards
+6. **Version control** : Update checklists when codes change (date versions)
+7. **Client involvement** : Walk-through with customer builds trust and catches preferences
+8. **Track metrics** : Analyze deficiency patterns to prevent recurring issues
 
 ---
 

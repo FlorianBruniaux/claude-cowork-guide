@@ -864,14 +864,14 @@ Advantages:
 
 ## Best Practices
 
-1. **Start small** — Document 3 critical procedures before aiming for completeness
-2. **Show, make do, let do** — Classic effective pedagogical progression
-3. **Feedback loops** — Request doc user feedback for continuous improvement
-4. **Visual priority** — Photos/videos > long text (understanding +70%)
-5. **Trade language** — Use field vocabulary, not academic jargon
-6. **Valued mistakes** — Document common errors = prevention
-7. **Living update** — Evolving vs frozen knowledge base
-8. **Recognize contributors** — Value those who enrich documentation (collective motivation)
+1. **Start small** : Document 3 critical procedures before aiming for completeness
+2. **Show, make do, let do** : Classic effective pedagogical progression
+3. **Feedback loops** : Request doc user feedback for continuous improvement
+4. **Visual priority** : Photos/videos > long text (understanding +70%)
+5. **Trade language** : Use field vocabulary, not academic jargon
+6. **Valued mistakes** : Document common errors = prevention
+7. **Living update** : Evolving vs frozen knowledge base
+8. **Recognize contributors** : Value those who enrich documentation (collective motivation)
 
 **Golden rule**: Transfer = short-term time investment, long-term time savings. 20h documentation = 200h repetitions avoided over 5 years.
 

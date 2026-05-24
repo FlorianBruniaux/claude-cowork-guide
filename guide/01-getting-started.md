@@ -26,7 +26,7 @@ Before starting, ensure you have:
 **How to verify:**
 
 1. Open Claude Desktop app
-2. Look at the top of the sidebar — you should see three modes:
+2. Look at the top of the sidebar. You should see three modes:
    ```
    Chat    Cowork    Code
    ```
@@ -205,10 +205,10 @@ Every Cowork task follows this pattern:
 
 ### Key Points
 
-1. **Always review the plan** — This is your safety checkpoint
-2. **Be specific** — Vague requests lead to unexpected results
-3. **Start small** — Test with few files before large batches
-4. **Check results** — Verify output before proceeding
+1. **Always review the plan** : This is your safety checkpoint
+2. **Be specific** : Vague requests lead to unexpected results
+3. **Start small** : Test with few files before large batches
+4. **Check results** : Verify output before proceeding
 
 ---
 
@@ -358,7 +358,7 @@ Desktop Commander is a free official extension that expands what Cowork can do. 
 | Capability | Without Desktop Commander | With Desktop Commander |
 |-----------|--------------------------|----------------------|
 | **File access** | Workspace folder only | Any folder you authorize |
-| **Memory between sessions** | None — starts fresh each time | Persistent via memory.md |
+| **Memory between sessions** | None (starts fresh each time) | Persistent via memory.md |
 | **MCP server setup** | Manual, technical | One-click install |
 
 ### Installation
@@ -381,7 +381,7 @@ Once Desktop Commander is installed, create a persistent memory file so Cowork r
 # My Cowork Memory
 
 ## Business Context
-- Business type: [your type — consulting, retail, trades, etc.]
+- Business type: [your type: consulting, retail, trades, etc.]
 - Primary file formats: [Word, Excel, PDF, etc.]
 
 ## Client Preferences
@@ -409,7 +409,7 @@ Without a memory file, you'd repeat preferences and context at the start of ever
 
 ## Step 9: Enable Computer Use (Research Preview, macOS Only)
 
-Computer Use lets Claude control your desktop directly — open apps, click, fill forms, navigate the browser — without any custom integration. Available on Pro and Max plans, macOS only.
+Computer Use lets Claude control your desktop directly (open apps, click, fill forms, navigate the browser) without any custom integration. Available on Pro and Max plans, macOS only.
 
 > **Note**: Computer Use is a research preview feature available on Pro and Max plans, macOS only. Use it for supervised tasks where you can review each action.
 
@@ -441,7 +441,7 @@ To send tasks to your desktop from your phone while you're away:
 1. Open **Claude for iOS or Android**
 2. In the Cowork thread, tap **Pair Desktop**
 3. Scan the **QR code** shown in your Claude Desktop app
-4. Your phone is now connected — send tasks remotely
+4. Your phone is now connected. Send tasks remotely from anywhere.
 
 > **Requirements**: Mac must stay awake with Claude Desktop open. Claude uses the paired thread (Dispatch) to run tasks on your computer while you're away.
 
@@ -466,7 +466,7 @@ To send tasks to your desktop from your phone while you're away:
 
 **Most common cause**: Outdated app version.
 
-1. **Verify your version** — See [Prerequisites](#️-verify-you-have-the-latest-claude-desktop-version) above
+1. **Verify your version** : See [Prerequisites](#️-verify-you-have-the-latest-claude-desktop-version) above
 2. If you don't see "Chat | Cowork | Code" at the top, update your app
 3. After updating, check Settings → Features → ensure Cowork is enabled
 4. Restart the app
@@ -489,10 +489,10 @@ To send tasks to your desktop from your phone while you're away:
 
 You're now ready to:
 
-1. **[Explore Capabilities](02-capabilities.md)** — Learn what Cowork can do
-2. **[Review Security](03-security.md)** — Safe usage practices
-3. **[Try Workflows](../workflows/)** — Step-by-step tutorials
-4. **[Use Ready Prompts](../prompts/)** — Copy-paste templates
+1. **[Explore Capabilities](02-capabilities.md)** : Learn what Cowork can do
+2. **[Review Security](03-security.md)** : Safe usage practices
+3. **[Try Workflows](../workflows/)** : Step-by-step tutorials
+4. **[Use Ready Prompts](../prompts/)** : Copy-paste templates
 
 ---
 

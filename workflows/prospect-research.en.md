@@ -478,14 +478,14 @@ Advantages vs. Excel:
 
 ## Best Practices
 
-1. **Qualify BEFORE contact** — 15 min research saves 2h useless outreach
-2. **Official sources priority** — Use government registries for legal data
-3. **Regular updates** — Re-qualify prospects every 6 months
-4. **GDPR/privacy compliance** — Only store public professional data
-5. **Systematic personalization** — Use research in commercial approach
-6. **Objective scoring** — Scoring grid avoids emotional bias
-7. **Traceable documentation** — Archive sources and research dates
-8. **Time ROI** — Deepen research proportionally to potential deal size
+1. **Qualify BEFORE contact** : 15 min research saves 2h useless outreach
+2. **Official sources priority** : Use government registries for legal data
+3. **Regular updates** : Re-qualify prospects every 6 months
+4. **GDPR/privacy compliance** : Only store public professional data
+5. **Systematic personalization** : Use research in commercial approach
+6. **Objective scoring** : Scoring grid avoids emotional bias
+7. **Traceable documentation** : Archive sources and research dates
+8. **Time ROI** : Deepen research proportionally to potential deal size
 
 ---
 

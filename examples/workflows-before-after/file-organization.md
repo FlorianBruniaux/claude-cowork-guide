@@ -1,4 +1,4 @@
-# Avant / Après — Organisation des Fichiers
+# Avant / Après : Organisation des Fichiers
 
 **Profil** : Paul, gérant d'une agence de voyages de 4 personnes. Dossier `Documents/` accumulé depuis 5 ans, 3 000+ fichiers non organisés.
 

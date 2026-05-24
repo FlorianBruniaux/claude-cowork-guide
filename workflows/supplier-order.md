@@ -491,14 +491,14 @@ PROCESS NÉGOCIATION:
 
 ## Bonnes pratiques
 
-1. **Consolidation hebdo** — Regrouper commandes (vs quotidien) → ports optimisés
-2. **BC écrit systématique** — Même fournisseur connu (preuve en cas litige)
-3. **Numérotation unique** — BC-[année]-[numéro séquentiel] (traçabilité)
-4. **Contrôle réception rigoureux** — Vérifier AVANT signature BL (après = trop tard)
-5. **Relances préventives** — J-2 avant livraison prévue: Confirmer fournisseur
-6. **Relations fournisseurs** — Payer à temps = meilleurs tarifs + priorité livraisons
-7. **Stock tampon urgence** — Articles critiques: Garder mini stock (éviter commandes express coûteuses)
-8. **Archivage triptyque** — BC + BL + Facture ensemble (contrôle comptable facilité)
+1. **Consolidation hebdo** : Regrouper commandes (vs quotidien) → ports optimisés
+2. **BC écrit systématique** : Même fournisseur connu (preuve en cas litige)
+3. **Numérotation unique** : BC-[année]-[numéro séquentiel] (traçabilité)
+4. **Contrôle réception rigoureux** : Vérifier AVANT signature BL (après = trop tard)
+5. **Relances préventives** : J-2 avant livraison prévue: Confirmer fournisseur
+6. **Relations fournisseurs** : Payer à temps = meilleurs tarifs + priorité livraisons
+7. **Stock tampon urgence** : Articles critiques: Garder mini stock (éviter commandes express coûteuses)
+8. **Archivage triptyque** : BC + BL + Facture ensemble (contrôle comptable facilité)
 
 ---
 

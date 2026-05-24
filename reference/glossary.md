@@ -15,7 +15,7 @@ Describes AI systems that can autonomously plan and execute multi-step tasks wit
 A research preview feature enabling multi-agent coordination where multiple Claude agents work together on complex tasks. One agent orchestrates others, each handling a specialized sub-task with sophisticated coordination.
 
 ### Approval Gate
-The checkpoint where Cowork shows its planned actions and waits for your confirmation before executing. **Critical security measure**—always review before approving.
+The checkpoint where Cowork shows its planned actions and waits for your confirmation before executing. **Critical security measure**: always review before approving.
 
 ### Artifact
 A file created by Claude (document, spreadsheet, image, etc.) during a Cowork session. Artifacts appear in Claude's interface where you can preview, edit, or download them. Examples: generated PDFs, organized spreadsheets, extracted data files.

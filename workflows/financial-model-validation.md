@@ -190,7 +190,7 @@ Inclus :
 | Problème | Solution |
 |----------|----------|
 | Modèle trop volumineux (>10 Mo) | Diviser en modules, valider séparément |
-| Macros VBA complexes | Cowork ne peut pas exécuter de macros—documenter manuellement |
+| Macros VBA complexes | Cowork ne peut pas exécuter de macros : documenter manuellement |
 | Liens de données externes | Noter les dépendances, valider les sources séparément |
 | Feuilles protégées par mot de passe | Déverrouiller avant analyse |
 
@@ -280,9 +280,9 @@ Utilise syntaxe Excel européenne (séparateurs point-virgule, noms de fonctions
 
 ## Workflows associés
 
-- [Suivi des Dépenses](expense-tracking.md) — Extraire données financières depuis reçus
-- [Planification des Effectifs](workforce-planning.md) — Valider modèles masse salariale
-- [Analyse Budget vs Réel](budget-vs-actual.md) — Comparer dépenses prévues vs réelles
+- [Suivi des Dépenses](expense-tracking.md) : Extraire données financières depuis reçus
+- [Planification des Effectifs](workforce-planning.md) : Valider modèles masse salariale
+- [Analyse Budget vs Réel](budget-vs-actual.md) : Comparer dépenses prévues vs réelles
 
 ---
 

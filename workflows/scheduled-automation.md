@@ -42,7 +42,7 @@ Déposez vos fichiers dans le bon sous-dossier selon leur fréquence de traiteme
 CONTEXTE : Fichiers ajoutés hier dans ~/Cowork-Workspace/input/quotidien/
 TÂCHE : Résumer les nouveaux documents et identifier les actions à faire aujourd'hui
 OUTPUT : ~/Cowork-Workspace/output/bilans/brief-[date].md
-Structure : 3 sections — "Actions urgentes", "À traiter aujourd'hui", "Pour information"
+Structure : 3 sections : "Actions urgentes", "À traiter aujourd'hui", "Pour information"
 CONTRAINTES : Maximum 1 page. Bullet points uniquement. Signaler tout ce qui est urgent ou en retard.
 ```
 
@@ -62,7 +62,7 @@ CONTRAINTES : Maximum 1 page. Bullet points uniquement. Signaler tout ce qui est
 **Prompt à configurer** :
 ```
 CONTEXTE : Tous les fichiers dans ~/Cowork-Workspace/input/hebdo/ des 7 derniers jours
-TÂCHE : Compiler le bilan de la semaine — réalisations, chiffres clés, points en attente, relances à faire
+TÂCHE : Compiler le bilan de la semaine : réalisations, chiffres clés, points en attente, relances à faire
 OUTPUT : ~/Cowork-Workspace/output/rapports/bilan-semaine-[date].docx
 Structure : Résumé exécutif (1 para), Réalisations, Chiffres (si disponibles), En attente, Actions lundi
 CONTRAINTES : Format dirigeant, 2 pages max. Mettre en gras les points critiques.
@@ -84,7 +84,7 @@ CONTRAINTES : Format dirigeant, 2 pages max. Mettre en gras les points critiques
 **Prompt à configurer** :
 ```
 CONTEXTE : Fichiers modifiés ou créés cette semaine dans ~/Cowork-Workspace/
-TÂCHE : Créer le récap de fin de semaine — ce qui a été fait, ce qui est en cours, ce qui attend lundi
+TÂCHE : Créer le récap de fin de semaine : ce qui a été fait, ce qui est en cours, ce qui attend lundi
 OUTPUT : ~/Cowork-Workspace/output/bilans/recap-[date].md
 Structure : Fait cette semaine, En cours (état), À faire lundi matin (priorisé)
 CONTRAINTES : Orienté action. Phrases courtes. Maximum 1 page.
@@ -101,7 +101,7 @@ CONTRAINTES : Orienté action. Phrases courtes. Maximum 1 page.
 **Prompt à configurer** :
 ```
 CONTEXTE : Fichiers dans ~/Cowork-Workspace/input/mensuel/ pour le mois écoulé
-TÂCHE : Créer le dashboard mensuel — indicateurs clés, tendances, points notables, prévisions
+TÂCHE : Créer le dashboard mensuel : indicateurs clés, tendances, points notables, prévisions
 OUTPUT : ~/Cowork-Workspace/output/dashboards/dashboard-[mois-annee].xlsx
 Structure : Onglet "Synthèse" (vue dirigeant) + Onglet "Détail" (données brutes)
 CONTRAINTES : Syntaxe formules européenne (point-virgule). Comparaison avec le mois précédent si les données sont disponibles. Mettre en rouge ce qui est en dessous des objectifs.

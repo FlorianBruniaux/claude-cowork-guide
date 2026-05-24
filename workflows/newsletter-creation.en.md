@@ -512,14 +512,14 @@ Save: ~/Cowork-Workspace/newsletters/[month]-EN.html + [month]-ES.html
 
 ## Best Practices
 
-1. **Regularity** — Same frequency each month (predictability)
-2. **Value first** — 70% value-add / 30% promotion
-3. **Mobile-first** — Test mobile rendering (70% reads)
-4. **Easy unsubscribe** — Visible link (GDPR + positive image)
-5. **Personalization** — Use first name, segment if possible
-6. **Clear CTA** — 1 primary objective per newsletter
-7. **Clean list** — Remove bounces and inactive (improves deliverability)
-8. **Measure ROI** — Track conversions (not just vanity metrics)
+1. **Regularity** : Same frequency each month (predictability)
+2. **Value first** : 70% value-add / 30% promotion
+3. **Mobile-first** : Test mobile rendering (70% reads)
+4. **Easy unsubscribe** : Visible link (GDPR + positive image)
+5. **Personalization** : Use first name, segment if possible
+6. **Clear CTA** : 1 primary objective per newsletter
+7. **Clean list** : Remove bounces and inactive (improves deliverability)
+8. **Measure ROI** : Track conversions (not just vanity metrics)
 
 ---
 

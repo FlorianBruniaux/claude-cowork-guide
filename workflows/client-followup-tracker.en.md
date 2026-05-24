@@ -607,16 +607,16 @@ Impact: Client feels valued, relationship strengthened from Day 1
 
 ## Best Practices
 
-1. **Update Immediately** — Log interactions right after they happen (memory is fresh)
-2. **Consistent Routine** — Check tracker at same time daily (morning review)
-3. **Quality Over Quantity** — Better to follow up well with 20 prospects than poorly with 100
-4. **Personalize Follow-ups** — Reference previous conversation, show you remember
-5. **Set Realistic Due Dates** — Don't overcommit, adjust if needed
-6. **Archive Won/Lost** — Move closed opportunities to separate sheet to reduce clutter
-7. **Review Weekly** — Look at overall pipeline health, not just daily tasks
-8. **Learn from Lost** — Note why deals were lost to improve future approach
-9. **Celebrate Wins** — Track conversion rates and improvements over time
-10. **Respect Timing** — If prospect says "call back in 3 months," do exactly that (add to calendar)
+1. **Update Immediately** : Log interactions right after they happen (memory is fresh)
+2. **Consistent Routine** : Check tracker at same time daily (morning review)
+3. **Quality Over Quantity** : Better to follow up well with 20 prospects than poorly with 100
+4. **Personalize Follow-ups** : Reference previous conversation, show you remember
+5. **Set Realistic Due Dates** : Don't overcommit, adjust if needed
+6. **Archive Won/Lost** : Move closed opportunities to separate sheet to reduce clutter
+7. **Review Weekly** : Look at overall pipeline health, not just daily tasks
+8. **Learn from Lost** : Note why deals were lost to improve future approach
+9. **Celebrate Wins** : Track conversion rates and improvements over time
+10. **Respect Timing** : If prospect says "call back in 3 months," do exactly that (add to calendar)
 
 ---
 

@@ -243,12 +243,12 @@ After generating the PDF invoice, also create:
 
 ## Best Practices
 
-1. **Sequential numbering** — No gaps in numbering (legal requirement in many jurisdictions)
-2. **Systematic backup** — Keep all invoices for required retention period (often 7-10 years)
-3. **Double verification** — Always review before sending to client
-4. **Validated template** — Have your template reviewed by an accountant
-5. **Updated legal mentions** — Verify legal requirements annually
-6. **Organized archiving** — Consistent naming (year/number or by client)
+1. **Sequential numbering** : No gaps in numbering (legal requirement in many jurisdictions)
+2. **Systematic backup** : Keep all invoices for required retention period (often 7-10 years)
+3. **Double verification** : Always review before sending to client
+4. **Validated template** : Have your template reviewed by an accountant
+5. **Updated legal mentions** : Verify legal requirements annually
+6. **Organized archiving** : Consistent naming (year/number or by client)
 
 ---
 

@@ -21,7 +21,7 @@ CONTEXT: Check my file ~/Cowork-Workspace/CLAUDE.md for my market data and posit
 
 Here is the listing to analyze:
 
-[Paste the full listing text here — title, description, rent, area, location]
+[Paste the full listing text here: title, description, rent, area, location]
 
 TASK: Analyze this property to assess its short-term rental potential.
 
@@ -39,11 +39,11 @@ OUTPUT:
    - 2 to 3 specific neighborhood elements I can mention in my outreach message
 
 3. STR potential score (1 to 5)
-   - 5: Very high potential — prime location, well-suited property
-   - 4: Good potential — several major advantages
-   - 3: Average potential — worth exploring based on costs
-   - 2: Limited potential — saturated market or unsuitable property
-   - 1: Not recommended — structural issues (difficult area, oversized, prohibitive costs)
+   - 5: Very high potential (prime location, well-suited property)
+   - 4: Good potential (several major advantages)
+   - 3: Average potential (worth exploring based on costs)
+   - 2: Limited potential (saturated market or unsuitable property)
+   - 1: Not recommended (difficult area, oversized, prohibitive costs)
 
 4. Talking points for the outreach message
    - Main reason this owner should consider STR
@@ -182,7 +182,7 @@ STRUCTURE:
    - Direct contact
 
 CONSTRAINTS:
-- Reassuring and factual tone — the owner is often new to STR
+- Reassuring and factual tone (the owner is often new to STR)
 - Zero promises of guaranteed revenue
 - Maximum 2 pages
 - Emphasize transparency (monthly report, reservation access)
@@ -229,9 +229,9 @@ Save:
 ## Customization Notes
 
 **Priority placeholders to fill in CLAUDE.md:**
-- Market calibration by zone (nightly rate, occupancy) — this is what makes estimates relevant
-- Management commission — varies by positioning (15-25%)
-- Cleaning costs — based on your local service providers
+- Market calibration by zone (nightly rate, occupancy): this is what makes estimates relevant
+- Management commission: varies by positioning (15-25%)
+- Cleaning costs: based on your local service providers
 
 **Adjust tone to your positioning:**
 - Premium STR management: emphasize luxury hospitality, business traveler clientele, Superhost status
@@ -240,7 +240,7 @@ Save:
 **On listing collection:**
 - Use platform alert notifications (free, legal) to be notified of new listings matching your criteria
 - Manually copy the listing text into a `.txt` file (one file per listing)
-- Never automate collection — scraping violates platform Terms of Service and may be illegal
+- Never automate collection: scraping violates platform Terms of Service and may be illegal
 
 ---
 

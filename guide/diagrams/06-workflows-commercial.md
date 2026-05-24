@@ -1,16 +1,16 @@
 ---
-title: "Diagrammes — Workflows Commerciaux"
+title: "Diagrammes : Workflows Commerciaux"
 description: "3 diagrammes : pipeline prospection SIREN, framework analyse concurrence, cycle de vie client"
 tags: [commercial, prospection, siren, concurrence, client]
 ---
 
-# Workflows Commerciaux — Diagrammes
+# Workflows Commerciaux : Diagrammes
 
 3 diagrammes pour les processus commerciaux : trouver des prospects, analyser la concurrence, gérer le cycle de vie client.
 
 ---
 
-## D23 — Pipeline prospection via SIREN {#d23}
+## D23 : Pipeline prospection via SIREN {#d23}
 
 **Quand l'utiliser** : tu veux trouver de nouveaux clients professionnels et qualifier des leads depuis des bases publiques françaises.
 
@@ -53,7 +53,7 @@ flowchart LR
 ```
 
 <details>
-<summary>Fallback ASCII — Pipeline prospection SIREN</summary>
+<summary>Fallback ASCII : Pipeline prospection SIREN</summary>
 
 ```
 PIPELINE PROSPECTION
@@ -85,7 +85,7 @@ Données disponibles : SIREN, effectif estimé, CA si disponible, dirigeants
 
 ---
 
-## D24 — Framework analyse concurrentielle {#d24}
+## D24 : Framework analyse concurrentielle {#d24}
 
 **Quand l'utiliser** : tu veux comprendre où tu te situes par rapport à tes concurrents et identifier les opportunités de différenciation.
 
@@ -131,7 +131,7 @@ flowchart TD
 ```
 
 <details>
-<summary>Fallback ASCII — Framework analyse concurrentielle</summary>
+<summary>Fallback ASCII : Framework analyse concurrentielle</summary>
 
 ```
 ANALYSE CONCURRENTIELLE
@@ -162,7 +162,7 @@ Fréquence recommandée : trimestrielle
 
 ---
 
-## D25 — Cycle de vie client avec Cowork {#d25}
+## D25 : Cycle de vie client avec Cowork {#d25}
 
 **Quand l'utiliser** : tu veux visualiser toutes les interactions client que Cowork peut automatiser ou améliorer, de la prospection à la fidélisation.
 
@@ -200,10 +200,10 @@ flowchart LR
 ```
 
 <details>
-<summary>Fallback ASCII — Cycle de vie client</summary>
+<summary>Fallback ASCII : Cycle de vie client</summary>
 
 ```
-CYCLE DE VIE CLIENT — CE QUE COWORK AUTOMATISE
+CYCLE DE VIE CLIENT : CE QUE COWORK AUTOMATISE
 ================================================
 
 ACQUISITION

@@ -68,7 +68,7 @@ Lis ~/Cowork-Workspace/memory.md d'abord. Puis [votre demande]
 ### Artisan (plombier, électricien, maçon, menuisier)
 
 ```markdown
-# Mémoire Cowork — [Prénom Nom], [Métier]
+# Mémoire Cowork : [Prénom Nom], [Métier]
 
 ## Mon activité
 - Secteur : [votre métier]
@@ -99,7 +99,7 @@ Lis ~/Cowork-Workspace/memory.md d'abord. Puis [votre demande]
 ### Commerce (boutique, épicerie, négoce, librairie)
 
 ```markdown
-# Mémoire Cowork — [Nom de la boutique]
+# Mémoire Cowork : [Nom de la boutique]
 
 ## Mon activité
 - Type de commerce : [description]
@@ -132,7 +132,7 @@ Lis ~/Cowork-Workspace/memory.md d'abord. Puis [votre demande]
 ### Services (consultant, comptable, coach, avocat, agence)
 
 ```markdown
-# Mémoire Cowork — [Prénom Nom], [Profession]
+# Mémoire Cowork : [Prénom Nom], [Profession]
 
 ## Mon activité
 - Spécialité : [votre domaine]

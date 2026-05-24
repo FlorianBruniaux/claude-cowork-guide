@@ -498,14 +498,14 @@ Impact: Client se sent privilégié, relation renforcée dès J1
 
 ## Bonnes pratiques
 
-1. **Mise à jour immédiate** — Après CHAQUE interaction (évite oubli)
-2. **Routine hebdo fixe** — Même jour, même heure (ex: Lundi 9h)
-3. **Simplicité** — Mieux tableau simple à jour qu'Excel complexe abandonné
-4. **Qualification initiale** — Bien remplir dès premier contact
-5. **Décisions franches** — Classer Perdu si dormant (libère énergie)
-6. **Backup régulier** — Sauvegarder fichier (cloud + local)
-7. **Revue mensuelle** — Analyser tendances et ajuster stratégie
-8. **Persévérance mesurée** — 3-4 relances max puis arrêter (pas harceler)
+1. **Mise à jour immédiate** : Après CHAQUE interaction (évite oubli)
+2. **Routine hebdo fixe** : Même jour, même heure (ex: Lundi 9h)
+3. **Simplicité** : Mieux tableau simple à jour qu'Excel complexe abandonné
+4. **Qualification initiale** : Bien remplir dès premier contact
+5. **Décisions franches** : Classer Perdu si dormant (libère énergie)
+6. **Backup régulier** : Sauvegarder fichier (cloud + local)
+7. **Revue mensuelle** : Analyser tendances et ajuster stratégie
+8. **Persévérance mesurée** : 3-4 relances max puis arrêter (pas harceler)
 
 ---
 

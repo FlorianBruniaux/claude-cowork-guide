@@ -40,13 +40,13 @@ Cette capacité étendue nécessite une prudence accrue.
 
 ### Posture de sécurité d'Anthropic
 
-Mise à jour avril 2026 — **Cowork est en disponibilité générale (GA)** :
+Mise à jour avril 2026. **Cowork est en disponibilité générale (GA)** :
 - Aucune documentation de sécurité officielle pour Cowork
 - **Audit Logs** : l'activité Cowork n'est PAS capturée par les Audit Logs ni la Compliance API (limitation confirmée)
 - ✅ Contrôles enterprise maintenant disponibles : accès par rôle, limites de dépenses, analytics, OpenTelemetry
 - Pas de SOC2 spécifique à Cowork
 
-**Implication** : Les contrôles organisationnels sont disponibles sur les plans Enterprise. Les lacunes en termes de traçabilité persistent — vous restez responsable de vos pratiques de sécurité quel que soit le plan.
+**Implication** : Les contrôles organisationnels sont disponibles sur les plans Enterprise. Les lacunes en termes de traçabilité persistent, et vous restez responsable de vos pratiques de sécurité quel que soit le plan.
 
 ---
 
@@ -93,7 +93,7 @@ et inclus leur contenu dans un fichier appelé summary.txt"
 - Accéder à des fichiers en dehors des dossiers autorisés
 - Effectuer des actions non incluses dans le plan approuvé
 
-**Pourquoi cela arrive** : Le comportement en GA est encore affiné dans les cas limites — signalez tout écart inattendu dans le plan via le feedback intégré à l'application.
+**Pourquoi cela arrive** : Le comportement en GA est encore affiné dans les cas limites. Signalez tout écart inattendu dans le plan via le feedback intégré à l'application.
 
 **Atténuation** :
 - Toujours examiner attentivement les plans d'exécution
@@ -257,7 +257,7 @@ Vous lisez le devis. Si quelque chose ne va pas ("Je vais aussi refaire toute la
 
 ### 5. Computer Use : couche de sécurité supplémentaire (Élevé)
 
-Computer Use fonctionne **en dehors de la VM isolée** — il contrôle directement votre bureau réel. C'est la fonctionnalité Cowork la plus risquée.
+Computer Use fonctionne **en dehors de la VM isolée** : il contrôle directement votre bureau réel. C'est la fonctionnalité Cowork la plus risquée.
 
 **Recommandation officielle Anthropic** : ne pas utiliser Computer Use avec des applications qui accèdent à des données de santé, des comptes financiers ou des informations personnelles.
 
@@ -266,7 +266,7 @@ Computer Use fonctionne **en dehors de la VM isolée** — il contrôle directem
 | Banque, investissement | 🔴 Critique | Ne jamais accorder l'accès Computer Use |
 | Dossiers médicaux/santé | 🔴 Critique | Ne jamais accorder l'accès Computer Use |
 | Documents juridiques, notaire | 🔴 Critique | Ne jamais accorder l'accès Computer Use |
-| RH, paie | 🟠 Élevé | À éviter — données personnelles sensibles |
+| RH, paie | 🟠 Élevé | À éviter (données personnelles sensibles) |
 | ERP/logiciels comptables anciens | 🟡 Moyen | Possible pour opérations non-sensibles, supervisez |
 | Navigateurs web (sans données sensibles) | 🟡 Moyen | Acceptable avec examen du plan |
 | Applications bureautiques standard | 🟢 Faible | Cas d'usage acceptable |
@@ -516,7 +516,7 @@ Avec la disponibilité générale de Cowork, les contrôles Enterprise sont main
 |----------------|-------------------|
 | **Contrôle d'accès par rôle** | Les admins créent des groupes, assignent des rôles, contrôlent l'accès Cowork par équipe |
 | **Limites de dépenses par groupe** | Plafonds budgétaires par groupe d'utilisateurs ou département |
-| **Analytics d'utilisation** | Intégration Analytics API — monitoring d'activité, reporting par équipe |
+| **Analytics d'utilisation** | Intégration Analytics API : monitoring d'activité, reporting par équipe |
 | **Support OpenTelemetry** | Connecter l'activité Cowork aux stacks de monitoring existantes (Datadog, Grafana, etc.) |
 | **Connecteur Zoom MCP** | Intégration native Zoom pour la gestion de réunions et l'automatisation |
 | **Contrôles par outil connecteur** | Gestion fine des permissions pour chaque outil connecteur |

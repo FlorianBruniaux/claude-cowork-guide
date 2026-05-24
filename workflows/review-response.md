@@ -232,11 +232,11 @@ RÉPONSE PROPOSÉE:
 
 Version A (formelle):
 "Merci infiniment pour ce retour ! Nous sommes ravis que notre pain au levain et l'accueil de Julie illuminent vos matins. Au plaisir de vous retrouver bientôt.
-— Pierre Martin, Boulangerie Martin"
+- Pierre Martin, Boulangerie Martin"
 
 Version B (chaleureuse):
 "Quel plaisir de lire ça ! 😊 Julie sera touchée par votre message. Notre levain (et nos sourires) vous attendent demain matin !
-— Pierre, Boulangerie Martin"
+- Pierre, Boulangerie Martin"
 
 Recommandation: Version B (correspond mieux au ton proximité boulangerie de quartier)
 ```
@@ -535,7 +535,7 @@ EXEMPLE:
 Avis: "Excellente coupe chez ce coiffeur, je recommande!"
 
 Réponse:
-"Merci Sophie pour cette recommandation ! 😊 Si vous parlez de nous autour de vous, n'hésitez pas à partager notre code PARRAIN2024: -15€ pour vous et votre filleul(e) sur prochaine visite. Au plaisir! — Julie, Coiffure Tendance"
+"Merci Sophie pour cette recommandation ! 😊 Si vous parlez de nous autour de vous, n'hésitez pas à partager notre code PARRAIN2024: -15€ pour vous et votre filleul(e) sur prochaine visite. Au plaisir! - Julie, Coiffure Tendance"
 
 Balance: Reconnaissance + Valeur commerciale subtile (pas spam)
 ```
@@ -544,14 +544,14 @@ Balance: Reconnaissance + Valeur commerciale subtile (pas spam)
 
 ## Bonnes pratiques
 
-1. **Rapidité réponse** — Sous 24-48h maximum (préférable <12h pour négatifs)
-2. **Personnalisation** — Toujours mentionner détail spécifique de l'avis (prénom, élément cité)
-3. **Ton cohérent marque** — Adapter formalité selon image entreprise (boulangerie ≠ cabinet avocat)
-4. **Transparence problèmes** — Assumer erreurs sans sur-justifications défensives
-5. **Action publique** — Annoncer amélioration concrète pour montrer prise en compte feedback
-6. **Contact privé si conflit** — Déplacer négociations/litiges hors espace public
-7. **Valorisation équipe** — Citer employés mentionnés positivement (motivation interne)
-8. **Suivi post-réponse** — Relancer clients insatisfaits en privé pour vérifier résolution
+1. **Rapidité réponse** : Sous 24-48h maximum (préférable <12h pour négatifs)
+2. **Personnalisation** : Toujours mentionner détail spécifique de l'avis (prénom, élément cité)
+3. **Ton cohérent marque** : Adapter formalité selon image entreprise (boulangerie ≠ cabinet avocat)
+4. **Transparence problèmes** : Assumer erreurs sans sur-justifications défensives
+5. **Action publique** : Annoncer amélioration concrète pour montrer prise en compte feedback
+6. **Contact privé si conflit** : Déplacer négociations/litiges hors espace public
+7. **Valorisation équipe** : Citer employés mentionnés positivement (motivation interne)
+8. **Suivi post-réponse** : Relancer clients insatisfaits en privé pour vérifier résolution
 
 **Règle d'or**: Chaque réponse avis = vitrine publique permanente. Écrire comme si prospects lisent (ils lisent).
 

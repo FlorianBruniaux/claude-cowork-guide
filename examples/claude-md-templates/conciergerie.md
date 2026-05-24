@@ -1,4 +1,4 @@
-# Template CLAUDE.md — Conciergerie Location Courte Durée
+# Template CLAUDE.md : Conciergerie Location Courte Durée
 
 Copier ce fichier sous `~/Cowork-Workspace/CLAUDE.md` et remplacer les parties entre `[crochets]`.
 

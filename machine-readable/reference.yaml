@@ -161,7 +161,7 @@ prompting:
 # ════════════════════════════════════════════════════════════════
 errors:
   vm_timeout:
-    message: "Failed to start Claude's workspace — VM connection timeout after 60 seconds"
+    message: "Failed to start Claude's workspace : VM connection timeout after 60 seconds"
     cause: "VPN active"
     solution: "Disconnect VPN completely before using Cowork"
   chrome_host:
@@ -174,7 +174,7 @@ errors:
     actual_limit: "1M beta with Opus 4.6 (context compaction helps); previously ~165K usable"
     solution: "Break into batches of 10-20 files; context compaction extends sessions"
   access_denied:
-    message: "Access denied — path outside allowed directories"
+    message: "Access denied : path outside allowed directories"
     cause: "Folder not granted"
     solution: "Re-grant folder access in System Preferences"
   session_terminated:

@@ -304,7 +304,7 @@ Quand migrer :
 
 ## Cowork vs Chat : Quand utiliser chacun
 
-> **Point clé** : Cowork n'est pas un remplacement du Chat — c'est un outil spécialisé pour des catégories de tâches spécifiques.
+> **Point clé** : Cowork n'est pas un remplacement du Chat. C'est un outil spécialisé pour des catégories de tâches spécifiques.
 
 ### Différence d'architecture
 
@@ -475,13 +475,13 @@ Depuis le lancement de Cowork, la communauté open-source a créé plusieurs alt
 | [open-claude-cowork](https://github.com/ComposioHQ/open-claude-cowork) | Composio | Intégrations (500+) | ⭐⭐ App desktop | ⚠️ Accès fichiers complet |
 | [kuse_cowork](https://github.com/kuse-ai/kuse_cowork) | Kuse | Hors ligne/confidentialité | ⭐ Nécessite Docker | ✅ Sandboxé |
 
-*Nombre d'étoiles (559, 236, 123, ~50) en janvier 2026 — ces projets sont jeunes et évolutifs.*
+*Nombre d'étoiles (559, 236, 123, ~50) en janvier 2026. Ces projets sont jeunes et évolutifs.*
 
 > **⚠️ Avertissement sécurité** : Contrairement au dossier sandboxé de Cowork, la plupart des alternatives open-source ont **accès complet à tout votre ordinateur**. Elles peuvent lire, modifier ou supprimer n'importe quel fichier. Ne les utilisez que si vous comprenez le risque ou faites confiance aux mainteneurs du projet. L'exception est kuse_cowork, qui s'exécute dans un conteneur Docker.
 
 #### Quelle alternative open-source ?
 
-Pour **utilisateurs non techniques** : Considérez uniquement **different-ai/openwork** — elle a une interface graphique similaire à Cowork. Toutes les autres options nécessitent des connaissances terminal/ligne de commande.
+Pour **utilisateurs non techniques** : Considérez uniquement **different-ai/openwork**, qui a une interface graphique similaire à Cowork. Toutes les autres options nécessitent des connaissances terminal/ligne de commande.
 
 Pour **développeurs** : L'openwork de LangChain (`npx openwork`) est le plus rapide à installer. Kuse_cowork offre la meilleure sécurité via isolation Docker.
 

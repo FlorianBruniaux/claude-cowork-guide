@@ -759,14 +759,14 @@ Benefit: Authentic social proof > your own photos
 
 ## Best Practices
 
-1. **Consistency over perfection** — Regular imperfect posts > sporadic perfect ones
-2. **Visual quality matters** — Clear, well-lit photos (phone camera fine, just good lighting)
-3. **Engage back** — Reply to all comments within 24 hours (builds community)
-4. **Authenticity wins** — Real team photos > stock images
-5. **80/20 rule** — 80% value/entertainment, 20% promotion (not all sales pitches)
-6. **Platform-specific** — Don't copy-paste same post to all platforms (adapt each one)
-7. **Track what works** — Double down on content that gets high engagement
-8. **Batch create** — Write multiple posts at once (save time, maintain consistency)
+1. **Consistency over perfection** : Regular imperfect posts > sporadic perfect ones
+2. **Visual quality matters** : Clear, well-lit photos (phone camera fine, just good lighting)
+3. **Engage back** : Reply to all comments within 24 hours (builds community)
+4. **Authenticity wins** : Real team photos > stock images
+5. **80/20 rule** : 80% value/entertainment, 20% promotion (not all sales pitches)
+6. **Platform-specific** : Don't copy-paste same post to all platforms (adapt each one)
+7. **Track what works** : Double down on content that gets high engagement
+8. **Batch create** : Write multiple posts at once (save time, maintain consistency)
 
 ---
 

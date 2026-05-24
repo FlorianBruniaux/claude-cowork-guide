@@ -434,14 +434,14 @@ Fichier Excel compatible:
 
 ## Bonnes pratiques
 
-1. **Mise à jour quotidienne** — Fichier à jour = alertes fiables
-2. **Inventaires réguliers** — Physique vs fichier (annuel minimum)
-3. **Seuils évolutifs** — Ajuster si ruptures/surstocks récurrents
-4. **Fournisseurs backup** — 2nd source si fournisseur principal en rupture
-5. **Prévisions saisonnières** — Anticiper pics (Noël, rentrée, etc.)
-6. **Stock outil** — Pas objectif en soi (juste moyen servir clients)
-7. **Rotation priorité** — Mieux stock faible rotatif que gros stock dormant
-8. **Coût total possession** — Optimiser valeur stock (cash immobilisé)
+1. **Mise à jour quotidienne** : Fichier à jour = alertes fiables
+2. **Inventaires réguliers** : Physique vs fichier (annuel minimum)
+3. **Seuils évolutifs** : Ajuster si ruptures/surstocks récurrents
+4. **Fournisseurs backup** : 2nd source si fournisseur principal en rupture
+5. **Prévisions saisonnières** : Anticiper pics (Noël, rentrée, etc.)
+6. **Stock outil** : Pas objectif en soi (juste moyen servir clients)
+7. **Rotation priorité** : Mieux stock faible rotatif que gros stock dormant
+8. **Coût total possession** : Optimiser valeur stock (cash immobilisé)
 
 ---
 

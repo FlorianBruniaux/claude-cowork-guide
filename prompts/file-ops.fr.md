@@ -291,7 +291,7 @@ Inclure une feuille de résumé avec :
 
 ## Utilisation avancée : Organisation basée sur des règles
 
-Issu d'une utilisation réelle — tri complexe avec règles explicites :
+Issu d'une utilisation réelle, tri complexe avec règles explicites :
 
 ### 18. Système de tri multi-règles
 

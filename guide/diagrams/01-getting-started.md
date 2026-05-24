@@ -1,16 +1,16 @@
 ---
-title: "Diagrammes — Prise en main"
+title: "Diagrammes : Prise en main"
 description: "5 diagrammes : Cowork vs Chat vs Code, setup workspace, anatomie CTOC, choix du modèle, décision d'usage Cowork"
 tags: [getting-started, ctoc, workspace, decision, modele]
 ---
 
-# Prise en main — Diagrammes
+# Prise en main : Diagrammes
 
 3 diagrammes pour répondre à la question de départ : qu'est-ce que Cowork, comment démarrer, comment structurer ses prompts.
 
 ---
 
-## D01 — Cowork vs Chat vs Code : lequel utiliser ? {#d01}
+## D01 : Cowork vs Chat vs Code, lequel utiliser ? {#d01}
 
 **Quand l'utiliser** : tu hésites entre les trois onglets de Claude. Ce diagramme guide le choix selon ce que tu veux faire.
 
@@ -69,7 +69,7 @@ flowchart TD
 
 ---
 
-## D02 — Setup workspace en 5 étapes {#d02}
+## D02 : Setup workspace en 5 étapes {#d02}
 
 **Quand l'utiliser** : tu viens d'activer Cowork et tu veux démarrer proprement du premier coup.
 
@@ -109,7 +109,7 @@ flowchart LR
 
 ---
 
-## D03 — Anatomie d'un prompt CTOC {#d03}
+## D03 : Anatomie d'un prompt CTOC {#d03}
 
 **Quand l'utiliser** : tu veux écrire un prompt qui marche du premier coup. CTOC = Contexte → Tâche → Output → Contraintes.
 
@@ -142,13 +142,13 @@ flowchart TD
 <summary>Fallback ASCII</summary>
 
 ```
-CTOC — Structure d'un prompt efficace
+CTOC : Structure d'un prompt efficace
 ======================================
 
-C — CONTEXTE  : Situation, fichiers concernés, background métier
-T — TÂCHE     : Un objectif clair et unique
-O — OUTPUT    : Format de sortie + chemin de sauvegarde exact
-C — CONTRAINTES : Règles, devise, format date, langue...
+C : CONTEXTE   - Situation, fichiers concernés, background métier
+T : TÂCHE      - Un objectif clair et unique
+O : OUTPUT     - Format de sortie + chemin de sauvegarde exact
+C : CONTRAINTES - Règles, devise, format date, langue...
 
 Exemple complet :
   CONTEXTE : J'ai 30 factures dans ~/Cowork-Workspace/input/ (mars 2026)
@@ -160,7 +160,7 @@ Exemple complet :
 
 ---
 
-## D04 — Choisir le bon modèle Claude {#d04}
+## D04 : Choisir le bon modèle Claude {#d04}
 
 **Quand l'utiliser** : tu ne sais pas si utiliser Claude Opus, Sonnet ou Haiku pour ta tâche.
 
@@ -224,7 +224,7 @@ flowchart TD
 MODÈLES EN RÉSUMÉ
 =================
 Opus   → Analyses, stratégie, rédaction longue et nuancée
-Sonnet → Défaut recommandé — rapide, capable, 90% des tâches
+Sonnet → Défaut recommandé, rapide, capable, 90% des tâches
 Haiku  → Tri, reformatage, résumé court, volume important
 
 Note : Pour la plupart des usages TPE/PME, Sonnet est le bon défaut.
@@ -233,7 +233,7 @@ Note : Pour la plupart des usages TPE/PME, Sonnet est le bon défaut.
 
 ---
 
-## D05 — Dois-je utiliser Cowork pour cette tâche ? {#d05}
+## D05 : Dois-je utiliser Cowork pour cette tâche ? {#d05}
 
 **Quand l'utiliser** : tu as une tâche à faire et tu te demandes si ça vaut le coup de la prompter ou de la faire manuellement.
 
@@ -247,7 +247,7 @@ flowchart TD
 
     Q1 -- Non --> Q2{La tâche revient\nchaque semaine\nou chaque mois ?}:::decision
 
-    Q2 -- Oui --> UseIt2["✅ Oui — la tâche est répétitive\nCowork + template = gain cumulé"]:::cowork
+    Q2 -- Oui --> UseIt2["✅ Oui : la tâche est répétitive\nCowork + template = gain cumulé"]:::cowork
 
     Q2 -- Non --> Q3{La tâche implique\ndes données personnelles\nsensibles ?}:::decision
 
@@ -255,15 +255,15 @@ flowchart TD
 
     Q3 -- Non --> Q4{La tâche a fort enjeu\nrelationnel ou créatif\n(discours, condoléances,\nnégociation sensible) ?}:::decision
 
-    Q4 -- Oui --> NoUse1["❌ Non — tâche humaine\nCowork peut préparer des éléments\nmais pas remplacer le jugement"]:::alert
+    Q4 -- Oui --> NoUse1["❌ Non : tâche humaine\nCowork peut préparer des éléments\nmais pas remplacer le jugement"]:::alert
 
     Q4 -- Non --> Q5{La tâche relève\nd'un conseil réglementé ?\n(juridique, médical, financier)}:::decision
 
-    Q5 -- Oui --> NoUse2["❌ Non — hors périmètre\nConsulter un professionnel qualifié"]:::alert
+    Q5 -- Oui --> NoUse2["❌ Non : hors périmètre\nConsulter un professionnel qualifié"]:::alert
 
     Q5 -- Non --> Q6{L'output attendu\nest clair et défini ?}:::decision
 
-    Q6 -- Oui --> UseIt3["✅ Oui — tâche bien définie\nRédiger un prompt CTOC et go"]:::cowork
+    Q6 -- Oui --> UseIt3["✅ Oui : tâche bien définie\nRédiger un prompt CTOC et go"]:::cowork
 
     Q6 -- Non --> Clarify["🔄 Clarifier d'abord\nQue veux-tu exactement ?\nQuel format, quelle longueur ?\nPour qui ?"]:::human
 

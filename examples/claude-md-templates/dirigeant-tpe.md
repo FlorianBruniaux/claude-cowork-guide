@@ -1,4 +1,4 @@
-# Template CLAUDE.md — Dirigeant TPE
+# Template CLAUDE.md : Dirigeant TPE
 
 Copier ce fichier sous `~/Cowork-Workspace/CLAUDE.md` et remplacer les parties entre `[crochets]`.
 

@@ -180,7 +180,7 @@ SLIDE 14: CLIENT REFERENCES
 SLIDE 15: CLIENT TESTIMONIAL
 Satisfied client quote (with photo if possible):
 "[Impactful quote]"
-— [Name], [Title], [Company]
+- [Name], [Title], [Company]
 
 SLIDE 16: RESULTS FIGURES
 Similar case study:
@@ -573,7 +573,7 @@ What I need:
 - Save to ~/Cowork-Workspace/presentations/wrk/company-template.pptx
 ```
 
-Cowork will ask clarifying questions (business sections, slide types, layout style). Answer them — that's what produces an adapted template rather than a generic one.
+Cowork will ask clarifying questions (business sections, slide types, layout style). Answer them, that's what produces an adapted template rather than a generic one.
 
 **Step 3: Generate the final presentation**
 
@@ -609,14 +609,14 @@ Template save path: `~/Cowork-Workspace/presentations/wrk/company-template.pptx`
 
 ## Best Practices
 
-1. **Adapt to audience** — Technical vs business depending on audience
-2. **Storytelling** — Concrete client cases > abstract features
-3. **10/20/30 rule** — 10 slides, 20 min, 30pt font minimum
-4. **Rehearsal** — 3x minimum (fluency + timing)
-5. **Interaction** — Ask questions (avoid monologue)
-6. **Backup** — Plan B if tech fails (PDF, USB, oral pitch)
-7. **Post-presentation follow-up** — Summary email + quote within 24-48h
-8. **Listen** — Adapt in real-time based on reactions
+1. **Adapt to audience** : Technical vs business depending on audience
+2. **Storytelling** : Concrete client cases > abstract features
+3. **10/20/30 rule** : 10 slides, 20 min, 30pt font minimum
+4. **Rehearsal** : 3x minimum (fluency + timing)
+5. **Interaction** : Ask questions (avoid monologue)
+6. **Backup** : Plan B if tech fails (PDF, USB, oral pitch)
+7. **Post-presentation follow-up** : Summary email + quote within 24-48h
+8. **Listen** : Adapt in real-time based on reactions
 
 ---
 
