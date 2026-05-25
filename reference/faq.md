@@ -103,7 +103,7 @@ See [detailed comparison](comparison.md#common-confusion).
 **A:** The Customize tab in Claude Desktop is where you manage Skills, Connectors, and personalizations. Access it from the main app navigation. From there, install skills (like `/pdf` or `/xlsx`), configure external tool connectors with per-tool permissions, and adjust default behaviors.
 
 ### Q: What are Skills?
-**A:** Skills are add-on capabilities installed via the Customize tab. Each skill adds a specific power invoked via slash commands: `/pdf` for advanced PDF processing, `/xlsx` for Excel work, `/docx` for Word documents, `/canvas-design` for visual layouts. Skills can also be chained, for example using `/pdf` to extract content then `/xlsx` to format it as a spreadsheet. Official skills are at `github.com/anthropics/skills`. Community skills at `claudemarketplaces.com`, `skills.sh`, and `skillhub.club`.
+**A:** Skills are add-on capabilities installed via the Customize tab. Each skill adds a specific power invoked via slash commands: `/pdf` for advanced PDF processing, `/xlsx` for Excel work, `/docx` for Word documents, `/canvas-design` for visual layouts. Skills can also be chained, for example using `/pdf` to extract content then `/xlsx` to format it as a spreadsheet. Official skills are at `github.com/anthropics/skills`. Community skills at `claudemarketplaces.com`, `skills.sh`, `remoteopenclaw.com/skills/claude`, and `skillhub.club`.
 
 ### Q: What is Desktop Commander?
 **A:** Desktop Commander is an official Cowork extension (installed from the Customize tab) that expands file access beyond the workspace folder, enables cross-session memory via a `memory.md` file, and provides one-click MCP server installation. Installing it is the recommended next step after basic Cowork setup. See [Getting Started Step 8](../guide/01-getting-started.md#step-8-install-desktop-commander-recommended).
@@ -112,7 +112,7 @@ See [detailed comparison](comparison.md#common-confusion).
 **A:** MCP (Model Context Protocol) connectors let Cowork interact with external tools and services. Three types: web search connectors, desktop/local file connectors (via Desktop Commander), and custom JSON connectors for advanced integrations. You can set permissions per tool: Allow (automatic), Ask (confirm each time), or Block (never use). No coding required, just a few clicks in the Customize tab.
 
 ### Q: Where can I find community skills?
-**A:** Beyond Anthropic's official skills at `github.com/anthropics/skills`, community-built skills are available at `claudemarketplaces.com`, `skills.sh`, and `skillhub.club`. Install any skill from the Customize tab by searching by name or pasting the skill URL.
+**A:** Beyond Anthropic's official skills at `github.com/anthropics/skills`, community-built skills are available at `claudemarketplaces.com`, `skills.sh`, `remoteopenclaw.com/skills/claude`, and `skillhub.club`. Install any skill from the Customize tab by searching by name or pasting the skill URL.
 
 ### Q: What are Cowork Plugins?
 **A:** Cowork Plugins are official third-party integrations announced January 30, 2026. There are currently 11 plugins: Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, and Slack. They allow Cowork to interact directly with these services without browser automation.

@@ -93,7 +93,7 @@ Créez `mon-profil.md` dans votre workspace :
 
 ### Écosystème des compétences
 - Officielles Anthropic : `github.com/anthropics/skills`
-- Communauté : `claudemarketplaces.com` | `skills.sh` | `skillhub.club`
+- Communauté : `claudemarketplaces.com` | `skills.sh` | `remoteopenclaw.com/skills/claude` | `skillhub.club`
 - Installation : onglet Personnaliser → chercher par nom ou coller l'URL
 
 ---

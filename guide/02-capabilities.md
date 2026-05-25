@@ -873,6 +873,7 @@ Beyond official skills, the community builds and shares skills:
 | **github.com/anthropics/skills** | Official Anthropic skill repository |
 | **claudemarketplaces.com** | Community-contributed skills |
 | **skills.sh** | Skills with one-line install |
+| **[remoteopenclaw.com/skills/claude](https://www.remoteopenclaw.com/skills/claude)** | Claude-focused community skills directory with category pages, install guides, and related workflow resources |
 | **skillhub.club** | Curated skill collections |
 
 Install any skill from the Customize tab: search by name or paste the skill URL.
