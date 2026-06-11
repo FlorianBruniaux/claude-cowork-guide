@@ -191,3 +191,29 @@ releases:
       - "Email Sequences: Automated sequences section with 2 complete sequences"
       - "Local Visibility Audit: Google My Business comparison section"
     breaking: []
+
+  # ─────────────────────────────────────────────────────────────
+  # 1.1.x Series (January 2026)
+  # ─────────────────────────────────────────────────────────────
+
+  - version: "1.1.0"
+    date: "2026-01-20"
+    highlights:
+      - "⭐ Expansion 5 → 25 workflows, audience TPE/PME françaises (artisans, commerçants, dirigeants 1-50 salariés)"
+      - "⭐ 4 catégories métiers : Administratif (6), Commercial (5), Production (5), Communication (4)"
+      - "Références françaises : SIREN, Infogreffe, URSSAF, Qualibat, TVA 20%"
+      - "Removed: deprecated workflows report-synthesis et team-handoff"
+    breaking: []
+
+  # ─────────────────────────────────────────────────────────────
+  # 1.0.x Series (January 2026)
+  # ─────────────────────────────────────────────────────────────
+
+  - version: "1.0.0"
+    date: "2026-01-20"
+    highlights:
+      - "⭐ Release initiale : 5 guides de documentation + 5 workflows + 67 prompts copy-paste"
+      - "⭐ Framework CTOC : Context → Task → Output → Constraints"
+      - "Plateforme macOS uniquement (research preview), plans Pro et Max"
+      - "Limites documentées : VPN incompatible, contexte effectif ~165K, reset 5h"
+    breaking: []
