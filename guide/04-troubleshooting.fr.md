@@ -1,3 +1,8 @@
+---
+title: "Impossible de démarrer l'espace de travail Cowork - Solutions"
+description: "Résoudre les erreurs VM service not running, disk space, connexion réseau et autres blocages courants de l'espace de travail Claude Cowork."
+---
+
 # Guide de dépannage Cowork
 
 🌐 **Langues** : [Français](04-troubleshooting.fr.md) | [English](04-troubleshooting.md)
