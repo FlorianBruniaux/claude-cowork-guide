@@ -1,0 +1,51 @@
+README.md
+  s_d39a53ebbd31a5::t_48b869e38b7e5e 183
+  s_d39a53ebbd31a5::t_42e7e5109d1371 63
+  s_d39a53ebbd31a5::t_b130eb4f605610 30,298
+  s_d39a53ebbd31a5::t_5fc436ae206326 22,81,122,149
+  s_d39a53ebbd31a5::t_92108c42807ef8 151,158-159,161,163
+  s_d39a53ebbd31a5::t_90672360931f47 176
+workflows/README.en.md
+  s_d39a53ebbd31a5::t_a442caa6d71fc7 67
+  s_d39a53ebbd31a5::t_8ee075f4bd4b4e 29,36
+  s_d39a53ebbd31a5::t_7c984ea12f8aeb 3
+  s_d39a53ebbd31a5::t_1885308cc73778 203
+CLAUDE.md
+  s_5a5e5f2efc3b1d::t_f488b3ce3c4f2f 20
+  s_d39a53ebbd31a5::t_a7c57ecab83859 9
+  s_d39a53ebbd31a5::t_febf0eb94e9b47 21
+scripts/check-version-sync.sh
+  s_d39a53ebbd31a5::t_374f6ebe232365 68
+README.fr.md
+  s_d39a53ebbd31a5::t_5fc436ae206326 22,71,112,139
+  s_d39a53ebbd31a5::t_b6c9f9edbf5680 141,148-149,151,153
+  s_d39a53ebbd31a5::t_db5f563a56240c 166
+  s_d39a53ebbd31a5::t_6c406ba314b2e5 173
+  s_d39a53ebbd31a5::t_6bd79d41b415b5 53
+workflows/README.md
+  s_d39a53ebbd31a5::t_e918e8b66cffd4 54,67,204
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "b1fb8ba0881ec44749eb8610e6111fdae5bb6a63",
+  "prompts": {},
+  "sessions": {
+    "s_5a5e5f2efc3b1d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0790ff3f-5d7f-4016-92ed-e092b18df765",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    },
+    "s_d39a53ebbd31a5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3fbbdc90-760b-4b36-b04f-1b5f7be3dfc6",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    }
+  }
+}
