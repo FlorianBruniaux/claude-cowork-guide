@@ -65,7 +65,7 @@ fi
 echo "3. Checking CHANGELOG.md..."
 CHANGELOG="$COWORK_ROOT/CHANGELOG.md"
 if [[ -f "$CHANGELOG" ]]; then
-    changelog_version=$(grep -o '\[.*\]' "$CHANGELOG" | head -1 | tr -d '[]')
+    changelog_version=$(grep -o '^## \[[0-9][0-9.]*\]' "$CHANGELOG" | head -1 | sed 's/^## //' | tr -d '[]')
     if [[ "$changelog_version" == "$VERSION" ]]; then
         echo -e "   ${GREEN}✓${NC} CHANGELOG.md latest: $changelog_version"
     else

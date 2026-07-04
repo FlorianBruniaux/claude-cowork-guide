@@ -19,7 +19,7 @@
 
 <p align="center">
   <a href="https://github.com/FlorianBruniaux/claude-cowork-guide/stargazers"><img src="https://img.shields.io/github/stars/FlorianBruniaux/claude-cowork-guide?style=social" alt="Stars"/></a>
-  <a href="./workflows/"><img src="https://img.shields.io/badge/Workflows-28-green" alt="Workflows"/></a>
+  <a href="./workflows/"><img src="https://img.shields.io/badge/Workflows-29-green" alt="Workflows"/></a>
   <a href="./prompts/"><img src="https://img.shields.io/badge/Prompts-70-blue" alt="Prompts"/></a>
 </p>
 
@@ -50,6 +50,7 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 ### 3. Aller plus loin
 - 📋 [Cheatsheet](reference/cheatsheet.md) : À imprimer
 - 📖 [Guide complet](guide/01-getting-started.fr.md) : 10 min
+- 🎯 [Onboarding interactif](tools/onboarding-prompt.md) : Parcours personnalisé
 
 <details>
 <summary><strong>Prérequis</strong></summary>
@@ -67,7 +68,7 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 **Le problème** : La documentation officielle est dense. Les tutoriels deviennent obsolètes rapidement.
 Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalités.
 
-**Ce guide** : 28 workflows métiers, 70 prompts copier-coller, 11 plugins officiels documentés, guide Desktop Commander, documentation Skills/Onglet Personnaliser, exemples pratiques.
+**Ce guide** : 29 workflows métiers, 70 prompts copier-coller, 11 plugins officiels documentés, guide Desktop Commander, documentation Skills/Onglet Personnaliser, exemples pratiques.
 
 **Temps de lecture** : Démarrage 5 min | Guide complet 45 min
 
@@ -108,7 +109,7 @@ Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalit
 <summary><strong>Utilisateur avancé</strong> : Exploration approfondie (6 étapes)</summary>
 
 1. [Capacités complètes](guide/02-capabilities.fr.md) : Matrice de fonctionnalités
-2. [Tous les workflows](workflows/) : 28 guides étape par étape
+2. [Tous les workflows](workflows/) : 29 guides étape par étape
 
 3. [Dépannage](guide/04-troubleshooting.fr.md) : Résolution d'erreurs
 4. [FAQ](reference/faq.fr.md) : 20+ questions
@@ -135,18 +136,21 @@ Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalit
 
 Claude Cowork supporte 11 plugins officiels : Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack. Les plugins étendent les capacités de Cowork en se connectant directement à des outils externes.
 
-### Workflows (28 guides)
+### Workflows (29 guides)
 
-**📋 Administratif** (6)
+**📋 Administratif** (8)
 - [Génération de factures](workflows/invoice-generation.md) : Modèles professionnels
 - [Devis → Facture](workflows/quote-to-invoice.md) : Transformation automatique
 - [Relances de paiement](workflows/payment-reminders.md) : R1, R2, R3, mise en demeure
 - [Checklist de conformité](workflows/compliance-checklist.md) : Documents obligatoires
 - [Suivi client](workflows/client-followup-tracker.md) : Tableau de bord Excel
 - [Comparaison de prix](workflows/price-comparison.md) : Multi-fournisseurs avec notation
+- [Validation de modèle financier](workflows/financial-model-validation.md) : Audit formules Excel, hypothèses
+- [Planification des effectifs](workflows/workforce-planning.md) : Croissance RH, masse salariale
 
-**💼 Ventes & Marketing** (5)
+**💼 Ventes & Marketing** (6)
 - [Recherche de prospects](workflows/prospect-research.md) : Données entreprises, décideurs
+- [Prospection conciergerie LCD](workflows/conciergerie-lcd-prospection.md) : Annonces LLD, estimation revenus
 - [Création de devis](workflows/quote-creation.md) : Détaillés avec variantes
 - [Analyse concurrentielle](workflows/competitor-analysis.md) : Prix, offres, avis
 - [Diapositives de présentation](workflows/presentation-slides.md) : PowerPoint/Keynote
@@ -159,14 +163,14 @@ Claude Cowork supporte 11 plugins officiels : Asana, Canva, Cloudflare, Figma, G
 - [Checklist qualité](workflows/quality-checklist.md) : Listes standardisées
 - [Commandes fournisseurs](workflows/supplier-order.md) : Approvisionnement optimisé
 
-**📣 Communication** (6)
+**📣 Communication** (5)
 - [Publications réseaux sociaux](workflows/social-media-posts.md) : LinkedIn/Facebook/Instagram
 - [Modèles d'emails](workflows/email-templates.md) : Bibliothèque réutilisable
 - [Réponses aux avis](workflows/review-response.md) : Google/Facebook
 - [Audit de site web](workflows/website-audit.md) : Diagnostic et plan d'action
 - [Transfert de connaissances](workflows/knowledge-transfer.md) : Formation, succession
 
-**🗂️ Organisation** (6)
+**🗂️ Organisation** (5)
 - [Organisation de fichiers](workflows/file-organization.md) : Tri automatique des dossiers
 - [Suivi des dépenses](workflows/expense-tracking.md) : Tickets vers Excel
 - [Préparation de réunions](workflows/meeting-prep.md) : Briefings clients/fournisseurs

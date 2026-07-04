@@ -51,7 +51,7 @@ Planning, stock, qualité, chantiers
 | [Contrôle Qualité](quality-checklist.md) · [EN](quality-checklist.en.md) | Listes vérification normalisées | 15 min | Débutant |
 | [Commandes Fournisseurs](supplier-order.md) · [EN](supplier-order.en.md) | Préparation bons de commande | 15 min | Intermédiaire |
 
-### 📣 Communication (5 workflows)
+### 📣 Communication (6 workflows)
 
 Réseaux sociaux, emails, avis clients, site web
 
@@ -64,7 +64,7 @@ Réseaux sociaux, emails, avis clients, site web
 | [Présentations Commerciales](presentation-slides.md) · [EN](presentation-slides.en.md) | PowerPoint/Keynote client | 45 min | Intermédiaire |
 | [Newsletters Clients](newsletter-creation.md) · [EN](newsletter-creation.en.md) | Création newsletters régulières | 30 min | Intermédiaire |
 
-### 🗂️ Organisation (5 workflows)
+### 🗂️ Organisation (6 workflows)
 
 Fichiers, notes, réunions, dépenses
 
@@ -201,7 +201,7 @@ cp ~/Cowork-Workspace/output/facture-validee.pdf \
 
 ## 📈 Évolution des Workflows
 
-**Version actuelle**: 29 workflows (v1.5.0)
+**Version actuelle**: 29 workflows (v1.10.0)
 
 **Contribuer**:
 - Proposer améliorations: [Issues GitHub](https://github.com/FlorianBruniaux/claude-cowork-guide)

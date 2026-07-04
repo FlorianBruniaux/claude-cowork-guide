@@ -1,6 +1,6 @@
 # Cowork Workflows
 
-> **28 step-by-step tutorials to automate your professional tasks**
+> **29 step-by-step tutorials to automate your professional tasks**
 
 **Target professions**: Contractors · Merchants · Small business owners · Freelancers
 
@@ -26,13 +26,14 @@ Invoice management, quotes, payment reminders, compliance, financial models
 | [Financial Model Validation](financial-model-validation.en.md) · [FR](financial-model-validation.md) | Audit Excel formulas, assumptions, errors | 30-45 min | Intermediate |
 | [Workforce Planning](workforce-planning.en.md) · [FR](workforce-planning.md) | Model HR growth, compensation costs | 40-60 min | Intermediate |
 
-### 💼 Commercial (5 workflows)
+### 💼 Commercial (6 workflows)
 
 Prospecting, customer relations, market analysis
 
 | Workflow | Description | Time | Level |
 |----------|-------------|------|-------|
 | [Prospect Research](prospect-research.en.md) · [FR](prospect-research.md) | Company/customer investigation (Tax ID, revenue, decision-makers) | 20 min | Intermediate |
+| [Short-Term Rental Prospecting](conciergerie-lcd-prospection.en.md) · [FR](conciergerie-lcd-prospection.md) | Long-term listing analysis + short-term revenue estimates + personalized outreach | 15-30 min/batch | Intermediate |
 | [Detailed Quote Creation](quote-creation.en.md) · [FR](quote-creation.md) | Professional itemized quotes | 20 min | Intermediate |
 | [Competitor Analysis](competitor-analysis.en.md) · [FR](competitor-analysis.md) | Local benchmarking (pricing, offerings, reviews) | 30 min | Intermediate |
 | [Client Follow-up Tracker](client-followup-tracker.en.md) · [FR](client-followup-tracker.md) | Excel dashboard | 15 min | Beginner |
@@ -63,7 +64,7 @@ Social media, emails, customer reviews, website
 | [Commercial Presentations](presentation-slides.en.md) · [FR](presentation-slides.md) | PowerPoint/Keynote for clients | 45 min | Intermediate |
 | [Customer Newsletters](newsletter-creation.en.md) · [FR](newsletter-creation.md) | Create regular newsletters | 30 min | Intermediate |
 
-### 🗂️ Organization (5 workflows)
+### 🗂️ Organization (6 workflows)
 
 Files, notes, meetings, expenses
 
@@ -199,7 +200,7 @@ cp ~/Cowork-Workspace/output/validated-invoice.pdf \
 
 ## 📈 Workflow Evolution
 
-**Current version**: 28 workflows (v1.5.0)
+**Current version**: 29 workflows (v1.10.0)
 
 **Contribute**:
 - Suggest improvements: [GitHub Issues](https://github.com/FlorianBruniaux/claude-cowork-guide)
