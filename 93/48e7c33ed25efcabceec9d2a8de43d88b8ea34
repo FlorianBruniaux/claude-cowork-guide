@@ -1,0 +1,41 @@
+machine-readable/claude-cowork-releases.yaml
+  s_5a5e5f2efc3b1d::t_ab4ffe253ace22 5-6,14-30,32
+  s_d39a53ebbd31a5::t_6319456b0c3970 31
+VERSION
+  s_5a5e5f2efc3b1d::t_dc823ed117c42f 1
+CHANGELOG.md
+  s_5a5e5f2efc3b1d::t_d8d7755edd2654 33
+  s_5a5e5f2efc3b1d::t_4c3d55cc7681ef 22-26,28-32
+  s_5a5e5f2efc3b1d::t_c6f25935fed6aa 21
+  s_5a5e5f2efc3b1d::t_fdc1b01724a97f 27
+  s_5a5e5f2efc3b1d::t_42ad89136c3edf 51-53
+  s_5a5e5f2efc3b1d::t_761851345661c4 572
+  s_5a5e5f2efc3b1d::t_a0a739f36564ec 11-20
+machine-readable/reference.yaml
+  s_d39a53ebbd31a5::t_ec125edc75154d 7
+  s_d39a53ebbd31a5::t_b130eb4f605610 6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "9348e7c33ed25efcabceec9d2a8de43d88b8ea34",
+  "prompts": {},
+  "sessions": {
+    "s_5a5e5f2efc3b1d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0790ff3f-5d7f-4016-92ed-e092b18df765",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    },
+    "s_d39a53ebbd31a5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3fbbdc90-760b-4b36-b04f-1b5f7be3dfc6",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    }
+  }
+}
