@@ -8,7 +8,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- **Claude Fable 5** (9 juin 2026, Pro/Max/Team/Enterprise) : premier modèle Mythos-class accessible au grand public, le plus performant d'Anthropic à ce jour. Conçu pour les tâches longues et complexes : migrations de code, drug design, vision haute résolution, raisonnement multi-étapes. Fenêtre de contexte 1M tokens, output 128K, adaptive thinking uniquement. Tarif API : $10/$50 par million de tokens (2x Opus 4.8). Inclus sans surcoût jusqu'au 22 juin 2026 sur les plans payants, puis crédits d'usage requis. Fable 5 intègre des classifieurs de sécurité : fallback automatique vers Opus 4.8 pour les requêtes cybersécurité, bio/chimie ou distillation (<5% des sessions). Source : anthropic.com/news/claude-fable-5-mythos-5. À documenter dans `guide/02-capabilities.md` section Model Selection.
+- **Claude Apps Gateway** (29 juin 2026, Enterprise) : control plane auto-hébergé sur Amazon Bedrock ou Google Cloud : SSO corporate, application de politiques, suivi des dépenses par utilisateur. Source : releasebot.io/updates/anthropic/claude uniquement, absent des release notes officielles au 4 juillet 2026 : à confirmer avant publication. À documenter dans `guide/03-security.md`.
+
+- **Enterprise-Managed MCP Connectors** (18 juin 2026, Enterprise) : autorisation centralisée des connecteurs via Okta et l'IdP : accès zero-touch aux connecteurs par appartenance à un groupe. Compléterait les Connector Access Controls du 28 mai. Source : releasebot.io/updates/anthropic/claude uniquement, absent des release notes officielles au 4 juillet 2026 : à confirmer avant publication. À documenter dans `guide/03-security.md` section Enterprise Administration.
+
+### Changed
+- **Claude Design : import et verrouillage de design systems** (17 juin 2026) : les admins pourraient importer un design system et le verrouiller pour toute l'organisation, avec synchronisation renforcée vers Claude Code. Source : releasebot.io/updates/anthropic/claude uniquement, absent des release notes officielles au 4 juillet 2026 : à confirmer avant publication. Mettrait à jour la section Claude Design de `guide/02-capabilities.md`.
+
+## [1.11.0] - 2026-07-04
+
+### Added
+- **Model entitlements Enterprise (bêta)** (1er juillet 2026, Enterprise) : les admins contrôlent quels modèles et quels niveaux d'effort sont accessibles à leurs utilisateurs. Confirmé dans les release notes support.claude.com. Releasebot mentionne aussi des alertes de dépenses et une ventilation de l'usage par équipe, non confirmées officiellement. À documenter dans `guide/03-security.md` section Enterprise Administration.
+
+- **Claude Sonnet 5** (30 juin 2026, tous plans y compris Free) : nouveau modèle par défaut des plans Free et Pro, disponible sur claude.ai, desktop et API (`claude-sonnet-5`). Améliorations mesurées sur Sonnet 4.6 en raisonnement, tool use, coding et knowledge work, performances proches d'Opus 4.8 à coût inférieur. Tarif API de lancement : $2/$10 par million de tokens jusqu'au 31 août 2026, puis $3/$15. Source : anthropic.com/news/claude-sonnet-5. À documenter dans `guide/02-capabilities.md` section Model Selection.
+
+- **Claude Science** (30 juin 2026, bêta, Pro/Max/Team/Enterprise) : workbench IA pour chercheurs sur claude.com/science (macOS et Linux, local ou distant via SSH/HPC). Plus de 60 skills spécialisées (génomique, protéomique, biologie structurale, chimioinformatique), rendu natif de structures 3D de protéines et molécules, gestion des ressources de calcul (machine perso, cluster HPC, GPU à la demande), agent reviewer vérifiant citations et calculs, intégrations NVIDIA BioNeMo, UniProt, PDB, Ensembl. Hors scope Cowork strict mais même famille que Claude Design et Claude Security déjà documentés. Source : anthropic.com/news/claude-science-ai-workbench. À mentionner dans `guide/02-capabilities.md`.
+
+- **Claude Desktop : bêta Linux** (30 juin 2026) : premier support officiel Linux, Ubuntu 22.04+ et Debian 12+ (x86_64 et arm64). Les trois onglets Chat, Cowork et Code sont présents. Distribution via dépôt apt Anthropic (mises à jour système) ou paquet .deb sur claude.com/download. Pas d'auto-update sur Linux (mises à jour via apt upgrade). Limitations bêta : Computer Use indisponible, pas de dictée vocale, hotkey Quick Entry sous X11 ou portal GlobalShortcuts Wayland, Fedora/RHEL non supportés. Confirmé par la doc officielle : code.claude.com/docs/en/desktop-linux. Impact : la mention "macOS et Windows" est à réviser dans toute la doc (`guide/00-overview.md`, `guide/01-getting-started.md`, `guide/04-troubleshooting.md`, README).
+
+- **Claude Tag** (23 juin 2026, bêta Team/Enterprise, Slack uniquement) : Claude devient un coéquipier dans Slack. On le tague avec @Claude pour déléguer une tâche ; il la découpe en étapes, l'exécute avec les outils connectés et répond dans un thread. Une instance par channel visible de tous, mémoire du contexte au fil du temps, mode ambient proactif (signale les infos utiles, relance les tâches bloquées), exécution asynchrone planifiable sur plusieurs heures ou jours, identités et accès aux outils scopés par les admins, limites de dépenses et audit logs. Propulsé par Opus 4.8, extension à d'autres plateformes prévue. Source : anthropic.com/news/introducing-claude-tag. À documenter dans `guide/02-capabilities.md` section Agent Teams.
+
+- **Édition des brouillons en place** (12 juin 2026, tous plans) : surligner un passage d'un draft généré par Claude (chat ou Cowork) et demander une modification ; la révision s'applique directement dans l'artifact, sans changer d'application. Source : support.claude.com release notes. À documenter dans `guide/02-capabilities.md`.
+
+- **Claude Fable 5** (9 juin 2026, Pro/Max/Team/Enterprise) : premier modèle Mythos-class accessible au grand public, le plus performant d'Anthropic à ce jour. Conçu pour les tâches longues et complexes : migrations de code, drug design, vision haute résolution, raisonnement multi-étapes. Fenêtre de contexte 1M tokens, output 128K, adaptive thinking uniquement. Tarif API : $10/$50 par million de tokens (2x Opus 4.8). Conditions d'accès révisées après la suspension de juin 2026 (voir Changed ci-dessous). Fable 5 intègre des classifieurs de sécurité : fallback automatique vers Opus 4.8 pour les requêtes cybersécurité, bio/chimie ou distillation (<5% des sessions). Source : anthropic.com/news/claude-fable-5-mythos-5. À documenter dans `guide/02-capabilities.md` section Model Selection.
 
 - **Managed Agents : planification cron et vaults** (9 juin 2026) : extension de Managed Agents (déjà documenté ci-dessous) : les agents peuvent désormais s'exécuter selon un planning cron sans intervention manuelle. Variables d'environnement stockées dans des vaults sécurisés pour l'accès aux outils CLI authentifiés (Browserbase, KERNEL). Source : releasebot.io/updates/anthropic/claude. À documenter dans `guide/02-capabilities.md` section Scheduled Tasks.
 
@@ -25,6 +47,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Claude Compliance API Integrations** (21 mai 2026, Enterprise) : les équipes IT et sécurité peuvent désormais gouverner l'usage de Claude dans toute la plateforme (Cowork inclus) via les mêmes outils qu'elles utilisent pour leurs autres applications. Intégrations confirmées avec CrowdStrike, Palo Alto Networks, SentinelOne et Wiz. L'activation se fait depuis la Console Anthropic sans modification des workflows Claude existants. Source officielle : support.claude.com release notes. À documenter dans `guide/03-security.md` section Enterprise Governance.
 
 - **Claude Managed Agents: Self-Hosted Sandboxes & MCP Tunnels** (19 mai 2026, public beta + research preview, Enterprise) : les agents Cowork peuvent s'exécuter dans des sandboxes contrôlées par l'entreprise (public beta) et se connecter à des serveurs MCP privés via tunnels (research preview). Providers de sandbox supportés : Cloudflare, Daytona, Modal, Vercel. Permet aux équipes Enterprise de conserver leurs données dans leur infrastructure sans transiter par les serveurs Anthropic. Source : releasebot.io/updates/anthropic/claude (à confirmer sur docs.anthropic.com avant publication). À documenter dans `guide/03-security.md` et `guide/02-capabilities.md` section Plugins.
+
+### Changed
+- **Fable 5 : suspension puis restauration avec nouvelles conditions** (12 juin → 1er juillet 2026) : le 12 juin, des chercheurs d'Amazon ont découvert un contournement des safeguards de Fable 5 (identification de vulnérabilités logicielles). Le gouvernement américain a imposé des export controls et, faute de vérification de nationalité en temps réel, Anthropic a suspendu l'accès pour tous les utilisateurs. Accès restauré le 1er juillet avec un classifieur amélioré : la technique signalée est bloquée dans plus de 99% des cas, avec fallback vers Opus 4.8. Nouvelles conditions : jusqu'à 50% des limites hebdomadaires incluses jusqu'au 7 juillet 2026, ensuite crédits d'usage requis. Remplace la condition initiale "inclus jusqu'au 22 juin". Sources : anthropic.com/news/fable-mythos-access, anthropic.com/news/redeploying-fable-5. À répercuter dans `guide/02-capabilities.md` section Model Selection.
 
 ## [1.10.0] - 2026-05-16
 
@@ -544,7 +569,7 @@ Based on:
 
 ---
 
-## [Unreleased]
+## Backlog
 
 ### Planned
 

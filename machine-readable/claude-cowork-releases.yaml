@@ -2,13 +2,32 @@
 # Source: CHANGELOG.md + Anthropic product announcements
 # Purpose: Track Cowork documentation + product releases
 
-latest: "1.10.0"
-updated: "2026-05-16"
+latest: "1.11.0"
+updated: "2026-07-04"
 
 # ════════════════════════════════════════════════════════════════
 # RELEASES (newest first, condensed highlights only)
 # ════════════════════════════════════════════════════════════════
 releases:
+
+  # ─────────────────────────────────────────────────────────────
+  # 1.11.x Series (July 2026)
+  # ─────────────────────────────────────────────────────────────
+
+  - version: "1.11.0"
+    date: "2026-07-04"
+    highlights:
+      - "⭐ Claude Fable 5 (9 juin 2026) : premier modèle Mythos-class grand public, le plus performant d'Anthropic : contexte 1M, output 128K, adaptive thinking, $10/$50 par M tokens. Suspendu le 12 juin (export controls US) puis restauré le 1er juillet avec classifieur renforcé : 50% des limites hebdo jusqu'au 7 juillet, ensuite crédits"
+      - "⭐ Claude Sonnet 5 (30 juin 2026) : nouveau modèle par défaut Free/Pro, proche d'Opus 4.8 à coût inférieur : $2/$10 par M tokens jusqu'au 31 août, puis $3/$15"
+      - "⭐ Claude Opus 4.8 (28 mai 2026) : améliorations coding, agentic skills et raisonnement : devient le fallback de Fable 5 sur les sujets sensibles"
+      - "⭐ Claude Desktop bêta Linux (30 juin 2026) : Ubuntu 22.04+/Debian 12+, onglets Chat/Cowork/Code, install apt ou .deb. Computer Use et dictée indisponibles en bêta"
+      - "⭐ Claude Tag (23 juin 2026, bêta Team/Enterprise) : @Claude dans Slack : délégation de tâches, exécution asynchrone, mode ambient proactif, accès scopés par les admins. Propulsé par Opus 4.8"
+      - "⭐ Dynamic Workflows (28 mai 2026, research preview Max/Team/Enterprise) : sous-agents parallèles dans une session unique pour les tâches longues, avec vérification intégrée"
+      - "⭐ Claude Science (30 juin 2026, bêta Pro/Max/Team/Enterprise) : workbench scientifique sur claude.com/science : 60+ skills (génomique, protéomique, chimie), rendu 3D natif, agent reviewer"
+      - "Édition des brouillons en place (12 juin 2026) : surligner un passage d'un draft (chat ou Cowork) et demander la révision directement dans l'artifact"
+      - "Managed Agents : planification cron + vaults sécurisés (9 juin) : Connector Observability en public beta (8 juin)"
+      - "Enterprise : rôles admin personnalisés (2 juin), Connector Access Controls (28 mai), Compliance API avec CrowdStrike/Palo Alto/SentinelOne/Wiz (21 mai), sandboxes self-hosted + MCP tunnels (19 mai), model entitlements bêta (1er juillet)"
+    breaking: []
 
   # ─────────────────────────────────────────────────────────────
   # 1.10.x Series (May 2026)
