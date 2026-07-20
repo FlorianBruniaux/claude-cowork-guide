@@ -1,0 +1,77 @@
+reference/faq.fr.md
+  s_0c948ed42a9cda::t_9b00bb98ed6f1a 141
+  s_0c948ed42a9cda::t_75731a8a5ce8b1 229,234
+  s_69bb4035b41c39::t_1dd39f0aa9bd06 235
+guide/01-getting-started.md
+  s_0c948ed42a9cda::t_4634fd61aaf857 24,29,31-36
+  s_0c948ed42a9cda::t_b6ec8268015f8c 449
+  s_0c948ed42a9cda::t_389c404395124f 473
+  s_0c948ed42a9cda::t_195a9927bc91f5 30
+  s_0c948ed42a9cda::t_76ece7447bb331 79
+  s_0c948ed42a9cda::t_e2c5d2aacc49e9 80
+guide/04-troubleshooting.fr.md
+  s_0c948ed42a9cda::t_db9b71f29bf8c3 305,310
+  s_0c948ed42a9cda::t_c463e71c3ea1dd 311
+guide/00-overview.md
+  s_0c948ed42a9cda::t_dfb16358c9fddf 25,27,29-32,36,38,40
+  s_0c948ed42a9cda::t_6064e808fcd29d 33
+workflows/scheduled-automation.md
+  s_0c948ed42a9cda::t_ab9d321b44d900 140
+guide/02-capabilities.md
+  s_0c948ed42a9cda::t_bf0454352fa032 608-609,612,614,617
+  s_0c948ed42a9cda::t_ba56d1ecb95133 936
+  s_0c948ed42a9cda::t_5bbe1535574155 552
+guide/01-getting-started.fr.md
+  s_0c948ed42a9cda::t_39f1ee9727738c 24,29,31-36
+  s_0c948ed42a9cda::t_b05bbae04d0312 79
+  s_0c948ed42a9cda::t_023fec3cac0cea 80
+  s_0c948ed42a9cda::t_44ae0b86597357 510
+  s_0c948ed42a9cda::t_1fbd95a41c81a6 486
+  s_0c948ed42a9cda::t_35ec2c61a2de1d 30
+guide/02-capabilities.fr.md
+  s_0c948ed42a9cda::t_332128c2dcdd4a 552
+  s_0c948ed42a9cda::t_0d9247b5b7ec6e 608-609,612,614,617
+reference/faq.md
+  s_0c948ed42a9cda::t_2dd07df9d895b6 141
+  s_0c948ed42a9cda::t_a59910f7062650 229,234
+  s_69bb4035b41c39::t_f0da0cbe9624b7 235
+guide/diagrams/01-getting-started.md
+  s_0c948ed42a9cda::t_678d329116251f 15
+workflows/scheduled-automation.en.md
+  s_0c948ed42a9cda::t_97aef31a251d8b 135
+guide/04-troubleshooting.md
+  s_0c948ed42a9cda::t_d7c76613d299ab 317,322
+  s_c8f559eece669e::t_e59eec4fc3d4e8 323
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "644e8904406cd197be1b86533b04d53b3454b3a3",
+  "prompts": {},
+  "sessions": {
+    "s_0c948ed42a9cda": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "23624101-b72d-42d2-8bfa-074a9a3cd5e1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    },
+    "s_69bb4035b41c39": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fc2065dc-977d-4b80-a0fe-af5106dbaca5",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    },
+    "s_c8f559eece669e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "46a2865b-0196-4c60-b747-98c3cef8bdde",
+        "model": "unknown"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    }
+  }
+}
