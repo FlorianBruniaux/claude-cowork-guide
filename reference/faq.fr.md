@@ -138,7 +138,7 @@ Si vous voyez des articles sur "Claude sur Telegram" ou "Claude sur Discord", c'
 
 Configurez-les dans **Claude Desktop → barre latérale gauche → section Planifié → Nouvelle tâche**. Cadences disponibles : horaire, quotidien, hebdomadaire, jours ouvrables uniquement, ou personnalisé. Après la première exécution, Cowork réécrit automatiquement votre prompt pour l'optimiser.
 
-Important : Claude Desktop doit être ouvert et l'appareil allumé (pas en veille) au moment prévu. Si l'appareil est en veille, la tâche est ignorée puis s'exécute au réveil.
+Important : sur desktop, Claude Desktop doit être ouvert et l'appareil allumé (pas en veille) au moment prévu. Si l'appareil est en veille, la tâche est ignorée puis s'exécute au réveil. Depuis juillet 2026, la bêta Cowork web et mobile (plan Max, déploiement progressif) exécute les tâches planifiées dans le cloud même sans appareil connecté : cette contrainte disparaît une fois sur cette bêta.
 
 Voir le [workflow Automatisation Planifiée](../workflows/scheduled-automation.md) pour les prompts prêts à l'emploi et les patterns de configuration.
 
@@ -226,10 +226,12 @@ Il n'y a pas de contournement qui garde le VPN actif. Voir [Dépannage](../guide
 **R:** Tapez "Stop" dans le chat ou fermez la fenêtre de conversation.
 
 ### Q: Ma tâche a échoué quand mon ordinateur s'est mis en veille.
-**R:** Cowork nécessite que l'app desktop reste ouverte et active. Il n'y a :
+**R:** Sur desktop, Cowork nécessite que l'app reste ouverte et active. En dehors de la bêta Cowork web/mobile, il n'y a :
 - Pas de mode hors ligne
 - Pas de synchronisation inter-appareils
 - Pas de persistance de mémoire entre les sessions
+
+Depuis juillet 2026, la bêta Cowork web et mobile (plan Max, déploiement progressif) supprime cette dépendance : les sessions et fichiers sont sauvegardés sur votre compte Claude et les tâches peuvent s'exécuter dans le cloud sans appareil connecté.
 
 **Prévention** : Désactivez la veille pendant les tâches longues. Pour le travail critique, divisez en lots plus petits avec points de contrôle qui peuvent être repris.
 

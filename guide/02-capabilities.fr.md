@@ -549,7 +549,7 @@ Cowork peut automatiser vos tâches récurrentes, elles s'exécutent aux horaire
 
 > **Note** : Les tâches planifiées sont en aperçu recherche. La fiabilité peut varier. Vérifiez toujours les sorties automatisées.
 >
-> ⚠️ **L'appareil doit être allumé** : Si votre ordinateur est en veille ou que Claude Desktop est fermé au moment prévu, la tâche est ignorée et s'exécute au réveil. Planifiez en conséquence pour les tâches matinales ou nocturnes.
+> ⚠️ **Sur desktop, l'appareil doit être allumé** : si votre ordinateur est en veille ou que Claude Desktop est fermé au moment prévu, la tâche est ignorée et s'exécute au réveil. Planifiez en conséquence pour les tâches matinales ou nocturnes. Depuis juillet 2026, la bêta Cowork web et mobile exécute les tâches planifiées côté cloud sans appareil connecté, mais le déploiement est progressif et démarre avec le plan Max : cette contrainte desktop reste donc la règle pour la plupart des utilisateurs aujourd'hui.
 
 #### 4 patterns essentiels
 
@@ -605,16 +605,16 @@ Selon votre setup, les tâches automatiques ne fonctionnent pas toutes de la mê
 
 | Méthode | Comment ça marche | Prérequis | Fonctionne dans Cowork ? |
 |---------|------------------|-----------|--------------------------|
-| **Interface native Cowork** | Barre latérale → Planifié → Nouvelle tâche | Claude Desktop ouvert, Mac allumé | ✅ Oui |
-| **Mac éteint ou en veille** | La tâche se déclenche quand vous n'êtes pas là | Exécution distante | ❌ Non (utiliser Dispatch ou Claude Code) |
+| **Interface native Cowork (desktop)** | Barre latérale → Planifié → Nouvelle tâche | Claude Desktop ouvert, Mac allumé | ✅ Oui |
+| **Mac éteint ou app desktop fermée** | La tâche se déclenche quand vous n'êtes pas là | Exécution distante | ❌ Non sur desktop (utiliser Dispatch, Claude Code, ou la bêta Cowork web/mobile) |
 | **Serveur / headless** | Serveur sans interface graphique | Pas de Claude Desktop | ❌ Non (utiliser Claude Code) |
 
-**La réponse honnête** : les tâches planifiées Cowork nécessitent que Claude Desktop soit ouvert et que votre Mac soit allumé. Si le Mac se met en veille ou que l'app est fermée au moment où la tâche doit s'exécuter, elle est ignorée et relancée au réveil.
+**La réponse honnête** : sur desktop, les tâches planifiées Cowork nécessitent que Claude Desktop soit ouvert et que votre Mac soit allumé. Si le Mac se met en veille ou que l'app est fermée au moment où la tâche doit s'exécuter, elle est ignorée et relancée au réveil. Ça change depuis juillet 2026 pour les abonnés au plan Max : la bêta Cowork web et mobile exécute désormais les tâches planifiées dans le cloud, même sans appareil connecté, et synchronise le résultat entre appareils. Le déploiement reste progressif et les autres plans suivront, donc la plupart des utilisateurs dépendent encore aujourd'hui de l'app desktop ouverte.
 
-**Pour les deux cas non supportés :**
+**Pour les deux cas non supportés sur desktop :**
 
 - **Vous êtes absent mais le Mac est allumé** → utilisez [Dispatch](#dispatch--contrôler-cowork-depuis-votre-téléphone) : envoyez la tâche depuis votre téléphone, elle s'exécute sur votre bureau
-- **Entièrement automatique, Mac éteint, ou serveur** → passez à Claude Code avec un cron système. Exemple : tous les lundis à 7h, Claude Code résume les tickets de la semaine et envoie sur Slack, sans machine, sans interface, sans intervention.
+- **Entièrement automatique, Mac éteint, ou serveur** → passez à Claude Code avec un cron système, ou vérifiez si la bêta Cowork web/mobile (plan Max) couvre votre cas. Exemple avec Claude Code : tous les lundis à 7h, il résume les tickets de la semaine et envoie sur Slack, sans machine, sans interface, sans intervention.
 
 > **Règle de décision** : les tâches planifiées Cowork sont idéales pour les routines "pendant que vous travaillez" (brief matinal, compilation hebdo). Pour une automatisation qui doit tourner même quand vous n'êtes pas là, Claude Code est le bon outil.
 

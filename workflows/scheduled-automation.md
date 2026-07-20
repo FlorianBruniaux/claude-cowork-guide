@@ -137,7 +137,7 @@ La section Planifié dans la barre latérale permet de : voir les prochaines ex�
 
 **Fiabilité** : Les tâches planifiées sont en aperçu recherche. Les premières exécutions peuvent parfois être imparfaites. Vérifiez les premières sorties manuellement avant de vous y fier.
 
-**Application ouverte et appareil allumé** : Cowork nécessite que Claude Desktop soit ouvert ET que l'ordinateur soit allumé (pas en veille) au moment prévu. Si l'appareil est en veille ou l'app fermée, la tâche est **ignorée** puis s'exécute automatiquement au réveil. Planifiez en conséquence pour les tâches matinales (désactivez la veille automatique si nécessaire).
+**Sur desktop, application ouverte et appareil allumé** : Cowork nécessite que Claude Desktop soit ouvert ET que l'ordinateur soit allumé (pas en veille) au moment prévu. Si l'appareil est en veille ou l'app fermée, la tâche est **ignorée** puis s'exécute automatiquement au réveil. Planifiez en conséquence pour les tâches matinales (désactivez la veille automatique si nécessaire). Depuis juillet 2026, la bêta Cowork web et mobile (plan Max, déploiement progressif) exécute les tâches planifiées dans le cloud sans appareil connecté : cette contrainte disparaît pour les utilisateurs sur cette bêta.
 
 **Optimisation automatique du prompt** : Après la première exécution d'une tâche récurrente, Cowork analyse le résultat et réécrit votre prompt pour l'améliorer. Vérifiez le prompt mis à jour dans le sidebar pour confirmer les modifications.
 

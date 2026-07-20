@@ -314,10 +314,12 @@ System overhead (tool definitions, safety instructions, execution logs) consumes
 | **Network interruption** | Ensure stable connection for long operations |
 | **Usage quota exhausted** | Monitor quota, batch large tasks appropriately |
 
-**Important**: Cowork sessions require the desktop app to remain open. There is no:
+**Important**: on desktop, Cowork sessions require the app to remain open, and outside the Cowork web/mobile beta there is no:
 - Cross-device sync
 - Offline mode
 - Memory persistence between sessions
+
+Since July 2026, the Cowork web and mobile beta changes this: sessions and files are saved to your Claude account and follow you across devices, and tasks can run in the cloud with no device connected. It's a gradual rollout starting with the Max plan, so if you're not on it yet, the desktop limits above still apply.
 
 **Recovery**:
 1. Restart Claude Desktop

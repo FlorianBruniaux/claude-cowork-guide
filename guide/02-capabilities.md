@@ -549,7 +549,7 @@ Cowork can automate recurring tasks, run them at set times without manually trig
 
 > **Note**: Scheduled Tasks is in research preview. Reliability may vary. Always verify automated outputs before acting on them.
 >
-> ⚠️ **Device must be awake**: If your computer is asleep or Claude Desktop is closed when a task fires, it will be skipped and re-run once the device wakes and the app reopens. Plan accordingly for overnight or early-morning schedules.
+> ⚠️ **On desktop, the device must be awake**: if your computer is asleep or Claude Desktop is closed when a task fires, it will be skipped and re-run once the device wakes and the app reopens. Plan accordingly for overnight or early-morning schedules. Since July 2026, the Cowork web and mobile beta runs scheduled tasks in the cloud with no device connected, but it's a gradual rollout starting with the Max plan, so this desktop constraint still applies to most users today.
 
 #### 4 Essential Patterns
 
@@ -605,16 +605,16 @@ Not all scheduled automation works the same way depending on your setup:
 
 | Method | How It Works | Requirement | Works in Cowork? |
 |--------|-------------|-------------|-----------------|
-| **Cowork native UI** | Sidebar → Scheduled → New Task | Claude Desktop open, machine awake | ✅ Yes |
-| **Machine off / you're away** | Task fires while Mac is sleeping or closed | Remote execution | ❌ No (use Dispatch or Claude Code) |
+| **Cowork native UI (desktop)** | Sidebar → Scheduled → New Task | Claude Desktop open, machine awake | ✅ Yes |
+| **Machine off / desktop app closed** | Task fires while Mac is sleeping or closed | Remote execution | ❌ No on desktop (use Dispatch, Claude Code, or the Cowork web/mobile beta) |
 | **Headless server / CI** | Automated server without a display | No Claude Desktop | ❌ No (use Claude Code) |
 
-**The honest answer**: Cowork's scheduled tasks require Claude Desktop to be running and your Mac to be awake. If the Mac sleeps or the app closes when a task fires, it skips and re-runs once the device wakes.
+**The honest answer**: on desktop, Cowork's scheduled tasks require Claude Desktop to be running and your Mac to be awake. If the Mac sleeps or the app closes when a task fires, it skips and re-runs once the device wakes. This changed in July 2026 for Max plan subscribers: the Cowork web and mobile beta now runs scheduled tasks in the cloud, even with no device connected, and syncs results back across devices. The rollout is gradual and other plans will follow, so most users still depend on the desktop app being open today.
 
-**For the two unsupported cases:**
+**For the two unsupported cases on desktop:**
 
 - **You're away but Mac is on** → use [Dispatch](#dispatch--control-cowork-from-your-phone): send the task from your phone, runs on your desktop
-- **Fully headless, machine off, or server** → switch to Claude Code with a system cron job. Example: every Monday at 7am, Claude Code summarizes last week's tickets and posts to Slack. No machine, no UI, no babysitting.
+- **Fully headless, machine off, or server** → switch to Claude Code with a system cron job, or check whether the Cowork web/mobile beta (Max plan) covers your case. Example with Claude Code: every Monday at 7am, it summarizes last week's tickets and posts to Slack. No machine, no UI, no babysitting.
 
 > **Decision rule**: Cowork scheduling is best for "while I'm working" routines (morning brief, weekly compilation). For automation that must run reliably regardless of whether you're at your desk, Claude Code is the right tool.
 
@@ -933,7 +933,7 @@ Dispatch lets you manage Cowork tasks remotely from your iOS or Android app whil
 3. Pair your phone to your desktop by scanning a QR code in Claude Desktop settings
 4. Send tasks, check progress, or add instructions from anywhere. Claude works on your Mac while you're away.
 
-**Requirements**: Mac must stay awake, Claude Desktop must remain open.
+**Requirements**: Mac must stay awake, Claude Desktop must remain open, since Dispatch remote-controls your desktop session. If you'd rather skip that dependency, the Cowork web/mobile beta (Max plan, gradual rollout since July 2026) runs tasks fully in the cloud instead.
 
 **Known limitations (research preview)**:
 - Tasks run in a single thread, so complex tasks may queue and delay by a minute or two

@@ -21,16 +21,19 @@ Avant de commencer, assurez-vous d'avoir :
 
 ### ⚠️ Vérifiez que vous avez la dernière version de Claude Desktop
 
-**Critique** : Cowork nécessite la dernière version de Claude Desktop. Si vous ne voyez pas "Cowork" dans le sélecteur de mode en haut de l'application, votre version est obsolète.
+**Critique** : Cowork nécessite la dernière version de Claude Desktop. Depuis le 7 juillet 2026, Anthropic a fusionné Chat et Cowork en une seule vue sur web et desktop, donc ce que vous voyez en haut de l'application dépend de la version installée.
 
 **Comment vérifier :**
 
 1. Ouvrez l'application Claude Desktop
-2. Regardez en haut de la barre latérale. Vous devriez voir trois modes :
-   ```
-   Chat    Cowork    Code
-   ```
-3. Si vous **ne voyez pas "Cowork"**, mettez à jour votre application :
+2. Regardez en haut de la barre latérale.
+   - **Version de juillet 2026 ou postérieure** : Chat et Cowork partagent une vue unique au lieu d'onglets séparés, il n'y a donc pas d'entrée "Cowork" à chercher.
+   - **Version plus ancienne** : vous devriez voir trois modes séparés :
+     ```
+     Chat    Cowork    Code
+     ```
+     Si "Cowork" n'apparaît pas, votre version est antérieure à la fonctionnalité elle-même.
+3. Dans tous les cas, si Cowork n'est pas disponible, mettez à jour votre application :
    - Allez dans le menu Claude Desktop → **Vérifier les mises à jour**
    - Ou téléchargez la dernière version depuis [claude.ai/download](https://claude.ai/download)
 
@@ -73,8 +76,8 @@ Avant de commencer, assurez-vous d'avoir :
 ### 1.3 Vérifier l'activation
 
 Après l'activation, vous devriez voir :
-- Une nouvelle option "Cowork" dans le sélecteur de mode de conversation
-- Ou une section/onglet Cowork dédié
+- Les capacités de Cowork accessibles depuis la vue combinée Chat et Cowork (versions de juillet 2026 ou postérieures)
+- Ou une nouvelle option "Cowork" dans un sélecteur de mode séparé, sur les versions plus anciennes
 
 ---
 
@@ -480,7 +483,7 @@ Pour envoyer des tâches à ton bureau depuis ton téléphone quand tu es absent
 3. Scanne le **QR code** affiché dans ton application Claude Desktop
 4. Ton téléphone est maintenant connecté. Envoie des tâches à distance depuis n'importe où.
 
-> **Prérequis** : Le Mac doit rester allumé avec Claude Desktop ouvert. Claude utilise le fil associé (Dispatch) pour exécuter les tâches sur ton ordinateur quand tu es absent.
+> **Prérequis** : le Mac doit rester allumé avec Claude Desktop ouvert, car Dispatch associe ton téléphone à cette session desktop pour exécuter les tâches sur ton ordinateur quand tu es absent. Depuis juillet 2026, la bêta Cowork web et mobile (plan Max, déploiement progressif) propose une alternative : elle exécute les tâches dans le cloud sans connexion à un desktop.
 
 ### Notes de sécurité pour Computer Use
 
@@ -504,7 +507,7 @@ Pour envoyer des tâches à ton bureau depuis ton téléphone quand tu es absent
 **Cause la plus fréquente** : Version de l'application obsolète.
 
 1. **Vérifiez votre version** : Voir la section [Prérequis](#️-vérifiez-que-vous-avez-la-dernière-version-de-claude-desktop) ci-dessus
-2. Si vous ne voyez pas "Chat | Cowork | Code" en haut, mettez à jour votre application
+2. Sur les versions de juillet 2026 ou postérieures, Chat et Cowork partagent une vue unique au lieu d'onglets séparés ; sur les versions plus anciennes, si vous ne voyez pas "Chat | Cowork | Code" en haut, mettez à jour votre application
 3. Après la mise à jour, vérifiez Paramètres → Fonctionnalités → assurez-vous que Cowork est activé
 4. Redémarrez l'application
 

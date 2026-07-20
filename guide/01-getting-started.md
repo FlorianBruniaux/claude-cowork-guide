@@ -21,16 +21,19 @@ Before starting, ensure you have:
 
 ### ⚠️ Verify You Have the Latest Claude Desktop Version
 
-**Critical**: Cowork requires the latest version of Claude Desktop. If you don't see "Cowork" in the mode selector at the top of the app, your version is outdated.
+**Critical**: Cowork requires the latest version of Claude Desktop. Since July 7, 2026, Anthropic merged Chat and Cowork into a single view on web and desktop, so what you see at the top of the app depends on which build you're running.
 
 **How to verify:**
 
 1. Open Claude Desktop app
-2. Look at the top of the sidebar. You should see three modes:
-   ```
-   Chat    Cowork    Code
-   ```
-3. If you **don't see "Cowork"**, update your app:
+2. Look at the top of the sidebar.
+   - **Build from July 2026 or later**: Chat and Cowork share one combined view instead of separate tabs, so there is no "Cowork" entry to look for.
+   - **Older build**: you should see three separate modes:
+     ```
+     Chat    Cowork    Code
+     ```
+     If "Cowork" isn't listed, your version predates the feature.
+3. Either way, if Cowork isn't available, update your app:
    - Go to Claude Desktop menu → **Check for Updates**
    - Or download the latest version from [claude.ai/download](https://claude.ai/download)
 
@@ -73,8 +76,8 @@ Before starting, ensure you have:
 ### 1.3 Verify Activation
 
 After enabling, you should see:
-- New "Cowork" option in conversation mode selector
-- Or a dedicated Cowork section/tab
+- Cowork's capabilities reachable from the combined Chat and Cowork view (builds from July 2026 or later)
+- Or a new "Cowork" option in a separate mode selector, on older builds
 
 ---
 
@@ -443,7 +446,7 @@ To send tasks to your desktop from your phone while you're away:
 3. Scan the **QR code** shown in your Claude Desktop app
 4. Your phone is now connected. Send tasks remotely from anywhere.
 
-> **Requirements**: Mac must stay awake with Claude Desktop open. Claude uses the paired thread (Dispatch) to run tasks on your computer while you're away.
+> **Requirements**: Mac must stay awake with Claude Desktop open, since Dispatch pairs your phone to that desktop session to run tasks on your computer while you're away. Since July 2026, the Cowork web and mobile beta (Max plan, gradual rollout) offers an alternative: it runs tasks in the cloud with no desktop connection needed at all.
 
 ### Security Notes for Computer Use
 
@@ -467,7 +470,7 @@ To send tasks to your desktop from your phone while you're away:
 **Most common cause**: Outdated app version.
 
 1. **Verify your version** : See [Prerequisites](#️-verify-you-have-the-latest-claude-desktop-version) above
-2. If you don't see "Chat | Cowork | Code" at the top, update your app
+2. On builds from July 2026 or later, Chat and Cowork share a single view instead of separate tabs; on older builds, if you don't see "Chat | Cowork | Code" at the top, update your app
 3. After updating, check Settings → Features → ensure Cowork is enabled
 4. Restart the app
 

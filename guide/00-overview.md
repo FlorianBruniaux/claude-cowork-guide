@@ -22,21 +22,22 @@
 | **Usage limits** | Doubled in May 2026 (SpaceX compute deal); resets every 5 hours; peak hour restrictions removed for Pro and Max |
 
 
-### The Three Tabs: One App for the Whole Team
+### One App for the Whole Team
 
-The Claude Desktop app has three tabs, each designed for a different type of work:
+Since July 7, 2026, Chat and Cowork no longer live in separate tabs. Anthropic merged them into a single view on web and desktop: you converse with Claude as usual, and Cowork's autonomous file access kicks in within that same window when a task needs it. If your copy of Claude Desktop still shows three tabs labeled Chat, Cowork, and Code, you're on a build from before July 2026; nothing below changes, only the tab click becomes unnecessary.
 
-| Tab | For who | What it does |
-|-----|---------|--------------|
-| **Chat** | Everyone | Conversational Claude, no file access |
-| **Cowork** | Knowledge workers | Autonomous agent for files, docs, reports |
+Code is not affected by this merge and keeps running as its own space for developers.
+
+| Space | For who | What it does |
+|-------|---------|--------------|
+| **Chat + Cowork** (single view since July 7, 2026) | Everyone | Conversational Claude that shifts into autonomous file work when the task calls for it |
 | **Code** | Developers | Full Claude Code with graphical interface |
 
-All three tabs run under the same subscription (Pro, Max, Teams, or Enterprise). **Your developers use the Code tab; you use Cowork. Same app, same invoice.**
+Both run under the same subscription (Pro, Max, Teams, or Enterprise). **Your developers use Code; you use the merged Chat/Cowork workspace. Same app, same invoice.**
 
-**Collaboration pattern**: a developer uses the Code tab to build a feature and update the technical spec → you use Cowork to turn that spec into a client-ready presentation. You can share context between both via a shared `CLAUDE.md` file in a common folder.
+**Collaboration pattern**: a developer uses Code to build a feature and update the technical spec → you turn that spec into a client-ready presentation from the same Chat/Cowork workspace. You can share context between both via a shared `CLAUDE.md` file in a common folder.
 
-> **For developers on your team**: the Code tab is Claude Code with visual diff review, live app preview, GitHub PR monitoring, and parallel sessions (no terminal required). Full reference: [code.claude.com/docs/en/desktop](https://code.claude.com/docs/en/desktop)
+> **For developers on your team**: Code is Claude Code with visual diff review, live app preview, GitHub PR monitoring, and parallel sessions (no terminal required). Full reference: [code.claude.com/docs/en/desktop](https://code.claude.com/docs/en/desktop)
 
 ### Relationship to Claude Code
 

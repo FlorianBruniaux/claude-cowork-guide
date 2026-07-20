@@ -138,7 +138,7 @@ If you're seeing articles about "Claude on Telegram" or "Claude on Discord", tha
 
 Set them up in **Claude Desktop → left sidebar → Scheduled section → New Task**. Available cadences: hourly, daily, weekly, weekdays-only, or custom. After the first run, Cowork automatically rewrites your prompt to optimize it.
 
-Important: Claude Desktop must be open and your device awake when a task fires. If the device is asleep, the task is skipped and runs when the device wakes.
+Important: on desktop, Claude Desktop must be open and your device awake when a task fires. If the device is asleep, the task is skipped and runs when the device wakes. Since July 2026, the Cowork web and mobile beta (Max plan, gradual rollout) runs scheduled tasks in the cloud even with no device connected, so this constraint no longer applies once you're on that beta.
 
 See [Scheduled Automation workflow](../workflows/scheduled-automation.md) for copy-paste prompts and patterns.
 
@@ -226,10 +226,12 @@ There's no workaround that keeps VPN active. See [Troubleshooting](../guide/04-t
 **A:** Type "Stop" in the chat or close the conversation window.
 
 ### Q: My task failed when my computer went to sleep.
-**A:** Cowork requires the desktop app to remain open and active. There is:
+**A:** On desktop, Cowork requires the app to remain open and active. Outside the Cowork web/mobile beta, there is:
 - No offline mode
 - No cross-device sync
 - No memory persistence between sessions
+
+Since July 2026, the Cowork web and mobile beta (Max plan, gradual rollout) removes this dependency: sessions and files are saved to your Claude account and tasks can run in the cloud with no device connected.
 
 **Prevention**: Disable sleep during long tasks. For critical work, break into smaller checkpointed batches that can be resumed.
 

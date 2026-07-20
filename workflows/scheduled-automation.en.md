@@ -132,7 +132,7 @@ The Scheduled section in the sidebar lets you: view upcoming runs, browse run hi
 
 **Reliability**: Check the first few automated outputs manually before relying on them: Scheduled Tasks behavior can vary with complex multi-step workflows.
 
-**App open AND device awake**: Cowork requires Claude Desktop to be open AND your computer to be awake (not sleeping) at the scheduled time. If the device is asleep or the app is closed, the task is **skipped** and runs automatically when the device wakes. Plan accordingly for early-morning schedules: disable auto-sleep if needed.
+**On desktop, app open AND device awake**: Cowork requires Claude Desktop to be open AND your computer to be awake (not sleeping) at the scheduled time. If the device is asleep or the app is closed, the task is **skipped** and runs automatically when the device wakes. Plan accordingly for early-morning schedules: disable auto-sleep if needed. Since July 2026, the Cowork web and mobile beta (Max plan, gradual rollout) runs scheduled tasks in the cloud with no device connected, so this constraint is going away for users on that beta.
 
 **Automatic prompt optimization**: After a recurring task's first run, Cowork analyzes the output and rewrites your prompt to improve it. Check the updated prompt in the sidebar to confirm the changes.
 

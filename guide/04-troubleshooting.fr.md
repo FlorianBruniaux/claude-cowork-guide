@@ -302,10 +302,12 @@ La surcharge système (définitions d'outils, instructions de sécurité, logs d
 | **Interruption réseau** | Assurer une connexion stable pour les opérations longues |
 | **Quota d'usage épuisé** | Surveiller le quota, grouper les grosses tâches de manière appropriée |
 
-**Important** : Les sessions Cowork nécessitent que l'app desktop reste ouverte. Il n'y a pas de :
+**Important** : sur desktop, les sessions Cowork nécessitent que l'app reste ouverte, et en dehors de la bêta Cowork web/mobile il n'y a pas de :
 - Synchronisation inter-appareils
 - Mode hors ligne
 - Persistance de la mémoire entre sessions
+
+Depuis juillet 2026, la bêta Cowork web et mobile change ça : les sessions et fichiers sont sauvegardés sur votre compte Claude et vous suivent d'un appareil à l'autre, et les tâches peuvent s'exécuter dans le cloud sans appareil connecté. Le déploiement est progressif et démarre avec le plan Max, donc si vous n'y êtes pas encore, les limites desktop ci-dessus s'appliquent toujours.
 
 **Récupération** :
 1. Redémarrer Claude Desktop

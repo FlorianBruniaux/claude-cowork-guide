@@ -12,7 +12,7 @@ tags: [getting-started, ctoc, workspace, decision, modele]
 
 ## D01 : Cowork vs Chat vs Code, lequel utiliser ? {#d01}
 
-**Quand l'utiliser** : tu hésites entre les trois onglets de Claude. Ce diagramme guide le choix selon ce que tu veux faire.
+**Quand l'utiliser** : tu hésites entre Claude Code, Cowork et le chat classique. Ce diagramme guide le choix selon la tâche à faire, que Chat et Cowork apparaissent dans une vue unique (depuis le 7 juillet 2026) ou en onglets séparés sur une version plus ancienne de l'application.
 
 ```mermaid
 flowchart TD
