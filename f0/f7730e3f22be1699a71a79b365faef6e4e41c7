@@ -1,0 +1,22 @@
+CHANGELOG.md
+  s_0c948ed42a9cda::t_b797d655ee851e 33-43
+  s_0c948ed42a9cda::t_5553d30bd47cea 30-32
+  s_0c948ed42a9cda::t_6ce34b26a6b2c1 11,13-21
+  s_0c948ed42a9cda::t_6b62d39f5e733b 24-29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "f0f7730e3f22be1699a71a79b365faef6e4e41c7",
+  "prompts": {},
+  "sessions": {
+    "s_0c948ed42a9cda": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "23624101-b72d-42d2-8bfa-074a9a3cd5e1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    }
+  }
+}
