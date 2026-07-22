@@ -919,6 +919,91 @@ Exemple : Mettez la recherche web sur **Demander** pour que Cowork confirme avan
 
 ---
 
+## Nouvelles capacités (Mars 2026)
+
+### Dispatch : piloter Cowork depuis votre téléphone
+
+Dispatch permet de gérer les tâches Cowork à distance depuis l'application iOS ou Android, pendant que votre ordinateur exécute le travail.
+
+**Fonctionnement** :
+1. Ouvrez Claude pour iOS/Android
+2. Un fil Cowork persistant est disponible dans l'application mobile
+3. Associez votre téléphone au desktop en scannant un QR code dans les réglages de Claude Desktop
+4. Envoyez des tâches, suivez l'avancement ou ajoutez des instructions depuis n'importe où. Claude travaille sur votre Mac pendant votre absence.
+
+**Prérequis** : le Mac doit rester allumé et Claude Desktop ouvert, car Dispatch pilote à distance votre session desktop. Si vous préférez vous passer de cette dépendance, la bêta Cowork web et mobile (plan Max, déploiement progressif depuis juillet 2026) exécute les tâches entièrement dans le cloud.
+
+**Limites connues (research preview)** :
+- Les tâches s'exécutent dans un fil unique, les tâches complexes peuvent donc se mettre en file et prendre une ou deux minutes de retard
+- Claude ne peut pas ouvrir d'applications Mac natives comme Photos via Dispatch
+- Les notifications de fin de tâche demandent une vérification manuelle
+
+### Visualisations interactives
+
+Claude génère des graphiques, diagrammes et visuels interactifs directement dans ses réponses, sans export ni outil tiers.
+
+| Surface | Disponible | Exemples |
+|---------|------------|---------|
+| **Claude Desktop** | ✅ Oui | Graphiques interactifs, curseurs, arbres de décision, widgets météo, fiches recette |
+| **Claude pour iOS/Android** | ✅ Oui (25 mars 2026) | Graphiques dynamiques, croquis, visuels interactifs partageables |
+
+Le rendu passe par HTML/CSS/JS (Chart.js et équivalents). Curseurs, champs de saisie et éléments cliquables se manipulent directement dans la conversation.
+
+> **Cas d'usage pour une TPE/PME** : calculateurs de prix avec curseurs, visualisation de planning de chantier, arbres de décision à choix multiples pour l'accueil client, récapitulatifs de devis interactifs.
+
+### Computer Use : contrôle direct du bureau
+
+Computer Use permet à Claude de piloter votre Mac : ouvrir des applications, naviguer à l'écran, cliquer, taper et remplir des formulaires, sans intégration API sur mesure ni configuration préalable.
+
+**Activation** : voir [Démarrage étape 9](01-getting-started.fr.md#étape-9--activer-computer-use-research-preview-macos-uniquement).
+
+**Disponible sur** : plans Pro et Max, macOS (23 mars 2026, research preview).
+
+#### Ce que Claude sait faire
+
+| Action | Exemple |
+|--------|---------|
+| Ouvrir des applications | Lancer Excel, Word, le Finder, un navigateur |
+| Naviguer et cliquer | Boutons, menus, cases à cocher |
+| Remplir des formulaires | Saisir des données dans une app ou un formulaire web |
+| Transférer des données | Copier du contenu entre applications sans API |
+| Naviguer sur le web | Consulter des sites dépourvus d'intégration |
+| Travailler avec du logiciel ancien | N'importe quelle application graphique, même sans accès API |
+
+#### Comment Claude décide de l'utiliser
+
+Claude suit une hiérarchie d'accès à trois niveaux avant de recourir au contrôle d'écran :
+
+| Priorité | Méthode | Quand |
+|----------|---------|-------|
+| **1 : Connecteurs/Plugins** | Intégration API directe (Slack, Google Calendar, etc.) | En priorité, plus rapide et plus fiable |
+| **2 : Chrome** | Automatisation du navigateur via l'intégration Chrome | Quand aucun connecteur n'existe mais que le service a une interface web |
+| **3 : Contrôle d'écran** | Souris, clavier, boucle de captures | En dernier recours, quand ni connecteur ni Chrome ne suffisent |
+
+Computer Use ne se déclenche donc que si les deux méthodes plus rapides sont indisponibles. Une tâche sur un logiciel de bureau ancien, sans interface web ni API, active directement le contrôle d'écran. Une tâche sur un outil web sans connecteur passera d'abord par Chrome.
+
+> **Conséquence pratique** : Computer Use est plus lent qu'une intégration par connecteur, chaque action exigeant un cycle de capture d'écran. Si votre processus est sensible au temps, vérifiez d'abord qu'un connecteur ou l'automatisation Chrome ne peut pas faire le travail.
+
+#### Comportement de sécurité
+
+- **Autorisation explicite par tâche** : Claude demande l'accès avant d'interagir avec chaque nouvelle application
+- **Refus entraînés** : Claude ne passera pas d'ordres de bourse, n'enregistrera pas d'identifiants sensibles et ne collectera pas d'images de visages
+- **Coût en tokens** : supérieur à Cowork standard, chaque cycle d'action capturant une image de l'écran
+
+> ⚠️ **Recommandation officielle d'Anthropic** : n'utilisez pas Computer Use avec des applications ayant accès à des données de santé, des comptes financiers ou des dossiers personnels. Anthropic reconnaît explicitement que la fonctionnalité est « encore à ses débuts » et déconseille d'ouvrir l'accès à des systèmes sensibles tant qu'elle n'a pas mûri. Commencez par des tâches réversibles et à faible enjeu, sur des applications qui ne détiennent pas de données critiques.
+
+#### Cas d'usage TPE/PME
+
+- Remplir des portails fournisseurs dépourvus d'API
+- Mettre à jour un ERP ou un logiciel comptable ancien
+- Recopier des données entre applications qui ne communiquent pas
+- Automatiser des manipulations répétitives dans une interface graphique (saisie de formulaires, mises à jour de statut)
+- Tester des parcours utilisateur sur vos propres produits
+
+> ⚠️ **Réserves liées à la research preview** : Computer Use peut se tromper en naviguant dans une interface qu'il ne connaît pas. Supervisez toujours les premières exécutions d'une nouvelle tâche. Interrompez l'exécution dès que Claude fait quelque chose d'inattendu.
+
+---
+
 ## Ce que Cowork NE PEUT PAS faire
 
 ### Exécution de code

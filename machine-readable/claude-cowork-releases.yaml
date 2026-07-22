@@ -2,13 +2,32 @@
 # Source: CHANGELOG.md + Anthropic product announcements
 # Purpose: Track Cowork documentation + product releases
 
-latest: "1.11.0"
-updated: "2026-07-04"
+latest: "1.12.0"
+updated: "2026-07-22"
 
 # ════════════════════════════════════════════════════════════════
 # RELEASES (newest first, condensed highlights only)
 # ════════════════════════════════════════════════════════════════
 releases:
+
+  # ─────────────────────────────────────────────────────────────
+  # 1.12.x Series (July 2026)
+  # ─────────────────────────────────────────────────────────────
+
+  - version: "1.12.0"
+    date: "2026-07-22"
+    highlights:
+      - "⭐ Claude Cowork sur web et mobile (7 juillet 2026, bêta, Max d'abord) : sessions et fichiers sauvegardés sur le compte Claude, accessibles depuis claude.ai, iPhone, iPad et Android. Tâches exécutées dans le cloud sans appareil connecté. Déploiement progressif à partir du plan Max"
+      - "⭐ Chat et Cowork fusionnés en une vue unique (7 juillet 2026, web et desktop) : les onglets séparés disparaissent au profit d'un espace commun"
+      - "⭐ Microsoft 365 : outils d'écriture (7 juillet 2026) : le connecteur passe en écriture (emails, calendrier, OneDrive, SharePoint). Teams reste en lecture seule. Consentement admin requis"
+      - "⭐ Reflect : récapitulatif et Time and focus (9 juillet 2026, bêta Free/Pro/Max) : temps passé par sujet, jour actif, heure de pointe ; rappels de pause et heures calmes. Mémoire requise"
+      - "Configuration HIPAA en self-service (14 juillet 2026, Enterprise/API) : BAA, guide d'implémentation et activation dans un parcours unifié, sans passer par le support"
+      - "Admin API pour Claude Enterprise (bêta) (13 juillet 2026) : gestion des membres claude.ai par API (rôles, invitations, groupes). Header anthropic-beta: ce-user-management-2026-07-13 pour groupes et rôles custom"
+      - "Options de configuration managée Cowork (7 et 14 juillet 2026) : otlpTracesEnabled (traces OpenTelemetry), toolSearchEnabled (schémas MCP à la demande), allowedPluginMarketplaces par utilisateur, disableFeatureDiscovery"
+      - "Mémoire : entrées individuelles catégorisées (10 juillet 2026) : la mémoire devient un ensemble d'entrées que Claude lit et met à jour, en remplacement du résumé quotidien"
+      - "Fixed: Cowork indisponible sur ChromeOS (7 juillet 2026) : plus d'accès terminal proposé sur les OS incapables de fournir la virtualisation nécessaire à l'environnement isolé"
+    breaking:
+      - "Desktop Extensions désactivées par défaut (7 juillet 2026, déploiements administrés) : isDesktopExtensionEnabled passe de true à false. Les extensions .dxt et .mcpb ne se chargent plus tant qu'un admin ne l'autorise pas"
 
   # ─────────────────────────────────────────────────────────────
   # 1.11.x Series (July 2026)

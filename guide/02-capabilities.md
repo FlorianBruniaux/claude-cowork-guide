@@ -957,7 +957,7 @@ Visualizations are rendered in HTML/CSS/JS (Chart.js and similar). Users can int
 
 Computer Use lets Claude control your Mac directly: open applications, navigate the screen, click, type, and fill forms, without custom API integrations or setup.
 
-**How to enable**: See [Getting Started Step 9](01-getting-started.md#step-9-enable-computer-use-macos-optional).
+**How to enable**: See [Getting Started Step 9](01-getting-started.md#step-9-enable-computer-use-research-preview-macos-only).
 
 **Available on**: Pro and Max plans, macOS (March 23, 2026, research preview).
 

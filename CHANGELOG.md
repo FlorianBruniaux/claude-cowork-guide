@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Non confirmé
+
+Pistes repérées en veille, sans confirmation par une source officielle Anthropic. Cette section n'est pas versionnée : elle n'est reprise ni dans `machine-readable/claude-cowork-releases.yaml` ni sur la landing, et le bump de version ne la déplace pas. Une entrée en sort dans deux cas seulement, quand une source officielle la confirme (elle rejoint alors `[Unreleased]`), ou quand l'absence de confirmation devient concluante (on la supprime).
+
+- **Claude for Government Desktop : Cowork et Code en bêta publique** (7 juillet 2026, FedRAMP High) : la même application que celle des clients commerciaux, livrée dans un environnement autorisé FedRAMP High. Travail sur fichiers locaux, contrôles administrateur renforcés, journaux d'audit infalsifiables, gouvernance des dépenses pour les agences. Sources : releasebot.io/updates/anthropic/claude et claude-news.today. Absent des release notes support.claude.com au 19 juillet 2026. Destination si confirmé : `guide/03-security.md`.
+
+- **Claude Apps Gateway** (29 juin 2026, Enterprise) : control plane auto-hébergé sur Amazon Bedrock ou Google Cloud : SSO corporate, application de politiques, suivi des dépenses par utilisateur. Source : releasebot.io/updates/anthropic/claude uniquement. Absent des release notes officielles au 19 juillet 2026, soit trois semaines après l'annonce supposée. Destination si confirmé : `guide/03-security.md`.
+
+- **Enterprise-Managed MCP Connectors** (18 juin 2026, Enterprise) : autorisation centralisée des connecteurs via Okta et l'IdP, accès zero-touch par appartenance à un groupe. Compléterait les Connector Access Controls du 28 mai. Source : releasebot.io/updates/anthropic/claude uniquement. Absent des release notes officielles au 19 juillet 2026, soit un mois après l'annonce supposée. Destination si confirmé : `guide/03-security.md` section Enterprise Administration.
+
+- **Claude Design : import et verrouillage de design systems** (17 juin 2026) : les admins pourraient importer un design system et le verrouiller pour toute l'organisation, avec synchronisation renforcée vers Claude Code. Source : releasebot.io/updates/anthropic/claude uniquement. Absent des release notes officielles au 19 juillet 2026, soit un mois après l'annonce supposée. Destination si confirmé : section Claude Design de `guide/02-capabilities.md`.
+
+## [1.12.0] - 2026-07-22
+
 ### Added
 - **Claude Cowork sur web et mobile** (7 juillet 2026, bêta, Max d'abord) : Cowork sort du desktop. Les sessions et les fichiers sont sauvegardés sur le compte Claude et accessibles depuis claude.ai, iPhone, iPad et Android. Les tâches s'exécutent en arrière-plan dans le cloud même sans appareil connecté : une tâche planifiée à 6h du matin tourne sans que le desktop soit allumé. Claude notifie sur le téléphone quand il a besoin d'une approbation, et rien n'est envoyé sans validation. Déploiement progressif sur plusieurs semaines à partir du plan Max. Anthropic maintient que le desktop reste le meilleur endroit pour l'expérience complète (accès aux fichiers locaux et au navigateur). Source : support.claude.com release notes + anthropic.com. Impact transversal : contredit la contrainte "le desktop doit rester ouvert et connecté" documentée en v1.7.0 (Dispatch) et le comportement device sleep documenté en v1.5.0. À répercuter dans `guide/00-overview.md`, `guide/01-getting-started.md`, `guide/02-capabilities.md` section Scheduled Tasks.
 
@@ -29,18 +43,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - **Cowork indisponible sur ChromeOS** (7 juillet 2026) : Cowork ne propose plus l'accès terminal ni de suggestion de correction impossible sur les systèmes d'exploitation incapables de fournir la virtualisation nécessaire à son environnement isolé, ChromeOS compris, où chaque commande échouait immédiatement. Source : claude.com/docs/cowork/changelog v1.19367.0. À ajouter dans `guide/04-troubleshooting.md`.
-
-## Non confirmé
-
-Pistes repérées en veille, sans confirmation par une source officielle Anthropic. Cette section n'est pas versionnée : elle n'est reprise ni dans `machine-readable/claude-cowork-releases.yaml` ni sur la landing, et le bump de version ne la déplace pas. Une entrée en sort dans deux cas seulement, quand une source officielle la confirme (elle rejoint alors `[Unreleased]`), ou quand l'absence de confirmation devient concluante (on la supprime).
-
-- **Claude for Government Desktop : Cowork et Code en bêta publique** (7 juillet 2026, FedRAMP High) : la même application que celle des clients commerciaux, livrée dans un environnement autorisé FedRAMP High. Travail sur fichiers locaux, contrôles administrateur renforcés, journaux d'audit infalsifiables, gouvernance des dépenses pour les agences. Sources : releasebot.io/updates/anthropic/claude et claude-news.today. Absent des release notes support.claude.com au 19 juillet 2026. Destination si confirmé : `guide/03-security.md`.
-
-- **Claude Apps Gateway** (29 juin 2026, Enterprise) : control plane auto-hébergé sur Amazon Bedrock ou Google Cloud : SSO corporate, application de politiques, suivi des dépenses par utilisateur. Source : releasebot.io/updates/anthropic/claude uniquement. Absent des release notes officielles au 19 juillet 2026, soit trois semaines après l'annonce supposée. Destination si confirmé : `guide/03-security.md`.
-
-- **Enterprise-Managed MCP Connectors** (18 juin 2026, Enterprise) : autorisation centralisée des connecteurs via Okta et l'IdP, accès zero-touch par appartenance à un groupe. Compléterait les Connector Access Controls du 28 mai. Source : releasebot.io/updates/anthropic/claude uniquement. Absent des release notes officielles au 19 juillet 2026, soit un mois après l'annonce supposée. Destination si confirmé : `guide/03-security.md` section Enterprise Administration.
-
-- **Claude Design : import et verrouillage de design systems** (17 juin 2026) : les admins pourraient importer un design system et le verrouiller pour toute l'organisation, avec synchronisation renforcée vers Claude Code. Source : releasebot.io/updates/anthropic/claude uniquement. Absent des release notes officielles au 19 juillet 2026, soit un mois après l'annonce supposée. Destination si confirmé : section Claude Design de `guide/02-capabilities.md`.
 
 ## [1.11.0] - 2026-07-04
 
