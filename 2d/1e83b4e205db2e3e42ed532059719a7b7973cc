@@ -1,0 +1,25 @@
+README.fr.md
+  s_aa315be59f086f::t_84fdffd1414b73 234
+  s_aa315be59f086f::t_e0024e7e56fdea 203-204
+  s_aa315be59f086f::t_dc4c0d2bb061ab 81
+README.md
+  s_aa315be59f086f::t_0d4ab847c03a77 244
+  s_aa315be59f086f::t_f1ee168c4c7075 213-214
+  s_aa315be59f086f::t_6f9e0d8ee8c53b 91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "2d1e83b4e205db2e3e42ed532059719a7b7973cc",
+  "prompts": {},
+  "sessions": {
+    "s_aa315be59f086f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a5a7e254-edb6-4421-91f2-98aeef3a1c3e",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    }
+  }
+}
