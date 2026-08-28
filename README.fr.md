@@ -78,7 +78,7 @@ Vous avez besoin de workflows prêts à l'emploi, pas de listes de fonctionnalit
 
 **Claude Code** est le guide pour développeurs : même IA, interface terminal, exécution de code.
 
-→ [Guide Claude Code](https://github.com/FlorianBruniaux/claude-code-ultimate-guide)
+→ [Guide Claude Code](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) · [cc.bruniaux.com](https://cc.bruniaux.com)
 
 ---
 
@@ -200,6 +200,8 @@ Claude Cowork supporte 11 plugins officiels : Asana, Canva, Cloudflare, Figma, G
 | [Comparaison](reference/comparison.fr.md) | vs Copilot, Gemini, ChatGPT |
 | [FAQ](reference/faq.fr.md) | 20+ questions |
 | [Glossaire](reference/glossary.fr.md) | Terminologie Cowork |
+| [Diagrammes visuels](guide/diagrams/README.md) | Diagrammes Mermaid couvrant les concepts clés et les workflows |
+| [Parcours d'apprentissage](guide/learning/README.md) | Progresser du copier-coller à l'écriture de ses propres prompts |
 
 </details>
 
@@ -229,7 +231,7 @@ Ce guide existe parce que la documentation officielle est dense et les tutoriels
 
 **Focus v1.1** : Petites entreprises et travailleurs du savoir dans le monde entier.
 
-**Créé avec Claude Code**. Maintenu par [Florian BRUNIAUX](https://github.com/FlorianBruniaux).
+**Créé avec Claude Code**. Maintenu par [Florian BRUNIAUX](https://github.com/FlorianBruniaux) · [Portfolio](https://florian.bruniaux.com/).
 
 **Connexe** : [Guide Claude Code](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) : Pour les développeurs
 

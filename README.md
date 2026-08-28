@@ -88,7 +88,7 @@ You need ready-to-use workflows, not feature lists.
 
 **Claude Code** is the guide for developers : same AI, terminal interface, code execution.
 
-→ [Claude Code Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide)
+→ [Claude Code Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) · [cc.bruniaux.com](https://cc.bruniaux.com)
 
 ---
 
@@ -210,6 +210,8 @@ Claude Cowork supports 11 official plugins: Asana, Canva, Cloudflare, Figma, Git
 | [Comparison](reference/comparison.md) | vs Copilot, Gemini, ChatGPT |
 | [FAQ](reference/faq.md) | 20+ questions |
 | [Glossary](reference/glossary.md) | Cowork terminology |
+| [Visual Diagrams](guide/diagrams/README.md) | Mermaid diagrams covering key concepts and workflows |
+| [Learning Path](guide/learning/README.md) | Progress from copying prompts to writing your own |
 
 </details>
 
@@ -239,7 +241,7 @@ This guide exists because official docs are dense and tutorials get outdated qui
 
 **Focus v1.1**: Small businesses and knowledge workers worldwide.
 
-**Created with Claude Code**. Maintained by [Florian BRUNIAUX](https://github.com/FlorianBruniaux).
+**Created with Claude Code**. Maintained by [Florian BRUNIAUX](https://github.com/FlorianBruniaux) · [Portfolio](https://florian.bruniaux.com/).
 
 **Related**: [Claude Code Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) : For developers
 
