@@ -255,8 +255,6 @@ This guide exists because official docs are dense and tutorials get outdated qui
 
 **Created with Claude Code**. Maintained by [Florian BRUNIAUX](https://github.com/FlorianBruniaux) · [Portfolio](https://florian.bruniaux.com/).
 
-**Related**: [Claude Code Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) : For developers
-
 </details>
 
 <details>
@@ -291,6 +289,19 @@ Cowork sends prompts, files, and results to Anthropic servers.
 
 ---
 
+<!-- BEGIN GENERATED RELATED PROJECTS -->
+<!-- Source: https://github.com/FlorianBruniaux/FlorianBruniaux/blob/main/ecosystem/projects.json; project: claude-cowork-guide -->
+## Explore the ecosystem
+
+These projects extend the workflow without duplicating this tool:
+
+- **Continue with [Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide)**: move to developer workflows, agent harnessing, and production safety.
+
+[Browse the complete open-source galaxy](https://github.com/FlorianBruniaux#open-source-galaxy)
+<!-- END GENERATED RELATED PROJECTS -->
+
+---
+
 ## 🤝 Contributing
 
 Found an error? Have a workflow to share?
@@ -309,4 +320,4 @@ Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ---
 
-*Version 1.12.0 | juillet 2026 | Part of [Claude Code Ultimate Guide](../README.md) | Crafted with Claude*
+*Version 1.12.0 | juillet 2026 | Related: [Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) | Crafted with Claude*
