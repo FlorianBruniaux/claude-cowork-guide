@@ -1,0 +1,21 @@
+README.md
+  s_5cacb2711ee79b::t_797fc11232d5b1 227
+guide/methodologies.md
+  s_5cacb2711ee79b::t_797fc11232d5b1 231-242,245
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "bf538512a90b000bb6136110b02bf1b66ca839c3",
+  "prompts": {},
+  "sessions": {
+    "s_5cacb2711ee79b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a06100-8544-77f1-840f-e01a0e7054dc",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    }
+  }
+}
