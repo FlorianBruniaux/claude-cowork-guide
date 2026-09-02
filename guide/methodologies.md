@@ -228,9 +228,21 @@ Create a log of everything moved.
 
 Each added constraint comes from a real problem you encountered. Never add constraints speculatively, only when you've seen the need.
 
+### Start / Build / Scale for knowledge work
+
+Start, Build, and Scale describe the operating condition of a Cowork practice. They do not score the user and they do not require every workflow to reach Scale.
+
+| Path | Use it when | Practice | Observable exit condition |
+|------|-------------|----------|---------------------------|
+| **Start** | You are testing Cowork on one real task. | Work inside a dedicated folder, preserve the source files, review the plan, and verify the result against a sample. | You can explain the output, check it against the source, and recover the original files. |
+| **Build** | A useful task now needs to be repeated. | Save the CTOC prompt or template, define inputs and outputs, maintain the required context, and record the verification step. | Another person can run the workflow from the saved instructions and recognize success or failure. |
+| **Scale** | The workflow crosses people, recurring volume, sensitive documents, or business dependencies. | Assign an owner, constrain access, retain execution evidence, define exception handling, and review outcomes. | Shared controls make ownership, permissions, logs, escalation, and recovery inspectable. |
+
+Move from Start to Build only after one bounded task works. Move from Build to Scale only when repetition or organizational exposure creates a control problem. A one-person workflow may remain at Build indefinitely.
+
 ### Adopting Cowork progressively
 
-The biggest mistake is trying to automate everything on day one. A realistic adoption curve:
+Trying to automate every task on day one removes the evidence needed to improve one workflow. The calendar below is an illustrative adoption curve, not a deadline. Advance when the exit condition above is met:
 
 - **Day 1-7** : one workflow, mastered completely (file organization or invoice generation)
 - **Day 8-30** : two or three workflows, your most repetitive tasks

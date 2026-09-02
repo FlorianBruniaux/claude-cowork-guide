@@ -224,6 +224,7 @@ Claude Cowork supports 11 official plugins: Asana, Canva, Cloudflare, Figma, Git
 | [Glossary](reference/glossary.md) | Cowork terminology |
 | [Visual Diagrams](guide/diagrams/README.md) | Mermaid diagrams covering key concepts and workflows |
 | [Learning Path](guide/learning/README.md) | Progress from copying prompts to writing your own |
+| [Methodologies and adoption paths](guide/methodologies.md#start--build--scale-for-knowledge-work) | Choose Start, Build, or Scale from observable workflow conditions |
 
 </details>
 
