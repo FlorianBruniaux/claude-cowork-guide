@@ -1,0 +1,19 @@
+scripts/check-translations.sh
+  s_c99475ba6642f6::t_05b9a342e93be6 34-46,48-57,60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "b425d542fe5e4b1b83dc82dbfd92b48a54b9fdaa",
+  "prompts": {},
+  "sessions": {
+    "s_c99475ba6642f6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a06c32-2be3-7262-8436-543fb8d0b6f8",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    }
+  }
+}
