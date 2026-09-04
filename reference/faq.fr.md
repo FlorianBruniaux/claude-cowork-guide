@@ -88,7 +88,7 @@ Cowork peut exécuter du code dans un environnement de tâche isolé. Les foncti
 
 **Règle simple** : Si vous êtes déjà dans Excel et avez besoin d'aide pour les formules → utilisez l'add-in Claude in Excel. Si vous devez générer un nouveau tableur depuis des données brutes → utilisez Cowork.
 
-Voir [comparaison détaillée](comparison.fr.md#confusion-frequente).
+Voir [comparaison détaillée](comparison.fr.md#confusion-courante).
 
 ### Q: C'est quoi Claude Legal ?
 **R:** Claude Legal est la première extension officielle Cowork (annoncée 3 fév 2026) pour la revue automatisée de documents juridiques. Il aide à identifier les termes clés de contrats, détecter les risques de conformité et trier les documents légaux. Utilisez-le pour vérifier des contrats, analyser des NDA et suivre la conformité. **Important** : Claude Legal ne fournit PAS de conseil juridique. Toutes les conclusions doivent être revues par un professionnel juridique qualifié. Voir [Capacités : Extensions & Plugins](../guide/02-capabilities.fr.md#extensions--plugins) pour plus de détails.
@@ -183,7 +183,7 @@ Voir le [workflow Automatisation Planifiée](../workflows/scheduled-automation.m
 Causes courantes : limite de contexte, timeout, problèmes réseau.
 
 ### Q: Puis-je utiliser Cowork avec un VPN ?
-**R:** `UNKNOWN` comme limitation universelle. Une erreur de connexion peut avoir plusieurs causes et ce guide ne conseille pas de désactiver un VPN par défaut. Consultez le guide Anthropic actuel et la politique réseau de votre organisation, puis relevez l'erreur exacte avant de modifier les réglages de connectivité. Voir le [dépannage VM et connexion](../guide/04-troubleshooting.fr.md#problèmes-de-vm-et-connexion).
+**R:** `UNKNOWN` comme limitation universelle. Une erreur de connexion peut avoir plusieurs causes et ce guide ne conseille pas de désactiver un VPN par défaut. Consultez le guide Anthropic actuel et la politique réseau de votre organisation, puis relevez l'erreur exacte avant de modifier les réglages de connectivité. Voir le [dépannage VM et connexion](../guide/04-troubleshooting.fr.md#problèmes-vm--connexion).
 
 ### Q: Mes formules Excel s'affichent comme du texte ou des erreurs.
 **R:** Problème de syntaxe régionale. Spécifiez dans votre prompt :

@@ -27,7 +27,9 @@
 
 ---
 
-## Common Confusion: Claude in Excel vs Cowork {#common-confusion}
+## Common Confusion
+
+### Claude in Excel vs Cowork
 
 **Claude in Excel** and **Cowork's Excel capabilities** are two distinct products that serve different purposes.
 

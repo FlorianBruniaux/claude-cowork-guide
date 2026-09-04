@@ -211,7 +211,7 @@ SORTIE : Document de recherche avec matrice de comparaison
 > - **Cowork Excel** : Génère de nouveaux fichiers Excel depuis des données non structurées (reçus, images, texte)
 > - **Claude in Excel** : Aide avec les formules/analyses à l'intérieur de fichiers Excel existants
 >
-> Voir [comparaison complète](../reference/comparison.fr.md#confusion-frequente).
+> Voir [comparaison complète](../reference/comparison.fr.md#confusion-courante).
 
 ### Considérations régionales
 
@@ -546,7 +546,7 @@ Selon votre setup, les tâches automatiques ne fonctionnent pas toutes de la mê
 
 **Pour les deux cas non supportés sur desktop :**
 
-- **Vous êtes absent mais le Mac est allumé** → utilisez [Dispatch](#dispatch--contrôler-cowork-depuis-votre-téléphone) : envoyez la tâche depuis votre téléphone, elle s'exécute sur votre bureau
+- **Vous êtes absent mais le Mac est allumé** → utilisez [Dispatch](#dispatch--piloter-cowork-depuis-votre-téléphone) : envoyez la tâche depuis votre téléphone, elle s'exécute sur votre bureau
 - **Entièrement automatique, Mac éteint, ou serveur** → utilisez un planificateur système avec un workflow contrôlé par un développeur, ou confirmez que votre surface Cowork actuelle prend en charge la tâche.
 
 > **Règle de décision** : les tâches planifiées Cowork sont idéales pour les routines "pendant que vous travaillez" (brief matinal, compilation hebdo). Pour une automatisation qui doit tourner même quand vous n'êtes pas là, Claude Code est le bon outil.

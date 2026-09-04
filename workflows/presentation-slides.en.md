@@ -601,7 +601,7 @@ Save to ~/Cowork-Workspace/presentations/[client-name]-[date].pptx
 - Possible variants based on your recurring needs: `technical-template.pptx`, `training-template.pptx`
 - Same logic applies to DOCX for reports and meeting summaries
 
-> **Go further**: Create a Cowork skill (`/skill-creator`) that encodes this workflow once and for all. See [Skills & Customization](../guide/02-capabilities.md#skills--additional-capabilities).
+> **Go further**: Create a Cowork skill (`/skill-creator`) that encodes this workflow once and for all. See [Skills & Customization](../guide/02-capabilities.md#skills--extra-capabilities).
 
 Template save path: `~/Cowork-Workspace/presentations/wrk/company-template.pptx`
 

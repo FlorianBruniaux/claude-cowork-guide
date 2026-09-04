@@ -27,7 +27,9 @@
 
 ---
 
-## Confusion fréquente : Claude in Excel vs Capacités Excel de Cowork {#confusion-frequente}
+## Confusion courante
+
+### Claude in Excel vs capacités Excel de Cowork
 
 **Claude in Excel** et les **capacités Excel de Cowork** sont deux produits distincts servant des objectifs différents.
 

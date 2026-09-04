@@ -19,7 +19,7 @@ You have a financial model (budget, forecast, pricing calculator) in Excel and n
 - Document assumptions and dependencies
 - Create an audit trail for stakeholders
 
-> ⚠️ **Important**: This workflow uses **Cowork's Excel generation capabilities** (creating new analysis files). It does NOT use the **Claude in Excel add-in** (Microsoft Excel add-in for formula assistance). See [comparison](../reference/comparison.en.md#common-confusion).
+> ⚠️ **Scope note**: This workflow uses **Cowork's Excel generation capabilities** (creating new analysis files). It does NOT use the **Claude in Excel add-in** (Microsoft Excel add-in for formula assistance). See [comparison](../reference/comparison.en.md#common-confusion).
 
 ---
 

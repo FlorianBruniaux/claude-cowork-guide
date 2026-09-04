@@ -19,7 +19,7 @@ You need to plan headcount for the next quarter/year and want to:
 - Visualize org chart changes
 - Generate budget justification for stakeholders
 
-> ⚠️ **Important**: This workflow uses **Cowork's Excel generation capabilities** (creating new planning files). It does NOT use the **Claude in Excel add-in** (Microsoft Excel add-in for formula assistance). See [comparison](../reference/comparison.en.md#common-confusion).
+> ⚠️ **Scope note**: This workflow uses **Cowork's Excel generation capabilities** (creating new planning files). It does NOT use the **Claude in Excel add-in** (Microsoft Excel add-in for formula assistance). See [comparison](../reference/comparison.en.md#common-confusion).
 
 ---
 

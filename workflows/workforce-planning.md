@@ -19,7 +19,7 @@ Vous devez planifier les effectifs pour le prochain trimestre/année et souhaite
 - Visualiser les changements d'organigramme
 - Générer une justification budgétaire pour les parties prenantes
 
-> ⚠️ **Important** : Ce workflow utilise les **capacités de génération Excel de Cowork** (création de nouveaux fichiers de planification). Il n'utilise PAS l'**add-in Claude in Excel** (complément Microsoft Excel pour l'assistance aux formules). Voir [comparaison](../reference/comparison.fr.md#confusion-frequente).
+> ⚠️ **Important** : Ce workflow utilise les **capacités de génération Excel de Cowork** (création de nouveaux fichiers de planification). Il n'utilise PAS l'**add-in Claude in Excel** (complément Microsoft Excel pour l'assistance aux formules). Voir [comparaison](../reference/comparison.fr.md#confusion-courante).
 
 ---
 
