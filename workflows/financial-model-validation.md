@@ -282,7 +282,7 @@ Utilise syntaxe Excel européenne (séparateurs point-virgule, noms de fonctions
 
 - [Suivi des Dépenses](expense-tracking.md) : Extraire données financières depuis reçus
 - [Planification des Effectifs](workforce-planning.md) : Valider modèles masse salariale
-- [Analyse Budget vs Réel](budget-vs-actual.md) : Comparer dépenses prévues vs réelles
+- Analyse budget vs réel : comparer dépenses prévues et réelles
 
 ---
 

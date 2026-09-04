@@ -282,7 +282,7 @@ Use European Excel syntax (semicolon separators, French function names).
 
 - [Expense Tracking](expense-tracking.en.md) : Extract financial data from receipts
 - [Workforce Planning](workforce-planning.en.md) : Validate headcount models
-- [Budget vs Actual Analysis](budget-vs-actual.en.md) : Compare planned vs real expenses
+- Budget vs actual analysis: compare planned and actual expenses
 
 ---
 
