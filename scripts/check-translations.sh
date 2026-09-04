@@ -31,18 +31,33 @@ check_translation() {
         return 1
     fi
 
-    # Get modification times
-    if [[ "$OSTYPE" == "darwin"* ]]; then
-        # macOS
-        source_time=$(stat -f %m "$source")
-        translation_time=$(stat -f %m "$translation")
+    local source_commit=""
+    local translation_commit=""
+    local is_outdated=0
+
+    # Clean checkouts preserve commit order. File mtimes only reflect checkout
+    # order, so use Git history unless either file is locally modified.
+    if git diff --quiet -- "$source" "$translation"; then
+        source_commit=$(git log -1 --format=%H -- "$source")
+        translation_commit=$(git log -1 --format=%H -- "$translation")
+        if [ -z "$source_commit" ] || [ -z "$translation_commit" ] || \
+           ! git merge-base --is-ancestor "$source_commit" "$translation_commit"; then
+            is_outdated=1
+        fi
     else
-        # Linux
-        source_time=$(stat -c %Y "$source")
-        translation_time=$(stat -c %Y "$translation")
+        if [[ "$OSTYPE" == "darwin"* ]]; then
+            source_time=$(stat -f %m "$source")
+            translation_time=$(stat -f %m "$translation")
+        else
+            source_time=$(stat -c %Y "$source")
+            translation_time=$(stat -c %Y "$translation")
+        fi
+        if [ "$source_time" -gt "$translation_time" ]; then
+            is_outdated=1
+        fi
     fi
 
-    if [ "$source_time" -gt "$translation_time" ]; then
+    if [ "$is_outdated" -eq 1 ]; then
         echo -e "${RED}⚠️  OUTDATED${NC}: $translation (source modified after translation)"
         ((OUTDATED_COUNT++))
         return 1
