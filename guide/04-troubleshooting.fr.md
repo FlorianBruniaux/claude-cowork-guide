@@ -112,31 +112,31 @@ rm -rf ~/Library/Preferences/com.anthropic.claude.plist
 
 ## Problèmes VM & connexion
 
-### "VM Connection Timeout" (problème VPN)
+### "VM Connection Timeout" (diagnostic réseau)
 
 **Erreur exacte** :
 ```
 Failed to start Claude's workspace — VM connection timeout after 60 seconds
 ```
 
-**Cause racine** : Les logiciels VPN créent des conflits de routage avec le réseau VM interne de Cowork. C'est le **problème n°1 signalé** sur r/ClaudeAI.
+**Cause possible, pas diagnostic universel** : le réseau d'entreprise, un VPN, un outil de sécurité endpoint ou un incident temporaire peuvent perturber l'initialisation. Anthropic ne documente pas une panne VPN universelle. Relevez donc l'erreur exacte avant de modifier les contrôles réseau.
 
 **Solutions** :
 
 | Priorité | Action |
 |----------|--------|
-| 1 | **Déconnecter complètement le VPN** avant de démarrer Cowork |
-| 2 | Si le VPN est requis : Utiliser le split tunneling pour exclure Claude |
-| 3 | Essayer le partage de connexion mobile comme contournement |
+| 1 | Redémarrer Claude Desktop et réessayer une fois |
+| 2 | Vérifier l'état des services Anthropic et la politique réseau de l'organisation |
+| 3 | Si la politique l'autorise, comparer avec un autre réseau de confiance pour isoler la cause |
 
-**Pourquoi ça arrive** :
-Cowork s'exécute dans une machine virtuelle sandbox. Les VPN interceptent et redirigent le trafic réseau au niveau système, cassant le canal de communication hôte↔VM. Il n'y a pas de solution qui permette de garder le VPN actif.
+**Pourquoi cela peut arriver** :
+Cowork utilise un environnement d'exécution isolé. Les contrôles réseau peuvent affecter la connectivité, mais un timeout seul n'en identifie pas la cause.
 
 **Contournement pour les environnements nécessitant un VPN** :
-1. Déconnecter le VPN
-2. Terminer les tâches Cowork
-3. Reconnecter le VPN
-4. Note : Certains environnements d'entreprise peuvent bloquer ce workflow
+1. Ne contournez pas les contrôles obligatoires de l'entreprise.
+2. Relevez l'erreur exacte et l'heure.
+3. Demandez à l'administrateur si le trafic Claude est autorisé.
+4. Contactez le support Anthropic si l'échec persiste.
 
 ### "Workspace Failed to Initialize"
 

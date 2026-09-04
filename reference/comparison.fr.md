@@ -434,15 +434,17 @@ Comment Cowork se compare aux autres assistants desktop IA ?
 
 **Note** : Toutes les options basées cloud traitent le contenu fichiers sur leurs serveurs. Seule Apple Intelligence fonctionne entièrement localement. Les fichiers Cowork quittent votre machine pendant le traitement.
 
-### Comparaison tarifaire
+### Accès et tarifs
 
-| Produit | Coût | Notes |
-|---------|------|-------|
-| **Apple Intelligence** | Gratuit | Inclus avec appareils |
-| **Cowork** | 20-200$/mois | Pro (léger) ou Max (intensif) |
-| **Copilot** | 20$/mois (personnel), 30$/mois (enterprise) | M365 Copilot |
-| **ChatGPT** | Gratuit-200$/mois | Plus (20$), Pro (200$) |
-| **Gemini** | Gratuit-20$/mois | Advanced pour contexte 1M |
+Les prix et les offres évoluent. Ce guide n'affirme pas les tarifs actuels de ces produits. Vérifiez la page tarifaire officielle de chaque fournisseur avant une décision d'achat.
+
+| Produit | Note d'accès |
+|---------|---------------|
+| **Apple Intelligence** | Dépend de l'appareil et de la région |
+| **Cowork** | Exige un plan Claude payant éligible ; disponibilité variable selon la surface |
+| **Copilot** | Vérifier l'offre Microsoft actuelle |
+| **ChatGPT** | Vérifier l'offre OpenAI actuelle |
+| **Gemini** | Vérifier l'offre Google actuelle |
 
 ### Quand NE PAS utiliser Cowork
 

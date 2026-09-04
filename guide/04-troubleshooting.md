@@ -117,31 +117,31 @@ rmdir /s /q "%APPDATA%\Claude"
 
 ## VM & Connection Issues
 
-### "VM Connection Timeout" (VPN Issue)
+### "VM Connection Timeout" (network diagnosis)
 
 **Exact Error**:
 ```
 Failed to start Claude's workspace — VM connection timeout after 60 seconds
 ```
 
-**Root Cause**: VPN software creates routing conflicts with Cowork's internal VM networking. This is the **#1 reported issue** on r/ClaudeAI.
+**Possible cause, not a universal diagnosis**: corporate networking, VPN software, endpoint security, or a temporary service issue may interfere with workspace initialization. Anthropic does not document one universal VPN failure mode, so record the exact error before changing network controls.
 
 **Solutions**:
 
 | Priority | Action |
 |----------|--------|
-| 1 | **Disconnect VPN completely** before starting Cowork |
-| 2 | If VPN required: Use split tunneling to exclude Claude |
-| 3 | Try mobile hotspot as workaround |
+| 1 | Restart Claude Desktop and retry once |
+| 2 | Check Anthropic service status and your organization's network policy |
+| 3 | If policy permits, compare with another trusted network to isolate the cause |
 
-**Why It Happens**:
-Cowork runs in a sandboxed virtual machine. VPNs intercept and reroute network traffic at the system level, breaking the host↔VM communication channel. There's no fix that keeps VPN active.
+**Why it may happen**:
+Cowork uses an isolated execution environment. Network controls can affect connectivity, but a timeout alone does not identify the cause.
 
 **Workaround for VPN-Required Environments**:
-1. Disconnect VPN
-2. Complete Cowork tasks
-3. Reconnect VPN
-4. Note: Some corporate environments may block this workflow
+1. Do not bypass mandatory corporate controls.
+2. Capture the exact error and time.
+3. Ask your administrator whether Claude traffic is allowed.
+4. Escalate to Anthropic support if the failure persists.
 
 ### "Workspace Failed to Initialize"
 

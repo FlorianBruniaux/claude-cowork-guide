@@ -252,8 +252,6 @@ Limite de contexte atteinte
 | Synthèse de documents | Conserver les sources et la sortie traçables |
 
 N'utilisez pas les nombres de sessions, budgets de tokens ou horaires de réinitialisation historiques de ce dépôt pour estimer l'usage d'un plan payant.
-- Sauvegarder les résultats intermédiaires dans des fichiers de checkpoint
-- Démarrer une nouvelle conversation pour des tâches sans lien
 
 ---
 
