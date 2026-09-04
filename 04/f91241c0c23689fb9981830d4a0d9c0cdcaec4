@@ -1,0 +1,25 @@
+guide/04-troubleshooting.md
+  s_c99475ba6642f6::t_b101266448e7c4 120,127,133-135,137-138,141-144
+reference/comparison.fr.md
+  s_c99475ba6642f6::t_b101266448e7c4 437-447
+guide/04-troubleshooting.fr.md
+  s_c99475ba6642f6::t_b101266448e7c4 115,122,128-130,132-133,136-139
+reference/comparison.md
+  s_c99475ba6642f6::t_b101266448e7c4 437-447
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "04f91241c0c23689fb9981830d4a0d9c0cdcaec4",
+  "prompts": {},
+  "sessions": {
+    "s_c99475ba6642f6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a06c32-2be3-7262-8436-543fb8d0b6f8",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    }
+  }
+}
