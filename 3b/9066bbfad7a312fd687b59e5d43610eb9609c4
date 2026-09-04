@@ -1,0 +1,47 @@
+reference/glossary.fr.md
+  s_c99475ba6642f6::t_f2e7f3058a6538 68,83,116-117,123-124,126-127,169
+  s_c99475ba6642f6::t_8d476aa144d638 77
+reference/faq.md
+  s_c99475ba6642f6::t_223d943570f1cc 186
+  s_c99475ba6642f6::t_efa96e0e8e249c 128,247
+reference/cheatsheet.fr.md
+  s_c99475ba6642f6::t_223d943570f1cc 71,183
+  s_c99475ba6642f6::t_73c5c00ed8e1b4 7,39-41,43,69-70,74-76,211,213,219,225-231,239
+reference/glossary.md
+  s_c99475ba6642f6::t_f2e7f3058a6538 31,49,82-83,89-90,92-93,135
+  s_c99475ba6642f6::t_8d476aa144d638 43
+.github/workflows/translation-check.yml
+  s_c99475ba6642f6::t_3ec8fe045e2511 10-12,17-19,32-33,35-36
+reference/cheatsheet.md
+  s_c99475ba6642f6::t_73c5c00ed8e1b4 7,39-41,43,69-70,74-76,211,213,217,219,225-231,239
+  s_c99475ba6642f6::t_223d943570f1cc 71,183
+guide/02-capabilities.fr.md
+  s_c99475ba6642f6::t_b15209b68cf28b 11-15,74,229,231,233,240-243,245,247-252,254-256,264,364,366,451,867,889,891,893,944,948,972-977
+  s_c99475ba6642f6::t_8d476aa144d638 117,415,485,545,550,580-583,599,604
+  s_c99475ba6642f6::t_416d267c1f1528 940,992,1013
+guide/02-capabilities.md
+  s_c99475ba6642f6::t_277815a370bd33 11-15,74,229,231,233,240-243,245,247-252,254,262,362,364,449,867,889,891,893,942,944,948,972-977
+  s_c99475ba6642f6::t_8d476aa144d638 117,413,483,543,548,572-575,591,596
+  s_c99475ba6642f6::t_416d267c1f1528 940,992,1013
+reference/faq.fr.md
+  s_c99475ba6642f6::t_efa96e0e8e249c 128,247
+  s_c99475ba6642f6::t_223d943570f1cc 186
+tests/test-content-checks.sh
+  s_c99475ba6642f6::t_a4eb2ebaeffb8d 29-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "3b9066bbfad7a312fd687b59e5d43610eb9609c4",
+  "prompts": {},
+  "sessions": {
+    "s_c99475ba6642f6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a06c32-2be3-7262-8436-543fb8d0b6f8",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    }
+  }
+}
