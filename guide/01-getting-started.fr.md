@@ -14,8 +14,8 @@ Avant de commencer, assurez-vous d'avoir :
 
 | Exigence | Comment vérifier |
 |----------|------------------|
-| **Abonnement Pro, Max, Team ou Enterprise** | claude.ai → Paramètres → Abonnement affiche votre nom de plan |
-| **macOS ou Windows** | macOS : Menu Apple → À propos de ce Mac / Windows : Paramètres → Système → À propos |
+| **Plan Claude payant éligible** | Vérifier le plan et le guide de disponibilité Cowork actuel |
+| **Surface prise en charge** | Claude Desktop sur macOS/Windows, Linux bêta, ou web/mobile bêta sur les plans éligibles |
 | **Application Claude Desktop** | Dossier Applications ou recherche Spotlight |
 | **Dernière version de l'app** | Voir les étapes de vérification ci-dessous ⚠️ |
 
@@ -39,21 +39,16 @@ Avant de commencer, assurez-vous d'avoir :
 
 > **Documentation officielle** : Pour une aide supplémentaire, consultez le [guide de démarrage Cowork d'Anthropic](https://support.claude.com/en/articles/13345190-getting-started-with-cowork)
 
-### Niveaux d'abonnement
+### Abonnement et disponibilité
 
-| Tier | Coût | Usage Cowork |
-|------|------|--------------|
-| **Pro** | 20$/mois | Usage léger (~1-1.5h intensive avant réinitialisation) |
-| **Max** | 100-200$/mois | Usage intensif (5x-20x la limite du Pro) |
-| **Team** | Par utilisateur | Accès Cowork complet, contrôles admin |
-| **Enterprise** | Tarif personnalisé | Accès Cowork complet, SSO, contrôles admin, analytics |
+La disponibilité Cowork est liée à un plan Claude payant éligible et varie selon la surface. Consultez le [guide officiel de disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-cowork) pour les plans et tarifs actuels.
 
 ### Vous n'avez pas accès ?
 
 | Situation | Action |
 |-----------|--------|
-| Tier gratuit | Passer au Pro (20$) ou Max (100$+) |
-| Linux | Attendre l'expansion de plateforme (Linux non annoncé) |
+| Plan ou surface indisponible | Consulter le guide de disponibilité Anthropic actuel |
+| Linux | Installer la bêta Claude Desktop si elle convient à votre environnement |
 
 ---
 
@@ -447,11 +442,11 @@ Sans fichier mémoire, vous répétez vos préférences et votre contexte à cha
 
 ---
 
-## Étape 9 : Activer Computer Use (Research Preview, macOS uniquement)
+## Étape 9 : Activer Computer Use (preview recherche)
 
-Computer Use permet à Claude de contrôler directement ton bureau : ouvrir des applications, cliquer, remplir des formulaires, naviguer dans le navigateur, sans aucune intégration personnalisée. Disponible sur les plans Pro et Max, macOS uniquement.
+Computer Use permet à Claude de contrôler directement votre bureau : ouvrir des applications, cliquer, remplir des formulaires et naviguer dans le navigateur lorsque la fonction est disponible pour votre plan et votre surface.
 
-> **Note** : Computer Use est une fonctionnalité en research preview disponible sur les plans Pro et Max, macOS uniquement. Utilise-la pour des tâches supervisées où tu peux examiner chaque action.
+> **Note** : Computer Use reste une fonctionnalité en preview recherche sur les plans éligibles. Suivez le [guide Anthropic actuel](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork) et utilisez-la pour des tâches supervisées où vous pouvez vérifier chaque action.
 
 ### 9.1 Activer dans Claude Desktop
 

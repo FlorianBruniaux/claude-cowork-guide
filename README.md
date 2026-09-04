@@ -26,7 +26,7 @@
 - [License](#-license)
 
 <p align="center">
-  <strong><a href="https://florianbruniaux.github.io/claude-cowork-guide-landing/">🌐 Official Website</a></strong>
+  <strong><a href="https://cowork.bruniaux.com/">🌐 Official Website</a></strong>
 </p>
 
 <p align="center">
@@ -36,9 +36,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Research%20Preview-yellow" alt="Status"/>
-  <img src="https://img.shields.io/badge/Platform-macOS%20%26%20Windows-blue" alt="Platform"/>
-  <img src="https://img.shields.io/badge/Subscription-Pro%20%26%20Max-purple" alt="Subscription"/>
+  <img src="https://img.shields.io/badge/Availability-varies%20by%20surface-blue" alt="Availability varies by surface"/>
+  <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Windows%20%7C%20Linux%20beta-blue" alt="Platform: macOS, Windows, Linux beta"/>
+  <img src="https://img.shields.io/badge/Subscription-paid%20Claude%20plans-purple" alt="Paid Claude plans"/>
   <img src="https://img.shields.io/badge/Version-1.12.0-orange" alt="Version"/>
 </p>
 
@@ -77,8 +77,8 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 <details>
 <summary><strong>Prerequisites</strong></summary>
 
-- **Subscription**: Pro ($20/mo) or Max ($100-200/mo)
-- **Platform**: macOS and Windows
+- **Subscription**: an eligible paid Claude plan. Availability varies by plan and surface.
+- **Platform**: Claude Desktop on macOS and Windows, with Linux in beta. Web and mobile access are beta on eligible plans.
 - **App**: Claude Desktop (latest version)
 
 </details>
@@ -275,15 +275,11 @@ Cowork sends prompts, files, and results to Anthropic servers.
 <details>
 <summary><strong>Current Limitations</strong> (February 2026)</summary>
 
-**Platform**: macOS and Windows
+**Availability**: Cowork is available on paid Claude plans. Desktop is supported on macOS and Windows, with Linux in beta. Web and mobile availability varies by eligible plan.
 
-**Known issues**:
-- VPN incompatible (VM routing conflict)
-- Usage resets every 5 hours
-- Pro: ~1-1.5h intensive use before limit
-- OCR: ~97% fields, ~63% line items accuracy
+**Feature status**: Do not use one global beta or GA label. Some capabilities, including computer use, remain research preview on eligible plans.
 
-**Status**: Research preview (expect bugs)
+**Check before acting**: [Cowork availability](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) and [desktop installation](https://support.claude.com/en/articles/10065433-install-claude-desktop) are the current product references.
 
 </details>
 
@@ -320,4 +316,4 @@ Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ---
 
-*Version 1.12.0 | juillet 2026 | Related: [Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) | Crafted with Claude*
+*Version 1.12.0 | Related: [Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) | Crafted with Claude*

@@ -2,13 +2,13 @@ cff-version: 1.2.0
 message: "If you use this guide, please cite it as below."
 type: dataset
 title: "Claude Cowork Guide"
-abstract: "Complete guide for Claude's desktop assistant for French SMBs. 25 workflows, 67 prompts, 5 guides."
+abstract: "Community guide to Claude Cowork for knowledge workers, with 29 workflows and 70 prompts."
 authors:
   - family-names: "Bruniaux"
     given-names: "Florian"
     affiliation: "Méthode Aristote"
-version: "1.1.0"
-date-released: "2026-01-20"
+version: "1.12.0"
+date-released: "2026-07-22"
 license: "CC-BY-SA-4.0"
 url: "https://github.com/FlorianBruniaux/claude-cowork-guide"
 keywords:

@@ -1,13 +1,13 @@
-# Codex Cowork Guide - Project Context
+# Claude Cowork Guide - Project Context
 
 ## Purpose
-Documentation complète pour Codex Cowork (feature desktop Anthropic).
+Guide communautaire pour Claude Cowork, produit Anthropic disponible selon le plan et la surface.
 Focus: TPE/PME françaises (artisans, commerçants, dirigeants).
 
 ## Repository Structure
 guide/           # Documentation (5 fichiers)
-workflows/       # 26 workflows par catégorie
-prompts/         # 67 prompts copy-paste
+workflows/       # 29 workflows par catégorie
+prompts/         # 70 prompts copy-paste
 reference/       # Cheatsheet, FAQ, glossaire
 machine-readable/ # Pour LLMs
 scripts/         # Sync version, stats
@@ -17,8 +17,8 @@ whitepapers/     # Livres blancs (à venir)
 ## Key Files
 | File | Purpose |
 |------|---------|
-| VERSION | Source de vérité version (1.9.0) |
-| workflows/README.md | Index des 26 workflows |
+| VERSION | Source de vérité version (1.12.0) |
+| workflows/README.md | Index des 29 workflows |
 | reference/cheatsheet.md | Quick reference |
 
 ## Commands

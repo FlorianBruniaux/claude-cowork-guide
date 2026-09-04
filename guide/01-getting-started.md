@@ -14,8 +14,8 @@ Before starting, ensure you have:
 
 | Requirement | How to Check |
 |-------------|--------------|
-| **Pro, Max, Team, or Enterprise subscription** | claude.ai → Settings → Subscription shows your plan name |
-| **macOS or Windows** | macOS: Apple menu → About This Mac; Windows: Settings → System → About |
+| **Eligible paid Claude plan** | Check your plan and current Cowork availability guidance |
+| **Supported surface** | Claude Desktop on macOS/Windows, Linux beta, or web/mobile beta on eligible plans |
 | **Claude Desktop app** | Applications folder or Spotlight search |
 | **Latest app version** | See verification steps below ⚠️ |
 
@@ -39,21 +39,16 @@ Before starting, ensure you have:
 
 > **Official Documentation**: For additional help, see [Anthropic's Getting Started with Cowork guide](https://support.claude.com/en/articles/13345190-getting-started-with-cowork)
 
-### Subscription Tiers
+### Subscription and availability
 
-| Tier | Cost | Cowork Usage |
-|------|------|--------------|
-| **Pro** | $20/mo | Light use (~1-1.5h intensive before reset) |
-| **Max** | $100-200/mo | Heavy use (5x-20x Pro's limit) |
-| **Team** | Per seat | Full Cowork access, admin controls |
-| **Enterprise** | Custom pricing | Full Cowork access, SSO, admin controls |
+Cowork availability is linked to an eligible paid Claude plan and varies by surface. Consult Anthropic's current [Cowork availability guidance](https://support.claude.com/en/articles/13345190-get-started-with-cowork) for plan details and pricing.
 
 ### Don't Have Access?
 
 | Situation | Action |
 |-----------|--------|
-| Free tier | Upgrade to Pro ($20) or Max ($100+) |
-| Linux | Wait for platform expansion (Linux not announced) |
+| Plan or surface unavailable | Check current Anthropic availability guidance |
+| Linux | Install Claude Desktop beta if it fits your environment |
 
 ---
 
@@ -410,11 +405,11 @@ Without a memory file, you'd repeat preferences and context at the start of ever
 
 ---
 
-## Step 9: Enable Computer Use (Research Preview, macOS Only)
+## Step 9: Enable Computer Use (Research Preview)
 
-Computer Use lets Claude control your desktop directly (open apps, click, fill forms, navigate the browser) without any custom integration. Available on Pro and Max plans, macOS only.
+Computer Use lets Claude control your desktop directly (open apps, click, fill forms and navigate the browser) when it is available for your eligible plan and surface.
 
-> **Note**: Computer Use is a research preview feature available on Pro and Max plans, macOS only. Use it for supervised tasks where you can review each action.
+> **Note**: Computer Use remains a research preview on eligible plans. Follow Anthropic's current [computer-use guidance](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork) and use it for supervised tasks where you can review each action.
 
 ### 9.1 Enable in Claude Desktop
 

@@ -1,84 +1,76 @@
 # Claude Cowork Guide
 
-> Complete guide to Claude Cowork — agentic desktop feature for knowledge workers and small businesses.
+> Complete guide to Claude Cowork - agentic desktop feature for knowledge workers and small businesses.
 
 ## Quick Facts
 
 - Title: Claude Cowork Guide
 - Author: Florian Bruniaux
-- Version: 1.6.1
-- Last Updated: April 1, 2026
+- Version: 1.12.0
+- Last Updated: September 4, 2026
 - License: CC BY-SA 4.0 (free, open source)
-- Workflows: 28 step-by-step guides
+- Workflows: 29 step-by-step guides
 - Ready-to-use Prompts: 70
 - Official Plugins: 11
 
 ## What is Cowork?
 
-Claude's desktop-native autonomous assistant that manipulates local files, generates documents, and organizes digital workspace — without writing code.
+Claude's task-oriented workspace for knowledge work. It can work with connected local files, documents and configured connectors. Capabilities vary by surface, plan and permissions.
 
-**Platform**: macOS and Windows (since Feb 10, 2026; Linux not announced)
-**Subscription**: Pro ($17/mo annual, ~$20/mo monthly) or Max ($100-200/mo)
-**Status**: Research preview
-**Model**: Opus 4.6 (1M tokens beta context, 128K output tokens, adaptive thinking)
+**Availability**: paid Claude plans; see Anthropic's current availability guidance
+**Platform**: Claude Desktop on macOS and Windows, Linux beta; web and mobile beta on eligible plans
+**Feature status**: computer use remains research preview on eligible plans
+**Primary sources**: https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork and https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile
 
-## Key Features (v1.6.1)
+## Current Product Boundary
 
-- 11 official plugins: Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack
-- Scheduled tasks for recurring automation
-- Agent Teams (research preview) for multi-agent coordination
-- Context compaction (beta) for longer sessions
-- Improved browser automation
-- Direct Excel and PowerPoint integrations
-- Claude Legal extension for legal document review
-- Desktop Commander integration for cross-session memory
+- Local file access requires Claude Desktop to be connected when the task needs the local computer.
+- Connectors and browser/computer use have their own eligibility and permission requirements.
+- Cowork can execute code in an isolated environment. This is not arbitrary shell access to the host computer.
+- Do not infer feature availability, quotas or pricing from this guide. Check Anthropic before a time-sensitive decision.
 
 ## What Cowork Can Do
 
 - Read/write local files in sandbox
 - Create Office docs (Word, Excel, PowerPoint)
-- Extract data from images (OCR, ~97% field accuracy)
+- Extract data from images and documents, subject to verification by the user
 - Organize folders and files
-- Web research via Chrome
-- Run 11 official plugin integrations
-- Schedule recurring tasks
+- Work with configured connectors and browser tools where available
+- Execute task code in an isolated environment
 
-## What Cowork Cannot Do
+## Boundaries to Keep in Mind
 
-- Execute code or scripts
-- Make direct API calls (except via plugins)
-- Process audio/video
-- Work with VPN active (VM routing conflict)
-- Run on Linux
-- Operate in the background
+- Local files, local browser access and computer use depend on a connected Claude Desktop app and user-granted access.
+- Cloud availability, schedules and cross-device continuation vary by surface and plan.
+- Cowork does not imply unrestricted access to the host filesystem or host shell.
 
 ## Learning Paths
 
 ### Beginner (first week)
-1. /guide/00-overview.md — What Cowork can do
-2. /guide/01-getting-started.md — Installation and first workflow
-3. /workflows/file-organization.md — Practical example
-4. /prompts/file-ops.md — 20 ready prompts
-5. /reference/cheatsheet.md — Print this
+1. /guide/00-overview.md - What Cowork can do
+2. /guide/01-getting-started.md - Installation and first workflow
+3. /workflows/file-organization.md - Practical example
+4. /prompts/file-ops.md - 20 ready prompts
+5. /reference/cheatsheet.md - Print this
 
 ### Decision Maker
-1. /guide/02-capabilities.md — Feature matrix
-2. /guide/03-security.md — Best practices
-3. /reference/comparison.md — vs Copilot/Gemini/ChatGPT
+1. /guide/02-capabilities.md - Feature matrix
+2. /guide/03-security.md - Best practices
+3. /reference/comparison.md - vs Copilot/Gemini/ChatGPT
 
 ### Power User
-1. /workflows/ — 28 step-by-step guides
-2. /guide/04-troubleshooting.md — Error resolution
-3. /reference/faq.md — 25+ questions
+1. /workflows/ - 29 step-by-step guides
+2. /guide/04-troubleshooting.md - Error resolution
+3. /reference/faq.md - 25+ questions
 
 ## Key Files
 
-- /guide/00-overview.md — What is Cowork, architecture
-- /guide/02-capabilities.md — Feature matrix, limitations
-- /guide/04-troubleshooting.md — Error messages, solutions
-- /reference/comparison.md — Cowork vs Copilot/Gemini/ChatGPT
-- /reference/faq.md — 25+ frequently asked questions
-- /reference/cheatsheet.md — 1-page printable reference
+- /guide/00-overview.md - What is Cowork, architecture
+- /guide/02-capabilities.md - Feature matrix, limitations
+- /guide/04-troubleshooting.md - Error messages, solutions
+- /reference/comparison.md - Cowork vs Copilot/Gemini/ChatGPT
+- /reference/faq.md - 25+ frequently asked questions
+- /reference/cheatsheet.md - 1-page printable reference
 
 ## Prompts Library (70 prompts)
 
@@ -89,7 +81,7 @@ Claude's desktop-native autonomous assistant that manipulates local files, gener
 | /prompts/data-extraction.md | 15 | PDF, OCR, images |
 | /prompts/research.md | 17 | Web research, synthesis |
 
-## Workflows (28 guides)
+## Workflows (29 guides)
 
 **Administrative (6)**: invoice-generation, quote-to-invoice, payment-reminders, compliance-checklist, client-followup-tracker, price-comparison
 
@@ -125,32 +117,24 @@ CONSTRAINTS: Use EUR currency, semicolon formulas, categorize by type
 
 ## Privacy
 
-Cowork sends prompts, files, and results to Anthropic servers.
-
-| Plan | Retention | Training |
-|------|-----------|---------|
-| Default | 5 years | Yes |
-| Opt-out | 30 days | No |
-| Enterprise | 0 | No |
-
-Disable training: https://claude.ai/settings/data-privacy-controls
+Consult Anthropic's current privacy and data controls before processing sensitive material.
 
 ## For AI Assistants
 
 Load the structured index for smart navigation:
 /machine-readable/reference.yaml (~2K tokens)
 
-Contains: all documentation paths, 70 prompts by category, 28 workflows, 11 plugins, common errors and solutions, token budgets, decision flowchart.
+Contains: all documentation paths, 70 prompts by category, 29 workflows and a source-bounded capability summary.
 
 ## Related
 
 - Claude Code Guide (for developers): https://github.com/FlorianBruniaux/claude-code-ultimate-guide
 - Official Anthropic Docs: https://docs.anthropic.com
-- Guide website: https://florianbruniaux.github.io/claude-cowork-guide-landing/
+- Guide website: https://cowork.bruniaux.com/
 
 ## License
 
-CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/
+CC BY-SA 4.0 - https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Author
 

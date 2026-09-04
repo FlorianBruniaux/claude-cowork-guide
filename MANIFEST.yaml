@@ -2,8 +2,8 @@
 # This file enables future separation into standalone repository
 
 name: claude-cowork-guide
-version: "1.5.0"
-description: Complete documentation for Claude Cowork - agentic desktop for knowledge workers
+version: "1.12.0"
+description: Community documentation for Claude Cowork, with practical workflows for knowledge workers
 
 # Relationship to parent repo
 upstream:
@@ -21,13 +21,15 @@ personas:
   - operations-teams
   - non-technical-professionals
 
-# Product status
-status: research-preview
+# Product availability changes by surface and feature. Verify against Anthropic
+# before publishing a time-sensitive claim.
+status: availability-varies-by-surface
 availability:
-  subscription: pro-and-max  # Pro $20/mo, Max $100-200/mo
-  platform: macos-and-windows  # Windows added Feb 10, 2026; Linux not announced
-  released: 2026-01
-  usage_limits: resets-every-5h  # Pro ~1-1.5h intensive, Max 5x-20x Pro
+  subscription: paid-claude-plans  # Pro, Max, Team, Enterprise; availability varies by surface
+  platform: macos-windows-linux-beta
+  web_and_mobile: beta-on-eligible-plans
+  computer_use: research-preview-on-eligible-plans
+  source: https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork
 
 # Documentation structure
 structure:
@@ -99,12 +101,12 @@ structure:
 # Content metadata
 metadata:
   language: en
-  last_updated: 2026-02-28
-  maintainer: claude-code-ultimate-guide contributors
+  last_updated: 2026-09-04
+  maintainer: Florian BRUNIAUX
   license: CC-BY-SA-4.0
-  total_files: 36
+  total_files: 66
   total_prompts: 70
-  total_workflows: 28
+  total_workflows: 29
   features_v140:
     - "Windows support (Feb 10, 2026)"
     - "11 official plugins (Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack)"

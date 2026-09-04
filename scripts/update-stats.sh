@@ -29,10 +29,14 @@ echo
 
 # Count prompts per category
 echo -e "${BLUE}Counting prompts...${NC}"
-FILE_OPS_COUNT=$(grep -c '^###' "$COWORK_ROOT/prompts/file-ops.md" 2>/dev/null || echo "0")
-DOC_CREATE_COUNT=$(grep -c '^###' "$COWORK_ROOT/prompts/document-creation.md" 2>/dev/null || echo "0")
-DATA_EXTRACT_COUNT=$(grep -c '^###' "$COWORK_ROOT/prompts/data-extraction.md" 2>/dev/null || echo "0")
-RESEARCH_COUNT=$(grep -c '^###' "$COWORK_ROOT/prompts/research.md" 2>/dev/null || echo "0")
+count_numbered_prompts() {
+    grep -Ec '^### [0-9]+\. ' "$1" 2>/dev/null || true
+}
+
+FILE_OPS_COUNT=$(count_numbered_prompts "$COWORK_ROOT/prompts/file-ops.md")
+DOC_CREATE_COUNT=$(count_numbered_prompts "$COWORK_ROOT/prompts/document-creation.md")
+DATA_EXTRACT_COUNT=$(count_numbered_prompts "$COWORK_ROOT/prompts/data-extraction.md")
+RESEARCH_COUNT=$(count_numbered_prompts "$COWORK_ROOT/prompts/research.md")
 
 TOTAL_PROMPTS=$((FILE_OPS_COUNT + DOC_CREATE_COUNT + DATA_EXTRACT_COUNT + RESEARCH_COUNT))
 
@@ -68,7 +72,12 @@ echo
 
 if [[ "$CHECK_ONLY" == true ]]; then
     echo "=== Check Only Mode ==="
-    echo "No files modified. Run without --check to update README.md"
+    declared_total=$(grep -Eo 'Ready-to-use prompts</strong> \([0-9]+\)' "$COWORK_ROOT/README.md" | grep -Eo '[0-9]+' || true)
+    if [[ "$declared_total" != "$TOTAL_PROMPTS" ]]; then
+        echo "ERROR: README.md declares ${declared_total:-missing} prompts; counted $TOTAL_PROMPTS" >&2
+        exit 1
+    fi
+    echo "No files modified. README.md declares $TOTAL_PROMPTS prompts."
     exit 0
 fi
 

@@ -15,14 +15,14 @@
 | **Utilisateur cible** | Développeurs | Travailleurs du savoir | Tout le monde |
 | **Interface** | Terminal/CLI | App desktop | Chat web |
 | **Usage principal** | Développement logiciel | Manipulation de fichiers | Conversations |
-| **Exécuter du code** | ✅ Shell complet | ❌ Non | ❌ Non |
+| **Exécuter du code** | ✅ Shell complet | ✅ Environnement de tâche isolé | ❌ Non |
 | **Accès fichiers** | Système complet | Sandbox dossier | Upload uniquement |
 | **Créer des fichiers** | Tout type | Office, PDF, texte | Aucun |
 | **Accès web** | Via outils | Intégration Chrome | Recherche in-chat |
 | **Mémoire** | Fichiers CLAUDE.md | Via fichiers | Connaissance projet |
-| **Maturité** | Production | Preview recherche | Production |
-| **Plateforme** | macOS, Linux, Windows | macOS + Windows | Tous (web) |
-| **Abonnement** | Inclus dans Team plan | Pro/Max (20-200$/mois) | Tous les tiers |
+| **Maturité** | Varie selon la fonction | Varie selon la surface ; utilisation de l'ordinateur en preview recherche | Varie selon le plan et la fonction |
+| **Plateforme** | Vérifier le support produit actuel | macOS et Windows ; Linux bêta ; web/mobile bêta sur plans éligibles | Web |
+| **Abonnement** | Vérifier les informations de plan actuelles | Plans Claude payants ; selon la surface | Vérifier les informations de plan actuelles |
 | **Docs sécurité** | Complètes | Pas encore | Standard |
 
 ---
@@ -194,12 +194,11 @@ De quoi avez-vous besoin ?
 │   └─ Oui → Projects
 │
 ├─ Besoin sur mobile ?
-│   └─ Oui → Projects (web)
+│   └─ Oui → Vérifier si la bêta Cowork mobile est disponible pour votre plan éligible
 │
-├─ Contrainte budget ?
-│   ├─ Avez Pro (20$/mois) ou Max (100-200$/mois) ?
-│   │   └─ Oui → Cowork disponible (Pro: usage léger; Max: usage intensif)
-│   └─ Non → Projects ou Claude Code (basé usage)
+├─ Besoin d'accès Cowork ?
+│   ├─ Confirmer l'éligibilité du plan payant et de la surface
+│   └─ Si indisponible → utiliser l'interface Claude disponible avec le plan
 │
 └─ Pas sûr ?
     └─ Commencer avec Projects, évoluer selon besoins
@@ -246,22 +245,15 @@ De quoi avez-vous besoin ?
 
 ---
 
-## Comparaison tarifaire
+## Tarification et accès
 
-| Produit | Modèle coût | Coût typique |
+| Produit | Modèle d'accès | Vérification |
 |---------|-------------|--------------|
-| **Claude Code** | Basé usage (API) | Variable, 10-100+$/mois |
-| **Cowork** | Abonnement Pro ou Max | 20-200$/mois |
-| **Projects** | Tous les tiers | Gratuit - 20+$/mois |
+| **Claude Code** | Dépend du plan et du produit | Consulter les informations Anthropic actuelles |
+| **Cowork** | Plans Claude payants, selon la surface | Vérifier le guide de disponibilité actuel |
+| **Projects** | Dépend du plan et du produit | Consulter les informations Anthropic actuelles |
 
-### Décision coût
-
-| Budget | Recommandation |
-|--------|----------------|
-| Gratuit/minimal | Projects uniquement |
-| 20$/mois | Pro: Cowork (usage léger) + Projects |
-| 50-100$/mois | Claude Code (basé usage) |
-| 100-200$/mois | Max: Tous produits + usage Cowork étendu |
+N'utilisez pas les prix, quotas ou ratios historiques de ce dépôt pour une décision d'achat. Confirmez le plan et la surface actuels dans la documentation Anthropic.
 
 ---
 
@@ -296,8 +288,8 @@ Quand migrer :
 |----------------|------|--------|----------|
 | **Disponible maintenant** | ✅ | ⚠️ Preview recherche | ✅ |
 | **Windows** | ✅ | ✅ (depuis 10 fév 2026) | ✅ |
-| **Linux** | ✅ | ❌ (non annoncé) | ✅ |
-| **Enterprise** | ✅ | ❌ (inconnu) | ✅ |
+| **Linux** | Vérifier le support produit actuel | Bêta | Web |
+| **Enterprise** | Vérifier le support produit actuel | Vérifier la disponibilité du plan | Vérifier le support produit actuel |
 | **Fonctions équipe** | ⚠️ Limité | ❌ | ✅ |
 
 ---
@@ -458,7 +450,7 @@ Comment Cowork se compare aux autres assistants desktop IA ?
 | Besoin contexte 1M+ | Gemini Advanced | Plus grande fenêtre contexte |
 | Confidentialité non négociable | Apple Intelligence | Sur appareil uniquement |
 | Besoin multi-plateforme | ChatGPT | Fonctionne partout |
-| Sur Linux | Copilot ou ChatGPT | Cowork non disponible sur Linux |
+| Sur Linux | Cowork bêta ou autre surface Claude disponible | Vérifier l'installation et l'éligibilité actuelles |
 | Tier gratuit uniquement | ChatGPT ou Gemini | Cowork nécessite abonnement payant |
 
 ### Alternatives open-source
@@ -485,7 +477,7 @@ Pour **utilisateurs non techniques** : Considérez uniquement **different-ai/ope
 
 Pour **développeurs** : L'openwork de LangChain (`npx openwork`) est le plus rapide à installer. Kuse_cowork offre la meilleure sécurité via isolation Docker.
 
-Pour **tous les autres** : Restez avec Cowork officiel. Le coût de 20$/mois inclut support, mises à jour sécurité, et un produit fiable. Les alternatives open-source sont encore de qualité alpha/beta et peuvent avoir des bugs ou être abandonnées.
+Pour **tous les autres** : Préférez le produit officiel s'il répond aux exigences de plan, de surface et de permission. Vérifiez le prix et la disponibilité directement auprès d'Anthropic ; les alternatives open-source exigent toujours une revue de sécurité indépendante.
 
 ---
 
@@ -499,8 +491,8 @@ Pour **tous les autres** : Restez avec Cowork officiel. Le coût de 20$/mois inc
 | Budget serré | Projects |
 | Budget critique mais peut gérer config | different-ai/openwork (open-source) |
 | Besoin création fichiers | Cowork |
-| Besoin exécution code | Claude Code |
-| Sur Linux | Claude Code ou Projects |
+| Besoin de shell contrôlé par un développeur | Claude Code |
+| Sur Linux | Cowork bêta ou autre surface Claude disponible |
 | Besoin raisonnement/itération | Chat (Projects) |
 | Besoin traitement fichiers masse | Cowork |
 | Besoin meilleur OCR | Microsoft Copilot |

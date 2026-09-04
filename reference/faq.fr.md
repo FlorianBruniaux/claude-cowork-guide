@@ -13,27 +13,22 @@
 
 ### Q: Comment obtenir l'accès à Cowork ?
 **R:** Vous avez besoin de :
-1. Un abonnement Pro (20$/mois) ou Max (100-200$/mois)
-2. macOS ou Windows (Linux non annoncé)
-3. L'application Claude Desktop (dernière version)
-4. Activer dans Réglages → Fonctionnalités
+1. Un plan Claude payant éligible. L'éligibilité dépend du plan et de la surface.
+2. Claude Desktop sur macOS ou Windows, ou Linux en bêta. Le web et le mobile sont en bêta pour les plans éligibles.
+3. L'application Claude ou la surface web/mobile actuelle de votre plan.
+
+Vérifiez le [guide officiel de disponibilité](https://support.claude.com/en/articles/13345190-get-started-with-cowork) et le [guide des surfaces](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile) avant de changer d'abonnement.
 
 ### Q: Quelles sont les limites d'usage ?
-**R:** L'usage se réinitialise toutes les 5 heures, pas quotidiennement/mensuellement. Tier Pro : ~45 messages courts par réinitialisation (~1-1,5 heures d'utilisation intensive). Tier Max : 5x ou 20x la limite Pro. Les tâches d'organisation de fichiers et de traitement de documents consomment rapidement les tokens, planifiez en conséquence.
+**R:** L'usage dépend du plan, de la surface et de la tâche. Anthropic peut modifier les limites : consultez les informations de plan actuelles dans Claude plutôt qu'un nombre fixe de messages ou une cadence de réinitialisation.
 
 ### Q: Claude Cowork est-il disponible sur Windows ?
-**R:** Oui ! Le support Windows a été ajouté le 10 février 2026. Cowork fonctionne maintenant sur macOS et Windows. **Linux** n'a aucune annonce officielle.
-
-**Distinction importante :**
-- **Claude Desktop** sur Linux : Des solutions communautaires existent (NixOS Flake est la plus fiable, aussi paquets Debian, AUR)
-- **Cowork** sur Linux : AUCUNE solution. Cowork nécessite des API système spécifiques à l'OS pour l'utilisation de l'ordinateur qui n'ont pas d'équivalent Linux
-
-Si vous avez besoin de capacités agentiques sur Linux, utilisez **Claude Code** (support natif) au lieu de Cowork.
+**R:** Oui. Claude Desktop prend en charge macOS et Windows, et Linux est en bêta. Cowork est aussi en bêta sur le web et le mobile pour les plans éligibles. Consultez le [guide d'installation desktop](https://support.claude.com/en/articles/10065433-install-claude-desktop) et le [guide de disponibilité des surfaces](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile).
 
 ### Q: Est-ce que Cowork est la même chose que Claude Code ?
 **R:** Ils partagent l'architecture mais diffèrent dans l'interface et les capacités :
 - **Claude Code** : Interface terminal, accès shell complet, pour développeurs
-- **Cowork** : Application desktop, accès fichiers uniquement, pour travailleurs du savoir
+- **Cowork** : espace de tâches pour le travail intellectuel, avec fonctions locales, navigateur et connecteurs selon la surface et les permissions
 
 Voir [comparaison complète](comparison.fr.md).
 
@@ -52,21 +47,20 @@ Voir [comparaison complète](comparison.fr.md).
 
 ### Q: Que ne peut pas faire Cowork ?
 **R:** Cowork ne peut pas :
-- Exécuter du code ou des scripts
-- Faire des appels API
-- Accéder directement au stockage cloud (Google Drive, Dropbox)
-- Traiter de l'audio ou de la vidéo
-- Décrypter des fichiers chiffrés
-- Accéder aux ressources réseau (sauf via Chrome)
+- S'accorder un accès shell hôte sans restriction
+- Contourner les permissions, l'éligibilité du plan ou la disponibilité d'une fonction
+- Considérer un connecteur configuré comme un accès universel à tout service cloud
+
+Cowork peut exécuter du code dans un environnement de tâche isolé. Les fonctions navigateur et connecteurs ne sont disponibles que si la surface et les permissions concernées l'autorisent.
 
 ### Q: Est-ce que Cowork peut naviguer sur le web ?
 **R:** Oui, via l'intégration Chrome. Vous accordez l'accès Chrome pour des tâches spécifiques, et Cowork peut rechercher, lire des pages et extraire des informations. Le remplissage de formulaires est limité et nécessite une approbation explicite de l'utilisateur pour chaque action. Les achats et connexions sont interdits pour des raisons de sécurité.
 
 ### Q: Est-ce que Cowork peut accéder à Google Drive ou Dropbox ?
-**R:** Connecteurs expérimentaux disponibles mais non fiables. Les connecteurs Gmail et Drive existent mais ont une authentification et une complétion de tâches incohérentes. Solution de contournement recommandée : Téléchargez d'abord les fichiers cloud dans votre espace de travail local pour un traitement fiable.
+**R:** La disponibilité dépend de la surface, du connecteur et des permissions accordées. Vérifiez la connexion dans Claude avant un workflow critique. Télécharger une copie dans un espace de travail local dédié reste une solution de repli utile lorsqu'un connecteur est indisponible.
 
 ### Q: Est-ce que Cowork peut exécuter des scripts Python ou shell ?
-**R:** Non. Cowork manipule uniquement les fichiers. Il ne peut pas exécuter de code. Utilisez Claude Code pour l'exécution de code.
+**R:** Cowork peut exécuter du code dans un environnement de tâche isolé. Ce n'est pas un accès shell arbitraire à votre ordinateur. Utilisez Claude Code si la tâche nécessite un terminal ou un dépôt contrôlé par un développeur.
 
 ### Q: Quels formats de fichiers Cowork peut-il créer ?
 **R:**
@@ -159,7 +153,7 @@ Voir le [workflow Automatisation Planifiée](../workflows/scheduled-automation.m
 ## Sécurité
 
 ### Q: Est-ce que Cowork est sécurisé ?
-**R:** Des contrôles de sécurité enterprise ont été lancés avec la GA le 9 avril 2026 : contrôle d'accès par rôle, analytics d'utilisation et OpenTelemetry. Voir le [Guide de Sécurité](../guide/03-security.fr.md) pour les détails complets.
+**R:** Les contrôles de sécurité et d'administration dépendent du plan et de la documentation Anthropic actuelle. Ce guide ne considère pas une affirmation GA historique comme preuve qu'un contrôle est disponible. Voir le [Guide de Sécurité](../guide/03-security.fr.md) et vérifier la documentation officielle avant un déploiement réglementé.
 
 ### Q: Est-ce que Cowork peut accéder à tous mes fichiers ?
 **R:** Uniquement les dossiers auxquels vous accordez explicitement l'accès. Bonne pratique : créez un dossier dédié `~/Cowork-Workspace/` et accordez l'accès uniquement là.
@@ -248,15 +242,13 @@ Depuis juillet 2026, la bêta Cowork web et mobile (plan Max, déploiement progr
 ## Tarification & Accès
 
 ### Q: Combien coûte Cowork ?
-**R:** Nécessite un abonnement Pro (20$/mois) ou Max (100-200$/mois). Pro est disponible maintenant mais a des limites d'usage plus strictes, recommandé pour usage léger uniquement.
+**R:** Cowork est disponible sur les plans Claude payants, selon le plan et la surface. Consultez les informations Anthropic actuelles pour le prix et l'accès.
 
 ### Q: Pro ou Max : lequel choisir ?
-**R:**
-- **Pro (20$/mois)** : Usage occasionnel, organisation légère de fichiers, petits lots. Le quota s'épuise en ~1-1,5 heures d'utilisation intensive.
-- **Max (100-200$/mois)** : Usage quotidien lourd, traitement de gros lots, workflows intensifs en documents. 5x-20x plus d'usage que Pro.
+**R:** Choisissez un plan à partir des informations actuelles d'Anthropic, selon la surface et l'usage nécessaires. N'utilisez pas les prix ou ratios de quota historiques de ce guide pour une décision d'achat.
 
 ### Q: Y a-t-il une limite d'usage avec Cowork ?
-**R:** Oui. L'usage se réinitialise toutes les 5 heures (pas quotidiennement/mensuellement). Avec Opus 4.7, la fenêtre de contexte est de jusqu'à 1M de tokens par session. Les tâches lourdes (traitement de fichiers, OCR) consomment les tokens plus rapidement que le chat.
+**R:** Oui, mais la limite dépend du plan et de la tâche. Confirmez-la dans Claude ou dans la documentation du plan avant un gros lot.
 
 ---
 
@@ -316,20 +308,13 @@ La compaction de contexte (beta) étend encore la durée effective des sessions 
 ## Futur
 
 ### Q: Est-ce que Cowork est toujours en beta ?
-**R:** **Non. Cowork est en disponibilité générale (GA) depuis le 9 avril 2026.** Disponible sur les plans Pro, Max, Team et Enterprise pour macOS et Windows. Les contrôles enterprise (accès par rôle, analytics d'utilisation, OpenTelemetry) ont été lancés simultanément. Certaines fonctionnalités restent en preview recherche (Computer Use, Dispatch), mais Cowork lui-même est prêt pour la production. Signalez les bugs via le feedback intégré à l'application.
+**R:** N'appliquez pas une étiquette bêta ou GA globale à toutes les fonctions Cowork. La disponibilité dépend de la surface et du plan ; l'utilisation de l'ordinateur reste une preview recherche pour les plans éligibles. Consultez les guides actuels de [disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-cowork) et d'[utilisation de l'ordinateur](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork).
 
 ### Q: Quelles fonctionnalités arrivent ?
-**R:** Ajouts récents (depuis le lancement GA, avril 2026) :
-- Opus 4.7 (16 avril 2026)
-- Claude Design (17 avril 2026)
-- Creative Connectors (28 avril 2026)
-- Claude for Small Business (13 mai 2026)
-- Add-ins Office Outlook beta (7 mai 2026)
-
-Toujours non annoncé : support Linux.
+**R:** La disponibilité produit évolue. Linux est actuellement en bêta pour Claude Desktop. Utilisez les notes de version et la documentation Anthropic plutôt que cette FAQ pour les annonces futures.
 
 ### Q: Y aura-t-il une API pour Cowork ?
-**R:** Inconnu. Actuellement Cowork est desktop uniquement sans interface d'automatisation.
+**R:** UNKNOWN. Ce guide ne formule aucun engagement de feuille de route pour une API Cowork. Cowork n'est pas uniquement desktop : le web et le mobile sont en bêta sur les plans éligibles.
 
 ### Q: Dois-je m'attendre à des changements majeurs ?
 **R:** Oui. Les previews recherche d'Anthropic ont des patterns de stabilité faibles :

@@ -26,12 +26,12 @@ Imaginez un assistant de bureau très compétent qui :
 
 | Aspect | Détails |
 |--------|---------|
-| **Publication** | Disponibilité générale (GA), 9 avril 2026 |
-| **Disponibilité** | Abonnés Pro, Max, Team et Enterprise |
-| **Plateforme** | macOS et Windows (Linux non annoncé) |
-| **Développement** | ~90% écrit par Claude lui-même ([source](https://claude.com/download)) |
+| **Disponibilité** | Plans Claude payants, selon le plan et la surface ([guide officiel](https://support.claude.com/en/articles/13345190-get-started-with-cowork)) |
+| **Plateforme desktop** | macOS et Windows, Linux en bêta ([guide d'installation](https://support.claude.com/en/articles/10065433-install-claude-desktop)) |
+| **Web et mobile** | Bêta sur les plans éligibles ([guide des surfaces](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile)) |
+| **Utilisation de l'ordinateur** | Preview recherche sur les plans éligibles, pas un statut global ([guide officiel](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork)) |
 | **Focus** | Manipulation de fichiers, organisation, génération de documents |
-| **Limites d'usage** | Doublées en mai 2026 (partenariat SpaceX) ; réinitialisé toutes les 5 heures ; restrictions heures de pointe supprimées pour Pro et Max |
+| **Limites d'usage** | Varient selon le plan et la tâche ; vérifier les informations de plan avant de s'appuyer sur un quota |
 
 ### Relation avec Claude Code
 
@@ -40,11 +40,11 @@ Cowork partage la même architecture backend que Claude Code :
 | Partagé | Différent |
 |---------|-----------|
 | Mêmes capacités du modèle | Application bureau vs Terminal |
-| Pensée étendue | Fichiers uniquement vs ligne de commande complète |
+| Pensée étendue | Espace desktop vs workflow terminal pour développeurs |
 | Boucles agentiques | Travailleurs du savoir vs développeurs |
-| Architecture de sous-agents | Pas d'exécution de code |
+| Exécution de tâche | Environnement isolé vs shell développeur |
 
-**Différence clé** : Cowork ne peut pas exécuter du code arbitraire. Il manipule uniquement des fichiers.
+**Différence clé** : Cowork peut exécuter du code dans un environnement de tâche isolé. Cela ne donne pas un accès shell arbitraire à l'ordinateur hôte. Utilisez Claude Code pour un workflow terminal contrôlé par un développeur.
 
 ---
 
@@ -66,11 +66,10 @@ Cowork partage la même architecture backend que Claude Code :
 | Persona | Limitation | Alternative |
 |---------|------------|-------------|
 | **Workflows très réglementés** | Les Audit Logs ne capturent pas l'activité Cowork (limitation confirmée Anthropic) | Consulter les [Considérations Enterprise](03-security.fr.md#considérations-entreprise) avant usage |
-| **Gros utilisateurs cloud** | Pas de Google Drive/Dropbox confirmé | Utiliser les apps cloud natives |
-| **Besoin d'exécution de code** | Fichiers uniquement, pas de scripts | Utiliser Claude Code |
-| **Utilisateurs Linux** | macOS et Windows uniquement (Linux non annoncé) | Attendre l'expansion de plateforme |
-| **Utilisateurs intensifs quotidiens** | Limites d'usage réinitialisées toutes les 5h ; Pro épuisé en ~1-1.5h d'utilisation intensive | Considérer le tier Max ou travailler par lots |
-| **Utilisateurs VPN** | **Ne peut pas fonctionner avec VPN actif** (conflit de routage VM) | Déconnecter le VPN ou utiliser Claude Code |
+| **Workflows cloud ou navigateur** | L'accès dépend du desktop connecté, des permissions et des connecteurs configurés | Vérifier l'accès sur la surface actuelle avant de démarrer |
+| **Besoin de shell hôte** | Le code de tâche isolé n'est pas un shell hôte sans restriction | Utiliser Claude Code pour un workflow terminal |
+| **Utilisateurs Linux** | La disponibilité Linux est en bêta | Vérifier le guide d'installation desktop à jour |
+| **Utilisateurs intensifs quotidiens** | L'usage varie selon le plan et la tâche | Vérifier les limites du plan et traiter par lots vérifiables |
 
 ---
 
@@ -175,8 +174,8 @@ Pensez à Cowork comme un **artisan qualifié travaillant dans son propre atelie
 
 **Ce qu'il ne peut PAS faire :**
 - Sortir de son atelier pour aller chercher des fichiers ailleurs sur votre ordinateur
-- Exécuter des programmes ou scripts (programmes automatisés) (ce n'est pas un développeur)
-- Se connecter à Internet directement (sauf si vous lui donnez accès à votre navigateur)
+- Exécuter du code de tâche dans un environnement isolé, mais pas un shell hôte sans restriction
+- Utiliser les fonctions navigateur et connecteurs prises en charge lorsqu'elles sont disponibles et autorisées
 
 **Pourquoi cette limite ?** C'est une sécurité volontaire. Comme un atelier avec une seule porte, vous contrôlez exactement ce qui entre et ce qui sort. Cette contrainte crée un espace de travail isolé (sandbox) sûr pour laisser Claude travailler de façon autonome.
 
@@ -184,7 +183,7 @@ Pensez à Cowork comme un **artisan qualifié travaillant dans son propre atelie
 
 ## Validation enterprise (Adoption de Claude)
 
-Cowork étant désormais en disponibilité générale (GA depuis le 9 avril 2026), les capacités sous-jacentes de Claude sont validées à l'échelle enterprise :
+Les chiffres suivants concernent Claude en général, pas Cowork. Ils ne prouvent ni un statut produit Cowork ni des contrôles enterprise propres à Cowork :
 
 | Entreprise | Résultats | Contexte |
 |------------|-----------|----------|
@@ -197,7 +196,7 @@ Cowork étant désormais en disponibilité générale (GA depuis le 9 avril 2026
 **Ce que cela signifie pour vous** :
 - Le modèle IA fonctionne de manière fiable à l'échelle enterprise
 - La compréhension et génération de documents sont prêtes pour la production
-- Les contrôles enterprise (contrôle d'accès par rôle, analytics, OpenTelemetry) ont été lancés avec le GA le 9 avril 2026
+- Vérifier les contrôles enterprise propres au plan dans la documentation Anthropic avant un déploiement réglementé
 
 ---
 

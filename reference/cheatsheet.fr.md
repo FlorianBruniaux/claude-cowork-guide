@@ -277,4 +277,4 @@ La compaction de contexte (beta) étend la durée effective des sessions. Limite
 
 ---
 
-*Cowork v1.9.0 (GA, 9 avril 2026) | Partie de Claude Cowork Guide*
+*Claude Cowork Guide v1.12.0 | La disponibilité varie selon le plan, la surface et la fonction*

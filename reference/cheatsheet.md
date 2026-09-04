@@ -277,4 +277,4 @@ Context compaction (beta) extends effective session length. Hit limit? → Break
 
 ---
 
-*Cowork v1.9.0 (GA, April 9, 2026) | Part of Claude Cowork Guide*
+*Claude Cowork Guide v1.12.0 | Availability varies by plan, surface and capability*

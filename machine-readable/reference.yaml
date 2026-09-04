@@ -5,7 +5,7 @@
 
 version: "1.12.0"
 updated: "2026-07-22"
-status: "research-preview"
+status: "availability-varies-by-surface"
 
 # ════════════════════════════════════════════════════════════════
 # CORE DOCUMENTATION - File paths for detailed info
@@ -23,7 +23,7 @@ docs:
   glossary: "reference/glossary.md"
 
 # ════════════════════════════════════════════════════════════════
-# PROMPTS LIBRARY (70 ready-to-use)
+# PROMPTS LIBRARY (70 numbered ready-to-use prompts)
 # ════════════════════════════════════════════════════════════════
 prompts:
   file_ops: "prompts/file-ops.md"  # 20 prompts
@@ -33,7 +33,7 @@ prompts:
   # FR versions mirror same structure with .fr.md suffix
 
 # ════════════════════════════════════════════════════════════════
-# WORKFLOWS (28 step-by-step guides)
+# WORKFLOWS (29 step-by-step guides)
 # ════════════════════════════════════════════════════════════════
 workflows:
   # Administrative (6)
@@ -74,14 +74,11 @@ workflows:
 # QUICK REFERENCE - Essential facts
 # ════════════════════════════════════════════════════════════════
 essentials:
-  what: "Agentic desktop feature for knowledge workers - file manipulation without code"
-  platform: "macOS and Windows (since Feb 10, 2026; Linux not announced)"
-  subscription: "Pro ($17/mo annual, ~$20/mo monthly) or Max ($100-200/mo) - both have access"
-  usage_limits: "Resets every 5 hours; Free ~9, Pro ~45, Max5x ~225, Max20x ~900 messages per window"
-  context: "1M tokens beta (Opus 4.6), previously ~200K; context compaction extends sessions"
-  output_tokens: "128K (Opus 4.6)"
-  vpn_compatible: "NO - #1 issue, VM routing conflict"
-  model: "Opus 4.6 with adaptive thinking (4 effort levels)"
+  what: "Task-oriented Claude workspace for knowledge work, local files and configured connectors"
+  availability: "Paid Claude plans; eligibility varies by plan and surface"
+  platform: "Claude Desktop on macOS and Windows; Linux beta; web and mobile beta on eligible plans"
+  computer_use: "Research preview on eligible plans"
+  source: "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork"
 
 # ════════════════════════════════════════════════════════════════
 # CAN DO / CANNOT DO
@@ -90,24 +87,15 @@ capabilities:
   can_do:
     - "Read/write local files in sandbox"
     - "Create Office docs (Word, Excel, PowerPoint)"
-    - "Extract data from images (OCR)"
+    - "Extract data from images and documents, subject to user verification"
     - "Organize folders/files"
-    - "Web research via Chrome (improved browser automation)"
+    - "Use configured connectors and browser tools where available"
     - "Generate PDFs"
-    - "11 official plugins (Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack)"
-    - "Scheduled tasks (recurring automation)"
-    - "Agent Teams (research preview - multi-agent coordination)"
-    - "Context compaction (beta - longer sessions)"
-    - "Direct Excel and PowerPoint integrations"
-    - "Desktop Commander (cross-session memory + advanced file ops)"
-  cannot_do:
-    - "Execute code or scripts"
-    - "Make API calls (except via plugins)"
-    - "Access cloud storage directly (except Google Drive plugin)"
-    - "Process audio/video"
-    - "Work with VPN active"
-    - "Run on Linux"
-    - "Operate in background"
+    - "Execute task code in an isolated environment"
+  boundaries:
+    - "Local file, browser and computer access require a connected Claude Desktop app and granted access when the task needs the local computer"
+    - "Connectors, schedules and cross-device continuation vary by surface and plan"
+    - "Isolated task execution is not unrestricted access to the host filesystem or host shell"
 
 # ════════════════════════════════════════════════════════════════
 # EXTENSIONS & PLUGINS
@@ -244,7 +232,7 @@ open_source:
   recommendations:
     non_technical: "Only different-ai/openwork (GUI interface)"
     developers: "langchain-ai/openwork (fastest) or kuse_cowork (most secure)"
-    everyone_else: "Stick with official Cowork ($20/mo includes support, updates, reliability)"
+    everyone_else: "Prefer the official product when its current plan, surface and permissions fit the task"
   maturity: "All projects are alpha/beta quality (2026-01) - expect bugs and potential abandonment"
 
 # ════════════════════════════════════════════════════════════════
@@ -261,21 +249,17 @@ enterprise:
 # ════════════════════════════════════════════════════════════════
 limitations:
   environment:
-    - "VPN incompatible (VM routing conflict)"
-    - "macOS and Windows only (Linux not announced)"
-    - "Requires app foreground (no background operation)"
-    - "Session persistence improved via context compaction (beta)"
+    - "Availability varies by plan and surface"
+    - "Claude Desktop supports macOS and Windows; Linux is beta"
+    - "Web and mobile Cowork access is beta on eligible plans"
+    - "Computer use is research preview on eligible plans"
   technical:
-    - "No code execution"
-    - "No API calls (except via plugins)"
-    - "No cloud storage direct access (except Google Drive plugin)"
-    - "No audio/video processing"
-    - "1M context beta, effective limit depends on task complexity"
+    - "Task code runs in an isolated environment, not an unrestricted host shell"
+    - "Browser and connector access depends on the current surface and permissions"
+    - "Do not infer support for a cloud service from another connector"
   workflow:
-    - "Pro tier exhausts in ~1-1.5h intensive use"
-    - "Usage resets every 5 hours (not daily)"
-    - "No cross-session memory (Desktop Commander + memory-setup workflow solves this)"
-    - "Connector reliability inconsistent"
+    - "Usage limits vary by plan and task; verify current limits before a large batch"
+    - "Review permissions and outputs before critical actions"
 
 # ════════════════════════════════════════════════════════════════
 # DECISION FLOWCHART
@@ -290,12 +274,11 @@ decide:
     - "Browser automation tasks"
     - "Recurring scheduled tasks"
   use_alternative_when:
-    - "Need code execution → Claude Code"
+    - "Need a developer-controlled shell → Claude Code"
     - "Need best OCR → Microsoft Copilot"
     - "Need 1M+ context native → Gemini Advanced"
     - "Privacy critical → Apple Intelligence"
-    - "On Linux → Copilot or ChatGPT"
-    - "VPN required → Claude Code"
+    - "On Linux → Cowork beta or another available Claude surface"
     - "Budget critical but can handle setup → different-ai/openwork (open-source)"
 
 # ════════════════════════════════════════════════════════════════

@@ -100,7 +100,7 @@ https://raw.githubusercontent.com/FlorianBruniaux/claude-cowork-guide/main/machi
 ```
 
 **Cet index contient :**
-- Les 28 workflows par catégorie avec leurs chemins de fichiers
+- Les 29 workflows par catégorie avec leurs chemins de fichiers
 - Les 70 prompts par collection
 - Les capacités et limitations
 - Les erreurs courantes et leurs solutions

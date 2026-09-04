@@ -13,27 +13,22 @@
 
 ### Q: How do I get access to Cowork?
 **A:** You need:
-1. A Pro ($20/mo) or Max ($100-200/mo) subscription
-2. macOS or Windows (Linux not announced)
-3. Claude Desktop app (latest version)
-4. Enable in Settings → Features
+1. An eligible paid Claude plan. Eligibility varies by plan and surface.
+2. Claude Desktop on macOS or Windows, or Linux beta. Web and mobile are beta on eligible plans.
+3. The current Claude app or web/mobile surface for your plan.
+
+Check Anthropic's current [Cowork availability guidance](https://support.claude.com/en/articles/13345190-get-started-with-cowork) and [surface guidance](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile) before changing a subscription.
 
 ### Q: What are the usage limits?
-**A:** Usage resets every 5 hours, not daily/monthly. Pro tier: ~45 short messages per reset (~1-1.5 hours intensive use). Max tier: 5x or 20x Pro's limit. File organization and document processing tasks consume tokens rapidly, so budget accordingly.
+**A:** Usage depends on the plan, surface and task. Anthropic can change limits, so consult the current plan information in Claude rather than relying on a fixed message count or reset schedule.
 
 ### Q: Is Claude Cowork available on Windows?
-**A:** Yes! Windows support was added on February 10, 2026. Cowork now runs on both macOS and Windows. **Linux** has no official announcement.
-
-**Important distinction:**
-- **Claude Desktop** on Linux: Community workarounds exist (NixOS Flake is most reliable, also Debian packages, AUR)
-- **Cowork** on Linux: NO workaround. Cowork requires OS-specific system APIs for computer use that have no Linux equivalent
-
-If you need agentic capabilities on Linux, use **Claude Code** (native support) instead of Cowork.
+**A:** Yes. Claude Desktop supports macOS and Windows, and Linux is beta. Cowork is also beta on the web and mobile for eligible plans. See Anthropic's [desktop installation](https://support.claude.com/en/articles/10065433-install-claude-desktop) and [surface availability](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile) guidance.
 
 ### Q: Is Cowork the same as Claude Code?
 **A:** They share architecture but differ in interface and capabilities:
 - **Claude Code**: Terminal interface, full shell access, for developers
-- **Cowork**: Desktop app, file-only access, for knowledge workers
+- **Cowork**: task workspace for knowledge work, with local, browser and connector capabilities that depend on surface and permission
 
 See [full comparison](comparison.md).
 
@@ -52,21 +47,20 @@ See [full comparison](comparison.md).
 
 ### Q: What can't Cowork do?
 **A:** Cowork cannot:
-- Execute code or scripts
-- Make API calls
-- Access cloud storage directly (Google Drive, Dropbox)
-- Process audio or video
-- Decrypt encrypted files
-- Access network resources (except via Chrome)
+- Grant itself unrestricted host-shell access
+- Bypass the permissions, plan eligibility or surface availability of a capability
+- Treat a configured connector as universal access to every cloud service
+
+Cowork can run code in an isolated task environment. Supported browser and connector capabilities are available only when the relevant surface and permissions allow them.
 
 ### Q: Can Cowork browse the web?
 **A:** Yes, through Chrome integration. You grant Chrome access for specific tasks, and Cowork can search, read pages, and extract information. Form filling is limited and requires explicit user approval for each action. Purchases and logins are prohibited for security reasons.
 
 ### Q: Can Cowork access Google Drive or Dropbox?
-**A:** Experimental connectors available but unreliable. Gmail and Drive connectors exist but have inconsistent authentication and task completion. Recommended workaround: Download cloud files to your local workspace first for reliable processing.
+**A:** Connector availability depends on the surface, the connector and the permissions you grant. Confirm the connection in Claude before a critical workflow. Downloading a copy into a dedicated local workspace remains a useful fallback when a connector is unavailable.
 
 ### Q: Can Cowork run Python or shell scripts?
-**A:** No. Cowork manipulates files only. It cannot execute code. Use Claude Code for code execution.
+**A:** Cowork can execute code in an isolated task environment. It is not arbitrary shell access to your computer. Use Claude Code when your task needs a developer-controlled terminal or repository workflow.
 
 ### Q: What file formats can Cowork create?
 **A:**
@@ -159,7 +153,7 @@ See [Scheduled Automation workflow](../workflows/scheduled-automation.md) for co
 ## Security
 
 ### Q: Is Cowork secure?
-**A:** Enterprise-grade security controls launched with GA on April 9, 2026 : role-based access control, usage analytics, and OpenTelemetry. See the [Security Guide](../guide/03-security.md) for full details.
+**A:** Security and administration controls depend on your plan and current Anthropic product documentation. This guide does not treat a historical GA claim as evidence that a particular control is available. See the [Security Guide](../guide/03-security.md) and verify current official documentation before a regulated deployment.
 
 ### Q: Can Cowork access all my files?
 **A:** Only folders you explicitly grant access to. Best practice: create a dedicated `~/Cowork-Workspace/` folder and only grant access there.
@@ -248,15 +242,13 @@ Since July 2026, the Cowork web and mobile beta (Max plan, gradual rollout) remo
 ## Pricing & Access
 
 ### Q: How much does Cowork cost?
-**A:** Requires Pro ($20/month) or Max ($100-200/month) subscription. Pro is available now but has tighter usage limits, recommended for light use only.
+**A:** Cowork is available on paid Claude plans, with eligibility varying by plan and surface. Consult Anthropic's current plan and availability information for pricing and access.
 
 ### Q: Pro or Max: which should I choose?
-**A:**
-- **Pro ($20/mo)**: Occasional use, light file organization, small batches. Quota exhausts in ~1-1.5 hours intensive use.
-- **Max ($100-200/mo)**: Heavy daily use, large batch processing, document-intensive workflows. 5x-20x more usage than Pro.
+**A:** Choose a plan from Anthropic's current plan information based on the surface and usage you need. Do not use the historical prices or quota ratios previously published in this guide as a purchase decision.
 
 ### Q: Is there a usage limit with Cowork?
-**A:** Yes. Usage resets every 5 hours (not daily/monthly). With Opus 4.7, the context window is up to 1M tokens per session. Heavy tasks (file processing, OCR) consume tokens faster than chat.
+**A:** Yes, but the limit is plan- and task-dependent. Confirm the current limit in Claude or Anthropic's plan documentation before scheduling a large batch.
 
 ---
 
@@ -316,20 +308,13 @@ Context compaction (beta) further extends effective session length by compressin
 ## Future
 
 ### Q: Is Cowork still in beta?
-**A:** **No. Cowork is generally available (GA) since April 9, 2026.** Available on Pro, Max, Team, and Enterprise plans for macOS and Windows. Enterprise controls (role-based access, usage analytics, OpenTelemetry) launched simultaneously. Some features remain in research preview (Computer Use, Dispatch), but Cowork itself is production-ready. Report bugs via in-app feedback.
+**A:** Do not apply one global beta or GA label to every Cowork capability. Availability varies by surface and plan; computer use remains a research preview on eligible plans. Check the current [Cowork availability](https://support.claude.com/en/articles/13345190-get-started-with-cowork) and [computer-use guidance](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork).
 
 ### Q: What features are coming?
-**A:** Recent additions (since GA launch, April 2026):
-- Opus 4.7 (Apr 16, 2026)
-- Claude Design (Apr 17, 2026)
-- Creative Connectors (Apr 28, 2026)
-- Claude for Small Business (May 13, 2026)
-- Office add-ins Outlook beta (May 7, 2026)
-
-Still unannounced: Linux support.
+**A:** Product availability changes. Linux is currently beta for Claude Desktop. Use Anthropic's release and support documentation rather than this FAQ for future-feature announcements.
 
 ### Q: Will there be an API for Cowork?
-**A:** Unknown. Currently Cowork is desktop-only with no automation interface.
+**A:** UNKNOWN. This guide does not make a roadmap commitment for a Cowork API. Cowork is not desktop-only: web and mobile access are beta on eligible plans.
 
 ### Q: Should I expect breaking changes?
 **A:** Yes. Anthropic's research previews have low stability patterns:

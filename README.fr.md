@@ -14,7 +14,7 @@
 - [Licence](#-licence)
 
 <p align="center">
-  <strong><a href="https://florianbruniaux.github.io/claude-cowork-guide-landing/index.fr.html">🌐 Site officiel</a></strong>
+  <strong><a href="https://cowork.bruniaux.com/fr/">🌐 Site officiel</a></strong>
 </p>
 
 <p align="center">
@@ -24,10 +24,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Research%20Preview-yellow" alt="Status"/>
-  <img src="https://img.shields.io/badge/Platform-macOS%20%26%20Windows-blue" alt="Platform"/>
-  <img src="https://img.shields.io/badge/Subscription-Pro%20%26%20Max-purple" alt="Subscription"/>
-  <img src="https://img.shields.io/badge/Version-1.5.0-orange" alt="Version"/>
+  <img src="https://img.shields.io/badge/Disponibilit%C3%A9-variable%20selon%20la%20surface-blue" alt="Disponibilité variable selon la surface"/>
+  <img src="https://img.shields.io/badge/Plateforme-macOS%20%7C%20Windows%20%7C%20Linux%20b%C3%AAta-blue" alt="Plateforme : macOS, Windows, Linux bêta"/>
+  <img src="https://img.shields.io/badge/Abonnement-plans%20Claude%20payants-purple" alt="Plans Claude payants"/>
+  <img src="https://img.shields.io/badge/Version-1.12.0-orange" alt="Version"/>
 </p>
 
 > Guide complet de l'assistant desktop de Claude pour les travailleurs du savoir et les petites entreprises.
@@ -55,8 +55,8 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 <details>
 <summary><strong>Prérequis</strong></summary>
 
-- **Abonnement** : Pro (20$/mois) ou Max (100-200$/mois)
-- **Plateforme** : macOS et Windows
+- **Abonnement** : plan Claude payant éligible. La disponibilité varie selon le plan et la surface.
+- **Plateforme** : Claude Desktop sur macOS et Windows, Linux en bêta. L'accès web et mobile est en bêta sur les plans éligibles.
 - **App** : Claude Desktop (dernière version)
 
 </details>
@@ -253,15 +253,11 @@ Cowork envoie les prompts, fichiers et résultats aux serveurs Anthropic.
 <details>
 <summary><strong>Limitations actuelles</strong> (Février 2026)</summary>
 
-**Plateforme** : macOS et Windows
+**Disponibilité** : Cowork est disponible sur les plans Claude payants. Desktop est pris en charge sur macOS et Windows, Linux est en bêta. L'accès web et mobile varie selon le plan éligible.
 
-**Problèmes connus** :
-- VPN incompatible (conflit de routage VM)
-- Utilisation réinitialisée toutes les 5 heures
-- Pro : ~1-1,5h d'utilisation intensive avant limite
-- OCR : ~97% champs, ~63% précision lignes
+**Statut des fonctions** : ne pas employer une étiquette globale bêta ou GA. Certaines fonctions, dont l'utilisation de l'ordinateur, restent en preview recherche sur les plans éligibles.
 
-**Statut** : Research preview (attendez-vous à des bugs)
+**À vérifier avant action** : [disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) et [installation desktop](https://support.claude.com/en/articles/10065433-install-claude-desktop) sont les références produit à jour.
 
 </details>
 
@@ -298,4 +294,4 @@ Sous licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ---
 
-*Version 1.5.0 | Février 2026 | Créé avec Claude*
+*Version 1.12.0 | Créé avec Claude*

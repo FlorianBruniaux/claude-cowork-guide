@@ -14,12 +14,12 @@
 
 | Aspect | Details |
 |--------|---------|
-| **Release** | Generally available (GA), April 9, 2026 |
-| **Availability** | Pro, Max, Team, and Enterprise subscribers |
-| **Platform** | macOS and Windows (Linux not announced) |
-| **Built by** | ~90% written by Claude itself ([source](https://claude.com/download)) |
+| **Availability** | Paid Claude plans; eligibility varies by plan and surface ([official guidance](https://support.claude.com/en/articles/13345190-get-started-with-cowork)) |
+| **Desktop platform** | macOS and Windows; Linux is beta ([installation guidance](https://support.claude.com/en/articles/10065433-install-claude-desktop)) |
+| **Web and mobile** | Beta on eligible plans ([surface guidance](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile)) |
+| **Computer use** | Research preview on eligible plans, not a product-wide status ([official guidance](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork)) |
 | **Focus** | File manipulation, organization, document generation |
-| **Usage limits** | Doubled in May 2026 (SpaceX compute deal); resets every 5 hours; peak hour restrictions removed for Pro and Max |
+| **Usage limits** | Vary by plan and task; check the current plan information before relying on a quota |
 
 
 ### One App for the Whole Team
@@ -46,11 +46,11 @@ Cowork shares the same backend architecture as Claude Code:
 | Shared | Different |
 |--------|-----------|
 | Same model capabilities | Desktop app vs Terminal |
-| Extended thinking | Files only vs full shell |
+| Extended thinking | Desktop workspace vs developer-oriented terminal workflow |
 | Agentic loops | Knowledge workers vs developers |
-| Sub-agent architecture | No code execution |
+| Task execution | Isolated task environment vs developer shell |
 
-**Key difference**: Cowork cannot execute arbitrary code. It manipulates files only.
+**Key difference**: Cowork can run code in an isolated task environment. That does not grant arbitrary shell access to the user's host computer. Use Claude Code when you need a developer-controlled terminal workflow.
 
 ---
 
@@ -72,11 +72,10 @@ Cowork shares the same backend architecture as Claude Code:
 | Persona | Limitation | Alternative |
 |---------|------------|-------------|
 | **Compliance-heavy workflows** | Audit Logs don't capture Cowork activity (confirmed Anthropic limitation) | Review [Enterprise Considerations](03-security.md#enterprise-considerations) before use |
-| **Heavy cloud users** | No Google Drive/Dropbox confirmed | Use native cloud apps |
-| **Code execution needs** | Files only, no scripts | Use Claude Code |
-| **Linux users** | macOS and Windows only (Linux not announced) | Wait for platform expansion |
-| **Heavy daily users** | Usage limits reset every 5h; Pro exhausts in ~1-1.5h intensive use | Consider Max tier or batch work |
-| **VPN users** | **Cannot work with VPN active** (VM routing conflict) | Disconnect VPN or use Claude Code |
+| **Cloud or browser workflows** | Access depends on the connected desktop, permissions and configured connectors | Verify access in the current surface before starting |
+| **Host-shell needs** | Isolated task code is not unrestricted host shell access | Use Claude Code when a terminal workflow is required |
+| **Linux users** | Linux availability is beta | Check the current desktop installation guidance |
+| **Heavy daily users** | Usage varies by plan and task | Check plan limits and split work into reviewable batches |
 
 ---
 
@@ -175,8 +174,8 @@ Think of Cowork as a **highly capable assistant with physical access to one fold
 - Can create new files in any format
 - Can reorganize, rename, transform
 - Cannot leave that folder without permission
-- Cannot run programs or scripts
-- Cannot make network connections directly
+- Can run task code in an isolated environment, not an unrestricted host shell
+- Can use supported browser and connector capabilities when available and permitted
 
 This constraint is a **feature, not a bug**: it creates a safe sandbox for autonomous operation.
 
@@ -184,7 +183,7 @@ This constraint is a **feature, not a bug**: it creates a safe sandbox for auton
 
 ## Enterprise Validation (Claude Adoption)
 
-With Cowork now generally available (GA since April 9, 2026), Claude's underlying capabilities are validated at enterprise scale:
+The following figures concern Claude in general, not Cowork. They do not prove a Cowork-specific product status or enterprise-control claim:
 
 | Company | Results | Context |
 |---------|---------|---------|
@@ -197,7 +196,7 @@ With Cowork now generally available (GA since April 9, 2026), Claude's underlyin
 **What this means for you**:
 - The AI model works reliably at enterprise scale
 - Document understanding and generation are production-ready
-- Enterprise-tier controls (role-based access, analytics, OpenTelemetry) launched with GA on April 9, 2026
+- Verify plan-specific enterprise controls in current Anthropic documentation before a regulated deployment
 
 ---
 

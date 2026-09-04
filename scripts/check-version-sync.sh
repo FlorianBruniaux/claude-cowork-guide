@@ -9,7 +9,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-COWORK_ROOT="$(dirname "$SCRIPT_DIR")"
+COWORK_ROOT="${COWORK_ROOT:-$(dirname "$SCRIPT_DIR")}" # repository root
 
 # Colors for output
 RED='\033[0;31m'
@@ -32,81 +32,41 @@ echo
 
 issues=0
 
-# Check 1: README.md version badge
-echo "1. Checking README.md version badge..."
-README="$COWORK_ROOT/README.md"
-if [[ -f "$README" ]]; then
-    readme_version=$(grep -o 'Version-[0-9.]*-orange' "$README" | head -1 | sed 's/Version-//' | sed 's/-orange//')
-    if [[ "$readme_version" == "$VERSION" ]]; then
-        echo -e "   ${GREEN}✓${NC} README.md badge: $readme_version"
-    else
-        echo -e "   ${RED}✗${NC} README.md badge: $readme_version (expected: $VERSION)"
-        echo "      Fix: Line ~15, update badge to: Version-$VERSION-orange"
-        ((issues++))
-    fi
-else
-    echo -e "   ${YELLOW}⚠${NC}  README.md not found"
-fi
+check_consumer() {
+    local label="$1"
+    local path="$2"
+    local pattern="$3"
+    local actual
 
-# Check 2: README.md footer
-echo "2. Checking README.md footer..."
-if [[ -f "$README" ]]; then
-    footer_version=$(grep -o 'Version [0-9.]*' "$README" | tail -1 | sed 's/Version //')
-    if [[ "$footer_version" == "$VERSION" ]]; then
-        echo -e "   ${GREEN}✓${NC} README.md footer: $footer_version"
-    else
-        echo -e "   ${RED}✗${NC} README.md footer: $footer_version (expected: $VERSION)"
-        echo "      Fix: Last line, update to: Version $VERSION"
-        ((issues++))
+    if [[ ! -f "$path" ]]; then
+        echo -e "   ${RED}✗${NC} $label: file not found ($path)"
+        issues=$((issues + 1))
+        return
     fi
-fi
 
-# Check 3: CHANGELOG.md latest version
-echo "3. Checking CHANGELOG.md..."
-CHANGELOG="$COWORK_ROOT/CHANGELOG.md"
-if [[ -f "$CHANGELOG" ]]; then
-    changelog_version=$(grep -o '^## \[[0-9][0-9.]*\]' "$CHANGELOG" | head -1 | sed 's/^## //' | tr -d '[]')
-    if [[ "$changelog_version" == "$VERSION" ]]; then
-        echo -e "   ${GREEN}✓${NC} CHANGELOG.md latest: $changelog_version"
+    actual=$(grep -Eo "$pattern" "$path" | head -1 | grep -Eo '[0-9]+(\.[0-9]+)+' || true)
+    if [[ "$actual" == "$VERSION" ]]; then
+        echo -e "   ${GREEN}✓${NC} $label: $actual"
     else
-        echo -e "   ${RED}✗${NC} CHANGELOG.md latest: $changelog_version (expected: $VERSION)"
-        echo "      Fix: Line ~9, ensure ## [$VERSION] exists as latest release"
-        ((issues++))
+        echo -e "   ${RED}✗${NC} $label: ${actual:-missing} (expected: $VERSION)"
+        issues=$((issues + 1))
     fi
-else
-    echo -e "   ${YELLOW}⚠${NC}  CHANGELOG.md not found"
-fi
+}
 
-# Check 4: reference.yaml version
-echo "4. Checking machine-readable/reference.yaml..."
-REFERENCE="$COWORK_ROOT/machine-readable/reference.yaml"
-if [[ -f "$REFERENCE" ]]; then
-    reference_version=$(grep '^version:' "$REFERENCE" | head -1 | sed 's/version: *//' | tr -d '"')
-    if [[ "$reference_version" == "$VERSION" ]]; then
-        echo -e "   ${GREEN}✓${NC} reference.yaml: $reference_version"
-    else
-        echo -e "   ${RED}✗${NC} reference.yaml: $reference_version (expected: $VERSION)"
-        echo "      Fix: Line ~6, update to: version: \"$VERSION\""
-        ((issues++))
-    fi
-else
-    echo -e "   ${YELLOW}⚠${NC}  reference.yaml not found"
-fi
+echo "Checking active VERSION consumers..."
+check_consumer "README.md badge" "$COWORK_ROOT/README.md" 'Version-[0-9.]+-orange'
+check_consumer "README.md footer" "$COWORK_ROOT/README.md" 'Version [0-9.]+'
+check_consumer "README.fr.md badge" "$COWORK_ROOT/README.fr.md" 'Version-[0-9.]+-orange'
+check_consumer "README.fr.md footer" "$COWORK_ROOT/README.fr.md" 'Version [0-9.]+'
+check_consumer "MANIFEST.yaml" "$COWORK_ROOT/MANIFEST.yaml" '^version: *"?[0-9.]+'
+check_consumer "CITATION.cff" "$COWORK_ROOT/CITATION.cff" '^version: *"?[0-9.]+'
+check_consumer "llms.txt" "$COWORK_ROOT/llms.txt" '^- Version: [0-9.]+'
+check_consumer "machine-readable/reference.yaml" "$COWORK_ROOT/machine-readable/reference.yaml" '^version: *"?[0-9.]+'
+check_consumer "machine-readable/llms.txt" "$COWORK_ROOT/machine-readable/llms.txt" '^- Version: [0-9.]+'
+check_consumer "machine-readable/claude-cowork-releases.yaml" "$COWORK_ROOT/machine-readable/claude-cowork-releases.yaml" '^latest: *"?[0-9.]+'
+check_consumer "CLAUDE.md" "$COWORK_ROOT/CLAUDE.md" 'Source de vérité version \([0-9.]+\)'
 
-# Check 5: Parent README.md (main repo)
-echo "5. Checking parent README.md Cowork section..."
-PARENT_README="$COWORK_ROOT/../README.md"
-if [[ -f "$PARENT_README" ]]; then
-    # Look for "New in vX.X.X" or similar version references in Cowork section
-    if grep -A 20 "Claude Cowork" "$PARENT_README" | grep -q "New in v$VERSION"; then
-        echo -e "   ${GREEN}✓${NC} Parent README mentions v$VERSION"
-    else
-        echo -e "   ${YELLOW}⚠${NC}  Parent README may need Cowork version update"
-        echo "      Check: Line ~308, ensure 'New in v$VERSION' is mentioned"
-    fi
-else
-    echo -e "   ${YELLOW}⚠${NC}  Parent README.md not found"
-fi
+# Historical entries in CHANGELOG.md and release histories are intentionally excluded.
 
 echo
 echo "=== Summary ==="
