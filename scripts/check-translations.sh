@@ -27,7 +27,7 @@ check_translation() {
 
     if [ ! -f "$translation" ]; then
         echo -e "${YELLOW}⏳ MISSING${NC}: $translation (source: $source)"
-        ((MISSING_COUNT++))
+        ((++MISSING_COUNT))
         return 1
     fi
 
@@ -59,11 +59,11 @@ check_translation() {
 
     if [ "$is_outdated" -eq 1 ]; then
         echo -e "${RED}⚠️  OUTDATED${NC}: $translation (source modified after translation)"
-        ((OUTDATED_COUNT++))
+        ((++OUTDATED_COUNT))
         return 1
     else
         echo -e "${GREEN}✅ CURRENT${NC}: $translation"
-        ((UP_TO_DATE_COUNT++))
+        ((++UP_TO_DATE_COUNT))
         return 0
     fi
 }
