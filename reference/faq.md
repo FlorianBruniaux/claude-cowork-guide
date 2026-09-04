@@ -125,7 +125,7 @@ See [detailed comparison](comparison.md#common-confusion).
 If you're seeing articles about "Claude on Telegram" or "Claude on Discord", that's Claude Code Channels, not Cowork.
 
 ### Q: What is Opus 4.7's context window?
-**A:** Opus 4.7 (the model powering Cowork) supports up to 1M tokens, a major upgrade from the previous ~200K effective limit. Output tokens have also increased to 128K (from 64K). Opus 4.7 also features adaptive thinking with 4 effort levels for better efficiency.
+**A:** `UNKNOWN` for Cowork as a fixed value. Context capacity depends on the model, plan and surface available to you. Check the current Claude interface or Anthropic documentation before planning a large task.
 
 ### Q: What are scheduled tasks?
 **A:** Scheduled tasks automate recurring Cowork operations. Two types: **recurring** (run automatically on a set cadence) and **on-demand** (triggered manually, run once).
@@ -183,21 +183,7 @@ See [Scheduled Automation workflow](../workflows/scheduled-automation.md) for co
 Common causes: context limit, timeout, network issues.
 
 ### Q: Can I use Cowork with a VPN?
-**A:** **No.** VPN software creates routing conflicts with Cowork's internal VM networking. This is the **#1 reported issue** on r/ClaudeAI.
-
-**Exact error**:
-```
-Failed to start Claude's workspace — VM connection timeout after 60 seconds
-```
-
-**Why it happens**: Cowork runs in a sandboxed virtual machine. VPNs intercept and reroute network traffic at the system level, breaking the host↔VM communication channel.
-
-**Solutions**:
-1. **Disconnect VPN completely** before using Cowork
-2. If VPN required: Use split tunneling to exclude Claude Desktop
-3. Corporate environment: May need to batch Cowork tasks when VPN is off
-
-There's no workaround that keeps VPN active. See [Troubleshooting](../guide/04-troubleshooting.md#vm-connection-issues) for details.
+**A:** `UNKNOWN` as a universal limitation. A connection failure may have several causes, and this guide does not instruct users to disable a VPN by default. Check current Anthropic guidance and your organization's network policy, then collect the exact error before changing connectivity settings. See [VM and connection troubleshooting](../guide/04-troubleshooting.md#vm--connection-issues).
 
 ### Q: My Excel formulas show as text or errors.
 **A:** Regional syntax issue. Specify in your prompt:
@@ -258,12 +244,7 @@ Since July 2026, the Cowork web and mobile beta (Max plan, gradual rollout) remo
 **A:** Cowork can spawn sub-agents that work in parallel. Each sub-agent has fresh context and works on part of the task. The main orchestrator assembles results.
 
 ### Q: What's the context limit?
-**A:** With Opus 4.7, up to 1M tokens (previously ~200K). Roughly:
-- 600-2000+ text pages
-- 200-400+ typical documents
-- 200-400+ images (OCR)
-
-Context compaction (beta) further extends effective session length by compressing older conversation history.
+**A:** It varies by model, plan and surface. Start with a representative batch, verify the output, and split subsequent work into reviewable groups rather than relying on a fixed document or token count.
 
 ### Q: Does Cowork remember across sessions?
 **A:** Not by default, each session starts fresh. With **Desktop Commander** installed, you can create a `memory.md` file that persists context across sessions. Start each session with "Read ~/Cowork-Workspace/memory.md first." Without Desktop Commander, the workaround remains saving context to a file and loading it next session. See [Memory Setup workflow](../workflows/memory-setup.md) for details.

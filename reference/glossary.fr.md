@@ -65,7 +65,7 @@ L'outil CLI d'Anthropic pour les développeurs. Partage l'architecture avec Cowo
 Add-in Microsoft Excel (lancé 24 janvier 2026) qui fournit une assistance IA à l'intérieur d'Excel. **Pas la même chose que Cowork**. L'add-in aide avec l'écriture de formules, l'analyse de données et la création de graphiques dans des fichiers Excel existants. Les capacités Excel de Cowork génèrent de nouveaux tableurs depuis des données non structurées. Voir [comparaison](comparison.fr.md#confusion-frequente).
 
 ### Claude Desktop
-L'application macOS et Windows qui héberge Cowork. Différente de l'interface web (claude.ai).
+L'application Claude pour macOS et Windows, Linux étant en bêta. Cowork est aussi en bêta sur le web et le mobile pour les plans éligibles. Consultez le [guide Anthropic des surfaces](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile).
 
 ### Compaction de contexte (Context Compaction)
 Fonctionnalité beta qui compresse automatiquement l'historique de conversation pendant les sessions longues. Cela permet des sessions effectives beaucoup plus longues en gardant le contexte pertinent tout en supprimant les informations redondantes.
@@ -74,13 +74,13 @@ Fonctionnalité beta qui compresse automatiquement l'historique de conversation 
 L'espace de configuration dans Claude Desktop pour gérer les Compétences, les Connecteurs et les personnalisations. Accédez-y depuis la navigation principale de l'app pour installer des compétences, configurer des connexions avec des outils externes, et définir des permissions par outil.
 
 ### Context Limit (Limite de contexte)
-La quantité maximale de texte/données que Claude peut traiter dans une seule session. Avec Opus 4.7, la fenêtre de contexte est de jusqu'à 1M de tokens (précédemment ~200K). Quand dépassée, les tâches peuvent échouer ou produire des résultats incomplets.
+La quantité de texte ou de données que Claude peut traiter dans une session. Elle varie selon le modèle, le plan et la surface ; vérifiez la limite actuelle dans Claude avant une tâche importante.
 
 ### Context Window (Fenêtre de contexte)
 L'espace "mémoire" où Claude conserve votre conversation et le contenu des fichiers pendant une session. Mesuré en tokens.
 
 ### Cowork
-La fonctionnalité desktop agentique de Claude pour les travailleurs du savoir. Manipule les fichiers sans exécution de code.
+L'espace de tâches Claude pour le travail intellectuel. Il peut utiliser les fichiers locaux et, lorsqu'ils sont disponibles et autorisés, les fonctions navigateur ou connecteurs. Le code de tâche s'exécute dans un environnement isolé, sans shell hôte sans restriction.
 
 ### Desktop Commander
 Extension officielle de Cowork installée depuis l'onglet Personnaliser. Active : (1) l'accès au système de fichiers au-delà du dossier workspace, (2) la mémoire cross-session via un fichier `memory.md`, (3) l'installation de serveurs MCP en un clic. Recommandé pour tous les utilisateurs réguliers de Cowork.
@@ -113,18 +113,18 @@ Professionnels non techniques qui travaillent principalement avec l'information 
 
 ## L
 
-### Local-First
-Principe de design où les données et le traitement restent sur votre ordinateur plutôt que dans le cloud. Cowork accède uniquement aux fichiers locaux.
+### Espace de travail local
+Un dossier ou un contexte desktop que vous rendez explicitement accessible à Cowork. L'accès local ne donne pas accès à tous les fichiers ; les fonctions Cowork peuvent aussi dépendre du desktop connecté, du navigateur ou des permissions des connecteurs.
 
 ---
 
 ## M
 
-### Max Tier
-Le niveau d'abonnement Claude le plus élevé (100-200$/mois, avec multiplicateurs d'usage 5x ou 20x). Recommandé pour une utilisation intensive de Cowork.
+### Plan Max
+Un plan Claude payant. L'éligibilité Cowork, le prix et les limites d'usage peuvent varier selon le plan et la surface ; vérifiez les informations Anthropic actuelles avant de décider.
 
-### Pro Tier
-Le niveau d'abonnement Claude standard (20$/mois). Inclut maintenant l'accès Cowork, mais avec des limites d'usage plus strictes (~1-1.5 heures d'utilisation intensive avant réinitialisation du quota).
+### Plan Pro
+Un plan Claude payant. L'éligibilité Cowork, le prix et les limites d'usage peuvent varier selon le plan et la surface ; vérifiez les informations Anthropic actuelles avant de décider.
 
 ### Connecteur MCP (MCP Connector)
 Intégration Model Context Protocol permettant à Cowork d'interagir avec des outils et services externes. Trois types : recherche web, desktop/fichiers locaux, et JSON personnalisé. Les outils de chaque connecteur peuvent être réglés sur Autoriser (automatique), Demander (confirmation à chaque fois), ou Bloquer. Aucun code requis pour la configuration.
@@ -166,7 +166,7 @@ L'interface de conversation de Claude sur claude.ai. Permet le téléchargement 
 ## R
 
 ### Research Preview (Preview recherche)
-Terme d'Anthropic pour les fonctionnalités en accès anticipé qui ne sont pas encore prêtes pour la production. Cowork était en preview recherche jusqu'au 9 avril 2026, date à laquelle il est passé en disponibilité générale (GA). Computer Use et Dispatch restent en preview recherche à partir de mai 2026.
+Libellé Anthropic pour une fonctionnalité en accès anticipé. N'inférez pas un statut bêta ou GA global de Cowork à partir d'une fonction : l'utilisation de l'ordinateur reste en preview recherche sur les plans éligibles. Consultez le [guide Anthropic actuel](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork).
 
 ---
 

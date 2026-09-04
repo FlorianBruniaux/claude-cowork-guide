@@ -125,7 +125,7 @@ Voir [comparaison détaillée](comparison.fr.md#confusion-frequente).
 Si vous voyez des articles sur "Claude sur Telegram" ou "Claude sur Discord", c'est Claude Code Channels, pas Cowork.
 
 ### Q: Quelle est la fenêtre de contexte d'Opus 4.7 ?
-**R:** Opus 4.7 (le modèle alimentant Cowork) supporte jusqu'à 1M de tokens, une amélioration majeure par rapport à la limite effective précédente de ~200K. Les tokens de sortie ont aussi augmenté à 128K (contre 64K). Opus 4.7 propose aussi la pensée adaptative avec 4 niveaux d'effort pour une meilleure efficacité.
+**R:** `UNKNOWN` comme valeur fixe pour Cowork. La capacité de contexte dépend du modèle, du plan et de la surface disponibles. Vérifiez l'interface Claude ou la documentation Anthropic actuelle avant de planifier une tâche importante.
 
 ### Q: Qu'est-ce que les tâches planifiées ?
 **R:** Les tâches planifiées automatisent vos opérations Cowork récurrentes. Deux types disponibles : **récurrentes** (s'exécutent automatiquement selon un calendrier) et **à la demande** (déclenchées manuellement, s'exécutent une seule fois).
@@ -183,21 +183,7 @@ Voir le [workflow Automatisation Planifiée](../workflows/scheduled-automation.m
 Causes courantes : limite de contexte, timeout, problèmes réseau.
 
 ### Q: Puis-je utiliser Cowork avec un VPN ?
-**R:** **Non.** Les logiciels VPN créent des conflits de routage avec le réseau VM interne de Cowork. C'est le **problème n°1 signalé** sur r/ClaudeAI.
-
-**Erreur exacte** :
-```
-Failed to start Claude's workspace — VM connection timeout after 60 seconds
-```
-
-**Pourquoi ça arrive** : Cowork s'exécute dans une machine virtuelle sandboxée. Les VPN interceptent et redirigent le trafic réseau au niveau système, cassant le canal de communication hôte↔VM.
-
-**Solutions** :
-1. **Déconnectez complètement le VPN** avant d'utiliser Cowork
-2. Si VPN requis : Utilisez le split tunneling pour exclure Claude Desktop
-3. Environnement corporate : Il peut être nécessaire de regrouper les tâches Cowork quand le VPN est désactivé
-
-Il n'y a pas de contournement qui garde le VPN actif. Voir [Dépannage](../guide/04-troubleshooting.fr.md#problemes-de-connexion-vm) pour les détails.
+**R:** `UNKNOWN` comme limitation universelle. Une erreur de connexion peut avoir plusieurs causes et ce guide ne conseille pas de désactiver un VPN par défaut. Consultez le guide Anthropic actuel et la politique réseau de votre organisation, puis relevez l'erreur exacte avant de modifier les réglages de connectivité. Voir le [dépannage VM et connexion](../guide/04-troubleshooting.fr.md#problèmes-de-vm-et-connexion).
 
 ### Q: Mes formules Excel s'affichent comme du texte ou des erreurs.
 **R:** Problème de syntaxe régionale. Spécifiez dans votre prompt :
@@ -258,12 +244,7 @@ Depuis juillet 2026, la bêta Cowork web et mobile (plan Max, déploiement progr
 **R:** Cowork peut créer des sous-agents qui travaillent en parallèle. Chaque sous-agent a un contexte frais et travaille sur une partie de la tâche. L'orchestrateur principal assemble les résultats.
 
 ### Q: Quelle est la limite de contexte ?
-**R:** Avec Opus 4.7, jusqu'à 1M de tokens (précédemment ~200K). Environ :
-- 600-2000+ pages de texte
-- 200-400+ documents typiques
-- 200-400+ images (OCR)
-
-La compaction de contexte (beta) étend encore la durée effective des sessions en compressant l'historique de conversation ancien.
+**R:** Elle varie selon le modèle, le plan et la surface. Commencez avec un lot représentatif, vérifiez la sortie, puis découpez la suite en groupes révisables au lieu de vous appuyer sur un nombre fixe de documents ou de tokens.
 
 ### Q: Est-ce que Cowork se souvient entre les sessions ?
 **R:** Pas par défaut, chaque session démarre à zéro. Avec **Desktop Commander** installé, vous pouvez créer un fichier `memory.md` qui conserve le contexte entre les sessions. Commencez chaque session avec "Lis ~/Cowork-Workspace/memory.md d'abord." Sans Desktop Commander, la solution de contournement reste de sauvegarder le contexte dans un fichier et de le charger à la session suivante. Voir le [workflow Mise en place Mémoire](../workflows/memory-setup.md) pour les détails.

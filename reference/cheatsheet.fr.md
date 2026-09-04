@@ -4,7 +4,7 @@
 
 > **Référence rapide d'une page** : Format imprimable
 
-**Prérequis** : Abonnement Pro (20$/mois) ou Max (100-200$/mois), macOS ou Windows
+**Disponibilité** : plan Claude payant éligible. Claude Desktop prend en charge macOS et Windows, Linux est en bêta ; Cowork web et mobile sont en bêta sur les plans éligibles. Vérifiez la [disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-cowork) avant de dépendre d'une surface.
 
 ---
 
@@ -36,13 +36,11 @@ Format : [exigences de format spécifiques]
 
 | Modèle | Utiliser pour | Vitesse | Contexte |
 |--------|---------------|---------|----------|
-| **Haiku** | Tâches très simples, requêtes rapides | Très rapide | Standard |
-| **Sonnet 4.6** ⭐ | Tous les workflows Cowork, tâches agentiques | Rapide | 1M tokens (beta) |
-| **Opus 4.7** | Raisonnement approfondi, analyses juridiques/scientifiques | Plus lent | 1M tokens |
+| Modèle disponible | Adaptation à la tâche | Vérification | Contexte |
+|-------------------|---------------------|--------------|---------|
+| **Modèle affiché dans Claude** | Adapter à la complexité | Vérifier la surface actuelle | Varie selon le modèle et le plan |
 
-**Par défaut** : Sonnet 4.6 pour tout. Sonnet 4.6 = n°1 pour les tâches agentiques/computer use à un coût 5x inférieur à Opus.
-**Passer à Opus** uniquement pour : raisonnement juridique expert, analyses scientifiques, coordination multi-agents complexe.
-**Les deux modèles** : fenêtre de contexte 1M tokens, 128K tokens en sortie, pensée adaptative.
+La disponibilité des modèles, le contexte et l'usage sont des paramètres produit, pas des constantes du guide. Utilisez les options affichées dans Claude et testez une petite tâche avant un gros lot.
 
 ---
 
@@ -68,13 +66,14 @@ Créez `mon-profil.md` dans votre workspace :
 
 | ✅ PEUT FAIRE | ❌ NE PEUT PAS FAIRE |
 |-----------|--------------|
-| Lire/écrire des fichiers | Exécuter du code |
-| Créer des documents Office | Exécuter des scripts |
+| Lire/écrire des fichiers | Utiliser un shell hôte sans restriction |
+| Exécuter du code dans un environnement de tâche isolé | Contourner les permissions, le plan ou la surface |
+| Créer des documents Office | Exécuter des scripts hôte sans restriction |
 | Extraire des données d'images | Traiter audio/vidéo |
 | Organiser des dossiers | Déchiffrer des fichiers |
-| Recherche web (Chrome) | Accéder réseau (sauf Chrome) |
-| Générer des PDF | Tourner sur Linux |
-| 11 plugins (Asana, GitHub, Notion, Slack...) | |
+| Tâches navigateur et connecteurs, lorsqu'elles sont disponibles et autorisées | Considérer un connecteur comme un accès cloud universel |
+| Générer des PDF | Supposer une fonction disponible sur toutes les surfaces |
+| Compétences et connecteurs configurés | |
 | Tâches planifiées | |
 | Intégrations directes Excel/PowerPoint | |
 
@@ -181,7 +180,7 @@ Enregistre dans ~/Cowork-Workspace/output/outils-gp.md
 ## Arbre de décision
 
 ```
-Besoin d'exécution de code ? → Utiliser Claude Code
+Besoin d'un shell contrôlé par un développeur ? → Utiliser Claude Code
 Besoin de manipulation de fichiers ? → Utiliser Cowork
 Juste une conversation ? → Utiliser Projets
 ```
@@ -209,41 +208,27 @@ Requête → Analyse → Plan → ⚠️ Révision → Approbation → Exécutio
 
 ---
 
-## Limites de contexte
+## Contexte et limites de lot
 
-| Contenu | Capacité approximative (Opus 4.7, 1M) |
-|---------|---------------------|
-| Pages de texte | 600-2000+ pages |
-| Documents | 200-400+ docs |
-| Images (OCR) | 200-400+ images |
-
-La compaction de contexte (beta) étend la durée effective des sessions. Limite atteinte ? → Diviser en lots plus petits
+La capacité de contexte et la compaction varient selon le modèle, le plan et la surface. Ne planifiez pas un workflow avec un nombre fixe de tokens ou de documents de ce guide. Commencez par un petit lot, vérifiez la sortie, puis continuez par groupes révisables.
 
 ---
 
 ## Limites d'usage
 
-| Niveau | Usage intensif | Réinitialisation |
-|------|---------------|-------|
-| Pro | ~1-1,5 heure | Toutes les 5 heures |
-| Max | 5x-20x Pro | Toutes les 5 heures |
-
-⚠️ Les tâches fichiers/documents consomment rapidement le quota. Planifier les gros lots en conséquence.
+Les limites d'usage varient selon le plan, le modèle, la surface et la tâche. Vérifiez les informations actuelles dans Claude avant un gros lot ; n'utilisez pas les prix, horaires de réinitialisation ou ratios historiques de ce guide pour une décision d'achat.
 
 ---
 
 ## Budget de tokens par tâche
 
-| Type de tâche | Tokens typiques | Sessions Pro |
-|-----------|----------------|--------------|
-| Q&R simple | 5K-10K | Nombreuses |
-| Inventaire fichiers | 20K-30K | 6-8 |
-| Org. petits fichiers (10-20 fichiers) | 30K-50K | 3-5 |
-| Org. gros fichiers (50+ fichiers) | 80K-150K | 1-2 |
-| Synthèse multi-docs | 50K-100K | 2-3 |
-| Lot OCR (10+ reçus) | 60K-100K | 2-3 |
-
-**Surcharge agentique** : Les cycles Plan→Exécution→Vérification ajoutent 15-30% de tokens.
+| Type de tâche | Règle de planification |
+|-----------|------------------------|
+| Inventaire fichiers | Commencer par un dossier représentatif |
+| Organisation limitée | Vérifier un échantillon avant de poursuivre |
+| Organisation large | Découper en lots révisables |
+| Synthèse multi-documents | Conserver les sources et la sortie traçables |
+| Lot OCR | Vérifier des exemples source et les totaux |
 
 ### Conseils d'optimisation
 
@@ -251,7 +236,7 @@ La compaction de contexte (beta) étend la durée effective des sessions. Limite
 |----------|---------|
 | Lots de 10-20 fichiers par requête | Efficacité optimale |
 | Point de contrôle après chaque lot | Permet la récupération |
-| Contexte clair pour nouvelles tâches | Fenêtre de 200K fraîche |
+| Nouvelle tâche lorsque le contexte n'est plus pertinent | Éviter de conserver des instructions sans lien |
 | Réutiliser les sorties précédentes | Évite le retraitement |
 
 ---

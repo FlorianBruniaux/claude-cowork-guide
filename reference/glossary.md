@@ -28,7 +28,7 @@ A file created by Claude (document, spreadsheet, image, etc.) during a Cowork se
 Anthropic's CLI tool for developers. Shares architecture with Cowork but provides full shell access and code execution. Terminal-based interface.
 
 ### Claude Desktop
-The macOS and Windows application that hosts Cowork. Different from the web interface (claude.ai).
+Claude's desktop application for macOS and Windows, with Linux in beta. Cowork is also beta on the web and mobile for eligible plans. See Anthropic's current [surface guidance](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile).
 
 ### Context Compaction
 A beta feature that automatically compresses conversation history during long sessions. This allows much longer effective sessions by keeping relevant context while removing redundant information.
@@ -40,13 +40,13 @@ Microsoft Excel add-in (launched January 24, 2026) that provides AI assistance i
 The settings area in Claude Desktop for managing Skills, Connectors, and personalizations. Access it from the main app navigation to install skills, configure external tool connections, and set per-tool permissions.
 
 ### Context Limit
-The maximum amount of text/data Claude can process in a single session. With Opus 4.7, the context window is up to 1M tokens (previously ~200K). When exceeded, tasks may fail or produce incomplete results.
+The amount of text or data Claude can process in a session. It varies by model, plan and surface; verify the current limit in Claude before a large task.
 
 ### Context Window
 The "memory" space where Claude holds your conversation and file contents during a session. Measured in tokens.
 
 ### Cowork
-Claude's agentic desktop feature for knowledge workers. Manipulates files without code execution.
+Claude's task workspace for knowledge work. It can use local files and, where available and permitted, browser or connector capabilities. Task code runs in an isolated environment, not through unrestricted host-shell access.
 
 ### Desktop Commander
 An official Cowork extension installed from the Customize tab. Enables: (1) file system access beyond the workspace folder, (2) cross-session memory via a `memory.md` file, (3) one-click MCP server installation. Recommended for all regular Cowork users.
@@ -79,18 +79,18 @@ Non-technical professionals who work primarily with information and documents (p
 
 ## L
 
-### Local-First
-Design principle where data and processing stay on your computer rather than in the cloud. Cowork accesses local files only.
+### Local workspace
+A folder or desktop context that you explicitly make available to Cowork. Local access does not imply access to every file, and Cowork capabilities can also depend on the connected desktop, browser or connector permission.
 
 ---
 
 ## M
 
-### Max Tier
-The highest Claude subscription level ($100-200/month, with 5x or 20x usage multipliers). Recommended for heavy Cowork usage.
+### Max plan
+A paid Claude plan. Cowork eligibility, price and usage limits can vary by plan and surface; verify the current Anthropic plan information before deciding.
 
-### Pro Tier
-The standard Claude subscription level ($20/month). Now includes Cowork access, but with tighter usage limits (~1-1.5 hours intensive use before quota resets).
+### Pro plan
+A paid Claude plan. Cowork eligibility, price and usage limits can vary by plan and surface; verify the current Anthropic plan information before deciding.
 
 ### MCP Connector
 A Model Context Protocol integration allowing Cowork to interact with external tools and services. Three types: web search, desktop/local files, and custom JSON. Each connector's tools can be set to Allow (automatic), Ask (prompt each time), or Block. No coding required for setup.
@@ -132,7 +132,7 @@ Claude's conversation interface on claude.ai. Allows document uploads but no loc
 ## R
 
 ### Research Preview
-Anthropic's term for early-access features that aren't yet production-ready. Cowork was in research preview until April 9, 2026, when it went generally available (GA). Computer Use and Dispatch remain in research preview as of May 2026.
+Anthropic's label for an early-access capability. Do not infer a global Cowork beta or GA status from one feature: computer use remains research preview on eligible plans. Check Anthropic's current [computer-use guidance](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork).
 
 ---
 

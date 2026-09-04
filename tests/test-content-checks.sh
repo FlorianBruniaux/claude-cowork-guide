@@ -26,7 +26,8 @@ cp llms.txt "$fixture_dir/llms.txt"
 cp machine-readable/reference.yaml "$fixture_dir/machine-readable/reference.yaml"
 cp machine-readable/llms.txt "$fixture_dir/machine-readable/llms.txt"
 cp machine-readable/claude-cowork-releases.yaml "$fixture_dir/machine-readable/claude-cowork-releases.yaml"
-sed -i.bak 's/version: "1\.12\.0"/version: "0.0.0"/' "$fixture_dir/MANIFEST.yaml"
+current_version=$(tr -d '[:space:]' < VERSION)
+sed -i.bak "s/version: \"${current_version}\"/version: \"0.0.0\"/" "$fixture_dir/MANIFEST.yaml"
 rm "$fixture_dir/MANIFEST.yaml.bak"
 
 if COWORK_ROOT="$fixture_dir" ./scripts/check-version-sync.sh >/dev/null 2>&1; then

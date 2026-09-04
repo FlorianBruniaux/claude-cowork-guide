@@ -8,55 +8,11 @@
 
 ---
 
-## Model Selection
+## Model selection and usage
 
-Cowork supports different Claude models. Since Sonnet 4.6 launched (February 17, 2026), the model selection calculus has changed significantly.
+The models, context capacity and usage limits available in Cowork can vary by plan and surface. This guide does not maintain a fixed model catalogue, token window, price or quota ratio. Choose from the models shown in your Claude surface, test a small representative task, then split larger work into reviewable batches.
 
-### Available Models
-
-| Model | Best For | Speed | Context Window | Usage Cost |
-|-------|----------|-------|----------------|------------|
-| **Haiku 4.5** | Very simple tasks, quick queries | Very Fast | Standard | Low |
-| **Sonnet 4.6** ⭐ | Agentic tasks, file automation, daily Cowork workflows | Fast | 1M tokens, 128K output | Standard |
-| **Opus 4.6** | Deep reasoning, scientific analysis, complex multi-agent tasks | Slower | 1M tokens, 128K output | Higher (5x Sonnet) |
-| **Opus 4.7** | Hardest tasks, vision-heavy work, long multi-session projects | Slower | 1M tokens, 128K output | Higher (5x Sonnet) |
-
-**Model Notes** (updated May 2026):
-- **Sonnet 4.6** (released February 17, 2026): Recommended default for Cowork. Achieves 72.5% on OSWorld-Verified (computer use benchmark) vs Opus 4.6's 72.7%, essentially identical agentic performance at 5x lower cost. 1M token context window, 128K output, adaptive thinking.
-- **Opus 4.6** (released February 5, 2026): Deep scientific reasoning (91.3% on GPQA Diamond) and complex multi-agent coordination. For standard Cowork file operations, the performance gap with Sonnet 4.6 is negligible.
-- **Opus 4.7** (released April 16, 2026): Notable improvement over Opus 4.6 on the hardest tasks. Self-corrects logic errors during planning, better instruction following, stronger vision (images up to 2,576px / ~3.75 megapixels, 3× previous resolution). More tasteful output on slides, docs, and interfaces. Better filesystem memory across sessions. New `xhigh` effort level available. Same pricing as Opus 4.6. Use for complex multi-step workflows where quality matters most.
-- **Context compaction**: Cowork uses automatic compaction to compress conversation history, enabling longer sessions without losing important context.
-
-### When to Use Each
-
-| Task Type | Recommended Model | Why |
-|-----------|-------------------|-----|
-| File organization, renaming | **Sonnet 4.6** | Agentic tasks (Sonnet's strength) |
-| Receipt extraction, OCR batches | **Sonnet 4.6** | Tool-calling (Sonnet's #1 ranking) |
-| Email drafts, document creation | **Sonnet 4.6** | Fast, sufficient quality |
-| Daily automations, scheduled tasks | **Sonnet 4.6** | Same agentic performance, 5x cheaper |
-| Multi-source research synthesis | **Sonnet 4.6** | 1M context handles large volumes |
-| Contract review, legal analysis | **Opus 4.6 / 4.7** | Deep reasoning advantage |
-| Complex scientific/technical reports | **Opus 4.6 / 4.7** | GPQA-level reasoning needed |
-| Multi-agent coordination | **Opus 4.7** | Better self-correction and planning |
-| Long multi-session projects | **Opus 4.7** | Superior cross-session memory |
-| Dense image/diagram analysis | **Opus 4.7** | 3× resolution improvement |
-| Claude Design (slides, decks) | **Opus 4.7** | More tasteful visual output |
-
-### Selection Tips
-
-1. **Default to Sonnet 4.6** : Handles 90%+ of Cowork tasks with near-identical agentic performance to Opus
-2. **Switch to Opus 4.7** when:
-   - Results require expert-level reasoning (legal, scientific, regulatory)
-   - Task spans multiple sessions and needs persistent context
-   - You're processing dense images, screenshots, or diagrams
-   - Output quality on slides/docs consistently needs more depth
-3. **Opus 4.7 vs 4.6**: 4.7 catches its own logic errors during planning, follows instructions more precisely, produces better visual output. For pure file operations, the difference is marginal.
-4. **Mind your quota** : Opus consumes 5x more quota per token than Sonnet. On Pro plan, this compounds quickly.
-
-> **Pro plan users**: Sonnet 4.6 is your default for everything. Reserve Opus 4.7 for the rare task where reasoning depth or visual quality genuinely matters.
->
-> **Max plan users**: Start with Sonnet 4.6. Switch to Opus 4.7 for contract review, multi-day projects, vision-heavy tasks, or when Sonnet's output falls short.
+For product access, consult Anthropic's current [Cowork availability guidance](https://support.claude.com/en/articles/13345190-get-started-with-cowork). The exact model-to-Cowork mapping is `UNKNOWN` in this guide unless Anthropic documents it for the surface you use.
 
 ---
 
@@ -115,7 +71,7 @@ Cowork supports different Claude models. Since Sonnet 4.6 launched (February 17,
 | **Fill forms** | ⚠️ Limited | Requires explicit approval |
 | **Make purchases** | ❌ No | Security restriction |
 | **Login to sites** | ❌ No | Security restriction |
-| **API calls** | ❌ No | No direct network access |
+| **API calls** | Surface-dependent | Browser and connector capabilities require the relevant availability and permission |
 
 ---
 
@@ -158,7 +114,7 @@ OUTPUT: Executive summary with key decisions and action items
 - Generates polished output document
 
 **Limitations**:
-- Context window limits (up to 1M tokens with Opus 4.7 or Sonnet 4.6)
+- Context capacity varies by model, plan and surface; validate a representative batch first
 - Cannot access original email/calendar systems
 - Synthesis quality depends on source clarity
 
@@ -270,57 +226,32 @@ Create an Excel file using European formula syntax (semicolon separators)
 
 ---
 
-## Context Window Usage
+## Context and batch limits
 
-With Opus 4.7, Cowork supports up to **1M tokens of context** (generally available, no longer in beta). In practice, effective capacity depends on which model you select.
+Context capacity is model-, plan- and surface-dependent. The guide does not claim a fixed token, document or image limit. Validate a representative batch before a large operation and preserve the source files so that a failed batch can be reviewed.
 
-### Context by Model
-
-| Model | Context Window | Effective Usable |
-|-------|---------------|-----------------|
-| **Haiku 4.5** | Standard | Standard minus overhead |
-| **Sonnet 4.6** | 1M tokens | ~950K (system overhead ~50K) |
-| **Opus 4.7** | 1M tokens | ~950K (system overhead ~50K) |
-
-System overhead (tool definitions, safety instructions, execution logs) consumes roughly 30-50K tokens regardless of model. This is negligible at 1M scale but still matters for session planning.
-
-### Practical Limits
-
-| Content Type | Approximate Capacity (1M window) |
-|--------------|----------------------------------|
-| Plain text pages | 500-2,000+ pages |
-| Documents | 200-400 typical docs |
-| Spreadsheet rows | 40,000-200,000 rows |
-| Images (OCR) | 200-400 images |
-
-### When You Hit Limits
+### When a task reaches a limit
 
 **Error message**:
 ```
 Context limit reached
 ```
 
-**Symptoms**:
-- Cowork stops mid-task
-- Results are incomplete
-- Silent failure without clear message
+**Responses**:
+- Save intermediate output to checkpoint files.
+- Reduce the next batch to a reviewable size.
+- Start a new conversation for unrelated work.
 
-**Solutions**:
-- Break very large batches into groups of 50-100 files
-- Save intermediate results to checkpoint files
-- Start fresh conversation for unrelated tasks
+### Planning by task type
 
-### Token Budget by Task Type
+| Task | Planning rule |
+|------|---------------|
+| File inventory | Begin with a representative folder |
+| Large file organization | Split work into reviewable batches |
+| OCR batch | Verify samples and totals against source files |
+| Document synthesis | Keep sources and output traceable |
 
-| Task | Tokens | Pro Sessions |
-|------|--------|--------------|
-| Simple Q&A | 5K-10K | Many |
-| File inventory | 20K-30K | Many |
-| Small file org (10-20 files) | 30K-50K | Many |
-| Large file org (50+ files) | 80K-150K | Many |
-| OCR batch (10+ images) | 60K-100K | Many |
-
-**Agentic overhead**: Plan→Execute→Check cycles add 15-30% tokens.
+Do not use historical session counts, token budgets or reset schedules from this repository to estimate paid-plan usage.
 
 ---
 
@@ -328,7 +259,7 @@ Context limit reached
 
 Claude Design is a separate Anthropic product, not part of Cowork itself, but closely integrated and highly relevant for non-technical users who need to produce visual work.
 
-**Access**: `claude.ai/design`, available in research preview for Claude Pro, Max, Team, and Enterprise subscribers. No extra cost; uses existing subscription limits. Powered by **Claude Opus 4.7**.
+**Access**: `UNKNOWN` for Cowork. Claude Design is a separate product; verify its current availability and pricing in Anthropic documentation before relying on it in a Cowork workflow.
 
 ### What It Does
 
@@ -428,9 +359,9 @@ Key additions relevant for SMBs:
 
 Finance/institutional connectors also added (FactSet, MSCI, LSEG, S&P Global), primarily for enterprise and investment workflows.
 
-#### GA Connectors (April 9, 2026)
+#### Connector availability
 
-Launched alongside Cowork's general availability:
+The following entry is historical documentation, not evidence of current Cowork availability. Verify a connector in your Claude surface and its permissions before a production workflow:
 
 | Connector | Category | Use Cases |
 |-----------|----------|-----------|
@@ -479,7 +410,7 @@ A pre-packaged bundle inside Claude Cowork, activated with a single toggle. Conn
 
 **How it works**: toggle on inside Cowork → connect your tools → pick a workflow → Claude does the work → you approve before anything sends, posts, or pays. Existing tool permissions are respected. Claude can only access what your linked account is already allowed to see.
 
-**Pricing**: no additional fee beyond your Claude subscription and the partner tools you already use.
+**Pricing**: `UNKNOWN` in this guide. Verify current Anthropic and partner pricing before enabling a workflow.
 
 > **To activate**: open Claude Cowork → sidebar → Claude for Small Business toggle.
 
@@ -515,7 +446,7 @@ Organizations can create a private catalog of approved plugins:
 - Plugins can be bundled with pre-configured connector permissions
 - Organization-wide sharing tools in development
 
-> **Note**: Google Calendar, Gmail, and DocuSign connectors were announced February 24, 2026. Zoom was added at GA (April 9, 2026). Check current availability in your Cowork settings.
+> **Note**: Connector availability depends on the surface, connector and permissions. Check the current Claude settings before relying on one.
 
 ---
 
@@ -549,7 +480,7 @@ Cowork can automate recurring tasks, run them at set times without manually trig
 
 > **Note**: Scheduled Tasks is in research preview. Reliability may vary. Always verify automated outputs before acting on them.
 >
-> ⚠️ **On desktop, the device must be awake**: if your computer is asleep or Claude Desktop is closed when a task fires, it will be skipped and re-run once the device wakes and the app reopens. Plan accordingly for overnight or early-morning schedules. Since July 2026, the Cowork web and mobile beta runs scheduled tasks in the cloud with no device connected, but it's a gradual rollout starting with the Max plan, so this desktop constraint still applies to most users today.
+> ⚠️ Scheduled-task behavior varies by surface and feature. Verify the current availability and execution requirements before relying on an unattended task.
 
 #### 4 Essential Patterns
 
@@ -609,12 +540,12 @@ Not all scheduled automation works the same way depending on your setup:
 | **Machine off / desktop app closed** | Task fires while Mac is sleeping or closed | Remote execution | ❌ No on desktop (use Dispatch, Claude Code, or the Cowork web/mobile beta) |
 | **Headless server / CI** | Automated server without a display | No Claude Desktop | ❌ No (use Claude Code) |
 
-**The honest answer**: on desktop, Cowork's scheduled tasks require Claude Desktop to be running and your Mac to be awake. If the Mac sleeps or the app closes when a task fires, it skips and re-runs once the device wakes. This changed in July 2026 for Max plan subscribers: the Cowork web and mobile beta now runs scheduled tasks in the cloud, even with no device connected, and syncs results back across devices. The rollout is gradual and other plans will follow, so most users still depend on the desktop app being open today.
+**Current boundary**: scheduled-task behavior is surface- and feature-dependent. Confirm the current execution requirement in Claude before using an unattended workflow.
 
 **For the two unsupported cases on desktop:**
 
 - **You're away but Mac is on** → use [Dispatch](#dispatch--control-cowork-from-your-phone): send the task from your phone, runs on your desktop
-- **Fully headless, machine off, or server** → switch to Claude Code with a system cron job, or check whether the Cowork web/mobile beta (Max plan) covers your case. Example with Claude Code: every Monday at 7am, it summarizes last week's tickets and posts to Slack. No machine, no UI, no babysitting.
+- **Fully headless, machine off, or server** → use a system scheduler with a developer-controlled workflow, or confirm whether your current Cowork surface supports the task.
 
 > **Decision rule**: Cowork scheduling is best for "while I'm working" routines (morning brief, weekly compilation). For automation that must run reliably regardless of whether you're at your desk, Claude Code is the right tool.
 
@@ -638,10 +569,10 @@ Beyond Cowork's file generation, Claude is also available as a **persistent side
 
 | App | Status | Plans |
 |-----|--------|-------|
-| **Claude for Excel** | ✅ Available | Pro, Team, Enterprise |
-| **Claude for PowerPoint** | ✅ Available | Pro, Team, Enterprise |
-| **Claude for Word** | ✅ Generally available (since May 7, 2026) | Pro, Team, Enterprise |
-| **Claude for Outlook** | 🔵 Public beta (since May 7, 2026) | Pro, Team, Enterprise |
+| **Claude for Excel** | Check current product documentation | Varies by plan and surface |
+| **Claude for PowerPoint** | Check current product documentation | Varies by plan and surface |
+| **Claude for Word** | Check current product documentation | Varies by plan and surface |
+| **Claude for Outlook** | Check current product documentation | Varies by plan and surface |
 
 > Free plan access is very limited. A paid plan is required for regular use.
 
@@ -657,12 +588,12 @@ Beyond Cowork's file generation, Claude is also available as a **persistent side
 - Generates and edits slides while respecting your brand guidelines
 - Rewrites and reorganizes content within existing presentations
 
-**Word** (generally available since May 7, 2026)
+**Word**
 - Drafts and revises `.docx` documents from a persistent sidebar
 - All changes appear as **native Word Track Changes**, reviewable and accept/reject per edit
 - Preserves native document formatting throughout
 
-**Outlook** (public beta since May 7, 2026)
+**Outlook**
 - Assists with drafting, summarizing, and responding to emails
 - Accessible from the sidebar inside Outlook desktop and web
 - Shares the same conversation context as Excel, Word, and PowerPoint
@@ -933,7 +864,7 @@ Dispatch lets you manage Cowork tasks remotely from your iOS or Android app whil
 3. Pair your phone to your desktop by scanning a QR code in Claude Desktop settings
 4. Send tasks, check progress, or add instructions from anywhere. Claude works on your Mac while you're away.
 
-**Requirements**: Mac must stay awake, Claude Desktop must remain open, since Dispatch remote-controls your desktop session. If you'd rather skip that dependency, the Cowork web/mobile beta (Max plan, gradual rollout since July 2026) runs tasks fully in the cloud instead.
+**Requirements**: This workflow depends on the connected desktop and the availability of the feature. Cowork web and mobile are beta on eligible plans; verify the current surface guidance before relying on remote execution.
 
 **Known limitations (research preview)**:
 - Tasks run in a single thread, so complex tasks may queue and delay by a minute or two
@@ -955,11 +886,11 @@ Visualizations are rendered in HTML/CSS/JS (Chart.js and similar). Users can int
 
 ### Computer Use : Direct Desktop Control
 
-Computer Use lets Claude control your Mac directly: open applications, navigate the screen, click, type, and fill forms, without custom API integrations or setup.
+Computer Use lets Claude act through an eligible connected desktop with permission. It remains a research preview and is not a claim that every Cowork surface can control every host application.
 
-**How to enable**: See [Getting Started Step 9](01-getting-started.md#step-9-enable-computer-use-research-preview-macos-only).
+**How to enable**: See [Getting Started Step 9](01-getting-started.md#step-9-enable-computer-use-research-preview).
 
-**Available on**: Pro and Max plans, macOS (March 23, 2026, research preview).
+**Availability**: Research preview on eligible plans. Anthropic's current [computer-use guidance](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork) is the source of truth for plans and surfaces.
 
 #### What Claude Can Do
 
@@ -1006,27 +937,15 @@ This means Computer Use activates only when the two faster methods aren't availa
 
 ---
 
-## What Cowork CANNOT Do
+## Capability boundaries
 
-### Code Execution
+### Code execution
 
-```
-❌ Cannot run: Python, JavaScript, shell scripts
-❌ Cannot execute: Installed applications
-❌ Cannot use: Command-line tools
-```
-
-**Workaround**: Use Claude Code for code execution tasks.
+Cowork can run code in an isolated task environment. It does not provide unrestricted host-shell access or a general promise that installed applications and command-line tools can be controlled. Use Claude Code when a developer-controlled terminal or repository workflow is required.
 
 ### Network Operations
 
-```
-❌ Cannot make: API calls, HTTP requests
-❌ Cannot access: Remote databases
-❌ Cannot sync: Cloud storage directly
-```
-
-**Workaround**: Download cloud files locally first, or use Chrome for web access.
+Browser and connector access depends on the surface and permissions. Do not infer universal API, database or cloud-storage access from a configured connector. Downloading a local copy remains a useful fallback when a connection is unavailable.
 
 ### System Operations
 
@@ -1050,14 +969,12 @@ This means Computer Use activates only when the two faster methods aren't availa
 
 ### Environment Constraints
 
-```
-❌ Cannot work: With VPN active (VM routing conflict)
-❌ Cannot run: On Linux (macOS and Windows only)
-❌ Cannot operate: In background (requires app foreground)
-❌ Cannot persist: Sessions across app restarts
-```
-
-**VPN Issue**: Cowork's VM conflicts with VPN network routing. This is the #1 reported issue. Solution: Disconnect VPN before using Cowork. See [Troubleshooting](04-troubleshooting.md#vm-connection-issues) for details.
+| Boundary | Current guidance |
+|----------|------------------|
+| Linux | Claude Desktop on Linux is beta |
+| Web and mobile | Cowork is beta on eligible plans |
+| VPN | `UNKNOWN` as a universal limitation; diagnose a connection issue from current product guidance rather than disabling a VPN by default |
+| Background and persistence | Vary by surface and feature; verify the current behavior before an unattended workflow |
 
 ---
 
@@ -1072,7 +989,7 @@ Need to do something with files?
 │        └─ No → Grant access or move files first
 │
 └─ No → What do you need?
-         ├─ Execute code → Use Claude Code
+         ├─ Need a developer-controlled shell → Use Claude Code
          ├─ API integration → Manual or Claude Code
          ├─ System changes → Manual operation
          └─ Web research → Cowork + Chrome ✅
@@ -1093,7 +1010,7 @@ Need to do something with files?
 
 | If You Need | Use Instead |
 |-------------|-------------|
-| Code execution | Claude Code |
+| Developer-controlled shell | Claude Code |
 | API integration | Claude Code + scripts |
 | Cloud file sync | Native cloud apps |
 | Audio/video | Specialized tools |

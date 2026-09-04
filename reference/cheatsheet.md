@@ -4,7 +4,7 @@
 
 > **One-page quick reference** : Print-friendly
 
-**Requires**: Pro ($20/mo) or Max ($100-200/mo) subscription, macOS or Windows
+**Availability**: An eligible paid Claude plan. Claude Desktop supports macOS and Windows, with Linux in beta; web and mobile Cowork are beta on eligible plans. Verify the current [Cowork availability](https://support.claude.com/en/articles/13345190-get-started-with-cowork) before relying on a surface.
 
 ---
 
@@ -36,13 +36,11 @@ Format: [specific format requirements]
 
 | Model | Use For | Speed | Context |
 |-------|---------|-------|---------|
-| **Haiku** | Very simple tasks, quick queries | Very Fast | Standard |
-| **Sonnet 4.6** ⭐ | All Cowork workflows, agentic tasks | Fast | 1M tokens (beta) |
-| **Opus 4.7** | Deep reasoning, legal/scientific analysis | Slower | 1M tokens |
+| Available model | Task fit | Verification | Context |
+|-----------------|----------|--------------|---------|
+| **Model shown in Claude** | Match the task's complexity | Check the current surface | Varies by model and plan |
 
-**Default**: Sonnet 4.6 for everything. Sonnet 4.6 = #1 for agentic/computer use tasks at 5x lower cost than Opus.
-**Switch to Opus** only for: expert legal reasoning, scientific analysis, complex multi-agent coordination.
-**Both models**: 1M token context window, 128K output, adaptive thinking.
+Model availability, context and usage are product settings, not stable guide constants. Use the options shown in Claude and test a small task before a large batch.
 
 ---
 
@@ -68,13 +66,14 @@ Create `my-profile.md` in your workspace:
 
 | ✅ CAN DO | ❌ CANNOT DO |
 |-----------|--------------|
-| Read/write files | Execute code |
-| Create Office docs | Run scripts |
+| Read/write files | Use an unrestricted host shell |
+| Run code in an isolated task environment | Bypass plan, surface or permission controls |
+| Create Office docs | Run unrestricted host scripts |
 | Extract data from images | Process audio/video |
 | Organize folders | Decrypt files |
-| Web research (Chrome) | Access network resources (except Chrome) |
-| Generate PDFs | Run on Linux |
-| 11 plugins (Asana, GitHub, Notion, Slack...) | |
+| Browser and connector tasks, when available and permitted | Treat a configured connector as universal cloud access |
+| Generate PDFs | Assume a capability is on every surface |
+| Configured skills and connectors | |
 | Scheduled tasks | |
 | Direct Excel/PowerPoint integrations | |
 
@@ -181,7 +180,7 @@ Save to ~/Cowork-Workspace/output/pm-tools.md
 ## Decision Flow
 
 ```
-Need code execution? → Use Claude Code
+Need a developer-controlled shell? → Use Claude Code
 Need file manipulation? → Use Cowork
 Just conversation? → Use Projects
 ```
@@ -209,41 +208,27 @@ Request → Analysis → Plan → ⚠️ Review → Approve → Execute → Veri
 
 ---
 
-## Context Limits
+## Context and batch limits
 
-| Content | Approximate Capacity (Opus 4.7, 1M) |
-|---------|---------------------|
-| Text pages | 600-2000+ pages |
-| Documents | 200-400+ docs |
-| Images (OCR) | 200-400+ images |
-
-Context compaction (beta) extends effective session length. Hit limit? → Break into smaller batches
+Context capacity and compaction vary by model, plan and surface. Do not plan a workflow around a fixed token or document count from this guide. Start with a small batch, verify the output, then continue in reviewable groups.
 
 ---
 
-## Usage Limits
+## Usage limits
 
-| Tier | Intensive Use | Reset |
-|------|---------------|-------|
-| Pro | ~1-1.5 hours | Every 5 hours |
-| Max | 5x-20x Pro | Every 5 hours |
-
-⚠️ File/document tasks consume quota rapidly. Plan large batches accordingly.
+Usage limits vary by plan, model, surface and task. Check the current plan information in Claude before a large batch; do not use historical prices, reset schedules or quota ratios from this guide to make a purchase decision.
 
 ---
 
 ## Token Budget by Task
 
-| Task Type | Typical Tokens | Pro Sessions |
-|-----------|----------------|--------------|
-| Simple Q&A | 5K-10K | Many |
-| File inventory | 20K-30K | 6-8 |
-| Small file org (10-20 files) | 30K-50K | 3-5 |
-| Large file org (50+ files) | 80K-150K | 1-2 |
-| Multi-doc synthesis | 50K-100K | 2-3 |
-| OCR batch (10+ receipts) | 60K-100K | 2-3 |
-
-**Agentic overhead**: Plan→Execute→Check cycles add 15-30% tokens.
+| Task Type | Planning rule |
+|-----------|---------------|
+| File inventory | Begin with a representative folder |
+| Small file organization | Verify a sample before continuing |
+| Large file organization | Split work into reviewable batches |
+| Multi-document synthesis | Keep source files and output traceable |
+| OCR batch | Check source samples and totals |
 
 ### Optimization Tips
 
@@ -251,7 +236,7 @@ Context compaction (beta) extends effective session length. Hit limit? → Break
 |----------|---------|
 | Batch 10-20 files per request | Optimal efficiency |
 | Checkpoint after each batch | Enables recovery |
-| Clear context for new tasks | Fresh 200K window |
+| Start a new task when the context is no longer relevant | Avoid carrying unrelated instructions |
 | Reuse previous outputs | Avoids re-processing |
 
 ---
