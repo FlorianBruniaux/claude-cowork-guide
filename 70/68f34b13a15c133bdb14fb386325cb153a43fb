@@ -1,0 +1,37 @@
+workflows/workforce-planning.md
+  s_c99475ba6642f6::t_ef2741b56e3356 22
+workflows/financial-model-validation.md
+  s_c99475ba6642f6::t_ef2741b56e3356 22
+workflows/financial-model-validation.en.md
+  s_c99475ba6642f6::t_a3cb78e4b5109b 22
+workflows/workforce-planning.en.md
+  s_c99475ba6642f6::t_a3cb78e4b5109b 22
+reference/faq.fr.md
+  s_c99475ba6642f6::t_ef2741b56e3356 91,186
+reference/comparison.fr.md
+  s_c99475ba6642f6::t_ef2741b56e3356 30-32
+workflows/presentation-slides.en.md
+  s_c99475ba6642f6::t_ef2741b56e3356 604
+reference/comparison.md
+  s_c99475ba6642f6::t_ef2741b56e3356 30-32
+reference/glossary.fr.md
+  s_c99475ba6642f6::t_ef2741b56e3356 65
+guide/02-capabilities.fr.md
+  s_c99475ba6642f6::t_ef2741b56e3356 214,549
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "7068f34b13a15c133bdb14fb386325cb153a43fb",
+  "prompts": {},
+  "sessions": {
+    "s_c99475ba6642f6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a06c32-2be3-7262-8436-543fb8d0b6f8",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    }
+  }
+}
