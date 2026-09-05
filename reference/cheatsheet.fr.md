@@ -262,4 +262,4 @@ Les limites d'usage varient selon le plan, le modèle, la surface et la tâche. 
 
 ---
 
-*Claude Cowork Guide v1.12.0 | La disponibilité varie selon le plan, la surface et la fonction*
+*Claude Cowork Guide v1.13.0 | La disponibilité varie selon le plan, la surface et la fonction*

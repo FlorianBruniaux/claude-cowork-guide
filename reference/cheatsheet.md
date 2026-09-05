@@ -262,4 +262,4 @@ Usage limits vary by plan, model, surface and task. Check the current plan infor
 
 ---
 
-*Claude Cowork Guide v1.12.0 | Availability varies by plan, surface and capability*
+*Claude Cowork Guide v1.13.0 | Availability varies by plan, surface and capability*
