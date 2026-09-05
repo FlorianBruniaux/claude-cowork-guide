@@ -1,0 +1,21 @@
+reference/cheatsheet.fr.md
+  s_5aa9d43cab379b::t_5a3d6af3a5707d 265
+reference/cheatsheet.md
+  s_5aa9d43cab379b::t_5a3d6af3a5707d 265
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "b6f468b8eff3350fc40a503ca54e12bb1a02bbda",
+  "prompts": {},
+  "sessions": {
+    "s_5aa9d43cab379b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b5f48348-1bd3-478d-a949-5778bf65b9a3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    }
+  }
+}
