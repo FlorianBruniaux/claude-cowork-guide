@@ -19,6 +19,24 @@ Pistes repérées en veille, sans confirmation par une source officielle Anthrop
 
 - **Claude Design : import et verrouillage de design systems** (17 juin 2026) : les admins pourraient importer un design system et le verrouiller pour toute l'organisation, avec synchronisation renforcée vers Claude Code. Source : releasebot.io/updates/anthropic/claude uniquement. Absent des release notes officielles au 19 juillet 2026, soit un mois après l'annonce supposée. Destination si confirmé : section Claude Design de `guide/02-capabilities.md`.
 
+## [1.13.0] - 2026-09-05
+
+### Added
+- **Claude Opus 5** (24 juillet 2026, tous plans payants) : nouveau modèle Opus, performances proches de la frontière d'intelligence de Claude Fable 5 pour environ la moitié du prix. Source : anthropic.com/claude/opus + support.claude.com release notes. À documenter dans `guide/02-capabilities.md` section Model Selection.
+
+- **Claude Fable 5.1 et Claude Mythos 5.1** (1er septembre 2026) : nouveaux modèles présentés par Anthropic comme les plus avancés à ce jour pour le coding et le knowledge work. Source : support.claude.com release notes. À documenter dans `guide/02-capabilities.md` section Model Selection.
+
+- **Mémoire dans Cowork (cloud), Topics éditables, réglage sujets sensibles** (25 août 2026) : la mémoire fonctionne désormais across chat et Cowork dans le cloud. Chaque élément mémorisé apparaît sous Settings > Memory > Topics, éditable ou supprimable individuellement. Un réglage « Include sensitive topics in memory » exclut par défaut les sujets santé/croyances. Actif par défaut sur Free/Pro/Max, désactivé par défaut sur Team/Enterprise. Distinct de l'entrée déjà documentée du 10 juillet 2026 (passage au format d'entrées catégorisées, v1.12.0) : ici, l'extension cloud, l'UI d'édition et le réglage sujets sensibles sont nouveaux. Source : support.claude.com release notes. À répercuter dans la section Cross-Session Memory de `guide/02-capabilities.md`.
+
+- **Scan de sécurité des skills et plugins tiers** (6 août 2026, Enterprise) : les organisations Enterprise peuvent activer une vérification automatique du contenu malveillant lors de l'upload ou de l'édition d'un skill ou plugin tiers. Source : support.claude.com release notes. À documenter dans `guide/03-security.md` section Enterprise Administration.
+
+- **Claude dans le menu « Ouvrir avec »** (2 septembre 2026) : Claude apparaît désormais dans le menu système « Open with » pour les tableurs, PDF, fichiers Word/PowerPoint, fichiers texte et images, sur macOS et sur Windows (installations Microsoft Store/MSIX comprises). Source : claude.com/docs/cowork/changelog v1.44121.1. À documenter dans `guide/02-capabilities.md`.
+
+- **File d'attente des messages pendant la limite d'usage de 5h** (4-5 septembre 2026) : un message envoyé une fois la limite de 5h atteinte est désormais mis en attente au-dessus du composer au lieu d'échouer, avec la possibilité de le modifier, l'annuler ou l'envoyer au retour. Source : claude.com/docs/cowork/changelog v1.46388.x. À documenter dans `guide/04-troubleshooting.md` ou `reference/faq.md`.
+
+### Changed
+- **Cowork peut attacher des dossiers plus larges** (4 septembre 2026) : Cowork peut désormais accéder au dossier utilisateur complet, à Documents/AppData sous Windows, au dossier Library sur macOS, et à des disques entiers. La configuration et les données de session de Claude restent hors périmètre, de même que certains emplacements de credentials (clés SSH, credentials AWS/GCP, profils bash/zsh/PowerShell). Source : claude.com/docs/cowork/changelog v1.46388.3. À répercuter dans `guide/02-capabilities.md` et `guide/03-security.md` (périmètre d'accès fichiers).
+
 ## [1.12.0] - 2026-07-22
 
 ### Added

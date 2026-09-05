@@ -39,7 +39,7 @@
   <img src="https://img.shields.io/badge/Availability-varies%20by%20surface-blue" alt="Availability varies by surface"/>
   <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Windows%20%7C%20Linux%20beta-blue" alt="Platform: macOS, Windows, Linux beta"/>
   <img src="https://img.shields.io/badge/Subscription-paid%20Claude%20plans-purple" alt="Paid Claude plans"/>
-  <img src="https://img.shields.io/badge/Version-1.12.0-orange" alt="Version"/>
+  <img src="https://img.shields.io/badge/Version-1.13.0-orange" alt="Version"/>
 </p>
 
 > Complete guide to Claude's desktop assistant for knowledge workers and small businesses.
@@ -316,4 +316,4 @@ Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ---
 
-*Version 1.12.0 | Related: [Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) | Crafted with Claude*
+*Version 1.13.0 | Related: [Claude Code Ultimate Guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) | Crafted with Claude*

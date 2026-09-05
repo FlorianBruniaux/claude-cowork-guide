@@ -2,13 +2,29 @@
 # Source: CHANGELOG.md + Anthropic product announcements
 # Purpose: Track Cowork documentation + product releases
 
-latest: "1.12.0"
-updated: "2026-07-22"
+latest: "1.13.0"
+updated: "2026-09-05"
 
 # ════════════════════════════════════════════════════════════════
 # RELEASES (newest first, condensed highlights only)
 # ════════════════════════════════════════════════════════════════
 releases:
+
+  # ─────────────────────────────────────────────────────────────
+  # 1.13.x Series (September 2026)
+  # ─────────────────────────────────────────────────────────────
+
+  - version: "1.13.0"
+    date: "2026-09-05"
+    highlights:
+      - "⭐ Claude Opus 5 (24 juillet 2026, tous plans payants) : nouveau modèle Opus, performances proches de la frontière d'intelligence de Claude Fable 5 pour environ la moitié du prix"
+      - "⭐ Claude Fable 5.1 et Claude Mythos 5.1 (1er septembre 2026) : nouveaux modèles présentés par Anthropic comme les plus avancés à ce jour pour le coding et le knowledge work"
+      - "⭐ Mémoire dans Cowork (cloud), Topics éditables, réglage sujets sensibles (25 août 2026) : mémoire unifiée across chat et Cowork, Settings > Memory > Topics éditable/supprimable, toggle sujets sensibles"
+      - "⭐ Cowork peut attacher des dossiers plus larges (4 septembre 2026) : dossier utilisateur complet, Documents/AppData Windows, Library macOS, disques entiers ; credentials et config Claude restent hors périmètre"
+      - "Scan de sécurité des skills et plugins tiers (6 août 2026, Enterprise) : vérification automatique du contenu malveillant à l'upload ou l'édition"
+      - "Claude dans le menu « Ouvrir avec » (2 septembre 2026) : tableurs, PDF, Word/PowerPoint, texte, images, sur macOS et Windows"
+      - "File d'attente des messages pendant la limite d'usage de 5h (4-5 septembre 2026) : message mis en attente, modifiable/annulable au lieu d'échouer"
+    breaking: []
 
   # ─────────────────────────────────────────────────────────────
   # 1.12.x Series (July 2026)

@@ -2,7 +2,7 @@
 # This file enables future separation into standalone repository
 
 name: claude-cowork-guide
-version: "1.12.0"
+version: "1.13.0"
 description: Community documentation for Claude Cowork, with practical workflows for knowledge workers
 
 # Relationship to parent repo

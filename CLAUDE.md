@@ -17,7 +17,7 @@ whitepapers/     # Livres blancs (à venir)
 ## Key Files
 | File | Purpose |
 |------|---------|
-| VERSION | Source de vérité version (1.12.0) |
+| VERSION | Source de vérité version (1.13.0) |
 | workflows/README.md | Index des 29 workflows |
 | reference/cheatsheet.md | Quick reference |
 

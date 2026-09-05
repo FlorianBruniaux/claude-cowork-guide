@@ -27,7 +27,7 @@
   <img src="https://img.shields.io/badge/Disponibilit%C3%A9-variable%20selon%20la%20surface-blue" alt="Disponibilité variable selon la surface"/>
   <img src="https://img.shields.io/badge/Plateforme-macOS%20%7C%20Windows%20%7C%20Linux%20b%C3%AAta-blue" alt="Plateforme : macOS, Windows, Linux bêta"/>
   <img src="https://img.shields.io/badge/Abonnement-plans%20Claude%20payants-purple" alt="Plans Claude payants"/>
-  <img src="https://img.shields.io/badge/Version-1.12.0-orange" alt="Version"/>
+  <img src="https://img.shields.io/badge/Version-1.13.0-orange" alt="Version"/>
 </p>
 
 > Guide complet de l'assistant desktop de Claude pour les travailleurs du savoir et les petites entreprises.
@@ -294,4 +294,4 @@ Sous licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ---
 
-*Version 1.12.0 | Créé avec Claude*
+*Version 1.13.0 | Créé avec Claude*
