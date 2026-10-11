@@ -12,7 +12,7 @@ Automatiser vos tâches récurrentes, rapports, compilations, bilans, pour qu'el
 
 ## Prérequis
 
-- Cowork activé (abonnement Pro ou Max)
+- Cowork activé (abonnement Pro, Max, Team ou Enterprise)
 - Comprendre le format CTOC ([Démarrage Étape 5](../guide/01-getting-started.fr.md#étape-5--le-framework-ctoc))
 - Dossiers organisés : séparer les entrées par fréquence (quotidien/, hebdo/, mensuel/)
 
@@ -137,7 +137,9 @@ La section Planifié dans la barre latérale permet de : voir les prochaines ex�
 
 **Fiabilité** : Les tâches planifiées sont en aperçu recherche. Les premières exécutions peuvent parfois être imparfaites. Vérifiez les premières sorties manuellement avant de vous y fier.
 
-**Sur desktop, application ouverte et appareil allumé** : Cowork nécessite que Claude Desktop soit ouvert ET que l'ordinateur soit allumé (pas en veille) au moment prévu. Si l'appareil est en veille ou l'app fermée, la tâche est **ignorée** puis s'exécute automatiquement au réveil. Planifiez en conséquence pour les tâches matinales (désactivez la veille automatique si nécessaire). Depuis juillet 2026, la bêta Cowork web et mobile (plan Max, déploiement progressif) exécute les tâches planifiées dans le cloud sans appareil connecté : cette contrainte disparaît pour les utilisateurs sur cette bêta.
+**Où tourne la tâche (depuis le 6 octobre 2026)** : pour les comptes Pro et Max, les nouvelles tâches planifiées s'exécutent dans le cloud, sur les serveurs d'Anthropic, sans ordinateur allumé (l'option « Only on your computer » n'existe plus). Le mode cloud est encore en bêta sur Team et Enterprise (activé par défaut sur Team, désactivé par défaut sur Enterprise jusqu'à activation par un owner). Claude Desktop doit rester ouvert et connecté uniquement quand une tâche a besoin de vos fichiers locaux ou du navigateur intégré : une session cloud n'accède qu'aux dossiers connectés, et les fichiers qu'elle lit sont traités sur les serveurs d'Anthropic. Les tâches lancées sur votre ordinateur avant le 6 octobre 2026 restent locales : pour celles-ci, Claude Desktop doit être ouvert ET l'ordinateur allumé (pas en veille) au moment prévu. Si l'appareil est en veille ou l'app fermée, la tâche est **ignorée** puis s'exécute automatiquement au réveil. Planifiez en conséquence pour les tâches locales du matin (désactivez la veille automatique si nécessaire).
+
+**Approbation** : quand votre organisation l'autorise, les tâches planifiées créées par Claude utilisent « Automatically approve » par défaut (depuis le 1er octobre 2026) : elles utilisent les outils sans demander et ne s'arrêtent que si quelque chose paraît dangereux. Vérifiez les premières exécutions.
 
 **Optimisation automatique du prompt** : Après la première exécution d'une tâche récurrente, Cowork analyse le résultat et réécrit votre prompt pour l'améliorer. Vérifiez le prompt mis à jour dans le sidebar pour confirmer les modifications.
 

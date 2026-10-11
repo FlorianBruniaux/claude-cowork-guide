@@ -12,7 +12,7 @@ Automate recurring tasks, reports, compilations, weekly reviews, so they generat
 
 ## Prerequisites
 
-- Cowork active (Pro or Max subscription)
+- Cowork active (Pro, Max, Team or Enterprise subscription)
 - Familiarity with the CTOC framework ([Getting Started Step 5](../guide/01-getting-started.md#step-5-the-ctoc-framework))
 - Organized input folders: separate by frequency (daily/, weekly/, monthly/)
 
@@ -132,7 +132,9 @@ The Scheduled section in the sidebar lets you: view upcoming runs, browse run hi
 
 **Reliability**: Check the first few automated outputs manually before relying on them: Scheduled Tasks behavior can vary with complex multi-step workflows.
 
-**On desktop, app open AND device awake**: Cowork requires Claude Desktop to be open AND your computer to be awake (not sleeping) at the scheduled time. If the device is asleep or the app is closed, the task is **skipped** and runs automatically when the device wakes. Plan accordingly for early-morning schedules: disable auto-sleep if needed. Since July 2026, the Cowork web and mobile beta (Max plan, gradual rollout) runs scheduled tasks in the cloud with no device connected, so this constraint is going away for users on that beta.
+**Where the task runs (since October 6, 2026)**: for Pro and Max accounts, new scheduled tasks run in the cloud, on Anthropic servers, with no computer switched on (the "Only on your computer" option no longer exists). Cloud mode on Team and Enterprise is still in beta (on by default for Team, off by default for Enterprise until an owner enables it). Claude Desktop must still be open and online only when a task needs your local files or the built-in browser: a cloud session reaches your folders only for connected folders, and the files it reads are processed on Anthropic servers. Tasks started on your computer before October 6, 2026 stay local: for those, Claude Desktop must be open AND the computer awake (not sleeping) at the scheduled time. If the device is asleep or the app is closed, the task is **skipped** and runs automatically when the device wakes. Plan accordingly for early-morning schedules on local tasks (disable auto-sleep if needed).
+
+**Approval**: when your organization allows it, scheduled tasks created by Claude use "Automatically approve" by default (since October 1, 2026): they use tools without asking and only stop if something looks dangerous. Check the first runs.
 
 **Automatic prompt optimization**: After a recurring task's first run, Cowork analyzes the output and rewrites your prompt to improve it. Check the updated prompt in the sidebar to confirm the changes.
 

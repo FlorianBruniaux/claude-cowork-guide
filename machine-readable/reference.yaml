@@ -3,8 +3,8 @@
 # Source: guide/ documentation
 # Purpose: Condensed index for LLMs to quickly answer user questions about Cowork
 
-version: "1.13.0"
-updated: "2026-09-05"
+version: "1.14.0"
+updated: "2026-10-11"
 status: "availability-varies-by-surface"
 
 # ════════════════════════════════════════════════════════════════
@@ -74,10 +74,15 @@ workflows:
 # QUICK REFERENCE - Essential facts
 # ════════════════════════════════════════════════════════════════
 essentials:
-  what: "Task-oriented Claude workspace for knowledge work, local files and configured connectors"
-  availability: "Paid Claude plans; eligibility varies by plan and surface"
-  platform: "Claude Desktop on macOS and Windows; Linux beta; web and mobile beta on eligible plans"
-  computer_use: "Research preview on eligible plans"
+  what: "Task-oriented Claude workspace for knowledge work, connected folders and configured connectors; built into every Claude conversation since 2026-09-16 (Unified Claude, rolling out on Pro and Max)"
+  availability: "Pro, Max, Team, Enterprise (not Free); eligibility varies by plan and surface"
+  platform: "Claude Desktop on macOS 13+, Windows and Linux (beta, Ubuntu 22.04+ / Debian 12+, no computer use or dictation); also web and mobile on eligible plans"
+  execution: "Since 2026-10-06 new Pro and Max tasks run in the cloud (Anthropic servers, temporary isolated environment); 'Only on your computer' option removed; folders stay on the computer, cloud tasks reach connected folders only while Claude Desktop is open; Team beta on by default, Enterprise beta off by default"
+  approval_modes: "Manual (was Ask before acting), Auto (each action filtered, more usage), Skip all approvals (was Act without asking, no filtering)"
+  models: "Claude 5.5 family: Opus 5.5 (2026-09-22), Sonnet 5.5 (2026-09-28), Haiku 5.5 (2026-10-07); also Fable 5.1, Mythos 5.1, Opus 5; effort levels Low, Medium, High, Extra high, Max; default model per plan not published"
+  browser: "Built-in browser in Claude Desktop (macOS, Windows, Linux beta), separate from the personal browser; Claude in Chrome side panel starts a Cowork session"
+  creation: "Claude Design, Slides, Docs in any conversation (all plans, out of beta 2026-10-08); Dashboards (beta, Pro/Max/Team/Enterprise); Motion (beta, Team/Enterprise)"
+  computer_use: "Beta on Pro and Max, macOS 14+ and Windows; not Team, Enterprise or Linux"
   source: "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork"
 
 # ════════════════════════════════════════════════════════════════
@@ -93,7 +98,8 @@ capabilities:
     - "Generate PDFs"
     - "Execute task code in an isolated environment"
   boundaries:
-    - "Local file, browser and computer access require a connected Claude Desktop app and granted access when the task needs the local computer"
+    - "Folder, built-in browser and computer access require a connected, open Claude Desktop app and granted access"
+    - "Cloud tasks read connected folders on Anthropic servers; local Cowork sessions do not use memory"
     - "Connectors, schedules and cross-device continuation vary by surface and plan"
     - "Isolated task execution is not unrestricted access to the host filesystem or host shell"
 
@@ -198,7 +204,7 @@ competition:
   unique_strength: "Only assistant with true multi-step autonomy + local files + browser automation + 11 plugins"
   vs_copilot: "Better autonomy + plugins, worse OCR accuracy"
   vs_gemini: "Better autonomy, comparable context (1M beta vs 1M+ native)"
-  vs_chatgpt: "Better autonomy + plugins, macOS/Windows vs cross-platform"
+  vs_chatgpt: "Better autonomy + plugins, desktop (macOS/Windows/Linux beta) plus web and mobile"
   vs_apple_intelligence: "Better capabilities + plugins, cloud vs on-device"
   best_ocr: "Microsoft Copilot"
   best_context: "Gemini Advanced (1M+ native) or Cowork (1M beta with Opus 4.6)"
@@ -250,9 +256,9 @@ enterprise:
 limitations:
   environment:
     - "Availability varies by plan and surface"
-    - "Claude Desktop supports macOS and Windows; Linux is beta"
-    - "Web and mobile Cowork access is beta on eligible plans"
-    - "Computer use is research preview on eligible plans"
+    - "Claude Desktop supports macOS (13+), Windows and Linux (beta)"
+    - "Cowork is also available on web and mobile on eligible plans"
+    - "Computer use is beta on Pro and Max (macOS 14+ and Windows only)"
   technical:
     - "Task code runs in an isolated environment, not an unrestricted host shell"
     - "Browser and connector access depends on the current surface and permissions"

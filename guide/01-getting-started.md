@@ -14,20 +14,21 @@ Before starting, ensure you have:
 
 | Requirement | How to Check |
 |-------------|--------------|
-| **Eligible paid Claude plan** | Check your plan and current Cowork availability guidance |
-| **Supported surface** | Claude Desktop on macOS/Windows, Linux beta, or web/mobile beta on eligible plans |
-| **Claude Desktop app** | Applications folder or Spotlight search |
+| **Eligible paid Claude plan** | Pro, Max, Team or Enterprise. Not the Free plan. Check your plan in Settings |
+| **Supported surface** | Claude Desktop on macOS, Windows or Linux (beta), the web, mobile, or the Claude in Chrome side panel |
+| **Operating system** | macOS 13 Ventura or later; Windows; Linux (beta) on Ubuntu 22.04+ or Debian 12+. Computer use needs macOS 14 or later |
+| **Claude Desktop app** | Applications folder or Spotlight search (macOS) |
 | **Latest app version** | See verification steps below ⚠️ |
 
 ### ⚠️ Verify You Have the Latest Claude Desktop Version
 
-**Critical**: Cowork requires the latest version of Claude Desktop. Since July 7, 2026, Anthropic merged Chat and Cowork into a single view on web and desktop, so what you see at the top of the app depends on which build you're running.
+**Critical**: Cowork requires the latest version of Claude Desktop. Since July 7, 2026, Anthropic merged Chat and Cowork into a single view on web and desktop, and since September 16, 2026 ("Unified Claude", gradual rollout on Pro and Max) you no longer choose between modes at all: Claude decides whether your request is a quick answer or a task to carry out. What you see at the top of the app depends on which build you're running.
 
 **How to verify:**
 
 1. Open Claude Desktop app
 2. Look at the top of the sidebar.
-   - **Build from July 2026 or later**: Chat and Cowork share one combined view instead of separate tabs, so there is no "Cowork" entry to look for.
+   - **Build from July 2026 or later**: Chat and Cowork share one combined view instead of separate tabs, so there is no "Cowork" entry to look for. With Unified Claude, there is no mode to pick either: you just describe what you want.
    - **Older build**: you should see three separate modes:
      ```
      Chat    Cowork    Code
@@ -41,14 +42,48 @@ Before starting, ensure you have:
 
 ### Subscription and availability
 
-Cowork availability is linked to an eligible paid Claude plan and varies by surface. Consult Anthropic's current [Cowork availability guidance](https://support.claude.com/en/articles/13345190-get-started-with-cowork) for plan details and pricing.
+Cowork is available on the **Pro, Max, Team and Enterprise** plans, not on the Free plan. One Anthropic installation page still ticks Cowork under Free: that is an inconsistency on Anthropic's side, so do not count on Cowork with a Free account. Consult Anthropic's current [Cowork availability guidance](https://support.claude.com/en/articles/13345190-get-started-with-cowork) for details.
+
+Prices on claude.com/pricing on October 11, 2026 (US dollars, excluding tax; no euro price is published):
+
+| Plan | Price |
+|------|-------|
+| **Free** | $0 (no Cowork) |
+| **Pro** | $20/month, or $200/year (about $17/month) |
+| **Max** | From $100/month (5x or 20x the Pro usage) |
+| **Team** | Standard $20/seat/month billed annually ($25 monthly); Premium $100 ($125 monthly); 2 to 150 people |
+| **Enterprise** | $20/seat/month billed annually, plus usage at API rates |
+
+Paid plans have a rolling 5-hour limit and weekly limits. On Pro and Max, "usage credits" let you continue at API rates. Max and Team also include monthly API credits (Max 5x $100, Max 20x $200, Team up to $500 pooled).
+
+### Where your tasks run
+
+Since October 6, 2026, new Cowork tasks on **Pro and Max** run in the cloud (a temporary isolated environment on Anthropic's servers). The option "Only on your computer" in Settings > General no longer exists, with no way back. In practice:
+
+- **Your folders stay on your computer.** A cloud session reaches them only for the folders you connected, and only while **Claude Desktop is open**. The files Claude reads are processed on Anthropic's servers.
+- **Scheduled tasks created from now on run in the cloud**, so your computer no longer needs to be switched on.
+- Tasks you started on your computer before October 6, 2026 stay there until they finish.
+
+On **Team**, cloud execution is in beta and on by default. On **Enterprise**, it is in beta and off by default until an owner turns it on.
+
+### Install Claude Desktop
+
+| System | How |
+|--------|-----|
+| **macOS** (13 Ventura or later) | Download from [claude.ai/download](https://claude.ai/download) |
+| **Windows** | Download from [claude.ai/download](https://claude.ai/download) |
+| **Linux** (beta; Ubuntu 22.04+ or Debian 12+) | Install through `apt`, following the commands on Anthropic's [installation page](https://support.claude.com/en/articles/10065433-install-claude-desktop). No automatic update, no computer use, no dictation |
+
+One Anthropic help page still lists macOS 11 as the minimum. The Claude Desktop changelog says macOS 13 Ventura since v1.49585.0 (September 8, 2026): use macOS 13.
 
 ### Don't Have Access?
 
 | Situation | Action |
 |-----------|--------|
+| Free plan | Cowork needs Pro, Max, Team or Enterprise |
 | Plan or surface unavailable | Check current Anthropic availability guidance |
-| Linux | Install Claude Desktop beta if it fits your environment |
+| macOS older than 13 | Update macOS, or use the web or mobile surface |
+| Linux | Install the Claude Desktop beta (Ubuntu 22.04+ or Debian 12+) if it fits your environment |
 
 ---
 
@@ -66,12 +101,13 @@ Cowork availability is linked to an eligible paid Claude plan and varies by surf
 2. Find **Cowork** toggle
 3. Enable it
 
-> **Note**: The exact location may vary slightly as the app is updated.
+> **Note**: The exact location may vary slightly as the app is updated. On recent builds, Cowork is part of every conversation, so you may find no separate toggle at all; this guide has not re-checked the exact wording of that Settings screen.
 
 ### 1.3 Verify Activation
 
 After enabling, you should see:
-- Cowork's capabilities reachable from the combined Chat and Cowork view (builds from July 2026 or later)
+- Cowork's capabilities reachable from any conversation, with no mode to choose (Unified Claude, since September 16, 2026)
+- Or the combined Chat and Cowork view (builds from July 2026)
 - Or a new "Cowork" option in a separate mode selector, on older builds
 
 ---
@@ -97,9 +133,11 @@ This creates:
 
 ### 2.2 Grant Folder Access
 
-1. Start a new Cowork conversation
+1. Start a new conversation and describe a task that needs your files
 2. When prompted for folder access, navigate to `~/Cowork-Workspace/`
 3. Grant access **only** to this folder
+
+> **Cloud sessions**: on Pro and Max, the task itself runs in the cloud, but the folder stays on your computer. Keep Claude Desktop open so the session can reach it.
 
 ### 2.3 Verify Access
 
@@ -132,7 +170,7 @@ echo "Random thoughts" > misc-notes.txt
 
 ### 3.2 Run Your First Task
 
-In Cowork, enter:
+In a new conversation, enter:
 
 ```
 Organize the files in ~/Cowork-Workspace/input/ into subfolders
@@ -145,6 +183,16 @@ by category. Create a summary of what you organized in the output folder.
 2. **Your approval**: You review and approve the plan
 3. **Execution**: Cowork reorganizes files
 4. **Report**: Creates summary in output folder
+
+**Choose an approval mode for this first task.** The three modes (names as of October 11, 2026):
+
+| Mode | What happens | Previous name |
+|------|--------------|---------------|
+| **Manual** | Claude waits for your Allow or Deny at every request. Best choice for a first task | "Ask before acting" |
+| **Auto** | Claude moves on without asking at each step, but every action is checked: a dangerous action is blocked and Claude looks for another way or asks you. Uses more of your usage limit | none |
+| **Skip all approvals** | No pause and no automatic checking of actions | "Act without asking" |
+
+On Team and Enterprise, an administrator may restrict these modes. Start with Manual until you trust the results.
 
 ### 3.4 Verify Results
 
@@ -323,7 +371,12 @@ who hasn't responded to our quote in 2 weeks.
 
 ## Step 7: Chrome Integration (Optional)
 
-Cowork can use Chrome for web research tasks.
+Cowork has two ways to browse the web, and both stay under your control:
+
+- **The built-in browser in Claude Desktop** (macOS, Windows, Linux beta). It is separate from your personal browser: Claude does not see your saved passwords unless you import them on purpose, and the sign-ins you make there stay available for later Cowork sessions on this computer. Claude Desktop must be open and online, even for a cloud session started from the web or your phone.
+- **Claude in Chrome**. Opening its side panel starts a Cowork session (Max and Team; rolling out on Pro; Enterprise if an administrator enabled it).
+
+When a task needs a service, Claude prefers a connector first, then a browser, then screen control.
 
 ### Enable Chrome Access
 
@@ -355,8 +408,8 @@ Desktop Commander is a free official extension that expands what Cowork can do. 
 
 | Capability | Without Desktop Commander | With Desktop Commander |
 |-----------|--------------------------|----------------------|
-| **File access** | Workspace folder only | Any folder you authorize |
-| **Memory between sessions** | None (starts fresh each time) | Persistent via memory.md |
+| **File access** | The folders you grant to Cowork | Any folder you authorize through the extension |
+| **Memory between sessions** | Claude's built-in memory (Settings > Memory) works in cloud sessions; local Cowork sessions do not use memory | A `memory.md` file that you control, readable in any session |
 | **MCP server setup** | Manual, technical | One-click install |
 
 ### Installation
@@ -405,11 +458,11 @@ Without a memory file, you'd repeat preferences and context at the start of ever
 
 ---
 
-## Step 9: Enable Computer Use (Research Preview)
+## Step 9: Enable Computer Use (Beta)
 
 Computer Use lets Claude control your desktop directly (open apps, click, fill forms and navigate the browser) when it is available for your eligible plan and surface.
 
-> **Note**: Computer Use remains a research preview on eligible plans. Follow Anthropic's current [computer-use guidance](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork) and use it for supervised tasks where you can review each action.
+> **Note**: Computer Use launched as a research preview on March 23, 2026. Anthropic's help page now presents it as **a beta for Pro and Max plans**, on **macOS 14 or later** and Windows. It is not available on Team, Enterprise or Linux. On macOS, Claude can work in the background from macOS 15, and it no longer edits hidden files in your home folder such as `~/.aws` or `~/.vimrc` (October 6, 2026). Follow Anthropic's current [computer-use guidance](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork) and use it for supervised tasks where you can review each action. The heading of this step keeps its former name so that existing links still work.
 
 ### 9.1 Enable in Claude Desktop
 
@@ -441,7 +494,7 @@ To send tasks to your desktop from your phone while you're away:
 3. Scan the **QR code** shown in your Claude Desktop app
 4. Your phone is now connected. Send tasks remotely from anywhere.
 
-> **Requirements**: Mac must stay awake with Claude Desktop open, since Dispatch pairs your phone to that desktop session to run tasks on your computer while you're away. Since July 2026, the Cowork web and mobile beta (Max plan, gradual rollout) offers an alternative: it runs tasks in the cloud with no desktop connection needed at all.
+> **Requirements**: Mac must stay awake with Claude Desktop open, since Dispatch pairs your phone to that desktop session to run tasks on your computer while you're away. Cowork on web and mobile (beta since July 7, 2026) offers an alternative for tasks that do not need your computer: since October 6, 2026, new Pro and Max tasks run in the cloud by default. A cloud session still needs Claude Desktop open to reach your connected folders and the built-in browser.
 
 ### Security Notes for Computer Use
 
@@ -465,9 +518,15 @@ To send tasks to your desktop from your phone while you're away:
 **Most common cause**: Outdated app version.
 
 1. **Verify your version** : See [Prerequisites](#️-verify-you-have-the-latest-claude-desktop-version) above
-2. On builds from July 2026 or later, Chat and Cowork share a single view instead of separate tabs; on older builds, if you don't see "Chat | Cowork | Code" at the top, update your app
-3. After updating, check Settings → Features → ensure Cowork is enabled
-4. Restart the app
+2. On builds from July 2026 or later, Chat and Cowork share a single view instead of separate tabs, and with Unified Claude (September 16, 2026) there is no mode to select; on older builds, if you don't see "Chat | Cowork | Code" at the top, update your app
+3. Check you are on Pro, Max, Team or Enterprise: the Free plan does not include Cowork
+4. After updating, check Settings → Features → ensure Cowork is enabled (if that toggle exists on your build)
+5. Restart the app
+
+### "Claude cannot see my folder in a cloud session"
+
+1. Check that **Claude Desktop is open** on the computer that holds the folder
+2. Check that the folder is among the folders you connected
 
 ### "Plan seems wrong"
 
@@ -498,7 +557,8 @@ You're now ready to:
 
 | Action | How |
 |--------|-----|
-| **Start Cowork** | New conversation → Select Cowork mode |
+| **Start Cowork** | New conversation → describe the task (no mode to select since September 16, 2026) |
+| **Choose approvals** | Manual (first tasks), Auto, or Skip all approvals |
 | **Grant access** | Browse to ~/Cowork-Workspace/ when prompted |
 | **Review plan** | Read each step before saying "proceed" |
 | **Stop execution** | Type "Stop" or close the conversation |

@@ -4,7 +4,9 @@
 
 > **Référence rapide d'une page** : Format imprimable
 
-**Disponibilité** : plan Claude payant éligible. Claude Desktop prend en charge macOS et Windows, Linux est en bêta ; Cowork web et mobile sont en bêta sur les plans éligibles. Vérifiez la [disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-cowork) avant de dépendre d'une surface.
+**Disponibilité** (au 11 octobre 2026) : Cowork est ouvert aux plans Pro, Max, Team et Enterprise (pas Free). Claude Desktop fonctionne sur macOS (13 Ventura ou plus récent), Windows et Linux (bêta, Ubuntu 22.04+ / Debian 12+). Depuis le 16 septembre 2026, Cowork est intégré à chaque conversation Claude (déploiement progressif sur Pro et Max, web, desktop et mobile) : plus de mode Chat/Cowork à choisir. Vérifiez la [disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-cowork) avant de dépendre d'une surface.
+
+**Où tournent les tâches** : depuis le 6 octobre 2026, les nouvelles tâches Pro et Max s'exécutent dans le cloud (serveurs d'Anthropic, environnement isolé temporaire). Vos dossiers restent sur votre ordinateur ; une tâche cloud n'accède qu'aux dossiers connectés, et seulement quand Claude Desktop est ouvert. Les tâches planifiées tournent dans le cloud même ordinateur éteint. Les tâches lancées en local avant le 6 octobre restent locales. Team : bêta, activée par défaut. Enterprise : bêta, désactivée jusqu'à activation par un owner.
 
 ---
 
@@ -34,13 +36,26 @@ Format : [exigences de format spécifiques]
 
 ## Sélection du modèle
 
-| Modèle | Utiliser pour | Vitesse | Contexte |
-|--------|---------------|---------|----------|
-| Modèle disponible | Adaptation à la tâche | Vérification | Contexte |
-|-------------------|---------------------|--------------|---------|
-| **Modèle affiché dans Claude** | Adapter à la complexité | Vérifier la surface actuelle | Varie selon le modèle et le plan |
+| Modèle | Utiliser pour | Notes (Anthropic, octobre 2026) |
+|--------|---------------|---------------------------------|
+| **Opus 5.5** (22 sept.) | Travaux difficiles en plusieurs étapes | Niveau de Fable 5.1 sur la plupart des tâches, 40 % moins cher à faire tourner qu'Opus 5 |
+| **Sonnet 5.5** (28 sept.) | Tâches courantes | Plus de 30 % plus rapide que Sonnet 5 |
+| **Haiku 5.5** (7 oct.) | Tâches simples à fort volume | Le modèle le plus petit, le plus rapide et le moins cher d'Anthropic |
+| Fable 5.1, Mythos 5.1, Opus 5 | Toujours disponibles | Voir le sélecteur de modèle |
 
-La disponibilité des modèles, le contexte et l'usage sont des paramètres produit, pas des constantes du guide. Utilisez les options affichées dans Claude et testez une petite tâche avant un gros lot.
+Niveaux d'effort : Low, Medium, High, Extra high, Max. Le modèle par défaut de chaque plan n'est pas publié : utilisez les options affichées dans Claude et testez une petite tâche avant un gros lot.
+
+---
+
+## Modes d'approbation
+
+| Mode | Ce qui se passe | Attention |
+|------|-----------------|-----------|
+| **Manual** (ex « Ask before acting ») | Claude attend Allow ou Deny à chaque demande | Le plus sûr, le plus lent |
+| **Auto** | Chaque action est filtrée, les actions dangereuses sont bloquées | Consomme plus de limite d'usage |
+| **Skip all approvals** (ex « Act without asking ») | Aucune pause, aucun filtrage | Travaux non sensibles uniquement |
+
+Team et Enterprise : Auto est proposé par défaut ; « Always allow » pour les outils de connecteurs est désactivé par défaut ; un outil réglé sur « Restrict to Ask » demande quand même, même en Skip all approvals. Source : support.claude.com/en/articles/13345190 et 13455879.
 
 ---
 
@@ -162,6 +177,7 @@ Enregistre dans ~/Cowork-Workspace/output/outils-gp.md
 | Tâche s'arrête | Diviser en lots plus petits |
 | Formules Excel cassées | Spécifier syntaxe régionale |
 | Chrome ne fonctionne pas | Accorder permission Accessibilité |
+| Utilisation de l'ordinateur absente | Pro/Max uniquement, macOS 14+ ou Windows (pas Team, Enterprise, Linux) |
 
 ---
 
@@ -246,6 +262,8 @@ Les limites d'usage varient selon le plan, le modèle, la surface et la tâche. 
 | Action | Méthode |
 |--------|--------|
 | Arrêter l'exécution | Taper "Stop" |
+| Envoyer un message pendant que Claude répond | Il attend dans la file ; cliquez sur **Send now** pour arrêter la réponse et l'envoyer |
+| Interrompre et envoyer tout de suite | Cmd+Entrée (Mac) / Ctrl+Entrée (Windows, Linux) |
 | Nouvelle conversation | Cmd+N |
 | Effacer le contexte | Démarrer nouvelle conversation |
 
@@ -262,4 +280,4 @@ Les limites d'usage varient selon le plan, le modèle, la surface et la tâche. 
 
 ---
 
-*Claude Cowork Guide v1.13.0 | La disponibilité varie selon le plan, la surface et la fonction*
+*Claude Cowork Guide v1.14.0 | La disponibilité varie selon le plan, la surface et la fonction*

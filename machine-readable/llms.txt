@@ -6,8 +6,8 @@
 
 - Title: Claude Cowork Guide
 - Author: Florian Bruniaux
-- Version: 1.13.0
-- Last Updated: September 5, 2026
+- Version: 1.14.0
+- Last Updated: October 11, 2026
 - License: CC BY-SA 4.0 (free, open source)
 - Workflows: 29 step-by-step guides
 - Ready-to-use Prompts: 70
@@ -15,16 +15,19 @@
 
 ## What is Cowork?
 
-Claude's task-oriented workspace for knowledge work. It can work with connected local files, documents and configured connectors. Capabilities vary by surface, plan and permissions.
+Claude's task-oriented workspace for knowledge work. Since September 16, 2026 ("Unified Claude", rolling out on Pro and Max), Cowork is built into every Claude conversation: there is no Chat/Cowork mode to pick, and Claude decides whether a request is a quick answer or a task. It can work with connected folders, documents and configured connectors. Capabilities vary by surface, plan and permissions.
 
-**Availability**: paid Claude plans; see Anthropic's current availability guidance
-**Platform**: Claude Desktop on macOS and Windows, Linux beta; web and mobile beta on eligible plans
-**Feature status**: computer use remains research preview on eligible plans
+**Availability**: Pro, Max, Team and Enterprise plans (not Free); see Anthropic's current availability guidance
+**Platform**: Claude Desktop on macOS (13 Ventura or later), Windows and Linux (beta); also web and mobile on eligible plans
+**Where tasks run**: since October 6, 2026, new Pro and Max tasks run in the cloud (Anthropic servers, temporary isolated environment); the "Only on your computer" option is removed. Cowork in the cloud is a beta on Team (on by default) and Enterprise (off by default)
+**Approval modes**: Manual, Auto, Skip all approvals
+**Feature status**: computer use is in beta on Pro and Max (macOS and Windows only)
 **Primary sources**: https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork and https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile
 
 ## Current Product Boundary
 
-- Local file access requires Claude Desktop to be connected when the task needs the local computer.
+- Your folders stay on your computer. A cloud task reaches only the folders you connected, and only while Claude Desktop is open; the files it reads are processed on Anthropic's servers.
+- Local Cowork sessions started before October 6, 2026 do not use memory.
 - Connectors and browser/computer use have their own eligibility and permission requirements.
 - Cowork can execute code in an isolated environment. This is not arbitrary shell access to the host computer.
 - Do not infer feature availability, quotas or pricing from this guide. Check Anthropic before a time-sensitive decision.
@@ -35,12 +38,14 @@ Claude's task-oriented workspace for knowledge work. It can work with connected 
 - Create Office docs (Word, Excel, PowerPoint)
 - Extract data from images and documents, subject to verification by the user
 - Organize folders and files
-- Work with configured connectors and browser tools where available
+- Work with configured connectors and browser tools (built-in browser or Claude in Chrome) where available
+- Create designs, slides, docs, dashboards (beta) and animations (Motion, beta, Team and Enterprise) from any conversation
 - Execute task code in an isolated environment
 
 ## Boundaries to Keep in Mind
 
-- Local files, local browser access and computer use depend on a connected Claude Desktop app and user-granted access.
+- Folder access, the built-in browser and computer use depend on a connected Claude Desktop app and user-granted access.
+- Computer use: Pro and Max only, macOS 14+ or Windows, not Linux, Team or Enterprise.
 - Cloud availability, schedules and cross-device continuation vary by surface and plan.
 - Cowork does not imply unrestricted access to the host filesystem or host shell.
 

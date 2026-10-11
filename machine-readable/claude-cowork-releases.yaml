@@ -2,13 +2,33 @@
 # Source: CHANGELOG.md + Anthropic product announcements
 # Purpose: Track Cowork documentation + product releases
 
-latest: "1.13.0"
-updated: "2026-09-05"
+latest: "1.14.0"
+updated: "2026-10-11"
 
 # ════════════════════════════════════════════════════════════════
 # RELEASES (newest first, condensed highlights only)
 # ════════════════════════════════════════════════════════════════
 releases:
+
+  # ─────────────────────────────────────────────────────────────
+  # 1.14.x Series (October 2026)
+  # ─────────────────────────────────────────────────────────────
+
+  - version: "1.14.0"
+    date: "2026-10-11"
+    highlights:
+      - "⭐ Cowork dans chaque conversation, « Unified Claude » (16 septembre 2026, Pro/Max, web, desktop, mobile) : plus de choix de mode, chats, tâches, projets, connecteurs et skills conservés. Activation pour toutes les organisations 3P le 10 novembre"
+      - "⭐ Claude Opus 5.5, Sonnet 5.5 et Haiku 5.5 (22 septembre, 28 septembre, 7 octobre 2026) : Opus 5.5 au niveau de Fable 5.1 sur la plupart des tâches, 40 % moins cher qu'Opus 5"
+      - "⭐ Claude Design, Slides et Docs dans toute conversation (16 septembre 2026, tous plans y compris Free) : sortis de bêta le 8 octobre, avec Claude Dashboards (Pro à Enterprise) et Claude Motion (Team et Enterprise) en bêta"
+      - "⭐ Navigateur intégré dans Cowork (septembre 2026, macOS, Windows, Linux bêta) : séparé du navigateur personnel, Claude Desktop doit rester ouvert"
+      - "Modes d'approbation renommés : Manual, Auto, Skip all approvals. Scan des skills et plugins actif par défaut sur Enterprise depuis le 2 octobre"
+      - "⭐ Google Docs, Sheets et Slides (6 octobre 2026, bêta) : add-on Google Workspace et connecteurs, création de fichiers Google depuis le sélecteur Output du desktop"
+      - "⭐ Salesforce in Claude (15 septembre 2026, bêta) : plugin avec 37 skills de vente, organisations approuvées par Salesforce"
+      - "Portail développeur pour les plugins, Smart reports (bêta Enterprise), crédits API mensuels inclus dans Max et Team"
+      - "Prérequis relevés : macOS 13 minimum pour l'app, macOS 14 pour computer use"
+    breaking:
+      - "Cowork passe dans le cloud pour Pro et Max (6 octobre 2026) : option « Only on your computer » supprimée, sans retour possible. Les dossiers restent sur l'ordinateur"
+      - "Tâches planifiées créées par Claude en « Automatically approve » par défaut quand l'organisation l'autorise (1er octobre 2026)"
 
   # ─────────────────────────────────────────────────────────────
   # 1.13.x Series (September 2026)

@@ -23,11 +23,54 @@ Unlike regular Claude conversations, Cowork has **autonomous file access**:
 
 This expanded capability requires expanded caution.
 
-> **Technical note**: Cowork executes tasks inside an **isolated virtual machine (VM)** on your device. Files remain local and are not uploaded to Anthropic servers. The VM provides isolation between Cowork's execution environment and your system, but Claude can still make real changes to files in folders you have granted access to. "Isolated" means process-level separation, not a guarantee against unintended file operations.
+### Where Your Tasks Run (changed October 6, 2026)
+
+Since **October 6, 2026**, new Cowork tasks on **Pro and Max** plans run **in the cloud**, in a temporary isolated environment on Anthropic servers. The "Only on your computer" option in Settings > General has been removed, with no way back.
+
+What this means in practice:
+
+| Question | Answer |
+|----------|--------|
+| Where do my folders stay? | On your computer. |
+| Can a cloud task reach them? | Only the folders you connected, and only while Claude Desktop is open. |
+| What happens to the files Claude reads? | They are processed on Anthropic servers. |
+| What about tasks started before October 6? | Tasks launched locally before that date stay local until they finish. |
+| Do scheduled tasks need my computer? | New scheduled tasks run in the cloud, without a device switched on. |
+
+Team and Enterprise: Cowork in the cloud is in **beta**. It is on by default for Team. For Enterprise it is off by default and an owner must turn it on. Local sessions do not use memory.
+
+> **Local sessions and third-party deployments**: before October 6, 2026, and for administered third-party deployments, Cowork ran tasks inside an **isolated virtual machine (VM)** on your device, and files stayed local. That description remains valid for those local sessions only. It no longer describes new Pro and Max tasks. In both cases, "isolated" means process-level separation, not a guarantee against unintended file operations: Claude can still make real changes to files in folders you have granted access to.
+>
+> Source: support.claude.com/en/articles/15520349 (summarized in the 1.14.0 changelog entry).
+
+**Consequence for your security choices**: before connecting a folder, ask yourself what its files contain, because anything Claude reads in a cloud task leaves your computer for Anthropic servers. This guide does not make any statement about data residency or GDPR compliance for this flow: no such statement appears in the sources we reviewed. If your company must answer that question, check Anthropic's contractual documents directly.
+
+### Approval Modes
+
+Since October 2026 the three modes have new names (support.claude.com/en/articles/13345190):
+
+| Mode | Former name | What happens |
+|------|-------------|--------------|
+| **Manual** | Ask before acting | Claude waits for your Allow or Deny at every request. |
+| **Auto** | (new) | Claude moves on without asking at each step. Every action is screened, a dangerous one is blocked, and Claude looks for another route or asks you. If it is blocked repeatedly, it goes back to asking. Uses more of your usage limit. |
+| **Skip all approvals** | Act without asking | No pause and no automatic screening of actions. |
+
+**Team and Enterprise settings** (Organization settings > Cowork, support.claude.com/en/articles/13455879):
+- "Allow Automatically approve mode" is **on by default**: Auto is offered to members until an owner turns it off.
+- "Allow Always allow for connector tools" is **off by default**: "always allow" preferences already saved for write tools are then not applied.
+- A connector tool set to **Restrict to Ask** by the organization asks for approval **even in Skip all approvals** mode (tasks started after September 29, 2026).
+
+**Scheduled tasks created by Claude** use "Automatically approve" by default when the organization allows it (since October 1, 2026). Their runs use tools without asking and stop only if something looks dangerous. Review what you schedule, and check the result of the first runs.
+
+**Recommendation for a small business**:
+1. Choose **Manual** as long as your team is discovering the tool. Move to Auto later, task type by task type, once people know what a normal plan looks like.
+2. Do not use **Skip all approvals** on anything that touches client, payroll or bank data.
+3. Before the first real task, check which of your files and connected apps will pass through the cloud, and keep the rest out of the connected folders.
+4. If you manage a Team plan, look at Organization settings > Cowork and decide on purpose whether Auto and "Always allow" stay as they are.
 
 ### Anthropic's Security Posture
 
-Updated April 2026. **Cowork is now generally available (GA)**:
+Updated April 2026, with the October 2026 changes in the sections on this page. **Cowork is now generally available (GA)**:
 - No official security documentation for Cowork
 - **Audit Logs**: Cowork activity is NOT captured by Audit Logs or the Compliance API (confirmed limitation)
 - ✅ Enterprise access controls now available: role-based access, group spend limits, usage analytics, OpenTelemetry
@@ -142,6 +185,8 @@ mkdir -p ~/Cowork-Workspace/{input,output,archive}
 
 **Why**: Limits blast radius if something goes wrong.
 
+**Wider folders can now be attached (since September 4, 2026)**: Cowork can reach the full user folder, Documents/AppData on Windows, the Library folder on macOS, and whole drives. Claude's own configuration and session data stay out of reach, as do certain credential locations (SSH keys, AWS/GCP credentials, bash/zsh/PowerShell profiles). That is a safety net, not a reason to grant more: keep the dedicated workspace rule above. (Source: claude.com/docs/cowork/changelog v1.46388.3.)
+
 ### 2. File Sanitization (Critical)
 
 Before adding files to your workspace:
@@ -215,7 +260,11 @@ What to look for:
 
 ### 5. Computer Use: Additional Security Layer (High)
 
-Computer Use operates **outside the VM sandbox**: it controls your actual desktop directly. This makes it the highest-risk Cowork feature.
+Computer Use has **no screen sandbox**: it controls your actual desktop directly, outside the isolated environment used for file tasks. This makes it the highest-risk Cowork feature.
+
+**Availability**: beta for Pro and Max (it was a research preview at launch on March 23, 2026), on macOS and Windows. Not available on Team, Enterprise or Linux. macOS 14 or later is required. (Source: support.claude.com/en/articles/14128542.)
+
+**Hidden files**: since October 6, 2026 on macOS, Computer Use no longer edits or saves hidden files or folders in your home folder, such as `~/.vimrc` or `~/.aws`. (Source: claude.com/docs/cowork/changelog v2.26454.0.)
 
 **Official Anthropic guidance**: Do not use Computer Use with applications that access healthcare data, financial accounts, or personal records.
 
@@ -238,6 +287,8 @@ Computer Use operates **outside the VM sandbox**: it controls your actual deskto
 ### 6. Browser Permission Management (High)
 
 Chrome integration creates additional attack surface.
+
+**Built-in browser (September 2026)**: Claude Desktop now includes a browser used by Cowork (Pro, Max, Team; Enterprise when an owner turns it on). It is **separate from your personal browser**: Claude does not see your saved passwords unless you choose to import them. Sites you sign in to in this browser **stay signed in** for later Cowork sessions on that computer, so sign in only to accounts you accept to let Claude use. Claude Desktop must stay open and online for Claude to use it. (Sources: support.claude.com/en/articles/16607400 and 13455879.)
 
 **Grant Chrome access**:
 - Only when web research is needed
@@ -458,6 +509,15 @@ With Cowork's general availability, Enterprise-tier controls are now live:
 | **Zoom MCP connector** | Native Zoom integration for meeting and workflow automation |
 | **Per-tool connector controls** | Granular permission management for individual connector tools |
 
+### Added in Autumn 2026
+
+| Feature | What It Does |
+|---------|--------------|
+| **Skill and plugin security scan** | Checks third-party skills and plugins for malicious content at upload or edit. Optional since August 6, 2026; **on by default since October 2, 2026** for Enterprise organizations that had made no choice (those that had chosen keep their setting). Malicious content is blocked and the uploader cannot bypass it. Risky content stays usable behind a warning. **Not available with CMEK, ZDR or a HIPAA configuration.** (support.claude.com/en/articles/13119606) |
+| **Smart reports** (beta, Enterprise, since September 10, 2026) | Reports on how a team uses Claude: work done, cost, friction points in sessions, and repeated patterns worth turning into shared skills. |
+| **`desktopHome` managed setting** (v2.31226.0, third-party deployments) | `standard` turns on the unified view, `off` removes Chat and Cowork. Without the key, the current separation stays until **November 10, 2026**, when the unified view turns on for all organizations. |
+| **Approval settings** | See "Approval Modes" above: Auto on by default, Always allow off by default, Restrict to Ask takes priority. |
+
 ### Remaining Limitations for Regulated Sectors
 
 Even with GA enterprise controls, critical gaps remain:
@@ -471,6 +531,8 @@ Even with GA enterprise controls, critical gaps remain:
 
 > ⚠️ **Official Anthropic limitation**: "Audit Logs and the Compliance API do not capture Cowork activity." Source: Anthropic Help Center, March 2026. This remains true post-GA.
 
+> **Update, October 2026.** Several of these gaps have moved for Enterprise since March, according to this guide's CHANGELOG: Compliance API integrations with CrowdStrike, Palo Alto Networks, SentinelOne and Wiz, announced on May 21, 2026 as covering the platform, Cowork included (v1.11.0); OpenTelemetry export of Cowork tasks with `otlpTracesEnabled` (beta, July 2026, v1.12.0); self-service HIPAA configuration for eligible Enterprise admins (July 14, 2026, v1.12.0). The March 2026 statement above has not been re-read since. Check the current Help Center with your compliance team before relying on either version.
+
 ### Regulated Sectors: Do Not Use Cowork for Sensitive Workflows
 
 If your business operates in a regulated sector, Cowork is currently unsuitable for workflows involving sensitive data:
@@ -482,7 +544,7 @@ If your business operates in a regulated sector, Cowork is currently unsuitable 
 | **Legal** (law firms, notaries, compliance) | Actions untraceable, no chain-of-custody |
 | **Public sector** (administration, municipalities) | No certified security documentation |
 
-**What you can use instead**: For regulated document processing, use Claude in Chat mode (no autonomous file access) with manual copy-paste, or wait for Enterprise-tier Cowork with audit controls.
+**What you can use instead**: For regulated document processing, use a plain conversation without connected folders or connectors, with manual copy-paste, or evaluate the Enterprise controls listed above with your compliance team.
 
 ### What to Watch for Next
 

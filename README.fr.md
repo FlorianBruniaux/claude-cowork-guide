@@ -27,10 +27,10 @@
   <img src="https://img.shields.io/badge/Disponibilit%C3%A9-variable%20selon%20la%20surface-blue" alt="Disponibilité variable selon la surface"/>
   <img src="https://img.shields.io/badge/Plateforme-macOS%20%7C%20Windows%20%7C%20Linux%20b%C3%AAta-blue" alt="Plateforme : macOS, Windows, Linux bêta"/>
   <img src="https://img.shields.io/badge/Abonnement-plans%20Claude%20payants-purple" alt="Plans Claude payants"/>
-  <img src="https://img.shields.io/badge/Version-1.13.0-orange" alt="Version"/>
+  <img src="https://img.shields.io/badge/Version-1.14.0-orange" alt="Version"/>
 </p>
 
-> Guide complet de l'assistant desktop de Claude pour les travailleurs du savoir et les petites entreprises.
+> Guide complet de Cowork, l'espace de tâches de Claude pour les travailleurs du savoir et les petites entreprises. Depuis le 16 septembre 2026, Cowork est intégré à chaque conversation Claude (« Claude Cowork is now just Claude »).
 > Factures, devis, relances, prospection : automatisés sans coder.
 
 ---
@@ -55,8 +55,9 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 <details>
 <summary><strong>Prérequis</strong></summary>
 
-- **Abonnement** : plan Claude payant éligible. La disponibilité varie selon le plan et la surface.
-- **Plateforme** : Claude Desktop sur macOS et Windows, Linux en bêta. L'accès web et mobile est en bêta sur les plans éligibles.
+- **Abonnement** : Pro, Max, Team ou Enterprise (pas Free). La disponibilité varie selon le plan et la surface.
+- **Plateforme** : Claude Desktop sur macOS (13 Ventura ou plus récent), Windows et Linux (bêta). Cowork est aussi disponible sur le web et le mobile pour les plans éligibles.
+- **Où tournent les tâches** : depuis le 6 octobre 2026, les nouvelles tâches Pro et Max s'exécutent dans le cloud (serveurs d'Anthropic) ; vos dossiers restent sur votre ordinateur et une tâche cloud n'accède qu'aux dossiers connectés, tant que Claude Desktop est ouvert.
 - **App** : Claude Desktop (dernière version)
 
 </details>
@@ -251,11 +252,11 @@ Cowork envoie les prompts, fichiers et résultats aux serveurs Anthropic.
 </details>
 
 <details>
-<summary><strong>Limitations actuelles</strong> (Février 2026)</summary>
+<summary><strong>Limitations actuelles</strong> (11 octobre 2026)</summary>
 
-**Disponibilité** : Cowork est disponible sur les plans Claude payants. Desktop est pris en charge sur macOS et Windows, Linux est en bêta. L'accès web et mobile varie selon le plan éligible.
+**Disponibilité** : Cowork est disponible sur les plans Pro, Max, Team et Enterprise (pas Free). Claude Desktop est pris en charge sur macOS, Windows et Linux (bêta). L'accès web et mobile varie selon le plan éligible. Cowork dans le cloud est en bêta sur Team (activé par défaut) et Enterprise (désactivé par défaut).
 
-**Statut des fonctions** : ne pas employer une étiquette globale bêta ou GA. Certaines fonctions, dont l'utilisation de l'ordinateur, restent en preview recherche sur les plans éligibles.
+**Statut des fonctions** : ne pas employer une étiquette globale bêta ou GA. Certaines fonctions restent en bêta, par exemple l'utilisation de l'ordinateur (Pro et Max uniquement, macOS et Windows) et la prise en charge de Linux.
 
 **À vérifier avant action** : [disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) et [installation desktop](https://support.claude.com/en/articles/10065433-install-claude-desktop) sont les références produit à jour.
 
@@ -294,4 +295,4 @@ Sous licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ---
 
-*Version 1.13.0 | Créé avec Claude*
+*Version 1.14.0 | Créé avec Claude*

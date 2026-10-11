@@ -13,17 +13,19 @@
 
 ### Q: How do I get access to Cowork?
 **A:** You need:
-1. An eligible paid Claude plan. Eligibility varies by plan and surface.
-2. Claude Desktop on macOS or Windows, or Linux beta. Web and mobile are beta on eligible plans.
+1. A paid Claude plan: Pro, Max, Team or Enterprise (not Free, see [Is Cowork free?](#q-is-cowork-free)). Eligibility varies by plan and surface.
+2. Claude Desktop on macOS 13 or newer, on Windows, or on Linux (beta). Web and mobile are beta on eligible plans.
 3. The current Claude app or web/mobile surface for your plan.
+
+Since September 16, 2026, Anthropic is rolling out "Unified Claude" gradually to Pro and Max accounts: there is no Chat or Cowork mode to pick, Claude decides whether your request is a quick answer or a task.
 
 Check Anthropic's current [Cowork availability guidance](https://support.claude.com/en/articles/13345190-get-started-with-cowork) and [surface guidance](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile) before changing a subscription.
 
 ### Q: What are the usage limits?
-**A:** Usage depends on the plan, surface and task. Anthropic can change limits, so consult the current plan information in Claude rather than relying on a fixed message count or reset schedule.
+**A:** Paid plans have a rolling 5-hour limit plus weekly limits. Usage depends on the plan, surface and task, and Anthropic can change limits, so consult the current plan information in Claude rather than relying on a fixed message count. Auto approval mode uses more of your limit than Manual. On Pro and Max, usage credits let you continue at API rates once a limit is reached. Source: claude.com/pricing, read on October 11, 2026.
 
 ### Q: Is Claude Cowork available on Windows?
-**A:** Yes. Claude Desktop supports macOS and Windows, and Linux is beta. Cowork is also beta on the web and mobile for eligible plans. See Anthropic's [desktop installation](https://support.claude.com/en/articles/10065433-install-claude-desktop) and [surface availability](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile) guidance.
+**A:** Yes. Claude Desktop supports macOS (13 Ventura or newer since September 8, 2026), Windows, and Linux (beta: Ubuntu 22.04+ or Debian 12+, installed with apt, no automatic update, no computer use and no dictation). Cowork is also beta on the web and mobile for eligible plans. ChromeOS is not supported. See Anthropic's [desktop installation](https://support.claude.com/en/articles/10065433-install-claude-desktop) and [surface availability](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile) guidance.
 
 ### Q: Is Cowork the same as Claude Code?
 **A:** They share architecture but differ in interface and capabilities:
@@ -54,7 +56,7 @@ See [full comparison](comparison.md).
 Cowork can run code in an isolated task environment. Supported browser and connector capabilities are available only when the relevant surface and permissions allow them.
 
 ### Q: Can Cowork browse the web?
-**A:** Yes, through Chrome integration. You grant Chrome access for specific tasks, and Cowork can search, read pages, and extract information. Form filling is limited and requires explicit user approval for each action. Purchases and logins are prohibited for security reasons.
+**A:** Yes, in two ways. The **built-in browser** of Claude Desktop (macOS, Windows, Linux beta) is separate from your personal browser: Claude does not see your saved passwords unless you import them, and Claude Desktop must be open and online, even for a cloud session started from the web or your phone. **Claude in Chrome** works in your own Chrome: opening its side panel starts a Cowork session (Max, Team, Pro in rollout, Enterprise if an admin turned it on). Claude prefers a connector first, then a browser (built-in or Chrome), then control of the screen as a last resort. Form filling is limited and requires explicit user approval for each action. Purchases and logins are prohibited for security reasons. Source: support.claude.com/en/articles/16607400, 13345190 and 15520349.
 
 ### Q: Can Cowork access Google Drive or Dropbox?
 **A:** Connector availability depends on the surface, the connector and the permissions you grant. Confirm the connection in Claude before a critical workflow. Downloading a copy into a dedicated local workspace remains a useful fallback when a connector is unavailable.
@@ -82,7 +84,7 @@ Cowork can run code in an isolated task environment. Supported browser and conne
 - Windows + macOS (Excel 2016+)
 
 **Cowork's Excel capabilities**:
-- Part of Claude Desktop app (macOS and Windows)
+- Part of Claude Desktop app (macOS, Windows and Linux beta)
 - Creates Excel files from scratch
 - Generates spreadsheets from unstructured data (receipts, images, text)
 
@@ -124,7 +126,15 @@ See [detailed comparison](comparison.md#common-confusion).
 
 If you're seeing articles about "Claude on Telegram" or "Claude on Discord", that's Claude Code Channels, not Cowork.
 
-### Q: What is Opus 4.7's context window?
+### Q: Which Claude models can Cowork use?
+**A:** The Claude 5.5 family, released in autumn 2026:
+- **Claude Opus 5.5** (September 22, 2026): reaches the level of Claude Fable 5.1 on most tasks and costs 40% less to run than Opus 5.
+- **Claude Sonnet 5.5** (September 28, 2026): more than 30% faster than Sonnet 5 and up to 30% cheaper on most tasks, according to claude.com.
+- **Claude Haiku 5.5** (October 7, 2026): the smallest, cheapest and fastest model, built for high-volume tasks.
+
+Earlier models remain available: Claude Fable 5.1 and Mythos 5.1 (September 1, 2026) and Claude Opus 5 (July 24, 2026). Effort levels are Low, Medium, High, Extra high and Max. Which model is the default on each plan is not published: not verified. Source: support.claude.com release notes + claude.com/docs/cowork/changelog.
+
+### Q: What is the context window of the models in Cowork?
 **A:** `UNKNOWN` for Cowork as a fixed value. Context capacity depends on the model, plan and surface available to you. Check the current Claude interface or Anthropic documentation before planning a large task.
 
 ### Q: What are scheduled tasks?
@@ -132,7 +142,7 @@ If you're seeing articles about "Claude on Telegram" or "Claude on Discord", tha
 
 Set them up in **Claude Desktop → left sidebar → Scheduled section → New Task**. Available cadences: hourly, daily, weekly, weekdays-only, or custom. After the first run, Cowork automatically rewrites your prompt to optimize it.
 
-Important: on desktop, Claude Desktop must be open and your device awake when a task fires. If the device is asleep, the task is skipped and runs when the device wakes. Since July 2026, the Cowork web and mobile beta (Max plan, gradual rollout) runs scheduled tasks in the cloud even with no device connected, so this constraint no longer applies once you're on that beta.
+Important: since October 6, 2026, new scheduled tasks on Pro and Max run in the cloud, with no device switched on. Scheduled tasks that Claude creates itself use "Automatically approve" by default when your organization allows it (since October 1, 2026): their runs use tools without asking and stop only if something looks dangerous. For a task that still runs locally (started before October 6, 2026), Claude Desktop must be open and your device awake when it fires; if the device is asleep, the task is skipped and runs when the device wakes. Whether scheduled tasks created before October 6 moved to the cloud: not verified.
 
 See [Scheduled Automation workflow](../workflows/scheduled-automation.md) for copy-paste prompts and patterns.
 
@@ -164,8 +174,16 @@ See [Scheduled Automation workflow](../workflows/scheduled-automation.md) for co
 - Avoid files with instruction-like content
 - Review Cowork's plan before approval
 
-### Q: Is my data sent to Anthropic's servers?
-**A:** File content is processed by Claude's API, similar to pasting text in chat. No official data retention policy specific to Cowork yet. For sensitive data, consider if cloud AI processing is appropriate.
+### Q: Do my files go to the cloud?
+**A:** Your folders stay on your computer, but what Claude reads is processed on Anthropic's servers, like pasting text in a chat. Since October 6, 2026, new Cowork tasks on Pro and Max run in the cloud, in a temporary isolated environment. A cloud session reaches only the folders you connected, and only while Claude Desktop is open. The "Only on your computer" option was removed from Settings > General on that date, with no way back. Tasks started on your computer before October 6 stay local. No official data retention policy specific to Cowork was found. For sensitive data, decide whether cloud processing is appropriate.
+
+### Q: What are the approval modes?
+**A:** Cowork asks for your approval in one of three modes (renamed in 2026):
+- **Manual** (formerly "Ask before acting"): Claude waits for Allow or Deny at each request.
+- **Auto**: Claude moves on without asking at each step. Every action is filtered, a dangerous action is blocked, and Claude looks for another way or asks you. It falls back to asking if it is blocked repeatedly. It uses more of your usage limit.
+- **Skip all approvals** (formerly "Act without asking"): no pause and no automatic filtering of actions.
+
+On Team and Enterprise, an owner can turn Auto off in Organization settings > Cowork (it is offered by default). "Always allow" for connector tools is off by default. A connector tool set to "Restrict to Ask" by the organization still asks for approval, even in Skip all approvals. Source: support.claude.com/en/articles/13345190 and 13455879.
 
 ### Q: Can I use Cowork for confidential business documents?
 **A:** **Use with caution for sensitive data.** Enterprise controls are live (role-based access, spend limits, usage analytics, OpenTelemetry). However, two blockers remain for compliance-heavy workflows: (1) Audit Logs don't capture Cowork activity (confirmed Anthropic limitation); (2) No compliance certifications yet. For regulated industries (finance, health, legal, public sector), review the [Enterprise Considerations](../guide/03-security.md#enterprise-considerations) section before using Cowork with confidential data.
@@ -206,12 +224,7 @@ Common causes: context limit, timeout, network issues.
 **A:** Type "Stop" in the chat or close the conversation window.
 
 ### Q: My task failed when my computer went to sleep.
-**A:** On desktop, Cowork requires the app to remain open and active. Outside the Cowork web/mobile beta, there is:
-- No offline mode
-- No cross-device sync
-- No memory persistence between sessions
-
-Since July 2026, the Cowork web and mobile beta (Max plan, gradual rollout) removes this dependency: sessions and files are saved to your Claude account and tasks can run in the cloud with no device connected.
+**A:** This applies to local sessions: the app must stay open and active, and local sessions do not use memory. Since October 6, 2026, new tasks on Pro and Max run in the cloud, so they do not depend on your computer staying awake (a cloud session only reaches your connected folders while Claude Desktop is open). Tasks started on your computer before that date stay local. On Team and Enterprise, Cowork in the cloud is a beta.
 
 **Prevention**: Disable sleep during long tasks. For critical work, break into smaller checkpointed batches that can be resumed.
 
@@ -227,11 +240,28 @@ Since July 2026, the Cowork web and mobile beta (Max plan, gradual rollout) remo
 
 ## Pricing & Access
 
+### Q: Is Cowork free?
+**A:** No. Cowork is available on Pro, Max, Team and Enterprise, not on the Free plan. Note that Anthropic contradicts itself: the installation page on support.claude.com ticks Cowork under Free, while the pricing and availability pages list paid plans. Do not count on Cowork with a Free account. Free accounts can still ask for Claude Design, Slides and Docs in any conversation (since September 16, 2026).
+
 ### Q: How much does Cowork cost?
-**A:** Cowork is available on paid Claude plans, with eligibility varying by plan and surface. Consult Anthropic's current plan and availability information for pricing and access.
+**A:** Prices on claude.com/pricing on October 11, 2026, in US dollars, excluding tax. Anthropic publishes no euro price list: the amount you pay in euros and the VAT depend on your invoice.
+
+| Plan | Price |
+|------|-------|
+| Free | $0 (no Cowork) |
+| Pro | $20 per month, or $200 per year ($17 per month) |
+| Max | from $100 per month (5x or 20x the Pro usage) |
+| Team Standard | $20 per seat per month billed annually, or $25 billed monthly (2 to 150 people) |
+| Team Premium | $100 per seat per month billed annually, or $125 billed monthly (2 to 150 people) |
+| Enterprise | $20 per seat per month billed annually, plus usage at API rates |
+
+Prices change: check claude.com/pricing before you subscribe.
+
+### Q: Do paid plans include API credits?
+**A:** Since October 7, 2026, Max and Team subscribers receive monthly API credits to run their own apps and agents. You claim them by linking a Claude Console organization in the billing settings. Amounts shown on claude.com/pricing on October 11, 2026: $100 per month for Max 5x, $200 for Max 20x, up to $500 per month pooled for a Team organization. No credits on Free, Pro or Enterprise. Rollout takes a few days. Source: support.claude.com release notes + claude.com/pricing.
 
 ### Q: Pro or Max: which should I choose?
-**A:** Choose a plan from Anthropic's current plan information based on the surface and usage you need. Do not use the historical prices or quota ratios previously published in this guide as a purchase decision.
+**A:** Pro suits occasional use. Max gives 5x or 20x the Pro usage and includes monthly API credits. Both have a rolling 5-hour limit plus weekly limits, and usage credits let you continue at API rates. Choose from the current prices above and your real usage: this guide publishes no measured quota ratio.
 
 ### Q: Is there a usage limit with Cowork?
 **A:** Yes, but the limit is plan- and task-dependent. Confirm the current limit in Claude or Anthropic's plan documentation before scheduling a large batch.
@@ -247,7 +277,7 @@ Since July 2026, the Cowork web and mobile beta (Max plan, gradual rollout) remo
 **A:** It varies by model, plan and surface. Start with a representative batch, verify the output, and split subsequent work into reviewable groups rather than relying on a fixed document or token count.
 
 ### Q: Does Cowork remember across sessions?
-**A:** Not by default, each session starts fresh. With **Desktop Commander** installed, you can create a `memory.md` file that persists context across sessions. Start each session with "Read ~/Cowork-Workspace/memory.md first." Without Desktop Commander, the workaround remains saving context to a file and loading it next session. See [Memory Setup workflow](../workflows/memory-setup.md) for details.
+**A:** Not by default, each session starts fresh. Since August 25, 2026, memory works across chat and Cowork in the cloud (Settings > Memory > Topics, editable and deletable one item at a time). Local Cowork sessions do not use memory. With **Desktop Commander** installed, you can create a `memory.md` file that persists context across sessions. Start each session with "Read ~/Cowork-Workspace/memory.md first." Without Desktop Commander, the workaround remains saving context to a file and loading it next session. See [Memory Setup workflow](../workflows/memory-setup.md) for details.
 
 ### Q: Can I automate Cowork with scripts?
 **A:** Not currently. Cowork has no API or automation interface (January 2026). For automation, use Claude Code.
@@ -275,6 +305,8 @@ Since July 2026, the Cowork web and mobile beta (Max plan, gradual rollout) remo
 - **Collaboration**: Shareable links, team visibility
 - **Mobile/any device**: Zero-install access
 
+**Note**: on accounts that already have "Unified Claude" (gradual rollout to Pro and Max since September 16, 2026), there is no mode to choose: Claude decides whether a request is a quick answer or a task.
+
 **Rule of thumb**: Is the challenge *intellectual* (reason/write/code) or *operational* (organize/automate/batch)? Chat for the first, Cowork for the second. Most users: ~80% Chat, ~20% Cowork.
 
 ### Q: Can developers benefit from Cowork?
@@ -289,7 +321,7 @@ Since July 2026, the Cowork web and mobile beta (Max plan, gradual rollout) remo
 ## Future
 
 ### Q: Is Cowork still in beta?
-**A:** Do not apply one global beta or GA label to every Cowork capability. Availability varies by surface and plan; computer use remains a research preview on eligible plans. Check the current [Cowork availability](https://support.claude.com/en/articles/13345190-get-started-with-cowork) and [computer-use guidance](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork).
+**A:** Do not apply one global beta or GA label to every Cowork capability. Availability varies by surface and plan: computer use is a beta for Pro and Max (macOS and Windows, not Team, Enterprise or Linux), and Cowork in the cloud is a beta on Team and Enterprise. Check the current [Cowork availability](https://support.claude.com/en/articles/13345190-get-started-with-cowork) and [computer-use guidance](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork).
 
 ### Q: What features are coming?
 **A:** Product availability changes. Linux is currently beta for Claude Desktop. Use Anthropic's release and support documentation rather than this FAQ for future-feature announcements.

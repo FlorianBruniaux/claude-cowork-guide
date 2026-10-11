@@ -13,17 +13,19 @@
 
 ### Q: Comment obtenir l'accès à Cowork ?
 **R:** Vous avez besoin de :
-1. Un plan Claude payant éligible. L'éligibilité dépend du plan et de la surface.
-2. Claude Desktop sur macOS ou Windows, ou Linux en bêta. Le web et le mobile sont en bêta pour les plans éligibles.
+1. Un plan Claude payant : Pro, Max, Team ou Enterprise (pas Free, voir [Cowork est-il gratuit ?](#q-cowork-est-il-gratuit-)). L'éligibilité dépend du plan et de la surface.
+2. Claude Desktop sur macOS 13 ou plus récent, sur Windows, ou sur Linux (bêta). Le web et le mobile sont en bêta pour les plans éligibles.
 3. L'application Claude ou la surface web/mobile actuelle de votre plan.
+
+Depuis le 16 septembre 2026, Anthropic déploie progressivement « Unified Claude » sur les comptes Pro et Max : il n'y a plus de mode Chat ou Cowork à choisir, Claude décide si votre demande appelle une réponse rapide ou une tâche.
 
 Vérifiez le [guide officiel de disponibilité](https://support.claude.com/en/articles/13345190-get-started-with-cowork) et le [guide des surfaces](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile) avant de changer d'abonnement.
 
 ### Q: Quelles sont les limites d'usage ?
-**R:** L'usage dépend du plan, de la surface et de la tâche. Anthropic peut modifier les limites : consultez les informations de plan actuelles dans Claude plutôt qu'un nombre fixe de messages ou une cadence de réinitialisation.
+**R:** Les plans payants ont une limite glissante de 5 h et des limites hebdomadaires. L'usage dépend du plan, de la surface et de la tâche, et Anthropic peut modifier les limites : consultez les informations de plan actuelles dans Claude plutôt qu'un nombre fixe de messages. Le mode d'approbation Auto consomme plus de limite que Manual. Sur Pro et Max, les usage credits permettent de continuer aux tarifs API une fois une limite atteinte. Source : claude.com/pricing, relu le 11 octobre 2026.
 
 ### Q: Claude Cowork est-il disponible sur Windows ?
-**R:** Oui. Claude Desktop prend en charge macOS et Windows, et Linux est en bêta. Cowork est aussi en bêta sur le web et le mobile pour les plans éligibles. Consultez le [guide d'installation desktop](https://support.claude.com/en/articles/10065433-install-claude-desktop) et le [guide de disponibilité des surfaces](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile).
+**R:** Oui. Claude Desktop prend en charge macOS (13 Ventura ou plus récent depuis le 8 septembre 2026), Windows, et Linux (bêta : Ubuntu 22.04+ ou Debian 12+, installation par apt, pas de mise à jour automatique, ni computer use ni dictée). Cowork est aussi en bêta sur le web et le mobile pour les plans éligibles. ChromeOS n'est pas pris en charge. Consultez le [guide d'installation desktop](https://support.claude.com/en/articles/10065433-install-claude-desktop) et le [guide de disponibilité des surfaces](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile).
 
 ### Q: Est-ce que Cowork est la même chose que Claude Code ?
 **R:** Ils partagent l'architecture mais diffèrent dans l'interface et les capacités :
@@ -54,7 +56,7 @@ Voir [comparaison complète](comparison.fr.md).
 Cowork peut exécuter du code dans un environnement de tâche isolé. Les fonctions navigateur et connecteurs ne sont disponibles que si la surface et les permissions concernées l'autorisent.
 
 ### Q: Est-ce que Cowork peut naviguer sur le web ?
-**R:** Oui, via l'intégration Chrome. Vous accordez l'accès Chrome pour des tâches spécifiques, et Cowork peut rechercher, lire des pages et extraire des informations. Le remplissage de formulaires est limité et nécessite une approbation explicite de l'utilisateur pour chaque action. Les achats et connexions sont interdits pour des raisons de sécurité.
+**R:** Oui, de deux façons. Le **navigateur intégré** de Claude Desktop (macOS, Windows, Linux bêta) est séparé de votre navigateur personnel : Claude ne voit pas vos mots de passe enregistrés sauf import volontaire, et Claude Desktop doit être ouvert et en ligne, même pour une session cloud lancée depuis le web ou votre téléphone. **Claude in Chrome** agit dans votre propre Chrome : ouvrir son panneau latéral démarre une session Cowork (Max, Team, Pro en déploiement, Enterprise si un admin l'a activé). Claude privilégie d'abord un connecteur, puis un navigateur (intégré ou Chrome), puis le contrôle de l'écran en dernier recours. Le remplissage de formulaires est limité et nécessite une approbation explicite de l'utilisateur pour chaque action. Les achats et connexions sont interdits pour des raisons de sécurité. Source : support.claude.com/en/articles/16607400, 13345190 et 15520349.
 
 ### Q: Est-ce que Cowork peut accéder à Google Drive ou Dropbox ?
 **R:** La disponibilité dépend de la surface, du connecteur et des permissions accordées. Vérifiez la connexion dans Claude avant un workflow critique. Télécharger une copie dans un espace de travail local dédié reste une solution de repli utile lorsqu'un connecteur est indisponible.
@@ -82,7 +84,7 @@ Cowork peut exécuter du code dans un environnement de tâche isolé. Les foncti
 - Windows + macOS (Excel 2016+)
 
 **Capacités Excel de Cowork** :
-- Partie de l'application Claude Desktop (macOS et Windows)
+- Partie de l'application Claude Desktop (macOS, Windows et Linux bêta)
 - Crée des fichiers Excel depuis zéro
 - Génère des tableurs depuis des données non structurées (reçus, images, texte)
 
@@ -124,7 +126,15 @@ Voir [comparaison détaillée](comparison.fr.md#confusion-courante).
 
 Si vous voyez des articles sur "Claude sur Telegram" ou "Claude sur Discord", c'est Claude Code Channels, pas Cowork.
 
-### Q: Quelle est la fenêtre de contexte d'Opus 4.7 ?
+### Q: Quels modèles Claude Cowork peut-il utiliser ?
+**R:** La famille Claude 5.5, sortie à l'automne 2026 :
+- **Claude Opus 5.5** (22 septembre 2026) : atteint le niveau de Claude Fable 5.1 sur la plupart des tâches et coûte 40 % de moins à faire tourner qu'Opus 5.
+- **Claude Sonnet 5.5** (28 septembre 2026) : plus de 30 % plus rapide que Sonnet 5 et jusqu'à 30 % moins cher sur la plupart des tâches, selon claude.com.
+- **Claude Haiku 5.5** (7 octobre 2026) : le plus petit, le moins cher et le plus rapide, conçu pour les tâches à fort volume.
+
+Les modèles précédents restent disponibles : Claude Fable 5.1 et Mythos 5.1 (1er septembre 2026) et Claude Opus 5 (24 juillet 2026). Les niveaux d'effort sont Low, Medium, High, Extra high et Max. Le modèle par défaut de chaque plan n'est pas publié : non vérifié. Source : notes de version support.claude.com + claude.com/docs/cowork/changelog.
+
+### Q: Quelle est la fenêtre de contexte des modèles dans Cowork ?
 **R:** `UNKNOWN` comme valeur fixe pour Cowork. La capacité de contexte dépend du modèle, du plan et de la surface disponibles. Vérifiez l'interface Claude ou la documentation Anthropic actuelle avant de planifier une tâche importante.
 
 ### Q: Qu'est-ce que les tâches planifiées ?
@@ -132,7 +142,7 @@ Si vous voyez des articles sur "Claude sur Telegram" ou "Claude sur Discord", c'
 
 Configurez-les dans **Claude Desktop → barre latérale gauche → section Planifié → Nouvelle tâche**. Cadences disponibles : horaire, quotidien, hebdomadaire, jours ouvrables uniquement, ou personnalisé. Après la première exécution, Cowork réécrit automatiquement votre prompt pour l'optimiser.
 
-Important : sur desktop, Claude Desktop doit être ouvert et l'appareil allumé (pas en veille) au moment prévu. Si l'appareil est en veille, la tâche est ignorée puis s'exécute au réveil. Depuis juillet 2026, la bêta Cowork web et mobile (plan Max, déploiement progressif) exécute les tâches planifiées dans le cloud même sans appareil connecté : cette contrainte disparaît une fois sur cette bêta.
+Important : depuis le 6 octobre 2026, les nouvelles tâches planifiées Pro et Max s'exécutent dans le cloud, sans appareil allumé. Les tâches planifiées que Claude crée lui-même utilisent « Automatically approve » par défaut quand votre organisation l'autorise (depuis le 1er octobre 2026) : leurs exécutions utilisent les outils sans demander et ne s'arrêtent que si quelque chose paraît dangereux. Pour une tâche qui tourne encore en local (lancée avant le 6 octobre 2026), Claude Desktop doit être ouvert et l'appareil allumé (pas en veille) au moment prévu ; si l'appareil est en veille, la tâche est ignorée puis s'exécute au réveil. Les tâches planifiées créées avant le 6 octobre sont-elles passées dans le cloud : non vérifié.
 
 Voir le [workflow Automatisation Planifiée](../workflows/scheduled-automation.md) pour les prompts prêts à l'emploi et les patterns de configuration.
 
@@ -164,8 +174,16 @@ Voir le [workflow Automatisation Planifiée](../workflows/scheduled-automation.m
 - Évitez les fichiers avec du contenu ressemblant à des instructions
 - Révisez le plan de Cowork avant approbation
 
-### Q: Est-ce que mes données sont envoyées aux serveurs d'Anthropic ?
-**R:** Le contenu des fichiers est traité par l'API de Claude, similaire à coller du texte dans le chat. Pas encore de politique officielle de rétention de données spécifique à Cowork. Pour les données sensibles, réfléchissez si le traitement IA cloud est approprié.
+### Q: Mes fichiers partent-ils dans le cloud ?
+**R:** Vos dossiers restent sur votre ordinateur, mais ce que Claude lit est traité sur les serveurs d'Anthropic, comme du texte collé dans un chat. Depuis le 6 octobre 2026, les nouvelles tâches Cowork Pro et Max s'exécutent dans le cloud, dans un environnement isolé temporaire. Une session cloud n'atteint que les dossiers que vous avez connectés, et seulement quand Claude Desktop est ouvert. L'option « Only on your computer » a été supprimée de Settings > General à cette date, sans retour possible. Les tâches lancées sur votre ordinateur avant le 6 octobre restent locales. Aucune politique officielle de rétention de données propre à Cowork n'a été trouvée. Pour les données sensibles, décidez si un traitement cloud est approprié.
+
+### Q: Quels sont les modes d'approbation ?
+**R:** Cowork demande votre accord selon l'un de trois modes (renommés en 2026) :
+- **Manual** (anciennement « Ask before acting ») : Claude attend Allow ou Deny à chaque demande.
+- **Auto** : Claude avance sans demander à chaque étape. Chaque action est filtrée, une action dangereuse est bloquée, et Claude cherche une autre voie ou vous demande. Il revient au mode demande s'il est bloqué à répétition. Il consomme plus de limite d'usage.
+- **Skip all approvals** (anciennement « Act without asking ») : aucune pause et aucun filtrage automatique des actions.
+
+Sur Team et Enterprise, un owner peut couper Auto dans Organization settings > Cowork (il est proposé par défaut). « Always allow » pour les outils de connecteurs est désactivé par défaut. Un outil de connecteur réglé « Restrict to Ask » par l'organisation demande l'approbation même en Skip all approvals. Source : support.claude.com/en/articles/13345190 et 13455879.
 
 ### Q: Puis-je utiliser Cowork pour des documents business confidentiels ?
 **R:** **À utiliser avec prudence pour les données sensibles.** Les contrôles enterprise sont actifs (accès par rôle, limites de dépenses, analytics d'utilisation, OpenTelemetry). Cependant, deux points bloquants subsistent pour les workflows soumis à des exigences de conformité strictes : (1) les Audit Logs ne capturent pas l'activité Cowork (limitation confirmée par Anthropic) ; (2) aucune certification de conformité à ce jour. Pour les secteurs réglementés (finance, santé, juridique, secteur public), consultez la section [Considérations entreprise](../guide/03-security.fr.md#considérations-entreprise) avant d'utiliser Cowork avec des données confidentielles.
@@ -206,12 +224,7 @@ Causes courantes : limite de contexte, timeout, problèmes réseau.
 **R:** Tapez "Stop" dans le chat ou fermez la fenêtre de conversation.
 
 ### Q: Ma tâche a échoué quand mon ordinateur s'est mis en veille.
-**R:** Sur desktop, Cowork nécessite que l'app reste ouverte et active. En dehors de la bêta Cowork web/mobile, il n'y a :
-- Pas de mode hors ligne
-- Pas de synchronisation inter-appareils
-- Pas de persistance de mémoire entre les sessions
-
-Depuis juillet 2026, la bêta Cowork web et mobile (plan Max, déploiement progressif) supprime cette dépendance : les sessions et fichiers sont sauvegardés sur votre compte Claude et les tâches peuvent s'exécuter dans le cloud sans appareil connecté.
+**R:** Cela concerne les sessions locales : l'app doit rester ouverte et active, et les sessions locales n'utilisent pas la mémoire. Depuis le 6 octobre 2026, les nouvelles tâches Pro et Max s'exécutent dans le cloud et ne dépendent donc pas de la veille de votre ordinateur (une session cloud n'atteint toutefois vos dossiers connectés que si Claude Desktop est ouvert). Les tâches lancées sur votre ordinateur avant cette date restent locales. Sur Team et Enterprise, Cowork dans le cloud est en bêta.
 
 **Prévention** : Désactivez la veille pendant les tâches longues. Pour le travail critique, divisez en lots plus petits avec points de contrôle qui peuvent être repris.
 
@@ -227,11 +240,28 @@ Depuis juillet 2026, la bêta Cowork web et mobile (plan Max, déploiement progr
 
 ## Tarification & Accès
 
+### Q: Cowork est-il gratuit ?
+**R:** Non. Cowork est disponible sur Pro, Max, Team et Enterprise, pas sur le plan Free. Anthropic se contredit toutefois : la page d'installation de support.claude.com coche Cowork sous Free, alors que les pages de tarifs et de disponibilité listent des plans payants. Ne comptez pas sur Cowork avec un compte Free. Un compte Free peut en revanche demander Claude Design, Slides et Docs dans n'importe quelle conversation (depuis le 16 septembre 2026).
+
 ### Q: Combien coûte Cowork ?
-**R:** Cowork est disponible sur les plans Claude payants, selon le plan et la surface. Consultez les informations Anthropic actuelles pour le prix et l'accès.
+**R:** Tarifs de claude.com/pricing au 11 octobre 2026, en dollars américains, hors taxes. Anthropic ne publie aucun barème en euros : le montant en euros et la TVA dépendent de votre facture.
+
+| Plan | Tarif |
+|------|-------|
+| Free | 0 $ (pas de Cowork) |
+| Pro | 20 $ par mois, ou 200 $ par an (17 $ par mois) |
+| Max | à partir de 100 $ par mois (5x ou 20x l'usage Pro) |
+| Team Standard | 20 $ par siège et par mois en facturation annuelle, ou 25 $ en mensuel (2 à 150 personnes) |
+| Team Premium | 100 $ par siège et par mois en facturation annuelle, ou 125 $ en mensuel (2 à 150 personnes) |
+| Enterprise | 20 $ par siège et par mois en facturation annuelle, plus l'usage aux tarifs API |
+
+Les tarifs évoluent : vérifiez claude.com/pricing avant de vous abonner.
+
+### Q: Les plans payants incluent-ils des crédits API ?
+**R:** Depuis le 7 octobre 2026, les abonnés Max et Team reçoivent des crédits API mensuels pour faire tourner leurs propres apps et agents. On les réclame en liant une organisation Claude Console dans les paramètres de facturation. Montants affichés sur claude.com/pricing au 11 octobre 2026 : 100 $ par mois pour Max 5x, 200 $ pour Max 20x, jusqu'à 500 $ par mois mutualisés pour une organisation Team. Aucun crédit sur Free, Pro ni Enterprise. Le déploiement prend quelques jours. Source : notes de version support.claude.com + claude.com/pricing.
 
 ### Q: Pro ou Max : lequel choisir ?
-**R:** Choisissez un plan à partir des informations actuelles d'Anthropic, selon la surface et l'usage nécessaires. N'utilisez pas les prix ou ratios de quota historiques de ce guide pour une décision d'achat.
+**R:** Pro convient à un usage occasionnel. Max donne 5x ou 20x l'usage de Pro et inclut des crédits API mensuels. Les deux ont une limite glissante de 5 h et des limites hebdomadaires, et les usage credits permettent de continuer aux tarifs API. Choisissez d'après les tarifs ci-dessus et votre usage réel : ce guide ne publie aucun ratio de quota mesuré.
 
 ### Q: Y a-t-il une limite d'usage avec Cowork ?
 **R:** Oui, mais la limite dépend du plan et de la tâche. Confirmez-la dans Claude ou dans la documentation du plan avant un gros lot.
@@ -247,7 +277,7 @@ Depuis juillet 2026, la bêta Cowork web et mobile (plan Max, déploiement progr
 **R:** Elle varie selon le modèle, le plan et la surface. Commencez avec un lot représentatif, vérifiez la sortie, puis découpez la suite en groupes révisables au lieu de vous appuyer sur un nombre fixe de documents ou de tokens.
 
 ### Q: Est-ce que Cowork se souvient entre les sessions ?
-**R:** Pas par défaut, chaque session démarre à zéro. Avec **Desktop Commander** installé, vous pouvez créer un fichier `memory.md` qui conserve le contexte entre les sessions. Commencez chaque session avec "Lis ~/Cowork-Workspace/memory.md d'abord." Sans Desktop Commander, la solution de contournement reste de sauvegarder le contexte dans un fichier et de le charger à la session suivante. Voir le [workflow Mise en place Mémoire](../workflows/memory-setup.md) pour les détails.
+**R:** Pas par défaut, chaque session démarre à zéro. Depuis le 25 août 2026, la mémoire fonctionne entre le chat et Cowork dans le cloud (Settings > Memory > Topics, modifiable et supprimable élément par élément). Les sessions Cowork locales n'utilisent pas la mémoire. Avec **Desktop Commander** installé, vous pouvez créer un fichier `memory.md` qui conserve le contexte entre les sessions. Commencez chaque session avec "Lis ~/Cowork-Workspace/memory.md d'abord." Sans Desktop Commander, la solution de contournement reste de sauvegarder le contexte dans un fichier et de le charger à la session suivante. Voir le [workflow Mise en place Mémoire](../workflows/memory-setup.md) pour les détails.
 
 ### Q: Puis-je automatiser Cowork avec des scripts ?
 **R:** Pas actuellement. Cowork n'a pas d'API ou d'interface d'automatisation (janvier 2026). Pour l'automatisation, utilisez Claude Code.
@@ -275,6 +305,8 @@ Depuis juillet 2026, la bêta Cowork web et mobile (plan Max, déploiement progr
 - **Collaboration** : Liens partageables, visibilité d'équipe
 - **Mobile/tout appareil** : Accès sans installation
 
+**À savoir** : sur les comptes qui ont déjà « Unified Claude » (déploiement progressif sur Pro et Max depuis le 16 septembre 2026), il n'y a plus de mode à choisir : Claude décide si une demande appelle une réponse rapide ou une tâche.
+
 **Règle générale** : Le défi est-il *intellectuel* (raisonner/écrire/coder) ou *opérationnel* (organiser/automatiser/traiter par lots) ? Chat pour le premier, Cowork pour le second. La plupart des utilisateurs : ~80% Chat, ~20% Cowork.
 
 ### Q: Est-ce que les développeurs peuvent bénéficier de Cowork ?
@@ -289,7 +321,7 @@ Depuis juillet 2026, la bêta Cowork web et mobile (plan Max, déploiement progr
 ## Futur
 
 ### Q: Est-ce que Cowork est toujours en beta ?
-**R:** N'appliquez pas une étiquette bêta ou GA globale à toutes les fonctions Cowork. La disponibilité dépend de la surface et du plan ; l'utilisation de l'ordinateur reste une preview recherche pour les plans éligibles. Consultez les guides actuels de [disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-cowork) et d'[utilisation de l'ordinateur](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork).
+**R:** N'appliquez pas une étiquette bêta ou GA globale à toutes les fonctions Cowork. La disponibilité dépend de la surface et du plan ; computer use est une bêta pour Pro et Max (macOS et Windows, pas Team, Enterprise ni Linux), et Cowork dans le cloud est en bêta sur Team et Enterprise. Consultez les guides actuels de [disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-cowork) et d'[utilisation de l'ordinateur](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork).
 
 ### Q: Quelles fonctionnalités arrivent ?
 **R:** La disponibilité produit évolue. Linux est actuellement en bêta pour Claude Desktop. Utilisez les notes de version et la documentation Anthropic plutôt que cette FAQ pour les annonces futures.

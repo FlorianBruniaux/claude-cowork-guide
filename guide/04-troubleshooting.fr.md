@@ -38,6 +38,9 @@ Que se passe-t-il ?
 ├─ Problèmes d'intégration navigateur/Chrome
 │   └─ Aller à : § PROBLÈMES NAVIGATEUR
 │
+├─ Option introuvable, macOS trop ancien, computer use indisponible, message envoyé pendant une réponse, limite de 5 h
+│   └─ Aller à : § CHANGEMENTS DEPUIS SEPTEMBRE 2026
+│
 ├─ Problèmes spécifiques à Windows
 │   └─ Aller à : § PROBLÈMES SPÉCIFIQUES À WINDOWS
 │
@@ -57,6 +60,7 @@ Que se passe-t-il ?
 | `Access denied — path outside allowed directories` | Dossier non autorisé | Accorder à nouveau l'accès au dossier |
 | `Session terminated unexpectedly` | Veille/arrière-plan | Garder l'app au premier plan, désactiver la veille |
 | `Cannot connect to Chrome` | Permissions manquantes | Accorder la permission Accessibilité |
+| Cowork n'atteint plus les fichiers après une mise à jour Windows (8 septembre 2026) | Incident Windows connu, résolu le 14 septembre 2026 | Installer le correctif Microsoft de votre version de Windows (voir ci-dessous) |
 
 ---
 
@@ -68,12 +72,14 @@ Que se passe-t-il ?
 - Pas de mode Cowork dans le sélecteur de conversation
 - Bascule de fonctionnalité manquante dans les paramètres
 
+**À savoir** : depuis le 16 septembre 2026, Anthropic déploie progressivement « Unified Claude » sur les comptes Pro et Max (web, desktop, mobile). Il n'y a plus de mode Chat ou Cowork à choisir : Claude décide si votre demande appelle une réponse rapide ou une tâche. Si votre compte l'a déjà, un sélecteur absent est normal. Les onglets séparés Chat et Cowork avaient déjà disparu le 7 juillet 2026. Source : notes de version support.claude.com + claude.com/docs/cowork/changelog.
+
 **Solutions** :
 
 | Étape | Action |
 |-------|--------|
-| 1 | **Vérifier l'abonnement** : Doit être tier Pro ou Max |
-| 2 | **Mettre à jour l'app** : Claude Desktop → Vérifier les mises à jour |
+| 1 | **Vérifier l'abonnement** : Cowork demande Pro, Max, Team ou Enterprise. Il n'est pas inclus dans le plan Free (voir la [FAQ](../reference/faq.fr.md#q-cowork-est-il-gratuit-)) |
+| 2 | **Mettre à jour l'app** : Claude Desktop → Vérifier les mises à jour. Depuis le 8 septembre 2026, l'app exige macOS 13 (Ventura) ou plus récent |
 | 3 | **Redémarrer l'app** : Quitter complètement (Cmd+Q), relancer |
 | 4 | **Vérifier la région** : Certaines fonctionnalités peuvent avoir un déploiement régional |
 | 5 | **Vider le cache** : Supprimer `~/Library/Application Support/Claude/` et redémarrer |
@@ -85,7 +91,7 @@ Que se passe-t-il ?
 - Fonctionnalité grisée
 
 **Solutions** :
-- Vérifier que l'abonnement Pro ou Max est actif (claude.ai → Paramètres)
+- Vérifier que votre abonnement Pro, Max, Team ou Enterprise est actif (claude.ai → Paramètres). Sur Team et Enterprise, Cowork dans le cloud est en bêta : activé par défaut sur Team, désactivé par défaut sur Enterprise tant qu'un owner ne l'active pas
 - Attendre 24h après la mise à niveau de l'abonnement
 - Contacter le support si le problème persiste après 48h
 
@@ -107,6 +113,85 @@ rm -rf ~/Library/Preferences/com.anthropic.claude.plist
 # Réinstaller l'app
 # Télécharger la dernière version depuis claude.ai
 ```
+
+---
+
+## Changements depuis septembre 2026
+
+Sources de cette section : claude.com/docs/cowork/changelog et support.claude.com, relus le 11 octobre 2026.
+
+### « Je ne trouve plus l'option Only on your computer »
+
+**Pourquoi** : le 6 octobre 2026, Anthropic a supprimé l'option « Only on your computer » de Settings > General pour les plans Pro et Max. Les nouvelles tâches Cowork s'exécutent désormais dans le cloud (sur les serveurs d'Anthropic, dans un environnement isolé temporaire). Un compte encore réglé en local bascule au prochain lancement de Claude Desktop, avec une notice, sans retour possible.
+
+**Ce qui ne change pas** :
+- Vos dossiers restent sur votre ordinateur. Une session cloud n'atteint que les dossiers que vous avez connectés, et seulement quand Claude Desktop est ouvert.
+- Les fichiers que Claude lit sont traités sur les serveurs d'Anthropic.
+- Les tâches lancées sur votre ordinateur avant le 6 octobre 2026 y restent jusqu'à leur fin.
+- Les sessions Cowork locales n'utilisent pas la mémoire.
+
+Sur Team, Cowork dans le cloud est en bêta, activé par défaut. Sur Enterprise, il est en bêta, désactivé par défaut, et un owner doit l'activer.
+
+### « Computer use est indisponible »
+
+Ouvrez la section Computer use des Settings : depuis la mise à jour du 1er octobre 2026 (v2.19675.0), elle explique pourquoi. Les raisons habituelles :
+
+| Raison | Détail |
+|--------|--------|
+| macOS trop ancien | Computer use exige macOS 14 ou plus récent. Le travail en arrière-plan exige macOS 15 ou plus récent |
+| Plan | Bêta réservée à Pro et Max. Indisponible sur Team et Enterprise |
+| Système | Disponible sur macOS et Windows. Pas sur Linux |
+
+Depuis le 6 octobre 2026 (macOS), computer use ne modifie plus les fichiers cachés de votre dossier personnel, comme `~/.vimrc` ou `~/.aws`. Si une tâche en a besoin, modifiez-les vous-même. Source : support.claude.com/en/articles/14128542.
+
+### « L'app ne s'installe pas sur macOS 12 »
+
+Claude Desktop exige macOS 13 (Ventura) ou plus récent depuis la version 1.49585.0 (8 septembre 2026, passage à Electron 44). Sur macOS 12 ou plus ancien, mettez d'abord macOS à jour. La page d'installation de support.claude.com affiche encore un minimum plus ancien (macOS 11) : suivez le changelog, plus récent. Source : claude.com/docs/cowork/changelog.
+
+### Windows : Cowork n'atteint plus mes fichiers (résolu)
+
+**Ce qui s'est passé** : une mise à jour Windows publiée le 8 septembre 2026 (dont KB5124008) empêchait Cowork d'atteindre les fichiers quand il tournait sur le PC. Les tâches échouaient ou l'espace de travail ne démarrait pas. Anthropic a signalé l'incident le 10 septembre, résolu le 14 septembre 2026.
+
+**Qui était touché** : uniquement les sessions locales et les déploiements tiers. Les sessions cloud et Claude Code n'étaient pas touchés.
+
+**Solution** : installer la mise à jour Microsoft qui correspond à votre version de Windows :
+
+| Version de Windows | Mise à jour |
+|--------------------|-------------|
+| Windows 11 24H2 et 25H2 | KB5129195 |
+| Windows 11 23H2 | KB5129242 |
+| Windows 10 21H2 et 22H2 | KB5129236 |
+
+Aucune mise à jour de Claude Desktop n'est nécessaire, et redémarrer ou réinstaller Claude n'aide pas. Source : claude.com/docs/cowork/changelog, notices « Known issue » et « Resolved: Cowork on Windows ».
+
+### ChromeOS : Cowork ne fonctionne pas
+
+Cowork ne tourne pas sur les systèmes qui ne peuvent pas fournir la virtualisation dont son environnement isolé a besoin, ChromeOS compris. Depuis le 7 juillet 2026 (v1.19367.0), il ne propose plus d'accès terminal ni de suggestion de correction impossible sur ces systèmes, où chaque commande échouait immédiatement. Utilisez plutôt Windows, macOS ou Linux (bêta).
+
+### « Le navigateur intégré ne marche pas depuis le web ou mon téléphone »
+
+Le navigateur intégré se trouve dans Claude Desktop (macOS, Windows, Linux bêta). Une session cloud lancée depuis le web ou le mobile l'utilise aussi : **Claude Desktop doit donc être ouvert et en ligne sur votre ordinateur**. Vérifiez que :
+1. Claude Desktop tourne et est connecté à internet.
+2. Votre plan l'inclut : Pro, Max et Team, ou Enterprise si un owner l'a activé.
+3. Vous n'attendez pas votre navigateur personnel : le navigateur intégré est séparé et ne voit pas vos mots de passe enregistrés, sauf import volontaire. Les connexions faites dedans restent disponibles pour les sessions Cowork suivantes sur cet ordinateur.
+
+Source : support.claude.com/en/articles/16607400 et 13455879.
+
+### J'ai envoyé un message pendant que Claude répondait
+
+Depuis le 10 septembre 2026, un message envoyé pendant une réponse attend dans la conversation. Le premier message en attente propose **Send now**, qui arrête la réponse en cours et envoie le vôtre ensuite. **Cmd+Entrée** (macOS) ou **Ctrl+Entrée** (Windows) l'envoie immédiatement en interrompant le tour en cours. Source : claude.com/docs/cowork/changelog v1.52386.0.
+
+### La limite de 5 h : messages en attente
+
+Les plans payants ont une limite glissante de 5 h et des limites hebdomadaires. Deux entrées du changelog décrivent ce qui arrive à un message envoyé une fois la limite de 5 h atteinte :
+- 4-5 septembre 2026 (v1.46388.x) : le message attend au-dessus de la zone de saisie au lieu d'échouer. Vous pouvez le modifier, l'annuler ou l'envoyer au retour de la limite.
+- 8 septembre 2026 (v1.49585.0) : les messages en attente partent automatiquement au reset, et restent modifiables, annulables ou envoyables plus tôt.
+
+Attention : le changelog de Claude Desktop range ces deux entrées dans sa section **Code**, pas dans sa section Cowork. Leur application à Cowork n'est pas confirmée. Si votre message échoue simplement, attendez le reset, ou utilisez les usage credits pour continuer aux tarifs API (Pro et Max).
+
+### « Claude ne s'ouvre plus par défaut pour mes fichiers .docx »
+
+Depuis la version 2.7032.0 (22 septembre 2026), Claude ne devient plus l'application par défaut de fichiers comme `.md` et `.docx`, et n'apparaît plus dans le menu « Ouvrir avec » de macOS pour les fichiers Excel et PowerPoint. Pour ouvrir un fichier dans Claude, choisissez « Other… » dans le menu « Ouvrir avec ». Cela corrige en partie le changement du 2 septembre 2026 qui avait ajouté Claude à ce menu. Source : claude.com/docs/cowork/changelog.
 
 ---
 
@@ -302,12 +387,9 @@ La surcharge système (définitions d'outils, instructions de sécurité, logs d
 | **Interruption réseau** | Assurer une connexion stable pour les opérations longues |
 | **Quota d'usage épuisé** | Surveiller le quota, grouper les grosses tâches de manière appropriée |
 
-**Important** : sur desktop, les sessions Cowork nécessitent que l'app reste ouverte, et en dehors de la bêta Cowork web/mobile il n'y a pas de :
-- Synchronisation inter-appareils
-- Mode hors ligne
-- Persistance de la mémoire entre sessions
+**Important** : cette section décrit les sessions locales. Depuis le 6 octobre 2026, les nouvelles tâches Cowork Pro et Max s'exécutent dans le cloud (voir « Je ne trouve plus l'option Only on your computer » plus haut). Une tâche cloud n'exige pas que votre ordinateur reste allumé, mais elle n'atteint vos dossiers connectés que si Claude Desktop est ouvert. Les tâches lancées sur votre ordinateur avant le 6 octobre 2026 restent locales : pour celles-ci, l'app doit rester ouverte et l'ordinateur éveillé, et les sessions locales n'utilisent pas la mémoire.
 
-Depuis juillet 2026, la bêta Cowork web et mobile change ça : les sessions et fichiers sont sauvegardés sur votre compte Claude et vous suivent d'un appareil à l'autre, et les tâches peuvent s'exécuter dans le cloud sans appareil connecté. Le déploiement est progressif et démarre avec le plan Max, donc si vous n'y êtes pas encore, les limites desktop ci-dessus s'appliquent toujours.
+Sur Team et Enterprise, Cowork dans le cloud est en bêta. Demandez à votre owner s'il est activé.
 
 **Récupération** :
 1. Redémarrer Claude Desktop

@@ -4,7 +4,9 @@
 
 > **One-page quick reference** : Print-friendly
 
-**Availability**: An eligible paid Claude plan. Claude Desktop supports macOS and Windows, with Linux in beta; web and mobile Cowork are beta on eligible plans. Verify the current [Cowork availability](https://support.claude.com/en/articles/13345190-get-started-with-cowork) before relying on a surface.
+**Availability** (as of October 11, 2026): Cowork is for Pro, Max, Team and Enterprise plans (not Free). Claude Desktop runs on macOS (13 Ventura or later), Windows and Linux (beta, Ubuntu 22.04+ / Debian 12+). Since September 16, 2026, Cowork is built into every Claude conversation (rolling out on Pro and Max, web, desktop and mobile): no Chat/Cowork mode to pick. Verify the current [Cowork availability](https://support.claude.com/en/articles/13345190-get-started-with-cowork) before relying on a surface.
+
+**Where tasks run**: since October 6, 2026, new Pro and Max tasks run in the cloud (Anthropic servers, temporary isolated environment). Your folders stay on your computer; a cloud task reaches only the folders you connected, and only while Claude Desktop is open. Scheduled tasks run in the cloud even with your computer off. Tasks started locally before October 6 stay local. Team: beta, on by default. Enterprise: beta, off until an owner turns it on.
 
 ---
 
@@ -34,13 +36,26 @@ Format: [specific format requirements]
 
 ## Model Selection
 
-| Model | Use For | Speed | Context |
-|-------|---------|-------|---------|
-| Available model | Task fit | Verification | Context |
-|-----------------|----------|--------------|---------|
-| **Model shown in Claude** | Match the task's complexity | Check the current surface | Varies by model and plan |
+| Model | Use For | Notes (Anthropic, October 2026) |
+|-------|---------|---------------------------------|
+| **Opus 5.5** (Sept 22) | Hard, multi-step work | Matches Fable 5.1 on most tasks, 40% cheaper to run than Opus 5 |
+| **Sonnet 5.5** (Sept 28) | Everyday tasks | Over 30% faster than Sonnet 5 |
+| **Haiku 5.5** (Oct 7) | High-volume, simple tasks | Anthropic's smallest, fastest, cheapest model |
+| Fable 5.1, Mythos 5.1, Opus 5 | Still available | Check the model picker |
 
-Model availability, context and usage are product settings, not stable guide constants. Use the options shown in Claude and test a small task before a large batch.
+Effort levels: Low, Medium, High, Extra high, Max. The default model per plan is not published: use the options shown in Claude and test a small task before a large batch.
+
+---
+
+## Approval Modes
+
+| Mode | What happens | Watch out |
+|------|--------------|-----------|
+| **Manual** (was "Ask before acting") | Claude waits for Allow or Deny at each request | Safest, slowest |
+| **Auto** | Each action is checked, dangerous ones are blocked | Uses more of your usage limit |
+| **Skip all approvals** (was "Act without asking") | No pause, no filtering | Non-sensitive work only |
+
+Team and Enterprise: Auto is offered by default; "Always allow" for connector tools is off by default; a tool set to "Restrict to Ask" still asks even in Skip all approvals. Source: support.claude.com/en/articles/13345190 and 13455879.
 
 ---
 
@@ -162,6 +177,7 @@ Save to ~/Cowork-Workspace/output/pm-tools.md
 | Task stops | Break into smaller batches |
 | Excel formulas broken | Specify regional syntax |
 | Chrome not working | Grant Accessibility permission |
+| Computer use missing | Pro/Max only, macOS 14+ or Windows (not Team, Enterprise, Linux) |
 
 ---
 
@@ -246,6 +262,8 @@ Usage limits vary by plan, model, surface and task. Check the current plan infor
 | Action | Method |
 |--------|--------|
 | Stop execution | Type "Stop" |
+| Send a message while Claude is replying | It waits in the queue; click **Send now** to stop the reply and send it |
+| Interrupt and send immediately | Cmd+Enter (Mac) / Ctrl+Enter (Windows, Linux) |
 | New conversation | Cmd+N |
 | Clear context | Start new conversation |
 
@@ -262,4 +280,4 @@ Usage limits vary by plan, model, surface and task. Check the current plan infor
 
 ---
 
-*Claude Cowork Guide v1.13.0 | Availability varies by plan, surface and capability*
+*Claude Cowork Guide v1.14.0 | Availability varies by plan, surface and capability*

@@ -4,7 +4,7 @@
 
 > **Purpose**: Choose the right Claude interface for your task
 >
-> *Updated: February 2026*
+> *Cowork rows updated: October 11, 2026. Competitor data: February 2026 (not rechecked).*
 
 ---
 
@@ -13,16 +13,16 @@
 | Aspect | Claude Code | Cowork | Projects |
 |--------|-------------|--------|----------|
 | **Target user** | Developers | Knowledge workers | Everyone |
-| **Interface** | Terminal/CLI | Desktop app | Web chat |
+| **Interface** | Terminal/CLI | Built into every Claude conversation (desktop, web, mobile) | Web chat |
 | **Primary use** | Software development | File manipulation | Conversations |
 | **Execute code** | ✅ Full shell | ✅ Isolated task environment | ❌ No |
 | **File access** | Full filesystem | Folder sandbox | Upload only |
 | **Create files** | Any type | Office, PDF, text | None |
-| **Web access** | Via tools | Chrome integration | In-chat search |
+| **Web access** | Via tools | Built-in browser or Claude in Chrome | In-chat search |
 | **Memory** | CLAUDE.md files | Via files | Project knowledge |
-| **Maturity** | Varies by capability | Varies by surface; computer use is research preview | Varies by plan and feature |
-| **Platform** | Check current product support | macOS and Windows; Linux beta; web/mobile beta on eligible plans | Web-based |
-| **Subscription** | Check current plan information | Paid Claude plans; eligibility varies by surface | Check current plan information |
+| **Maturity** | Varies by capability | Varies by surface; computer use is beta (Pro/Max); Cowork in the cloud is beta on Team and Enterprise | Varies by plan and feature |
+| **Platform** | Check current product support | Claude Desktop on macOS 13+, Windows, Linux (beta); also web and mobile | Web-based |
+| **Subscription** | Check current plan information | Pro, Max, Team, Enterprise (not Free) | Check current plan information |
 | **Security docs** | Extensive | None yet | Standard |
 
 ---
@@ -36,13 +36,13 @@
 | Aspect | Claude in Excel Add-in | Cowork Excel Capabilities |
 |--------|------------------------|---------------------------|
 | **What it is** | Microsoft Excel add-in (launched Jan 24, 2026) | Desktop app file manipulation feature |
-| **Installation** | Install from Excel add-ins store | Part of Claude Desktop (macOS + Windows) |
+| **Installation** | Install from Excel add-ins store | Part of Claude Desktop (macOS, Windows, Linux beta) |
 | **Interface** | Works inside Excel application | Creates Excel files from scratch |
 | **Use case** | AI assistance while working in Excel | Generate Excel files from data/images/text |
 | **Primary workflow** | Open Excel → Ask Claude for help → Get formula suggestions | Give Cowork data → Receive generated Excel file |
 | **Best for** | Formula writing, data analysis in existing sheets | Creating new spreadsheets from unstructured data |
-| **Platform** | Windows, macOS (Excel 2016+) | macOS + Windows |
-| **Subscription** | Requires Claude subscription + Excel license | Requires Claude Pro/Max subscription |
+| **Platform** | Windows, macOS (Excel 2016+) | macOS, Windows, Linux (beta) |
+| **Subscription** | Requires Claude subscription + Excel license | Requires a Claude Pro, Max, Team or Enterprise plan |
 | **Integration** | Deep Excel integration (formulas, charts, pivot tables) | Basic Excel generation (formulas, formatting) |
 
 ### When to Use Which?
@@ -121,7 +121,7 @@
 
 | Capability | Code | Cowork | Projects |
 |------------|------|--------|----------|
-| Official plugins | ⚠️ Via MCP | ✅ 11 plugins (Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack) | ❌ No |
+| Official plugins | ⚠️ Via MCP | ✅ 11 plugins (Asana, Canva, Cloudflare, Figma, GitHub, Google Drive, Jira, Linear, Notion, Sentry, Slack), plus Google Docs/Sheets/Slides connectors (beta, Oct 6, 2026), Salesforce in Claude (beta, Sept 15, 2026) and Microsoft 365 write access | ❌ No |
 | Scheduled tasks | ❌ No | ✅ Native | ❌ No |
 | Agent Teams | ✅ Yes | ✅ Research preview | ❌ No |
 | Context compaction | ✅ Yes | ✅ Beta | ❌ No |
@@ -130,10 +130,10 @@
 
 | Capability | Code | Cowork | Projects |
 |------------|------|--------|----------|
-| Web search | ✅ Via tools | ✅ Chrome | ✅ In-chat |
-| Browse pages | ✅ Via tools | ✅ Chrome | ❌ No |
+| Web search | ✅ Via tools | ✅ Built-in browser or Chrome | ✅ In-chat |
+| Browse pages | ✅ Via tools | ✅ Built-in browser or Chrome | ❌ No |
 | API calls | ✅ Via code | ❌ No | ❌ No |
-| Download files | ✅ Yes | ⚠️ Via Chrome | ❌ No |
+| Download files | ✅ Yes | ⚠️ Via browser | ❌ No |
 
 ---
 
@@ -288,15 +288,17 @@ When to migrate:
 
 | Feature | Code | Cowork | Projects |
 |---------|------|--------|----------|
-| **Available now** | ✅ | ⚠️ Research preview | ✅ |
+| **Available now** | ✅ | ✅ Pro, Max, Team, Enterprise (parts in beta) | ✅ |
 | **Windows** | ✅ | ✅ (since Feb 10, 2026) | ✅ |
-| **Linux** | Check current product support | Beta | Web-based |
+| **Linux** | Check current product support | Beta (Ubuntu 22.04+ / Debian 12+, no computer use or dictation) | Web-based |
 | **Enterprise** | Check current product support | Check plan-specific availability | Check current product support |
 | **Team features** | ⚠️ Limited | ❌ | ✅ |
 
 ---
 
 ## Cowork vs Chat: When to Use Each
+
+> **Update (October 11, 2026)**: since September 16, 2026 ("Unified Claude", rolling out on Pro and Max), there is no Chat/Cowork mode to pick: Claude decides whether a request is a quick answer or a task. The comparison below describes the two *styles of work*, not two buttons. Source: support.claude.com release notes.
 
 > **Key insight**: Cowork is not a Chat replacement. It's a specialist tool for specific task categories.
 
@@ -316,7 +318,7 @@ When to migrate:
 | **Cross-document analysis** | Reads entire directories at once | Context fragmentation, attention decay |
 | **Repetitive automation** | Set up once, runs autonomously | Re-prompt every cycle |
 | **Browser automation** | Navigates, clicks, fills forms | Can only describe what you should do |
-| **Privacy-sensitive files** | Local processing, no upload | Files sent to cloud servers |
+| **Privacy-sensitive files** | Folders stay on your computer; a cloud task reads only the folders you connected, processed on Anthropic's servers | Files uploaded to cloud servers |
 
 **Example**: 30 receipts → expense Excel
 - Cowork: Drop folder → 5 minutes autonomous
@@ -331,7 +333,7 @@ When to migrate:
 | **Writing/drafting** | Live artifacts, inline iteration | Download-edit-reupload friction |
 | **Multi-domain synthesis** | Cross-domain reasoning | File-centric architecture |
 | **Collaboration** | Shareable links, team visibility | Desktop-only, no sharing |
-| **Zero-install access** | Any device, any browser | Desktop app required (macOS/Windows) |
+| **Zero-install access** | Any device, any browser | Local folders need Claude Desktop open (macOS, Windows, Linux beta) |
 
 **Example**: Marketing strategy memo
 - Chat: Iterative discussion, nuanced thesis → thoughtful output
@@ -351,7 +353,7 @@ When to migrate:
 **Use Cowork when**:
 - Task involves 10+ files or batch operations
 - Need browser automation (scraping, forms)
-- Files are compliance-sensitive (prefer local)
+- Files are compliance-sensitive (check where the task runs: since October 6, 2026, new Pro and Max tasks run in the cloud)
 - Task is mechanical and well-defined
 - Output is file-based (Excel, PPT, docs)
 
@@ -387,12 +389,12 @@ How does Cowork compare to other AI desktop assistants?
 |---------|--------|--------------|--------|---------|-------------------|
 | **Local file access** | ✅ Sandbox | ✅ Office only | ⚠️ Drive | ⚠️ Limited | ✅ System-wide |
 | **Document creation** | ✅ Office, PDF | ✅ Office native | ✅ Docs | ⚠️ Artifacts | ⚠️ Basic |
-| **Browser automation** | ✅ Chrome | ❌ No | ❌ No | ⚠️ Operator (beta) | ❌ No |
+| **Browser automation** | ✅ Built-in browser or Chrome | ❌ No | ❌ No | ⚠️ Operator (beta) | ❌ No |
 | **True autonomy** | ✅ Multi-step | ❌ Copilot | ❌ No | ⚠️ GPTs | ❌ No |
 | **OCR/Vision** | ✅ Good | ✅ Best | ✅ Good | ✅ Good | ✅ Good |
 | **Privacy (local)** | ⚠️ API calls | ⚠️ Cloud | ⚠️ Cloud | ⚠️ Cloud | ✅ On-device |
-| **Free tier** | ❌ Pro/Max | ⚠️ Limited | ⚠️ Limited | ✅ Yes | ✅ Built-in |
-| **Platform** | macOS + Windows | Windows/Mac | Cross | Cross | Apple only |
+| **Free tier** | ❌ Pro/Max/Team/Enterprise | ⚠️ Limited | ⚠️ Limited | ✅ Yes | ✅ Built-in |
+| **Platform** | macOS, Windows, Linux (beta) | Windows/Mac | Cross | Cross | Apple only |
 
 **Note**: "Copilot (MS)" refers to Microsoft 365 Copilot (Word/Excel/PowerPoint integration), not GitHub Copilot (developer tool with full file system access).
 
@@ -420,7 +422,7 @@ How does Cowork compare to other AI desktop assistants?
 | **Budget-conscious** | Apple Intelligence | Free with Apple devices |
 | **Complex file workflows** | Cowork | Sub-agent architecture, batch processing |
 | **Deep Office integration** | Copilot | Native APIs, best formulas |
-| **Large context** | Gemini or Cowork | Gemini 1M+ native; Cowork 1M beta (Opus 4.6) |
+| **Large context** | Gemini or Cowork | Gemini 1M+ native; Cowork context varies by model and plan (not rechecked for the 5.5 models) |
 
 ### Privacy Architecture
 

@@ -14,20 +14,21 @@ Avant de commencer, assurez-vous d'avoir :
 
 | Exigence | Comment vérifier |
 |----------|------------------|
-| **Plan Claude payant éligible** | Vérifier le plan et le guide de disponibilité Cowork actuel |
-| **Surface prise en charge** | Claude Desktop sur macOS/Windows, Linux bêta, ou web/mobile bêta sur les plans éligibles |
-| **Application Claude Desktop** | Dossier Applications ou recherche Spotlight |
+| **Plan Claude payant éligible** | Pro, Max, Team ou Enterprise. Pas le plan Free. Vérifiez votre plan dans les paramètres |
+| **Surface prise en charge** | Claude Desktop sur macOS, Windows ou Linux (bêta), le web, le mobile, ou le panneau latéral de Claude in Chrome |
+| **Système d'exploitation** | macOS 13 Ventura ou plus récent ; Windows ; Linux (bêta) sous Ubuntu 22.04+ ou Debian 12+. L'utilisation de l'ordinateur exige macOS 14 ou plus récent |
+| **Application Claude Desktop** | Dossier Applications ou recherche Spotlight (macOS) |
 | **Dernière version de l'app** | Voir les étapes de vérification ci-dessous ⚠️ |
 
 ### ⚠️ Vérifiez que vous avez la dernière version de Claude Desktop
 
-**Critique** : Cowork nécessite la dernière version de Claude Desktop. Depuis le 7 juillet 2026, Anthropic a fusionné Chat et Cowork en une seule vue sur web et desktop, donc ce que vous voyez en haut de l'application dépend de la version installée.
+**Critique** : Cowork nécessite la dernière version de Claude Desktop. Depuis le 7 juillet 2026, Anthropic a fusionné Chat et Cowork en une seule vue sur web et desktop, et depuis le 16 septembre 2026 (« Claude unifié », déploiement progressif sur Pro et Max) vous ne choisissez plus de mode du tout : Claude décide si votre demande appelle une réponse rapide ou une tâche à mener. Ce que vous voyez en haut de l'application dépend de la version installée.
 
 **Comment vérifier :**
 
 1. Ouvrez l'application Claude Desktop
 2. Regardez en haut de la barre latérale.
-   - **Version de juillet 2026 ou postérieure** : Chat et Cowork partagent une vue unique au lieu d'onglets séparés, il n'y a donc pas d'entrée "Cowork" à chercher.
+   - **Version de juillet 2026 ou postérieure** : Chat et Cowork partagent une vue unique au lieu d'onglets séparés, il n'y a donc pas d'entrée "Cowork" à chercher. Avec Claude unifié, il n'y a pas non plus de mode à choisir : vous décrivez simplement ce que vous voulez.
    - **Version plus ancienne** : vous devriez voir trois modes séparés :
      ```
      Chat    Cowork    Code
@@ -41,14 +42,48 @@ Avant de commencer, assurez-vous d'avoir :
 
 ### Abonnement et disponibilité
 
-La disponibilité Cowork est liée à un plan Claude payant éligible et varie selon la surface. Consultez le [guide officiel de disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-cowork) pour les plans et tarifs actuels.
+Cowork est disponible sur les plans **Pro, Max, Team et Enterprise**, pas sur le plan Free. Une page d'installation d'Anthropic coche encore Cowork sous Free : c'est une incohérence côté Anthropic, ne comptez donc pas sur Cowork avec un compte Free. Consultez le [guide officiel de disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-cowork) pour le détail.
+
+Tarifs de claude.com/pricing au 11 octobre 2026 (en dollars, hors taxes ; aucun tarif en euros n'est publié) :
+
+| Plan | Tarif |
+|------|-------|
+| **Free** | 0 $ (pas de Cowork) |
+| **Pro** | 20 $/mois, ou 200 $/an (environ 17 $/mois) |
+| **Max** | À partir de 100 $/mois (5x ou 20x l'usage Pro) |
+| **Team** | Standard 20 $/siège/mois en facturation annuelle (25 $ au mois) ; Premium 100 $ (125 $ au mois) ; de 2 à 150 personnes |
+| **Enterprise** | 20 $/siège/mois en facturation annuelle, plus l'usage aux tarifs API |
+
+Les plans payants ont une limite glissante de 5 heures et des limites hebdomadaires. Sur Pro et Max, les « usage credits » permettent de continuer aux tarifs API. Max et Team incluent aussi des crédits API mensuels (Max 5x 100 $, Max 20x 200 $, Team jusqu'à 500 $ mutualisés).
+
+### Où s'exécutent vos tâches
+
+Depuis le 6 octobre 2026, les nouvelles tâches Cowork des plans **Pro et Max** s'exécutent dans le cloud (un environnement isolé et temporaire sur les serveurs d'Anthropic). L'option « Only on your computer » de Settings > General n'existe plus, sans retour possible. Concrètement :
+
+- **Vos dossiers restent sur votre ordinateur.** Une session cloud n'y accède que pour les dossiers que vous avez connectés, et seulement quand **Claude Desktop est ouvert**. Les fichiers lus par Claude sont traités sur les serveurs d'Anthropic.
+- **Les tâches planifiées créées désormais tournent dans le cloud**, donc votre ordinateur n'a plus besoin d'être allumé.
+- Les tâches lancées sur votre ordinateur avant le 6 octobre 2026 y restent jusqu'à leur fin.
+
+Sur **Team**, l'exécution cloud est en bêta et activée par défaut. Sur **Enterprise**, elle est en bêta et désactivée par défaut jusqu'à activation par un owner.
+
+### Installer Claude Desktop
+
+| Système | Comment |
+|---------|---------|
+| **macOS** (13 Ventura ou plus récent) | Téléchargement sur [claude.ai/download](https://claude.ai/download) |
+| **Windows** | Téléchargement sur [claude.ai/download](https://claude.ai/download) |
+| **Linux** (bêta ; Ubuntu 22.04+ ou Debian 12+) | Installation via `apt`, en suivant la [page d'installation](https://support.claude.com/en/articles/10065433-install-claude-desktop) d'Anthropic. Pas de mise à jour automatique, pas d'utilisation de l'ordinateur, pas de dictée |
+
+Une page d'aide Anthropic indique encore macOS 11 comme minimum. Le changelog de Claude Desktop indique macOS 13 Ventura depuis la v1.49585.0 (8 septembre 2026) : retenez macOS 13.
 
 ### Vous n'avez pas accès ?
 
 | Situation | Action |
 |-----------|--------|
+| Plan Free | Cowork exige Pro, Max, Team ou Enterprise |
 | Plan ou surface indisponible | Consulter le guide de disponibilité Anthropic actuel |
-| Linux | Installer la bêta Claude Desktop si elle convient à votre environnement |
+| macOS antérieur à 13 | Mettre macOS à jour, ou utiliser la surface web ou mobile |
+| Linux | Installer la bêta Claude Desktop (Ubuntu 22.04+ ou Debian 12+) si elle convient à votre environnement |
 
 ---
 
@@ -66,12 +101,13 @@ La disponibilité Cowork est liée à un plan Claude payant éligible et varie s
 2. Trouvez le bouton **Cowork**
 3. Activez-le
 
-> **Note** : L'emplacement exact peut légèrement varier selon les versions de l'application.
+> **Note** : L'emplacement exact peut légèrement varier selon les versions de l'application. Sur les versions récentes, Cowork fait partie de chaque conversation : il se peut qu'il n'y ait plus de bouton séparé. Ce guide n'a pas revérifié le libellé exact de cet écran de paramètres.
 
 ### 1.3 Vérifier l'activation
 
 Après l'activation, vous devriez voir :
-- Les capacités de Cowork accessibles depuis la vue combinée Chat et Cowork (versions de juillet 2026 ou postérieures)
+- Les capacités de Cowork accessibles depuis n'importe quelle conversation, sans mode à choisir (Claude unifié, depuis le 16 septembre 2026)
+- Ou la vue combinée Chat et Cowork (versions de juillet 2026)
 - Ou une nouvelle option "Cowork" dans un sélecteur de mode séparé, sur les versions plus anciennes
 
 ---
@@ -110,9 +146,11 @@ mkdir -p ~/Cowork-Workspace/{input,output}
 
 ### 2.2 Accorder l'accès au dossier
 
-1. Démarrez une nouvelle conversation Cowork
+1. Démarrez une nouvelle conversation et décrivez une tâche qui demande vos fichiers
 2. Lorsque l'accès au dossier est demandé, naviguez vers `~/Cowork-Workspace/`
 3. Accordez l'accès **uniquement** à ce dossier
+
+> **Sessions cloud** : sur Pro et Max, la tâche s'exécute dans le cloud, mais le dossier reste sur votre ordinateur. Gardez Claude Desktop ouvert pour que la session puisse y accéder.
 
 ### 2.3 Vérifier l'accès
 
@@ -161,7 +199,7 @@ echo "Réflexions diverses" > notes-diverses.txt
 
 ### 3.2 Exécuter votre première tâche
 
-Dans Cowork, entrez :
+Dans une nouvelle conversation, entrez :
 
 ```
 Organise les fichiers dans ~/Cowork-Workspace/input/ en sous-dossiers
@@ -174,6 +212,16 @@ par catégorie. Crée un résumé de ce que tu as organisé dans le dossier outp
 2. **Votre approbation** : Vous examinez et approuvez le plan
 3. **Exécution** : Cowork réorganise les fichiers
 4. **Rapport** : Crée un résumé dans le dossier output
+
+**Choisissez un mode d'approbation pour cette première tâche.** Les trois modes (noms au 11 octobre 2026) :
+
+| Mode | Ce qui se passe | Ancien nom |
+|------|-----------------|------------|
+| **Manual** | Claude attend votre Allow ou Deny à chaque demande. Le bon choix pour une première tâche | « Ask before acting » |
+| **Auto** | Claude avance sans demander à chaque étape, mais chaque action est filtrée : une action dangereuse est bloquée et Claude cherche une autre voie ou vous demande. Consomme davantage de limite d'usage | aucun |
+| **Skip all approvals** | Aucune pause et aucun filtrage automatique des actions | « Act without asking » |
+
+Sur Team et Enterprise, un administrateur peut restreindre ces modes. Commencez par Manual tant que vous ne faites pas confiance aux résultats.
 
 ### 3.4 Vérifier les résultats
 
@@ -360,7 +408,12 @@ qui n'a pas répondu à notre devis depuis 2 semaines.
 
 ## Étape 7 : Intégration Chrome (Optionnel)
 
-Cowork peut utiliser Chrome pour des tâches de recherche web.
+Cowork a deux façons de naviguer sur le web, toutes deux sous votre contrôle :
+
+- **Le navigateur intégré à Claude Desktop** (macOS, Windows, Linux bêta). Il est séparé de votre navigateur personnel : Claude ne voit pas vos mots de passe enregistrés sauf import volontaire, et les connexions faites dans ce navigateur restent disponibles pour les sessions Cowork suivantes sur cet ordinateur. Claude Desktop doit être ouvert et connecté, y compris pour une session cloud lancée depuis le web ou votre téléphone.
+- **Claude in Chrome**. Ouvrir son panneau latéral démarre une session Cowork (Max et Team ; en déploiement sur Pro ; Enterprise si un administrateur l'a activé).
+
+Quand une tâche exige un service, Claude préfère d'abord un connecteur, puis un navigateur, puis le contrôle de l'écran.
 
 ### Activer l'accès Chrome
 
@@ -392,8 +445,8 @@ Desktop Commander est une extension officielle gratuite qui étend ce que Cowork
 
 | Capacité | Sans Desktop Commander | Avec Desktop Commander |
 |---------|----------------------|----------------------|
-| **Accès fichiers** | Dossier workspace uniquement | Tout dossier que vous autorisez |
-| **Mémoire entre sessions** | Aucune, repart de zéro | Persistante via memory.md |
+| **Accès fichiers** | Les dossiers que vous accordez à Cowork | Tout dossier que vous autorisez via l'extension |
+| **Mémoire entre sessions** | La mémoire intégrée de Claude (Settings > Memory) fonctionne dans les sessions cloud ; les sessions Cowork locales n'utilisent pas la mémoire | Un fichier `memory.md` que vous maîtrisez, lisible dans toute session |
 | **Installation serveurs MCP** | Manuelle, technique | Un clic |
 
 ### Installation
@@ -442,11 +495,11 @@ Sans fichier mémoire, vous répétez vos préférences et votre contexte à cha
 
 ---
 
-## Étape 9 : Activer Computer Use (preview recherche)
+## Étape 9 : Activer Computer Use (bêta)
 
 Computer Use permet à Claude de contrôler directement votre bureau : ouvrir des applications, cliquer, remplir des formulaires et naviguer dans le navigateur lorsque la fonction est disponible pour votre plan et votre surface.
 
-> **Note** : Computer Use reste une fonctionnalité en preview recherche sur les plans éligibles. Suivez le [guide Anthropic actuel](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork) et utilisez-la pour des tâches supervisées où vous pouvez vérifier chaque action.
+> **Note** : Computer Use a été lancé en preview recherche le 23 mars 2026. La page d'aide d'Anthropic le présente désormais comme **une bêta pour les plans Pro et Max**, sur **macOS 14 ou plus récent** et Windows. Il n'est pas disponible sur Team, Enterprise ni Linux. Sur macOS, Claude peut travailler en arrière-plan à partir de macOS 15, et il ne modifie plus les fichiers cachés de votre dossier personnel comme `~/.aws` ou `~/.vimrc` (6 octobre 2026). Suivez le [guide Anthropic actuel](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork) et utilisez-la pour des tâches supervisées où vous pouvez vérifier chaque action. Le titre de cette étape garde son ancien nom pour que les liens existants continuent de fonctionner.
 
 ### 9.1 Activer dans Claude Desktop
 
@@ -478,7 +531,7 @@ Pour envoyer des tâches à ton bureau depuis ton téléphone quand tu es absent
 3. Scanne le **QR code** affiché dans ton application Claude Desktop
 4. Ton téléphone est maintenant connecté. Envoie des tâches à distance depuis n'importe où.
 
-> **Prérequis** : le Mac doit rester allumé avec Claude Desktop ouvert, car Dispatch associe ton téléphone à cette session desktop pour exécuter les tâches sur ton ordinateur quand tu es absent. Depuis juillet 2026, la bêta Cowork web et mobile (plan Max, déploiement progressif) propose une alternative : elle exécute les tâches dans le cloud sans connexion à un desktop.
+> **Prérequis** : le Mac doit rester allumé avec Claude Desktop ouvert, car Dispatch associe ton téléphone à cette session desktop pour exécuter les tâches sur ton ordinateur quand tu es absent. Cowork sur web et mobile (bêta depuis le 7 juillet 2026) propose une alternative pour les tâches qui n'ont pas besoin de votre ordinateur : depuis le 6 octobre 2026, les nouvelles tâches Pro et Max s'exécutent par défaut dans le cloud. Une session cloud a toutefois besoin de Claude Desktop ouvert pour accéder à vos dossiers connectés et au navigateur intégré.
 
 ### Notes de sécurité pour Computer Use
 
@@ -502,9 +555,15 @@ Pour envoyer des tâches à ton bureau depuis ton téléphone quand tu es absent
 **Cause la plus fréquente** : Version de l'application obsolète.
 
 1. **Vérifiez votre version** : Voir la section [Prérequis](#️-vérifiez-que-vous-avez-la-dernière-version-de-claude-desktop) ci-dessus
-2. Sur les versions de juillet 2026 ou postérieures, Chat et Cowork partagent une vue unique au lieu d'onglets séparés ; sur les versions plus anciennes, si vous ne voyez pas "Chat | Cowork | Code" en haut, mettez à jour votre application
-3. Après la mise à jour, vérifiez Paramètres → Fonctionnalités → assurez-vous que Cowork est activé
-4. Redémarrez l'application
+2. Sur les versions de juillet 2026 ou postérieures, Chat et Cowork partagent une vue unique au lieu d'onglets séparés, et avec Claude unifié (16 septembre 2026) il n'y a aucun mode à sélectionner ; sur les versions plus anciennes, si vous ne voyez pas "Chat | Cowork | Code" en haut, mettez à jour votre application
+3. Vérifiez que vous êtes sur Pro, Max, Team ou Enterprise : le plan Free n'inclut pas Cowork
+4. Après la mise à jour, vérifiez Paramètres → Fonctionnalités → assurez-vous que Cowork est activé (si ce bouton existe sur votre version)
+5. Redémarrez l'application
+
+### "Claude ne voit pas mon dossier dans une session cloud"
+
+1. Vérifiez que **Claude Desktop est ouvert** sur l'ordinateur qui contient le dossier
+2. Vérifiez que le dossier fait partie des dossiers que vous avez connectés
 
 ### "Le plan semble incorrect"
 
@@ -535,7 +594,8 @@ Vous êtes maintenant prêt à :
 
 | Action | Comment |
 |--------|---------|
-| **Démarrer Cowork** | Nouvelle conversation → Sélectionner le mode Cowork |
+| **Démarrer Cowork** | Nouvelle conversation → décrire la tâche (plus de mode à sélectionner depuis le 16 septembre 2026) |
+| **Choisir les approbations** | Manual (premières tâches), Auto, ou Skip all approvals |
 | **Accorder l'accès** | Naviguer vers ~/Cowork-Workspace/ lorsque demandé |
 | **Examiner le plan** | Lire chaque étape avant de dire "procède" |
 | **Arrêter l'exécution** | Taper "Stop" ou fermer la conversation |

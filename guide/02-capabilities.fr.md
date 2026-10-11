@@ -10,9 +10,61 @@
 
 ## Sélection du modèle et usage
 
-Les modèles, la capacité de contexte et les limites d'usage disponibles dans Cowork peuvent varier selon le plan et la surface. Ce guide ne maintient pas de catalogue figé de modèles, de fenêtre de tokens, de prix ou de ratio de quota. Choisissez parmi les modèles affichés dans votre surface Claude, testez une tâche représentative, puis découpez le travail plus large en lots révisables.
+Les modèles, la capacité de contexte et les limites d'usage disponibles dans Cowork peuvent varier selon le plan et la surface. Ce guide ne maintient pas de fenêtre de tokens, de prix ou de ratio de quota figés. Choisissez parmi les modèles affichés dans votre surface Claude, testez une tâche représentative, puis découpez le travail plus large en lots révisables.
+
+**Plans** : Cowork est proposé sur Pro, Max, Team et Enterprise. Les pages d'Anthropic se contredisent sur le plan Free (la page d'installation coche Cowork sous Free) : ne comptez pas sur Cowork avec un compte Free.
+
+### Modèles actuels (au 11 octobre 2026)
+
+La famille la plus récente est Claude 5.5 :
+
+| Modèle | Sortie | Ce que dit Anthropic |
+|--------|--------|----------------------|
+| **Claude Opus 5.5** | 22 septembre 2026 | Atteint le niveau de Claude Fable 5.1 sur la plupart des tâches et coûte 40 % de moins à faire tourner qu'Opus 5 |
+| **Claude Sonnet 5.5** | 28 septembre 2026 | Plus de 30 % plus rapide que Sonnet 5 et jusqu'à 30 % moins cher sur la plupart des tâches |
+| **Claude Haiku 5.5** | 7 octobre 2026 | Le plus petit, le moins cher et le plus rapide des modèles d'Anthropic, conçu pour les tâches à fort volume |
+
+Les modèles précédents restent dans la liste : Claude Fable 5.1 et Claude Mythos 5.1 (1er septembre 2026) et Claude Opus 5 (24 juillet 2026). Ne les présentez plus comme les plus récents.
+
+**Niveaux d'effort** : Low, Medium, High, Extra high et Max. Ce que chaque niveau consomme de votre limite d'usage n'est pas documenté dans ce guide.
+
+Le modèle par défaut de chaque plan est `UNKNOWN` : Anthropic ne l'a pas publié. Sources : notes de version de support.claude.com et claude.com/docs/cowork/changelog.
 
 Pour l'accès produit, consultez le [guide Anthropic actuel de disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-cowork). Le lien exact entre un modèle et Cowork est `UNKNOWN` dans ce guide tant qu'Anthropic ne le documente pas pour la surface utilisée.
+
+---
+
+## Un seul Claude, exécution cloud et approbations
+
+### Une seule conversation, pas de mode à choisir
+
+Les onglets séparés Chat et Cowork ont été fusionnés le 7 juillet 2026. Depuis le 16 septembre 2026 (déploiement progressif sur Pro et Max, sur le web, le desktop et le mobile), vous ne choisissez plus de mode au départ : Claude décide si un message appelle une réponse rapide ou une tâche plus longue. Anthropic l'écrit ainsi : « Claude Cowork is now just Claude ». Vos conversations, tâches Cowork, projets, connecteurs et skills sont conservés.
+
+Pour les déploiements tiers administrés, la clé `desktopHome` active la vue unifiée (`standard`) ou coupe Chat et Cowork (`off`). Sans la clé, la séparation actuelle reste en place jusqu'au 10 novembre 2026, date à laquelle la vue unifiée s'active pour toutes les organisations.
+
+### Où s'exécutent les tâches : le cloud
+
+Avant le 6 octobre 2026, Cowork tournait par défaut sur votre ordinateur. Depuis cette date, les nouvelles tâches Cowork des plans Pro et Max s'exécutent dans le cloud, sur les serveurs d'Anthropic, dans un environnement isolé temporaire.
+
+- L'option « Only on your computer » de Settings > General est supprimée. Un compte encore réglé ainsi bascule au prochain lancement de Claude Desktop, avec une notice, sans retour possible.
+- Les tâches lancées sur votre ordinateur avant le 6 octobre 2026 y restent jusqu'à leur fin.
+- Vos dossiers restent sur votre ordinateur. Une session cloud n'y accède que pour les dossiers que vous avez connectés, et seulement quand Claude Desktop est ouvert. Les fichiers lus sont traités sur les serveurs d'Anthropic.
+- Sur Team, Cowork dans le cloud est en bêta et activé par défaut. Sur Enterprise, il est en bêta et désactivé par défaut : un owner doit l'activer.
+- Les sessions Cowork exécutées localement n'utilisent pas la mémoire (voir [Mémoire cross-session](#mémoire-cross-session-via-desktop-commander)).
+
+Source : support.claude.com/en/articles/15520349.
+
+### Modes d'approbation
+
+Claude demande avant d'agir selon le mode choisi. Les noms ont changé (constat du 11 octobre 2026) :
+
+| Mode | Ancien nom | Comportement |
+|------|------------|--------------|
+| **Manual** | Ask before acting | Claude attend Allow ou Deny à chaque demande |
+| **Auto** | n/a | Claude avance sans demander à chaque étape. Chaque action est filtrée, une action jugée dangereuse est bloquée, et Claude cherche une autre voie ou demande. S'il est bloqué à répétition, il revient au mode demande. Consomme davantage de limite d'usage |
+| **Skip all approvals** | Act without asking | Aucune pause et aucun filtrage automatique des actions |
+
+Sur Team et Enterprise, Auto est proposé par défaut tant qu'un owner ne le coupe pas. « Always allow » pour les outils de connecteurs est désactivé par défaut : les choix « toujours autoriser » déjà enregistrés pour les outils d'écriture ne sont alors pas appliqués. Un outil de connecteur réglé « Restrict to Ask » par l'organisation demande l'approbation même en mode Skip all approvals. Source : support.claude.com/en/articles/13345190 et 13455879.
 
 ---
 
@@ -58,10 +110,16 @@ Pour l'accès produit, consultez le [guide Anthropic actuel de disponibilité Co
 | **Markdown** | ✅ Oui | Analyse complète |
 | **CSV/JSON** | ✅ Oui | Analyse de données structurées |
 | **Audio** | ❌ Non | Ne peut pas traiter |
-| **Vidéo** | ❌ Non | Ne peut pas traiter |
+| **Vidéo** | ❌ Non | Ne peut pas traiter (voir la lecture ci-dessous) |
 | **Fichiers chiffrés** | ❌ Non | Ne peut pas déchiffrer |
 
-### Capacités Web (via Chrome)
+**Lecture vidéo** : depuis le 29 septembre 2026, les vidéos produites dans Cowork se lisent directement dans le panneau de fichiers, avec des miniatures dans la conversation. L'analyse d'un fichier vidéo existant n'est toujours pas documentée : non vérifié.
+
+**Dossiers plus larges** (4 septembre 2026) : Cowork peut attacher le dossier utilisateur complet, Documents et AppData sous Windows, le dossier Library sur macOS, et des disques entiers. La configuration et les données de session de Claude restent hors de portée, de même que certains emplacements d'identifiants : clés SSH, identifiants AWS et GCP, profils bash, zsh et PowerShell.
+
+**Menu « Ouvrir avec »** : le 2 septembre 2026, Claude est apparu dans le menu système « Ouvrir avec » pour les tableurs, PDF, fichiers Word et PowerPoint, fichiers texte et images. Depuis le 22 septembre 2026 la liste est réduite : Claude n'est plus l'application par défaut de fichiers comme `.md` et `.docx`, et n'apparaît plus dans le menu « Ouvrir avec » de macOS pour les fichiers Excel et PowerPoint. « Other… » permet toujours de les ouvrir dans Claude.
+
+### Capacités Web (via le navigateur intégré ou Chrome)
 
 | Action | Peut faire | Notes |
 |--------|------------|-------|
@@ -72,6 +130,16 @@ Pour l'accès produit, consultez le [guide Anthropic actuel de disponibilité Co
 | **Faire des achats** | ❌ Non | Restriction de sécurité |
 | **Se connecter à des sites** | ❌ Non | Restriction de sécurité |
 | **Appels API** | Selon la surface | Les fonctions navigateur et connecteurs demandent disponibilité et permission |
+
+**Navigateur intégré** (déploiement progressif depuis septembre 2026) : Claude Desktop inclut un navigateur que Cowork peut utiliser, sur macOS, Windows et Linux (bêta). Il est disponible sur Pro, Max et Team, et sur Enterprise (actif par défaut à partir du 10 septembre 2026 sauf désactivation par l'organisation ; les pages d'Anthropic décrivent aussi l'activation par un owner, vérifiez donc le réglage de votre organisation).
+
+- Il est séparé de votre navigateur personnel : Claude ne voit pas vos mots de passe enregistrés, sauf si vous les importez.
+- Les sites où vous vous connectez dans ce navigateur restent connectés pour les sessions Cowork suivantes sur cet ordinateur.
+- Claude Desktop doit rester ouvert et en ligne pour que Claude l'utilise, y compris depuis une session cloud lancée sur le web ou le téléphone.
+
+**Panneau latéral de Claude in Chrome** : ouvrir le panneau latéral de Claude in Chrome démarre directement une session Cowork. Disponible sur Max et Team, en déploiement sur Pro, et sur Enterprise si un admin l'a activé (constat du 11 octobre 2026, date de lancement non trouvée).
+
+Sources : support.claude.com/en/articles/16607400, 13455879, 13345190 et 15520349.
 
 ---
 
@@ -257,9 +325,19 @@ N'utilisez pas les nombres de sessions, budgets de tokens ou horaires de réinit
 
 ## Claude Design (Anthropic Labs)
 
-Claude Design est un produit Anthropic distinct de Cowork, mais complémentaire et très pertinent pour les professionnels qui ont besoin de produire des livrables visuels sans passer par un graphiste.
+Claude Design est né comme un produit Anthropic distinct, très pertinent pour les professionnels qui ont besoin de produire des livrables visuels sans passer par un graphiste. Depuis le 16 septembre 2026, on peut demander un design, une présentation (Slides) ou un document (Docs) dans n'importe quelle conversation, y compris dans Claude Code et dans l'onglet Artifacts, sur tous les plans, Free compris. On édite ensuite le résultat avec Claude ou directement. Le 8 octobre 2026, Docs, Slides et Design sont sortis de bêta.
 
-**Accès** : `UNKNOWN` pour Cowork. Claude Design est un produit distinct ; vérifiez sa disponibilité et son prix actuels dans la documentation Anthropic avant de l'inclure dans un workflow Cowork.
+**Accès** : tous les plans, Free compris. Sur Enterprise, ces outils sont désactivés par défaut jusqu'à activation par un owner (Docs s'active par défaut le 15 octobre 2026).
+
+| Outil | Ce qu'il produit | Statut (11 octobre 2026) |
+|-------|------------------|--------------------------|
+| **Claude Design** | Prototypes, maquettes, visuels, avec édition sur le canevas et import du design system | Hors bêta |
+| **Claude Slides** | Présentations, avec leur propre point de départ | Hors bêta |
+| **Claude Docs** | Documents vivants partagés en équipe. Export en Word, PDF, Markdown et Google Docs | Hors bêta |
+| **Claude Dashboards** | Tableaux de bord à partir d'entrepôts de données (Amazon Redshift, BigQuery, ClickHouse, Databricks, Snowflake) ou d'apps connectées comme Salesforce. Claude écrit une requête SQL par graphique et l'affiche | Bêta, Pro, Max, Team, Enterprise (désactivé par défaut sur Enterprise) |
+| **Claude Motion** | Animations codées, sans génération vidéo réaliste, exportables en MP4 | Bêta, Team (activé par défaut) et Enterprise (désactivé par défaut) uniquement |
+
+Dashboards et Motion consomment les limites d'usage de votre plan et sont privés par défaut. Sources : notes de version de support.claude.com, claude.com/resources/product-announcements et articles support 17454700, 17454997 et 16923645.
 
 ### Ce que ça fait
 
@@ -282,11 +360,11 @@ Décrivez ce dont vous avez besoin, Claude génère une première version. Affin
 | **Collaborer** | Partage org-scoped : privé, lien lecture, ou accès édition avec conversation collective |
 | **Exporter** | URL interne, dossier local, Canva, PDF, PPTX, HTML standalone |
 
-> **Enterprise** : Claude Design est désactivé par défaut. L'administrateur doit l'activer dans les paramètres de l'organisation.
+> **Enterprise** : Claude Design, Slides et Docs sont désactivés par défaut. Un owner doit les activer dans les paramètres de l'organisation.
 
 ### Relation avec Cowork
 
-Claude Design gère la couche de création visuelle ; Cowork gère l'automatisation documentaire. Les deux se complètent : utilisez Cowork pour traiter vos données sources (factures, recherches, rapports), puis Claude Design pour transformer le résultat en livrable visuel soigné.
+Claude Design gère la couche de création visuelle ; Cowork gère l'automatisation documentaire. Depuis le changement du 16 septembre 2026, les deux sont accessibles depuis la même conversation. Utilisez Cowork pour traiter vos données sources (factures, recherches, rapports), puis demandez un design, une présentation ou un document pour transformer le résultat en livrable soigné.
 
 ---
 
@@ -414,6 +492,20 @@ Offre packagée dans Claude Cowork, activable via un simple toggle. Connecte Cla
 
 > **Pour activer** : ouvrir Claude Cowork → panneau latéral → toggle Claude for Small Business.
 
+#### Google Workspace, Salesforce et Microsoft 365 (juillet à octobre 2026)
+
+| Intégration | Date et statut | Ce qu'elle fait |
+|-------------|----------------|-----------------|
+| **Google Docs, Sheets et Slides** | 6 octobre 2026, bêta | Un add-on Google Workspace et des connecteurs permettent de travailler avec Claude dans les fichiers Google, ou de créer et modifier ces fichiers depuis Claude. Depuis la v2.16120.0 du desktop (29 septembre 2026), le sélecteur Output d'une nouvelle conversation crée directement un Google Doc, Sheet ou Slides quand Google Drive est connecté |
+| **Salesforce in Claude** | 15 septembre 2026, bêta, plans payants | Un plugin qui amène comptes, opportunités et pipeline dans Claude, avec 37 skills de vente préconstruits (préparer un appel, revoir un deal, créer un dashboard de pipeline, envoyer un forecast). Réservé aux organisations que Salesforce approuve via son inscription bêta |
+| **Microsoft 365, outils d'écriture** | 7 juillet 2026 | Le connecteur passe de la lecture seule à l'écriture : rédiger, envoyer et classer des e-mails, gérer les événements de calendrier, modifier les paramètres de boîte mail, créer et mettre à jour des fichiers OneDrive et SharePoint. Teams reste en lecture seule. Le consentement d'un administrateur est requis avant un déploiement en organisation |
+
+Sources : claude.com/resources/product-announcements, notes de version de support.claude.com et claude.com/docs/cowork/changelog.
+
+#### Publier votre propre plugin : le portail développeur
+
+Depuis le 25 septembre 2026, un portail développeur permet de soumettre des plugins à l'annuaire Claude, de suivre la revue et de consulter les statistiques d'usage une fois le plugin publié. Source : notes de version de support.claude.com.
+
 #### Plugins fonctionnels par service
 
 Au-delà des connecteurs individuels, Anthropic a lancé des plugins pré-construits qui combinent connecteurs et compétences pour des fonctions métier spécifiques :
@@ -456,6 +548,8 @@ Les organisations peuvent créer un catalogue privé de plugins approuvés :
 
 Cowork peut automatiser vos tâches récurrentes, elles s'exécutent aux horaires définis, sans intervention manuelle. Une configuration initiale, et votre brief matinal, votre rapport hebdo ou votre bilan mensuel se génèrent tout seuls.
 
+> **Depuis le 6 octobre 2026** : les nouvelles tâches planifiées s'exécutent dans le cloud, sans appareil allumé. Vos dossiers restent sur votre ordinateur : une tâche planifiée qui lit un dossier local n'y accède que pendant que Claude Desktop est ouvert (voir [Où s'exécutent les tâches](#où-sexécutent-les-tâches--le-cloud)).
+
 #### Deux types de tâches
 
 **Tâches récurrentes** : s'exécutent automatiquement selon un calendrier, sans action manuelle :
@@ -478,9 +572,9 @@ Cowork peut automatiser vos tâches récurrentes, elles s'exécutent aux horaire
 
 **Gérer les tâches depuis la barre latérale** : voir les prochaines exécutions, l'historique, modifier le prompt ou la cadence, mettre en pause, reprendre, supprimer, ou déclencher une exécution immédiate.
 
-> **Note** : Les tâches planifiées sont en aperçu recherche. La fiabilité peut varier. Vérifiez toujours les sorties automatisées.
+> **Note** : Vérifiez toujours les sorties automatisées. Le statut « aperçu recherche » des tâches planifiées, écrit plus haut dans ce guide, n'est pas confirmé par les sources d'octobre 2026 : non vérifié.
 >
-> ⚠️ Le comportement des tâches planifiées varie selon la surface et la fonction. Vérifiez la disponibilité et les exigences d'exécution actuelles avant de dépendre d'une tâche non supervisée.
+> **Approbation des tâches créées par Claude** (1er octobre 2026) : quand votre organisation l'autorise, les tâches planifiées que Claude crée utilisent « Automatically approve » par défaut. Leurs exécutions utilisent les outils sans demander et ne s'arrêtent que si quelque chose paraît dangereux. Relisez ce qu'une telle tâche a le droit de faire avant de la laisser tourner seule.
 
 #### 4 patterns essentiels
 
@@ -530,24 +624,23 @@ Les tâches planifiées fonctionnent bien pour des opérations simples et répé
 
 Alternative pour l'automatisation avancée : **n8n** (open source) peut déclencher Cowork Desktop et offre une logique de scheduling plus sophistiquée avec conditions et branches.
 
-#### 3 méthodes : ce que Cowork peut et ne peut pas planifier
+#### Où s'exécutent les tâches planifiées
 
-Selon votre setup, les tâches automatiques ne fonctionnent pas toutes de la même façon :
+Avant le passage au cloud, une tâche planifiée Cowork sur le desktop exigeait Claude Desktop ouvert et l'ordinateur allumé. Ce n'est plus vrai pour les nouvelles tâches.
 
-| Méthode | Comment ça marche | Prérequis | Fonctionne dans Cowork ? |
-|---------|------------------|-----------|--------------------------|
-| **Interface native Cowork (desktop)** | Barre latérale → Planifié → Nouvelle tâche | Claude Desktop ouvert, Mac allumé | ✅ Oui |
-| **Mac éteint ou app desktop fermée** | La tâche se déclenche quand vous n'êtes pas là | Exécution distante | ❌ Non sur desktop (utiliser Dispatch, Claude Code, ou la bêta Cowork web/mobile) |
-| **Serveur / headless** | Serveur sans interface graphique | Pas de Claude Desktop | ❌ Non (utiliser Claude Code) |
+| Cas | Prérequis | Fonctionne dans Cowork ? |
+|-----|-----------|--------------------------|
+| **Nouvelle tâche planifiée** (depuis le 6 octobre 2026, Pro et Max) | Aucun : elle s'exécute dans le cloud, sans appareil allumé | ✅ Oui |
+| **Tâche planifiée qui lit un dossier local** | Claude Desktop ouvert, et dossier connecté | ✅ Oui, tant que Desktop est ouvert |
+| **Tâche lancée sur votre ordinateur avant le 6 octobre 2026** | Elle y reste jusqu'à sa fin | ✅ Oui. Sort des anciens plannings récurrents : non vérifié |
+| **Team et Enterprise** | Cowork dans le cloud est en bêta : activé par défaut sur Team, désactivé par défaut sur Enterprise jusqu'à activation par un owner | ⚠️ Selon votre organisation |
+| **Serveur / headless** | Pas de Claude Desktop | ❌ Non (utiliser Claude Code) |
 
-**Limite actuelle** : le comportement des tâches planifiées dépend de la surface et de la fonction. Confirmez l'exigence d'exécution actuelle dans Claude avant un workflow non supervisé.
+Depuis le 7 juillet 2026 (bêta web et mobile, Max d'abord), les tâches Cowork pouvaient déjà tourner en arrière-plan dans le cloud sans appareil connecté. Anthropic maintient que le desktop reste le meilleur endroit pour l'expérience complète (fichiers locaux et navigateur).
 
-**Pour les deux cas non supportés sur desktop :**
+**Pour une tâche qui doit tourner sur un serveur** : utilisez un planificateur système avec un workflow contrôlé par un développeur, ou Claude Code.
 
-- **Vous êtes absent mais le Mac est allumé** → utilisez [Dispatch](#dispatch--piloter-cowork-depuis-votre-téléphone) : envoyez la tâche depuis votre téléphone, elle s'exécute sur votre bureau
-- **Entièrement automatique, Mac éteint, ou serveur** → utilisez un planificateur système avec un workflow contrôlé par un développeur, ou confirmez que votre surface Cowork actuelle prend en charge la tâche.
-
-> **Règle de décision** : les tâches planifiées Cowork sont idéales pour les routines "pendant que vous travaillez" (brief matinal, compilation hebdo). Pour une automatisation qui doit tourner même quand vous n'êtes pas là, Claude Code est le bon outil.
+> **Règle de décision** : pour une routine qui ne travaille que sur des outils connectés ou des fichiers dans le cloud, la planification tourne désormais sans votre ordinateur. Pour une routine qui lit des dossiers locaux, gardez Claude Desktop ouvert. Pour une automatisation qui doit tourner sur un serveur sans Claude Desktop, Claude Code est le bon outil.
 
 ### Automatisation du navigateur amelioree
 
@@ -670,7 +763,22 @@ Agent Teams est en aperçu recherche. La coordination entre agents peut parfois 
 
 ### Mémoire cross-session (via Desktop Commander)
 
-Par défaut, chaque session Cowork repart de zéro, Cowork ne se souvient pas de vos préférences, des noms de clients, ni du contexte des sessions précédentes. Avec **Desktop Commander** installé, vous résolvez ça avec un fichier `memory.md`.
+Claude dispose désormais d'une mémoire intégrée, et un fichier `memory.md` avec **Desktop Commander** reste utile comme alternative manuelle.
+
+#### Mémoire intégrée (cloud)
+
+- **Mémoire cloud** (25 août 2026) : la mémoire fonctionne entre Chat et Cowork dans le cloud. Chaque élément mémorisé apparaît sous Settings > Memory > Topics, où vous pouvez l'éditer ou le supprimer individuellement.
+- **Réglage par défaut** : activée sur Free, Pro et Max, désactivée sur Team et Enterprise.
+- **Sujets sensibles** : le réglage « Include sensitive topics in memory » exclut par défaut les sujets de santé et de croyances.
+- **Format** (10 juillet 2026) : la mémoire est un ensemble d'entrées catégorisées que Claude lit et met à jour au fil des conversations, en remplacement du résumé de mémoire quotidien.
+- **Pas de mémoire en session locale** : les sessions Cowork exécutées localement n'utilisent pas la mémoire. Depuis le 6 octobre 2026, les nouvelles tâches Pro et Max s'exécutent dans le cloud ; les tâches lancées localement avant cette date restent locales.
+- **Fin de l'export de l'ancienne mémoire** : les comptes migrés depuis l'ancienne mémoire pouvaient l'exporter depuis Settings > Memory jusqu'au 9 septembre 2026. Cette option n'existe plus.
+- **Import et export avec d'autres assistants** (constat du 11 octobre 2026, date non trouvée) : Claude peut transférer une mémoire vers ou depuis d'autres assistants IA. Anthropic qualifie la fonction d'« experimental and still in active development ». Source : support.claude.com/en/articles/11817273.
+- **Reflect** (9 juillet 2026, bêta Free, Pro et Max, web et Claude Desktop) : Settings > Reflect affiche les sujets sur lesquels vous avez passé du temps, votre jour le plus actif, votre heure de pointe et des observations sur votre façon de travailler avec Claude, sur 1, 3, 6 ou 12 mois. La mémoire doit être activée. Settings > Time and focus règle des rappels de pause et des heures calmes.
+
+#### Alternative manuelle : memory.md (via Desktop Commander)
+
+Si vous préférez une mémoire que vous maîtrisez entièrement, ou si vous travaillez en session locale, installez **Desktop Commander** et utilisez un fichier `memory.md`.
 
 #### Comment ça fonctionne
 
@@ -745,7 +853,7 @@ Par défaut, chaque session Cowork repart de zéro, Cowork ne se souvient pas de
 - Rapport : [préférences structure]
 ```
 
-> **Prérequis** : Extension Desktop Commander (voir [Démarrage Étape 8](01-getting-started.fr.md#étape-8--installer-desktop-commander-recommandé)).
+> **Prérequis** : Extension Desktop Commander (voir [Démarrage Étape 8](01-getting-started.fr.md#étape-8--installer-desktop-commander-recommandé)). Sur les déploiements administrés, les Desktop Extensions (`.dxt` et `.mcpb`) sont désactivées par défaut depuis le 7 juillet 2026 tant qu'un administrateur ne les autorise pas.
 
 ---
 
@@ -862,7 +970,7 @@ Dispatch permet de gérer les tâches Cowork à distance depuis l'application iO
 3. Associez votre téléphone au desktop en scannant un QR code dans les réglages de Claude Desktop
 4. Envoyez des tâches, suivez l'avancement ou ajoutez des instructions depuis n'importe où. Claude travaille sur votre Mac pendant votre absence.
 
-**Prérequis** : ce workflow dépend du desktop connecté et de la disponibilité de la fonction. Cowork web et mobile sont en bêta sur les plans éligibles ; vérifiez le guide des surfaces actuel avant de dépendre d'une exécution distante.
+**Prérequis** : ce workflow dépend du desktop connecté et de la disponibilité de la fonction. Cowork web et mobile sont en bêta sur les plans éligibles, et les nouvelles tâches Pro et Max s'exécutent désormais dans le cloud depuis le 6 octobre 2026. Le comportement de Dispatch avec l'exécution cloud n'est pas vérifié : consultez le guide des surfaces actuel avant de dépendre de cette fonction.
 
 **Limites connues (research preview)** :
 - Les tâches s'exécutent dans un fil unique, les tâches complexes peuvent donc se mettre en file et prendre une ou deux minutes de retard
@@ -884,11 +992,18 @@ Le rendu passe par HTML/CSS/JS (Chart.js et équivalents). Curseurs, champs de s
 
 ### Computer Use : contrôle direct du bureau
 
-Computer Use permet à Claude d'agir via un desktop connecté éligible et autorisé. La fonction reste en preview recherche et ne signifie pas que toute surface Cowork peut piloter toute application hôte.
+Computer Use permet à Claude d'agir via un desktop connecté éligible et autorisé. La fonction est désormais en bêta (elle a été lancée en aperçu recherche le 23 mars 2026) et ne signifie pas que toute surface Cowork peut piloter toute application hôte.
 
-**Activation** : voir [Démarrage étape 9](01-getting-started.fr.md#étape-9--activer-computer-use-preview-recherche).
+**Activation** : voir [Démarrage étape 9](01-getting-started.fr.md#étape-9--activer-computer-use-bêta).
 
-**Disponibilité** : preview recherche sur les plans éligibles. Le [guide Anthropic actuel](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork) est la source de vérité pour les plans et surfaces.
+**Disponibilité** (constat du 11 octobre 2026) :
+
+- Bêta sur Pro et Max, sur macOS et Windows.
+- Indisponible sur Team, Enterprise et Linux.
+- macOS 14 ou plus récent est requis (macOS 13 n'est plus pris en charge pour cette fonction). Le travail en arrière-plan demande macOS 15 ou plus récent. Si la fonction est indisponible, la section Computer use des Settings explique désormais pourquoi.
+- Depuis le 6 octobre 2026, sur macOS, Computer Use n'édite ni n'enregistre plus de fichiers ou dossiers cachés de votre dossier personnel, comme `~/.vimrc` ou `~/.aws`.
+
+Le [guide Anthropic actuel](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork) est la source de vérité pour les plans et surfaces.
 
 #### Ce que Claude sait faire
 
@@ -903,17 +1018,17 @@ Computer Use permet à Claude d'agir via un desktop connecté éligible et autor
 
 #### Comment Claude décide de l'utiliser
 
-Claude suit une hiérarchie d'accès à trois niveaux avant de recourir au contrôle d'écran :
+Claude suit une hiérarchie d'accès à trois niveaux avant de recourir au contrôle d'écran (connecteur d'abord, puis navigateur, puis écran) :
 
 | Priorité | Méthode | Quand |
 |----------|---------|-------|
 | **1 : Connecteurs/Plugins** | Intégration API directe (Slack, Google Calendar, etc.) | En priorité, plus rapide et plus fiable |
-| **2 : Chrome** | Automatisation du navigateur via l'intégration Chrome | Quand aucun connecteur n'existe mais que le service a une interface web |
-| **3 : Contrôle d'écran** | Souris, clavier, boucle de captures | En dernier recours, quand ni connecteur ni Chrome ne suffisent |
+| **2 : Navigateur** | Le navigateur intégré de Claude Desktop, ou Chrome | Quand aucun connecteur n'existe mais que le service a une interface web |
+| **3 : Contrôle d'écran** | Souris, clavier, boucle de captures | En dernier recours, quand ni connecteur ni navigateur ne suffisent |
 
-Computer Use ne se déclenche donc que si les deux méthodes plus rapides sont indisponibles. Une tâche sur un logiciel de bureau ancien, sans interface web ni API, active directement le contrôle d'écran. Une tâche sur un outil web sans connecteur passera d'abord par Chrome.
+Computer Use ne se déclenche donc que si les deux méthodes plus rapides sont indisponibles. Une tâche sur un logiciel de bureau ancien, sans interface web ni API, active directement le contrôle d'écran. Une tâche sur un outil web sans connecteur passera d'abord par le navigateur.
 
-> **Conséquence pratique** : Computer Use est plus lent qu'une intégration par connecteur, chaque action exigeant un cycle de capture d'écran. Si votre processus est sensible au temps, vérifiez d'abord qu'un connecteur ou l'automatisation Chrome ne peut pas faire le travail.
+> **Conséquence pratique** : Computer Use est plus lent qu'une intégration par connecteur, chaque action exigeant un cycle de capture d'écran. Si votre processus est sensible au temps, vérifiez d'abord qu'un connecteur ou l'automatisation du navigateur ne peut pas faire le travail.
 
 #### Comportement de sécurité
 
@@ -931,7 +1046,7 @@ Computer Use ne se déclenche donc que si les deux méthodes plus rapides sont i
 - Automatiser des manipulations répétitives dans une interface graphique (saisie de formulaires, mises à jour de statut)
 - Tester des parcours utilisateur sur vos propres produits
 
-> ⚠️ **Réserves liées à la research preview** : Computer Use peut se tromper en naviguant dans une interface qu'il ne connaît pas. Supervisez toujours les premières exécutions d'une nouvelle tâche. Interrompez l'exécution dès que Claude fait quelque chose d'inattendu.
+> ⚠️ **Réserves liées à la bêta** : Computer Use peut se tromper en naviguant dans une interface qu'il ne connaît pas. Supervisez toujours les premières exécutions d'une nouvelle tâche. Interrompez l'exécution dès que Claude fait quelque chose d'inattendu.
 
 ---
 
@@ -969,8 +1084,11 @@ L'accès navigateur et connecteurs dépend de la surface et des permissions. N'i
 
 | Limite | Guide actuel |
 |--------|--------------|
-| Linux | Claude Desktop sur Linux est en bêta |
+| macOS | macOS 13 Ventura ou plus récent depuis Claude Desktop v1.49585.0 (8 septembre 2026, Electron 44). La page d'installation du support affiche encore macOS 11 : ce guide suit le changelog |
+| Windows | Une mise à jour Windows du 8 septembre 2026 (KB5124008) a bloqué l'accès aux fichiers des sessions locales jusqu'au correctif de Microsoft le 14 septembre 2026. Détails dans le [dépannage](04-troubleshooting.fr.md) |
+| Linux | Claude Desktop sur Linux est en bêta (Ubuntu 22.04+ ou Debian 12+, installation par apt, pas de mise à jour automatique, ni computer use ni dictée) |
 | Web et mobile | Cowork est en bêta sur les plans éligibles |
+| Exécution cloud | Les nouvelles tâches Pro et Max s'exécutent dans le cloud depuis le 6 octobre 2026. Les dossiers locaux ne sont accessibles que pendant que Claude Desktop est ouvert |
 | VPN | `UNKNOWN` comme limitation universelle ; diagnostiquer un problème de connexion avec le guide produit actuel plutôt que désactiver un VPN par défaut |
 | Arrière-plan et persistance | Varient selon la surface et la fonction ; vérifier le comportement actuel avant un workflow non supervisé |
 
@@ -990,7 +1108,7 @@ Besoin de faire quelque chose avec des fichiers ?
          ├─ Besoin d'un shell contrôlé par un développeur → Utiliser Claude Code
          ├─ Intégration API → Manuel ou Claude Code
          ├─ Changements système → Opération manuelle
-         └─ Recherche web → Cowork + Chrome ✅
+         └─ Recherche web → Cowork + navigateur intégré ou Chrome ✅
 ```
 
 ---
