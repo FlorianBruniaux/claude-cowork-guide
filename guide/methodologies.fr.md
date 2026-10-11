@@ -105,4 +105,4 @@ Organise-les par type puis par année. Utilise des noms de dossiers en français
 Ne déplace pas les fichiers créés il y a moins de 7 jours. Crée un journal des déplacements.
 ```
 
-Adoptez aussi Cowork progressivement : maîtrisez un workflow répétitif, ajoutez-en deux ou trois, puis seulement les tâches récurrentes et la continuité de contexte. La disponibilité des fonctions peut évoluer : vérifiez les [instructions officielles](https://support.claude.com/en/articles/13345190-get-started-with-cowork) avant de bâtir un processus critique.
+Adoptez aussi Cowork progressivement : maîtrisez un workflow répétitif, ajoutez-en deux ou trois, puis seulement les tâches récurrentes et la continuité de contexte. La disponibilité des fonctions peut évoluer : vérifiez les [instructions officielles](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) avant de bâtir un processus critique.

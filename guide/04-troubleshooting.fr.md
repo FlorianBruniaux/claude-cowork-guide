@@ -423,7 +423,7 @@ Sur Team et Enterprise, Cowork dans le cloud est en bêta. Demandez à votre own
 - Plusieurs utilisateurs signalent des problèmes similaires
 
 **Vérifier le statut** :
-- Visiter [status.anthropic.com](https://status.anthropic.com)
+- Visiter [status.claude.com](https://status.claude.com)
 - Vérifier Reddit r/ClaudeAI pour les signalements de la communauté
 
 **Pendant les pannes** :
@@ -605,7 +605,7 @@ EOF
 | 1 | **Verifier la version Windows** : Windows 10 (version 1903+) ou Windows 11 requis |
 | 2 | **Executer en administrateur** : Clic droit sur l'installateur → Executer en tant qu'administrateur |
 | 3 | **Verifier l'antivirus** : Certains antivirus bloquent l'installation. Ajouter une exception pour Claude Desktop. |
-| 4 | **Telecharger a nouveau** : Recuperer la derniere version depuis [claude.ai/download](https://claude.ai/download) |
+| 4 | **Telecharger a nouveau** : Recuperer la derniere version depuis [claude.com/download](https://claude.com/download) |
 
 ### Problemes de permissions Windows
 

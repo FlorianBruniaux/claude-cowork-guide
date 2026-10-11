@@ -36,13 +36,13 @@ Before starting, ensure you have:
      If "Cowork" isn't listed, your version predates the feature.
 3. Either way, if Cowork isn't available, update your app:
    - Go to Claude Desktop menu → **Check for Updates**
-   - Or download the latest version from [claude.ai/download](https://claude.ai/download)
+   - Or download the latest version from [claude.com/download](https://claude.com/download)
 
-> **Official Documentation**: For additional help, see [Anthropic's Getting Started with Cowork guide](https://support.claude.com/en/articles/13345190-getting-started-with-cowork)
+> **Official Documentation**: For additional help, see [Anthropic's Getting Started with Cowork guide](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork)
 
 ### Subscription and availability
 
-Cowork is available on the **Pro, Max, Team and Enterprise** plans, not on the Free plan. One Anthropic installation page still ticks Cowork under Free: that is an inconsistency on Anthropic's side, so do not count on Cowork with a Free account. Consult Anthropic's current [Cowork availability guidance](https://support.claude.com/en/articles/13345190-get-started-with-cowork) for details.
+Cowork is available on the **Pro, Max, Team and Enterprise** plans, not on the Free plan. One Anthropic installation page still ticks Cowork under Free: that is an inconsistency on Anthropic's side, so do not count on Cowork with a Free account. Consult Anthropic's current [Cowork availability guidance](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) for details.
 
 Prices on claude.com/pricing on October 11, 2026 (US dollars, excluding tax; no euro price is published):
 
@@ -70,8 +70,8 @@ On **Team**, cloud execution is in beta and on by default. On **Enterprise**, it
 
 | System | How |
 |--------|-----|
-| **macOS** (13 Ventura or later) | Download from [claude.ai/download](https://claude.ai/download) |
-| **Windows** | Download from [claude.ai/download](https://claude.ai/download) |
+| **macOS** (13 Ventura or later) | Download from [claude.com/download](https://claude.com/download) |
+| **Windows** | Download from [claude.com/download](https://claude.com/download) |
 | **Linux** (beta; Ubuntu 22.04+ or Debian 12+) | Install through `apt`, following the commands on Anthropic's [installation page](https://support.claude.com/en/articles/10065433-install-claude-desktop). No automatic update, no computer use, no dictation |
 
 One Anthropic help page still lists macOS 11 as the minimum. The Claude Desktop changelog says macOS 13 Ventura since v1.49585.0 (September 8, 2026): use macOS 13.

@@ -19,7 +19,7 @@
 
 Depuis le 16 septembre 2026, Anthropic déploie progressivement « Unified Claude » sur les comptes Pro et Max : il n'y a plus de mode Chat ou Cowork à choisir, Claude décide si votre demande appelle une réponse rapide ou une tâche.
 
-Vérifiez le [guide officiel de disponibilité](https://support.claude.com/en/articles/13345190-get-started-with-cowork) et le [guide des surfaces](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile) avant de changer d'abonnement.
+Vérifiez le [guide officiel de disponibilité](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) et le [guide des surfaces](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile) avant de changer d'abonnement.
 
 ### Q: Quelles sont les limites d'usage ?
 **R:** Les plans payants ont une limite glissante de 5 h et des limites hebdomadaires. L'usage dépend du plan, de la surface et de la tâche, et Anthropic peut modifier les limites : consultez les informations de plan actuelles dans Claude plutôt qu'un nombre fixe de messages. Le mode d'approbation Auto consomme plus de limite que Manual. Sur Pro et Max, les usage credits permettent de continuer aux tarifs API une fois une limite atteinte. Source : claude.com/pricing, relu le 11 octobre 2026.
@@ -234,7 +234,7 @@ Causes courantes : limite de contexte, timeout, problèmes réseau.
 - Échouer des tâches qui fonctionnaient auparavant
 - Devenir non réactives
 
-**Action** : Vérifiez [status.anthropic.com](https://status.anthropic.com), attendez la résolution, ne réessayez pas de manière répétée (gaspille le quota).
+**Action** : Vérifiez [status.claude.com](https://status.claude.com), attendez la résolution, ne réessayez pas de manière répétée (gaspille le quota).
 
 ---
 
@@ -321,7 +321,7 @@ Les tarifs évoluent : vérifiez claude.com/pricing avant de vous abonner.
 ## Futur
 
 ### Q: Est-ce que Cowork est toujours en beta ?
-**R:** N'appliquez pas une étiquette bêta ou GA globale à toutes les fonctions Cowork. La disponibilité dépend de la surface et du plan ; computer use est une bêta pour Pro et Max (macOS et Windows, pas Team, Enterprise ni Linux), et Cowork dans le cloud est en bêta sur Team et Enterprise. Consultez les guides actuels de [disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-cowork) et d'[utilisation de l'ordinateur](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork).
+**R:** N'appliquez pas une étiquette bêta ou GA globale à toutes les fonctions Cowork. La disponibilité dépend de la surface et du plan ; computer use est une bêta pour Pro et Max (macOS et Windows, pas Team, Enterprise ni Linux), et Cowork dans le cloud est en bêta sur Team et Enterprise. Consultez les guides actuels de [disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) et d'[utilisation de l'ordinateur](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork).
 
 ### Q: Quelles fonctionnalités arrivent ?
 **R:** La disponibilité produit évolue. Linux est actuellement en bêta pour Claude Desktop. Utilisez les notes de version et la documentation Anthropic plutôt que cette FAQ pour les annonces futures.
@@ -335,7 +335,7 @@ Les tarifs évoluent : vérifiez claude.com/pricing avant de vous abonner.
 - Les fonctionnalités UI reçoivent des changements backend qui peuvent affecter les workflows
 - Le comportement peut changer entre les mises à jour
 
-**Atténuation** : Ne construisez pas de workflows critiques qui dépendent du comportement exact de Cowork. Ayez des plans de secours. Vérifiez r/ClaudeAI et status.anthropic.com pour les annonces de changements.
+**Atténuation** : Ne construisez pas de workflows critiques qui dépendent du comportement exact de Cowork. Ayez des plans de secours. Vérifiez r/ClaudeAI et status.claude.com pour les annonces de changements.
 
 ---
 

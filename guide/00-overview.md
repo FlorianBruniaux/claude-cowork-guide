@@ -16,7 +16,7 @@ Since September 16, 2026, Cowork is no longer a separate mode: Anthropic's own w
 
 | Aspect | Details |
 |--------|---------|
-| **Availability** | Pro, Max, Team and Enterprise plans; not the Free plan ([official guidance](https://support.claude.com/en/articles/13345190-get-started-with-cowork)). One Anthropic install page still ticks Cowork under Free: treat that as an inconsistency on Anthropic's side, not as availability |
+| **Availability** | Pro, Max, Team and Enterprise plans; not the Free plan ([official guidance](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork)). One Anthropic install page still ticks Cowork under Free: treat that as an inconsistency on Anthropic's side, not as availability |
 | **Surfaces** | Claude Desktop (macOS, Windows, Linux in beta), web, mobile, and the Claude in Chrome side panel ([surface guidance](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile)) |
 | **Desktop requirements** | macOS 13 Ventura or later (since Claude Desktop v1.49585.0 on September 8, 2026, per the Claude Desktop changelog); Windows; Linux in beta on Ubuntu 22.04+ or Debian 12+ ([installation guidance](https://support.claude.com/en/articles/10065433-install-claude-desktop)). One support page still shows macOS 11: use macOS 13 |
 | **Where tasks run** | Pro and Max: new tasks run in the cloud since October 6, 2026. Team: cloud in beta, on by default. Enterprise: cloud in beta, off by default until an owner turns it on |

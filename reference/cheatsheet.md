@@ -4,7 +4,7 @@
 
 > **One-page quick reference** : Print-friendly
 
-**Availability** (as of October 11, 2026): Cowork is for Pro, Max, Team and Enterprise plans (not Free). Claude Desktop runs on macOS (13 Ventura or later), Windows and Linux (beta, Ubuntu 22.04+ / Debian 12+). Since September 16, 2026, Cowork is built into every Claude conversation (rolling out on Pro and Max, web, desktop and mobile): no Chat/Cowork mode to pick. Verify the current [Cowork availability](https://support.claude.com/en/articles/13345190-get-started-with-cowork) before relying on a surface.
+**Availability** (as of October 11, 2026): Cowork is for Pro, Max, Team and Enterprise plans (not Free). Claude Desktop runs on macOS (13 Ventura or later), Windows and Linux (beta, Ubuntu 22.04+ / Debian 12+). Since September 16, 2026, Cowork is built into every Claude conversation (rolling out on Pro and Max, web, desktop and mobile): no Chat/Cowork mode to pick. Verify the current [Cowork availability](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) before relying on a surface.
 
 **Where tasks run**: since October 6, 2026, new Pro and Max tasks run in the cloud (Anthropic servers, temporary isolated environment). Your folders stay on your computer; a cloud task reaches only the folders you connected, and only while Claude Desktop is open. Scheduled tasks run in the cloud even with your computer off. Tasks started locally before October 6 stay local. Team: beta, on by default. Enterprise: beta, off until an owner turns it on.
 

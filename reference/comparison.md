@@ -62,7 +62,7 @@
 ### Official Resources
 
 **Claude in Excel Add-in**:
-- Tutorial: [Using Claude in Excel](https://support.claude.com/en/articles/12650343-using-claude-in-excel)
+- Tutorial: [Using Claude in Excel](https://claude.com/docs/office-agents/excel)
 - Installation: Excel → Insert → Add-ins → Search "Claude"
 
 **Cowork Excel Capabilities**:
@@ -470,7 +470,7 @@ Since Cowork's launch, the open-source community has created several free altern
 |---------|---------|-------|-------------|----------|
 | [openwork](https://github.com/different-ai/openwork) | different-ai | Desktop app with UI | ⭐⭐⭐ User-friendly | ⚠️ Asks permission |
 | [openwork](https://github.com/langchain-ai/openwork) | LangChain | CLI tool | ⭐ Requires terminal | ⚠️ Full file access |
-| [open-claude-cowork](https://github.com/ComposioHQ/open-claude-cowork) | Composio | Integrations (500+) | ⭐⭐ Desktop app | ⚠️ Full file access |
+| [open-claude-cowork](https://github.com/composio-community/open-claude-cowork) | Composio | Integrations (500+) | ⭐⭐ Desktop app | ⚠️ Full file access |
 | [kuse_cowork](https://github.com/kuse-ai/kuse_cowork) | Kuse | Offline/privacy | ⭐ Requires Docker | ✅ Sandboxed |
 
 *Star counts (559, 236, 123, ~50) as of January 2026. These projects are young and evolving.*

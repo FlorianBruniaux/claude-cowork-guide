@@ -435,7 +435,7 @@ On Team and Enterprise, Cowork in the cloud is a beta. Check with your owner whe
 - Multiple users reporting similar issues
 
 **Check Status**:
-- Visit [status.anthropic.com](https://status.anthropic.com)
+- Visit [status.claude.com](https://status.claude.com)
 - Check Reddit r/ClaudeAI for community reports
 
 **During Outages**:

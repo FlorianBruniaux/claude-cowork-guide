@@ -30,7 +30,7 @@ Les modèles précédents restent dans la liste : Claude Fable 5.1 et Claude Myt
 
 Le modèle par défaut de chaque plan est `UNKNOWN` : Anthropic ne l'a pas publié. Sources : notes de version de support.claude.com et claude.com/docs/cowork/changelog.
 
-Pour l'accès produit, consultez le [guide Anthropic actuel de disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-cowork). Le lien exact entre un modèle et Cowork est `UNKNOWN` dans ce guide tant qu'Anthropic ne le documente pas pour la surface utilisée.
+Pour l'accès produit, consultez le [guide Anthropic actuel de disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork). Le lien exact entre un modèle et Cowork est `UNKNOWN` dans ce guide tant qu'Anthropic ne le documente pas pour la surface utilisée.
 
 ---
 

@@ -28,7 +28,7 @@ Depuis le 16 septembre 2026, Cowork n'est plus un mode à part : Anthropic l'éc
 
 | Aspect | Détails |
 |--------|---------|
-| **Disponibilité** | Plans Pro, Max, Team et Enterprise ; pas le plan Free ([guide officiel](https://support.claude.com/en/articles/13345190-get-started-with-cowork)). Une page d'installation d'Anthropic coche encore Cowork sous Free : c'est une incohérence côté Anthropic, pas une disponibilité |
+| **Disponibilité** | Plans Pro, Max, Team et Enterprise ; pas le plan Free ([guide officiel](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork)). Une page d'installation d'Anthropic coche encore Cowork sous Free : c'est une incohérence côté Anthropic, pas une disponibilité |
 | **Surfaces** | Claude Desktop (macOS, Windows, Linux en bêta), web, mobile, et panneau latéral de Claude in Chrome ([guide des surfaces](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile)) |
 | **Prérequis desktop** | macOS 13 Ventura ou plus récent (depuis Claude Desktop v1.49585.0 du 8 septembre 2026, d'après le changelog Claude Desktop) ; Windows ; Linux en bêta sous Ubuntu 22.04+ ou Debian 12+ ([guide d'installation](https://support.claude.com/en/articles/10065433-install-claude-desktop)). Une page d'aide affiche encore macOS 11 : retenez macOS 13 |
 | **Où les tâches s'exécutent** | Pro et Max : les nouvelles tâches tournent dans le cloud depuis le 6 octobre 2026. Team : cloud en bêta, activé par défaut. Enterprise : cloud en bêta, désactivé par défaut jusqu'à activation par un owner |
@@ -241,7 +241,7 @@ Si vous cherchez à optimiser vos workflows pour un usage intensif (>100 tâches
 
 **Mise à l'échelle et parallélisation** : Pour des besoins de traitement par lots ou d'automatisation poussée, consultez les ressources de Boris (créateur de Claude Code) sur les [workflows multi-sessions](https://www.youtube.com/watch?v=DW4a1Cm8nG4) et les [pratiques avancées](https://blog.devgenius.io/the-claude-code-creator-says-ai-writes-100-of-his-code-now-956b2a5905ba).
 
-**Configuration équipe** : Pour les organisations de 20+ employés, consultez le [Guide Enterprise Anthropic](https://www.anthropic.com/enterprise) pour les fonctionnalités d'audit et de contrôle d'accès.
+**Configuration équipe** : Pour les organisations de 20+ employés, consultez le [Guide Enterprise Anthropic](https://claude.com/solutions/enterprise) pour les fonctionnalités d'audit et de contrôle d'accès.
 
 > **Note** : Ces techniques sont destinées aux utilisateurs expérimentés. Pour la majorité des TPE/PME, les workflows standards documentés dans ce guide suffisent amplement.
 

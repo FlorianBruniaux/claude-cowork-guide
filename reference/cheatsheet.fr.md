@@ -4,7 +4,7 @@
 
 > **Référence rapide d'une page** : Format imprimable
 
-**Disponibilité** (au 11 octobre 2026) : Cowork est ouvert aux plans Pro, Max, Team et Enterprise (pas Free). Claude Desktop fonctionne sur macOS (13 Ventura ou plus récent), Windows et Linux (bêta, Ubuntu 22.04+ / Debian 12+). Depuis le 16 septembre 2026, Cowork est intégré à chaque conversation Claude (déploiement progressif sur Pro et Max, web, desktop et mobile) : plus de mode Chat/Cowork à choisir. Vérifiez la [disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-cowork) avant de dépendre d'une surface.
+**Disponibilité** (au 11 octobre 2026) : Cowork est ouvert aux plans Pro, Max, Team et Enterprise (pas Free). Claude Desktop fonctionne sur macOS (13 Ventura ou plus récent), Windows et Linux (bêta, Ubuntu 22.04+ / Debian 12+). Depuis le 16 septembre 2026, Cowork est intégré à chaque conversation Claude (déploiement progressif sur Pro et Max, web, desktop et mobile) : plus de mode Chat/Cowork à choisir. Vérifiez la [disponibilité Cowork](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) avant de dépendre d'une surface.
 
 **Où tournent les tâches** : depuis le 6 octobre 2026, les nouvelles tâches Pro et Max s'exécutent dans le cloud (serveurs d'Anthropic, environnement isolé temporaire). Vos dossiers restent sur votre ordinateur ; une tâche cloud n'accède qu'aux dossiers connectés, et seulement quand Claude Desktop est ouvert. Les tâches planifiées tournent dans le cloud même ordinateur éteint. Les tâches lancées en local avant le 6 octobre restent locales. Team : bêta, activée par défaut. Enterprise : bêta, désactivée jusqu'à activation par un owner.
 

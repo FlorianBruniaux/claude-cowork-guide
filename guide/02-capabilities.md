@@ -30,7 +30,7 @@ Earlier models remain in the list: Claude Fable 5.1 and Claude Mythos 5.1 (Septe
 
 The default model for each plan is `UNKNOWN`: Anthropic has not published it. Sources: support.claude.com release notes and claude.com/docs/cowork/changelog.
 
-For product access, consult Anthropic's current [Cowork availability guidance](https://support.claude.com/en/articles/13345190-get-started-with-cowork). The exact model-to-Cowork mapping is `UNKNOWN` in this guide unless Anthropic documents it for the surface you use.
+For product access, consult Anthropic's current [Cowork availability guidance](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork). The exact model-to-Cowork mapping is `UNKNOWN` in this guide unless Anthropic documents it for the surface you use.
 
 ---
 
