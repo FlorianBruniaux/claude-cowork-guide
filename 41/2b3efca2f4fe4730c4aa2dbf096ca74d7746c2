@@ -1,0 +1,140 @@
+CLAUDE.md
+  s_f6f18e2ee1bede::t_748059d6f8d6dd 20
+machine-readable/llms.txt
+  s_f6f18e2ee1bede::t_748059d6f8d6dd 9
+  s_f6f18e2ee1bede::t_293ace18acbb95 10,18,20-24,29-30,41-42,47-48
+CITATION.cff
+  s_f6f18e2ee1bede::t_748059d6f8d6dd 10
+  s_f6f18e2ee1bede::t_dcc0f8093565be 11
+machine-readable/reference.yaml
+  s_f6f18e2ee1bede::t_df6e623e95af6f 77-85,101-102,207,259-261
+  s_f6f18e2ee1bede::t_f0564ab9e6d821 6-7
+reference/cheatsheet.md
+  s_f6f18e2ee1bede::t_748059d6f8d6dd 283
+  s_f6f18e2ee1bede::t_26e675f04a6499 7-9,39-56,58,180,265-266
+guide/00-overview.fr.md
+  s_f6f18e2ee1bede::t_f0d9370f653039 19-21,25,31-37,39-49,84,86,93-110,152-153,156,177-182,188-191,206,240
+  s_f6f18e2ee1bede::t_92bda2f3ded17b 155
+guide/01-getting-started.fr.md
+  s_f6f18e2ee1bede::t_a9ff6c8465f61f 17-20,25,31,45-77,83,85-86,104,109-110,149,153-154,202,216-225,411-416,448-449,502,534,558-566,597-598
+  s_f6f18e2ee1bede::t_672707c24b145a 498
+guide/01-getting-started.md
+  s_f6f18e2ee1bede::t_3446b61420aae1 17-20,25,31,45-77,83,85-86,104,109-110,136,140-141,173,187-191,193-196,374-379,411-412,465,497,521-529,560-561
+  s_f6f18e2ee1bede::t_672707c24b145a 461
+  s_f6f18e2ee1bede::t_45aaf3bd7e743b 192
+guide/02-capabilities.md
+  s_f6f18e2ee1bede::t_4dc97c54e2b5b5 629,776
+  s_f6f18e2ee1bede::t_66f10027011ba8 13-31,37-70,113,116-122,134-143,328,330-340,363,367,495-508,551-552,575,577,627,631-637,639,641,643,768-775,777-783,858,975,997,1000-1001,1003-1006,1008,1023,1028,1031,1033,1051,1089-1091,1093,1113
+  s_f6f18e2ee1bede::t_672707c24b145a 999
+  s_f6f18e2ee1bede::t_c0ef7a9eb6d4c7 998
+guide/04-troubleshooting.fr.md
+  s_f6f18e2ee1bede::t_c3090f708a4d3d 41-43,63,75-76,81-82,94,119-197,390,392
+machine-readable/claude-cowork-releases.yaml
+  s_f6f18e2ee1bede::t_3ecdd1ea3b09da 22-24
+  s_f6f18e2ee1bede::t_0897b9287450e4 5-6,13-21,25-31
+  s_9a8788459e90dc::t_026e6ecbceb67a 32
+VERSION
+  s_f6f18e2ee1bede::t_f0564ab9e6d821 1
+guide/02-capabilities.fr.md
+  s_f6f18e2ee1bede::t_672707c24b145a 997
+  s_f6f18e2ee1bede::t_168a3174cd5e5d 13-31,37-70,113,116-122,134-143,328,330-340,363,367,495-508,551-552,575,577,627,629,631-637,639,641,643,766-781,856,973,995,998-999,1001-1004,1006,1021,1026-1027,1029,1031,1049,1087-1089,1091,1111
+  s_f6f18e2ee1bede::t_c0d528556ac69c 996
+CHANGELOG.md
+  s_f6f18e2ee1bede::t_3b6bae0966c2b1 56-65
+  s_f6f18e2ee1bede::t_77cd8c3dcb814f 14
+  s_f6f18e2ee1bede::t_af99e6968b52ec 20-26,28-36,38,45-55,66-74
+  s_f6f18e2ee1bede::t_d0d07179451d4f 27
+  s_f6f18e2ee1bede::t_731d4f61bcbce4 16
+  s_f6f18e2ee1bede::t_3bc87153fff513 37
+  s_f6f18e2ee1bede::t_d32743b2f2e67e 75
+  s_f6f18e2ee1bede::t_e9c7121df4c29f 39-44
+README.fr.md
+  s_f6f18e2ee1bede::t_748059d6f8d6dd 30,298
+  s_f6f18e2ee1bede::t_293ace18acbb95 33,58-60,255,257,259
+reference/cheatsheet.fr.md
+  s_f6f18e2ee1bede::t_748059d6f8d6dd 283
+  s_f6f18e2ee1bede::t_26e675f04a6499 7-9,39-56,58,180,265-266
+workflows/scheduled-automation.en.md
+  s_f6f18e2ee1bede::t_0788d0e8b80dd4 135-137
+  s_f6f18e2ee1bede::t_3d98fbc99ca527 15
+reference/glossary.fr.md
+  s_f6f18e2ee1bede::t_c71400a470ed06 38-39,54-60,67-73,82-84,86-95,110-113,162-164,202,208-210,223-225,241-244
+  s_f6f18e2ee1bede::t_56110d9c81fa96 245-247
+README.md
+  s_f6f18e2ee1bede::t_f0564ab9e6d821 42,320
+  s_f6f18e2ee1bede::t_293ace18acbb95 45,80-82,277,279,281
+reference/glossary.md
+  s_f6f18e2ee1bede::t_3d98fbc99ca527 18-24,31-37,43-45,47-50,58-63,74-77,126-128,166,172-174,187-189,205-208
+  s_f6f18e2ee1bede::t_b6504647afa6eb 209-211
+reference/faq.fr.md
+  s_f6f18e2ee1bede::t_168a3174cd5e5d 16-17,20-21,25,28,59,87,129-137,145,177-186,227,243-245,247-261,264,280,308-309,324
+guide/03-security.fr.md
+  s_f6f18e2ee1bede::t_ad87be0faabb5f 599-600
+  s_f6f18e2ee1bede::t_66f188093901c0 41-85,88,212-213,307-311,335-336,577-584
+  s_e827e256e15185::t_70bd48aa9b8060 585
+guide/03-security.md
+  s_f6f18e2ee1bede::t_420c89315dc557 26-66,73,188-189,263-267,291-292,512-519
+  s_f6f18e2ee1bede::t_05c70edddb960a 547
+  s_f6f18e2ee1bede::t_7b60c44d46c20f 67-69
+  s_f6f18e2ee1bede::t_3bd2aac9abe3c8 534-535
+  s_160b3107588443::t_d83d2bd2feae71 520
+guide/04-troubleshooting.md
+  s_f6f18e2ee1bede::t_c71400a470ed06 36-38,55,67-68,73-74,86,124-202,402,404
+MANIFEST.yaml
+  s_f6f18e2ee1bede::t_748059d6f8d6dd 5
+llms.txt
+  s_f6f18e2ee1bede::t_293ace18acbb95 10,18,20-24,29-30,41-42,47-48
+  s_f6f18e2ee1bede::t_748059d6f8d6dd 9
+guide/00-overview.md
+  s_f6f18e2ee1bede::t_92bda2f3ded17b 163
+  s_f6f18e2ee1bede::t_a97169d5a9ad33 11-13,19-25,27-37,42-44,50,53,92,94,101-118,160-161,164,185-190,196-199,211
+workflows/scheduled-automation.md
+  s_f6f18e2ee1bede::t_3d98fbc99ca527 15
+  s_f6f18e2ee1bede::t_0788d0e8b80dd4 140-142
+reference/faq.md
+  s_f6f18e2ee1bede::t_bef66ace3c737c 16-17,20-21,25,28,59,87,129-137,145,177-186,227,243-245,247-261,264,280,308-309,324
+reference/comparison.fr.md
+  s_f6f18e2ee1bede::t_b8e7380c397cbe 7,16,21,23-25,39,44-45,124,133-134,136,291,293,301-302,321,336,356,392,396-397,425
+reference/comparison.md
+  s_f6f18e2ee1bede::t_0bbd3f1f312c6e 7,16,21,23-25,39,44-45,124,133-134,136,291,293,301-302,321,336,356,392,396-397,425
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "412b3efca2f4fe4730c4aa2dbf096ca74d7746c2",
+  "prompts": {},
+  "sessions": {
+    "s_160b3107588443": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a106f2-069b-7be2-aa09-88b1bbf2331e",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    },
+    "s_9a8788459e90dc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e5660654-81ea-4db3-9b60-bb2df2a19d1c",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    },
+    "s_e827e256e15185": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a12567-61ab-7c62-8b43-ea0028444170",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    },
+    "s_f6f18e2ee1bede": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "45b6c144-ab6f-47f3-a276-074bbddcaa0f",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Florian BRUNIAUX <florian.bruniaux@gmail.com>"
+    }
+  }
+}
