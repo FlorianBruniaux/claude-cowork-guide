@@ -1,331 +1,331 @@
-# Workflow: Expense Tracking
+# Workflow: Suivi des Notes de Frais
 
-🌐 **Langues**: [Français](expense-tracking.md) | [English](expense-tracking.en.md)
+> **Temps estimé**: 20 minutes
+> **Difficulté**: Intermédiaire
+> **Catégorie**: 🗂️ Organisation
+> **Professions**: Toutes professions
 
-> **Estimated time**: 20 minutes
-> **Difficulty**: Intermediate
-> **Category**: 🗂️ Organization
-> **Professions**: All professions
-
----
-
-## Use Case
-
-You have receipt photos, screenshots, or scanned documents and need to:
-
-- Extract expense data into a spreadsheet
-- Categorize expenses
-- Create totals and summaries
-- Track for reimbursement or accounting
-
-> ⚠️ **Important**: Claude excels at reading receipt **fields** (vendor, date, totals) but is weaker at **line-item extraction** from tables (63% accuracy vs 97% for fields). Always verify totals manually. Budget 30-50% of time saved for validation and error correction.
+🌐 **Also available in [English](expense-tracking.en.md)**
 
 ---
 
-## Prerequisites
+## Cas d'usage
 
-- [ ] Cowork enabled with Chrome access (for receipt photos)
-- [ ] Receipt images (JPG, PNG) or PDFs
-- [ ] Workspace folder created
+Vous avez des photos de tickets de caisse, des captures d'écran ou des documents scannés et vous devez:
+
+- Extraire les données de dépenses dans un tableur
+- Catégoriser les dépenses
+- Créer des totaux et des synthèses
+- Assurer le suivi pour un remboursement ou la comptabilité
+
+> ⚠️ **Important**: Claude lit très bien les **champs** d'un ticket (fournisseur, date, totaux) mais est plus faible pour l'**extraction ligne par ligne** des tableaux (63 % de précision contre 97 % pour les champs). Vérifiez toujours les totaux manuellement. Prévoyez 30 à 50 % du temps gagné pour la validation et la correction des erreurs.
 
 ---
 
-## Step-by-Step Instructions
+## Prérequis
 
-### Step 1: Prepare Receipts
+- [ ] Cowork activé avec accès à Chrome (pour les photos de tickets)
+- [ ] Images de tickets (JPG, PNG) ou PDF
+- [ ] Workspace folder créé
+
+---
+
+## Instructions étape par étape
+
+### Étape 1: Préparer les tickets
 
 ```bash
-# Create workspace structure
+# Créer la structure du workspace
 mkdir -p ~/Cowork-Workspace/{input/receipts,output}
 
-# Copy receipts to workspace
+# Copier les tickets dans le workspace
 cp ~/Downloads/*.jpg ~/Cowork-Workspace/input/receipts/
 cp ~/Downloads/*.png ~/Cowork-Workspace/input/receipts/
 cp ~/Downloads/*.pdf ~/Cowork-Workspace/input/receipts/
 ```
 
-**Tip**: Name files descriptively if possible (e.g., `2024-01-15-uber.jpg`)
+**Astuce**: Donnez des noms de fichiers descriptifs si possible (par exemple `2024-01-15-uber.jpg`)
 
-### Step 2: Review Receipt Quality
+### Étape 2: Vérifier la qualité des tickets
 
-Check image quality. Cowork uses OCR and works best with:
-- Clear, in-focus photos
-- Good lighting
-- Full receipt visible
-- Minimal glare/shadows
+Contrôlez la qualité des images. Cowork utilise la reconnaissance de caractères (OCR) et fonctionne mieux avec:
+- Des photos nettes et bien mises au point
+- Un bon éclairage
+- Un ticket entièrement visible
+- Peu de reflets et d'ombres
 
-### Step 3: Initial Extraction
+### Étape 3: Extraction initiale
 
-Start with a basic extraction:
-
-```
-Extract expense data from receipt images in ~/Cowork-Workspace/input/receipts/
-
-Create an Excel file with columns:
-- Date (YYYY-MM-DD format)
-- Vendor/Store
-- Amount (number only, no currency symbol)
-- Currency (3-letter code: USD, EUR, etc.)
-- Category
-- Payment Method (if visible: Cash, Credit, Debit)
-- Receipt Filename (for reference)
-
-Save to: ~/Cowork-Workspace/output/expenses.xlsx
-```
-
-### Step 4: Review Initial Results
-
-Open the Excel file and check:
-- Are dates correct?
-- Are amounts accurate?
-- Are vendors recognized correctly?
-- Any missing or garbled data?
-
-### Step 5: Request Corrections
-
-If there are issues:
+Commencez par une extraction simple:
 
 ```
-Review the expense file you created.
+Extrais les données de dépenses des images de tickets dans ~/Cowork-Workspace/input/receipts/
 
-Corrections needed:
-- Row 3: Amount should be 45.99, not 4599
-- Row 7: Date should be 2024-01-15
-- Row 12: Vendor is "Starbucks" not "Slarbucks"
+Crée un fichier Excel avec les colonnes:
+- Date (format AAAA-MM-JJ)
+- Fournisseur/Magasin
+- Montant (nombre uniquement, sans symbole monétaire)
+- Devise (code à 3 lettres: USD, EUR, etc.)
+- Catégorie
+- Moyen de paiement (si visible: Espèces, Crédit, Débit)
+- Nom du fichier du ticket (pour référence)
 
-Make these corrections and save.
+Sauvegarde dans: ~/Cowork-Workspace/output/expenses.xlsx
 ```
 
-### Step 6: Add Summaries
+### Étape 4: Vérifier les premiers résultats
 
-Enhance the spreadsheet with analysis:
+Ouvrez le fichier Excel et contrôlez:
+- Les dates sont-elles correctes ?
+- Les montants sont-ils exacts ?
+- Les fournisseurs sont-ils bien reconnus ?
+- Y a-t-il des données manquantes ou illisibles ?
 
-```
-Enhance ~/Cowork-Workspace/output/expenses.xlsx with:
+### Étape 5: Demander des corrections
 
-Sheet 2 - "Category Summary":
-- Category
-- Total Amount
-- Number of Transactions
-- Percentage of Total
-
-Sheet 3 - "Monthly Summary":
-- Month
-- Total Amount
-- Transaction Count
-- Top Category
-
-Sheet 4 - "Vendor Summary":
-- Vendor
-- Total Spent
-- Number of Visits
-- Average Transaction
-
-Add formulas so summaries update automatically.
-Use [European/US] formula syntax.
-```
-
-### Step 7: Final Review
+S'il y a des problèmes:
 
 ```
-Create a final summary of the expense data:
-- Total expenses
-- Date range covered
-- Number of receipts processed
-- Any receipts that couldn't be fully extracted
+Relis le fichier de dépenses que tu as créé.
 
-Save summary to ~/Cowork-Workspace/output/expense-summary.txt
+Corrections à faire:
+- Ligne 3: le montant doit être 45.99, pas 4599
+- Ligne 7: la date doit être 2024-01-15
+- Ligne 12: le fournisseur est "Starbucks" et non "Slarbucks"
+
+Applique ces corrections et sauvegarde.
+```
+
+### Étape 6: Ajouter des synthèses
+
+Enrichissez le tableur avec une analyse:
+
+```
+Enrichis ~/Cowork-Workspace/output/expenses.xlsx avec:
+
+Feuille 2 - "Synthèse par catégorie":
+- Catégorie
+- Montant total
+- Nombre de transactions
+- Pourcentage du total
+
+Feuille 3 - "Synthèse mensuelle":
+- Mois
+- Montant total
+- Nombre de transactions
+- Catégorie principale
+
+Feuille 4 - "Synthèse par fournisseur":
+- Fournisseur
+- Total dépensé
+- Nombre de visites
+- Transaction moyenne
+
+Ajoute des formules pour que les synthèses se mettent à jour automatiquement.
+Utilise la syntaxe de formules [européenne/américaine].
+```
+
+### Étape 7: Revue finale
+
+```
+Crée une synthèse finale des données de dépenses:
+- Total des dépenses
+- Période couverte
+- Nombre de tickets traités
+- Tickets dont l'extraction n'a pas pu être complète
+
+Sauvegarde la synthèse dans ~/Cowork-Workspace/output/expense-summary.txt
 ```
 
 ---
 
-## Example Prompts
+## Exemples de prompts
 
-### Basic Extraction
+### Extraction simple
 ```
-Extract expenses from receipts in ~/Cowork-Workspace/input/receipts/
-Columns: Date, Vendor, Amount, Category
-Save to ~/Cowork-Workspace/output/expenses.xlsx
-```
-
-### With Auto-Categorization
-```
-Extract expenses and auto-categorize:
-- Food & Dining: restaurants, cafes, grocery
-- Transportation: uber, lyft, gas, parking
-- Office: supplies, software, subscriptions
-- Travel: hotels, flights, rental cars
-- Other: everything else
-
-Save with categories to ~/Cowork-Workspace/output/categorized-expenses.xlsx
+Extrais les dépenses des tickets dans ~/Cowork-Workspace/input/receipts/
+Colonnes: Date, Fournisseur, Montant, Catégorie
+Sauvegarde dans ~/Cowork-Workspace/output/expenses.xlsx
 ```
 
-### With Tax Separation
+### Avec catégorisation automatique
 ```
-Extract expenses with tax breakdown:
-Columns: Date, Vendor, Subtotal, Tax, Total, Category
+Extrais les dépenses et catégorise-les automatiquement:
+- Restauration: restaurants, cafés, courses alimentaires
+- Transport: uber, lyft, carburant, parking
+- Bureau: fournitures, logiciels, abonnements
+- Voyages: hôtels, vols, locations de voiture
+- Autre: tout le reste
 
-For receipts that show tax separately, extract it.
-For receipts without tax breakdown, put total in Total column, leave Tax blank.
-
-Add a summary showing total tax paid.
+Sauvegarde avec les catégories dans ~/Cowork-Workspace/output/categorized-expenses.xlsx
 ```
 
-### Reimbursement Report
+### Avec séparation de la taxe
 ```
-Create a reimbursement report from expenses in ~/Cowork-Workspace/output/expenses.xlsx
+Extrais les dépenses avec le détail de la taxe:
+Colonnes: Date, Fournisseur, Sous-total, Taxe, Total, Catégorie
 
-Format as Word document with:
-- Employee Name: [Your Name]
-- Report Period: [Auto-detect from dates]
-- Itemized expenses table
-- Category subtotals
-- Grand total
-- Certification statement line for signature
+Pour les tickets qui indiquent la taxe séparément, extrais-la.
+Pour les tickets sans détail de taxe, mets le total dans la colonne Total et laisse Taxe vide.
 
-Save to ~/Cowork-Workspace/output/reimbursement-report.docx
+Ajoute une synthèse indiquant le total de taxe payée.
+```
+
+### Rapport de remboursement
+```
+Crée un rapport de remboursement à partir des dépenses de ~/Cowork-Workspace/output/expenses.xlsx
+
+Format document Word avec:
+- Nom de l'employé: [Votre nom]
+- Période du rapport: [Détection automatique à partir des dates]
+- Tableau détaillé des dépenses
+- Sous-totaux par catégorie
+- Total général
+- Ligne d'attestation à signer
+
+Sauvegarde dans ~/Cowork-Workspace/output/reimbursement-report.docx
 ```
 
 ---
 
 ## Troubleshooting
 
-### OCR Can't Read Receipt
+### L'OCR ne parvient pas à lire un ticket
 
-**Cause**: Poor image quality, unusual font, or receipt damage
+**Cause**: Mauvaise qualité d'image, police inhabituelle ou ticket abîmé
 
 **Solutions**:
-- Retake photo with better lighting
-- Try scanning instead of photographing
-- Manually enter data for problematic receipts
+- Reprendre la photo avec un meilleur éclairage
+- Essayer de scanner au lieu de photographier
+- Saisir manuellement les données des tickets problématiques
 
 ```
-For receipts you couldn't read, add placeholder rows:
-- Date: MANUAL ENTRY NEEDED
-- Filename: [receipt filename]
-I'll fill in the details manually.
+Pour les tickets que tu n'as pas pu lire, ajoute des lignes de remplacement:
+- Date: SAISIE MANUELLE NÉCESSAIRE
+- Nom du fichier: [nom du fichier du ticket]
+Je compléterai les détails à la main.
 ```
 
-### Wrong Amounts Extracted
+### Montants extraits incorrects
 
-**Common issues**:
-- Decimal point confusion (1500 vs 15.00)
-- Currency symbol included in number
-- Total vs subtotal confusion
-
-```
-Review all amounts in the expense file.
-Ensure:
-- Amounts are numbers only (no $ or € symbols)
-- Decimal places are correct (15.99 not 1599)
-- Use the TOTAL amount, not subtotal
-
-Show me any rows where you're uncertain about the amount.
-```
-
-### Categories Are Wrong
+**Problèmes fréquents**:
+- Confusion de la virgule décimale (1500 au lieu de 15.00)
+- Symbole monétaire inclus dans le nombre
+- Confusion entre total et sous-total
 
 ```
-Recategorize expenses using these rules:
-- "Amazon" → Check item: Office if supplies, Personal if other
-- "Uber"/"Lyft" → Transportation (not Travel)
-- Coffee shops → Food & Dining (not Office)
+Relis tous les montants du fichier de dépenses.
+Vérifie que:
+- Les montants sont des nombres uniquement (pas de symbole $ ou €)
+- Les décimales sont correctes (15.99 et non 1599)
+- Tu utilises le montant TOTAL, pas le sous-total
 
-Update the spreadsheet with correct categories.
+Montre-moi les lignes pour lesquelles tu as un doute sur le montant.
 ```
 
-### Duplicate Entries
+### Catégories erronées
 
 ```
-Check for duplicate expenses (same date, vendor, amount).
-Mark potential duplicates but don't delete.
-Add "Possible Duplicate" flag column.
+Recatégorise les dépenses avec ces règles:
+- "Amazon" → Vérifier l'article: Bureau si fournitures, Personnel sinon
+- "Uber"/"Lyft" → Transport (pas Voyages)
+- Cafés → Restauration (pas Bureau)
+
+Mets à jour le tableur avec les bonnes catégories.
+```
+
+### Doublons
+
+```
+Cherche les dépenses en double (même date, même fournisseur, même montant).
+Marque les doublons potentiels mais ne supprime rien.
+Ajoute une colonne indicateur "Doublon possible".
 ```
 
 ---
 
-## Regional Settings
+## Paramètres régionaux
 
-### US/Canada
+### États-Unis / Canada
 ```
-Use US format:
-- Dates: MM/DD/YYYY
-- Currency: USD/CAD
-- Formula separators: comma (,)
+Utilise le format américain:
+- Dates: MM/JJ/AAAA
+- Devise: USD/CAD
+- Séparateurs de formules: virgule (,)
 ```
 
 ### Europe
 ```
-Use European format:
-- Dates: DD/MM/YYYY
-- Currency: EUR
-- Formula separators: semicolon (;)
+Utilise le format européen:
+- Dates: JJ/MM/AAAA
+- Devise: EUR
+- Séparateurs de formules: point-virgule (;)
 ```
 
-### Mixed Currencies
+### Devises multiples
 ```
-Handle multiple currencies:
-- Keep original currency column
-- Add "Amount USD" column with conversion
-- Use exchange rate as of receipt date
-- Note conversion rate in summary
-```
-
----
-
-## Variations
-
-### Credit Card Statement Reconciliation
-```
-Compare extracted receipts to credit card statement in ~/Cowork-Workspace/input/statement.pdf
-
-Create reconciliation report showing:
-- Matched transactions
-- Statement entries without receipts
-- Receipts without statement entries
-- Amount discrepancies
-```
-
-### Monthly Expense Report
-```
-From expenses in ~/Cowork-Workspace/output/expenses.xlsx, create monthly report:
-
-Include:
-- Spending by category (pie chart data)
-- Comparison to previous month
-- Highest expense categories
-- Unusual transactions
-- Budget tracking (if budget provided)
-
-Save to ~/Cowork-Workspace/output/monthly-report.docx
-```
-
-### Team Expense Consolidation
-```
-Consolidate expense files from ~/Cowork-Workspace/input/team-expenses/
-(Multiple expense files from different team members)
-
-Create master spreadsheet with:
-- All expenses from all files
-- "Submitted By" column
-- Team totals
-- Per-person totals
-
-Save to ~/Cowork-Workspace/output/team-expenses.xlsx
+Gère plusieurs devises:
+- Conserve la colonne de la devise d'origine
+- Ajoute une colonne "Montant USD" avec la conversion
+- Utilise le taux de change à la date du ticket
+- Indique le taux de conversion dans la synthèse
 ```
 
 ---
 
-## Best Practices
+## Variantes
 
-1. **Name receipt files well** : `YYYY-MM-DD-vendor.jpg` helps Cowork
-2. **Process in batches** : Don't do 200 receipts at once; do 20-30
-3. **Verify ALL totals** : OCR line-item accuracy is ~63%; always manually verify sums
-4. **Keep originals** : Don't delete receipt images until verified
-5. **Note uncertainties** : Ask Cowork to flag uncertain extractions
-6. **Budget for validation** : Plan 30-50% of "saved" time for error correction
-7. **Use Max for large batches** : Pro quota (~1.5h intensive) may not cover 50+ receipts
+### Rapprochement avec un relevé de carte bancaire
+```
+Compare les tickets extraits avec le relevé de carte bancaire dans ~/Cowork-Workspace/input/statement.pdf
+
+Crée un rapport de rapprochement avec:
+- Les transactions rapprochées
+- Les lignes du relevé sans ticket
+- Les tickets sans ligne au relevé
+- Les écarts de montant
+```
+
+### Rapport de dépenses mensuel
+```
+À partir des dépenses de ~/Cowork-Workspace/output/expenses.xlsx, crée un rapport mensuel:
+
+Inclus:
+- Dépenses par catégorie (données pour un graphique en camembert)
+- Comparaison avec le mois précédent
+- Catégories de dépenses les plus élevées
+- Transactions inhabituelles
+- Suivi du budget (si un budget est fourni)
+
+Sauvegarde dans ~/Cowork-Workspace/output/monthly-report.docx
+```
+
+### Consolidation des dépenses d'équipe
+```
+Consolide les fichiers de dépenses de ~/Cowork-Workspace/input/team-expenses/
+(Plusieurs fichiers de dépenses de différents membres de l'équipe)
+
+Crée un tableur principal avec:
+- Toutes les dépenses de tous les fichiers
+- Une colonne "Soumis par"
+- Les totaux de l'équipe
+- Les totaux par personne
+
+Sauvegarde dans ~/Cowork-Workspace/output/team-expenses.xlsx
+```
 
 ---
 
-*[Back to Workflows](README.md) | [Cowork Documentation](../README.md)*
+## Bonnes pratiques
+
+1. **Nommer correctement les tickets** : `AAAA-MM-JJ-fournisseur.jpg` aide Cowork
+2. **Traiter par lots** : Ne faites pas 200 tickets d'un coup; travaillez par 20 à 30
+3. **Vérifier TOUS les totaux** : La précision de l'OCR ligne par ligne est d'environ 63 %; vérifiez toujours les sommes à la main
+4. **Garder les originaux** : Ne supprimez pas les images des tickets avant vérification
+5. **Noter les incertitudes** : Demandez à Cowork de signaler les extractions incertaines
+6. **Prévoir la validation** : Comptez 30 à 50 % du temps « gagné » pour la correction des erreurs
+7. **Utiliser Max pour les gros lots** : Le quota Pro (environ 1,5 h d'usage intensif) peut ne pas suffire pour plus de 50 tickets
+
+---
+
+*[Retour aux Workflows](README.md) | [Documentation Cowork](../README.md)*

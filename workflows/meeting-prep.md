@@ -1,367 +1,367 @@
-# Workflow: Meeting Preparation
+# Workflow: Préparation de Réunion
 
-🌐 **Langues**: [Français](meeting-prep.md) | [English](meeting-prep.en.md)
+> **Temps estimé**: 20 minutes
+> **Difficulté**: Intermédiaire
+> **Catégorie**: 🗂️ Organisation
+> **Professions**: Dirigeants, Indépendants
 
-> **Estimated time**: 20 minutes
-> **Difficulty**: Intermediate
-> **Category**: 🗂️ Organization
-> **Professions**: Business leaders, Freelancers
-
----
-
-## Use Case
-
-You have an upcoming meeting and need to:
-
-- Research the company/people you're meeting
-- Compile relevant background materials
-- Create a briefing document
-- Prepare talking points and questions
+🌐 **Also available in [English](meeting-prep.en.md)**
 
 ---
 
-## Prerequisites
+## Cas d'usage
 
-- [ ] Cowork enabled with Chrome access (for web research)
-- [ ] Any existing documents about the meeting/company
-- [ ] Clear understanding of meeting purpose
+Vous avez une réunion à venir et vous devez:
+
+- Rechercher l'entreprise et les personnes que vous allez rencontrer
+- Rassembler les documents de contexte utiles
+- Créer un document de synthèse (briefing)
+- Préparer des points de discussion et des questions
 
 ---
 
-## Step-by-Step Instructions
+## Prérequis
 
-### Step 1: Set Up Workspace
+- [ ] Cowork activé avec accès à Chrome (pour la recherche web)
+- [ ] Tout document existant sur la réunion ou l'entreprise
+- [ ] Une compréhension claire de l'objectif de la réunion
+
+---
+
+## Instructions étape par étape
+
+### Étape 1: Préparer le Workspace
 
 ```bash
-# Create workspace for meeting prep
+# Créer le workspace pour la préparation de réunion
 mkdir -p ~/Cowork-Workspace/input/meeting-[name]
 mkdir -p ~/Cowork-Workspace/output
 
-# Copy any existing materials
+# Copier les documents existants
 cp ~/Documents/relevant-files/* ~/Cowork-Workspace/input/meeting-[name]/
 ```
 
-### Step 2: Define Meeting Context
+### Étape 2: Définir le contexte de la réunion
 
-Tell Cowork about the meeting:
-
-```
-I have a meeting with [Company/Person] on [Date] at [Time].
-
-Meeting purpose: [describe]
-My role: [your position/company]
-Their role: [who you're meeting]
-What I want to achieve: [your goals]
-
-This context is for the briefing document you'll create.
-```
-
-### Step 3: Research Phase
-
-**Company Research:**
-```
-Research [Company Name] and create a company brief.
-
-Include:
-1. Company Overview
-   - What they do
-   - Size (employees, revenue if public)
-   - Founded, headquarters
-   - Key products/services
-
-2. Recent News
-   - Last 3-6 months
-   - Relevant announcements
-   - Press mentions
-
-3. Leadership
-   - CEO and key executives
-   - Board members (if relevant)
-
-4. Market Position
-   - Main competitors
-   - Market standing
-   - Recent changes
-
-Save to: ~/Cowork-Workspace/output/company-research.md
-```
-
-**Person Research:**
-```
-Research [Person Name] at [Company].
-
-Find:
-- Current title and responsibilities
-- Career background
-- Education (if available)
-- Public speaking/publications
-- LinkedIn summary points
-- Common topics they discuss
-- Any shared connections or interests
-
-Save to: ~/Cowork-Workspace/output/person-profile.md
-```
-
-### Step 4: Create Briefing Document
+Présentez la réunion à Cowork:
 
 ```
-Create a meeting briefing document using:
-- Research you just compiled
-- Materials in ~/Cowork-Workspace/input/meeting-[name]/
+J'ai une réunion avec [Entreprise/Personne] le [Date] à [Heure].
+
+Objet de la réunion: [décrire]
+Mon rôle: [votre poste/entreprise]
+Leur rôle: [qui vous rencontrez]
+Ce que je veux obtenir: [vos objectifs]
+
+Ce contexte servira au document de briefing que tu vas créer.
+```
+
+### Étape 3: Phase de recherche
+
+**Recherche sur l'entreprise:**
+```
+Recherche [Nom de l'entreprise] et crée une fiche entreprise.
+
+Inclus:
+1. Présentation de l'entreprise
+   - Ce qu'elle fait
+   - Taille (effectifs, chiffre d'affaires si cotée)
+   - Année de création, siège
+   - Principaux produits/services
+
+2. Actualités récentes
+   - Les 3 à 6 derniers mois
+   - Annonces pertinentes
+   - Mentions dans la presse
+
+3. Direction
+   - PDG et principaux dirigeants
+   - Membres du conseil d'administration (si pertinent)
+
+4. Position sur le marché
+   - Principaux concurrents
+   - Place sur le marché
+   - Changements récents
+
+Sauvegarde dans: ~/Cowork-Workspace/output/company-research.md
+```
+
+**Recherche sur une personne:**
+```
+Recherche [Nom de la personne] chez [Entreprise].
+
+Trouve:
+- Poste actuel et responsabilités
+- Parcours professionnel
+- Formation (si disponible)
+- Interventions publiques/publications
+- Points clés du profil LinkedIn
+- Sujets abordés habituellement
+- Relations ou centres d'intérêt en commun
+
+Sauvegarde dans: ~/Cowork-Workspace/output/person-profile.md
+```
+
+### Étape 4: Créer le document de briefing
+
+```
+Crée un document de briefing de réunion à partir de:
+- La recherche que tu viens de compiler
+- Les documents dans ~/Cowork-Workspace/input/meeting-[name]/
 
 Structure:
-1. Meeting Overview
-   - Date, time, location/platform
-   - Attendees
-   - Purpose
+1. Vue d'ensemble de la réunion
+   - Date, heure, lieu/plateforme
+   - Participants
+   - Objet
 
-2. Company Background
-   - Key facts (from research)
-   - Relevant recent developments
+2. Contexte de l'entreprise
+   - Faits clés (issus de la recherche)
+   - Évolutions récentes pertinentes
 
-3. People Profiles
-   - Brief on each person I'm meeting
+3. Profils des personnes
+   - Courte présentation de chaque personne rencontrée
 
-4. Our History (if materials provided)
-   - Previous interactions
-   - Past discussions
+4. Notre historique (si des documents sont fournis)
+   - Échanges précédents
+   - Discussions passées
 
-5. Talking Points
-   - 5-7 topics to cover
-   - Key messages to convey
+5. Points de discussion
+   - 5 à 7 sujets à aborder
+   - Messages clés à faire passer
 
-6. Questions to Ask
-   - 5-7 strategic questions
-   - Discovery questions
-   - Clarifying questions
+6. Questions à poser
+   - 5 à 7 questions stratégiques
+   - Questions de découverte
+   - Questions de clarification
 
-7. Potential Objections
-   - Likely concerns they might raise
-   - Suggested responses
+7. Objections possibles
+   - Préoccupations probables de leur part
+   - Réponses suggérées
 
-8. Meeting Goals
-   - What success looks like
-   - Minimum acceptable outcomes
+8. Objectifs de la réunion
+   - À quoi ressemble la réussite
+   - Résultats minimums acceptables
 
-Format: Word document
-Save to: ~/Cowork-Workspace/output/meeting-brief.docx
+Format: document Word
+Sauvegarde dans: ~/Cowork-Workspace/output/meeting-brief.docx
 ```
 
-### Step 5: Create Quick Reference Card
+### Étape 5: Créer une fiche de référence rapide
 
 ```
-From the briefing document, create a 1-page quick reference card.
+À partir du document de briefing, crée une fiche de référence rapide d'une page.
 
-Include only:
-- Key facts about company/person
-- Main talking points (bullets)
-- Critical questions
-- Names to remember
+Inclus uniquement:
+- Faits clés sur l'entreprise/la personne
+- Principaux points de discussion (puces)
+- Questions essentielles
+- Noms à retenir
 
-Format: Can print and bring to meeting
-Save to: ~/Cowork-Workspace/output/quick-reference.docx
+Format: imprimable pour l'emporter en réunion
+Sauvegarde dans: ~/Cowork-Workspace/output/quick-reference.docx
 ```
 
 ---
 
-## Meeting Type Variations
+## Variantes selon le type de réunion
 
-### Sales/Client Meeting
+### Réunion commerciale / client
 ```
-Create a client meeting brief for [Company].
+Crée un briefing de réunion client pour [Entreprise].
 
-Focus on:
-1. Their Business
-   - Industry, challenges, goals
-   - Decision-making process
-   - Budget cycle/timing
+Concentre-toi sur:
+1. Leur activité
+   - Secteur, difficultés, objectifs
+   - Processus de décision
+   - Cycle budgétaire/calendrier
 
-2. Our Fit
-   - How our solution helps them
-   - Relevant case studies
-   - Competitive positioning
+2. Notre adéquation
+   - Comment notre solution les aide
+   - Études de cas pertinentes
+   - Positionnement face à la concurrence
 
-3. Sales Strategy
-   - Entry points
-   - Value propositions
-   - Objection handling
+3. Stratégie commerciale
+   - Points d'entrée
+   - Propositions de valeur
+   - Réponses aux objections
 
-4. Next Steps
-   - Ideal meeting outcome
-   - Follow-up actions
+4. Prochaines étapes
+   - Issue idéale de la réunion
+   - Actions de suivi
 
-Save to: ~/Cowork-Workspace/output/client-brief.docx
-```
-
-### Job Interview
-```
-Create interview preparation document for [Company] [Role].
-
-Include:
-1. Company Research
-   - Culture and values
-   - Recent news
-   - Team structure (if known)
-
-2. Role Analysis
-   - Key responsibilities
-   - Required skills
-   - Success metrics (likely)
-
-3. My Fit
-   - Relevant experience points
-   - Stories to tell (STAR format)
-   - Skills to highlight
-
-4. Questions to Ask
-   - About the role
-   - About the team
-   - About growth
-
-5. Logistics
-   - Interview format
-   - Interviewer background
-
-Save to: ~/Cowork-Workspace/output/interview-prep.docx
+Sauvegarde dans: ~/Cowork-Workspace/output/client-brief.docx
 ```
 
-### Partnership/Vendor Meeting
+### Entretien d'embauche
 ```
-Create vendor evaluation brief for meeting with [Company].
+Crée un document de préparation d'entretien pour [Entreprise] [Poste].
 
-Include:
-1. Vendor Overview
-   - Company background
-   - Relevant products/services
-   - Market reputation
+Inclus:
+1. Recherche sur l'entreprise
+   - Culture et valeurs
+   - Actualités récentes
+   - Organisation de l'équipe (si connue)
 
-2. Evaluation Criteria
-   - Must-have requirements
-   - Nice-to-have features
-   - Deal-breakers
+2. Analyse du poste
+   - Responsabilités principales
+   - Compétences requises
+   - Indicateurs de réussite (probables)
 
-3. Questions Matrix
-   - Technical questions
-   - Pricing questions
-   - Support questions
-   - Contract questions
+3. Mon adéquation
+   - Points d'expérience pertinents
+   - Histoires à raconter (format STAR)
+   - Compétences à mettre en avant
 
-4. Comparison Notes
-   - How they compare to alternatives
-   - Key differentiators
+4. Questions à poser
+   - Sur le poste
+   - Sur l'équipe
+   - Sur l'évolution
 
-Save to: ~/Cowork-Workspace/output/vendor-brief.docx
+5. Logistique
+   - Format de l'entretien
+   - Parcours des interlocuteurs
+
+Sauvegarde dans: ~/Cowork-Workspace/output/interview-prep.docx
 ```
 
-### Board/Executive Meeting
+### Réunion partenaire / fournisseur
 ```
-Create executive meeting brief for [meeting name].
+Crée un briefing d'évaluation fournisseur pour la réunion avec [Entreprise].
 
-Include:
-1. Meeting Context
-   - Agenda items
-   - Key decisions needed
-   - Attendees and their interests
+Inclus:
+1. Présentation du fournisseur
+   - Historique de l'entreprise
+   - Produits/services pertinents
+   - Réputation sur le marché
 
-2. Background Materials Summary
-   - Key points from supporting docs
+2. Critères d'évaluation
+   - Exigences indispensables
+   - Fonctionnalités souhaitables
+   - Motifs de rejet
 
-3. Recommendations
-   - What I'm proposing
-   - Supporting rationale
-   - Anticipated questions
+3. Matrice de questions
+   - Questions techniques
+   - Questions sur les prix
+   - Questions sur le support
+   - Questions sur le contrat
 
-4. Stakeholder Map
-   - Who supports what
-   - Potential concerns by person
-   - Influence dynamics
+4. Notes de comparaison
+   - Comparaison avec les alternatives
+   - Principaux éléments de différenciation
 
-5. Presentation Notes
-   - Key messages
-   - Data points to cite
-   - Backup slides needed
+Sauvegarde dans: ~/Cowork-Workspace/output/vendor-brief.docx
+```
 
-Save to: ~/Cowork-Workspace/output/executive-brief.docx
+### Réunion de conseil d'administration / direction
+```
+Crée un briefing pour la réunion de direction [nom de la réunion].
+
+Inclus:
+1. Contexte de la réunion
+   - Points à l'ordre du jour
+   - Décisions clés à prendre
+   - Participants et leurs intérêts
+
+2. Synthèse des documents de référence
+   - Points clés des documents associés
+
+3. Recommandations
+   - Ce que je propose
+   - Justification
+   - Questions attendues
+
+4. Cartographie des parties prenantes
+   - Qui soutient quoi
+   - Réserves possibles par personne
+   - Rapports d'influence
+
+5. Notes de présentation
+   - Messages clés
+   - Chiffres à citer
+   - Diapositives complémentaires nécessaires
+
+Sauvegarde dans: ~/Cowork-Workspace/output/executive-brief.docx
 ```
 
 ---
 
 ## Troubleshooting
 
-### Can't find much about the company
+### Peu d'informations sur l'entreprise
 
 ```
-Limited information available for [Company].
+Les informations disponibles sur [Entreprise] sont limitées.
 
-For smaller/private companies, focus on:
-- What their website says
-- LinkedIn company page
-- Any news mentions
-- Industry context
+Pour les petites entreprises ou les entreprises privées, concentre-toi sur:
+- Ce que dit leur site web
+- La page entreprise LinkedIn
+- Toute mention dans l'actualité
+- Le contexte du secteur
 
-Note gaps in the briefing so I know what to research during the meeting.
+Signale les lacunes dans le briefing pour que je sache quoi chercher pendant la réunion.
 ```
 
-### Research seems outdated
+### Recherche qui semble dépassée
 
 ```
-Verify this information is current (as of [today's date]).
+Vérifie que ces informations sont à jour (au [date du jour]).
 
-For any items more than 6 months old:
-- Note the date of the information
-- Flag if it might have changed
-- Suggest verification questions
+Pour tout élément de plus de 6 mois:
+- Indique la date de l'information
+- Signale si elle a pu changer
+- Suggère des questions de vérification
 ```
 
-### Person has common name
+### Personne avec un nom courant
 
 ```
-Research [Name] specifically at [Company] in [City/Role].
+Recherche [Nom] spécifiquement chez [Entreprise] à [Ville/Poste].
 
-Distinguish from others with same name.
-Use LinkedIn profile at: [URL if known]
-```
-
----
-
-## Time-Saving Templates
-
-### Quick 15-Minute Prep
-```
-I have 15 minutes to prepare for a meeting with [Company/Person].
-
-Create a quick brief with:
-- 5 key facts about them
-- 3 talking points
-- 3 questions to ask
-- 1 paragraph company summary
-
-Save to: ~/Cowork-Workspace/output/quick-brief.md
-```
-
-### Recurring Meeting Update
-```
-Update the meeting brief at ~/Cowork-Workspace/input/previous-brief.docx
-
-Research any new developments since [last meeting date].
-Add to the existing document:
-- New news section
-- Updated talking points
-- New questions based on developments
-
-Save to: ~/Cowork-Workspace/output/updated-brief.docx
+Distingue cette personne des homonymes.
+Utilise le profil LinkedIn: [URL si connue]
 ```
 
 ---
 
-## Best Practices
+## Modèles pour gagner du temps
 
-1. **Start research early** : Web research takes time
-2. **Focus on relevance** : Not everything about a company matters
-3. **Prepare questions** : Shows engagement and drives conversation
-4. **Know your goals** : Clear objectives guide the brief
-5. **Update and reuse** : Briefs for recurring meetings can be updated
+### Préparation express de 15 minutes
+```
+J'ai 15 minutes pour préparer une réunion avec [Entreprise/Personne].
+
+Crée un briefing rapide avec:
+- 5 faits clés les concernant
+- 3 points de discussion
+- 3 questions à poser
+- 1 paragraphe de présentation de l'entreprise
+
+Sauvegarde dans: ~/Cowork-Workspace/output/quick-brief.md
+```
+
+### Mise à jour pour une réunion récurrente
+```
+Mets à jour le briefing de réunion dans ~/Cowork-Workspace/input/previous-brief.docx
+
+Recherche les nouveautés depuis [date de la dernière réunion].
+Ajoute au document existant:
+- Une nouvelle section d'actualités
+- Des points de discussion mis à jour
+- De nouvelles questions fondées sur ces évolutions
+
+Sauvegarde dans: ~/Cowork-Workspace/output/updated-brief.docx
+```
 
 ---
 
-*[Back to Workflows](README.md) | [Cowork Documentation](../README.md)*
+## Bonnes pratiques
+
+1. **Commencer tôt la recherche** : La recherche web prend du temps
+2. **Rester pertinent** : Tout ce qui concerne une entreprise n'est pas utile
+3. **Préparer des questions** : Cela montre votre engagement et fait avancer la conversation
+4. **Connaître vos objectifs** : Des objectifs clairs guident le briefing
+5. **Mettre à jour et réutiliser** : Les briefings de réunions récurrentes peuvent être actualisés
+
+---
+
+*[Retour aux Workflows](README.md) | [Documentation Cowork](../README.md)*
