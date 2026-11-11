@@ -6,7 +6,7 @@
 
 - Title: Claude Cowork Guide
 - Author: Florian Bruniaux
-- Version: 1.14.0
+- Version: 1.15.0
 - Last Updated: October 11, 2026
 - License: CC BY-SA 4.0 (free, open source)
 - Workflows: 29 step-by-step guides

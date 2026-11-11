@@ -2,13 +2,31 @@
 # Source: CHANGELOG.md + Anthropic product announcements
 # Purpose: Track Cowork documentation + product releases
 
-latest: "1.14.0"
-updated: "2026-10-11"
+latest: "1.15.0"
+updated: "2026-11-11"
 
 # ════════════════════════════════════════════════════════════════
 # RELEASES (newest first, condensed highlights only)
 # ════════════════════════════════════════════════════════════════
 releases:
+
+  # ─────────────────────────────────────────────────────────────
+  # 1.15.x Series (November 2026)
+  # ─────────────────────────────────────────────────────────────
+
+  - version: "1.15.0"
+    date: "2026-11-11"
+    highlights:
+      - "⭐ Claude Fable 5.2 et Claude Mythos 5.2 (9 novembre 2026) : nouveaux modèles phares, Fable inclus jusqu'à 50 % des limites hebdomadaires sur Pro et Team standard, Mythos réservé à des organisations vérifiées"
+      - "⭐ Sécurité et administration Enterprise (5 novembre 2026) : security center (bêta), inference hooks en disponibilité générale, console parent admin.claude.com (bêta), EDR dans la VM Cowork (bêta), blocage des comptes personnels dans Claude Desktop"
+      - "Max 20x devient Ultra (30 octobre 2026) : 200 $ par mois, 10x l'usage Pro par semaine, 200 $ de crédits API. Max passe à 100 $"
+      - "Enterprise : Smart reports, sondages in-app et budgets mutualisés par groupe en disponibilité générale (28 octobre), suivi des dépenses par code projet en bêta (6 novembre)"
+      - "⭐ Desktop : Settings > Storage et /storage, « Open in new window » pour les chats, « Hand off to Claude Code » depuis le menu design, partage d'un Claude Doc vers Canva"
+      - "Tâches planifiées : web fetch limité aux URL nommées ou trouvées hors Auto et Skip all approvals, notification quand une exécution ne démarre pas"
+      - "Prérequis Windows relevé : Windows 10 version 2004 (build 19041) minimum"
+    breaking:
+      - "Unified Claude par défaut le 10 novembre 2026 pour les déploiements administrés : desktopHome non renseigné vaut standard, tâches Cowork supprimées selon coworkSessionRetentionDays, coworkTabEnabled et chatTabEnabled dépréciées avant le 17 décembre"
+      - "Reset App Data efface aussi les tâches Cowork sur les serveurs d'Anthropic (3 novembre 2026)"
 
   # ─────────────────────────────────────────────────────────────
   # 1.14.x Series (October 2026)

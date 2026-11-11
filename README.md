@@ -39,7 +39,7 @@
   <img src="https://img.shields.io/badge/Availability-varies%20by%20surface-blue" alt="Availability varies by surface"/>
   <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Windows%20%7C%20Linux%20beta-blue" alt="Platform: macOS, Windows, Linux beta"/>
   <img src="https://img.shields.io/badge/Subscription-paid%20Claude%20plans-purple" alt="Paid Claude plans"/>
-  <img src="https://img.shields.io/badge/Version-1.14.0-orange" alt="Version"/>
+  <img src="https://img.shields.io/badge/Version-1.15.0-orange" alt="Version"/>
 </p>
 
 > Complete guide to Cowork, Claude's task workspace for knowledge workers and small businesses. Since September 16, 2026, Cowork is built into every Claude conversation ("Claude Cowork is now just Claude").
@@ -317,4 +317,4 @@ Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ---
 
-*Version 1.14.0 | octobre 2026 | Part of [Claude Code Ultimate Guide](../README.md) | Crafted with Claude*
+*Version 1.15.0 | novembre 2026 | Part of [Claude Code Ultimate Guide](../README.md) | Crafted with Claude*
