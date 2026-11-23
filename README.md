@@ -8,6 +8,7 @@
     <td>
       <strong><a href="https://www.florian.bruniaux.com/about/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=claude-cowork-guide">Florian BRUNIAUX</a></strong> &middot; AI Founding Engineer @ <a href="https://methode-aristote.fr/">Méthode Aristote</a><br />
       13 years from developer to CTO / VP Eng &middot; <a href="https://www.florian.bruniaux.com/blog/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=claude-cowork-guide">Blog &#8599;</a> &middot; <a href="https://www.florian.bruniaux.com/projects/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=claude-cowork-guide">Projects &#8599;</a>
+      <br /><strong><a href="https://clauders.com/leaders/florian-bruniaux/">Official Claude Community Ambassador &middot; Paris &#8599;</a></strong>
     </td>
   </tr>
 </table>
