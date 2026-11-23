@@ -1,6 +1,6 @@
 # Guide Claude Cowork
 
-Par **Florian Bruniaux**, [**Official Claude Community Ambassador · Paris**](https://clauders.com/leaders/florian-bruniaux/).
+Par **Florian Bruniaux**, [**Official Claude Community Ambassador · Paris (bénévole)**](https://clauders.com/leaders/florian-bruniaux/).
 
 🌐 **Langues** : [Français](README.fr.md) | [English](README.md)
 

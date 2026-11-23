@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Synchronize the author introduction with the current Fractional CAIO profile and clarify that the Claude Community Ambassador role is voluntary.
+
 ### Added
 
 - Official Claude Community Ambassador in Paris: linked Florian Bruniaux’s Clauders profile from the author introduction.
