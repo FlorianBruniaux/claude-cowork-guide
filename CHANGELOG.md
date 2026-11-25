@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Official Claude Community Ambassador in Paris: linked Florian Bruniaux’s Clauders profile from the author introduction.
+- **PDF build target** (`scripts/build-pdf.py`, `pdf/cowork-guide.qmd`): renders the English guide, prompt library and quick reference as one PDF with the Quarto + Typst whitepaper template copied from the Claude Code Ultimate Guide repository. Output is not tracked. Tracks guide issue 31. Build instructions in `README.md`.
 
 ## [1.15.0] - 2026-11-11
 

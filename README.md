@@ -231,6 +231,16 @@ Claude Cowork supports 11 official plugins: Asana, Canva, Cloudflare, Figma, Git
 
 ---
 
+### Build the PDF
+
+The English guide, prompt library and quick reference can be built as a single PDF with the Quarto and Typst whitepaper template. From the repository root:
+
+```bash
+python3 scripts/build-pdf.py
+```
+
+Output: `pdf/cowork-guide.pdf` (ignored by Git). Requires Python 3 and [Quarto](https://quarto.org/) 1.4 or later with its bundled Typst. The Inter and JetBrains Mono fonts are used when installed, with fallbacks otherwise. Reading order: overview, getting started, capabilities, security, troubleshooting, prompt library, then cheatsheet, FAQ, glossary and product comparison. The French files and the French-only workflow examples are not included. `python3 scripts/build-pdf.py --assemble` only writes the merged Markdown to `pdf/build/content.md`. The template in `pdf/_extensions/whitepaper/` is a copy from the Claude Code Ultimate Guide repository.
+
 ## 🔑 Golden Rules
 
 1. **Always review the plan** before approval : Cowork proposes, you decide

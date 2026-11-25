@@ -1,0 +1,23 @@
+---
+title: "Claude Cowork Guide"
+subtitle: "Delegate file work and document tasks to Claude, no code required"
+author: "Florian Bruniaux"
+date: "2026-11-25"
+date-format: "MMMM YYYY"
+version: "0.0.0"
+wp-version: "1.0.0"
+lang: en
+region: "US"
+format:
+  whitepaper-typst:
+    toc: true
+    toc-depth: 2
+    toc-title: "Table of Contents"
+    section-numbering: ""
+citeproc: false
+filters:
+  - filters/nocite.lua
+  - filters/fix-lists.lua
+---
+
+{{< include build/content.md >}}

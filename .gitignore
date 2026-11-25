@@ -25,3 +25,10 @@ claudedocs/
 
 # Whitepapers (work in progress, not public yet)
 whitepapers/
+
+# PDF build output (see scripts/build-pdf.py)
+pdf/build/
+pdf/*.pdf
+pdf/*.typ
+pdf/*_files/
+pdf/.quarto/
