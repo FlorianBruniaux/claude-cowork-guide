@@ -201,15 +201,11 @@
     ]
   )
 
-  // Claude Code Logo (bottom, above footer)
+  // Cowork logo (bottom, above footer)
   place(
     bottom + center,
     dy: -4cm,
-    box(
-      clip: true,
-      radius: 12pt,
-      image("_extensions/whitepaper/assets/claude-code-ai-logo.jpg", width: 3.5cm)
-    )
+    image("_extensions/whitepaper/assets/cowork-logo.svg", width: 2.8cm)
   )
 
   // Footer with site links

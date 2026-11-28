@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Header brand glyph ">_" in the action orange on the dark band charcoal, drawn as paths so no font is needed. -->
+  <rect width="32" height="32" rx="6" fill="#141414"/>
+  <path d="M7 9.5 13.5 16 7 22.5" fill="none" stroke="#f97316" stroke-width="3.2" stroke-linecap="square" stroke-linejoin="miter"/>
+  <rect x="15.5" y="20.5" width="10" height="3.2" fill="#f97316"/>
+</svg>
